@@ -17,7 +17,7 @@
     <properties>
         <test.groupId>org.apache.camel.quarkus</test.groupId>
         <test.artifactId>camel-quarkus-integration-test-jdbc</test.artifactId>
-        <test.version>${version.camel-quarkus}</test.version>
+        <test.version>${camel-quarkus.version}</test.version>
     </properties>
 
     <build>
@@ -85,7 +85,7 @@
                     <plugin>
                         <groupId>io.quarkus</groupId>
                         <artifactId>quarkus-maven-plugin</artifactId>
-                        <version>${version.quarkus}</version>
+                        <version>${quarkus.version}</version>
                         <executions>
                             <execution>
                                 <id>native-image</id>
