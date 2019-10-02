@@ -31,7 +31,7 @@
             <dependency>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-bom-deployment</artifactId>
-                <version>${version.quarkus}</version>
+                <version>${quarkus.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -40,7 +40,7 @@
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-parent</artifactId>
-                <version>${version.camel-quarkus}</version>
+                <version>${camel-quarkus.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
