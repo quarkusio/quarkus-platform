@@ -1,5 +1,11 @@
 # Quarkus Platform
 
+[![Version](https://img.shields.io/github/v/release/quarkusio/quarkus-platform?style=for-the-badge)](https://github.com/quarkusio/quarkus-platform/releases/latest)
+[![Build Status](https://img.shields.io/azure-devops/build/quarkus-ci/quarkus/12?style=for-the-badge&logo=azure-pipelines)](https://dev.azure.com/quarkus-ci/quarkus/_build/latest?definitionId=12)
+[![License](https://img.shields.io/github/license/quarkusio/quarkus-platform?style=for-the-badge&logo=apache)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Project Chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg?style=for-the-badge)](https://quarkusio.zulipchat.com/)
+
+
 Quarkus Platform aggregates extensions from Quarkus Core and those developed by the community into a single tested, compatible and versioned set
 that can be used by application developers to align the dependency versions of their applications with those verified by the platform testsuite.
 
