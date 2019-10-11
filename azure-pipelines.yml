@@ -3,6 +3,12 @@ trigger:
     include:
       - master
 
+pr:
+  autoCancel: true # cancel pr build on updates
+  branches:
+    include:
+      - master  # build only PR trgetting master
+
 pool:
   vmImage: 'ubuntu-latest'
 
