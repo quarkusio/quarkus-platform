@@ -7,6 +7,17 @@
     <name>Quarkus Platform - Parent pom</name>
     <version>999-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <description>Quarkus Platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
+    <url>https://github.com/quarkusio/quarkus-platform</url>
+
+    <developers>
+        <developer>
+            <id>quarkus</id>
+            <name>Quarkus Community</name>
+            <organization>Red Hat</organization>
+            <organizationUrl>http://www.redhat.com</organizationUrl>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
@@ -22,6 +33,7 @@
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
