@@ -65,13 +65,15 @@
                             <pomElements>
                                 <parent>remove</parent>
                                 <name>keep</name>
-                                <description>keep</description>
+                                <description>resolve</description>
                                 <url>expand</url>
                                 <properties>remove</properties>
                                 <pluginManagement>remove</pluginManagement>
                                 <dependencyManagement>expand</dependencyManagement>
                                 <build>remove</build>
                                 <profiles>remove</profiles>
+                                <scm>resolve</scm>
+                                <developers>resolve</developers>
                             </pomElements>
                         </configuration>
                     </execution>
