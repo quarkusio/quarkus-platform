@@ -5,12 +5,12 @@
     <artifactId>quarkus-universe-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
   </parent>
-  <artifactId>quarkus-universe-integration-tests-camel-servlet</artifactId>
-  <name>Quarkus universe - Integration Tests - Camel - Servlet</name>
+  <artifactId>quarkus-universe-integration-tests-camel-paho</artifactId>
+  <name>Quarkus universe - Integration Tests - Camel - Paho</name>
 
   <properties>
     <test.groupId>org.apache.camel.quarkus</test.groupId>
-    <test.artifactId>camel-quarkus-integration-test-servlet</test.artifactId>
+    <test.artifactId>camel-quarkus-integration-test-paho</test.artifactId>
     <test.version>${camel-quarkus.version}</test.version>
   </properties>
 

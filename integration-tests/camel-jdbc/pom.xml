@@ -1,52 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>quarkus-platform-integration-tests-parent</artifactId>
-        <groupId>io.quarkus</groupId>
-        <version>999-SNAPSHOT</version>
-        <relativePath>../</relativePath>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-universe-integration-tests-parent</artifactId>
+    <version>999-SNAPSHOT</version>
+  </parent>
+  <artifactId>quarkus-universe-integration-tests-camel-jdbc</artifactId>
+  <name>Quarkus universe - Integration Tests - Camel - JDBC</name>
 
-    <artifactId>quarkus-platform-integration-tests-camel-jdbc</artifactId>
-    <name>Quarkus Platform - Integration Tests - Camel - JDBC</name>
-    <description>Integration tests for Camel JDBC extension</description>
+  <properties>
+    <test.groupId>org.apache.camel.quarkus</test.groupId>
+    <test.artifactId>camel-quarkus-integration-test-jdbc</test.artifactId>
+    <test.version>${camel-quarkus.version}</test.version>
+  </properties>
 
-    <properties>
-        <test.groupId>org.apache.camel.quarkus</test.groupId>
-        <test.artifactId>camel-quarkus-integration-test-jdbc</test.artifactId>
-        <test.version>${camel-quarkus.version}</test.version>
-    </properties>
+  <dependencies>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-universe-integration-tests-rpkgtests</artifactId>
+      <type>pom</type>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>${test.groupId}</groupId>
+      <artifactId>${test.artifactId}</artifactId>
+      <version>${test.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${test.groupId}</groupId>
+      <artifactId>${test.artifactId}-rpkgtests</artifactId>
+      <version>${test.version}</version>
+      <scope>test</scope>
+    </dependency>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <dependenciesToScan>
-                        <dependency>${test.groupId}:${test.artifactId}</dependency>
-                    </dependenciesToScan>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  </dependencies>
 
-    <dependencies>
-        <dependency>
-            <groupId>${test.groupId}</groupId>
-            <artifactId>${test.artifactId}</artifactId>
-            <version>${test.version}</version>
-            <classifier>tests</classifier>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>${test.groupId}</groupId>
-            <artifactId>${test.artifactId}</artifactId>
-            <version>${test.version}</version>
-        </dependency>
-    </dependencies>
+  <build>
+
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <trimStackTrace>false</trimStackTrace>
+          <dependenciesToScan>
+             <dependency>${test.groupId}:${test.artifactId}-rpkgtests</dependency>
+          </dependenciesToScan>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
 
     <profiles>
         <profile>
@@ -63,7 +73,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>${test.groupId}:${test.artifactId}</dependency>
+                                <dependency>${test.groupId}:${test.artifactId}-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -92,12 +102,14 @@
                                 </goals>
                                 <configuration>
                                     <appArtifact>${test.groupId}:${test.artifactId}:${test.version}</appArtifact>
-                                    <reportErrorsAtRuntime>true</reportErrorsAtRuntime>
+                                    <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
+                                    <enableServer>false</enableServer>
+                                    <dumpProxies>false</dumpProxies>
                                     <graalvmHome>${graalvmHome}</graalvmHome>
                                     <enableJni>false</enableJni>
-                                    <debugBuildProcess>false</debugBuildProcess>
+                                    <disableReports>true</disableReports>
                                 </configuration>
                             </execution>
                         </executions>
@@ -105,6 +117,7 @@
                 </plugins>
             </build>
         </profile>
+
     </profiles>
 
 </project>

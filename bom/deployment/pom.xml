@@ -2,24 +2,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>quarkus-platform-parent</artifactId>
+        <artifactId>quarkus-universe-parent</artifactId>
         <groupId>io.quarkus</groupId>
         <version>999-SNAPSHOT</version>
         <relativePath>../..</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>quarkus-platform-bom-deployment</artifactId>
-    <name>Quarkus Platform - BOM - Deployment</name>
+    <artifactId>quarkus-universe-bom-deployment</artifactId>
+    <name>Quarkus universe - BOM - Deployment</name>
     <packaging>pom</packaging>
 
     <dependencyManagement>
         <dependencies>
 
-            <!-- Quarkus Platform BOM -->
+            <!-- Quarkus universe BOM -->
             <dependency>
                 <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-platform-bom</artifactId>
+                <artifactId>quarkus-universe-bom</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>quarkus-platform-parent</artifactId>
+        <artifactId>quarkus-universe-parent</artifactId>
         <groupId>io.quarkus</groupId>
         <version>999-SNAPSHOT</version>
         <relativePath>../..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>quarkus-platform-bom</artifactId>
-    <name>Quarkus Platform - BOM</name>
+    <artifactId>quarkus-universe-bom</artifactId>
+    <name>Quarkus universe - BOM</name>
     <packaging>pom</packaging>
 
     <dependencyManagement>
@@ -23,7 +23,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- PLATFORM EXTENSIONS -->
+            <!-- universe EXTENSIONS -->
 
             <!-- Camel extensions -->
             <dependency>
@@ -38,6 +38,18 @@
     </dependencyManagement>
     <build>
         <plugins>
+            <plugin>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>generate-extensions-json</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
