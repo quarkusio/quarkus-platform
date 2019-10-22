@@ -9,12 +9,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.quarkus</groupId>
-    <artifactId>quarkus-platform-parent</artifactId>
-    <name>Quarkus Platform - Parent pom</name>
+    <artifactId>quarkus-universe-parent</artifactId>
+    <name>Quarkus universe - Parent pom</name>
     <version>999-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>Quarkus Platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
-    <url>https://github.com/quarkusio/quarkus-platform</url>
+    <description>Quarkus universe aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
+    <url>https://github.com/quarkusio/quarkus-universe</url>
 
     <developers>
         <developer>
@@ -34,9 +34,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/quarkusio/quarkus-platform</url>
-        <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
-        <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
+        <url>https://github.com/quarkusio/quarkus-universe</url>
+        <connection>scm:git:git@github.com:quarkusio/quarkus-universe.git</connection>
+        <developerConnection>scm:git:git@github.com:quarkusio/quarkus-universe.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -46,8 +46,8 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>0.22.0</quarkus.version>
-        <camel-quarkus.version>0.1.0</camel-quarkus.version>
+        <quarkus.version>999-SNAPSHOT</quarkus.version>
+        <camel-quarkus.version>0.2.1-SNAPSHOT</camel-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
