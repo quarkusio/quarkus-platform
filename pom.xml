@@ -47,7 +47,7 @@
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
         <quarkus.version>0.27.0</quarkus.version>
-        <camel-quarkus.version>0.3.1-SNAPSHOT</camel-quarkus.version>
+        <camel-quarkus.version>0.3.1</camel-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -117,6 +117,36 @@
                     </plugin>
                 </plugins>
             </build>
+        </profile>
+        <profile>
+            <id>camel-staging</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>apache-camel-staging</id>
+                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>apache-camel-staging</id>
+                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
         </profile>
     </profiles>
 
