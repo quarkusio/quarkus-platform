@@ -118,36 +118,6 @@
                 </plugins>
             </build>
         </profile>
-        <profile>
-            <id>camel-staging</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <repositories>
-                <repository>
-                    <id>apache-camel-staging</id>
-                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>apache-camel-staging</id>
-                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
     </profiles>
 
 </project>
