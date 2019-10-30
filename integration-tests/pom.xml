@@ -3,7 +3,7 @@
     <parent>
         <artifactId>quarkus-universe-parent</artifactId>
         <groupId>io.quarkus</groupId>
-        <version>999-SNAPSHOT</version>
+        <version>0.0.3</version>
         <relativePath>../</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
