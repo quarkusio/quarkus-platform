@@ -46,7 +46,7 @@
                     <execution>
                         <phase>process-resources</phase>
                         <goals>
-                            <goal>generate-extensions-json</goal>
+                            <!-- goal>generate-extensions-json</goal -->
                         </goals>
                     </execution>
                 </executions>
