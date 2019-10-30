@@ -34,9 +34,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/quarkusio/quarkus-universe</url>
-        <connection>scm:git:git@github.com:quarkusio/quarkus-universe.git</connection>
-        <developerConnection>scm:git:git@github.com:quarkusio/quarkus-universe.git</developerConnection>
+        <url>https://github.com/quarkusio/quarkus-platform</url>
+        <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
+        <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
