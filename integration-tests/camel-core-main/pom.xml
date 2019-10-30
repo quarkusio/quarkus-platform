@@ -48,6 +48,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
+          <excludedGroups>quarkus-platform-ignore</excludedGroups>
           <trimStackTrace>false</trimStackTrace>
           <dependenciesToScan>
              <dependency>${test.groupId}:${test.artifactId}-rpkgtests</dependency>
@@ -72,6 +73,7 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
+                            <excludedGroups>quarkus-platform-ignore</excludedGroups>
                             <dependenciesToScan>
                                 <dependency>${test.groupId}:${test.artifactId}-rpkgtests</dependency>
                             </dependenciesToScan>
