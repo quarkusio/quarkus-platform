@@ -10,7 +10,9 @@
     <artifactId>quarkus-universe-bom</artifactId>
     <name>Quarkus universe - BOM</name>
     <packaging>pom</packaging>
-
+    <properties>
+        <quarkus-platform-descriptor-json-plugin.version>${quarkus.version}</quarkus-platform-descriptor-json-plugin.version>
+    </properties>
     <dependencyManagement>
         <dependencies>
 
@@ -41,7 +43,7 @@
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-platform-descriptor-json-plugin</artifactId>
-                <version>${quarkus.version}</version>
+                <version>${quarkus-platform-descriptor-json-plugin.version}</version>
                 <executions>
                     <execution>
                         <phase>process-resources</phase>
