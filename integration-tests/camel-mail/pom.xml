@@ -3,7 +3,7 @@
   <parent>
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-universe-integration-tests-parent</artifactId>
-    <version>0.0.4</version>
+    <version>999-SNAPSHOT</version>
   </parent>
   <artifactId>quarkus-universe-integration-tests-camel-mail</artifactId>
   <name>Quarkus universe - Integration Tests - Camel - Mail</name>
