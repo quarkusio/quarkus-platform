@@ -38,8 +38,6 @@ Both of the BOMs are flattened.
 
 ## Release steps
 
-To release, run the following command:
-
 1. Use the Maven Release Plugin to tag and deploy to the Sonatype OSS Nexus: 
 
         TAG=0.0.5 && mvn release:prepare release:perform -DdevelopmentVersion=999-SNAPSHOT -DreleaseVersion=$TAG -Dtag=$TAG
