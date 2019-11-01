@@ -35,3 +35,56 @@ not be broken.
 `quarkus-platform-bom-deployment` imports `quarkus-platform-bom` then `io.quarkus:quarkus-bom-deployment` then everything else.
 
 Both of the BOMs are flattened.
+
+## Release steps
+
+To release, run the following command:
+
+1. Use the Maven Release Plugin to tag and deploy to the Sonatype OSS Nexus: 
+
+        TAG=0.0.5 && mvn release:prepare release:perform -DdevelopmentVersion=999-SNAPSHOT -DreleaseVersion=$TAG -Dtag=$TAG
+
+    Hint: You can also append `-DskipTests -Darguments=-DskipTests` to the command above to skip tests
+
+2. Go to https://oss.sonatype.org/#stagingRepositories and close the repository there.
+3. Once the checks pass, click on the `Release` button and wait until it gets percolated to Central
+ 
+---
+**IMPORTANT**
+
+Due to the Apache process, it is possible that the Apache Camel artifacts may not be directly available in Maven central, therefore you need to add the following profile to your ~/.m2/settings.xml:
+
+```xml
+     <profiles>
+        <profile>
+            <id>camel-staging</id>
+            <repositories>
+                <repository>
+                    <id>apache-camel-staging</id>
+                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>apache-camel-staging</id>
+                    <url>https://repository.apache.org/content/repositories/orgapachecamel-1161/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>camel-staging</activeProfile>
+    </activeProfiles>    
+```
