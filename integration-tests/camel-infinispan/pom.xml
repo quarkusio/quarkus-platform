@@ -3,7 +3,7 @@
   <parent>
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-universe-integration-tests-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>0.28.1</version>
   </parent>
   <artifactId>quarkus-universe-integration-tests-camel-infinispan</artifactId>
   <name>Quarkus universe - Integration Tests - Camel - Infinispan</name>
