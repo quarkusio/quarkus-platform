@@ -52,6 +52,9 @@
           <dependenciesToScan>
              <dependency>${test.groupId}:${test.artifactId}-rpkgtests</dependency>
           </dependenciesToScan>
+          <excludes>
+            <exclude>MicroProfileMetricsTest</exclude>
+          </excludes>
         </configuration>
       </plugin>
 
