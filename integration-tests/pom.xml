@@ -22,10 +22,14 @@
         <module>rpkgtests</module>
         <module>camel-aws</module>
         <module>camel-bean</module>
+        <module>camel-controlbus</module>
         <module>camel-core</module>
         <module>camel-core-impl</module>
         <module>camel-core-main</module>
         <module>camel-csv</module>
+        <module>camel-dataformat</module>
+        <module>camel-exec</module>
+        <module>camel-file</module>
         <module>camel-fhir</module>
         <module>camel-infinispan</module>
         <module>camel-jackson</module>
@@ -33,6 +37,7 @@
         <module>camel-mail</module>
         <module>camel-microprofile-health</module>
         <module>camel-microprofile-metrics</module>
+        <module>camel-netty</module>
         <module>camel-netty-http</module>
         <module>camel-opentracing</module>
         <module>camel-paho</module>
@@ -40,10 +45,14 @@
         <module>camel-platform-http</module>
         <module>camel-platform-http-engine</module>
         <module>camel-salesforce</module>
+        <module>camel-scheduler</module>
         <module>camel-servlet</module>
         <module>camel-slack</module>
+        <module>camel-snakeyaml</module>
         <module>camel-tarfile</module>
         <module>camel-twitter</module>
+        <module>camel-validator</module>
+        <module>camel-xslt</module>
         <module>camel-zipfile</module>
     </modules>
 

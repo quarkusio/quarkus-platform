@@ -23,6 +23,11 @@
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-controlbus</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-core</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
@@ -38,17 +43,32 @@
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-csv</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-dataformat</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-exec</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-file</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-jackson</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-jdbc</artifactId>
-      <version>${camel-quarkus.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-csv</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
@@ -74,6 +94,11 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-microprofile-metrics</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-netty</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
@@ -113,6 +138,11 @@
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-scheduler</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-servlet</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
@@ -123,12 +153,27 @@
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-snakeyaml</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-tarfile</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-twitter</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-validator</artifactId>
+      <version>${camel-quarkus.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-xslt</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
@@ -169,12 +214,7 @@
                 </testJar>
                 <testJar>
                   <groupId>org.apache.camel.quarkus</groupId>
-                  <artifactId>camel-quarkus-integration-test-jackson</artifactId>
-                  <version>${camel-quarkus.version}</version>
-                </testJar>
-                <testJar>
-                  <groupId>org.apache.camel.quarkus</groupId>
-                  <artifactId>camel-quarkus-integration-test-jdbc</artifactId>
+                  <artifactId>camel-quarkus-integration-test-controlbus</artifactId>
                   <version>${camel-quarkus.version}</version>
                 </testJar>
                 <testJar>
@@ -199,12 +239,37 @@
                 </testJar>
                 <testJar>
                   <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-dataformat</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-exec</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-file</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
                   <artifactId>camel-quarkus-integration-test-fhir</artifactId>
                   <version>${camel-quarkus.version}</version>
                 </testJar>
                 <testJar>
                   <groupId>org.apache.camel.quarkus</groupId>
                   <artifactId>camel-quarkus-integration-test-infinispan</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-jackson</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-jdbc</artifactId>
                   <version>${camel-quarkus.version}</version>
                 </testJar>
                 <testJar>
@@ -220,6 +285,11 @@
                 <testJar>
                   <groupId>org.apache.camel.quarkus</groupId>
                   <artifactId>camel-quarkus-integration-test-microprofile-metrics</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-netty</artifactId>
                   <version>${camel-quarkus.version}</version>
                 </testJar>
                 <testJar>
@@ -259,6 +329,11 @@
                 </testJar>
                 <testJar>
                   <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-scheduler</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
                   <artifactId>camel-quarkus-integration-test-servlet</artifactId>
                   <version>${camel-quarkus.version}</version>
                 </testJar>
@@ -269,12 +344,27 @@
                 </testJar>
                 <testJar>
                   <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-snakeyaml</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
                   <artifactId>camel-quarkus-integration-test-tarfile</artifactId>
                   <version>${camel-quarkus.version}</version>
                 </testJar>
                 <testJar>
                   <groupId>org.apache.camel.quarkus</groupId>
                   <artifactId>camel-quarkus-integration-test-twitter</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-validator</artifactId>
+                  <version>${camel-quarkus.version}</version>
+                </testJar>
+                <testJar>
+                  <groupId>org.apache.camel.quarkus</groupId>
+                  <artifactId>camel-quarkus-integration-test-xslt</artifactId>
                   <version>${camel-quarkus.version}</version>
                 </testJar>
                 <testJar>
