@@ -3,7 +3,7 @@
   <parent>
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-universe-integration-tests-parent</artifactId>
-    <version>1.0.0.Final</version>
+    <version>999-SNAPSHOT</version>
   </parent>
   <artifactId>quarkus-universe-integration-tests-camel-salesforce</artifactId>
   <name>Quarkus universe - Integration Tests - Camel - Salesforce</name>
