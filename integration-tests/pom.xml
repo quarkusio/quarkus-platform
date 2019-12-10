@@ -19,6 +19,7 @@
     </properties>
 
     <modules>
+<!--
         <module>rpkgtests</module>
         <module>camel-aws</module>
         <module>camel-bean</module>
@@ -54,6 +55,7 @@
         <module>camel-validator</module>
         <module>camel-xslt</module>
         <module>camel-zipfile</module>
+-->
     </modules>
 
     <build>

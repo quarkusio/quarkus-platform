@@ -26,6 +26,7 @@
             <!-- universe EXTENSIONS -->
 
             <!-- Camel extensions -->
+<!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-bom</artifactId>
@@ -33,7 +34,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+-->
         </dependencies>
     </dependencyManagement>
     <build>
