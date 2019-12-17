@@ -47,9 +47,15 @@
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
         <quarkus.version>1.0.1.Final</quarkus.version>
-        <camel-quarkus.version>0.4.0</camel-quarkus.version>
+
+        <!-- After upgrading camel-quarkus regenerate the test modules by running
+             mvn validate -Pregen -N
+        -->
+        <camel-quarkus.version>1.0.0-M1</camel-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
+        <rpkgtests-maven-plugin.version>0.7.0</rpkgtests-maven-plugin.version>
+        <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
     </properties>
 
@@ -81,7 +87,25 @@
                         <systemProperties>
                             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                         </systemProperties>
+                        <excludedGroups>quarkus-platform-ignore</excludedGroups>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <configuration>
+                        <excludedGroups>quarkus-platform-ignore</excludedGroups>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.gmaven</groupId>
+                    <artifactId>groovy-maven-plugin</artifactId>
+                    <version>${groovy-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.l2x6.rpkgtests</groupId>
+                    <artifactId>rpkgtests-maven-plugin</artifactId>
+                    <version>${rpkgtests-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -112,6 +136,87 @@
                                 <goals>
                                     <goal>sign</goal>
                                 </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>regen</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.l2x6.rpkgtests</groupId>
+                        <artifactId>rpkgtests-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-test-modules</id>
+                                <inherited>false</inherited>
+                                <goals>
+                                    <goal>create-test-modules</goal>
+                                </goals>
+                                <phase>validate</phase>
+                                <configuration>
+                                    <testJarXmls>
+                                        <testJarXml>
+                                            <groupId>org.apache.camel.quarkus</groupId>
+                                            <artifactId>camel-quarkus-test-list</artifactId>
+                                            <version>${camel-quarkus.version}</version>
+                                            <versionPlaceholder>@{camel-quarkus.version}</versionPlaceholder>
+                                        </testJarXml>
+                                    </testJarXmls>
+                                    <testModulesParentDir>integration-tests</testModulesParentDir>
+                                    <testModuleArtifactIdReplacers>/^camel-quarkus-integration-test-(.*)$/quarkus-universe-integration-tests-camel-$1/</testModuleArtifactIdReplacers>
+                                    <testModuleDirReplacers>/^camel-quarkus-integration-test-(.*)$/camel-$1/</testModuleDirReplacers>
+                                    <rpkgModulePomXmlPath>integration-tests/rpkgtests/pom.xml</rpkgModulePomXmlPath>
+                                    <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
+                                    <templatesUriBase>file:src/rpkg-templates</templatesUriBase>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.gmaven</groupId>
+                        <artifactId>groovy-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-test-modules</id>
+                                <inherited>false</inherited>
+                                <goals>
+                                    <goal>execute</goal>
+                                </goals>
+                                <phase>validate</phase>
+                                <configuration>
+                                    <source><![CDATA[
+                                        import java.io.IOException;
+                                        import java.nio.charset.StandardCharsets;
+                                        import java.nio.file.Files;
+                                        import java.nio.file.Path;
+                                        import java.nio.file.Paths;
+                                        import java.util.stream.Stream;
+
+                                        final byte[] content = ("The purpose of this file is to have a non-empty test-classes directory that will\n"
+                                                + "be added to the test classpath and used by the Quarkus test extension for storing\n"
+                                                + "generated classes and other resources that should appear on the classpath during\n"
+                                                + "the test execution.").getBytes(StandardCharsets.UTF_8)
+                                        Stream<Path> items = null
+                                        try {
+                                            items = Files.list(Paths.get("${basedir}/integration-tests"))
+                                            items
+                                                .filter{itestDir -> Files.isDirectory(itestDir)}
+                                                .filter{itestDir -> !"rpkgtests".equals(itestDir.getFileName().toString())}
+                                                .forEach{itestDir ->
+                                                    final Path srcTestResources = itestDir.resolve("src/test/resources");
+                                                    Files.createDirectories(srcTestResources);
+                                                    Files.write(srcTestResources.resolve("classpathseed"), content);
+                                                };
+                                            ;
+                                        } finally {
+                                            items.close()
+                                        }
+                                    ]]></source>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>

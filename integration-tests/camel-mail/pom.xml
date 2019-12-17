@@ -1,62 +1,57 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>io.quarkus</groupId>
-    <artifactId>quarkus-universe-integration-tests-parent</artifactId>
-    <version>999-SNAPSHOT</version>
-  </parent>
-  <artifactId>quarkus-universe-integration-tests-camel-mail</artifactId>
-  <name>Quarkus universe - Integration Tests - Camel - Mail</name>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-universe-integration-tests-parent</artifactId>
+        <version>999-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
 
-  <properties>
-    <test.groupId>org.apache.camel.quarkus</test.groupId>
-    <test.artifactId>camel-quarkus-integration-test-mail</test.artifactId>
-    <test.version>${camel-quarkus.version}</test.version>
-  </properties>
+    <artifactId>quarkus-universe-integration-tests-camel-mail</artifactId>
 
-  <dependencies>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-universe-integration-tests-rpkgtests</artifactId>
-      <type>pom</type>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>${test.groupId}</groupId>
-      <artifactId>${test.artifactId}</artifactId>
-      <version>${test.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>${test.groupId}</groupId>
-      <artifactId>${test.artifactId}-rpkgtests</artifactId>
-      <version>${test.version}</version>
-      <scope>test</scope>
-    </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-universe-integration-tests-rpkgtests</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-mail</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-mail-rpkgtests</artifactId>
+            <version>${camel-quarkus.version}</version>
+            <scope>test</scope>
+        </dependency>
 
-  </dependencies>
+    </dependencies>
 
-  <build>
-
-    <plugins>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <trimStackTrace>false</trimStackTrace>
-          <dependenciesToScan>
-             <dependency>${test.groupId}:${test.artifactId}-rpkgtests</dependency>
-          </dependenciesToScan>
-        </configuration>
-      </plugin>
-
-    </plugins>
-  </build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <dependenciesToScan>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mail-rpkgtests</dependency>
+                    </dependenciesToScan>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <profiles>
         <profile>
@@ -73,7 +68,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>${test.groupId}:${test.artifactId}-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mail-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -101,7 +96,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>${test.groupId}:${test.artifactId}:${test.version}</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-mail:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>

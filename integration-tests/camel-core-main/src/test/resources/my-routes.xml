@@ -17,13 +17,18 @@
     limitations under the License.
 
 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <xs:element name="message">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="firstName" type="xs:string"/>
-                <xs:element name="lastName" type="xs:string"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-</xs:schema>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://camel.apache.org/schema/spring"
+        xsi:schemaLocation="
+            http://camel.apache.org/schema/spring
+            http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <route id="my-xml-route">
+        <from uri="timer:from-xml?period=3s"/>
+        <setBody>
+            <constant>Hello World!!!</constant>
+        </setBody>
+        <to uri="log:from-xml"/>
+    </route>
+
+</routes>
