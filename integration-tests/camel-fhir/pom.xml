@@ -48,11 +48,6 @@
                     <dependenciesToScan>
                         <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-fhir-rpkgtests</dependency>
                     </dependenciesToScan>
-                    <excludes>
-                        <exclude>**/FhirClientIntegrationTest.java</exclude>
-                        <exclude>**/FhirClientJvmIntegrationTest.java</exclude>
-                        <exclude>**/FhirDataformatIntegrationTest.java</exclude>
-                    </excludes>
                 </configuration>
             </plugin>
         </plugins>

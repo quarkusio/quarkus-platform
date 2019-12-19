@@ -58,6 +58,7 @@
         <module>camel-sjms</module>
         <module>camel-slack</module>
         <module>camel-snakeyaml</module>
+        <module>camel-sql</module>
         <module>camel-tagsoup</module>
         <module>camel-tarfile</module>
         <module>camel-twitter</module>

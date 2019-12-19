@@ -46,12 +46,13 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>1.0.1.Final</quarkus.version>
+        <quarkus.version>1.1.0.Final</quarkus.version>
 
         <!-- After upgrading camel-quarkus regenerate the test modules by running
+
              mvn validate -Pregen -N
         -->
-        <camel-quarkus.version>1.0.0-M1</camel-quarkus.version>
+        <camel-quarkus.version>1.0.0-M2</camel-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <rpkgtests-maven-plugin.version>0.7.0</rpkgtests-maven-plugin.version>

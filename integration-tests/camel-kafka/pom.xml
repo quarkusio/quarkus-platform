@@ -12,6 +12,10 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-kafka</artifactId>
 
+    <properties>
+        <rerun.failing.test.count>2</rerun.failing.test.count>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -48,6 +52,7 @@
                     <dependenciesToScan>
                         <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-rpkgtests</dependency>
                     </dependenciesToScan>
+                    <rerunFailingTestsCount>${rerun.failing.test.count}</rerunFailingTestsCount>
                 </configuration>
             </plugin>
         </plugins>
@@ -70,6 +75,7 @@
                             <dependenciesToScan>
                                 <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-rpkgtests</dependency>
                             </dependenciesToScan>
+                            <rerunFailingTestsCount>${rerun.failing.test.count}</rerunFailingTestsCount>
                         </configuration>
                         <executions>
                             <execution>
