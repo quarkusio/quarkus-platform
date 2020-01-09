@@ -1,11 +1,6 @@
 {
     "categories": [
     {
-      "name": "Core",
-      "id": "core",
-      "description": "Essential Quarkus components. Provided automatically"
-    },
-    {
       "name": "Web",
       "id": "web",
       "description": "Everything you need for REST endpoints, HTTP and web formats like JSON",
@@ -37,13 +32,24 @@
     {
       "name": "Messaging",
       "id": "messaging",
-      "description": "Send and receives message to various messaging ssytems (AMQP, KAfka etc)",
+      "description": "Send and receives message to various messaging systems (AMQP, KAfka etc)",
       "metadata": {
         "pinned": [
           "io.quarkus:quarkus-smallrye-reactive-messaging",
           "io.quarkus:quarkus-smallrye-reactive-messaging-amqp",
           "io.quarkus:quarkus-smallrye-reactive-messaging-kafka",
           "io.quarkus:quarkus-smallrye-reactive-messaging-mqtt"
+        ]
+      }
+    },
+    {
+      "name": "Core",
+      "id": "core",
+      "description": "Core Quarkus components: engine, logging, etc.",
+      "metadata": {
+        "pinned": [
+          "io.quarkus:quarkus-config-yaml",
+          "io.quarkus:quarkus-logging-json"
         ]
       }
     },
