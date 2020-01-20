@@ -8,7 +8,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>quarkus-universe-integration-tests-camel-core-impl</artifactId>
+    <artifactId>quarkus-universe-integration-tests-camel-jsonpath</artifactId>
 
     <dependencies>
         <dependency>
@@ -25,12 +25,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-impl</artifactId>
+            <artifactId>camel-quarkus-integration-test-jsonpath</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-impl-rpkgtests</artifactId>
+            <artifactId>camel-quarkus-integration-test-jsonpath-rpkgtests</artifactId>
             <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
@@ -44,7 +44,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-core-impl-rpkgtests</dependency>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jsonpath-rpkgtests</dependency>
                     </dependenciesToScan>
                 </configuration>
             </plugin>
@@ -66,7 +66,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-core-impl-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jsonpath-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -94,7 +94,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-core-impl:${camel-quarkus.version}</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jsonpath:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
