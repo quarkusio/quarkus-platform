@@ -25,10 +25,13 @@
         <module>camel-base64</module>
         <module>camel-bean</module>
         <module>camel-bean-validator</module>
+        <module>camel-consul</module>
         <module>camel-controlbus</module>
         <module>camel-core</module>
         <module>camel-core-impl</module>
         <module>camel-core-main</module>
+        <module>camel-core-main-collector</module>
+        <module>camel-core-main-xml</module>
         <module>camel-csv</module>
         <module>camel-dataformat</module>
         <module>camel-dozer</module>
@@ -36,16 +39,17 @@
         <module>camel-fhir</module>
         <module>camel-file</module>
         <module>camel-ftp</module>
+        <module>camel-http</module>
         <module>camel-hystrix</module>
         <module>camel-infinispan</module>
         <module>camel-jackson</module>
         <module>camel-jdbc</module>
+        <module>camel-jsonpath</module>
         <module>camel-kafka</module>
         <module>camel-mail</module>
         <module>camel-microprofile</module>
         <module>camel-mongodb</module>
         <module>camel-netty</module>
-        <module>camel-netty-http</module>
         <module>camel-opentracing</module>
         <module>camel-paho</module>
         <module>camel-pdf</module>

@@ -53,10 +53,10 @@
 
     <profiles>
         <profile>
-            <id>native-image-pdf</id><!-- disabled due to https://github.com/apache/camel-quarkus/issues/472 -->
+            <id>native-image</id>
             <activation>
                 <property>
-                    <name>native-pdf</name>
+                    <name>native</name>
                 </property>
             </activation>
             <build>
