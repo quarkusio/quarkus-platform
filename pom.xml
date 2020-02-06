@@ -55,6 +55,7 @@
         <camel-quarkus.version>1.0.0-M5</camel-quarkus.version>
 
         <quarkus-qpid-jms.version>0.13.0</quarkus-qpid-jms.version>
+        <debezium-quarkus-outbox.version>1.1.0.Final</debezium-quarkus-outbox.version>
 
         <kogito-quarkus.version>0.8.0</kogito-quarkus.version>
 

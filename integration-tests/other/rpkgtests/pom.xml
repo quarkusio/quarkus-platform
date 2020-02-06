@@ -17,6 +17,11 @@
             <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
             <version>${quarkus-qpid-jms.version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.debezium</groupId>
+            <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
+            <version>${debezium-quarkus-outbox.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -38,6 +43,11 @@
                                     <groupId>org.amqphub.quarkus</groupId>
                                     <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
                                     <version>${quarkus-qpid-jms.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>io.debezium</groupId>
+                                    <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
+                                    <version>${debezium-quarkus-outbox.version}</version>
                                 </testJar>
                             </testJars>
                         </configuration>

@@ -49,6 +49,14 @@
                 <artifactId>quarkus-qpid-jms-deployment</artifactId>
                 <version>${quarkus-qpid-jms.version}</version>
             </dependency>
+
+            <!-- Debezium -->
+            <dependency>
+                <groupId>io.debezium</groupId>
+                <artifactId>debezium-quarkus-outbox-deployment</artifactId>
+                <version>${debezium-quarkus-outbox.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
