@@ -59,7 +59,8 @@
       "description": "Non blocking stack and connectors",
       "metadata": {
         "pinned": [
-          "io.quarkus:quarkus-vertx"
+          "io.quarkus:quarkus-vertx",
+          "io.quarkus:quarkus-mutiny"
         ]
       }
     },
