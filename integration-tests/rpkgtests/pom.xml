@@ -13,6 +13,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.amqphub.quarkus</groupId>
+            <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
+            <version>${quarkus-qpid-jms.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-aws</artifactId>
             <version>${camel-quarkus.version}</version>
@@ -269,6 +274,11 @@
                         <phase>validate</phase>
                         <configuration>
                             <testJars>
+                                <testJar>
+                                    <groupId>org.amqphub.quarkus</groupId>
+                                    <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
+                                    <version>${quarkus-qpid-jms.version}</version>
+                                </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-aws</artifactId>
