@@ -56,6 +56,8 @@
 
         <quarkus-qpid-jms.version>0.13.0</quarkus-qpid-jms.version>
 
+        <kogito-quarkus.version>0.8.0</kogito-quarkus.version>
+
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <rpkgtests-maven-plugin.version>0.7.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -68,6 +70,7 @@
 
         <!-- Integration Tests -->
         <module>integration-tests</module>
+        <module>kogito-integration-tests</module>
     </modules>
 
     <distributionManagement>
@@ -175,6 +178,84 @@
                                     <rpkgModulePomXmlPath>integration-tests/rpkgtests/pom.xml</rpkgModulePomXmlPath>
                                     <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
                                     <templatesUriBase>file:src/rpkg-templates</templatesUriBase>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.gmaven</groupId>
+                        <artifactId>groovy-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-test-modules</id>
+                                <inherited>false</inherited>
+                                <goals>
+                                    <goal>execute</goal>
+                                </goals>
+                                <phase>validate</phase>
+                                <configuration>
+                                    <source><![CDATA[
+                                        import java.io.IOException;
+                                        import java.nio.charset.StandardCharsets;
+                                        import java.nio.file.Files;
+                                        import java.nio.file.Path;
+                                        import java.nio.file.Paths;
+                                        import java.util.stream.Stream;
+
+                                        final byte[] content = ("The purpose of this file is to have a non-empty test-classes directory that will\n"
+                                                + "be added to the test classpath and used by the Quarkus test extension for storing\n"
+                                                + "generated classes and other resources that should appear on the classpath during\n"
+                                                + "the test execution.").getBytes(StandardCharsets.UTF_8)
+                                        Stream<Path> items = null
+                                        try {
+                                            items = Files.list(Paths.get("${basedir}/integration-tests"))
+                                            items
+                                                .filter{itestDir -> Files.isDirectory(itestDir)}
+                                                .filter{itestDir -> !"rpkgtests".equals(itestDir.getFileName().toString())}
+                                                .forEach{itestDir ->
+                                                    final Path srcTestResources = itestDir.resolve("src/test/resources");
+                                                    Files.createDirectories(srcTestResources);
+                                                    Files.write(srcTestResources.resolve("classpathseed"), content);
+                                                };
+                                            ;
+                                        } finally {
+                                            items.close()
+                                        }
+                                    ]]></source>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>regen-kogito</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.l2x6.rpkgtests</groupId>
+                        <artifactId>rpkgtests-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-test-modules</id>
+                                <inherited>false</inherited>
+                                <goals>
+                                    <goal>create-test-modules</goal>
+                                </goals>
+                                <phase>validate</phase>
+                                <configuration>
+                                    <testJars>
+                                        <testJar>
+                                            <groupId>org.kie.kogito</groupId>
+                                            <artifactId>kogito-quarkus-integration-test</artifactId>
+                                            <version>${kogito-quarkus.version}</version>
+                                        </testJar>
+                                    </testJars>
+                                    <testModulesParentDir>kogito-integration-tests</testModulesParentDir>
+                                    <rpkgModulePomXmlPath>kogito-integration-tests/rpkgtests/pom.xml</rpkgModulePomXmlPath>
+                                    <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
+                                    <templatesUriBase>file:src/kogito-rpkg-templates</templatesUriBase>
                                 </configuration>
                             </execution>
                         </executions>
