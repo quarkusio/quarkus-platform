@@ -12,6 +12,10 @@
 
     <artifactId>[=runTestsModule.artifactId]</artifactId>
 
+    <properties>
+        <kogito.version>[=testJar.version]</kogito.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -40,79 +44,78 @@
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>[=testJar.artifactId]</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>[=testJar.artifactId]-rpkgtests</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
 
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>kogito-api</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>kogito-internal</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>drools-core</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>drools-compiler</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>drools-decisiontables</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>kogito-codegen</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>kogito-drools</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>kogito-drools-model</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>drools-core-reflective</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>drools-core-static</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>jbpm-bpmn2</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>jbpm-flow</artifactId>
-            <version>[=testJar.version]</version>
-            <scope>test</scope>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
             <artifactId>jbpm-flow-builder</artifactId>
-            <version>[=testJar.version]</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
@@ -134,6 +137,12 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-bootstrap-core</artifactId>
             <version>${quarkus.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.eclipse.sisu</groupId>
+                    <artifactId>org.eclipse.sisu.inject</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>

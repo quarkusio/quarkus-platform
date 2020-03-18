@@ -12,6 +12,10 @@
 
     <artifactId>kogito-quarkus-integration-test</artifactId>
 
+    <properties>
+        <kogito.version>0.8.0</kogito.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -40,79 +44,78 @@
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-quarkus-integration-test</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-quarkus-integration-test-rpkgtests</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-api</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-internal</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>drools-core</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>drools-compiler</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>drools-decisiontables</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-codegen</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-drools</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-drools-model</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>drools-core-reflective</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>drools-core-static</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>jbpm-bpmn2</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>jbpm-flow</artifactId>
-            <version>0.8.0</version>
-            <scope>test</scope>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>jbpm-flow-builder</artifactId>
-            <version>0.8.0</version>
+            <version>${kogito.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
@@ -134,6 +137,12 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-bootstrap-core</artifactId>
             <version>${quarkus.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.eclipse.sisu</groupId>
+                    <artifactId>org.eclipse.sisu.inject</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
