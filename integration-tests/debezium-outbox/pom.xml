@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-universe-integration-tests-other-rpkgtests</artifactId>
+            <artifactId>quarkus-universe-integration-tests-rpkgtests</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
             <exclusions>
