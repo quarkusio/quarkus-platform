@@ -10,7 +10,12 @@
     <artifactId>quarkus-universe-bom</artifactId>
     <name>Quarkus universe - BOM</name>
     <packaging>pom</packaging>
-
+    <properties>
+        <resourcesdir>${project.basedir}/src/main/resources</resourcesdir>
+        <overridesfile>
+            ${resourcesdir}/extensions-overrides.json
+        </overridesfile>
+    </properties>
     <dependencyManagement>
         <dependencies>
 
@@ -58,7 +63,11 @@
                             <goal>generate-extensions-json</goal>
                         </goals>
                     </execution>
+                    
                 </executions>
+                <configuration>
+                    <overridesFile>${overridesfile}</overridesFile>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -100,4 +109,17 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>rhproduct</id>
+            <properties>
+                <overridesfile>
+                    ${resourcesdir}/extensions-overrides.json,
+                    ${resourcesdir}/extensions-support-overrides.json,
+                </overridesfile>
+            </properties>
+        </profile>
+
+    </profiles>
 </project>
