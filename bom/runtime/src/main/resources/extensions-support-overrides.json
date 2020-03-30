@@ -125,7 +125,7 @@
       "artifact-id":"quarkus-kubernetes",
       "metadata" : { 
        "redhat-support" : [
-         "development" ]
+         "dev-support" ]
        }
     },
     {
@@ -157,7 +157,7 @@
       "artifact-id":"quarkus-openshift",
       "metadata" : { 
        "redhat-support" : [
-         "development" ]
+         "dev-support" ]
        }
     },
     {
