@@ -71,6 +71,7 @@
       "metadata": {
         "pinned": [
           "io.quarkus:quarkus-kubernetes",
+          "io.quarkus:quarkus-openshift",
           "io.quarkus:quarkus-smallrye-health",
           "io.quarkus:quarkus-smallrye-fault-tolerance"
         ]
