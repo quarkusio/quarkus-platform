@@ -70,6 +70,10 @@
                             <dependenciesToScan>
                                 <dependency>[=testJar.groupId]:[=testJar.artifactId]-rpkgtests</dependency>
                             </dependenciesToScan>
+[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-core-main']                    <systemPropertyVariables>
+                        <quarkus.test.profile>staging</quarkus.test.profile>
+                    </systemPropertyVariables>
+[/#if]
                         </configuration>
                         <executions>
                             <execution>
