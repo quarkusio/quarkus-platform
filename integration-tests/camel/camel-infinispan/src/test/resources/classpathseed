@@ -1,4 +1,0 @@
-The purpose of this file is to have a non-empty test-classes directory that will
-be added to the test classpath and used by the Quarkus test extension for storing
-generated classes and other resources that should appear on the classpath during
-the test execution.
