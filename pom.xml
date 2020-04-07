@@ -182,50 +182,6 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.gmaven</groupId>
-                        <artifactId>groovy-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>create-test-modules</id>
-                                <inherited>false</inherited>
-                                <goals>
-                                    <goal>execute</goal>
-                                </goals>
-                                <phase>validate</phase>
-                                <configuration>
-                                    <source><![CDATA[
-                                        import java.io.IOException;
-                                        import java.nio.charset.StandardCharsets;
-                                        import java.nio.file.Files;
-                                        import java.nio.file.Path;
-                                        import java.nio.file.Paths;
-                                        import java.util.stream.Stream;
-
-                                        final byte[] content = ("The purpose of this file is to have a non-empty test-classes directory that will\n"
-                                                + "be added to the test classpath and used by the Quarkus test extension for storing\n"
-                                                + "generated classes and other resources that should appear on the classpath during\n"
-                                                + "the test execution.").getBytes(StandardCharsets.UTF_8)
-                                        Stream<Path> items = null
-                                        try {
-                                            items = Files.list(Paths.get("${basedir}/integration-tests"))
-                                            items
-                                                .filter{itestDir -> Files.isDirectory(itestDir)}
-                                                .filter{itestDir -> !"rpkgtests".equals(itestDir.getFileName().toString())}
-                                                .forEach{itestDir ->
-                                                    final Path srcTestResources = itestDir.resolve("src/test/resources");
-                                                    Files.createDirectories(srcTestResources);
-                                                    Files.write(srcTestResources.resolve("classpathseed"), content);
-                                                };
-                                            ;
-                                        } finally {
-                                            items.close()
-                                        }
-                                    ]]></source>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
                 </plugins>
             </build>
         </profile>
@@ -256,50 +212,6 @@
                                     <rpkgModulePomXmlPath>kogito-integration-tests/rpkgtests/pom.xml</rpkgModulePomXmlPath>
                                     <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
                                     <templatesUriBase>file:src/kogito-rpkg-templates</templatesUriBase>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.codehaus.gmaven</groupId>
-                        <artifactId>groovy-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>create-test-modules</id>
-                                <inherited>false</inherited>
-                                <goals>
-                                    <goal>execute</goal>
-                                </goals>
-                                <phase>validate</phase>
-                                <configuration>
-                                    <source><![CDATA[
-                                        import java.io.IOException;
-                                        import java.nio.charset.StandardCharsets;
-                                        import java.nio.file.Files;
-                                        import java.nio.file.Path;
-                                        import java.nio.file.Paths;
-                                        import java.util.stream.Stream;
-
-                                        final byte[] content = ("The purpose of this file is to have a non-empty test-classes directory that will\n"
-                                                + "be added to the test classpath and used by the Quarkus test extension for storing\n"
-                                                + "generated classes and other resources that should appear on the classpath during\n"
-                                                + "the test execution.").getBytes(StandardCharsets.UTF_8)
-                                        Stream<Path> items = null
-                                        try {
-                                            items = Files.list(Paths.get("${basedir}/integration-tests/camel"))
-                                            items
-                                                .filter{itestDir -> Files.isDirectory(itestDir)}
-                                                .filter{itestDir -> !"rpkgtests".equals(itestDir.getFileName().toString())}
-                                                .forEach{itestDir ->
-                                                    final Path srcTestResources = itestDir.resolve("src/test/resources");
-                                                    Files.createDirectories(srcTestResources);
-                                                    Files.write(srcTestResources.resolve("classpathseed"), content);
-                                                };
-                                            ;
-                                        } finally {
-                                            items.close()
-                                        }
-                                    ]]></source>
                                 </configuration>
                             </execution>
                         </executions>
