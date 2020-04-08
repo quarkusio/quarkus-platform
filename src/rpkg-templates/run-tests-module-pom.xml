@@ -10,6 +10,12 @@
 
     <artifactId>[=runTestsModule.artifactId]</artifactId>
 
+[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-infinispan']
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+
+[/#if]
     <dependencies>
         <dependency>
             <groupId>[=rpkgModule.groupId]</groupId>
