@@ -50,7 +50,7 @@
 
         <!-- After upgrading camel-quarkus regenerate the test modules by running
 
-             mvn validate -Pregen -N
+             mvn validate -Pregen-camel -N
         -->
         <camel-quarkus.version>1.0.0-M5</camel-quarkus.version>
 
