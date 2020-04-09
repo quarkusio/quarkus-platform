@@ -10,7 +10,7 @@
 
     <artifactId>[=runTestsModule.artifactId]</artifactId>
 
-[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-infinispan']
+[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-mongodb']
     <properties>
         <skipTests>true</skipTests>
     </properties>
