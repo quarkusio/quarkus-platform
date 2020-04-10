@@ -57,6 +57,10 @@
         <quarkus-qpid-jms.version>0.13.0</quarkus-qpid-jms.version>
         <debezium-quarkus-outbox.version>1.1.0.Final</debezium-quarkus-outbox.version>
 
+        <!-- After upgrading camel-quarkus regenerate the test modules by running
+
+             mvn validate -Pregen-kogito -N
+        -->
         <kogito-quarkus.version>0.8.0</kogito-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
@@ -69,9 +73,7 @@
         <module>bom/runtime</module>
         <module>bom/deployment</module>
 
-        <!-- Integration Tests -->
         <module>integration-tests</module>
-        <module>kogito-integration-tests</module>
     </modules>
 
     <distributionManagement>
@@ -209,8 +211,8 @@
                                             <version>${kogito-quarkus.version}</version>
                                         </testJar>
                                     </testJars>
-                                    <testModulesParentDir>kogito-integration-tests</testModulesParentDir>
-                                    <rpkgModulePomXmlPath>kogito-integration-tests/rpkgtests/pom.xml</rpkgModulePomXmlPath>
+                                    <testModulesParentDir>integration-tests/kogito</testModulesParentDir>
+                                    <rpkgModulePomXmlPath>integration-tests/kogito/rpkgtests/pom.xml</rpkgModulePomXmlPath>
                                     <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
                                     <templatesUriBase>file:src/kogito-rpkg-templates</templatesUriBase>
                                 </configuration>
