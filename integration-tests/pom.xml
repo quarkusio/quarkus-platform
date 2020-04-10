@@ -20,11 +20,11 @@
 
     <modules>
         <module>camel</module>
+        <module>kogito</module>
         <module>rpkgtests</module>
         <module>qpid-jms</module>
         <module>debezium-outbox</module>
     </modules>
-
 
     <dependencyManagement>
         <dependencies>
