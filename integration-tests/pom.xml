@@ -20,7 +20,9 @@
 
     <modules>
         <module>camel</module>
-        <module>other</module>
+        <module>rpkgtests</module>
+        <module>qpid-jms</module>
+        <module>debezium-outbox</module>
     </modules>
 
 
