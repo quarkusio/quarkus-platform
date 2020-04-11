@@ -1,0 +1,87 @@
+name: "Quarkus Ecosystem CI Trigger"
+
+# Adding the dispatch event to allow restarting the build on demand
+on:
+  schedule:
+    - cron: '0 */5 * * *'
+  repository_dispatch:
+
+# For this CI to work, ECOSYSTEM_CI_TOKEN needs to contain a GitHub token with 'repo' rights
+
+env:
+  ECOSYSTEM_CI_REPO: quarkusio/quarkus-ecosystem-ci
+
+jobs:
+  invoke-ci:
+    runs-on: ubuntu-18.04
+    name: "Invoke CI"
+    steps:
+      - name: Install yq
+        run: sudo add-apt-repository ppa:rmescandon/yq && sudo apt update && sudo apt install yq -y
+
+      - name: Checkout Ecosystem
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ env.ECOSYSTEM_CI_REPO }}
+          path: ecosystem-ci
+          token: ${{ secrets.ECOSYSTEM_CI_TOKEN }}
+
+      - name: Launch CI for each member
+        working-directory: ecosystem-ci
+        run: |
+          for member in */ ; do
+              cd "$member"
+
+              URL=$(yq r info.yaml url)
+              REPOSITORY=$(echo "${URL/https:\/\/github.com\//}")
+              echo "Attempting to launch CI for ${REPOSITORY}"
+
+              # read static information from info.yaml
+              LATEST_COMMIT_ISSUE_NUM=$(yq r info.yaml issues.latestCommit)
+              ISSUE_REPO=$(yq r info.yaml issues.repo)
+
+              # here is where we will write all context information
+              touch context.yaml
+              yq w -i context.yaml timestamp "$(date +"%Y-%m-%d_%H-%M-%S")"
+              yq w -i context.yaml issues.latestCommit "${LATEST_COMMIT_ISSUE_NUM}"
+              yq w -i context.yaml issues.repo "${ISSUE_REPO}"
+              yq w -i context.yaml quarkus.version "999-SNAPSHOT"
+
+              # commit changes
+              git config --local user.email "action@github.com"
+              git config --local user.name "GitHub Action"
+              git add .
+              git commit --quiet -am "[ci skip] Commit context for ${REPOSITORY}"
+              git push --quiet origin master
+              echo "Commited context changes for ${REPOSITORY}"
+              
+              # check if repository has been starred
+              STARRED_HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --request GET --url https://api.github.com/user/starred/${REPOSITORY} --header 'authorization: Bearer ${{ secrets.ECOSYSTEM_CI_TOKEN }}')
+              if [[ ${STARRED_HTTP_CODE} != 204 ]] && [[ ${STARRED_HTTP_CODE} != 404 ]]; then
+                echo "Unexpected http response status (${STARRED_HTTP_CODE}) received when checking star status"
+                exit 1
+              fi
+
+              # we need to unstar the repo so we can star it again in order for the trigger to work
+              if [[ ${STARRED_HTTP_CODE} = 204 ]]; then
+                echo "Repository ${REPOSITORY} has already been starred, so we first need to unstar it"
+                CHANGE_STAR_STATUS_HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --request DELETE --url https://api.github.com/user/starred/${REPOSITORY} --header 'authorization: Bearer ${{ secrets.ECOSYSTEM_CI_TOKEN }}')
+                if [[ ${CHANGE_STAR_STATUS_HTTP_CODE} != 204 ]]; then
+                  echo "Unexpected http response status (${CHANGE_STAR_STATUS_HTTP_CODE}) received when unstarring repository ${REPOSITORY}"
+                  exit 1
+                fi
+                sleep 5
+              fi
+
+              # star the repository
+              CHANGE_STAR_STATUS_HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --request PUT --url https://api.github.com/user/starred/${REPOSITORY} --header 'authorization: Bearer ${{ secrets.ECOSYSTEM_CI_TOKEN }}')
+              if [[ ${CHANGE_STAR_STATUS_HTTP_CODE} != 204 ]]; then
+                echo "Unexpected http response status (${CHANGE_STAR_STATUS_HTTP_CODE}) received when starring repository ${REPOSITORY}"
+                exit 1
+              fi
+
+              echo "Launched CI for ${REPOSITORY}. Please check https://github.com/${REPOSITORY}/actions to see the results"
+              echo ""
+
+              cd - > /dev/null
+          done
