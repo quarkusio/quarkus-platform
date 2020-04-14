@@ -82,11 +82,27 @@
     },
     {
       "group-id": "io.quarkus",
+      "artifact-id":"quarkus-jdbc-derby",
+      "metadata" : {
+        "redhat-support" : [
+          "dev-support" ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
       "artifact-id":"quarkus-jdbc-postgresql",
       "metadata" : { 
        "redhat-support" : [
          "supported" ]
        }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-jdbc-h2",
+      "metadata" : {
+        "redhat-support" : [
+          "dev-support" ]
+      }
     },
     {
       "group-id": "io.quarkus",
@@ -123,7 +139,7 @@
     {
       "group-id": "io.quarkus",
       "artifact-id":"quarkus-kubernetes",
-      "metadata" : { 
+      "metadata" : {
        "redhat-support" : [
          "dev-support" ]
        }
@@ -135,6 +151,14 @@
        "redhat-support" : [
          "tech-preview" ]
        }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-resteasy-mutiny",
+      "metadata" : {
+        "redhat-support" : [
+          "tech-preview" ]
+      }
     },
     {
       "group-id": "io.quarkus",
@@ -159,6 +183,14 @@
        "redhat-support" : [
          "dev-support" ]
        }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-logging-json",
+      "metadata" : {
+        "redhat-support" : [
+          "supported" ]
+      }
     },
     {
       "group-id": "io.quarkus",
@@ -271,6 +303,14 @@
        "redhat-support" : [
          "supported" ]
        }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-smallrye-jwt",
+      "metadata" : {
+        "redhat-support" : [
+          "supported" ]
+      }
     },
     {
       "group-id": "io.quarkus",
