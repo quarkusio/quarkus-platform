@@ -2,18 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>[=parent.groupId]</groupId>
-        <artifactId>[=parent.artifactId]</artifactId>
-        <version>[=parent.version]</version>
-        <relativePath>[=parentRelativePath]</relativePath>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-universe-integration-tests-camel</artifactId>
+        <version>999-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>[=runTestsModule.artifactId]</artifactId>
+    <artifactId>quarkus-universe-integration-tests-camel-core-main-caffein-lrucache</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>[=rpkgModule.groupId]</groupId>
-            <artifactId>[=rpkgModule.artifactId]</artifactId>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-universe-integration-tests-camel-rpkgtests</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
             <exclusions>
@@ -24,14 +24,14 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>[=testJar.groupId]</groupId>
-            <artifactId>[=testJar.artifactId]</artifactId>
-            <version>[=testJar.version]</version>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-core-main-caffein-lrucache</artifactId>
+            <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
-            <groupId>[=testJar.groupId]</groupId>
-            <artifactId>[=testJar.artifactId]-rpkgtests</artifactId>
-            <version>[=testJar.version]</version>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-core-main-caffein-lrucache-rpkgtests</artifactId>
+            <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -44,12 +44,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>[=testJar.groupId]:[=testJar.artifactId]-rpkgtests</dependency>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-core-main-caffein-lrucache-rpkgtests</dependency>
                     </dependenciesToScan>
-[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-core-main']                    <systemPropertyVariables>
-                        <quarkus.test.profile>staging</quarkus.test.profile>
-                    </systemPropertyVariables>
-[/#if]
                 </configuration>
             </plugin>
         </plugins>
@@ -70,7 +66,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>[=testJar.groupId]:[=testJar.artifactId]-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-core-main-caffein-lrucache-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -82,8 +78,6 @@
                                 <configuration>
                                     <systemProperties>
                                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-core-main']                                        <quarkus.test.native-image-profile>staging</quarkus.test.native-image-profile>
-[/#if]
                                     </systemProperties>
                                 </configuration>
                             </execution>
@@ -100,7 +94,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>[=testJar.groupId]:[=testJar.artifactId]:[=testJar.versionPlaceholder]</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-core-main-caffein-lrucache:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
