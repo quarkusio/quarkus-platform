@@ -45,6 +45,13 @@ jobs:
           ref: master
           path: ecosystem-ci
 
+      - uses: actions/cache@v1
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-ecosystem-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-ecosystem-
+
       - name: Setup and Run Tests
         run: ./ecosystem-ci/setup-and-test
         env:
