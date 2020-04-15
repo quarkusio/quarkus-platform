@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+mvn --settings .github/quarkus-ecosystem-maven-settings.xml clean install -Dquarkus.version=${QUARKUS_VERSION} --projects '!io.quarkus:quarkus-universe-kogito-integration-tests-parent,!io.quarkus:kogito-quarkus-integration-test,!io.quarkus:quarkus-universe-kogito-integration-tests-rpkgtests'
