@@ -10,12 +10,6 @@
 
     <artifactId>[=runTestsModule.artifactId]</artifactId>
 
-[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-infinispan']
-    <properties>
-        <skipTests>true</skipTests>
-    </properties>
-
-[/#if]
     <dependencies>
         <dependency>
             <groupId>[=rpkgModule.groupId]</groupId>
@@ -52,10 +46,6 @@
                     <dependenciesToScan>
                         <dependency>[=testJar.groupId]:[=testJar.artifactId]-rpkgtests</dependency>
                     </dependenciesToScan>
-[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-core-main']                    <systemPropertyVariables>
-                        <quarkus.test.profile>staging</quarkus.test.profile>
-                    </systemPropertyVariables>
-[/#if]
                 </configuration>
             </plugin>
         </plugins>
@@ -88,8 +78,6 @@
                                 <configuration>
                                     <systemProperties>
                                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-[#if runTestsModule.artifactId = 'quarkus-universe-integration-tests-camel-core-main']                                        <quarkus.test.native-image-profile>staging</quarkus.test.native-image-profile>
-[/#if]
                                     </systemProperties>
                                 </configuration>
                             </execution>
