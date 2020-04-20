@@ -231,7 +231,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.kie.kogito:kogito-quarkus-integration-test:0.8.0</appArtifact>
+                                    <appArtifact>org.kie.kogito:kogito-quarkus-integration-test:8.0.0-SNAPSHOT</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
