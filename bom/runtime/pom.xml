@@ -30,11 +30,11 @@
 
             <!-- universe EXTENSIONS -->
 
-            <!-- Camel extensions -->
+            <!-- Kogito -->
             <dependency>
-                <groupId>org.apache.camel.quarkus</groupId>
-                <artifactId>camel-quarkus-bom</artifactId>
-                <version>${camel-quarkus.version}</version>
+                <groupId>org.kie.kogito</groupId>
+                <artifactId>kogito-bom</artifactId>
+                <version>${kogito-quarkus.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -53,6 +53,16 @@
                 <groupId>io.debezium</groupId>
                 <artifactId>debezium-quarkus-outbox</artifactId>
                 <version>${debezium-quarkus-outbox.version}</version>
+            </dependency>
+
+            <!-- Camel extensions -->
+            <!-- This BOM must be the last one as otherwise it will set the dependency versions before the other BOM -->
+            <dependency>
+                <groupId>org.apache.camel.quarkus</groupId>
+                <artifactId>camel-quarkus-bom</artifactId>
+                <version>${camel-quarkus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
         </dependencies>
