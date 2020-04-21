@@ -26,6 +26,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-services</artifactId>
+            <version>0.10.0</version>
+        </dependency>
+        <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-universe-kogito-integration-tests-rpkgtests</artifactId>
             <version>${project.version}</version>
