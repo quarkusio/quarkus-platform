@@ -46,7 +46,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>1.4.0.CR2</quarkus.version>
+        <quarkus.version>999-SNAPSHOT</quarkus.version>
 
         <!-- After upgrading camel-quarkus regenerate the test modules by running
 
@@ -90,19 +90,9 @@
     <repositories>
         <repository>
             <id>kogito-staging</id>
-            <url>https://repository.jboss.org/nexus/content/repositories/jboss_releases_staging_profile-16874/</url>
-        </repository>
-        <repository>
-            <id>quarkus-staging</id>
-            <url>https://oss.sonatype.org/content/repositories/ioquarkus-1163/</url>
+            <url>https://repository.jboss.org/nexus/content/repositories/jboss_releases_staging_profile-16876/</url>
         </repository>
     </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>quarkus-staging</id>
-            <url>https://oss.sonatype.org/content/repositories/ioquarkus-1163/</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
         <pluginManagement>
