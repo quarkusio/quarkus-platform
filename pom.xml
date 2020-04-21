@@ -46,7 +46,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>1.4.0.CR1</quarkus.version>
+        <quarkus.version>1.4.0.CR2</quarkus.version>
 
         <!-- After upgrading camel-quarkus regenerate the test modules by running
 
@@ -61,7 +61,7 @@
 
              mvn validate -Pregen-kogito -N
         -->
-        <kogito-quarkus.version>0.8.0</kogito-quarkus.version>
+        <kogito-quarkus.version>0.10.0</kogito-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <rpkgtests-maven-plugin.version>0.7.0</rpkgtests-maven-plugin.version>
@@ -86,6 +86,23 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>kogito-staging</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/jboss_releases_staging_profile-16874/</url>
+        </repository>
+        <repository>
+            <id>quarkus-staging</id>
+            <url>https://oss.sonatype.org/content/repositories/ioquarkus-1163/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>quarkus-staging</id>
+            <url>https://oss.sonatype.org/content/repositories/ioquarkus-1163/</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <pluginManagement>
