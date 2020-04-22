@@ -57,7 +57,7 @@
         <quarkus-qpid-jms.version>0.13.0</quarkus-qpid-jms.version>
         <debezium-quarkus-outbox.version>1.1.0.Final</debezium-quarkus-outbox.version>
 
-        <!-- After upgrading camel-quarkus regenerate the test modules by running
+        <!-- After upgrading Kogito regenerate the test modules by running
 
              mvn validate -Pregen-kogito -N
         -->
