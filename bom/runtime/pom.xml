@@ -3,7 +3,7 @@
     <parent>
         <artifactId>quarkus-universe-parent</artifactId>
         <groupId>io.quarkus</groupId>
-        <version>999-SNAPSHOT</version>
+        <version>1.4.1.Final</version>
         <relativePath>../..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -138,7 +138,7 @@
                         <configuration>
                             <file>${basedir}/.flattened-pom.xml</file>
                             <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-kogito</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
-                            <value></value>
+                            <value />
                             <regexFlags>
                                 <regexFlag>MULTILINE</regexFlag>
                                 <regexFlag>DOTALL</regexFlag>
@@ -154,7 +154,7 @@
                         <configuration>
                             <file>${basedir}/.flattened-pom.xml</file>
                             <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-development-mode</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
-                            <value></value>
+                            <value />
                             <regexFlags>
                                 <regexFlag>MULTILINE</regexFlag>
                                 <regexFlag>DOTALL</regexFlag>
