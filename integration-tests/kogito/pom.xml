@@ -10,8 +10,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quarkus-universe-kogito-integration-tests-parent</artifactId>
-    <name>Quarkus universe - Kogito Integration Tests</name>
+    <artifactId>quarkus-universe-integration-tests-kogito-parent</artifactId>
+    <name>Quarkus universe - Integration Tests - Kogito</name>
 
     <packaging>pom</packaging>
 
@@ -73,30 +73,11 @@
         <dependencies>
             <dependency>
                 <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-universe-kogito-integration-tests-rpkgtests</artifactId>
+                <artifactId>quarkus-universe-integration-tests-kogito-rpkgtests</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-universe-bom-deployment</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-                <version>${quarkus.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-integration-test-class-transformer</artifactId>
-                <version>${quarkus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-
 
 </project>

@@ -46,7 +46,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>1.4.0.CR1</quarkus.version>
+        <quarkus.version>1.4.1.Final</quarkus.version>
 
         <!-- After upgrading camel-quarkus regenerate the test modules by running
 
@@ -54,14 +54,14 @@
         -->
         <camel-quarkus.version>1.0.0-M6</camel-quarkus.version>
 
-        <quarkus-qpid-jms.version>0.13.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms.version>0.14.0</quarkus-qpid-jms.version>
         <debezium-quarkus-outbox.version>1.1.0.Final</debezium-quarkus-outbox.version>
 
-        <!-- After upgrading camel-quarkus regenerate the test modules by running
+        <!-- After upgrading Kogito regenerate the test modules by running
 
              mvn validate -Pregen-kogito -N
         -->
-        <kogito-quarkus.version>0.8.0</kogito-quarkus.version>
+        <kogito-quarkus.version>0.10.0</kogito-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <rpkgtests-maven-plugin.version>0.7.0</rpkgtests-maven-plugin.version>

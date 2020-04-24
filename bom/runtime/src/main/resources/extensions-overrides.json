@@ -142,6 +142,13 @@
             "description": "Camel Zip Deflate compression support",
             "group-id": "org.apache.camel.quarkus",
             "artifact-id": "camel-quarkus-zip-deflater"
+        },
+        {
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kogito",
+            "metadata": {
+               "unlisted": true
+            }
         }
     ]
 }
