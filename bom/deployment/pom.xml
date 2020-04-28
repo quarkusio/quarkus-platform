@@ -48,6 +48,13 @@
                 <version>${debezium-quarkus-outbox.version}</version>
             </dependency>
 
+            <!-- Hazelcast Client -->
+            <dependency>
+                <groupId>com.hazelcast</groupId>
+                <artifactId>quarkus-hazelcast-deployment</artifactId>
+                <version>${quarkus-hazelcast-client.version}</version>
+            </dependency>
+
             <!-- Camel -->
             <!-- This BOM must be the last one as otherwise it will set the dependency versions before the other BOM -->
             <dependency>
@@ -57,7 +64,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
