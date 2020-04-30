@@ -30,6 +30,7 @@
         <module>camel-activemq</module>
         <module>camel-amqp</module>
         <module>camel-aws</module>
+        <module>camel-aws2</module>
         <module>camel-azure</module>
         <module>camel-base64</module>
         <module>camel-bean</module>
@@ -62,11 +63,14 @@
         <module>camel-http</module>
         <module>camel-hystrix</module>
         <module>camel-infinispan</module>
+        <module>camel-influxdb</module>
         <module>camel-jaxb</module>
         <module>camel-jdbc</module>
         <module>camel-jira</module>
         <module>camel-jsonpath</module>
         <module>camel-kafka</module>
+        <module>camel-kubernetes</module>
+        <module>camel-kudu</module>
         <module>camel-mail</module>
         <module>camel-messaging</module>
         <module>camel-microprofile</module>
@@ -86,6 +90,7 @@
         <module>camel-salesforce</module>
         <module>camel-scheduler</module>
         <module>camel-seda</module>
+        <module>camel-send-dynamic-http</module>
         <module>camel-servicenow</module>
         <module>camel-servlet</module>
         <module>camel-slack</module>
