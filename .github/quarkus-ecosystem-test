@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 set -e
 
-# temporarily disable Kogito tests until 0.9.1 is out
-mvn --settings .github/quarkus-ecosystem-maven-settings.xml clean install -Dquarkus.version=${QUARKUS_VERSION} --projects '!io.quarkus:quarkus-universe-integration-tests-kogito-parent,!io.quarkus:kogito-quarkus-integration-test,!io.quarkus:quarkus-universe-integration-tests-kogito-rpkgtests'
+mvn --settings .github/quarkus-ecosystem-maven-settings.xml clean install -Dquarkus.version=${QUARKUS_VERSION} 
