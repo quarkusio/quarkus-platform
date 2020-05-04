@@ -182,6 +182,10 @@
                                     <rpkgModulePomXmlPath>integration-tests/camel/rpkgtests/pom.xml</rpkgModulePomXmlPath>
                                     <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
                                     <templatesUriBase>file:src/rpkg-templates</templatesUriBase>
+                                    <cleanExcludes>
+                                        <cleanExclude>pom.xml</cleanExclude>
+                                        <cleanExclude>camel-timer-devmode/**</cleanExclude>
+                                    </cleanExcludes>
                                 </configuration>
                             </execution>
                         </executions>
