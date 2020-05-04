@@ -65,7 +65,7 @@
         <kogito-quarkus.version>0.10.1</kogito-quarkus.version>
 
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
-        <rpkgtests-maven-plugin.version>0.7.0</rpkgtests-maven-plugin.version>
+        <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
     </properties>
