@@ -51,6 +51,7 @@
         </plugins>
     </build>
 
+    <!-- disabled https://github.com/apache/camel-quarkus/issues/1166
     <profiles>
         <profile>
             <id>native-image</id>
@@ -112,5 +113,5 @@
         </profile>
 
     </profiles>
-
+    -->
 </project>
