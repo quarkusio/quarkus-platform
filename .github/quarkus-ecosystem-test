@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -e
 
-mvn --settings .github/quarkus-ecosystem-maven-settings.xml clean install -Dquarkus.version=${QUARKUS_VERSION} 
+# just run all the tests
+mvn --settings .github/quarkus-ecosystem-maven-settings.xml clean install -Dquarkus.version=${QUARKUS_VERSION}
