@@ -74,6 +74,13 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- Blaze-Persistence extension -->
+            <dependency>
+                <groupId>com.blazebit</groupId>
+                <artifactId>blaze-persistence-integration-quarkus</artifactId>
+                <version>${quarkus-blaze-persistence.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>

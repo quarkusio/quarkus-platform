@@ -25,6 +25,7 @@
         <module>rpkgtests</module>
         <module>qpid-jms</module>
         <module>debezium-outbox</module>
+        <module>blaze-persistence</module>
     </modules>
 
     <dependencyManagement>
