@@ -15,6 +15,18 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+# workaround: first do a first run to install without tests
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    options: '-B -DskipTests -DskipITs'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'clean install'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
