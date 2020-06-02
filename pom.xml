@@ -52,7 +52,7 @@
 
              mvn validate -Pregen-camel -N
         -->
-        <camel-quarkus.version>1.0.0-M7</camel-quarkus.version>
+        <camel-quarkus.version>1.0.0-CR2</camel-quarkus.version>
 
         <quarkus-qpid-jms.version>0.15.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>1.0.0-RC4</quarkus-hazelcast-client.version>
@@ -65,6 +65,7 @@
         -->
         <kogito-quarkus.version>0.10.1</kogito-quarkus.version>
 
+        <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -92,6 +93,11 @@
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${build-helper-maven-plugin.version}</version>
+                </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <configuration>

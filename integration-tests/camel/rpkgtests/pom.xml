@@ -26,6 +26,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-avro</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-aws</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -91,36 +96,6 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-impl</artifactId>
-            <version>${camel-quarkus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-main</artifactId>
-            <version>${camel-quarkus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-main-caffein-lrucache</artifactId>
-            <version>${camel-quarkus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-main-collector</artifactId>
-            <version>${camel-quarkus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-main-xml-io</artifactId>
-            <version>${camel-quarkus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-core-main-xml-jaxb</artifactId>
-            <version>${camel-quarkus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-couchdb</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -141,7 +116,17 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-debezium</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-dozer</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-elasticsearch-rest</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
@@ -241,6 +226,31 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-main</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-main-caffein-lrucache</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-main-collector</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-main-xml-io</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-main-xml-jaxb</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-messaging</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -316,7 +326,17 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-rest-openapi</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-salesforce</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-sap-netweaver</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
@@ -399,11 +419,6 @@
             <artifactId>camel-quarkus-integration-test-xstream</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-sap-netweaver-integration-test</artifactId>
-            <version>${camel-quarkus.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -429,6 +444,11 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-amqp</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-avro</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
@@ -498,36 +518,6 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
-                                    <artifactId>camel-quarkus-integration-test-core-impl</artifactId>
-                                    <version>${camel-quarkus.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>org.apache.camel.quarkus</groupId>
-                                    <artifactId>camel-quarkus-integration-test-core-main</artifactId>
-                                    <version>${camel-quarkus.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>org.apache.camel.quarkus</groupId>
-                                    <artifactId>camel-quarkus-integration-test-core-main-caffein-lrucache</artifactId>
-                                    <version>${camel-quarkus.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>org.apache.camel.quarkus</groupId>
-                                    <artifactId>camel-quarkus-integration-test-core-main-collector</artifactId>
-                                    <version>${camel-quarkus.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>org.apache.camel.quarkus</groupId>
-                                    <artifactId>camel-quarkus-integration-test-core-main-xml-io</artifactId>
-                                    <version>${camel-quarkus.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>org.apache.camel.quarkus</groupId>
-                                    <artifactId>camel-quarkus-integration-test-core-main-xml-jaxb</artifactId>
-                                    <version>${camel-quarkus.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-couchdb</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
@@ -548,7 +538,17 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-debezium</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-dozer</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-elasticsearch-rest</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
@@ -648,6 +648,31 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-main</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-main-caffein-lrucache</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-main-collector</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-main-xml-io</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-main-xml-jaxb</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-messaging</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
@@ -723,7 +748,17 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-rest-openapi</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-salesforce</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-sap-netweaver</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
@@ -804,11 +839,6 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-xstream</artifactId>
-                                    <version>${camel-quarkus.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>org.apache.camel.quarkus</groupId>
-                                    <artifactId>camel-quarkus-sap-netweaver-integration-test</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                             </testJars>

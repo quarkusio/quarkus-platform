@@ -8,7 +8,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>camel-quarkus-sap-netweaver-integration-test</artifactId>
+    <artifactId>quarkus-universe-integration-tests-camel-debezium</artifactId>
 
     <dependencies>
         <dependency>
@@ -25,12 +25,21 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-sap-netweaver-integration-test</artifactId>
+            <artifactId>camel-quarkus-integration-test-debezium</artifactId>
             <version>${camel-quarkus.version}</version>
+        </dependency>
+        <!-- Camel Quarkus cannot depend on the GPL2 licensed mysql-connector-java directly due to ASF legal policy -->
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-debezium-mysql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-sap-netweaver-integration-test-rpkgtests</artifactId>
+            <artifactId>camel-quarkus-integration-test-debezium-rpkgtests</artifactId>
             <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
@@ -40,12 +49,37 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>reserve-network-port</id>
+                        <goals>
+                            <goal>reserve-network-port</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <portNames>
+                                <portName>test.http.port.jvm</portName>
+                                <portName>test.https.port.jvm</portName>
+                                <portName>test.http.port.native</portName>
+                                <portName>test.https.port.native</portName>
+                            </portNames>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>org.apache.camel.quarkus:camel-quarkus-sap-netweaver-integration-test-rpkgtests</dependency>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium-rpkgtests</dependency>
                     </dependenciesToScan>
+                    <systemPropertyVariables>
+                        <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
+                        <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
@@ -66,7 +100,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>org.apache.camel.quarkus:camel-quarkus-sap-netweaver-integration-test-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -78,6 +112,8 @@
                                 <configuration>
                                     <systemProperties>
                                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                                        <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
+                                        <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
                                     </systemProperties>
                                 </configuration>
                             </execution>
@@ -94,7 +130,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-sap-netweaver-integration-test:${camel-quarkus.version}</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
