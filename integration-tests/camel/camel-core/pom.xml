@@ -40,12 +40,37 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>reserve-network-port</id>
+                        <goals>
+                            <goal>reserve-network-port</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <portNames>
+                                <portName>test.http.port.jvm</portName>
+                                <portName>test.https.port.jvm</portName>
+                                <portName>test.http.port.native</portName>
+                                <portName>test.https.port.native</portName>
+                            </portNames>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
                         <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-core-rpkgtests</dependency>
                     </dependenciesToScan>
+                    <systemPropertyVariables>
+                        <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
+                        <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
@@ -78,6 +103,8 @@
                                 <configuration>
                                     <systemProperties>
                                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                                        <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
+                                        <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
                                     </systemProperties>
                                 </configuration>
                             </execution>
