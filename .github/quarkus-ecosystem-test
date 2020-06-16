@@ -2,4 +2,4 @@
 set -e
 
 # just run all the tests
-mvn --settings .github/quarkus-ecosystem-maven-settings.xml -B -ntp clean install -Dquarkus.version=${QUARKUS_VERSION}
+mvn --settings .github/quarkus-ecosystem-maven-settings.xml -B -ntp clean install -Dquarkus.version=${QUARKUS_VERSION} --projects '!io.quarkus:quarkus-universe-integration-tests-camel-debezium'
