@@ -21,6 +21,7 @@
     <modules>
         <module>camel</module>
         <module>kogito</module>
+        <module>optaplanner</module>
         <module>hazelcast-client</module>
         <module>rpkgtests</module>
         <module>qpid-jms</module>
