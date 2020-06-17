@@ -28,6 +28,12 @@
             <artifactId>quarkus-hazelcast-client-integration-tests</artifactId>
             <version>${quarkus-hazelcast-client.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.datastax.oss.quarkus</groupId>
+            <artifactId>cassandra-quarkus-integration-tests</artifactId>
+            <version>${quarkus-cassandra-client.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -59,6 +65,11 @@
                                     <groupId>com.hazelcast</groupId>
                                     <artifactId>quarkus-hazelcast-client-integration-tests</artifactId>
                                     <version>${quarkus-hazelcast-client.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>com.datastax.oss.quarkus</groupId>
+                                    <artifactId>cassandra-quarkus-integration-tests</artifactId>
+                                    <version>${quarkus-cassandra-client.version}</version>
                                 </testJar>
                             </testJars>
                         </configuration>

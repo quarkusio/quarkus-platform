@@ -55,6 +55,15 @@
                 <version>${quarkus-hazelcast-client.version}</version>
             </dependency>
 
+            <!-- Cassandra Client -->
+            <dependency>
+                <groupId>com.datastax.oss.quarkus</groupId>
+                <artifactId>cassandra-quarkus-bom-deployment</artifactId>
+                <version>${quarkus-cassandra-client.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <!-- Camel -->
             <!-- This BOM must be the last one as otherwise it will set the dependency versions before the other BOM -->
             <dependency>
