@@ -39,6 +39,15 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- OptaPlanner -->
+            <dependency>
+                <groupId>org.optaplanner</groupId>
+                <artifactId>optaplanner-bom</artifactId>
+                <version>${optaplanner-quarkus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <!-- Qpid JMS -->
             <dependency>
                 <groupId>org.amqphub.quarkus</groupId>
