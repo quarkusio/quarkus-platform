@@ -27,6 +27,7 @@
         <module>qpid-jms</module>
         <module>debezium-outbox</module>
         <module>blaze-persistence</module>
+        <module>cassandra-client</module>
     </modules>
 
     <dependencyManagement>
