@@ -30,20 +30,20 @@
 
             <!-- universe EXTENSIONS -->
 
-            <!-- Kogito -->
-            <dependency>
-                <groupId>org.kie.kogito</groupId>
-                <artifactId>kogito-bom</artifactId>
-                <version>${kogito-quarkus.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- OptaPlanner -->
             <dependency>
                 <groupId>org.optaplanner</groupId>
                 <artifactId>optaplanner-bom</artifactId>
                 <version>${optaplanner-quarkus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Kogito -->
+            <dependency>
+                <groupId>org.kie.kogito</groupId>
+                <artifactId>kogito-bom</artifactId>
+                <version>${kogito-quarkus.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
