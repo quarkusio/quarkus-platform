@@ -172,7 +172,7 @@
                         </goals>
                         <configuration>
                             <file>${basedir}/.flattened-pom.xml</file>
-                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-kogito</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-kogito[^/]*</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
                             <value />
                             <regexFlags>
                                 <regexFlag>MULTILINE</regexFlag>
@@ -205,6 +205,102 @@
                         <configuration>
                             <file>${basedir}/.flattened-pom.xml</file>
                             <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-optaplanner[^/]*</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>clean-bom-test-maven</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-test-maven</artifactId>\s*<version>1\.5\.0\.Final</version>\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>clean-bom-security-test-utils</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-security-test-utils</artifactId>\s*<version>1\.5\.0\.Final</version>\s+(<scope>test</scope>\s+)?</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>clean-bom-vault-spi</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-vault-spi</artifactId>\s*<version>1\.4\.2\.Final</version>\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>clean-bom-funqy-knative</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-funqy-knative</artifactId>\s*<version>1\.4\.2\.Final</version>\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>clean-bom-integration-tests</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-integration-test-[^/]*</artifactId>\s*<version>1\.5\.0\.Final</version>\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>clean-bom-bootstrap-core-test-jar</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-bootstrap-core</artifactId>\s*<version>1\.5\.0\.Final</version>\s+<type>test-jar</type>\s+<scope>test</scope>\s+</dependency>]]></token>
                             <value />
                             <regexFlags>
                                 <regexFlag>MULTILINE</regexFlag>
