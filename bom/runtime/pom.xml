@@ -165,7 +165,7 @@
                 <version>1.5.3</version>
                 <executions>
                     <execution>
-                        <id>clean-json-kogito</id>
+                        <id>clean-bom-kogito</id>
                         <phase>process-resources</phase>
                         <goals>
                             <goal>replace</goal>
@@ -181,7 +181,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>clean-json-development-mode</id>
+                        <id>clean-bom-development-mode</id>
                         <phase>process-resources</phase>
                         <goals>
                             <goal>replace</goal>
@@ -189,6 +189,22 @@
                         <configuration>
                             <file>${basedir}/.flattened-pom.xml</file>
                             <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-development-mode</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>clean-bom-optaplanner</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>io.quarkus</groupId>\s*<artifactId>quarkus-optaplanner[^/]*</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
                             <value />
                             <regexFlags>
                                 <regexFlag>MULTILINE</regexFlag>
