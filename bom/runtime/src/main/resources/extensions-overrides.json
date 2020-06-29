@@ -170,6 +170,13 @@
             "metadata": {
                "unlisted": true
             }
+        },
+        {
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-funqy-knative",
+            "metadata": {
+               "unlisted": true
+            }
         }
     ]
 }
