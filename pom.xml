@@ -65,7 +65,7 @@
              mvn validate -Pregen-kogito -N
         -->
         <kogito-quarkus.version>0.10.1</kogito-quarkus.version>
-        <optaplanner-quarkus.version>7.39.0.CR1</optaplanner-quarkus.version>
+        <optaplanner-quarkus.version>7.39.0.Final</optaplanner-quarkus.version>
 
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
