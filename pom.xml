@@ -56,7 +56,8 @@
 
         <quarkus-qpid-jms.version>0.15.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>1.0.0-RC4</quarkus-hazelcast-client.version>
-        <debezium-quarkus-outbox.version>1.2.0.Beta2</debezium-quarkus-outbox.version>
+        <debezium.version>1.2.0.Final</debezium.version>
+        <debezium-quarkus-outbox.version>1.2.0.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.5.0-Alpha4</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.0.0-alpha1</quarkus-cassandra-client.version>
 
@@ -66,6 +67,7 @@
         -->
         <kogito-quarkus.version>0.10.1</kogito-quarkus.version>
         <optaplanner-quarkus.version>7.39.0.Final</optaplanner-quarkus.version>
+        <testcontainers.version>1.14.3</testcontainers.version>
 
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <flatten-plugin.version>1.1.0</flatten-plugin.version>
