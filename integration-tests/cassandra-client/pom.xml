@@ -34,11 +34,9 @@
       <version>${quarkus-cassandra-client.version}</version>
       <scope>test</scope>
     </dependency>
-    <!-- Need to force version 4.2, 4.3 has binary incompatibility issues -->
     <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
-      <version>4.2.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -143,10 +141,6 @@
                 </goals>
                 <configuration>
                   <groups>native</groups>
-                  <excludes>
-                    <!-- this test is broken in 1.0.0-alpha1 -->
-                    <exclude>**/CassandraMetricsNativeIT.java</exclude>
-                  </excludes>
                   <summaryFile>${project.build.directory}/failsafe-reports/failsafe-summary-native.xml</summaryFile>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
