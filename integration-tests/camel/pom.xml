@@ -65,7 +65,10 @@
         <module>camel-jaxb</module>
         <module>camel-jdbc</module>
         <module>camel-jira</module>
+        <module>camel-jolt</module>
+        <module>camel-json-validator</module>
         <module>camel-jsonpath</module>
+        <module>camel-jta</module>
         <module>camel-kafka</module>
         <module>camel-kubernetes</module>
         <module>camel-kudu</module>
@@ -73,14 +76,17 @@
         <module>camel-main</module>
         <module>camel-main-caffein-lrucache</module>
         <module>camel-main-collector</module>
+        <module>camel-main-devmode</module>
         <module>camel-main-xml-io</module>
         <module>camel-main-xml-jaxb</module>
         <module>camel-messaging</module>
         <module>camel-microprofile</module>
+        <module>camel-mock</module>
         <module>camel-mongodb</module>
         <module>camel-mustache</module>
         <module>camel-netty</module>
         <module>camel-olingo4</module>
+        <module>camel-openapi-java</module>
         <module>camel-opentracing</module>
         <module>camel-pdf</module>
         <module>camel-platform-http</module>
@@ -104,8 +110,10 @@
         <module>camel-stream</module>
         <module>camel-tarfile</module>
         <module>camel-telegram</module>
+        <module>camel-tika</module>
         <module>camel-twitter</module>
         <module>camel-validator</module>
+        <module>camel-vertx</module>
         <module>camel-websocket-jsr356</module>
         <module>camel-xml</module>
         <module>camel-xstream</module>
