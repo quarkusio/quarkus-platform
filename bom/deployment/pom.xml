@@ -265,6 +265,22 @@
                             </regexFlags>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>clean-bom-test-containers</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>org.testcontainers</groupId>\s*<artifactId>[^<]+</artifactId>\s*<version>[^<]+</version>(\s+<type>test-jar</type>)?(\s+<scope>test</scope>)?\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
