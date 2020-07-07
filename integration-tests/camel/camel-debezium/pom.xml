@@ -10,10 +10,6 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-debezium</artifactId>
 
-    <properties>
-        <skipTests>true</skipTests>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
