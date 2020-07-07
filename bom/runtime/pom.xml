@@ -56,6 +56,18 @@
             </dependency>
             <dependency>
                 <groupId>io.debezium</groupId>
+                <artifactId>debezium-core</artifactId>
+                <classifier>tests</classifier>
+                <version>${debezium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.debezium</groupId>
+                <artifactId>debezium-core</artifactId>
+                <type>test-jar</type>
+                <version>${debezium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.debezium</groupId>
                 <artifactId>debezium-dll-parser</artifactId>
                 <version>${debezium.version}</version>
             </dependency>
