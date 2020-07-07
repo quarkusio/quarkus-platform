@@ -373,6 +373,22 @@
                             </regexFlags>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>clean-bom-springframework</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>org.springframework[^<]*</groupId>.*?</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
