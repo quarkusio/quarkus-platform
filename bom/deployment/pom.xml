@@ -297,6 +297,23 @@
                             </regexFlags>
                         </configuration>
                     </execution>
+                    <!-- To be removed in 1.7 -->
+                    <execution>
+                        <id>clean-bom-elasticsearch-high-level-client</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>org.elasticsearch.client</groupId>\s*<artifactId>elasticsearch-rest-high-level-client</artifactId>\s*<version>7\.6\.1</version>\s+</dependency>]]></token>
+                            <value><![CDATA[<dependency><groupId>org.elasticsearch.client</groupId><artifactId>elasticsearch-rest-high-level-client</artifactId><version>7.7.0</version></dependency>]]></value>
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
