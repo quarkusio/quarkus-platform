@@ -314,6 +314,23 @@
                             </regexFlags>
                         </configuration>
                     </execution>
+                    <!-- To be removed in 1.6.1.Final -->
+                    <execution>
+                        <id>clean-bom-antlr</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>org.antlr</groupId>\s*<artifactId>antlr4</artifactId>\s*<version>4\.8</version>\s+</dependency>]]></token>
+                            <value><![CDATA[<dependency><groupId>org.antlr</groupId><artifactId>antlr4</artifactId><version>4.7.2</version></dependency>]]></value>
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
