@@ -58,7 +58,7 @@
         <quarkus-hazelcast-client.version>1.0.0-RC4</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.2.0.Beta2</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.5.0-Alpha4</quarkus-blaze-persistence.version>
-        <quarkus-cassandra-client.version>1.0.0-alpha2</quarkus-cassandra-client.version>
+        <quarkus-cassandra-client.version>1.0.0-alpha3</quarkus-cassandra-client.version>
 
         <!-- After upgrading Kogito regenerate the test modules by running
 
