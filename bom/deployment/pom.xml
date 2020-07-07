@@ -34,13 +34,6 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Qpid JMS -->
-            <dependency>
-                <groupId>org.amqphub.quarkus</groupId>
-                <artifactId>quarkus-qpid-jms-deployment</artifactId>
-                <version>${quarkus-qpid-jms.version}</version>
-            </dependency>
-
             <!-- Debezium -->
             <dependency>
                 <groupId>io.debezium</groupId>
