@@ -64,14 +64,6 @@
                 <artifactId>debezium-embedded</artifactId>
                 <version>${debezium.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>testcontainers-bom</artifactId>
-                <type>pom</type>
-                <scope>import</scope>
-                <version>1.14.3</version>
-            </dependency>
-
 
             <!-- universe EXTENSIONS -->
 
