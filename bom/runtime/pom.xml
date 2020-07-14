@@ -148,6 +148,11 @@
                 <artifactId>blaze-persistence-integration-quarkus</artifactId>
                 <version>${quarkus-blaze-persistence.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.blazebit</groupId>
+                <artifactId>blaze-persistence-entity-view-processor</artifactId>
+                <version>${quarkus-blaze-persistence.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
