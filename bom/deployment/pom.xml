@@ -25,15 +25,6 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Quarkus Core Deployment BOM -->
-            <dependency>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-bom-deployment</artifactId>
-                <version>${quarkus.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- Debezium -->
             <dependency>
                 <groupId>io.debezium</groupId>
