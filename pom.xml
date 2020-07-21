@@ -77,8 +77,7 @@
     </properties>
 
     <modules>
-        <module>bom/runtime</module>
-        <module>bom/deployment</module>
+        <module>bom</module>
 
         <module>integration-tests</module>
     </modules>

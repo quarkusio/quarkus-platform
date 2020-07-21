@@ -4,7 +4,7 @@
         <artifactId>quarkus-universe-parent</artifactId>
         <groupId>io.quarkus</groupId>
         <version>999-SNAPSHOT</version>
-        <relativePath>../..</relativePath>
+        <relativePath>..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>quarkus-universe-bom</artifactId>
@@ -112,6 +112,11 @@
                 <artifactId>debezium-quarkus-outbox</artifactId>
                 <version>${debezium-quarkus-outbox.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.debezium</groupId>
+                <artifactId>debezium-quarkus-outbox-deployment</artifactId>
+                <version>${debezium-quarkus-outbox.version}</version>
+            </dependency>
 
             <!-- Hazelcast Client -->
             <dependency>
@@ -120,6 +125,11 @@
                 <version>${quarkus-hazelcast-client.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.hazelcast</groupId>
+                <artifactId>quarkus-hazelcast-deployment</artifactId>
+                <version>${quarkus-hazelcast-client.version}</version>
             </dependency>
 
             <!-- Cassandra Client -->
@@ -130,7 +140,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <dependency>
+                <groupId>com.datastax.oss.quarkus</groupId>
+                <artifactId>cassandra-quarkus-bom-deployment</artifactId>
+                <version>${quarkus-cassandra-client.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <!-- Camel extensions -->
             <!-- This BOM must be the last one as otherwise it will set the dependency versions before the other BOM -->
@@ -151,6 +167,11 @@
             <dependency>
                 <groupId>com.blazebit</groupId>
                 <artifactId>blaze-persistence-entity-view-processor</artifactId>
+                <version>${quarkus-blaze-persistence.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.blazebit</groupId>
+                <artifactId>blaze-persistence-integration-quarkus-deployment</artifactId>
                 <version>${quarkus-blaze-persistence.version}</version>
             </dependency>
 
