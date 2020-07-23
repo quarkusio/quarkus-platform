@@ -78,6 +78,22 @@
 
     <profiles>
         <profile>
+            <!--
+                Disable tests for Quarkus SNAPSHOTs since camel-quarkus-elasticsearch-rest 1.0.0-CR3 is not compatible.
+                This can be removed when camel-quarkus supports quarkus >= 1.7.x.
+            -->
+            <id>quarkus-snapshots-disable-tests</id>
+            <activation>
+                <property>
+                    <name>quarkus.version</name>
+                    <value>999-SNAPSHOT</value>
+                </property>
+            </activation>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </profile>
+        <profile>
             <id>native-image</id>
             <activation>
                 <property>
