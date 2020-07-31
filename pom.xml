@@ -65,7 +65,7 @@
 
              mvn validate -Pregen-kogito -N
         -->
-        <kogito-quarkus.version>0.11.1</kogito-quarkus.version>
+        <kogito-quarkus.version>0.13.0</kogito-quarkus.version>
         <optaplanner-quarkus.version>7.41.0.Final</optaplanner-quarkus.version>
         <testcontainers.version>1.14.3</testcontainers.version>
 
