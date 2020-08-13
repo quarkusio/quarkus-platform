@@ -58,6 +58,7 @@
         <module>camel-github</module>
         <module>camel-google</module>
         <module>camel-graphql</module>
+        <module>camel-grok</module>
         <module>camel-http</module>
         <module>camel-hystrix</module>
         <module>camel-infinispan</module>
@@ -66,6 +67,7 @@
         <module>camel-jdbc</module>
         <module>camel-jira</module>
         <module>camel-jolt</module>
+        <module>camel-jpa</module>
         <module>camel-json-validator</module>
         <module>camel-jsonpath</module>
         <module>camel-jta</module>
@@ -95,6 +97,7 @@
         <module>camel-qute</module>
         <module>camel-reactive-streams</module>
         <module>camel-ref</module>
+        <module>camel-rest</module>
         <module>camel-rest-binding-mode-xml</module>
         <module>camel-rest-openapi</module>
         <module>camel-salesforce</module>

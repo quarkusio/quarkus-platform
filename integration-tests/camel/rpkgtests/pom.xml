@@ -166,6 +166,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-grok</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-http</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -202,6 +207,11 @@
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-jolt</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-jpa</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
@@ -347,6 +357,11 @@
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-ref</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-rest</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
@@ -628,6 +643,11 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-grok</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-http</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
@@ -664,6 +684,11 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-jolt</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-jpa</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
@@ -809,6 +834,11 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-ref</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-rest</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
