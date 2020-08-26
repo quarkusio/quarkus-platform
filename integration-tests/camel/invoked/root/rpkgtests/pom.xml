@@ -336,6 +336,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-nats</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-netty</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -859,6 +864,11 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-mustache</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-nats</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>

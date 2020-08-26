@@ -70,7 +70,6 @@
         <testcontainers.version>1.14.3</testcontainers.version>
 
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
-        <flatten-plugin.version>1.1.0</flatten-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -78,7 +77,6 @@
 
     <modules>
         <module>bom</module>
-
         <module>integration-tests</module>
     </modules>
 
@@ -186,12 +184,12 @@
                                             <versionPlaceholder>@{camel-quarkus.version}</versionPlaceholder>
                                         </testJarXml>
                                     </testJarXmls>
-                                    <testModulesParentDir>integration-tests/camel</testModulesParentDir>
+                                    <testModulesParentDir>integration-tests/camel/invoked/root</testModulesParentDir>
                                     <testModuleArtifactIdReplacers>/^camel-quarkus-integration-test-(.*)$/quarkus-universe-integration-tests-camel-$1/</testModuleArtifactIdReplacers>
                                     <testModuleDirReplacers>/^camel-quarkus-integration-test-(.*)$/camel-$1/</testModuleDirReplacers>
-                                    <rpkgModulePomXmlPath>integration-tests/camel/rpkgtests/pom.xml</rpkgModulePomXmlPath>
+                                    <rpkgModulePomXmlPath>integration-tests/camel/invoked/root/rpkgtests/pom.xml</rpkgModulePomXmlPath>
                                     <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
-                                    <templatesUriBase>file:src/rpkg-templates</templatesUriBase>
+                                    <templatesUriBase>file:src/camel-rpkg-templates</templatesUriBase>
                                     <cleanExcludes>
                                         <cleanExclude>pom.xml</cleanExclude>
                                         <cleanExclude>camel-timer-devmode/**</cleanExclude>
@@ -226,8 +224,8 @@
                                             <version>${kogito-quarkus.version}</version>
                                         </testJar>
                                     </testJars>
-                                    <testModulesParentDir>integration-tests/kogito</testModulesParentDir>
-                                    <rpkgModulePomXmlPath>integration-tests/kogito/rpkgtests/pom.xml</rpkgModulePomXmlPath>
+                                    <testModulesParentDir>integration-tests/kogito/invoked/root</testModulesParentDir>
+                                    <rpkgModulePomXmlPath>integration-tests/kogito/invoked/root/rpkgtests/pom.xml</rpkgModulePomXmlPath>
                                     <rpkgtestsPluginVersion>@{rpkgtests-maven-plugin.version}</rpkgtestsPluginVersion>
                                     <templatesUriBase>file:src/kogito-rpkg-templates</templatesUriBase>
                                 </configuration>

@@ -8,26 +8,26 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quarkus-universe-integration-tests</artifactId>
-    <name>Quarkus universe - Integration Tests</name>
+    <artifactId>quarkus-universe-integration-tests-parent</artifactId>
+    <name>Quarkus universe - Integration Tests - Parent</name>
 
     <packaging>pom</packaging>
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
         <gpg.skip>true</gpg.skip>
+        <invoker.goals>clean install -e</invoker.goals>
     </properties>
 
     <modules>
+        <module>blaze-persistence</module>
         <module>camel</module>
+        <module>cassandra</module>
+        <module>debezium</module>
+        <module>hazelcast</module>
         <module>kogito</module>
         <module>optaplanner</module>
-        <module>hazelcast-client</module>
-        <module>rpkgtests</module>
-        <module>qpid-jms</module>
-        <module>debezium-outbox</module>
-        <module>blaze-persistence</module>
-        <module>cassandra-client</module>
+        <module>qpid</module>
     </modules>
 
     <dependencyManagement>
@@ -59,14 +59,49 @@
         </dependencies>
     </dependencyManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-universe-bom</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <artifactId>maven-invoker-plugin</artifactId>
+                    <version>3.2.1</version>
+                    <configuration>
+                        <projectsDirectory>invoked</projectsDirectory>
+                        <streamLogs>true</streamLogs>
+                        <suppressSummaries>true</suppressSummaries>
+                        <goals>${invoker.goals}</goals>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>integration-test</id>
+                            <goals>
+                                <goal>install</goal>
+                                <goal>run</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
 
                 <!-- we are not creating sources archives for testsuite artifacts -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
+                    <inherited>true</inherited>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
@@ -78,4 +113,18 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <profiles>
+        <profile>
+            <id>native</id>
+            <activation>
+                <property>
+                    <name>native</name>
+                </property>
+            </activation>
+            <properties>
+                <invoker.goals>clean install -e -Dnative</invoker.goals>
+            </properties>
+        </profile>
+    </profiles>
 </project>

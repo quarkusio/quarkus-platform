@@ -32,6 +32,8 @@ docker/distroless/bazel-*
 quarkus.log
 replay_*.log
 .flattened-pom.xml
+build.log
+interpolated-pom.xml
 
 # Temporary data ignored in camel-quarkus
 integration-tests/camel-sjms/data/

@@ -3,36 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-universe-integration-tests</artifactId>
+        <artifactId>quarkus-universe-integration-tests-hazelcast-parent</artifactId>
         <version>999-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>quarkus-universe-integration-tests-rpkgtests</artifactId>
+    <artifactId>quarkus-universe-integration-tests-hazelcast-rpkgtests</artifactId>
     <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>org.amqphub.quarkus</groupId>
-            <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
-            <version>${quarkus-qpid-jms.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.debezium</groupId>
-            <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-            <version>${debezium-quarkus-outbox.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.hazelcast</groupId>
             <artifactId>quarkus-hazelcast-client-integration-tests</artifactId>
             <version>${quarkus-hazelcast-client.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.datastax.oss.quarkus</groupId>
-            <artifactId>cassandra-quarkus-integration-tests</artifactId>
-            <version>${quarkus-cassandra-client.version}</version>
         </dependency>
     </dependencies>
 
@@ -52,24 +35,9 @@
                         <configuration>
                             <testJars>
                                 <testJar>
-                                    <groupId>org.amqphub.quarkus</groupId>
-                                    <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
-                                    <version>${quarkus-qpid-jms.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>io.debezium</groupId>
-                                    <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-                                    <version>${debezium-quarkus-outbox.version}</version>
-                                </testJar>
-                                <testJar>
                                     <groupId>com.hazelcast</groupId>
                                     <artifactId>quarkus-hazelcast-client-integration-tests</artifactId>
                                     <version>${quarkus-hazelcast-client.version}</version>
-                                </testJar>
-                                <testJar>
-                                    <groupId>com.datastax.oss.quarkus</groupId>
-                                    <artifactId>cassandra-quarkus-integration-tests</artifactId>
-                                    <version>${quarkus-cassandra-client.version}</version>
                                 </testJar>
                             </testJars>
                         </configuration>
