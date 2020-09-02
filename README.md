@@ -9,6 +9,12 @@
 Quarkus Platform aggregates extensions from Quarkus Core and those developed by the community into a single tested, compatible and versioned set
 that can be used by application developers to align the dependency versions of their applications with those verified by the platform testsuite.
 
+## Platform coordination mailing list
+
+If you are a Quarkus Platform participant, it is highly recommended to subscribe to the [quarkus-platform-coordination mailing list](https://groups.google.com/g/quarkus-platform-coordination).
+
+It is a low traffic list which aims to facilitate the coordination of the Platform releases and to share important Platform-related changes.
+
 ## Integration testsuite
 
 At this point, Quarkus Core extension tests are not included into the platform testsuite. There are two reasons for that:
