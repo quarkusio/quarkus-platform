@@ -1,4 +1,32 @@
 {
+  "metadata":{
+    "maven": {
+      "repositories": [
+        {
+          "id": "redhat",
+          "url": "https://maven.repository.redhat.com",
+          "releases-enabled": "true",
+          "snapshots-enabled": "false"
+        }
+      ],
+      "plugin-repositories": [
+        {
+          "id": "redhat",
+          "url": "https://maven.repository.redhat.com",
+          "releases-enabled": "true",
+          "snapshots-enabled": "false"
+        }
+      ]
+    },
+    "gradle": {
+      "repositories": [
+        {
+          "id": "redhat",
+          "url": "https://maven.repository.redhat.com"
+        }
+      ]
+    }
+  },
   "extensions" :[
     {
       "group-id": "io.quarkus",
