@@ -54,7 +54,7 @@
         -->
         <camel-quarkus.version>1.0.0</camel-quarkus.version>
 
-        <quarkus-qpid-jms.version>0.17.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms.version>0.18.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>1.0.0</quarkus-hazelcast-client.version>
         <debezium.version>1.2.3.Final</debezium.version>
         <debezium-quarkus-outbox.version>1.2.3.Final</debezium-quarkus-outbox.version>
