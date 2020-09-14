@@ -8,7 +8,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>quarkus-universe-integration-tests-camel-jpa</artifactId>
+    <artifactId>quarkus-universe-integration-tests-camel-as2</artifactId>
 
     <dependencies>
         <dependency>
@@ -25,12 +25,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-jpa</artifactId>
+            <artifactId>camel-quarkus-integration-test-as2</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-jpa-rpkgtests</artifactId>
+            <artifactId>camel-quarkus-integration-test-as2-rpkgtests</artifactId>
             <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
@@ -65,7 +65,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jpa-rpkgtests</dependency>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-as2-rpkgtests</dependency>
                     </dependenciesToScan>
                     <systemPropertyVariables>
                         <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
@@ -77,22 +77,6 @@
     </build>
 
     <profiles>
-        <profile>
-            <!--
-                Disable tests for Quarkus SNAPSHOTs since camel-quarkus-jpa 1.1.0 is not compatible.
-                This can be removed when camel-quarkus supports quarkus >= 1.9.x.
-            -->
-            <id>quarkus-snapshots-disable-tests</id>
-            <activation>
-                <property>
-                    <name>quarkus.version</name>
-                    <value>999-SNAPSHOT</value>
-                </property>
-            </activation>
-            <properties>
-                <skipTests>true</skipTests>
-            </properties>
-        </profile>
         <profile>
             <id>native-image</id>
             <activation>
@@ -107,7 +91,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jpa-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-as2-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -137,7 +121,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jpa:${camel-quarkus.version}</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-as2:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>

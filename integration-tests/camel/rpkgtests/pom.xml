@@ -26,6 +26,16 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-arangodb</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-as2</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-avro</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -126,6 +136,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-dropbox</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-elasticsearch-rest</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -146,7 +161,17 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-flatpack</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-ftp</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-git</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
@@ -232,6 +257,11 @@
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-kafka</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-kotlin</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
@@ -351,6 +381,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-rabbitmq</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-reactive-streams</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -416,6 +451,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-smallrye-reactive-messaging</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-soap</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -461,6 +501,16 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-vertx-websocket</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-integration-test-weather</artifactId>
+            <version>${camel-quarkus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-websocket-jsr356</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
@@ -499,6 +549,16 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-amqp</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-arangodb</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-as2</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
@@ -603,6 +663,11 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-dropbox</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-elasticsearch-rest</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
@@ -623,7 +688,17 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-flatpack</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-ftp</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-git</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
@@ -709,6 +784,11 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-kafka</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-kotlin</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
@@ -828,6 +908,11 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-rabbitmq</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-reactive-streams</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
@@ -893,6 +978,11 @@
                                 </testJar>
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-smallrye-reactive-messaging</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-soap</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
@@ -934,6 +1024,16 @@
                                 <testJar>
                                     <groupId>org.apache.camel.quarkus</groupId>
                                     <artifactId>camel-quarkus-integration-test-vertx</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-vertx-websocket</artifactId>
+                                    <version>${camel-quarkus.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.apache.camel.quarkus</groupId>
+                                    <artifactId>camel-quarkus-integration-test-weather</artifactId>
                                     <version>${camel-quarkus.version}</version>
                                 </testJar>
                                 <testJar>
