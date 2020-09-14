@@ -78,6 +78,22 @@
 
     <profiles>
         <profile>
+            <!--
+                Disable tests for Quarkus SNAPSHOTs since camel-quarkus-jdbc 1.1.0 is not compatible.
+                This can be removed when camel-quarkus supports quarkus >= 1.9.x.
+            -->
+            <id>quarkus-snapshots-disable-tests</id>
+            <activation>
+                <property>
+                    <name>quarkus.version</name>
+                    <value>999-SNAPSHOT</value>
+                </property>
+            </activation>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </profile>
+        <profile>
             <id>native-image</id>
             <activation>
                 <property>
