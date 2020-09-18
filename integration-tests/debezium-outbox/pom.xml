@@ -52,6 +52,23 @@
     </build>
 
     <profiles>
+        <!-- TO BE REMOVED -->
+        <profile>
+            <!--
+                Disable tests for Quarkus SNAPSHOTs since Debezium 1.2.3.Final is not compatible.
+                This can be removed when Debezium supports quarkus >= 1.9.x.
+            -->
+            <id>quarkus-snapshots-disable-tests</id>
+            <activation>
+                <property>
+                    <name>quarkus.version</name>
+                    <value>999-SNAPSHOT</value>
+                </property>
+            </activation>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </profile>
         <profile>
             <id>native-image</id>
             <activation>
