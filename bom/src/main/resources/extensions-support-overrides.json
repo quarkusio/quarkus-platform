@@ -177,7 +177,7 @@
       "artifact-id":"quarkus-mutiny",
       "metadata" : { 
        "redhat-support" : [
-         "tech-preview" ]
+         "supported" ]
        }
     },
     {
@@ -466,6 +466,166 @@
       "metadata" : { 
        "redhat-support" : [
          "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-cache",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-grpc",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-infinispan-client",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-kubernetes-config",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-mailer",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-qute",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-reactive-db2-client",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-mysql-client",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-rest-client-jackson",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-rest-client-jaxb",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-rest-client-jsonb",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-resteasy-jackson",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-resteasy-jaxb",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-resteasy-jsonb",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-resteasy-multipart",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-security-jpa",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-spring-cache",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-spring-cloud-config-client",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-spring-scheduled",
+      "metadata" : {
+       "redhat-support" : [
+         "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-vertx-graphql",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
        }
     }
   ]
