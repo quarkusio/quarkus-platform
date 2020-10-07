@@ -526,7 +526,7 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id":"quarkus-mysql-client",
+      "artifact-id":"quarkus-reactive-mysql-client",
       "metadata" : {
        "redhat-support" : [
          "tech-preview" ]
@@ -586,6 +586,14 @@
       "metadata" : {
        "redhat-support" : [
          "supported" ]
+       }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-resteasy-qute",
+      "metadata" : {
+       "redhat-support" : [
+         "tech-preview" ]
        }
     },
     {
