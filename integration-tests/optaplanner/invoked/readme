@@ -1,0 +1,3 @@
+This directory is necessary as the parent directory for the IT maven project.
+It is necessary to prevent Quarkus bootstrap Maven workspace discovery to locate
+the root platform project and then use the original platform BOM in place of the generated one.

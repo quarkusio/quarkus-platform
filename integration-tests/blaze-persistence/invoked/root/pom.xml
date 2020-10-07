@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
+        <artifactId>quarkus-universe-integration-tests-parent</artifactId>
         <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-universe-integration-tests</artifactId>
         <version>999-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quarkus-universe-integration-tests-debezium-outbox</artifactId>
+    <artifactId>quarkus-universe-integration-tests-blaze-persistence</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-universe-integration-tests-rpkgtests</artifactId>
-            <version>${project.version}</version>
-            <type>pom</type>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>quarkus-test-h2</artifactId>
+            <version>${quarkus.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.debezium</groupId>
-            <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-            <version>${debezium-quarkus-outbox.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.debezium</groupId>
-            <artifactId>debezium-quarkus-outbox-integration-tests-rpkgtests</artifactId>
-            <version>${debezium-quarkus-outbox.version}</version>
+            <groupId>com.blazebit</groupId>
+            <artifactId>blaze-persistence-examples-quarkus-testsuite-base</artifactId>
+            <version>${quarkus-blaze-persistence.version}</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.blazebit</groupId>
+            <artifactId>blaze-persistence-examples-quarkus-testsuite-base</artifactId>
+            <version>${quarkus-blaze-persistence.version}</version>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.blazebit</groupId>
+            <artifactId>blaze-persistence-examples-quarkus-testsuite-native-h2</artifactId>
+            <version>${quarkus-blaze-persistence.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.blazebit</groupId>
+            <artifactId>blaze-persistence-examples-quarkus-testsuite-native-h2</artifactId>
+            <version>${quarkus-blaze-persistence.version}</version>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -44,8 +51,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>io.debezium:debezium-quarkus-outbox-integration-tests-rpkgtests</dependency>
+                        <dependency>com.blazebit:blaze-persistence-examples-quarkus-testsuite-base</dependency>
                     </dependenciesToScan>
+                    <systemPropertyVariables>
+                        <quarkus.test.profile>h2</quarkus.test.profile>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
@@ -66,7 +76,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>io.debezium:debezium-quarkus-outbox-integration-tests-rpkgtests</dependency>
+                                <dependency>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -94,14 +104,13 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>io.debezbium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</appArtifact>
+                                    <appArtifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2:${quarkus-blaze-persistence.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
                                     <enableServer>false</enableServer>
                                     <dumpProxies>false</dumpProxies>
                                     <graalvmHome>${graalvmHome}</graalvmHome>
-                                    <enableJni>false</enableJni>
                                     <disableReports>true</disableReports>
                                 </configuration>
                             </execution>
@@ -112,5 +121,4 @@
         </profile>
 
     </profiles>
-
 </project>

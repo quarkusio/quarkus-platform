@@ -8,8 +8,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quarkus-universe-integration-tests-optaplanner-invoker</artifactId>
-    <name>Quarkus universe - Integration Tests - OptaPlanner</name>
+    <artifactId>quarkus-universe-integration-tests-hazelcast-invoker</artifactId>
+    <name>Quarkus universe - Integration Tests - Hazelcast</name>
 
     <packaging>pom</packaging>
 

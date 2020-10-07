@@ -3,17 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-universe-integration-tests</artifactId>
+        <artifactId>quarkus-universe-integration-tests-qpid-parent</artifactId>
         <version>999-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>quarkus-universe-integration-tests-hazelcast-client</artifactId>
+    <artifactId>quarkus-universe-integration-tests-quarkus-qpid-jms</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-universe-integration-tests-rpkgtests</artifactId>
+            <artifactId>quarkus-universe-integration-tests-qpid-rpkgtests</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
             <exclusions>
@@ -24,14 +24,14 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.hazelcast</groupId>
-            <artifactId>quarkus-hazelcast-client-integration-tests</artifactId>
-            <version>${quarkus-hazelcast-client.version}</version>
+            <groupId>org.amqphub.quarkus</groupId>
+            <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
+            <version>${quarkus-qpid-jms.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.hazelcast</groupId>
-            <artifactId>quarkus-hazelcast-client-integration-tests-rpkgtests</artifactId>
-            <version>${quarkus-hazelcast-client.version}</version>
+            <groupId>org.amqphub.quarkus</groupId>
+            <artifactId>quarkus-qpid-jms-integration-tests-rpkgtests</artifactId>
+            <version>${quarkus-qpid-jms.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -44,7 +44,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>com.hazelcast:quarkus-hazelcast-client-integration-tests-rpkgtests</dependency>
+                        <dependency>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests-rpkgtests</dependency>
                     </dependenciesToScan>
                 </configuration>
             </plugin>
@@ -66,7 +66,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>com.hazelcast:quarkus-hazelcast-client-integration-tests-rpkgtests</dependency>
+                                <dependency>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -94,7 +94,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>com.hazelcast:quarkus-hazelcast-client-integration-tests:${quarkus-hazelcast-client.version}</appArtifact>
+                                    <appArtifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>

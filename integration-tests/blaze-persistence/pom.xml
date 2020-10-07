@@ -1,124 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>quarkus-universe-integration-tests</artifactId>
+        <artifactId>quarkus-universe-integration-tests-parent</artifactId>
         <groupId>io.quarkus</groupId>
         <version>999-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quarkus-universe-integration-tests-blaze-persistence</artifactId>
+    <artifactId>quarkus-universe-integration-tests-blaze-persistence-invoker</artifactId>
+    <name>Quarkus universe - Integration Tests - Blaze Persistence</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-test-h2</artifactId>
-            <version>${quarkus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.blazebit</groupId>
-            <artifactId>blaze-persistence-examples-quarkus-testsuite-base</artifactId>
-            <version>${quarkus-blaze-persistence.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.blazebit</groupId>
-            <artifactId>blaze-persistence-examples-quarkus-testsuite-base</artifactId>
-            <version>${quarkus-blaze-persistence.version}</version>
-            <classifier>tests</classifier>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.blazebit</groupId>
-            <artifactId>blaze-persistence-examples-quarkus-testsuite-native-h2</artifactId>
-            <version>${quarkus-blaze-persistence.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.blazebit</groupId>
-            <artifactId>blaze-persistence-examples-quarkus-testsuite-native-h2</artifactId>
-            <version>${quarkus-blaze-persistence.version}</version>
-            <classifier>tests</classifier>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <dependenciesToScan>
-                        <dependency>com.blazebit:blaze-persistence-examples-quarkus-testsuite-base</dependency>
-                    </dependenciesToScan>
-                    <systemPropertyVariables>
-                        <quarkus.test.profile>h2</quarkus.test.profile>
-                    </systemPropertyVariables>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <packaging>pom</packaging>
 
     <profiles>
         <profile>
-            <id>native-image</id>
+            <id>integration-tests</id>
             <activation>
                 <property>
-                    <name>native</name>
+                    <name>!skipTests</name>
                 </property>
             </activation>
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-failsafe-plugin</artifactId>
-                        <configuration>
-                            <dependenciesToScan>
-                                <dependency>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2</dependency>
-                            </dependenciesToScan>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>integration-test</goal>
-                                    <goal>verify</goal>
-                                </goals>
-                                <configuration>
-                                    <systemProperties>
-                                        <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                                    </systemProperties>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>io.quarkus</groupId>
-                        <artifactId>quarkus-maven-plugin</artifactId>
-                        <version>${quarkus.version}</version>
-                        <executions>
-                            <execution>
-                                <id>native-image</id>
-                                <goals>
-                                    <goal>native-image</goal>
-                                </goals>
-                                <configuration>
-                                    <appArtifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2:${quarkus-blaze-persistence.version}</appArtifact>
-                                    <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
-                                    <cleanupServer>true</cleanupServer>
-                                    <enableHttpUrlHandler>true</enableHttpUrlHandler>
-                                    <enableServer>false</enableServer>
-                                    <dumpProxies>false</dumpProxies>
-                                    <graalvmHome>${graalvmHome}</graalvmHome>
-                                    <disableReports>true</disableReports>
-                                </configuration>
-                            </execution>
-                        </executions>
+                        <artifactId>maven-invoker-plugin</artifactId>
                     </plugin>
                 </plugins>
             </build>
         </profile>
-
     </profiles>
 </project>
