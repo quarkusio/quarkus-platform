@@ -10,10 +10,6 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-kudu</artifactId>
 
-    <properties>
-        <skipTests>true</skipTests>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>

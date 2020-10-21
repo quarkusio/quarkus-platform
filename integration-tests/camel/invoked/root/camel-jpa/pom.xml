@@ -10,10 +10,6 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-jpa</artifactId>
 
-    <properties>
-        <skipTests>true</skipTests>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -81,22 +77,6 @@
     </build>
 
     <profiles>
-        <profile>
-            <!--
-                Disable tests for Quarkus SNAPSHOTs since camel-quarkus-jpa 1.1.0 is not compatible.
-                This can be removed when camel-quarkus supports quarkus >= 1.9.x.
-            -->
-            <id>quarkus-snapshots-disable-tests</id>
-            <activation>
-                <property>
-                    <name>quarkus.version</name>
-                    <value>999-SNAPSHOT</value>
-                </property>
-            </activation>
-            <properties>
-                <skipTests>true</skipTests>
-            </properties>
-        </profile>
         <profile>
             <id>native-image</id>
             <activation>
