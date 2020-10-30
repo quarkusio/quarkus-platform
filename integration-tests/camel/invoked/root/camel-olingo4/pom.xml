@@ -64,6 +64,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
+                    <!--Disable tests until Olingo test service is fixed:  https://github.com/apache/camel-quarkus/issues/1972 -->
+                    <skip>true</skip>
                     <dependenciesToScan>
                         <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-olingo4-rpkgtests</dependency>
                     </dependenciesToScan>
@@ -101,6 +103,8 @@
                                     <goal>verify</goal>
                                 </goals>
                                 <configuration>
+                                    <!--Disable itests until Olingo test service is fixed:  https://github.com/apache/camel-quarkus/issues/1972 -->
+                                    <skip>true</skip>
                                     <systemProperties>
                                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                                         <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
