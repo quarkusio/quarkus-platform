@@ -10,14 +10,18 @@
     <artifactId>quarkus-universe-bom</artifactId>
     <name>Quarkus universe - BOM</name>
     <packaging>pom</packaging>
-    <properties>
-        <resourcesdir>${project.basedir}/src/main/resources</resourcesdir>
-        <overridesfile>
-            ${resourcesdir}/extensions-overrides.json
-        </overridesfile>
-    </properties>
+
     <dependencyManagement>
         <dependencies>
+
+            <!-- Platform descriptor -->
+            <dependency>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-universe-bom-quarkus-platform-descriptor</artifactId>
+                <classifier>${project.version}</classifier>
+                <type>json</type>
+                <version>${project.version}</version>
+            </dependency>
 
             <!-- Quarkus Core BOM -->
             <dependency>
@@ -211,36 +215,6 @@
                 </configuration>
                 -->
             </plugin>
-            <plugin>
-                <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-platform-descriptor-json-plugin</artifactId>
-                <version>${quarkus.version}</version>
-                <executions>
-                    <execution>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>generate-extensions-json</goal>
-                        </goals>
-                    </execution>
-
-                </executions>
-                <configuration>
-                    <overridesFile>${overridesfile}</overridesFile>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>rhproduct</id>
-            <properties>
-                <overridesfile>
-                    ${resourcesdir}/extensions-overrides.json,
-                    ${resourcesdir}/extensions-support-overrides.json,
-                </overridesfile>
-            </properties>
-        </profile>
-
-    </profiles>
 </project>
