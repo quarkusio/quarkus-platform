@@ -79,14 +79,14 @@ line argument.
 
 Given that the platform BOM is generated, the testsuite projects can not belong to the same project as the platform BOM. Simply because
 they would see the original version of the BOM instead of the generated one. And we definitely want to run the tests against the platform BOM
-that will be installed in the Maven repository. For that reason the BOM project and the testuite projects are separated.
+that will be installed in the Maven repository. For that reason the BOM project and the testsuite projects are separated.
 
 The root project includes module `integration-tests` whose `pom.xml` imports the `io.qaurkus:quarkus-universe-bom` and other necessary constraints.
 It also configures the `maven-invoker-plugin` in its `pluginManagement` section. This `pom.xml` will actually be the parent of all the extension test
 projects.
 
 `integration-tests` project defines submodules: one module per imported extension. Each such extension module includes a `pom.xml` that configures the invoker.
-Actualy, it simply mentions the `maven-invoker-plugin` inheriting its configuration from `integration-tests/pom.xml`. The invoker targets directory called `invoked`,
+Actually, it simply mentions the `maven-invoker-plugin` inheriting its configuration from `integration-tests/pom.xml`. The invoker targets directory called `invoked`,
 which is found in every extension module of `intergation-tests`.
 IMPORTANT: `invoked` directory is not added as a `module` of the extension tests project! This is very important, since this is what separates the extension tests
 from the main Quarkus platform project.
@@ -108,7 +108,7 @@ To enable native tests simply add `-Dnative` to the command line.
 
 #### Running Extension-specific Tests
 
-The integration tests do rely on the presense of the following artifacts in the Local maven repository
+The integration tests do rely on the presence of the following artifacts in the Local maven repository
 * `io.quarkus:quarkus-universe-bom` - the platform BOM;
 * `io.quarkus:quarkus-universe-integration-tests-parent` - the parent of every integration test project.
 
@@ -122,7 +122,7 @@ Once the platform BOM and the parent POMs have been installed, it's possible to
 
 and run the necessary `mvn` commands. However, this approach assumes the platform BOM doesn't change between the test runs, i.e. it does not have to be regenerated.
 
-The following command could be used in cases when the platform BOM has to be regenarated before running the extension tests:
+The following command could be used in cases when the platform BOM has to be regenerated before running the extension tests:
 
 `mvn clean install -pl bom,integration-tests/<extension-dir>`
 

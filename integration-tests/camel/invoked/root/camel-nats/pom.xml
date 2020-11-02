@@ -64,6 +64,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
+                    <!-- https://github.com/apache/camel-quarkus/issues/1978 -->
+                    <skip>true</skip>
                     <dependenciesToScan>
                         <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-nats-rpkgtests</dependency>
                     </dependenciesToScan>
@@ -101,6 +103,8 @@
                                     <goal>verify</goal>
                                 </goals>
                                 <configuration>
+                                    <!-- https://github.com/apache/camel-quarkus/issues/1978 -->
+                                    <skip>true</skip>
                                     <systemProperties>
                                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                                         <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
