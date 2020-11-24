@@ -10,6 +10,11 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-nats</artifactId>
 
+    <!-- TODO: Enable when this issue is resolved https://github.com/apache/camel-quarkus/issues/1978 -->
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
