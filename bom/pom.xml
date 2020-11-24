@@ -200,20 +200,20 @@
                         </goals>
                     </execution>
                 </executions>
-                <!--
-                Templates for enforcing specific versions and excluding dependencies
+                <!-- Config to enforce specific versions and excluding dependencies -->
                 <configuration>
+                    <!--
                     <enforcedDependencies>
                         <dependency>groupId:artifactId:desired-version</dependency>
                     </enforcedDependencies>
                     <excludedDependencies>
                         <dependency>groupId:artifactId</dependency>
                     </excludedDependencies>
+                    -->
                     <excludedGroups>
-                        <excludedGroup>groupId</excludedGroup>
+                        <excludedGroup>org.testcontainers</excludedGroup>
                     </excludedGroups>
                 </configuration>
-                -->
             </plugin>
         </plugins>
     </build>
