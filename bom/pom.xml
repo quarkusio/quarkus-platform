@@ -191,7 +191,7 @@
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
-                <version>0.0.4</version>
+                <version>0.0.5</version>
                 <executions>
                     <execution>
                         <phase>process-resources</phase>
