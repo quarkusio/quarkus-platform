@@ -33,7 +33,6 @@
         </license>
     </licenses>
 
-
     <repositories>
         <repository>
             <id>apache.snapshots</id>
