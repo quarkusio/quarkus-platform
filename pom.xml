@@ -33,33 +33,6 @@
         </license>
     </licenses>
 
-
-    <repositories>
-        <repository>
-            <id>apache.snapshots</id>
-            <url>https://repository.apache.org/snapshots/</url>
-            <name>Apache Snapshot Repo</name>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>apache.snapshots</id>
-            <url>https://repository.apache.org/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-
     <scm>
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
@@ -84,7 +57,7 @@
 
              mvn validate -Pregen-camel -N
         -->
-        <camel-quarkus.version>1.5.0-SNAPSHOT</camel-quarkus.version>
+        <camel-quarkus.version>1.4.0</camel-quarkus.version>
 
         <quarkus-qpid-jms.version>0.21.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>1.1.1</quarkus-hazelcast-client.version>
