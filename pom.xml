@@ -33,7 +33,6 @@
         </license>
     </licenses>
 
-
     <scm>
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
