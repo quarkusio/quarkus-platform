@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+# update the version
+mvn versions:set-property -pl . -Dproperty=quarkus.version -DnewVersion=999-SNAPSHOT
+
 # just run all the tests
-mvn --settings .github/quarkus-ecosystem-maven-settings.xml -B -ntp clean install -Dquarkus.version=${QUARKUS_VERSION}
+mvn --settings .github/quarkus-ecosystem-maven-settings.xml -B -ntp clean install
