@@ -373,6 +373,22 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>clean-bom-webjars-bootstrap</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>replace</goal>
+                        </goals>
+                        <configuration>
+                            <file>${basedir}/.flattened-pom.xml</file>
+                            <token><![CDATA[<dependency>\s*<groupId>org.webjars</groupId>\s*<artifactId>bootstrap</artifactId>\s*<version>[^<]+</version>\s+</dependency>]]></token>
+                            <value />
+                            <regexFlags>
+                                <regexFlag>MULTILINE</regexFlag>
+                                <regexFlag>DOTALL</regexFlag>
+                            </regexFlags>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>clean-bom-bootstrap-core-test-jar</id>
                         <phase>process-resources</phase>
                         <goals>
