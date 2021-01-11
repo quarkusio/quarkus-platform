@@ -10,6 +10,11 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-fop</artifactId>
 
+    <!-- TODO: Enable when GraalVM java.awt issues are resolved. https://github.com/apache/camel-quarkus/issues/2113 -->
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
