@@ -10,6 +10,11 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-kubernetes</artifactId>
 
+    <!-- TODO: Enable once Camel has upgraded to k8s client 5.x -->
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
