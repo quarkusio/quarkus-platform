@@ -38,6 +38,10 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-debezium-sqlserver</artifactId>
+        </dependency>
 [/#if]
         <dependency>
             <groupId>[=testJar.groupId]</groupId>
