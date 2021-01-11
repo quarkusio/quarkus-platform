@@ -1,0 +1,48 @@
+name: "CI Build"
+
+on:
+  push:
+    paths-ignore:
+      - '.gitignore'
+      - '*.md'
+      - '*.adoc'
+      - '*.txt'
+      - '.github/ISSUE_TEMPLATE/**'
+  pull_request:
+    paths-ignore:
+      - '.gitignore'
+      - '*.md'
+      - '*.adoc'
+      - '*.txt'
+      - '.github/ISSUE_TEMPLATE/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [ 8, 11 ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get Date
+        id: get-date
+        run: |
+          echo "::set-output name=date::$(/bin/date -u "+%Y-%m")"
+        shell: bash
+      - name: Cache Maven Repository
+        id: cache-maven
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          # refresh cache every month to avoid unlimited growth
+          key: maven-repo-pr-${{ runner.os }}-${{ steps.get-date.outputs.date }}
+      - name: Install JDK ${{ matrix.java }}
+        uses: joschi/setup-jdk@e87a7cec853d2dd7066adf837fe12bf0f3d45e52
+        with:
+          java-version: ${{ matrix.java }}
+      - name: Build with Maven
+        run: export LANG=en_US MAVEN_OPTS=-Xmx3072m && mvn -B clean install --settings .github/mvn-settings.xml
+      - name: Delete Local Artifacts From Cache
+        shell: bash
+        run: rm -rf ~/.m2/repository/io/quarkus/quarkus-universe-bom*
