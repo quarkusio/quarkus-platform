@@ -10,6 +10,10 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-solr</artifactId>
 
+    <properties>
+        <solr.trust-store>${project.basedir}/target/ssl/trust-store.jks</solr.trust-store>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -39,6 +43,41 @@
 
     <build>
         <plugins>
+            <!-- Add our test certificate to the default trust store -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>extend-default-trust-store-extension</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>org.apache.camel.quarkus.test.ExtendDefaultTrustStore</mainClass>
+                            <arguments>
+                                <argument>${solr.trust-store}</argument>
+                                <argument>ssl/solr-ssl.der</argument>
+                            </arguments>
+                            <includePluginDependencies>true</includePluginDependencies>
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.camel.quarkus</groupId>
+                        <artifactId>camel-quarkus-integration-test-support</artifactId>
+                        <version>${camel-quarkus.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.camel.quarkus</groupId>
+                        <artifactId>camel-quarkus-integration-test-solr</artifactId>
+                        <version>${camel-quarkus.version}</version>
+                        <classifier>tests</classifier>
+                    </dependency>
+                </dependencies>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
@@ -70,6 +109,7 @@
                     <systemPropertyVariables>
                         <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
                         <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
+                        <javax.net.ssl.trustStore>${solr.trust-store}</javax.net.ssl.trustStore>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
