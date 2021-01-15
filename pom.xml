@@ -70,8 +70,8 @@
 
              mvn validate -Pregen-kogito -N
         -->
-        <kogito-quarkus.version>1.0.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.0.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.1.0.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.1.0.Final</optaplanner-quarkus.version>
         <testcontainers.version>1.15.0</testcontainers.version>
 
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
@@ -85,6 +85,17 @@
         <module>descriptor</module>
         <module>integration-tests</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>Kogito Staging</id>
+            <url>https://repository.jboss.org/nexus/content/groups/kogito-public/</url>
+        </repository>
+    </repositories>
 
     <distributionManagement>
         <snapshotRepository>
