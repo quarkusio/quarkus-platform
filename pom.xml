@@ -86,17 +86,6 @@
         <module>integration-tests</module>
     </modules>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-        <repository>
-            <id>Kogito Staging</id>
-            <url>https://repository.jboss.org/nexus/content/groups/kogito-public/</url>
-        </repository>
-    </repositories>
-
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
