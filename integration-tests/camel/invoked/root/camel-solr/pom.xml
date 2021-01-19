@@ -8,7 +8,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>quarkus-universe-integration-tests-camel-nats</artifactId>
+    <artifactId>quarkus-universe-integration-tests-camel-solr</artifactId>
+
+    <properties>
+        <solr.trust-store>${project.basedir}/target/ssl/trust-store.jks</solr.trust-store>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -25,12 +29,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-nats</artifactId>
+            <artifactId>camel-quarkus-integration-test-solr</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-nats-rpkgtests</artifactId>
+            <artifactId>camel-quarkus-integration-test-solr-rpkgtests</artifactId>
             <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
@@ -39,6 +43,41 @@
 
     <build>
         <plugins>
+            <!-- Add our test certificate to the default trust store -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>extend-default-trust-store-extension</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>org.apache.camel.quarkus.test.ExtendDefaultTrustStore</mainClass>
+                            <arguments>
+                                <argument>${solr.trust-store}</argument>
+                                <argument>ssl/solr-ssl.der</argument>
+                            </arguments>
+                            <includePluginDependencies>true</includePluginDependencies>
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.camel.quarkus</groupId>
+                        <artifactId>camel-quarkus-integration-test-support</artifactId>
+                        <version>${camel-quarkus.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.camel.quarkus</groupId>
+                        <artifactId>camel-quarkus-integration-test-solr</artifactId>
+                        <version>${camel-quarkus.version}</version>
+                        <classifier>tests</classifier>
+                    </dependency>
+                </dependencies>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
@@ -65,11 +104,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-nats-rpkgtests</dependency>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-solr-rpkgtests</dependency>
                     </dependenciesToScan>
                     <systemPropertyVariables>
                         <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
                         <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
+                        <javax.net.ssl.trustStore>${solr.trust-store}</javax.net.ssl.trustStore>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
@@ -91,7 +131,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-nats-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-solr-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -121,7 +161,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-nats:${camel-quarkus.version}</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-solr:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>

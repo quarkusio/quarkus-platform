@@ -33,9 +33,11 @@
         <module>camel-arangodb</module>
         <module>camel-as2</module>
         <module>camel-avro</module>
+        <module>camel-avro-rpc</module>
         <module>camel-aws</module>
         <module>camel-aws2</module>
         <module>camel-azure</module>
+        <module>camel-azure-storage-blob</module>
         <module>camel-base64</module>
         <module>camel-bean</module>
         <module>camel-bean-validator</module>
@@ -49,6 +51,7 @@
         <module>camel-core-discovery-disabled</module>
         <module>camel-couchdb</module>
         <module>camel-crypto</module>
+        <module>camel-csimple</module>
         <module>camel-csv</module>
         <module>camel-dataformat</module>
         <module>camel-dataformats-json</module>
@@ -68,9 +71,12 @@
         <module>camel-git</module>
         <module>camel-github</module>
         <module>camel-google</module>
+        <module>camel-google-bigquery</module>
+        <module>camel-google-pubsub</module>
         <module>camel-graphql</module>
         <module>camel-grok</module>
         <module>camel-grpc</module>
+        <module>camel-hazelcast</module>
         <module>camel-headersmap</module>
         <module>camel-http</module>
         <module>camel-hystrix</module>
@@ -82,8 +88,10 @@
         <module>camel-jira</module>
         <module>camel-jolt</module>
         <module>camel-jpa</module>
+        <module>camel-jsch</module>
         <module>camel-jslt</module>
         <module>camel-json-validator</module>
+        <module>camel-jsonata</module>
         <module>camel-jsonpath</module>
         <module>camel-jta</module>
         <module>camel-kafka</module>
@@ -101,7 +109,9 @@
         <module>camel-main-xml-io</module>
         <module>camel-main-xml-jaxb</module>
         <module>camel-messaging</module>
+        <module>camel-micrometer</module>
         <module>camel-microprofile</module>
+        <module>camel-minio</module>
         <module>camel-mongodb</module>
         <module>camel-msv</module>
         <module>camel-mustache</module>
@@ -112,11 +122,13 @@
         <module>camel-olingo4</module>
         <module>camel-openapi-java</module>
         <module>camel-opentracing</module>
+        <module>camel-optaplanner</module>
         <module>camel-pdf</module>
         <module>camel-pg-replication-slot</module>
         <module>camel-pgevent</module>
         <module>camel-platform-http</module>
         <module>camel-platform-http-engine</module>
+        <module>camel-protobuf</module>
         <module>camel-quartz</module>
         <module>camel-qute</module>
         <module>camel-rabbitmq</module>
@@ -134,6 +146,7 @@
         <module>camel-slack</module>
         <module>camel-smallrye-reactive-messaging</module>
         <module>camel-soap</module>
+        <module>camel-solr</module>
         <module>camel-sql</module>
         <module>camel-stringtemplate</module>
         <module>camel-syndication</module>
@@ -146,6 +159,7 @@
         <module>camel-validator</module>
         <module>camel-velocity</module>
         <module>camel-vertx</module>
+        <module>camel-vertx-kafka</module>
         <module>camel-vertx-websocket</module>
         <module>camel-weather</module>
         <module>camel-websocket-jsr356</module>

@@ -8,7 +8,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>quarkus-universe-integration-tests-camel-nats</artifactId>
+    <artifactId>quarkus-universe-integration-tests-camel-avro-rpc</artifactId>
 
     <dependencies>
         <dependency>
@@ -25,12 +25,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-nats</artifactId>
+            <artifactId>camel-quarkus-integration-test-avro-rpc</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-nats-rpkgtests</artifactId>
+            <artifactId>camel-quarkus-integration-test-avro-rpc-rpkgtests</artifactId>
             <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
@@ -65,7 +65,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-nats-rpkgtests</dependency>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc-rpkgtests</dependency>
                     </dependenciesToScan>
                     <systemPropertyVariables>
                         <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
@@ -91,7 +91,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-nats-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -121,7 +121,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-nats:${camel-quarkus.version}</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
