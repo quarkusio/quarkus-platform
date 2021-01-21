@@ -10,6 +10,11 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-jta</artifactId>
 
+    <!-- TODO: Remove when upgrading to camel-quarkus >= 1.7.0 -->
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
