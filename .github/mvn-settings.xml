@@ -7,6 +7,12 @@
           <id>google-maven-central</id>
           <name>GCS Maven Central mirror</name>
           <url>https://maven-central.storage-download.googleapis.com/maven2/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
         </repository>
       </repositories>
       <pluginRepositories>
@@ -14,6 +20,12 @@
           <id>google-maven-central</id>
           <name>GCS Maven Central mirror</name>
           <url>https://maven-central.storage-download.googleapis.com/maven2/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
         </pluginRepository>
       </pluginRepositories>
     </profile>
