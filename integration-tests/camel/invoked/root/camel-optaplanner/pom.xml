@@ -8,6 +8,10 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <properties>
+        <skipTests>true</skipTests> <!-- Disabled because of https://github.com/quarkusio/quarkus-platform/pull/186 -->
+    </properties>
+
     <artifactId>quarkus-universe-integration-tests-camel-optaplanner</artifactId>
 
     <dependencies>
