@@ -8,6 +8,10 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <properties>
+        <skipTests>true</skipTests> <!-- Disabled because of https://github.com/apache/camel-quarkus/issues/2253 -->
+    </properties>
+
     <artifactId>quarkus-universe-integration-tests-camel-optaplanner</artifactId>
 
     <dependencies>
