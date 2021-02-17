@@ -10,6 +10,11 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-websocket-jsr356</artifactId>
 
+    <!-- See: https://github.com/apache/camel-quarkus/issues/2262 -->
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
