@@ -32,14 +32,14 @@
                     <execution>
                         <phase>process-resources</phase>
                         <goals>
-                            <goal>generate-extensions-json</goal>
+                            <goal>generate-platform-descriptor-json</goal>
                         </goals>
                     </execution>
-
                 </executions>
                 <configuration>
                     <bomArtifactId>quarkus-universe-bom</bomArtifactId>
                     <overridesFile>${overridesfile}</overridesFile>
+                    <skipCategoryCheck>true</skipCategoryCheck>
                 </configuration>
             </plugin>
         </plugins>
