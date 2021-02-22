@@ -32,12 +32,16 @@
         <module>camel-amqp</module>
         <module>camel-arangodb</module>
         <module>camel-as2</module>
+        <module>camel-atlasmap</module>
         <module>camel-avro</module>
         <module>camel-avro-rpc</module>
         <module>camel-aws</module>
         <module>camel-aws2</module>
+        <module>camel-aws2-grouped</module>
         <module>camel-azure</module>
+        <module>camel-azure-eventhubs</module>
         <module>camel-azure-storage-blob</module>
+        <module>camel-azure-storage-queue</module>
         <module>camel-base64</module>
         <module>camel-bean</module>
         <module>camel-bean-validator</module>
@@ -45,6 +49,8 @@
         <module>camel-box</module>
         <module>camel-braintree</module>
         <module>camel-caffeine</module>
+        <module>camel-cassandraql</module>
+        <module>camel-cbor</module>
         <module>camel-compression</module>
         <module>camel-consul</module>
         <module>camel-core</module>
@@ -82,6 +88,7 @@
         <module>camel-hystrix</module>
         <module>camel-infinispan</module>
         <module>camel-influxdb</module>
+        <module>camel-ipfs</module>
         <module>camel-jaxb</module>
         <module>camel-jdbc</module>
         <module>camel-jing</module>
@@ -95,6 +102,7 @@
         <module>camel-jsonpath</module>
         <module>camel-jta</module>
         <module>camel-kafka</module>
+        <module>camel-kamelet</module>
         <module>camel-kotlin</module>
         <module>camel-kubernetes</module>
         <module>camel-kudu</module>
@@ -119,6 +127,7 @@
         <module>camel-nats</module>
         <module>camel-netty</module>
         <module>camel-nsq</module>
+        <module>camel-oaipmh</module>
         <module>camel-olingo4</module>
         <module>camel-openapi-java</module>
         <module>camel-opentracing</module>
@@ -129,6 +138,7 @@
         <module>camel-platform-http</module>
         <module>camel-platform-http-engine</module>
         <module>camel-protobuf</module>
+        <module>camel-pubnub</module>
         <module>camel-quartz</module>
         <module>camel-qute</module>
         <module>camel-rabbitmq</module>
@@ -147,9 +157,12 @@
         <module>camel-smallrye-reactive-messaging</module>
         <module>camel-soap</module>
         <module>camel-solr</module>
+        <module>camel-spring-rabbitmq</module>
         <module>camel-sql</module>
+        <module>camel-stax</module>
         <module>camel-stringtemplate</module>
         <module>camel-syndication</module>
+        <module>camel-syslog</module>
         <module>camel-tarfile</module>
         <module>camel-telegram</module>
         <module>camel-tika</module>
@@ -164,6 +177,7 @@
         <module>camel-weather</module>
         <module>camel-websocket-jsr356</module>
         <module>camel-xml</module>
+        <module>camel-xmlsecurity</module>
         <module>camel-xstream</module>
         <module>camel-zendesk</module>
         <module>camel-quarkus-ssh-integration-test</module>
