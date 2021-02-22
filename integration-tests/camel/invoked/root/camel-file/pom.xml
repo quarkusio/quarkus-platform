@@ -10,6 +10,10 @@
 
     <artifactId>quarkus-universe-integration-tests-camel-file</artifactId>
 
+    <properties>
+        <skipTests>true</skipTests><!-- TODO https://github.com/apache/camel-quarkus/issues/2278 -->
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
