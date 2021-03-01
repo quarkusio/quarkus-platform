@@ -34,6 +34,11 @@
             <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-datasource</artifactId>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
