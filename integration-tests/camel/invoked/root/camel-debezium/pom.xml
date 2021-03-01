@@ -42,6 +42,11 @@
             <artifactId>camel-quarkus-debezium-sqlserver</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-datasource</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-integration-test-debezium-rpkgtests</artifactId>
             <version>${camel-quarkus.version}</version>
