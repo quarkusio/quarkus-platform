@@ -185,7 +185,7 @@
       "artifact-id":"quarkus-keycloak-authorization",
       "metadata" : { 
        "redhat-support" : [
-         "supported" ]
+         "tech-preview" ]
        }
     },
     {
@@ -313,7 +313,7 @@
       "artifact-id":"quarkus-qute",
       "metadata" : {
         "redhat-support" : [
-          "supported" ]
+          "tech-preview" ]
       }
     },
     {
@@ -433,7 +433,7 @@
       "artifact-id":"quarkus-resteasy-mutiny",
       "metadata" : {
         "redhat-support" : [
-          "supported" ]
+          "tech-preview" ]
       }
     },
     {
@@ -441,7 +441,7 @@
       "artifact-id":"quarkus-resteasy-qute",
       "metadata" : {
         "redhat-support" : [
-          "supported" ]
+          "tech-preview" ]
       }
     },
     {
