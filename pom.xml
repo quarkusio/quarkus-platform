@@ -13,15 +13,15 @@
     <name>Quarkus universe - Parent pom</name>
     <version>999-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>Quarkus universe aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
-    <url>https://github.com/quarkusio/quarkus-universe</url>
+    <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
+    <url>https://github.com/quarkusio/quarkus-platform</url>
 
     <developers>
         <developer>
             <id>quarkus</id>
             <name>Quarkus Community</name>
-            <organization>Red Hat</organization>
-            <organizationUrl>http://www.redhat.com</organizationUrl>
+            <organization>Quarkus</organization>
+            <organizationUrl>https://quarkus.io</organizationUrl>
         </developer>
     </developers>
 
