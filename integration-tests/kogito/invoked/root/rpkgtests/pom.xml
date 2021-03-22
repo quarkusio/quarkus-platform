@@ -16,8 +16,23 @@
     <dependencies>
         <dependency>
             <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-quarkus-decisions-integration-test</artifactId>
+            <version>1.4.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-quarkus-integration-test</artifactId>
-            <version>1.3.0.Final</version>
+            <version>1.4.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-quarkus-predictions-integration-test</artifactId>
+            <version>1.4.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+            <version>1.4.1.Final</version>
         </dependency>
     </dependencies>
 
@@ -38,8 +53,23 @@
                             <testJars>
                                 <testJar>
                                     <groupId>org.kie.kogito</groupId>
+                                    <artifactId>kogito-quarkus-decisions-integration-test</artifactId>
+                                    <version>1.4.1.Final</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.kie.kogito</groupId>
                                     <artifactId>kogito-quarkus-integration-test</artifactId>
-                                    <version>1.3.0.Final</version>
+                                    <version>1.4.1.Final</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.kie.kogito</groupId>
+                                    <artifactId>kogito-quarkus-predictions-integration-test</artifactId>
+                                    <version>1.4.1.Final</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>org.kie.kogito</groupId>
+                                    <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+                                    <version>1.4.1.Final</version>
                                 </testJar>
                             </testJars>
                         </configuration>
