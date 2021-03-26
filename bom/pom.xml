@@ -144,13 +144,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>com.datastax.oss.quarkus</groupId>
-                <artifactId>cassandra-quarkus-bom-deployment</artifactId>
-                <version>${quarkus-cassandra-client.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
 
             <!-- Camel extensions -->
             <!-- This BOM must be the last one as otherwise it will set the dependency versions before the other BOM -->
