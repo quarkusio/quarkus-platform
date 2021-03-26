@@ -14,7 +14,17 @@
     <dependencies>
         <dependency>
             <groupId>com.datastax.oss.quarkus</groupId>
-            <artifactId>cassandra-quarkus-integration-tests</artifactId>
+            <artifactId>cassandra-quarkus-integration-tests-main</artifactId>
+            <version>${quarkus-cassandra-client.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.datastax.oss.quarkus</groupId>
+            <artifactId>cassandra-quarkus-integration-tests-metrics-disabled</artifactId>
+            <version>${quarkus-cassandra-client.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.datastax.oss.quarkus</groupId>
+            <artifactId>cassandra-quarkus-integration-tests-metrics-microprofile</artifactId>
             <version>${quarkus-cassandra-client.version}</version>
         </dependency>
     </dependencies>
@@ -36,7 +46,17 @@
                             <testJars>
                                 <testJar>
                                     <groupId>com.datastax.oss.quarkus</groupId>
-                                    <artifactId>cassandra-quarkus-integration-tests</artifactId>
+                                    <artifactId>cassandra-quarkus-integration-tests-main</artifactId>
+                                    <version>${quarkus-cassandra-client.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>com.datastax.oss.quarkus</groupId>
+                                    <artifactId>cassandra-quarkus-integration-tests-metrics-disabled</artifactId>
+                                    <version>${quarkus-cassandra-client.version}</version>
+                                </testJar>
+                                <testJar>
+                                    <groupId>com.datastax.oss.quarkus</groupId>
+                                    <artifactId>cassandra-quarkus-integration-tests-metrics-microprofile</artifactId>
                                     <version>${quarkus-cassandra-client.version}</version>
                                 </testJar>
                             </testJars>
