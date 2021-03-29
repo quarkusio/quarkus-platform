@@ -202,10 +202,10 @@
                     <excludedDependencies>
                         <dependency>groupId:artifactId</dependency>
                     </excludedDependencies>
-                    -->
                     <excludedGroups>
-                        <excludedGroup>org.testcontainers</excludedGroup>
+                        <excludedGroup>groupId</excludedGroup>
                     </excludedGroups>
+                    -->
                 </configuration>
             </plugin>
         </plugins>

@@ -72,7 +72,6 @@
         -->
         <kogito-quarkus.version>1.4.1.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.4.1.Final</optaplanner-quarkus.version>
-        <testcontainers.version>1.15.1</testcontainers.version>
 
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
