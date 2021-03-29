@@ -78,21 +78,6 @@
 
     <profiles>
         <profile>
-            <!--
-                This can be removed when camel-quarkus supports quarkus >= 1.14.x.
-            -->
-            <id>quarkus-snapshots-disable-tests</id>
-            <activation>
-                <property>
-                    <name>env.GITHUB_WORKFLOW</name>
-                    <value>Quarkus ecosystem CI</value>
-                </property>
-            </activation>
-            <properties>
-                <skipTests>true</skipTests>
-            </properties>
-        </profile>
-        <profile>
             <id>native-image</id>
             <activation>
                 <property>
