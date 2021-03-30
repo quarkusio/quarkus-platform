@@ -8,12 +8,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>quarkus-universe-integration-tests-camel-websocket-jsr356</artifactId>
-
-    <!-- See: https://github.com/apache/camel-quarkus/issues/2262 -->
-    <properties>
-        <skipTests>true</skipTests>
-    </properties>
+    <artifactId>quarkus-universe-integration-tests-camel-js-dsl</artifactId>
 
     <dependencies>
         <dependency>
@@ -30,12 +25,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-websocket-jsr356</artifactId>
+            <artifactId>camel-quarkus-integration-test-js-dsl</artifactId>
             <version>${camel-quarkus.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-websocket-jsr356-rpkgtests</artifactId>
+            <artifactId>camel-quarkus-integration-test-js-dsl-rpkgtests</artifactId>
             <version>${camel-quarkus.version}</version>
             <scope>test</scope>
         </dependency>
@@ -70,7 +65,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-websocket-jsr356-rpkgtests</dependency>
+                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl-rpkgtests</dependency>
                     </dependenciesToScan>
                     <systemPropertyVariables>
                         <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
@@ -96,7 +91,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-websocket-jsr356-rpkgtests</dependency>
+                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -126,7 +121,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-websocket-jsr356:${camel-quarkus.version}</appArtifact>
+                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>

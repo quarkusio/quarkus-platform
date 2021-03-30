@@ -35,10 +35,8 @@
         <module>camel-atlasmap</module>
         <module>camel-avro</module>
         <module>camel-avro-rpc</module>
-        <module>camel-aws</module>
         <module>camel-aws2</module>
         <module>camel-aws2-grouped</module>
-        <module>camel-azure</module>
         <module>camel-azure-eventhubs</module>
         <module>camel-azure-storage-blob</module>
         <module>camel-azure-storage-queue</module>
@@ -72,6 +70,7 @@
         <module>camel-flatpack</module>
         <module>camel-fop</module>
         <module>camel-foundation</module>
+        <module>camel-freemarker</module>
         <module>camel-ftp</module>
         <module>camel-geocoder</module>
         <module>camel-git</module>
@@ -84,6 +83,7 @@
         <module>camel-grpc</module>
         <module>camel-hazelcast</module>
         <module>camel-headersmap</module>
+        <module>camel-hl7</module>
         <module>camel-http</module>
         <module>camel-hystrix</module>
         <module>camel-infinispan</module>
@@ -95,6 +95,7 @@
         <module>camel-jira</module>
         <module>camel-jolt</module>
         <module>camel-jpa</module>
+        <module>camel-js-dsl</module>
         <module>camel-jsch</module>
         <module>camel-jslt</module>
         <module>camel-json-validator</module>
@@ -107,6 +108,7 @@
         <module>camel-kubernetes</module>
         <module>camel-kudu</module>
         <module>camel-leveldb</module>
+        <module>camel-lra</module>
         <module>camel-lumberjack</module>
         <module>camel-mail</module>
         <module>camel-main</module>
@@ -116,6 +118,7 @@
         <module>camel-main-discovery-disabled</module>
         <module>camel-main-xml-io</module>
         <module>camel-main-xml-jaxb</module>
+        <module>camel-main-yaml</module>
         <module>camel-messaging</module>
         <module>camel-micrometer</module>
         <module>camel-microprofile</module>
@@ -126,12 +129,14 @@
         <module>camel-nagios</module>
         <module>camel-nats</module>
         <module>camel-netty</module>
+        <module>camel-nitrite</module>
         <module>camel-nsq</module>
         <module>camel-oaipmh</module>
         <module>camel-olingo4</module>
         <module>camel-openapi-java</module>
         <module>camel-opentracing</module>
         <module>camel-optaplanner</module>
+        <module>camel-paho-mqtt5</module>
         <module>camel-pdf</module>
         <module>camel-pg-replication-slot</module>
         <module>camel-pgevent</module>
@@ -149,7 +154,6 @@
         <module>camel-saga</module>
         <module>camel-salesforce</module>
         <module>camel-sap-netweaver</module>
-        <module>camel-send-dynamic-http</module>
         <module>camel-servicenow</module>
         <module>camel-servlet</module>
         <module>camel-shiro</module>
@@ -157,6 +161,7 @@
         <module>camel-smallrye-reactive-messaging</module>
         <module>camel-soap</module>
         <module>camel-solr</module>
+        <module>camel-splunk</module>
         <module>camel-spring-rabbitmq</module>
         <module>camel-sql</module>
         <module>camel-stax</module>
@@ -175,7 +180,6 @@
         <module>camel-vertx-kafka</module>
         <module>camel-vertx-websocket</module>
         <module>camel-weather</module>
-        <module>camel-websocket-jsr356</module>
         <module>camel-xml</module>
         <module>camel-xmlsecurity</module>
         <module>camel-xstream</module>
