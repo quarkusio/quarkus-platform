@@ -123,6 +123,7 @@
         <module>camel-micrometer</module>
         <module>camel-microprofile</module>
         <module>camel-minio</module>
+        <module>camel-mllp</module>
         <module>camel-mongodb</module>
         <module>camel-msv</module>
         <module>camel-mustache</module>
