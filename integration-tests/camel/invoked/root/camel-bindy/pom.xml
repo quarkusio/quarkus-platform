@@ -71,6 +71,10 @@
                         <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
                         <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
                     </systemPropertyVariables>
+                    <excludes>
+                        <!-- TODO https://github.com/apache/camel-quarkus/issues/2445 -->
+                        <exclude>**/FixedLengthWithLocaleTest.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
