@@ -26,13 +26,13 @@
         <plugins>
             <plugin>
                 <groupId>io.quarkus</groupId>
-                <artifactId>quarkus-platform-descriptor-json-plugin</artifactId>
-                <version>${quarkus.version}</version>
+                <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
+                <version>0.0.10</version>
                 <executions>
                     <execution>
                         <phase>process-resources</phase>
                         <goals>
-                            <goal>generate-platform-descriptor-json</goal>
+                            <goal>generate-platform-descriptor</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -40,6 +40,20 @@
                     <bomArtifactId>quarkus-universe-bom</bomArtifactId>
                     <overridesFile>${overridesfile}</overridesFile>
                     <skipCategoryCheck>true</skipCategoryCheck>
+                    <processGroupIds>
+                        <groupId>org.kie.kogito</groupId>
+                        <groupId>org.optaplanner</groupId>
+                        <groupId>com.blazebit</groupId>
+                        <groupId>io.quarkiverse.freemarker</groupId>
+                        <groupId>io.quarkiverse.googlecloudservices</groupId>
+                        <groupId>io.quarkiverse.minio</groupId>
+                        <groupId>io.quarkus</groupId>
+                        <groupId>org.apache.camel.quarkus</groupId>
+                        <groupId>io.debezium</groupId>
+                        <groupId>org.amqphub.quarkus</groupId>
+                        <groupId>com.datastax.oss.quarkus</groupId>
+                        <groupId>com.hazelcast</groupId>
+                    </processGroupIds>
                 </configuration>
             </plugin>
         </plugins>
