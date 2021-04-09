@@ -176,7 +176,6 @@
                 <artifactId>blaze-persistence-integration-hibernate-5.4</artifactId>
                 <version>${quarkus-blaze-persistence.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
     <build>
@@ -184,7 +183,7 @@
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
-                <version>0.0.8</version>
+                <version>0.0.10</version>
                 <executions>
                     <execution>
                         <phase>process-resources</phase>
