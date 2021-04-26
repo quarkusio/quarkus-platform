@@ -138,7 +138,7 @@ If an extension has integration tests organized in modules then the following co
 
     Hint: You can also append `-DskipTests -Darguments=-DskipTests` to the command above to skip tests
 
-2. Go to https://oss.sonatype.org/#stagingRepositories and close the repository there.
+2. Go to https://s01.oss.sonatype.org/#stagingRepositories and close the repository there.
 3. Once the checks pass, click on the `Release` button and wait until it gets percolated to Central
  
 ---
