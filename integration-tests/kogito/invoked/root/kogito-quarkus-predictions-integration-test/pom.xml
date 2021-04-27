@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-universe-integration-tests-camel</artifactId>
+        <artifactId>quarkus-universe-integration-tests-kogito-parent</artifactId>
         <version>999-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <properties>
-        <skipTests>true</skipTests> <!-- Disabled because of https://github.com/apache/camel-quarkus/issues/2253 -->
-    </properties>
-
-    <artifactId>quarkus-universe-integration-tests-camel-optaplanner</artifactId>
+    <artifactId>kogito-quarkus-predictions-integration-test</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-universe-integration-tests-camel-rpkgtests</artifactId>
+            <artifactId>quarkus-universe-integration-tests-kogito-rpkgtests</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
             <exclusions>
@@ -28,53 +26,25 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-optaplanner</artifactId>
-            <version>${camel-quarkus.version}</version>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-quarkus-predictions-integration-test</artifactId>
+            <version>${kogito-quarkus.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.camel.quarkus</groupId>
-            <artifactId>camel-quarkus-integration-test-optaplanner-rpkgtests</artifactId>
-            <version>${camel-quarkus.version}</version>
-            <scope>test</scope>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-quarkus-predictions-integration-test-rpkgtests</artifactId>
+            <version>${kogito-quarkus.version}</version>
         </dependency>
-
     </dependencies>
-
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>reserve-network-port</id>
-                        <goals>
-                            <goal>reserve-network-port</goal>
-                        </goals>
-                        <phase>process-resources</phase>
-                        <configuration>
-                            <portNames>
-                                <portName>test.http.port.jvm</portName>
-                                <portName>test.https.port.jvm</portName>
-                                <portName>test.http.port.native</portName>
-                                <portName>test.https.port.native</portName>
-                            </portNames>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <dependenciesToScan>
-                        <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-optaplanner-rpkgtests</dependency>
+                        <dependency>org.kie.kogito:kogito-quarkus-predictions-integration-test-rpkgtests</dependency>
                     </dependenciesToScan>
-                    <systemPropertyVariables>
-                        <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
-                        <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
-                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
@@ -95,7 +65,7 @@
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
                             <dependenciesToScan>
-                                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-optaplanner-rpkgtests</dependency>
+                                <dependency>org.kie.kogito:kogito-quarkus-predictions-integration-test-rpkgtests</dependency>
                             </dependenciesToScan>
                         </configuration>
                         <executions>
@@ -107,8 +77,6 @@
                                 <configuration>
                                     <systemProperties>
                                         <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                                        <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
-                                        <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
                                     </systemProperties>
                                 </configuration>
                             </execution>
@@ -125,7 +93,7 @@
                                     <goal>native-image</goal>
                                 </goals>
                                 <configuration>
-                                    <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-optaplanner:${camel-quarkus.version}</appArtifact>
+                                    <appArtifact>org.kie.kogito:kogito-quarkus-predictions-integration-test:${kogito-quarkus.version}</appArtifact>
                                     <reportErrorsAtRuntime>false</reportErrorsAtRuntime>
                                     <cleanupServer>true</cleanupServer>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
