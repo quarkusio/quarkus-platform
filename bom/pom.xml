@@ -130,11 +130,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>com.hazelcast</groupId>
-                <artifactId>quarkus-hazelcast-deployment</artifactId>
-                <version>${quarkus-hazelcast-client.version}</version>
-            </dependency>
 
             <!-- Cassandra Client -->
             <dependency>
