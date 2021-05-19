@@ -5,4 +5,5 @@ set -e
 mvn versions:set-property -pl . -Dproperty=quarkus.version -DnewVersion=999-SNAPSHOT
 
 # just run all the tests
-mvn --settings .github/quarkus-ecosystem-maven-settings.xml -B -ntp clean install
+# TODO: Reinstate camel https://github.com/apache/camel-quarkus/issues/2621
+mvn --settings .github/quarkus-ecosystem-maven-settings.xml -B -ntp clean install -pl '!integration-tests/camel'
