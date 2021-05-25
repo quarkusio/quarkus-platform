@@ -6,8 +6,11 @@
 [![Project Chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg?style=for-the-badge)](https://quarkusio.zulipchat.com/)
 
 
-Quarkus Platform aggregates extensions from Quarkus Core and those developed by the community into a single tested, compatible and versioned set
-that can be used by application developers to align the dependency versions of their applications with those verified by the platform testsuite.
+Quarkus Platform aggregates extensions from the [Quarkus Core repository](https://github.com/quarkusio/quarkus) and a set of other extensions developed by the Quarkus community
+into a single development stack that targets the primary use-cases of the Quarkus platform. The Quarkus platform includes an integration testsuite to make sure the extensions included
+into the platform do not create conflicts for each other and can be used in the same application in any combination.
+More information about how a Quarkus platform is defined can be found in the [Platform Guide](https://quarkus.io/guides/platform).
+
 
 ## Platform coordination mailing list
 
@@ -15,120 +18,152 @@ If you are a Quarkus Platform participant, it is highly recommended to subscribe
 
 It is a low traffic list which aims to facilitate the coordination of the Platform releases and to share important Platform-related changes.
 
-## Platform BOMs
+## Platform project
 
-The main artifact that represents the platform, as a set of extensions and their dependencies, is `io.quarkus:quarkus-universe-bom`. This BOM
-is imported by application developers to align the dependencies of their applications with the chosen Quarkus Platform version.
+Quarkus platform is a project that brings various Quarkus extensions together aligning their dependency constraints to make sure they do not create conflicts for each other.
+This project does not include any code at this point but it does use tools that collect the original dependency contraints of each extension as an input and generates
+a [set of platform artifacts](https://quarkus.io/guides/platform#quarkus-platform-artifacts) that represent a platform build.
 
-The original version of the `io.quarkus:quarkus-universe-bom` is defined in the `bom/pom.xml`. However, this is not the actual version of the BOM that will be
-installed in the Maven repository. Instead, the original version of the BOM will be used as an input to the [Quarkus Platform BOM Generator](https://github.com/quarkusio/quarkus-platform-bom-generator)
-that will produce a BOM with dependency versions properly aligned across all the platform participants at the same time filtering out outdated and
-non-existent dependencies.
+## Platform members
 
-### Platform BOM generation
+A platform member represents a Quarkus extension project that includes one or more Quarkus extensions that are integrated into the platform.
 
-IMPORTANT: In BOMs whatever is listed or imported earlier dominates over what is listed or imported later. However, this Quarkus Platform BOM Generator
-does not follow that principle generating the final BOM!
+### Quarkus core
 
-This is done for two reasons:
-1. the version constraints defined in `io.quarkus:quarkus-bom` should always dominate (that does not necessarily contradict the BOM rule above, given that `io.quarkus:quarkus-bom` is usually imported first);
-2. to treat extensions imported into the platform fairly wrt the version constraints they contribute to the platform.
+[Quarkus Core](https://github.com/quarkusio/quarkus) is an essential member of the platform and is dominant during the dependency constraint alignment in a sense that its dependency constraints
+are immutable, i.e. other platform members will be adapted to comply with the Quarkus core requirements and not the other way around.
 
-Here is the basic principle of how the Quarkus Platform BOM Generator works:
+### Platform member input
 
-1. The version of the `io.quarkus:quarkus-bom` imported by the original `io.quarkus:quarkus-universe-bom` will be the dominating source of the dependency version constraints.
-Version constraints defined in `io.quarkus:quarkus-bom` will be copied to the generated platform BOM without changes.
-1. Every extension BOM imported by the original `io.quarkus:quarkus-universe-bom` will be processed in the following way:
+Quarkus platform members are expected to provide:
+* the dependency constraints their extensions require at Quarkus application build and run times (typically in the form of a Maven BOM artifact);
+* a list of test Maven artifacts that can be integrated into the Quarkus platform integration testsuite (usually, it would be some of the original tests from the extension project that are released
+along with the extension as Maven `test-jar` artifacts).
+
+The Quarkus platform BOM generator will perform an alignment across all the platform member dependency constraints and will generate a BOM for each platform member
+that is compatible with all the other platform members.
+Once all the member BOMs have been generated, the platform integration testsuite (consisting of the tests contributed by all the members) will be run against the generated platform BOMs.
+As long as *all* the platform integration tests pass, the generated platform member BOMs (and a few other related artifacts), representing a single compatible development stack, can be released.
+
+### Generated platform member artifacts
+
+The platform project build will generate the following artifacts for each member.
+
+#### BOM
+
+Member-specific dependency constraints that are aligned with other platform members. Applications developed in compliance with a Quarkus platform will be importing platform member BOMs that belong to the same platform release.
+E.g. a platform may include extensions from [Camel Quarkus](https://github.com/apache/camel-quarkus) and [Kogito Runtimes](https://github.com/kiegroup/kogito-runtimes), in which case a platform release will include a `quarkus-camel-bom`
+and a `quarkus-kogito-bom`. Then applications using Camel extensions will be importing the `quarkus-camel-bom`, application using Kogito extensions will be importing `quarkus-kogito-bom` and applications using Camel and Kogito extensions
+at the same time will be importing both `quarkus-camel-bom` and `quarkus-kogito-bom`.
+
+**NOTE** The ordering of member BOM imports in applications should not be significant, given that member BOMs are aligned as part of the platform build.
+
+#### JSON descriptor
+
+This artifact contains member extension metadata that is important for the Quarkus devtools used by application developers to discover extensions suitable for their projects.
+
+#### Properties
+
+At a minimum, this artifact includes information about the platform release. This information is used by the Quarkus application build bootstrap mechanism to make sure the platform member BOMs imported by the application belong to the same
+platform release and fail the build or log a warning in case that is not the case. This is done to make sure application developers do not import member BOMs that belong different platform releases by mistake.
+
+## Platform project configuration and build
+
+The platform is currently configured in a single Maven POM file (the root `pom.xml`) with the exception of a few additional resource files. This POM file includes a few Maven plugin configuration generating the platform artifacts and a `platformConfig` configuration.
+
+**IMPORTANT** Maven build process launched from the root project directory will generate the complete platform Maven project (during the `process-resources` phase) in the `generated-platform-project` directory. The generated platform project
+should not be modified manually except for local testing purposes. The project will be re-generated on every platform build launched from the root platform project directory.
+
+The `generated-platform-project` will refer to the root platform project `pom.xml` as its parent POM and so may inherit properties and other common configuration from it.
+
+### Generate the platform project
+
+`mvn process-resources` will generate the complete platform project.
+
+The platform project will typically be generated on every build anyway. But this command could be used in case you want to simply (re-)generate the platform project w/o running any other commands on it.
+
+**NOTE** the way it's currently done is any command launched from the platform project's root dir will be passed to the `generated-platform-project`, which means `mvn process-resources` will not only generate the platform project but will also be executed against it.
+
+### Building the platform
+
+`mvn install` launched from the platform project's root directory will (re-)generate the `generated-platform-project`, build, test and (assuming the tests have passed) install the generated platform artifacts into the local Maven repository.
+
+### Testing the platform
+
+`mvn test` or `mvn verify` launched from the root platform project directory will (re-)generate the `generated-platform-project` and execute all the JVM tests of all the members.
+
+`mvn verify -Dnative` launched from the root platform project directory will (re-)generate the `generated-platform-project` and execute all the JVM and native tests of all the members.
+
+Once the platform project has been generated and installed in the local Maven repository. Platform members can analyze the artifacts generated for their extensions and run their testsuite in isolation from the rest of the platform testsuite
+by navigating to the desired test module and using `mvn` commands they typically would use to run their extension tests.
+
+## Generated platform project layout
+
+The `generated-platform-project` is a multimodule project. It will contain one module per platform member. E.g.
+
+```shell
+[aloubyansky@localhost quarkus-platform]$ ls generated-platform-project -l
+total 48
+-rw-rw-r-- 1 aloubyansky aloubyansky 1377 May 27 16:35 pom.xml
+drwxrwxr-x 5 aloubyansky aloubyansky 4096 May 27 16:35 quarkus
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-blaze-persistence
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-camel
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-cassandra
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-debezium
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-hazelcast
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-kogito
+drwxrwxr-x 3 aloubyansky aloubyansky 4096 May 28 08:32 quarkus-maven-plugin
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-optaplanner
+drwxrwxr-x 6 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-qpid-jms
+drwxrwxr-x 5 aloubyansky aloubyansky 4096 May 27 16:35 quarkus-universe
+```
+
+* The `quarkus` module represents the [Quarkus Core](https://github.com/quarkusio/quarkus) member.
+* The `quarkus-maven-plugin` module re-publishes the `io.quarkus:quarkus-maven-plugin` from the [Quarkus Core](https://github.com/quarkusio/quarkus) under the platform's Maven groupId and version to simplify configurations of Quarkus application using the platform.
+* The `quarkus-universe` module reprsents the legacy `io.quarkus:quarkus-universe-bom` platform.
+
+Other modules above represent actual platform members. Every member module will have the same layout, e.g.
+
+```shell
+[aloubyansky@localhost quarkus-platform]$ ls generated-platform-project/quarkus-camel -l
+total 28
+drwxrwxr-x   2 aloubyansky aloubyansky  4096 May 28 08:32 bom
+drwxrwxr-x   3 aloubyansky aloubyansky  4096 May 28 08:32 descriptor
+drwxrwxr-x 121 aloubyansky aloubyansky 12288 May 28 08:32 integration-tests
+-rw-rw-r--   1 aloubyansky aloubyansky   767 May 27 16:35 pom.xml
+drwxrwxr-x   4 aloubyansky aloubyansky  4096 May 27 16:35 properties
+```
+
+The `bom` module will contain a member-specific generate Maven BOM that is aligned with all the other generated member BOMs. This BOM will be a part of the platform release.
+
+The `descriptor` module will contain a JSON artifact in its `target` directory which is generated from the member BOM artifact and will be a part of the platform release.
+
+The `properties` module will contain a `properties` artifact in its `target` directory and will be a part of the platform release.
+
+The `integration-tests` module will contain test modules generated for the tests configured in the root platform `pom.xml` for the member. There will be one module per each configured test. The tests are excluded from the platform release.
+
+
+
+
+## Platform BOM generation
+
+The basic principle of the Quarkus Platform BOM Generator is:
+
+1. Version constraints defined in `io.quarkus:quarkus-bom` will not be mutated and will be dominating during the dependency constraint alignment across all the platform members.
+1. Every other platform member BOM will be processed in the following way:
    1. if it appears to be importing any version of `io.quarkus:quarkus-bom`, the set of the dependency version constraints included into that version of `io.quarkus:quarkus-bom`
-will be subtracted from the extension BOM.
-   1. The remaining set of the dependency version constraints from the extension BOM will be split into groups. With each group containing artifacts coming from the same origin,
+will be subtracted from the member BOM.
+   1. The remaining set of the dependency version constraints from the member BOM will be organized into groups. With each group containing artifacts coming from the same origin,
 i.e. artifacts that appear to be modules of the same multi-module project release.
-   1. For each group of such artifacts, the generator will check whether `io.quarkus:quarkus-bom` includes artifacts from the same origin. And if it does, it will try to align
-the versions of those artifacts with the project release version used in `io.quarkus:quarkus-bom` (highlighting the differences/conflicts in the generated reports).
-   1. If `io.quarkus:quarkus-bom` did not appear to contain artifacts with the same origin as the group, then every other imported extension BOM is checked for including artifacts
+   1. For each group of such artifacts, the generator will check whether the `io.quarkus:quarkus-bom` the platform is based on includes any artifacts from the same origin.
+And if it does, it will try to align the versions of those artifacts with the project release version used in the `io.quarkus:quarkus-bom` (highlighting the differences/conflicts in the generated reports).
+   1. If the `io.quarkus:quarkus-bom` did not appear to contain any artifacts from the same origin as the group, then every other imported member BOM is checked for including artifacts
 from the same origin. If such artifacts are found then the newer version of those artifacts will be preferred.
 
-#### Generated Output
+### BOM generator reports
 
-The BOM generator will actually produce more than one BOM. Besides generating the `io.quarkus:quarkus-universe-bom` it will also generate
-BOMs for every imported extension (which is not a part of `io.quarkus:quarkus-bom`). Every generated extension BOM will basically be the original
-extension BOM but aligned with the dependency version constraints from the `io.quarkus:quarkus-universe-bom`. The purpose of generating extension
-BOMs is simply to highlight which version constraints relevant to the extension have actually been included into the generated `io.quarkus:quarkus-universe-bom`
-and debug possible incompatibilities.
-
-The generated BOMs and various reports will be found under `bom/target/boms`. This directory will contain:
-* `index.html` - the main HTML page with all the reports detailing potential conflicts and diffs.
-* a directory per each generated BOM with the name following `<bom-groupId>.<bom-artifactId>-version` format and containing:
-  * `pom.xml` - the generated POM (BOM);
-  * `diff.html` - the differences between the original version of the BOM and the generated one;
-  * `original-releases.html` - multi-module project releases detected in the original version of the BOM;
-  * `generated-releases.html` - multi-module project releases detected in the generated version of the BOM.
-
-## Integration testsuite
-
-At this point, Quarkus Core extension tests are not included into the platform testsuite. There are two reasons for that:
-1. Quarkus Core tests aren't available as Maven artifacts;
-2. Given that Quarkus Core dependencies dominate in the platform, Quarkus Core tests are supposed to always pass.
-
-All other extensions contributed by the community **must** include their tests into the platform testsuite.
-
-The testsuite is expected to include tests for both JVM and native-image modes. The native-image tests are enabled with `-Dnative` command
-line argument.
-
-### Testsuite layout
-
-Given that the platform BOM is generated, the testsuite projects can not belong to the same project as the platform BOM. Simply because
-they would see the original version of the BOM instead of the generated one. And we definitely want to run the tests against the platform BOM
-that will be installed in the Maven repository. For that reason the BOM project and the testsuite projects are separated.
-
-The root project includes module `integration-tests` whose `pom.xml` imports the `io.qaurkus:quarkus-universe-bom` and other necessary constraints.
-It also configures the `maven-invoker-plugin` in its `pluginManagement` section. This `pom.xml` will actually be the parent of all the extension test
-projects.
-
-`integration-tests` project defines submodules: one module per imported extension. Each such extension module includes a `pom.xml` that configures the invoker.
-Actually, it simply mentions the `maven-invoker-plugin` inheriting its configuration from `integration-tests/pom.xml`. The invoker targets directory called `invoked`,
-which is found in every extension module of `intergation-tests`.
-IMPORTANT: `invoked` directory is not added as a `module` of the extension tests project! This is very important, since this is what separates the extension tests
-from the main Quarkus platform project.
-
-The `invoked` directory contains the `root` directory (actually it's not important how it's called, the `maven-invoker-plugin` is configured to look into `invoked` directory
-then it invoke projects found under it), which is the actual extension integration tests project root directory.
-
-Normally, it will contain at least two modules:
-* `rpkgtests` that is preparing the imported extension test artifacts to be usable as test sources with proper dependencies (basically, it repackages
-the test jars to make the test scope dependencies visible to the Maven resolver);
-* a module configuring specific test execution. Normally, it will depend on the artifact produced by `rpkgtests` and configure the `maven-failsafe-plugin` to look for tests
-from that artifact.
-
-### Running Tests
-
-All the JVM tests will of course be run as part of `mvn clean install`.
-
-To enable native tests simply add `-Dnative` to the command line.
-
-#### Running Extension-specific Tests
-
-The integration tests do rely on the presence of the following artifacts in the Local maven repository
-* `io.quarkus:quarkus-universe-bom` - the platform BOM;
-* `io.quarkus:quarkus-universe-integration-tests-parent` - the parent of every integration test project.
-
-The quickest way to install them would be:
-
-`mvn clean install -DskipTests`
-
-Once the platform BOM and the parent POMs have been installed, it's possible to
-
-`cd integration-tests/<extension-dir>/invoked/root`
-
-and run the necessary `mvn` commands. However, this approach assumes the platform BOM doesn't change between the test runs, i.e. it does not have to be regenerated.
-
-The following command could be used in cases when the platform BOM has to be regenerated before running the extension tests:
-
-`mvn clean install -pl bom,integration-tests/<extension-dir>`
-
-If an extension has integration tests organized in modules then the following command can be used to regenerate the platform BOM and run the specific submodule tests (assuming the `rpkgtests` artifact does not have to be regenerated):
-
-`mvn clean install -pl bom,integration-tests/<extension-dir> -Dinvoker.test=root/<module-dir>`
+Besides generating the member BOMs, the BOM generator will also generate HTML reports for highlighting how the differences between the original dependency version constraints
+and the generated ones for every member. The reports can be found under the `target/reports` directory of the root platform project dir.
 
 ## Release steps
 
