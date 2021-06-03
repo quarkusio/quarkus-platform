@@ -1,0 +1,101 @@
+{
+  "metadata" : {
+    "project" : {
+      "properties" : {
+        "doc-root" : "https://quarkus.io",
+        "rest-assured-version" : "4.3.2",
+        "compiler-plugin-version" : "3.8.1",
+        "surefire-plugin-version" : "3.0.0-M5",
+        "kotlin-version" : "1.4.32",
+        "scala-version" : "2.12.13",
+        "scala-plugin-version" : "4.4.0",
+        "quarkus-core-version" : "2.0.0.CR2",
+        "maven-plugin-groupId" : "${project.groupId}",
+        "maven-plugin-artifactId" : "quarkus-maven-plugin",
+        "maven-plugin-version" : "${project.version}",
+        "gradle-plugin-id" : "io.quarkus",
+        "gradle-plugin-version" : "2.0.0.CR2",
+        "supported-maven-versions" : "[3.6.2,)",
+        "proposed-maven-version" : "3.8.1",
+        "maven-wrapper-version" : "0.7.7",
+        "gradle-wrapper-version" : "6.9"
+      }
+    },
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.0.0.CR2" ]
+  },
+  "categories" : [ {
+    "id" : "web",
+    "name" : "Web",
+    "description" : "Everything you need for REST endpoints, HTTP and web formats like JSON",
+    "metadata" : {
+      "pinned" : [ "io.quarkus:quarkus-resteasy", "io.quarkus:quarkus-resteasy-jackson", "io.quarkus:quarkus-resteasy-jsonb" ]
+    }
+  }, {
+    "id" : "data",
+    "name" : "Data",
+    "description" : "Accessing and managing your data (RDBMS, NoSQL, caching, transaction management, etc)",
+    "metadata" : {
+      "pinned" : [ "io.quarkus:quarkus-hibernate-orm", "io.quarkus:quarkus-hibernate-orm-panache", "io.quarkus:quarkus-jdbc-postgresql", "io.quarkus:quarkus-jdbc-mariadb", "io.quarkus:quarkus-jdbc-mysql", "io.quarkus:quarkus-jdbc-mssql", "io.quarkus:quarkus-jdbc-db2", "io.quarkus:quarkus-jdbc-h2", "io.quarkus:quarkus-jdbc-derby" ]
+    }
+  }, {
+    "id" : "messaging",
+    "name" : "Messaging",
+    "description" : "Send and receives message to various messaging systems (AMQP, KAfka etc)",
+    "metadata" : {
+      "pinned" : [ "io.quarkus:quarkus-smallrye-reactive-messaging", "io.quarkus:quarkus-smallrye-reactive-messaging-amqp", "io.quarkus:quarkus-smallrye-reactive-messaging-kafka", "io.quarkus:quarkus-smallrye-reactive-messaging-mqtt" ]
+    }
+  }, {
+    "id" : "core",
+    "name" : "Core",
+    "description" : "Core Quarkus components: engine, logging, etc.",
+    "metadata" : {
+      "pinned" : [ "io.quarkus:quarkus-config-yaml", "io.quarkus:quarkus-logging-json" ]
+    }
+  }, {
+    "id" : "reactive",
+    "name" : "Reactive",
+    "description" : "Non blocking stack and connectors",
+    "metadata" : {
+      "pinned" : [ "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-mutiny" ]
+    }
+  }, {
+    "id" : "cloud",
+    "name" : "Cloud",
+    "description" : "Useful for Cloud Native deployments platforms like Kubernetes and cloud providers",
+    "metadata" : {
+      "pinned" : [ "io.quarkus:quarkus-kubernetes", "io.quarkus:quarkus-openshift", "io.quarkus:quarkus-smallrye-health", "io.quarkus:quarkus-smallrye-fault-tolerance" ]
+    }
+  }, {
+    "id" : "observability",
+    "name" : "Observability",
+    "description" : "Metrics, tracing, etc",
+    "metadata" : { }
+  }, {
+    "id" : "security",
+    "name" : "Security",
+    "description" : "Everything you need to secure your application",
+    "metadata" : {
+      "pinned" : [ "io.quarkus:quarkus-oidc", "io.quarkus:quarkus-smallrye-jwt" ]
+    }
+  }, {
+    "id" : "serialization",
+    "name" : "Serialization",
+    "description" : "Serializing and deserializing various formats",
+    "metadata" : { }
+  }, {
+    "id" : "miscellaneous",
+    "name" : "Miscellaneous",
+    "description" : "Mixed bag of good stuff",
+    "metadata" : { }
+  }, {
+    "id" : "compatibility",
+    "name" : "Compatibility",
+    "description" : "Support for alternative programming models on Quarkus",
+    "metadata" : { }
+  }, {
+    "id" : "alt-languages",
+    "name" : "Alternative languages",
+    "description" : "Support for other JVM based languages",
+    "metadata" : { }
+  } ]
+}
