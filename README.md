@@ -101,33 +101,39 @@ by navigating to the desired test module and using `mvn` commands they typically
 
 The platform is currently configured in the root POM file under the `platformConfig` element of the `io.quarkus:quarkus-platform-bom-maven-plugin` configuration.
 
-### The all-inclusive BOM
+### Release configuration
 
-The is the BOM that contains the dependency constraints of all the platform members, in Quarkus 1.x it is known as the `quarkus-universe-bom`. Its cordinates can be configured using the `bom` element, e.g.
+The platform release configuration is expressed under the `release` element, e.g.
+```xml
+  <platformConfig>
+    <!-- the platform release info -->
+    <release>
+      <!-- the platform (dev stack) key (if not specified, defaults to the root project's groudId) -->
+      <platformKey>${project.groupId}</platformKey>
+      <!-- platform stream id, representing the flow of backward compatible releases
+           (if not specified, defaults to the project's major.minor platform version) -->
+      <stream>2.0</stream>
+      <!-- platform (comparable) version, must be unique in the scope of the stream
+           (if not specified, defaults to the micro version of the complete platform version) -->
+      <version>0</version>
+    </release>
+```
+
+### The universal platform
+
+This is the BOM that contains the dependency version constraints of all the platform members. In Quarkus 1.x it is known as the `quarkus-universe-bom`.
+Its cordinates can be configured using the `bom` element, e.g.
 
 ```xml
   <platformConfig>
-    <!-- coordinates of the generated all-inclusive platform BOM -->
-    <bom>io.quarkus:quarkus-universe-bom:${project.version}</bom>
-    <!-- whether to skip installation of the all-inclusive platform BOM -->
-    <skipInstall>false</skipInstall>
+    <universal>
+      <!-- coordinates of the generated all-inclusive platform BOM -->
+      <bom>io.quarkus:quarkus-universe-bom:${project.version}</bom>
+      <!-- whether to skip installation of the all-inclusive platform BOM -->
+      <skipInstall>false</skipInstall>
+    </universal>
 ```
-`skipInstall` element can be used to exclude the all-inclusive BOM from the artifacts to be installed and deployed.
-
-### Release configuration
-
-The platform release configuration is expressed under the `platformRelease` element, e.g.
-```xml
-  <!-- the platform release info -->
-  <platformRelease>
-    <!-- the platform (dev stack) key (if not specified, defaults to the root project's groudId) -->
-    <platformKey>${project.groupId}</platformKey>
-    <!-- platform stream id, representing the flow of backward compatible releases (if not specified, defaults to the project's major.minor platform version) -->
-    <stream>2.0</stream>
-    <!-- platform (comparable) version, must be unique in the scope of the stream (if not specified, defaults to the micro version of the complete platform version) -->
-    <version>0</version>
-  </platformRelease>
-```
+The `skipInstall` element can be used to exclude the all-inclusive BOM from the artifacts to be installed and deployed.
 
 ### Quarkus core configuration
 
