@@ -26,18 +26,18 @@ a [set of platform artifacts](https://quarkus.io/guides/platform#quarkus-platfor
 
 ## Platform members
 
-A platform member represents a Quarkus extension project that includes one or more Quarkus extensions that are integrated into the platform.
+A platform member represents a Quarkus extension project that includes one or more Quarkus extensions that are integrated into a platform.
 
 ### Quarkus core
 
-[Quarkus Core](https://github.com/quarkusio/quarkus) is an essential member of the platform and is dominant during the dependency constraint alignment in a sense that its dependency constraints
-are immutable, i.e. other platform members will be adapted to comply with the Quarkus core requirements and not the other way around.
+[Quarkus Core](https://github.com/quarkusio/quarkus) is an essential member of a platform and is dominanting during the dependency constraint alignment in a sense that its dependency constraints
+are immutable, i.e. other platform members will be adapted to comply with the Quarkus core build and runtime requirements and not the other way around.
 
 ### Platform member input
 
 Quarkus platform members are expected to provide:
 * the dependency constraints their extensions require at Quarkus application build and run times (typically in the form of a Maven BOM artifact);
-* a list of test Maven artifacts that can be integrated into the Quarkus platform integration testsuite (usually, it would be some of the original tests from the extension project that are released
+* a list of Maven `test-jar` artifacts that should be added to the Quarkus platform integration testsuite (it would typically be some of the original tests from the extension project that are released
 along with the extension as Maven `test-jar` artifacts).
 
 The Quarkus platform BOM generator will perform an alignment across all the platform member dependency constraints and will generate a BOM for each platform member
@@ -53,8 +53,8 @@ The platform project build will generate the following artifacts for each member
 
 Member-specific dependency constraints that are aligned with other platform members. Applications developed in compliance with a Quarkus platform will be importing platform member BOMs that belong to the same platform release.
 E.g. a platform may include extensions from [Camel Quarkus](https://github.com/apache/camel-quarkus) and [Kogito Runtimes](https://github.com/kiegroup/kogito-runtimes), in which case a platform release will include a `quarkus-camel-bom`
-and a `quarkus-kogito-bom`. Then applications using Camel extensions will be importing the `quarkus-camel-bom`, application using Kogito extensions will be importing `quarkus-kogito-bom` and applications using Camel and Kogito extensions
-at the same time will be importing both `quarkus-camel-bom` and `quarkus-kogito-bom`.
+and a `quarkus-kogito-bom`. Applications using Camel extensions will then be importing the `quarkus-camel-bom`, applications using Kogito extensions will be importing the `quarkus-kogito-bom` and applications using Camel and Kogito extensions
+at the same time will be importing both the `quarkus-camel-bom` and the `quarkus-kogito-bom`.
 
 **NOTE** The ordering of member BOM imports in applications should not be significant, given that member BOMs are aligned as part of the platform build.
 
@@ -64,10 +64,10 @@ This artifact contains member extension metadata that is important for the Quark
 
 #### Properties
 
-At a minimum, this artifact includes information about the platform release. This information is used by the Quarkus application build bootstrap mechanism to make sure the platform member BOMs imported by the application belong to the same
+At a minimum, this artifact includes information about the platform release. This information is used by the Quarkus application bootstrap mechanism to make sure the platform member BOMs imported by the application belong to the same
 platform release and fail the build or log a warning in case that is not the case. This is done to make sure application developers do not import member BOMs that belong different platform releases by mistake.
 
-## Platform project configuration and build
+## Building and testing the platform project
 
 The platform is currently configured in a single Maven POM file (the root `pom.xml`) with the exception of a few additional resource files. This POM file includes a few Maven plugin configuration generating the platform artifacts and a `platformConfig` configuration.
 
@@ -76,7 +76,7 @@ should not be modified manually except for local testing purposes. The project w
 
 The `generated-platform-project` will refer to the root platform project `pom.xml` as its parent POM and so may inherit properties and other common configuration from it.
 
-### Generate the platform project
+### Generating the platform project
 
 `mvn process-resources` will generate the complete platform project.
 
@@ -84,7 +84,7 @@ The platform project will typically be generated on every build anyway. But this
 
 **NOTE** the way it's currently done is any command launched from the platform project's root dir will be passed to the `generated-platform-project`, which means `mvn process-resources` will not only generate the platform project but will also be executed against it.
 
-### Building the platform
+### Installing the platform
 
 `mvn install` launched from the platform project's root directory will (re-)generate the `generated-platform-project`, build, test and (assuming the tests have passed) install the generated platform artifacts into the local Maven repository.
 
@@ -94,8 +94,159 @@ The platform project will typically be generated on every build anyway. But this
 
 `mvn verify -Dnative` launched from the root platform project directory will (re-)generate the `generated-platform-project` and execute all the JVM and native tests of all the members.
 
-Once the platform project has been generated and installed in the local Maven repository. Platform members can analyze the artifacts generated for their extensions and run their testsuite in isolation from the rest of the platform testsuite
+Once the platform project has been generated and installed in the local Maven repository, platform contibutors can analyze the artifacts generated for their extensions and run their testsuite in isolation from the rest of the platform testsuite
 by navigating to the desired test module and using `mvn` commands they typically would use to run their extension tests.
+
+## Platform configuration
+
+The platform is currently configured in the root POM file under the `platformConfig` element of the `io.quarkus:quarkus-platform-bom-maven-plugin` configuration.
+
+### The all-inclusive BOM
+
+The is the BOM that contains the dependency constraints of all the platform members, in Quarkus 1.x it is known as the `quarkus-universe-bom`. Its cordinates can be configured using the `bom` element, e.g.
+
+```xml
+  <platformConfig>
+    <!-- coordinates of the generated all-inclusive platform BOM -->
+    <bom>io.quarkus:quarkus-universe-bom:${project.version}</bom>
+    <!-- whether to skip installation of the all-inclusive platform BOM -->
+    <skipInstall>false</skipInstall>
+```
+`skipInstall` element can be used to exclude the all-inclusive BOM from the artifacts to be installed and deployed.
+
+### Release configuration
+
+The platform release configuration is expressed under the `platformRelease` element, e.g.
+```xml
+  <!-- the platform release info -->
+  <platformRelease>
+    <!-- the platform (dev stack) key (if not specified, defaults to the root project's groudId) -->
+    <platformKey>${project.groupId}</platformKey>
+    <!-- platform stream id, representing the flow of backward compatible releases (if not specified, defaults to the project's major.minor platform version) -->
+    <stream>2.0</stream>
+    <!-- platform (comparable) version, must be unique in the scope of the stream (if not specified, defaults to the micro version of the complete platform version) -->
+    <version>0</version>
+  </platformRelease>
+```
+
+### Quarkus core configuration
+
+Quarkus core is an essential member of a platform and is configured in the `core` element, e.g.
+```xml
+  <core>
+    <name>Core</name> <!-- 1 -->
+    <bom>io.quarkus:quarkus-bom:${quarkus.version}</bom> <!-- 2 -->
+    <release>
+      <next>${project.groupId}:quarkus-bom:${project.version}</next> <!-- 3 -->
+    </release>
+  </core>
+```
+1. Name that is used to refere to the core member in the POMs and other generated resources
+1. The original Quarkus core BOM coordinates the platform is based on
+1. The coordinates under which the generated Quarkus core platform BOM should be installed and deployed
+
+### Platform member configuration
+
+Platform members are configured under the `member` element, e.g.
+
+```xml
+  <members>
+    <member>
+      <name>OptaPlanner</name>                                                     <!-- 1 -->
+      <bom>org.optaplanner:optaplanner-bom:${optaplanner-quarkus.version}</bom>    <!-- 2 -->
+      <enabled>true</enabled>                                                      <!-- 3 -->
+      <release>
+        <next>${project.groupId}:quarkus-optaplanner-bom:${project.version}</next> <!-- 4 -->
+      </release>
+      <defaultTestConfig>                                                          <!-- 5 -->
+        <skip>false</skip>                                                         <!-- 6 -->
+      </defaultTestConfig>
+      <tests>
+        <test> <!-- 7 -->
+          <artifact>org.optaplanner:optaplanner-quarkus-jackson-integration-test:${optaplanner-quarkus.version}</artifact>
+          <skip>true</skip>                                                        <!-- 8 -->
+        </test>
+...
+```
+1. Name that is used to refere to the member in the POMs and other generated resources
+1. The original member BOM coordinates representing members build and run times classpath constraints
+1. Whether the member actually participates in the platform build or not (if a member is disabled, the rest of its configuration will be ignored)
+1. The coordinates under which the generated member platform BOM should be installed and deployed
+1. The default configuration options for all the tests of the member
+1. Can be used to skip all the member tests (unless explicitly overriden in a test config)
+1. Specific test configuration will reference a Maven test jar artifact containing the tests that should be run as part of the platform's IT
+1. Whether the test should be skipped during the platform IT run
+
+#### Platform member test configuration
+
+Besides the mentioned about `artifact` and `skip` elements the following test configuration options are available:
+```xml
+  <test>
+    <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-main:${quarkus-cassandra-client.version}</artifact>
+
+    <!-- skip native test runs (by default a single test is assumed to include both the JVM and the corresponding native test) -->
+    <skipNative>true</skipNative>
+    <!-- skip JVM test runs but do run the native test -->
+    <skipJvm>true</skipJvm>
+    
+    <!-- while skipping means adding `maven.test.skip` property to the config, excluding means removing the test module for the artifact -->
+    <excluded>true</excluded>
+    
+    <!-- use the failsafe plugin instead of the surefire one (which is the default) for the test-->
+    <mavenFailsafePlugin>true</mavenFailsafePlugin>
+
+    <!-- test groups config (applied to both jvm and native tests unless the nativeGroups is present) -->
+    <groups>!native</groups>
+
+    <!-- native test groups (applied only to the native groups and overrides 'groups') -->
+    <nativeGroups>native</nativeGroups>
+
+    <!-- Test POM propertuies -->
+    <pomProperties>
+      <test.project.prop1>value1</test.propject.prop1>
+    </pomProperties>
+
+    <!-- JVM-only system properties -->
+    <jvmSystemProperties>
+      <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
+    </jvmSystemProperties>
+    <!-- Native-only system properties -->
+    <nativeSystemProperties>
+      <quarkus.http.test-port>$${test.http.port.native}</quarkus.http.test-port>
+    </nativeSystemProperties>
+    <!-- JVM and native system property -->
+    <systemProperties>
+      <prop1>value1</prop1>
+    </systemProperties>
+
+    <!-- extra dependencies that should be added to the test application
+         WHICH PRACTICALLY SHOULD BE AVOIDED -->
+    <dependencies>
+      <dependency>io.quarkus:quarkus-jdbc-h2:${quarkus.version}</dependency>
+    </dependencies>
+    <!-- extra test scope dependencies that should be added to the test application
+         WHICH PRACTICALLY SHOULD BE AVOIDED -->
+    <testDependencies>
+      <dependency>io.quarkus:quarkus-test-h2:${quarkus.version}</dependency>
+    </testDependencies>
+
+    <!-- An XSL template that should be applied to the generated test pom.xml to customize the configuration -->
+    <transformWith>src/main/resources/xslt/camel/reserve-network-port.xsl</transformWith>
+```
+#### Platform members without a BOM
+
+Platform members are highly encouraged to provide their dependency constraints that represent their runtime and build time
+classpath requirements in the form of a Maven BOM artifact. If a BOM does not exist yet, it's possible to configure
+the dependency constraints directly in the member config, e.g.
+```xml
+  <member>
+    <name>Debezium-Outbox</name>
+    <dependencyManagement>
+      <dependency>io.debezium:debezium-quarkus-outbox:${debezium-quarkus-outbox.version}</dependency>
+      <dependency>io.debezium:debezium-quarkus-outbox-deployment:${debezium-quarkus-outbox.version}</dependency>
+    </dependencyManagement>
+...
+```
 
 ## Generated platform project layout
 
@@ -141,9 +292,6 @@ The `descriptor` module will contain a JSON artifact in its `target` directory w
 The `properties` module will contain a `properties` artifact in its `target` directory and will be a part of the platform release.
 
 The `integration-tests` module will contain test modules generated for the tests configured in the root platform `pom.xml` for the member. There will be one module per each configured test. The tests are excluded from the platform release.
-
-
-
 
 ## Platform BOM generation
 

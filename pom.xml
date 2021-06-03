@@ -170,15 +170,15 @@
                         <!-- the platform release info -->
                         <platformRelease>
                             <!--
-                                |  the platform (dev stack) key, defaults to the platform's groudId
+                                |  the platform (dev stack) key (if not specified, defaults to the root project's groudId)
                             -->
                             <!-- platformKey>${project.groupId}</platformKey -->
                             <!--
-                                | platform stream id, representing the flow of backward compatible releases, defaults to major.minor platform version
+                                | platform stream id, representing the flow of backward compatible releases (if not specified, defaults to the project's major.minor platform version)
                             -->
                             <!-- stream>2.0</stream -->
                             <!--
-                                | platform (comparable) version, must be unique in the scope of the stream, defaults to the micro version of the platform
+                                | platform (comparable) version, must be unique in the scope of the stream, (if not specified, defaults to the micro version of the complete platform version)
                             -->
                             <!-- version>0</version> -->
                         </platformRelease>
