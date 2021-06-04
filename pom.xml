@@ -65,6 +65,7 @@
         <kogito-quarkus.version>1.6.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.6.0.Final</optaplanner-quarkus.version>
 
+        <quarkus-platform-bom-generator.version>0.0.17</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -135,7 +136,7 @@
                 <plugin>
                     <groupId>io.quarkus</groupId>
                     <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
-                    <version>0.0.16</version>
+                    <version>${quarkus-platform-bom-generator.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -163,12 +164,8 @@
                 </executions>
                 <configuration>
                     <platformConfig>
-                        <!-- coordinates of the generated all-inclusive platform BOM -->
-                        <bom>io.quarkus:quarkus-universe-bom:${project.version}</bom>
-                        <!-- whether to skip installation of the all-inclusive platform BOM -->
-                        <skipInstall>false</skipInstall>
                         <!-- the platform release info -->
-                        <platformRelease>
+                        <release>
                             <!--
                                 |  the platform (dev stack) key (if not specified, defaults to the root project's groudId)
                             -->
@@ -181,7 +178,14 @@
                                 | platform (comparable) version, must be unique in the scope of the stream, (if not specified, defaults to the micro version of the complete platform version)
                             -->
                             <!-- version>0</version> -->
-                        </platformRelease>
+                        </release>
+                        <!-- Universal / all-inclusive platform -->
+                        <universal>
+                            <!-- coordinates of the generated all-inclusive platform BOM -->
+                            <bom>io.quarkus:quarkus-universe-bom:${project.version}</bom>
+                            <!-- whether to skip installation of the all-inclusive platform BOM -->
+                            <skipInstall>false</skipInstall>
+                        </universal>
                         <!-- Quarkus core -->
                         <core>
                             <name>Core</name>
