@@ -53,7 +53,7 @@
         <configuration>
           <bomArtifactId>quarkus-universe-bom</bomArtifactId>
           <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
-          <overridesFile>${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
+          <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>
       </plugin>

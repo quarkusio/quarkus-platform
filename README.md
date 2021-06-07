@@ -163,9 +163,11 @@ Platform members are configured under the `member` element, e.g.
       <enabled>true</enabled>                                                      <!-- 3 -->
       <release>
         <next>${project.groupId}:quarkus-optaplanner-bom:${project.version}</next> <!-- 4 -->
+        <!-- updated automatically -->
+        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-optaplanner-bom:2.0.0.Final</lastDetectedBomUpdate> <!-- 5 -->
       </release>
-      <defaultTestConfig>                                                          <!-- 5 -->
-        <skip>false</skip>                                                         <!-- 6 -->
+      <defaultTestConfig>                                                          <!-- 6 -->
+        <skip>false</skip>                                                         <!-- 7 -->
       </defaultTestConfig>
       <tests>
         <test> <!-- 7 -->
@@ -178,6 +180,8 @@ Platform members are configured under the `member` element, e.g.
 1. The original member BOM coordinates representing members build and run times classpath constraints
 1. Whether the member actually participates in the platform build or not (if a member is disabled, the rest of its configuration will be ignored)
 1. The coordinates under which the generated member platform BOM should be installed and deployed
+1. The BOM generator detects whether the generated member BOM has changed since the previous release and records the value of the last release in which the BOM
+has actually changed. The value of this element is meant to be updated during the release process by the tool itself in case the BOM has actually changed.
 1. The default configuration options for all the tests of the member
 1. Can be used to skip all the member tests (unless explicitly overriden in a test config)
 1. Specific test configuration will reference a Maven test jar artifact containing the tests that should be run as part of the platform's IT
