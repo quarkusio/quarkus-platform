@@ -20,7 +20,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-universe-bom</artifactId>
-        <version>${main.bom.version}</version>
+        <version>${universal.bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

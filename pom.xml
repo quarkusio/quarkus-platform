@@ -65,7 +65,7 @@
         <kogito-quarkus.version>1.6.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.6.0.Final</optaplanner-quarkus.version>
 
-        <quarkus-platform-bom-generator.version>0.0.17</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.18</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -77,15 +77,6 @@
         <overridesfile>
             ${resourcesdir}/extensions-overrides.json
         </overridesfile>
-
-        <!--
-           | The registry service to notify about the new platform release
-        -->
-        <!-- quarkus.registry.url>http://localhost:8080/registry/new-platform</quarkus.registry.url -->
-        <!--
-           | Whether to update the platform release config in this POM after successuflly installing the platform artifacts
-        -->
-        <!-- updatePomOnInstall>false</updatePomOnInstall -->
     </properties>
 
     <distributionManagement>
@@ -598,11 +589,11 @@
                     <plugin>
                         <artifactId>maven-release-plugin</artifactId>
                         <configuration>
-                            <!-- After the release plugin has transformed all the POMs, we need to re-generate the platform configs (mainly to re-generated POM properties)
+                            <!-- After the release plugin has transformed all the POMs, we need to re-generate the platform configs (mainly to re-generated the POM properties)
                                  taking into account the upcoming release version. Although this will happen at the `process-resources` phase anyway, this should be done
                                  using the platform invoker goal (otherwise, some dependencies relying on the generated properties may fail to resolve).
                                  Here we are deactivating the release profile to exclude the generated-platform-project module. -->
-                            <preparationGoals>clean verify -P !release</preparationGoals>
+                            <preparationGoals>clean verify -P !release -DrecordUpdatedBoms</preparationGoals>
                             <completionGoals>process-resources -P !release</completionGoals>
                         </configuration>
                     </plugin>

@@ -11,6 +11,9 @@
   <artifactId>quarkus-blaze-persistence-bom-quarkus-platform-descriptor</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Blaze-Persistence - Quarkus Platform Descriptor</name>
+  <properties>
+    <member.last-bom-update>io.quarkus.platform:quarkus-blaze-persistence-bom:999-SNAPSHOT</member.last-bom-update>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>io.quarkus.platform</groupId>
@@ -63,7 +66,7 @@
               <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
-          <overridesFile>${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
+          <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>
       </plugin>

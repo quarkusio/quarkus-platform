@@ -11,6 +11,9 @@
   <artifactId>quarkus-bom-quarkus-platform-descriptor</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Core - Quarkus Platform Descriptor</name>
+  <properties>
+    <member.last-bom-update>io.quarkus.platform:quarkus-bom:999-SNAPSHOT</member.last-bom-update>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>io.quarkus.platform</groupId>

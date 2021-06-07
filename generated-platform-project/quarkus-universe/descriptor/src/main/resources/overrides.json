@@ -10,9 +10,9 @@
         "scala-version" : "2.12.13",
         "scala-plugin-version" : "4.4.0",
         "quarkus-core-version" : "2.0.0.CR2",
-        "maven-plugin-groupId" : "${project.groupId}",
+        "maven-plugin-groupId" : "io.quarkus",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
-        "maven-plugin-version" : "${project.version}",
+        "maven-plugin-version" : "2.0.0.CR2",
         "gradle-plugin-id" : "io.quarkus",
         "gradle-plugin-version" : "2.0.0.CR2",
         "supported-maven-versions" : "[3.6.2,)",
@@ -21,8 +21,7 @@
         "gradle-wrapper-version" : "6.9"
       }
     },
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.0.0.CR2" ],
-    "last-bom-update" : "${member.last-bom-update}"
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.0.0.CR2" ]
   },
   "categories" : [ {
     "id" : "web",
