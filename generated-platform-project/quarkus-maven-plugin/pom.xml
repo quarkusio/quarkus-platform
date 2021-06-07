@@ -23,7 +23,7 @@
               <goal>attach-maven-plugin</goal>
             </goals>
             <configuration>
-              <originalPluginCoords>io.quarkus:quarkus-maven-plugin:2.0.0.CR2</originalPluginCoords>
+              <originalPluginCoords>io.quarkus:quarkus-maven-plugin:2.0.0.CR3</originalPluginCoords>
               <targetPluginCoords>io.quarkus.platform:quarkus-maven-plugin:999-SNAPSHOT</targetPluginCoords>
             </configuration>
           </execution>
