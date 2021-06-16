@@ -36,4 +36,4 @@ build.log
 interpolated-pom.xml
 
 # Temporary data ignored in camel-quarkus
-integration-tests/camel-sjms/data/
+generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-hl7/id_file
