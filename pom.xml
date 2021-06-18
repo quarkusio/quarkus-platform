@@ -60,7 +60,7 @@
         <debezium.version>1.3.0.Final</debezium.version>
         <debezium-quarkus-outbox.version>1.4.0.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.0</quarkus-blaze-persistence.version>
-        <quarkus-cassandra-client.version>1.0.1</quarkus-cassandra-client.version>
+        <quarkus-cassandra-client.version>1.1.0-rc2</quarkus-cassandra-client.version>
 
         <kogito-quarkus.version>1.7.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.7.0.Final</optaplanner-quarkus.version>
@@ -247,7 +247,7 @@
                             <member>
                                 <name>Cassandra</name>
                                 <bom>com.datastax.oss.quarkus:cassandra-quarkus-bom:${quarkus-cassandra-client.version}</bom>
-                                <enabled>false</enabled>
+                                <enabled>true</enabled>
                                 <release>
                                     <next>${project.groupId}:quarkus-cassandra-bom:${project.version}</next>
                                 </release>
@@ -269,6 +269,12 @@
                                     </test>
                                     <test>
                                         <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile:${quarkus-cassandra-client.version}</artifact>
+                                        <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                        <groups>!native</groups>
+                                        <nativeGroups>native</nativeGroups>
+                                    </test>
+                                    <test>
+                                        <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-no-mapper:${quarkus-cassandra-client.version}</artifact>
                                         <mavenFailsafePlugin>true</mavenFailsafePlugin>
                                         <groups>!native</groups>
                                         <nativeGroups>native</nativeGroups>
