@@ -216,7 +216,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-blob-batch</artifactId>
-        <version>12.8.0</version>
+        <version>12.10.0</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -241,7 +241,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-file-share</artifactId>
-        <version>12.8.0</version>
+        <version>12.10.0</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -251,7 +251,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-queue</artifactId>
-        <version>12.8.0</version>
+        <version>12.10.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.cassandra</groupId>
@@ -259,34 +259,14 @@
         <version>3.5.0</version>
       </dependency>
       <dependency>
-        <groupId>com.datastax.oss.quarkus</groupId>
-        <artifactId>cassandra-quarkus-client-deployment</artifactId>
-        <version>1.0.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.datastax.oss.quarkus</groupId>
-        <artifactId>cassandra-quarkus-client</artifactId>
-        <version>1.0.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.datastax.oss.quarkus</groupId>
-        <artifactId>cassandra-quarkus-mapper-processor</artifactId>
-        <version>1.0.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.datastax.oss.quarkus</groupId>
-        <artifactId>cassandra-quarkus-test-framework</artifactId>
-        <version>1.0.1</version>
-      </dependency>
-      <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-core-shaded</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-core</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
         <exclusions>
           <exclusion>
             <artifactId>metrics-core</artifactId>
@@ -301,27 +281,27 @@
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-mapper-processor</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-mapper-runtime</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-metrics-micrometer</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-metrics-microprofile</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-query-builder</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
@@ -331,7 +311,7 @@
       <dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-test-infra</artifactId>
-        <version>4.11.0</version>
+        <version>4.12.0</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
