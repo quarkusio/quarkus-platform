@@ -65,6 +65,8 @@
         <kogito-quarkus.version>1.7.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.7.0.Final</optaplanner-quarkus.version>
 
+        <quarkus-google-cloud-services.version>0.8.0.CR3</quarkus-google-cloud-services.version>
+
         <quarkus-platform-bom-generator.version>0.0.18</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
@@ -377,6 +379,22 @@
                                     <test>
                                         <skipJvm>true</skipJvm>
                                         <artifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2:${quarkus-blaze-persistence.version}</artifact>
+                                    </test>
+                                </tests>
+                            </member>
+                            <member>
+                                <name>GoogleCloudServices</name>
+                                <bom>io.quarkiverse.googlecloudservices:quarkus-google-cloud-services-bom:${quarkus-google-cloud-services.version}</bom>
+                                <enabled>true</enabled>
+                                <release>
+                                    <next>${project.groupId}:quarkus-google-cloud-services-bom:${project.version}</next>
+                                </release>
+                                <defaultTestConfig>
+                                    <skip>false</skip>
+                                </defaultTestConfig>
+                                <tests>
+                                    <test>
+                                        <artifact>io.quarkiverse.googlecloudservices:quarkus-google-cloud-services-main-it:${quarkus-google-cloud-services.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
