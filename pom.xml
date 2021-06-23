@@ -286,6 +286,7 @@
                             <member>
                                 <name>Camel</name>
                                 <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
+                                <enabled>false</enabled>
                                 <release>
                                     <next>${project.groupId}:quarkus-camel-bom:${project.version}</next>
                                 </release>
