@@ -22,10 +22,10 @@
     <module>quarkus-maven-plugin</module>
   </modules>
   <properties>
-    <platform.key>io.quarkus.platform</platform.key>
-    <platform.stream>999-SNAPSHOT</platform.stream>
-    <platform.release>0</platform.release>
     <universal.bom.version>999-SNAPSHOT</universal.bom.version>
+    <platform.release>0</platform.release>
+    <platform.stream>999-SNAPSHOT</platform.stream>
+    <platform.key>io.quarkus.platform</platform.key>
   </properties>
   <build>
     <pluginManagement>
