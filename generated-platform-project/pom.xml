@@ -19,7 +19,6 @@
     <module>quarkus-google-cloud-services</module>
     <module>quarkus-qpid-jms</module>
     <module>quarkus-blaze-persistence</module>
-    <module>quarkus-camel</module>
     <module>quarkus-maven-plugin</module>
   </modules>
   <properties>
