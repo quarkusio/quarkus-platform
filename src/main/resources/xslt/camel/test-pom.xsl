@@ -13,9 +13,18 @@
         </xsl:copy>
     </xsl:template>
 
-    <!-- prepend properties before dependencies if necessary -->
+    <xsl:template match="/pom:project/pom:properties">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()" />
+            <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-solr'">
+                <solr.trust-store>${project.basedir}/target/ssl/trust-store.jks</solr.trust-store>
+            </xsl:if>
+        </xsl:copy>
+    </xsl:template>
+
     <xsl:template match="/pom:project/pom:dependencies">
-        <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-solr'">
+        <!-- prepend properties before dependencies if necessary -->
+        <xsl:if test="(not(/pom:project/pom:properties)) and (/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-solr')">
             <properties>
                 <solr.trust-store>${project.basedir}/target/ssl/trust-store.jks</solr.trust-store>
             </properties>
