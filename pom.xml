@@ -62,8 +62,8 @@
         <quarkus-blaze-persistence.version>1.6.0</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.0-rc2</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.7.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.7.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.8.0.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.8.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.8.0</quarkus-google-cloud-services.version>
 
@@ -192,7 +192,7 @@
                             <member>
                                 <name>OptaPlanner</name>
                                 <bom>org.optaplanner:optaplanner-bom:${optaplanner-quarkus.version}</bom>
-                                <enabled>false</enabled>
+                                <enabled>true</enabled>
                                 <release>
                                     <next>${project.groupId}:quarkus-optaplanner-bom:${project.version}</next>
                                 </release>
@@ -211,7 +211,7 @@
                             <member>
                                 <name>Kogito</name>
                                 <bom>org.kie.kogito:kogito-bom:${kogito-quarkus.version}</bom>
-                                <enabled>false</enabled>
+                                <enabled>true</enabled>
                                 <release>
                                     <next>${project.groupId}:quarkus-kogito-bom:${project.version}</next>
                                 </release>
