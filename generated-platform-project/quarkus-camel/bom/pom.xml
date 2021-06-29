@@ -8607,26 +8607,6 @@
         <version>1.21</version>
       </dependency>
       <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.7.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.7.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.7.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.7.0.Final</version>
-      </dependency>
-      <dependency>
         <groupId>org.reflections</groupId>
         <artifactId>reflections</artifactId>
         <version>0.9.12</version>

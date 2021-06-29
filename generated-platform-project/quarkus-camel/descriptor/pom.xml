@@ -64,10 +64,12 @@
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-optaplanner-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-debezium-outbox-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-camel-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-kogito-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
           <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
