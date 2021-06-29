@@ -8,14 +8,14 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-debezium-outbox-quarkus-platform-properties</artifactId>
+  <artifactId>quarkus-debezium-bom-quarkus-platform-properties</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Debezium-Outbox - Quarkus Platform Properties</name>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
-        <artifactId>quarkus-debezium-outbox</artifactId>
+        <artifactId>quarkus-debezium-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>
