@@ -14,6 +14,9 @@
   <modules>
     <module>quarkus-google-cloud-services-main-it</module>
   </modules>
+  <properties>
+    <gpg.skip>true</gpg.skip>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>

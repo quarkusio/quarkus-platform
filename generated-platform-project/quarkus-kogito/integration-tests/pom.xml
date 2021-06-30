@@ -17,6 +17,9 @@
     <module>kogito-quarkus-predictions-integration-test</module>
     <module>kogito-quarkus-rules-integration-test</module>
   </modules>
+  <properties>
+    <gpg.skip>true</gpg.skip>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>

@@ -15,6 +15,9 @@
     <module>blaze-persistence-examples-quarkus-testsuite-base</module>
     <module>blaze-persistence-examples-quarkus-testsuite-native-h2</module>
   </modules>
+  <properties>
+    <gpg.skip>true</gpg.skip>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>

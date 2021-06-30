@@ -177,6 +177,9 @@
     <module>camel-quarkus-integration-test-xstream</module>
     <module>camel-quarkus-integration-test-zendesk</module>
   </modules>
+  <properties>
+    <gpg.skip>true</gpg.skip>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
