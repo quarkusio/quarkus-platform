@@ -1927,11 +1927,6 @@
         <version>9.4</version>
       </dependency>
       <dependency>
-        <groupId>com.oracle.instantclient</groupId>
-        <artifactId>xstreams</artifactId>
-        <version>21.1.0.0</version>
-      </dependency>
-      <dependency>
         <groupId>com.orbitz.consul</groupId>
         <artifactId>consul-client</artifactId>
         <version>1.3.3</version>
