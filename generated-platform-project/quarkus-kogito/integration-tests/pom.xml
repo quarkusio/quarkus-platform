@@ -25,7 +25,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-universe-bom</artifactId>
-        <version>${universal.bom.version}</version>
+        <version>999-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>

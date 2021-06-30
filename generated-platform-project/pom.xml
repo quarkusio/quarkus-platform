@@ -29,7 +29,6 @@
     <platform.key>io.quarkus.platform</platform.key>
     <platform.release>999-SNAPSHOT</platform.release>
     <platform.stream>999-SNAPSHOT</platform.stream>
-    <universal.bom.version>999-SNAPSHOT</universal.bom.version>
   </properties>
   <build>
     <pluginManagement>
@@ -37,7 +36,7 @@
         <plugin>
           <groupId>io.quarkus</groupId>
           <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
-          <version>0.0.20</version>
+          <version>0.0.21</version>
           <extensions>true</extensions>
         </plugin>
       </plugins>
