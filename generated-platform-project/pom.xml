@@ -37,7 +37,7 @@
         <plugin>
           <groupId>io.quarkus</groupId>
           <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
-          <version>0.0.19</version>
+          <version>0.0.20</version>
           <extensions>true</extensions>
         </plugin>
       </plugins>
