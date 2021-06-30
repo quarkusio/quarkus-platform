@@ -3,7 +3,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-camel-integration-tests-parent</artifactId>
-    <version>2.0.0.Final</version>
+    <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>camel-quarkus-integration-test-grpc</artifactId>
