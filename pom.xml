@@ -57,7 +57,7 @@
 
         <quarkus-qpid-jms.version>0.25.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
-        <debezium-quarkus-outbox.version>1.6.0.CR1</debezium-quarkus-outbox.version>
+        <debezium-quarkus-outbox.version>1.6.0.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.0</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.0-rc2</quarkus-cassandra-client.version>
 
