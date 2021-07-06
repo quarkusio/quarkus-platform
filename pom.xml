@@ -253,32 +253,23 @@
                                     <next>${project.groupId}:quarkus-cassandra-bom:${project.version}</next>
                                 </release>
                                 <defaultTestConfig>
-                                    <skip>true</skip>
+                                    <skip>false</skip>
+                                    <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                    <groups>!native</groups>
+                                    <nativeGroups>native</nativeGroups>
                                 </defaultTestConfig>
                                 <tests>
                                     <test>
                                         <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-main:${quarkus-cassandra-client.version}</artifact>
-                                        <mavenFailsafePlugin>true</mavenFailsafePlugin>
-                                        <groups>!native</groups>
-                                        <nativeGroups>native</nativeGroups>
                                     </test>
                                     <test>
                                         <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-disabled:${quarkus-cassandra-client.version}</artifact>
-                                        <mavenFailsafePlugin>true</mavenFailsafePlugin>
-                                        <groups>!native</groups>
-                                        <nativeGroups>native</nativeGroups>
                                     </test>
                                     <test>
                                         <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile:${quarkus-cassandra-client.version}</artifact>
-                                        <mavenFailsafePlugin>true</mavenFailsafePlugin>
-                                        <groups>!native</groups>
-                                        <nativeGroups>native</nativeGroups>
                                     </test>
                                     <test>
                                         <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-no-mapper:${quarkus-cassandra-client.version}</artifact>
-                                        <mavenFailsafePlugin>true</mavenFailsafePlugin>
-                                        <groups>!native</groups>
-                                        <nativeGroups>native</nativeGroups>
                                     </test>
                                 </tests>
                             </member>
@@ -408,6 +399,7 @@
                             <excludedDependencies>
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-descriptor:${quarkus.version}:json</dependency>
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-properties::properties</dependency>
+                                <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
                             </excludedDependencies>
                         </bomGenerator>
                         <descriptorGenerator>
