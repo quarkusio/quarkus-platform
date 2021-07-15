@@ -10,6 +10,9 @@
   </parent>
   <artifactId>cassandra-quarkus-integration-tests-metrics-disabled</artifactId>
   <name>Quarkus Platform - Cassandra - Integration Tests - cassandra-quarkus-integration-tests-metrics-disabled</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>com.datastax.oss.quarkus</groupId>
@@ -159,6 +162,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-disabled:${quarkus-cassandra-client.version}</appArtifact>
                 </configuration>
               </execution>

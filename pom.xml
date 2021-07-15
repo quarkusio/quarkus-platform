@@ -253,7 +253,7 @@
                                     <next>${project.groupId}:quarkus-cassandra-bom:${project.version}</next>
                                 </release>
                                 <defaultTestConfig>
-                                    <skip>false</skip>
+                                    <skip>true</skip>
                                     <mavenFailsafePlugin>true</mavenFailsafePlugin>
                                     <groups>!native</groups>
                                     <nativeGroups>native</nativeGroups>
@@ -281,7 +281,7 @@
                                     <next>${project.groupId}:quarkus-camel-bom:${project.version}</next>
                                 </release>
                                 <defaultTestConfig>
-                                    <skip>false</skip>
+                                    <skip>true</skip>
                                     <jvmSystemProperties>
                                         <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
                                         <quarkus.http.test-ssl-port>$${test.https.port.jvm}</quarkus.http.test-ssl-port>
