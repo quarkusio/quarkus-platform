@@ -2198,7 +2198,7 @@
       <dependency>
         <groupId>io.smallrye.reactive</groupId>
         <artifactId>smallrye-reactive-messaging-camel</artifactId>
-        <version>3.5.0</version>
+        <version>3.6.0</version>
       </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
@@ -8553,17 +8553,17 @@
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-script-util</artifactId>
-        <version>1.4.32</version>
+        <version>1.5.20</version>
       </dependency>
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-scripting-jvm-host</artifactId>
-        <version>1.4.32</version>
+        <version>1.5.20</version>
       </dependency>
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-scripting-jvm</artifactId>
-        <version>1.4.32</version>
+        <version>1.5.20</version>
       </dependency>
       <dependency>
         <groupId>org.jruby.jcodings</groupId>
