@@ -19,18 +19,6 @@
     ],
       "extensions": [
         {
-            "name": "Camel Quarkus LZF",
-            "description": "Camel LZF compression support",
-            "group-id": "org.apache.camel.quarkus",
-            "artifact-id": "camel-quarkus-lzf"
-        },
-        {
-            "name": "Camel Quarkus Zip Deflate",
-            "description": "Camel Zip Deflate compression support",
-            "group-id": "org.apache.camel.quarkus",
-            "artifact-id": "camel-quarkus-zip-deflater"
-        },
-        {
             "group-id": "io.quarkus",
             "artifact-id": "quarkus-kogito",
             "metadata": {
