@@ -66,18 +66,20 @@
 
         <quarkus-google-cloud-services.version>0.8.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.22</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.23</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
 
+        <!-- the group-id (and the platform key) for the generated platform artifacts -->
+        <platform.groupId>${project.groupId}</platform.groupId>
+        <platform.version>${project.version}</platform.version>
+
         <!-- descriptor overrides -->
         <resourcesdir>${project.basedir}/src/main/resources</resourcesdir>
-        <overridesfile>
-            ${resourcesdir}/extensions-overrides.json
-        </overridesfile>
+        <overridesfile>${resourcesdir}/extensions-overrides.json</overridesfile>
     </properties>
 
     <distributionManagement>
@@ -158,18 +160,14 @@
                     <platformConfig>
                         <!-- the platform release info -->
                         <release>
-                            <!--
-                                |  the platform (dev stack) key (if not specified, defaults to the root project's groudId)
-                            -->
-                            <!-- platformKey>${project.groupId}</platformKey -->
+                            <!-- the platform (dev stack) key (if not specified, defaults to the root project's groudId) -->
+                            <platformKey>${platform.groupId}</platformKey>
                             <!--
                                 | platform stream id, representing the flow of backward compatible releases (if not specified, defaults to the project's major.minor platform version)
                             -->
                             <!-- stream>2.0</stream -->
-                            <!--
-                                | platform (comparable) version, must be unique in the scope of the stream, (if not specified, defaults to the micro version of the complete platform version)
-                            -->
-                            <!-- version>0</version> -->
+                            <!-- platform release  version, must be unique in the scope of the stream, (if not specified, defaults to the platform version) -->
+                            <version>${platform.version}</version>
                         </release>
                         <!-- Universal / all-inclusive platform -->
                         <universal>
@@ -184,7 +182,7 @@
                             <bom>io.quarkus:quarkus-bom:${quarkus.version}</bom>
                             <release>
                                 <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                <next>${project.groupId}:quarkus-bom:${project.version}</next>
+                                <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                             </release>
                         </core>
                         <!-- Platform members -->
@@ -195,7 +193,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-optaplanner-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-optaplanner-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-optaplanner-bom:${platform.version}</next>
                                 </release>
                                 <defaultTestConfig>
                                     <skip>false</skip>
@@ -215,7 +213,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-kogito-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-kogito-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-kogito-bom:${platform.version}</next>
                                 </release>
                                 <defaultTestConfig>
                                     <skip>false</skip>
@@ -241,7 +239,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-qpid-jms-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-qpid-jms-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-qpid-jms-bom:${platform.version}</next>
                                 </release>
                                 <tests>
                                     <test>
@@ -255,7 +253,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cassandra-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-cassandra-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-cassandra-bom:${platform.version}</next>
                                 </release>
                                 <defaultTestConfig>
                                     <skip>true</skip>
@@ -284,7 +282,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-camel-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                 </release>
                                 <defaultTestConfig>
                                     <skip>true</skip>
@@ -312,7 +310,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-hazelcast-client:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-hazelcast-client:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-hazelcast-client:${platform.version}</next>
                                 </release>
                                 <tests>
                                     <test>
@@ -329,7 +327,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-debezium-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                 </release>
                                 <tests>
                                     <test>
@@ -349,7 +347,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-blaze-persistence-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-blaze-persistence-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-blaze-persistence-bom:${platform.version}</next>
                                 </release>
                                 <defaultTestConfig>
                                     <skip>false</skip>
@@ -380,7 +378,7 @@
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-google-cloud-services-bom:2.1.0.CR1</lastDetectedBomUpdate>
-                                    <next>${project.groupId}:quarkus-google-cloud-services-bom:${project.version}</next>
+                                    <next>${platform.groupId}:quarkus-google-cloud-services-bom:${platform.version}</next>
                                 </release>
                                 <defaultTestConfig>
                                     <skip>false</skip>
@@ -494,13 +492,72 @@
         <profile>
             <id>rhproduct</id>
             <properties>
-                <overridesfile>
-                    ${resourcesdir}/extensions-overrides.json,
-                    ${resourcesdir}/extensions-support-overrides.json,
-                </overridesfile>
+                <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
+                <platform.version>${quarkus.version}-redhat-00001</platform.version>
+                <quarkus.upstream.version>2.1.0.Final</quarkus.upstream.version>
             </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.quarkus</groupId>
+                        <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
+                        <configuration>
+                            <platformConfig>
+                                <upstreamQuarkusCoreVersion>${quarkus.upstream.version}</upstreamQuarkusCoreVersion>
+                                <core combine.children="append">
+                                    <metadataOverrideFiles>
+                                        <file>${resourcesdir}/core/extensions-support-overrides.json</file>
+                                    </metadataOverrideFiles>
+                                </core>
+                                <members combine.children="append">
+                                    <member>
+                                        <name>OptaPlanner</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
+                                        <name>Kogito</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
+                                        <name>QpidJMS</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
+                                        <name>Cassandra</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
+                                        <name>Camel</name>
+                                        <hidden>true</hidden>
+                                        <!-- uncomment when the artifact is available
+                                        <metadataOverrideArtifacts>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-product::json:${camel-quarkus.version}</artifact>
+                                        </metadataOverrideArtifacts>
+                                        -->
+                                    </member>
+                                    <member>
+                                        <name>Hazelcast</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
+                                        <name>Debezium-Outbox</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
+                                        <name>Blaze-Persistence</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
+                                        <name>GoogleCloudServices</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                </members>
+                            </platformConfig>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
-
     </profiles>
 
 </project>
