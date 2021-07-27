@@ -123,6 +123,7 @@
     <module>camel-quarkus-integration-test-olingo4</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
     <module>camel-quarkus-integration-test-openstack</module>
+    <module>camel-quarkus-integration-test-opentelemetry</module>
     <module>camel-quarkus-integration-test-opentracing</module>
     <module>camel-quarkus-integration-test-optaplanner</module>
     <module>camel-quarkus-integration-test-paho-mqtt5</module>

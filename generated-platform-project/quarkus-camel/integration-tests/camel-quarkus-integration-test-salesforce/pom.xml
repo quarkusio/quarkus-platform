@@ -8,9 +8,6 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-salesforce</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-salesforce</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -52,6 +49,12 @@
           <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -157,7 +160,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-salesforce:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

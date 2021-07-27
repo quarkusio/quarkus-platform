@@ -53,7 +53,7 @@
 
         <quarkus.version>2.1.0.Final</quarkus.version>
 
-        <camel-quarkus.version>2.0.0</camel-quarkus.version>
+        <camel-quarkus.version>2.1.0</camel-quarkus.version>
 
         <quarkus-qpid-jms.version>0.26.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
@@ -285,7 +285,7 @@
                                     <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                 </release>
                                 <defaultTestConfig>
-                                    <skip>true</skip>
+                                    <skip>false</skip>
                                     <jvmSystemProperties>
                                         <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
                                         <quarkus.http.test-ssl-port>$${test.https.port.jvm}</quarkus.http.test-ssl-port>
