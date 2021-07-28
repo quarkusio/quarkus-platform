@@ -193,7 +193,7 @@
                         <members>
                             <member>
                                 <name>OptaPlanner</name>
-                                <bom>org.optaplanner:optaplanner-bom:${optaplanner-quarkus.version}</bom>
+                                <bom>org.optaplanner:optaplanner-build-parent:${optaplanner-quarkus.version}</bom>
                                 <enabled>true</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-optaplanner-bom:2.2.0.CR1</lastDetectedBomUpdate>
