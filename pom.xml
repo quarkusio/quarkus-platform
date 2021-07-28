@@ -204,6 +204,15 @@
                                 </defaultTestConfig>
                                 <tests>
                                     <test>
+                                        <artifact>org.optaplanner:optaplanner-quarkus-integration-test:${optaplanner-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <artifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <artifact>org.optaplanner:optaplanner-quarkus-devui-integration-test:${optaplanner-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
                                         <artifact>org.optaplanner:optaplanner-quarkus-jackson-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
