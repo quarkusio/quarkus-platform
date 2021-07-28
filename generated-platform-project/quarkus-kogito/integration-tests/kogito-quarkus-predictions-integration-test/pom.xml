@@ -83,7 +83,20 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+            <configuration>
+              <excludes>
+                <exclude>**/Native*</exclude>
+              </excludes>
+            </configuration>
+          </execution>
+        </executions>
         <configuration>
           <dependenciesToScan>
             <dependency>org.kie.kogito:kogito-quarkus-predictions-integration-test</dependency>
