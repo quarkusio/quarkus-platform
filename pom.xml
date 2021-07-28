@@ -57,7 +57,7 @@
 
         <quarkus-qpid-jms.version>0.26.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
-        <debezium-quarkus-outbox.version>1.6.0.Final</debezium-quarkus-outbox.version>
+        <debezium-quarkus-outbox.version>1.6.1.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.1</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.0-rc2</quarkus-cassandra-client.version>
 
@@ -66,7 +66,7 @@
 
         <quarkus-google-cloud-services.version>0.9.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.23</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.24</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -323,6 +323,19 @@
                                 <dependencyManagement>
                                     <dependency>io.debezium:debezium-quarkus-outbox:${debezium-quarkus-outbox.version}</dependency>
                                     <dependency>io.debezium:debezium-quarkus-outbox-deployment:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-api:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-cassandra:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-db2:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-mongodb:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-mysql:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-oracle:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-postgres:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-sqlserver:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-connector-vitess:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-core:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-ddl-parser:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-embedded:${debezium-quarkus-outbox.version}</dependency>
+                                    <dependency>io.debezium:debezium-scripting:${debezium-quarkus-outbox.version}</dependency>
                                 </dependencyManagement>
                                 <enabled>true</enabled>
                                 <release>
@@ -416,7 +429,7 @@
                         </descriptorGenerator>
                         <attachedMavenPlugin>
                             <originalPluginCoords>io.quarkus:quarkus-maven-plugin:${quarkus.version}</originalPluginCoords>
-                            <targetPluginCoords>${project.groupId}:quarkus-maven-plugin:${project.version}</targetPluginCoords>
+                            <targetPluginCoords>${platform.groupId}:quarkus-maven-plugin:${platform.version}</targetPluginCoords>
                         </attachedMavenPlugin>
                     </platformConfig>
                 </configuration>

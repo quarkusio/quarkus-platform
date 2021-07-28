@@ -2752,12 +2752,6 @@
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
-        <artifactId>debezium-connector-mysql</artifactId>
-        <version>1.6.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-oracle</artifactId>
         <version>1.6.1.Final</version>
       </dependency>
@@ -2783,12 +2777,6 @@
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
-        <artifactId>debezium-core</artifactId>
-        <version>1.6.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>io.debezium</groupId>
         <artifactId>debezium-ddl-parser</artifactId>
         <version>1.6.1.Final</version>
       </dependency>
@@ -2796,12 +2784,6 @@
         <groupId>io.debezium</groupId>
         <artifactId>debezium-embedded</artifactId>
         <version>1.6.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>io.debezium</groupId>
-        <artifactId>debezium-embedded</artifactId>
-        <version>1.6.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
