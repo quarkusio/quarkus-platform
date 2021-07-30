@@ -52,6 +52,7 @@
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
         <quarkus.version>2.1.1.Final</quarkus.version>
+        <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.1.0</camel-quarkus.version>
 
@@ -66,7 +67,7 @@
 
         <quarkus-google-cloud-services.version>0.9.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.25</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.27</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -179,7 +180,7 @@
                         <!-- Quarkus core -->
                         <core>
                             <name>Core</name>
-                            <bom>io.quarkus:quarkus-bom:${quarkus.version}</bom>
+                            <bom>io.quarkus:quarkus-bom:${quarkus-bom.version}</bom>
                             <release>
                                 <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:2.1.0.Final</lastDetectedBomUpdate>
                                 <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
@@ -422,7 +423,7 @@
                             </excludedGroups>
                             -->
                             <excludedDependencies>
-                                <dependency>io.quarkus:quarkus-bom-quarkus-platform-descriptor:${quarkus.version}:json</dependency>
+                                <dependency>io.quarkus:quarkus-bom-quarkus-platform-descriptor:${quarkus-bom.version}:json</dependency>
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-properties::properties</dependency>
                                 <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
                             </excludedDependencies>
@@ -509,9 +510,10 @@
         <profile>
             <id>rhproduct</id>
             <properties>
+                <quarkus.upstream.version>${quarkus.version}</quarkus.upstream.version>
+                <quarkus-bom.version>${quarkus.upstream.version}-redhat-00001</quarkus-bom.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
-                <platform.version>${quarkus.version}-redhat-00001</platform.version>
-                <quarkus.upstream.version>2.1.0.Final</quarkus.upstream.version>
+                <platform.version>${project.version}-redhat-00001</platform.version>
             </properties>
             <build>
                 <plugins>
@@ -571,6 +573,29 @@
                                 </members>
                             </platformConfig>
                         </configuration>
+                    </plugin>
+                    <!--
+                       |  We are not going to re-install and re-deploy this POM
+                    -->
+                    <plugin>
+                        <artifactId>maven-install-plugin</artifactId>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <id>default-install</id>
+                                <phase>none</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-deploy-plugin</artifactId>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <id>default-deploy</id>
+                                <phase>none</phase>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
