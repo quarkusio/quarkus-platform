@@ -12,10 +12,22 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Kogito - Integration Tests - Parent</name>
   <modules>
+    <module>integration-tests-quarkus-decisions</module>
+    <module>integration-tests-quarkus-predictions</module>
+    <module>integration-tests-processes-persistence-common</module>
+    <module>integration-tests-quarkus-processes-infinispan</module>
+    <module>integration-tests-quarkus-processes-jdbc</module>
+    <module>integration-tests-quarkus-processes-kafka-persistence</module>
+    <module>integration-tests-quarkus-processes-mongodb</module>
+    <module>integration-tests-quarkus-processes-postgresql</module>
+    <module>integration-tests-quarkus-rules</module>
     <module>kogito-quarkus-decisions-integration-test</module>
+    <module>kogito-quarkus-integration-test-maven-devmode</module>
     <module>kogito-quarkus-integration-test</module>
     <module>kogito-quarkus-predictions-integration-test</module>
+    <module>kogito-quarkus-rules-integration-test-session</module>
     <module>kogito-quarkus-rules-integration-test</module>
+    <module>kogito-quarkus-serverless-workflow-integration-test</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>
