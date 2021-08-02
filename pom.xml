@@ -223,20 +223,7 @@
                                         <exclude>**/Native*</exclude>
                                     </jvmExcludes>
                                 </defaultTestConfig>
-                                <tests>
-                                    <test>
-                                        <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <artifact>org.kie.kogito:kogito-quarkus-integration-test:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <artifact>org.kie.kogito:kogito-quarkus-predictions-integration-test:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                </tests>
+                                <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
                             </member>
                             <member>
                                 <name>QpidJMS</name>
