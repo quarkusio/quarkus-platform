@@ -10,6 +10,9 @@
   </parent>
   <artifactId>kogito-quarkus-integration-test-maven-devmode</artifactId>
   <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-integration-test-maven-devmode</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
@@ -111,6 +114,11 @@
               <goal>verify</goal>
             </goals>
             <configuration>
+              <systemProperties>
+                <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
+                <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
+                <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+              </systemProperties>
               <excludes>
                 <exclude>**/Native*</exclude>
               </excludes>
@@ -146,6 +154,9 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                    <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
+                    <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
+                    <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
                   </systemProperties>
                 </configuration>
               </execution>
@@ -167,6 +178,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>org.kie.kogito:kogito-quarkus-integration-test-maven-devmode:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

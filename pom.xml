@@ -116,6 +116,9 @@
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <configuration>
                         <excludedGroups>quarkus-platform-ignore</excludedGroups>
+                        <systemProperties>
+                            <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+                        </systemProperties>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -222,8 +225,36 @@
                                     <jvmExcludes>
                                         <exclude>**/Native*</exclude>
                                     </jvmExcludes>
+                                    <systemProperties>
+                                        <!-- Need to keep in sync with ${kogito-quarkus.version} -->
+                                        <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
+                                        <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
+                                        <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                                    </systemProperties>
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
+                                <tests>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-jdbc:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-kafka-persistence:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-mongodb:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-postgresql:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.kie.kogito:kogito-quarkus-integration-test-maven-devmode:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                </tests>
                             </member>
                             <member>
                                 <name>QpidJMS</name>
