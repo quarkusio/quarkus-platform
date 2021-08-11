@@ -8,30 +8,31 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>kogito-quarkus-rules-integration-test</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-rules-integration-test</name>
+  <artifactId>integration-tests-quarkus-processes-infinispan</artifactId>
+  <name>Quarkus Platform - Kogito - Integration Tests - integration-tests-quarkus-processes-infinispan</name>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>integration-tests-quarkus-processes-infinispan</artifactId>
       <version>${kogito-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>integration-tests-quarkus-processes-infinispan</artifactId>
       <version>${kogito-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>integration-tests-processes-persistence-common</artifactId>
+      <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5-internal</artifactId>
+      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -56,6 +57,16 @@
           <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-test-utils</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -104,7 +115,7 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+            <dependency>org.kie.kogito:integration-tests-quarkus-processes-infinispan</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -140,7 +151,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+                <dependency>org.kie.kogito:integration-tests-quarkus-processes-infinispan</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -155,7 +166,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</appArtifact>
+                  <appArtifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

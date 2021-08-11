@@ -8,17 +8,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>kogito-quarkus-rules-integration-test</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-rules-integration-test</name>
+  <artifactId>kogito-quarkus-serverless-workflow-integration-test</artifactId>
+  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-serverless-workflow-integration-test</name>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>kogito-quarkus-serverless-workflow-integration-test</artifactId>
       <version>${kogito-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>kogito-quarkus-serverless-workflow-integration-test</artifactId>
       <version>${kogito-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -56,6 +56,12 @@
           <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.github.tomakehurst</groupId>
+      <artifactId>wiremock-jre8</artifactId>
+      <version>2.27.2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -104,7 +110,7 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+            <dependency>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -140,7 +146,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+                <dependency>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -155,7 +161,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</appArtifact>
+                  <appArtifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

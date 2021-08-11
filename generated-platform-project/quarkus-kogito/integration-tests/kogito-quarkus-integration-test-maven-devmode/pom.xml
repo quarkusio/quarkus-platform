@@ -8,17 +8,20 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>kogito-quarkus-rules-integration-test</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-rules-integration-test</name>
+  <artifactId>kogito-quarkus-integration-test-maven-devmode</artifactId>
+  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-integration-test-maven-devmode</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>kogito-quarkus-integration-test-maven-devmode</artifactId>
       <version>${kogito-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>kogito-quarkus-integration-test-maven-devmode</artifactId>
       <version>${kogito-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -56,6 +59,26 @@
           <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-test-maven</artifactId>
+      <version>2.0.0.Final</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-bom</artifactId>
+      <version>${kogito-quarkus.version}</version>
+      <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-quarkus-bom</artifactId>
+      <version>${kogito-quarkus.version}</version>
+      <type>pom</type>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -104,7 +127,7 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+            <dependency>org.kie.kogito:kogito-quarkus-integration-test-maven-devmode</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -140,7 +163,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+                <dependency>org.kie.kogito:kogito-quarkus-integration-test-maven-devmode</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -155,7 +178,8 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</appArtifact>
+                  <skip>true</skip>
+                  <appArtifact>org.kie.kogito:kogito-quarkus-integration-test-maven-devmode:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

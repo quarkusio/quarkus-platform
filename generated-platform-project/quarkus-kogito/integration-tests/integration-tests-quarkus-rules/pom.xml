@@ -8,17 +8,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>kogito-quarkus-rules-integration-test</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-rules-integration-test</name>
+  <artifactId>integration-tests-quarkus-rules</artifactId>
+  <name>Quarkus Platform - Kogito - Integration Tests - integration-tests-quarkus-rules</name>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>integration-tests-quarkus-rules</artifactId>
       <version>${kogito-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+      <artifactId>integration-tests-quarkus-rules</artifactId>
       <version>${kogito-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -56,6 +56,44 @@
           <groupId>commons-logging</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-schema-validator</artifactId>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>activation</artifactId>
+          <groupId>javax.activation</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jsr305</artifactId>
+          <groupId>com.google.code.findbugs</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jaxb-osgi</artifactId>
+          <groupId>com.sun.xml.bind</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>commons-logging</artifactId>
+          <groupId>commons-logging</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-test-utils</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -104,7 +142,7 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+            <dependency>org.kie.kogito:integration-tests-quarkus-rules</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -140,7 +178,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
+                <dependency>org.kie.kogito:integration-tests-quarkus-rules</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -155,7 +193,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</appArtifact>
+                  <appArtifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
