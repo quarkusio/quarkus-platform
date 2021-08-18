@@ -307,6 +307,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
