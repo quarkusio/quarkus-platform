@@ -14,6 +14,7 @@
   <modules>
     <module>camel-quarkus-integration-test-avro-rpc</module>
     <module>camel-quarkus-integration-test-js-dsl</module>
+    <module>camel-quarkus-integration-test-xchange</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -171,7 +172,6 @@
     <module>camel-quarkus-integration-test-vertx-websocket</module>
     <module>camel-quarkus-integration-test-vertx</module>
     <module>camel-quarkus-integration-test-weather</module>
-    <module>camel-quarkus-integration-test-xchange</module>
     <module>camel-quarkus-integration-test-xml</module>
     <module>camel-quarkus-integration-test-xmlsecurity</module>
     <module>camel-quarkus-integration-test-xpath</module>
