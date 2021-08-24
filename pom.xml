@@ -336,6 +336,10 @@
                                     </test>
                                     <test>
                                         <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
                                     </test>
                                     <test>
