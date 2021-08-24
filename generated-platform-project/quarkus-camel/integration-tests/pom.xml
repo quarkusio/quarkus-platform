@@ -13,6 +13,7 @@
   <name>Quarkus Platform - Camel - Integration Tests - Parent</name>
   <modules>
     <module>camel-quarkus-integration-test-avro-rpc</module>
+    <module>camel-quarkus-integration-test-google-pubsub</module>
     <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-xchange</module>
     <module>camel-quarkus-integration-test-activemq</module>
@@ -59,7 +60,6 @@
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
-    <module>camel-quarkus-integration-test-google-pubsub</module>
     <module>camel-quarkus-integration-test-google-storage</module>
     <module>camel-quarkus-integration-test-google</module>
     <module>camel-quarkus-integration-test-graphql</module>
