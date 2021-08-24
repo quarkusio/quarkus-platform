@@ -465,6 +465,12 @@
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-descriptor:${quarkus-bom.version}:json</dependency>
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-properties::properties</dependency>
                                 <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
+                                <!-- Kogito: exclude Spring-related dependencies -->
+                                <dependency>org.kie.kogito:kogito-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-processes-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-rules-spring-boot-starter</dependency>
+
                             </excludedDependencies>
                         </bomGenerator>
                         <descriptorGenerator>

@@ -17421,11 +17421,6 @@
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-decisions-spring-boot-starter</artifactId>
         <version>1.10.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-decisions-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
@@ -17579,11 +17574,6 @@
         <artifactId>kogito-predictions-spring-boot-starter</artifactId>
         <version>1.10.0.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-processes-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
@@ -17755,11 +17745,6 @@
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-rules-spring-boot-starter</artifactId>
         <version>1.10.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-rules-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
@@ -17836,11 +17821,6 @@
         <artifactId>kogito-services</artifactId>
         <version>1.10.0.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
