@@ -556,9 +556,7 @@
             <id>rhproduct</id>
             <properties>
                 <quarkus.upstream.version>${quarkus.version}</quarkus.upstream.version>
-                <quarkus-bom.version>${quarkus.upstream.version}-redhat-00001</quarkus-bom.version>
                 <platform.groupId>com.redhat.quarkus.platform</platform.groupId>
-                <platform.version>${project.version}-redhat-00001</platform.version>
             </properties>
             <build>
                 <plugins>
