@@ -62,7 +62,7 @@
         <quarkus-blaze-persistence.version>1.6.1</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.9.1.Final</kogito-quarkus.version>
+        <kogito-quarkus.version>1.10.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.10.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.9.0</quarkus-google-cloud-services.version>
@@ -465,6 +465,12 @@
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-descriptor:${quarkus-bom.version}:json</dependency>
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-properties::properties</dependency>
                                 <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
+                                <!-- Kogito: exclude Spring-related dependencies -->
+                                <dependency>org.kie.kogito:kogito-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-processes-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-rules-spring-boot-starter</dependency>
+
                             </excludedDependencies>
                         </bomGenerator>
                         <descriptorGenerator>
