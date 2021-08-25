@@ -61,12 +61,12 @@
       <dependency>
         <groupId>org.amqphub.quarkus</groupId>
         <artifactId>quarkus-qpid-jms-deployment</artifactId>
-        <version>0.26.0</version>
+        <version>0.27.0</version>
       </dependency>
       <dependency>
         <groupId>org.amqphub.quarkus</groupId>
         <artifactId>quarkus-qpid-jms</artifactId>
-        <version>0.26.0</version>
+        <version>0.27.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.qpid</groupId>

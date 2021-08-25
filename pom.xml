@@ -51,12 +51,12 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.2.0.CR1</quarkus.version>
+        <quarkus.version>2.2.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.1.0</camel-quarkus.version>
 
-        <quarkus-qpid-jms.version>0.26.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms.version>0.27.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.6.1.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.1</quarkus-blaze-persistence.version>
