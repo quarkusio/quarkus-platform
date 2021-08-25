@@ -43,6 +43,10 @@
           <groupId>javax.activation</groupId>
         </exclusion>
         <exclusion>
+          <artifactId>jakarta.activation-api</artifactId>
+          <groupId>jakarta.activation</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>jaxb-osgi</artifactId>
           <groupId>com.sun.xml.bind</groupId>
         </exclusion>
@@ -60,7 +64,7 @@
     <dependency>
       <groupId>org.junit-pioneer</groupId>
       <artifactId>junit-pioneer</artifactId>
-      <version>1.0.0</version>
+      <version>1.4.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
