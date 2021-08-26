@@ -617,29 +617,6 @@
                             </platformConfig>
                         </configuration>
                     </plugin>
-                    <!--
-                       |  We are not going to re-install and re-deploy this POM
-                    -->
-                    <plugin>
-                        <artifactId>maven-install-plugin</artifactId>
-                        <inherited>false</inherited>
-                        <executions>
-                            <execution>
-                                <id>default-install</id>
-                                <phase>none</phase>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <artifactId>maven-deploy-plugin</artifactId>
-                        <inherited>false</inherited>
-                        <executions>
-                            <execution>
-                                <id>default-deploy</id>
-                                <phase>none</phase>
-                            </execution>
-                        </executions>
-                    </plugin>
                 </plugins>
             </build>
         </profile>
