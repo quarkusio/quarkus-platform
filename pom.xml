@@ -51,10 +51,10 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.2.0.Final</quarkus.version>
+        <quarkus.version>2.2.1.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.1.0</camel-quarkus.version>
+        <camel-quarkus.version>2.2.0</camel-quarkus.version>
 
         <quarkus-qpid-jms.version>0.27.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
@@ -330,21 +330,9 @@
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
                                 <tests>
-                                    <test>
+                                    <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus.version}</artifact>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>

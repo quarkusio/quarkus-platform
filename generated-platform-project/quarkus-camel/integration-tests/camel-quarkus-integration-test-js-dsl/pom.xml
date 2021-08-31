@@ -8,9 +8,6 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-js-dsl</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-js-dsl</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -42,6 +39,10 @@
         <exclusion>
           <artifactId>javax.activation-api</artifactId>
           <groupId>javax.activation</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jakarta.activation-api</artifactId>
+          <groupId>jakarta.activation</groupId>
         </exclusion>
         <exclusion>
           <artifactId>jaxb-osgi</artifactId>
@@ -162,7 +163,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
