@@ -10,6 +10,9 @@
   </parent>
   <artifactId>optaplanner-quarkus-devui-integration-test</artifactId>
   <name>Quarkus Platform - OptaPlanner - Integration Tests - optaplanner-quarkus-devui-integration-test</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.optaplanner</groupId>
@@ -134,6 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>org.optaplanner:optaplanner-quarkus-devui-integration-test:${optaplanner-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
