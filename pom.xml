@@ -51,7 +51,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.2.1.Final</quarkus.version>
+        <quarkus.version>2.2.2.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.2.0</camel-quarkus.version>
@@ -59,7 +59,7 @@
         <quarkus-qpid-jms.version>0.27.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.6.1.Final</debezium-quarkus-outbox.version>
-        <quarkus-blaze-persistence.version>1.6.1</quarkus-blaze-persistence.version>
+        <quarkus-blaze-persistence.version>1.6.2</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
         <kogito-quarkus.version>1.10.0.Final</kogito-quarkus.version>
@@ -210,6 +210,8 @@
                                         <artifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
+                                        <!-- TODO: remove the skip with upgrade to OptaPlanner 8.12.0.Final. -->
+                                        <skip>true</skip>
                                         <artifact>org.optaplanner:optaplanner-quarkus-devui-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
