@@ -210,6 +210,15 @@
     },
     {
       "group-id": "io.quarkus",
+      "artifact-id": "quarkus-jdbc-oracle",
+      "metadata": {
+        "redhat-support": [
+          "supported-in-jvm"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
       "artifact-id": "quarkus-jdbc-postgresql",
       "metadata": {
         "redhat-support": [
