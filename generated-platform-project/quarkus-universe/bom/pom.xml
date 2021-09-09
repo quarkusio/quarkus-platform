@@ -15456,57 +15456,57 @@
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-alphanetwork-compiler</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-canonical-model</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core-dynamic</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core-reflective</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-decisiontables</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-api</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-backend</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.easytesting</groupId>
@@ -16822,1581 +16822,1719 @@
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>cloudevents-utils</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-static</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-static</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-static</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-decisiontables</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-decisiontables</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>drools-decisiontables</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>grafana-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>grafana-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>integration-tests-processes-persistence-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>integration-tests-processes-persistence-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>jbpm-bpmn2</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>jbpm-bpmn2</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>jbpm-flow-builder</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>jbpm-flow-builder</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>jbpm-flow</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>jbpm-flow</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>knative-eventing-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-cloudevents-utils</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-cloudevents-utils</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-cloudevents-utils</artifactId>
-        <version>1.10.0.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
-        <classifier>javadoc</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-events-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-events-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-events-mongodb</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-events-mongodb</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-human-task-prediction-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-human-task-prediction-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-human-task-prediction-smile</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-human-task-prediction-smile</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-jobs-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-jobs-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-jobs-management-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-jobs-management-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-knative-eventing</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-knative-eventing</artifactId>
+        <version>1.11.0.Final</version>
+        <classifier>javadoc</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-knative-eventing</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-mail</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-mail</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-messaging</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-messaging</artifactId>
+        <version>1.11.0.Final</version>
+        <classifier>javadoc</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-messaging</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-monitoring-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-monitoring-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-monitoring-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-monitoring-elastic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-monitoring-elastic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-monitoring-prometheus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-monitoring-prometheus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-filesystem</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-filesystem</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-infinispan</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-infinispan</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-jdbc</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-jdbc</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-mongodb</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-mongodb</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-postgresql</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-persistence-postgresql</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-process-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-process-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-process-svg</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-process-svg</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-process-svg</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-quarkus-cloudevents-common</artifactId>
-        <version>1.10.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-quarkus-cloudevents-common</artifactId>
-        <version>1.10.0.Final</version>
-        <classifier>sources</classifier>
+        <artifactId>kogito-addons-quarkus-cloudevents-multi</artifactId>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-cloudevents-multi</artifactId>
-        <version>1.10.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-quarkus-cloudevents-multi</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-events-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-events-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-events-mongodb</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-events-mongodb</artifactId>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-events-process</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-events-process</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-events-smallrye</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-events-smallrye</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-jobs-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-jobs-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-knative-eventing</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-knative-eventing</artifactId>
+        <version>1.11.0.Final</version>
+        <classifier>javadoc</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-knative-eventing</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-mail</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-mail</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-messaging-common</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-messaging-common</artifactId>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-messaging</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-messaging</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-monitoring-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-monitoring-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-monitoring-elastic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-monitoring-elastic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-monitoring-prometheus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-monitoring-prometheus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-persistence-infinispan-health</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-persistence-infinispan-health</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-persistence-kafka</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-persistence-kafka</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-process-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-process-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-process-svg</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-process-svg</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-rest-exception-handler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-rest-exception-handler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-task-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-task-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-task-notification</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-task-notification</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-tracing-decision</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-quarkus-tracing-decision</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-rest-exception-handler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-rest-exception-handler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-cloudevents</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-events-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-events-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-events-kafka</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-events-kafka</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-springboot-events-mongodb</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-springboot-events-mongodb</artifactId>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-springboot-events-process-kafka</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-springboot-events-process-kafka</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-explainability</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-jobs-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-jobs-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-mail</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-mail</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-springboot-messaging</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-springboot-messaging</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-monitoring-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-monitoring-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-monitoring-elastic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-monitoring-elastic</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-monitoring-prometheus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-monitoring-prometheus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-process-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-process-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-process-svg</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-process-svg</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-rest-exception-handler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-rest-exception-handler</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-task-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-task-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-task-notification</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-task-notification</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-tracing-decision</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-springboot-tracing-decision</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-task-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-task-management</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-tracing-decision-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-tracing-decision-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-tracing-decision-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-tracing-decision-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-tracing-typedvalue-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-tracing-typedvalue-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloud-kubernetes-client</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloud-kubernetes-client</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloud-workitems</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloud-workitems</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloudevents-common-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloudevents-quarkus-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloudevents-spring-boot-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-core</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-openapi</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-openapi</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-openapi</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-predictions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-predictions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-predictions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-processes</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-processes</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-processes</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-rules</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-rules</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-codegen-rules</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-decisions-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-dmn</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-dmn</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-dmn</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-drools-model</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-drools-model</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-drools-model</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-drools</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-event-driven-decisions-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-event-driven-decisions-quarkus-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-event-driven-decisions-springboot-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-events-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-events-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-legacy-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-legacy-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-legacy-api</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-maven-plugin</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-maven-plugin</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-openapi-workitem</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-openapi-workitem</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-pmml-api-dependencies</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <type>pom</type>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-pmml-dependencies</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <type>pom</type>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-pmml-openapi</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-pmml</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-pmml</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-pmml</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-predictions-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-predictions-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-processes-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-decisions-deployment</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <exclusions>
+          <exclusion>
+            <artifactId>drools-core-dynamic</artifactId>
+            <groupId>org.drools</groupId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-decisions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-deployment</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-predictions-deployment</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-predictions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-predictions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-predictions</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-processes-deployment</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-processes</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-processes</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-processes</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-rules-deployment</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-rules</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-rules</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-rules</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-serverless-workflow-deployment</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-serverless-workflow</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-serverless-workflow</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-serverless-workflow</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-quarkus</artifactId>
-        <version>1.10.0.Final</version>
+        <artifactId>kogito-quarkus-test-utils</artifactId>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-quarkus</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-rest-workitem</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-rest-workitem</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-rules-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-ruleunits</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-ruleunits</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-ruleunits</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-scenario-simulation</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-scenario-simulation</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-scenario-simulation</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-serverless-workflow-builder</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-serverless-workflow-builder</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-serverless-workflow-runtime</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-serverless-workflow-runtime</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-serverless-workflow-spring-boot-starter</artifactId>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-serverless-workflow-spring-boot-starter</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-services</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-services</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-services</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-spring-boot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-springboot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <artifactId>kogito-spring-boot-test-utils</artifactId>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-springboot-starter</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-springboot-starter</artifactId>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-test-utils</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-timer</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-timer</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-timer</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-core-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-core-quarkus-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-core-springboot-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-prometheus-common</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-prometheus-quarkus-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-prometheus-springboot-addon</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>process-serialization-protobuf</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>process-serialization-protobuf</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>process-workitems</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>process-workitems</artifactId>
-        <version>1.10.0.Final</version>
+        <version>1.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-api</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-api</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-core</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-openapi</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-validation</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-internal</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-api</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-commons</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-dependencies</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-evaluator-api</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-test-util</artifactId>
-        <version>7.58.0.Final</version>
+        <version>7.59.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.linguafranca.pwdb</groupId>
@@ -18497,441 +18635,441 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-distribution</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <type>zip</type>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-docs</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <type>zip</type>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-examples</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-examples</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-examples</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-integration-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-integration-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-integration-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-integration-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-integration-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-integration-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-autoconfigure</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-autoconfigure</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-autoconfigure</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-starter</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-starter</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-starter</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.10.0.Final</version>
+        <version>8.11.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
