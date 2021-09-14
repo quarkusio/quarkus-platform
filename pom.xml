@@ -560,6 +560,9 @@
                         <configuration>
                             <platformConfig>
                                 <upstreamQuarkusCoreVersion>${quarkus.upstream.version}</upstreamQuarkusCoreVersion>
+                                <universal>
+                                    <bom>com.redhat.quarkus:quarkus-universe-bom:${platform.version}</bom>
+                                </universal>
                                 <core combine.children="append">
                                     <metadataOverrideFiles>
                                         <file>${resourcesdir}/core/extensions-support-overrides.json</file>
