@@ -43,6 +43,10 @@
           <groupId>javax.activation</groupId>
         </exclusion>
         <exclusion>
+          <artifactId>jakarta.activation-api</artifactId>
+          <groupId>jakarta.activation</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>jaxb-osgi</artifactId>
           <groupId>com.sun.xml.bind</groupId>
         </exclusion>
