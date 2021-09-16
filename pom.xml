@@ -51,7 +51,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.2.2.Final</quarkus.version>
+        <quarkus.version>2.2.3.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.2.0</camel-quarkus.version>
@@ -62,8 +62,8 @@
         <quarkus-blaze-persistence.version>1.6.2</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.10.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.10.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.11.1.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.11.1.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
 
@@ -264,6 +264,10 @@
                                     <test>
                                         <skip>true</skip>
                                         <artifact>org.kie.kogito:kogito-quarkus-integration-test-maven-devmode:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <excluded>true</excluded>
+                                        <artifact>org.kie.kogito:integration-tests-quarkus-gradle:${kogito-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
@@ -556,6 +560,9 @@
                         <configuration>
                             <platformConfig>
                                 <upstreamQuarkusCoreVersion>${quarkus.upstream.version}</upstreamQuarkusCoreVersion>
+                                <universal>
+                                    <bom>com.redhat.quarkus:quarkus-universe-bom:${platform.version}</bom>
+                                </universal>
                                 <core combine.children="append">
                                     <metadataOverrideFiles>
                                         <file>${resourcesdir}/core/extensions-support-overrides.json</file>

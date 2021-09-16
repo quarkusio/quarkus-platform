@@ -210,6 +210,15 @@
     },
     {
       "group-id": "io.quarkus",
+      "artifact-id": "quarkus-jdbc-oracle",
+      "metadata": {
+        "redhat-support": [
+          "supported-in-jvm"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
       "artifact-id": "quarkus-jdbc-postgresql",
       "metadata": {
         "redhat-support": [
@@ -260,6 +269,23 @@
         "redhat-support": [
           "supported"
         ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-kubernetes",
+      "metadata": {
+        "redhat-support": [
+          "dev-support"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id":"quarkus-smallrye-opentracing",
+      "metadata" : {
+        "redhat-support" : [
+          "supported","deprecated" ]
       }
     },
     {
