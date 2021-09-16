@@ -62,8 +62,8 @@
         <quarkus-blaze-persistence.version>1.6.2</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.11.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.11.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.11.1.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.11.1.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
 
