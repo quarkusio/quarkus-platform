@@ -282,14 +282,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id":"quarkus-smallrye-opentracing",
-      "metadata" : {
-        "redhat-support" : [
-          "supported","deprecated" ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-kubernetes-service-binding",
       "metadata": {
         "redhat-support": [
@@ -734,8 +726,7 @@
       "artifact-id": "quarkus-smallrye-opentracing",
       "metadata": {
         "redhat-support": [
-          "supported"
-        ]
+          "supported","deprecated" ]
       }
     },
     {
