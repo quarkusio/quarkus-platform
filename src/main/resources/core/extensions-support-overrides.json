@@ -195,7 +195,7 @@
       "artifact-id": "quarkus-jdbc-mssql",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "supported"
         ]
       }
     },
@@ -267,7 +267,7 @@
       "artifact-id": "quarkus-kubernetes-config",
       "metadata": {
         "redhat-support": [
-          "supported"
+          "tech-preview"
         ]
       }
     },
@@ -384,7 +384,7 @@
       "artifact-id": "quarkus-oidc-client-reactive-filter",
       "metadata": {
         "redhat-support": [
-          "supported"
+          "tech-preview"
         ]
       }
     },
@@ -471,6 +471,15 @@
     },
     {
       "group-id": "io.quarkus",
+      "artifact-id": "quarkus-reactive-mssql-client",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
       "artifact-id": "quarkus-reactive-pg-client",
       "metadata": {
         "redhat-support": [
@@ -519,7 +528,7 @@
       "artifact-id": "quarkus-rest-client-mutiny",
       "metadata": {
         "redhat-support": [
-          "supported"
+          "tech-preview"
         ]
       }
     },
@@ -870,6 +879,15 @@
       "metadata": {
         "redhat-support": [
           "supported"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-jacoco",
+      "metadata": {
+        "redhat-support": [
+          "unsupported"
         ]
       }
     },
