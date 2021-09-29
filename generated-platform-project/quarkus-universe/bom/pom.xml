@@ -9254,12 +9254,12 @@
       <dependency>
         <groupId>org.amqphub.quarkus</groupId>
         <artifactId>quarkus-qpid-jms-deployment</artifactId>
-        <version>0.27.0</version>
+        <version>0.28.0</version>
       </dependency>
       <dependency>
         <groupId>org.amqphub.quarkus</groupId>
         <artifactId>quarkus-qpid-jms</artifactId>
-        <version>0.27.0</version>
+        <version>0.28.0</version>
       </dependency>
       <dependency>
         <groupId>org.antlr</groupId>
@@ -15320,7 +15320,7 @@
       <dependency>
         <groupId>org.apache.qpid</groupId>
         <artifactId>qpid-jms-client</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tika</groupId>
