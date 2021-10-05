@@ -21,6 +21,7 @@
     <module>camel-quarkus-integration-test-avro-rpc</module>
     <module>camel-quarkus-integration-test-avro</module>
     <module>camel-quarkus-integration-test-aws2-grouped</module>
+    <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
     <module>camel-quarkus-integration-test-aws2</module>
     <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
@@ -113,7 +114,7 @@
     <module>camel-quarkus-integration-test-microprofile</module>
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
-    <module>camel-quarkus-integration-test-mongodb</module>
+    <module>camel-quarkus-integration-test-mongodb-grouped</module>
     <module>camel-quarkus-integration-test-msv</module>
     <module>camel-quarkus-integration-test-mustache</module>
     <module>camel-quarkus-integration-test-nagios</module>
