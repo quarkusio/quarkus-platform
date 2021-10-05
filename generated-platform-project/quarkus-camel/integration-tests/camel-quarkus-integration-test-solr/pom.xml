@@ -97,6 +97,7 @@
             <javax.net.ssl.trustStore>${solr.trust-store}</javax.net.ssl.trustStore>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
+            <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
           </systemPropertyVariables>
         </configuration>
       </plugin>
@@ -180,6 +181,7 @@
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                     <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
                     <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
+                    <quarkus.https.test-port>${test.https.port.native}</quarkus.https.test-port>
                   </systemProperties>
                 </configuration>
               </execution>

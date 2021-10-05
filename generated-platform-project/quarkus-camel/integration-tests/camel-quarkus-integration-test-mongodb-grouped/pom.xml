@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-mongodb</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-mongodb</name>
+  <artifactId>camel-quarkus-integration-test-mongodb-grouped</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-mongodb-grouped</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-mongodb</artifactId>
+      <artifactId>camel-quarkus-integration-test-mongodb-grouped</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-mongodb</artifactId>
+      <artifactId>camel-quarkus-integration-test-mongodb-grouped</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,11 +55,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>testcontainers</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.awaitility</groupId>
       <artifactId>awaitility</artifactId>
       <scope>test</scope>
@@ -93,11 +88,12 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mongodb</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mongodb-grouped</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
+            <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
           </systemPropertyVariables>
         </configuration>
       </plugin>
@@ -147,13 +143,14 @@
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                     <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
                     <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
+                    <quarkus.https.test-port>${test.https.port.native}</quarkus.https.test-port>
                   </systemProperties>
                 </configuration>
               </execution>
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mongodb</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mongodb-grouped</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -168,7 +165,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-mongodb:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-mongodb-grouped:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
