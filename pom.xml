@@ -54,7 +54,7 @@
         <quarkus.version>2.3.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.2.0</camel-quarkus.version>
+        <camel-quarkus.version>2.3.0</camel-quarkus.version>
 
         <quarkus-qpid-jms.version>0.28.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
@@ -327,10 +327,14 @@
                                     <jvmSystemProperties>
                                         <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
                                         <quarkus.http.test-ssl-port>$${test.https.port.jvm}</quarkus.http.test-ssl-port>
+                                        <!-- https://github.com/quarkusio/quarkus/issues/20228  -->
+                                        <quarkus.https.test-port>$${test.https.port.jvm}</quarkus.https.test-port>
                                     </jvmSystemProperties>
                                     <nativeSystemProperties>
                                         <quarkus.http.test-port>$${test.http.port.native}</quarkus.http.test-port>
                                         <quarkus.http.test-ssl-port>$${test.https.port.native}</quarkus.http.test-ssl-port>
+                                        <!-- https://github.com/quarkusio/quarkus/issues/20228  -->
+                                        <quarkus.https.test-port>$${test.https.port.native}</quarkus.https.test-port>
                                     </nativeSystemProperties>
                                     <transformWith>src/main/resources/xslt/camel/test-pom.xsl</transformWith>
                                 </defaultTestConfig>
