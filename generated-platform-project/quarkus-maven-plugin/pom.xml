@@ -29,6 +29,24 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>com.coderplus.maven.plugins</groupId>
+        <artifactId>copy-rename-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>copy-plugin-help</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <sourceFile>${project.build.outputDirectory}/META-INF/maven/io.quarkus.platform/quarkus-maven-plugin/plugin-help.xml</sourceFile>
+              <destinationFile>${project.build.outputDirectory}/META-INF/maven/io.quarkus/quarkus-maven-plugin/plugin-help.xml</destinationFile>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
