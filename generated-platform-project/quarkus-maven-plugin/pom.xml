@@ -11,6 +11,17 @@
   <artifactId>quarkus-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.quarkus.platform</groupId>
+        <artifactId>quarkus-bom</artifactId>
+        <version>999-SNAPSHOT</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <build>
     <plugins>
       <plugin>
@@ -23,7 +34,7 @@
               <goal>attach-maven-plugin</goal>
             </goals>
             <configuration>
-              <originalPluginCoords>io.quarkus:quarkus-maven-plugin:2.3.0.Final</originalPluginCoords>
+              <originalPluginCoords>io.quarkus:quarkus-maven-plugin:2.4.0.CR1</originalPluginCoords>
               <targetPluginCoords>io.quarkus.platform:quarkus-maven-plugin:999-SNAPSHOT</targetPluginCoords>
             </configuration>
           </execution>
