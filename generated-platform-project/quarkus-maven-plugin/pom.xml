@@ -11,6 +11,17 @@
   <artifactId>quarkus-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.quarkus.platform</groupId>
+        <artifactId>quarkus-bom</artifactId>
+        <version>999-SNAPSHOT</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <build>
     <plugins>
       <plugin>
