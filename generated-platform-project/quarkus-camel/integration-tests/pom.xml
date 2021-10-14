@@ -13,6 +13,7 @@
   <name>Quarkus Platform - Camel - Integration Tests - Parent</name>
   <modules>
     <module>camel-quarkus-integration-test-main-unknown-args-ignore</module>
+    <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -23,7 +24,6 @@
     <module>camel-quarkus-integration-test-aws2-grouped</module>
     <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
     <module>camel-quarkus-integration-test-aws2</module>
-    <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
     <module>camel-quarkus-integration-test-bean-validator</module>
     <module>camel-quarkus-integration-test-bindy</module>
