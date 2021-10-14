@@ -348,9 +348,9 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
                                     </test>
-                                    <test> <!-- temporarily disabling, since it seems to be failing -->
+                                    <test><!-- Workaround for azure-grouped tests failing with Quarkus 999-SNAPSHOT and CQ 2.3.0  -->
                                         <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus.version}</artifact>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-azure-grouped:${camel-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
