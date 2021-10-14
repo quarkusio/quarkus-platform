@@ -336,7 +336,7 @@
                                         <!-- https://github.com/quarkusio/quarkus/issues/20228  -->
                                         <quarkus.https.test-port>$${test.https.port.native}</quarkus.https.test-port>
                                     </nativeSystemProperties>
-                                    <transformWith>src/main/resources/xslt/camel/test-pom.xsl</transformWith>
+                                    <transformWith>${resourcesdir}/xslt/camel/test-pom.xsl</transformWith>
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
                                 <tests>
