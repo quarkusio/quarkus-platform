@@ -269,6 +269,10 @@
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:integration-tests-quarkus-gradle:${kogito-quarkus.version}</artifact>
                                     </test>
+                                    <test>
+                                        <excluded>true</excluded>
+                                        <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test-session:${kogito-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
