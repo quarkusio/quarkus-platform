@@ -246,30 +246,6 @@
                                 <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
                                 <tests>
                                     <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-jdbc:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-kafka-persistence:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-mongodb:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-postgresql:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:kogito-quarkus-integration-test-maven-devmode:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <excluded>true</excluded>
-                                        <artifact>org.kie.kogito:integration-tests-quarkus-gradle:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test-session:${kogito-quarkus.version}</artifact>
                                     </test>
