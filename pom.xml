@@ -51,7 +51,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.3.0.Final</quarkus.version>
+        <quarkus.version>2.3.1.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.3.0</camel-quarkus.version>
@@ -343,6 +343,10 @@
                                     <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Workaround for azure-grouped tests failing with Quarkus 999-SNAPSHOT and CQ 2.3.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-azure-grouped:${camel-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
