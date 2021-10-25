@@ -28,8 +28,8 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <artifactId>jsoup</artifactId>
           <groupId>org.jsoup</groupId>
+          <artifactId>jsoup</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -39,24 +39,24 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
+          <groupId>javax.activation</groupId>
           <artifactId>activation</artifactId>
-          <groupId>javax.activation</groupId>
         </exclusion>
         <exclusion>
+          <groupId>javax.activation</groupId>
           <artifactId>javax.activation-api</artifactId>
-          <groupId>javax.activation</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>jakarta.activation-api</artifactId>
           <groupId>jakarta.activation</groupId>
+          <artifactId>jakarta.activation-api</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>jaxb-osgi</artifactId>
           <groupId>com.sun.xml.bind</groupId>
+          <artifactId>jaxb-osgi</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>commons-logging</artifactId>
           <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

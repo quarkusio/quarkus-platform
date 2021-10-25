@@ -54,7 +54,7 @@
         <quarkus.version>2.4.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.3.0</camel-quarkus.version>
+        <camel-quarkus.version>2.4.0</camel-quarkus.version>
 
         <quarkus-qpid-jms.version>0.29.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
