@@ -246,7 +246,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-blob-batch</artifactId>
-        <version>12.9.1</version>
+        <version>12.11.1</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -271,7 +271,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-file-share</artifactId>
-        <version>12.9.1</version>
+        <version>12.11.1</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -281,7 +281,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-queue</artifactId>
-        <version>12.9.1</version>
+        <version>12.11.1</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.cassandra</groupId>
@@ -299,12 +299,12 @@
         <version>4.13.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
+            <groupId>io.dropwizard.metrics</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.hdrhistogram</groupId>
             <artifactId>HdrHistogram</artifactId>
+            <groupId>org.hdrhistogram</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -370,8 +370,8 @@
         <version>2.1.2</version>
         <exclusions>
           <exclusion>
-            <groupId>org.ow2.asm</groupId>
             <artifactId>asm-util</artifactId>
+            <groupId>org.ow2.asm</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -461,8 +461,8 @@
         <version>1.6.6</version>
         <exclusions>
           <exclusion>
-            <groupId>com.sun.activation</groupId>
             <artifactId>jakarta.activation</artifactId>
+            <groupId>com.sun.activation</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -687,12 +687,12 @@
         <version>2.40.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpmime</artifactId>
+            <groupId>org.apache.httpcomponents</groupId>
           </exclusion>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4092,8 +4092,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4108,12 +4108,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+            <groupId>javax.servlet</groupId>
           </exclusion>
           <exclusion>
-            <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
+            <groupId>io.netty</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4123,20 +4123,20 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.netty</groupId>
             <artifactId>*</artifactId>
+            <groupId>io.netty</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring</artifactId>
+            <groupId>org.apache.camel</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.apache.qpid</groupId>
             <artifactId>qpid-jms-client</artifactId>
+            <groupId>org.apache.qpid</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.apache.qpid</groupId>
             <artifactId>proton-j</artifactId>
+            <groupId>org.apache.qpid</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4176,8 +4176,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>javax.ws.rs</groupId>
             <artifactId>jsr311-api</artifactId>
+            <groupId>javax.ws.rs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4187,12 +4187,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-activation_1.1_spec</artifactId>
+            <groupId>org.apache.geronimo.specs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4237,8 +4237,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4248,8 +4248,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4259,8 +4259,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4270,8 +4270,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4281,8 +4281,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4292,8 +4292,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4303,8 +4303,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4314,8 +4314,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4325,8 +4325,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4336,8 +4336,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4347,8 +4347,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4358,8 +4358,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4369,8 +4369,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4380,8 +4380,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4391,8 +4391,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4402,8 +4402,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4413,8 +4413,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4424,8 +4424,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4435,8 +4435,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>software.amazon.awssdk</groupId>
             <artifactId>netty-nio-client</artifactId>
+            <groupId>software.amazon.awssdk</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4451,8 +4451,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.netty</groupId>
             <artifactId>netty-tcnative-boringssl-static</artifactId>
+            <groupId>io.netty</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4462,8 +4462,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.netty</groupId>
             <artifactId>netty-tcnative-boringssl-static</artifactId>
+            <groupId>io.netty</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4478,8 +4478,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.netty</groupId>
             <artifactId>netty-tcnative-boringssl-static</artifactId>
+            <groupId>io.netty</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4594,8 +4594,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>asm</groupId>
             <artifactId>asm</artifactId>
+            <groupId>asm</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4630,8 +4630,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.jboss.logmanager</groupId>
             <artifactId>jboss-logmanager</artifactId>
+            <groupId>org.jboss.logmanager</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4766,8 +4766,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.elasticsearch.client</groupId>
             <artifactId>*</artifactId>
+            <groupId>org.elasticsearch.client</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4812,12 +4812,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
+            <groupId>org.slf4j</groupId>
           </exclusion>
           <exclusion>
-            <groupId>xpp3</groupId>
             <artifactId>xpp3</artifactId>
+            <groupId>xpp3</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4847,8 +4847,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4888,20 +4888,20 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
           <exclusion>
-            <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+            <groupId>javax.annotation</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
+            <groupId>org.checkerframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.codehaus.mojo</groupId>
             <artifactId>animal-sniffer-annotations</artifactId>
+            <groupId>org.codehaus.mojo</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4911,8 +4911,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4922,8 +4922,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4938,8 +4938,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4949,28 +4949,28 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
           <exclusion>
-            <groupId>io.grpc</groupId>
             <artifactId>grpc-netty-shaded</artifactId>
+            <groupId>io.grpc</groupId>
           </exclusion>
           <exclusion>
-            <groupId>io.perfmark</groupId>
             <artifactId>perfmark-api</artifactId>
+            <groupId>io.perfmark</groupId>
           </exclusion>
           <exclusion>
-            <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+            <groupId>javax.annotation</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
+            <groupId>org.checkerframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.codehaus.mojo</groupId>
             <artifactId>animal-sniffer-annotations</artifactId>
+            <groupId>org.codehaus.mojo</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4980,8 +4980,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4991,20 +4991,20 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
           <exclusion>
-            <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+            <groupId>javax.annotation</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
+            <groupId>org.checkerframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.codehaus.mojo</groupId>
             <artifactId>animal-sniffer-annotations</artifactId>
+            <groupId>org.codehaus.mojo</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5054,12 +5054,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5069,16 +5069,16 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
           <exclusion>
-            <groupId>javax.ws.rs</groupId>
             <artifactId>jsr311-api</artifactId>
+            <groupId>javax.ws.rs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5108,12 +5108,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+            <groupId>javax.servlet</groupId>
           </exclusion>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5133,8 +5133,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5154,8 +5154,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.infinispan</groupId>
             <artifactId>infinispan-core</artifactId>
+            <groupId>org.infinispan</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5230,8 +5230,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>javax.ws.rs</groupId>
             <artifactId>javax.ws.rs-api</artifactId>
+            <groupId>javax.ws.rs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5246,12 +5246,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5281,40 +5281,40 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>javax.ws.rs</groupId>
             <artifactId>jsr311-api</artifactId>
+            <groupId>javax.ws.rs</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.google.j2objc</groupId>
             <artifactId>j2objc-annotations</artifactId>
+            <groupId>com.google.j2objc</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.sun.jersey</groupId>
             <artifactId>*</artifactId>
+            <groupId>com.sun.jersey</groupId>
           </exclusion>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient-cache</artifactId>
+            <groupId>org.apache.httpcomponents</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5324,20 +5324,20 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring</artifactId>
+            <groupId>org.apache.camel</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5367,20 +5367,20 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring</artifactId>
+            <groupId>org.apache.camel</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5460,8 +5460,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.fabric8</groupId>
             <artifactId>kubernetes-client</artifactId>
+            <groupId>io.fabric8</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5501,8 +5501,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.apache.cxf</groupId>
             <artifactId>*</artifactId>
+            <groupId>org.apache.cxf</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5532,8 +5532,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.apache.camel</groupId>
             <artifactId>camel-headersmap</artifactId>
+            <groupId>org.apache.camel</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5563,8 +5563,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.eclipse.microprofile.fault-tolerance</groupId>
             <artifactId>microprofile-fault-tolerance-api</artifactId>
+            <groupId>org.eclipse.microprofile.fault-tolerance</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5579,8 +5579,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.eclipse.microprofile.metrics</groupId>
             <artifactId>microprofile-metrics-api</artifactId>
+            <groupId>org.eclipse.microprofile.metrics</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5595,8 +5595,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
+            <groupId>io.minio</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5616,8 +5616,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.mongodb</groupId>
             <artifactId>*</artifactId>
+            <groupId>org.mongodb</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5627,8 +5627,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.mongodb</groupId>
             <artifactId>*</artifactId>
+            <groupId>org.mongodb</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5668,8 +5668,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+            <groupId>javax.servlet</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5704,8 +5704,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5715,8 +5715,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5726,8 +5726,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5737,8 +5737,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.grpc</groupId>
             <artifactId>grpc-netty-shaded</artifactId>
+            <groupId>io.grpc</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5753,12 +5753,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.optaplanner</groupId>
             <artifactId>optaplanner-core</artifactId>
+            <groupId>org.optaplanner</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.optaplanner</groupId>
             <artifactId>optaplanner-persistence-common</artifactId>
+            <groupId>org.optaplanner</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5813,8 +5813,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.j2objc</groupId>
             <artifactId>j2objc-annotations</artifactId>
+            <groupId>com.google.j2objc</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5824,12 +5824,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
+            <groupId>org.quartz-scheduler</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
+            <groupId>com.mchange</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5839,8 +5839,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.quickfixj</groupId>
             <artifactId>quickfixj-codegenerator</artifactId>
+            <groupId>org.quickfixj</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5885,8 +5885,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+            <groupId>com.google.code.findbugs</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5941,12 +5941,12 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>javax.xml.ws</groupId>
             <artifactId>jaxws-api</artifactId>
+            <groupId>javax.xml.ws</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.sun.xml.messaging.saaj</groupId>
             <artifactId>saaj-impl</artifactId>
+            <groupId>com.sun.xml.messaging.saaj</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6006,8 +6006,8 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6032,16 +6032,16 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6051,16 +6051,16 @@
         <version>3.12.0</version>
         <exclusions>
           <exclusion>
-            <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6426,20 +6426,20 @@
         <version>3.4.10</version>
         <exclusions>
           <exclusion>
-            <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
+            <groupId>org.yaml</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.carrotsearch</groupId>
             <artifactId>hppc</artifactId>
+            <groupId>com.carrotsearch</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.jcabi</groupId>
             <artifactId>*</artifactId>
+            <groupId>com.jcabi</groupId>
           </exclusion>
           <exclusion>
-            <groupId>net.objecthunter</groupId>
             <artifactId>exp4j</artifactId>
+            <groupId>net.objecthunter</groupId>
           </exclusion>
         </exclusions>
         <optional>true</optional>
@@ -7098,8 +7098,8 @@
         <version>5.3.10</version>
         <exclusions>
           <exclusion>
-            <groupId>org.springframework</groupId>
             <artifactId>spring-jcl</artifactId>
+            <groupId>org.springframework</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7159,8 +7159,8 @@
         <version>2.7.2</version>
         <exclusions>
           <exclusion>
-            <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
+            <groupId>xml-apis</groupId>
           </exclusion>
         </exclusions>
       </dependency>

@@ -89,12 +89,12 @@
         <version>4.13.0</version>
         <exclusions>
           <exclusion>
-            <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
+            <groupId>io.dropwizard.metrics</groupId>
           </exclusion>
           <exclusion>
-            <groupId>org.hdrhistogram</groupId>
             <artifactId>HdrHistogram</artifactId>
+            <groupId>org.hdrhistogram</groupId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -144,20 +144,20 @@
         <version>3.4.10</version>
         <exclusions>
           <exclusion>
-            <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
+            <groupId>org.yaml</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.carrotsearch</groupId>
             <artifactId>hppc</artifactId>
+            <groupId>com.carrotsearch</groupId>
           </exclusion>
           <exclusion>
-            <groupId>com.jcabi</groupId>
             <artifactId>*</artifactId>
+            <groupId>com.jcabi</groupId>
           </exclusion>
           <exclusion>
-            <groupId>net.objecthunter</groupId>
             <artifactId>exp4j</artifactId>
+            <groupId>net.objecthunter</groupId>
           </exclusion>
         </exclusions>
         <optional>true</optional>
