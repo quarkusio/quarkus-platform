@@ -1963,8 +1963,8 @@
         <version>1.12.0.Final</version>
         <exclusions>
           <exclusion>
-            <groupId>org.drools</groupId>
             <artifactId>drools-core-dynamic</artifactId>
+            <groupId>org.drools</groupId>
           </exclusion>
         </exclusions>
       </dependency>
