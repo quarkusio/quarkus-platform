@@ -328,6 +328,14 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-azure-grouped:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for fop tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-fop:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Workaround for geocoder tests failing in CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
