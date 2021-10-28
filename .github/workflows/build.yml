@@ -8,13 +8,10 @@ on:
       - '*.adoc'
       - '*.txt'
       - '.github/ISSUE_TEMPLATE/**'
-  pull_request:
-    paths-ignore:
-      - '.gitignore'
-      - '*.md'
-      - '*.adoc'
-      - '*.txt'
-      - '.github/ISSUE_TEMPLATE/**'
+  workflow_run:
+    workflows: ["Refresh Generated Project"]
+    types: 
+      - completed
 
 env:
   LANG: en_US.UTF-8
