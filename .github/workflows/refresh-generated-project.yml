@@ -1,4 +1,4 @@
-name: "Refresh generated project"
+name: "Refresh Generated Project"
 
 on:
   pull_request:
@@ -12,10 +12,15 @@ on:
 env:
   LANG: en_US.UTF-8
 jobs:
-  build:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Configure Git author
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
 
       - name: Checkout PR
         env:
