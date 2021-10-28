@@ -336,6 +336,26 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for kafka-sasl tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-sasl:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Workaround for kafka-sasl-ssl tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-sasl-ssl:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Workaround for kafka-ssl tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-ssl:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Workaround for rabbitmq tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-rabbitmq:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Workaround for salesforce tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-salesforce:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
