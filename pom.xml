@@ -67,7 +67,7 @@
 
         <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.31</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.32</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -464,7 +464,6 @@
                                 <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter</dependency>
                                 <dependency>org.kie.kogito:kogito-processes-spring-boot-starter</dependency>
                                 <dependency>org.kie.kogito:kogito-rules-spring-boot-starter</dependency>
-
                             </excludedDependencies>
                         </bomGenerator>
                         <descriptorGenerator>
@@ -611,6 +610,13 @@
                                         <hidden>true</hidden>
                                     </member>
                                 </members>
+                                <bomGenerator>
+                                    <!-- Version constraint preferences during alignment -->
+                                    <!-- This allows to favor versions that match a certain expression even if the default Maven version comparator would do otherwise -->
+                                    <versionConstraintPreferences>
+                                        <prefer>*redhat-*</prefer>
+                                    </versionConstraintPreferences>
+                                </bomGenerator>
                             </platformConfig>
                         </configuration>
                     </plugin>
