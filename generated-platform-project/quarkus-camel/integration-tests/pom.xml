@@ -21,6 +21,7 @@
     <module>camel-quarkus-integration-test-kafka-ssl</module>
     <module>camel-quarkus-integration-test-rabbitmq</module>
     <module>camel-quarkus-integration-test-salesforce</module>
+    <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -160,7 +161,6 @@
     <module>camel-quarkus-integration-test-soap</module>
     <module>camel-quarkus-integration-test-solr</module>
     <module>camel-quarkus-integration-test-splunk</module>
-    <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-sql</module>
     <module>camel-quarkus-ssh-integration-test</module>
     <module>camel-quarkus-integration-test-stax</module>
