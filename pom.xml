@@ -356,6 +356,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-salesforce:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for Spring RabbitMQ tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-spring-rabbitmq:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
