@@ -336,6 +336,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for js-dsl tests failing in CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
+                                    </test>
                                     <test><!-- Workaround for kafka-sasl tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-sasl:${camel-quarkus.version}</artifact>
