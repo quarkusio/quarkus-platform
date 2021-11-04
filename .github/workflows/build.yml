@@ -20,7 +20,8 @@ env:
   LANG: en_US.UTF-8
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    name: Build and test
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
