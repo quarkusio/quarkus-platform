@@ -81,6 +81,11 @@ jobs:
         run: |
           echo "::set-output name=changes::$(git status -s | wc -l)"
         shell: bash
+      - name: Display changes
+        run: |
+          git status
+          git --no-pager diff
+        shell: bash
 
       - name: Check that generated project is properly updated
         uses: actions/github-script@v5
