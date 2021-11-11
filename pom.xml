@@ -207,11 +207,11 @@
                                         <artifact>org.optaplanner:optaplanner-quarkus-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
+                                        <!-- TODO: remove the skip with upgrade to OptaPlanner 8.14.0.Final. -->
+                                        <skip>true</skip>
                                         <artifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
-                                        <!-- TODO: remove the skip with upgrade to OptaPlanner 8.12.0.Final. -->
-                                        <skip>true</skip>
                                         <artifact>org.optaplanner:optaplanner-quarkus-devui-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
