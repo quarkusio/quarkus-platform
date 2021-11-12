@@ -92,4 +92,4 @@ jobs:
         if: ${{ steps.get-changes.outputs.changes > 0 }}
         with:
           script: |
-            throw new Error('Generated project needs an update. Please run ./mvnw clean process-resources and include the result in your pull request.')
+            throw new Error('Generated project needs an update. Please run ./mvnw -Dsync and include the result in your pull request.')
