@@ -631,6 +631,24 @@
                 </plugins>
             </build>
         </profile>
+
+        <!--
+           | A convenience profile to re-generate the generated-platform-project before opening a PR
+        -->
+        <profile>
+            <id>sync</id>
+            <activation>
+                <property>
+                    <name>sync</name>
+                </property>
+            </activation>
+            <properties>
+                <quarkus.invoke-platform-project.skip>true</quarkus.invoke-platform-project.skip>
+            </properties>
+            <build>
+                <defaultGoal>clean process-resources</defaultGoal>
+            </build>
+        </profile>
     </profiles>
 
 </project>
