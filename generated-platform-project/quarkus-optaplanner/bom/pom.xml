@@ -144,6 +144,46 @@
         <version>1.5.3</version>
       </dependency>
       <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>drools-compiler</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>drools-core-dynamic</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>drools-core</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-api</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-drools-model</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-legacy-api</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-quarkus-rules-deployment</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-quarkus-rules</artifactId>
+        <version>1.11.1.Final</version>
+      </dependency>
+      <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-api</artifactId>
         <version>7.59.0.Final</version>

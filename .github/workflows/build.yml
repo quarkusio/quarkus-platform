@@ -45,7 +45,50 @@ jobs:
           distribution: temurin
           java-version: ${{ matrix.java }}
       - name: Build with Maven
-        run: MAVEN_OPTS=-Xmx3072m && mvn -B clean install --settings .github/mvn-settings.xml
+        run: MAVEN_OPTS=-Xmx3072m && ./mvnw -B clean install --settings .github/mvn-settings.xml
       - name: Delete Local Artifacts From Cache
         shell: bash
         run: rm -rf ~/.m2/repository/io/quarkus/quarkus-universe-bom*
+  refresh:
+    name: Check generated project has been updated
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get Date
+        id: get-date
+        run: |
+          echo "::set-output name=date::$(/bin/date -u "+%Y-%m")"
+        shell: bash
+      - name: Cache Maven Repository
+        id: cache-maven
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          # refresh cache every month to avoid unlimited growth
+          key: maven-repo-pr-${{ runner.os }}-${{ steps.get-date.outputs.date }}
+      - name: Install JDK ${{ matrix.java }}
+        uses: actions/setup-java@v2
+        with:
+          distribution: temurin
+          java-version: 11
+      - name: Build with Maven
+        run: MAVEN_OPTS=-Xmx3072m && ./mvnw -B clean process-resources --settings .github/mvn-settings.xml
+
+      - name: Get changes
+        id: get-changes
+        run: |
+          echo "::set-output name=changes::$(git status -s | wc -l)"
+        shell: bash
+      - name: Display changes
+        run: |
+          git status
+          git --no-pager diff
+        shell: bash
+
+      - name: Check that generated project is properly updated
+        uses: actions/github-script@v5
+        if: ${{ steps.get-changes.outputs.changes > 0 }}
+        with:
+          script: |
+            throw new Error('Generated project needs an update. Please run ./mvnw -Dsync and include the result in your pull request.')

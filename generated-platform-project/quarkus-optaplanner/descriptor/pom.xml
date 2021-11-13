@@ -72,6 +72,9 @@
               <member>${project.groupId}:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
+          <processGroupIds>
+            <groupId>org.optaplanner</groupId>
+          </processGroupIds>
           <overridesFile>${project.basedir}/target/classes/overrides.json,${project.basedir}/../../../src/main/resources/extensions-overrides.json</overridesFile>
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>
