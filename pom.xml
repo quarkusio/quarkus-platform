@@ -67,7 +67,7 @@
 
         <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.34</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.36</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
@@ -498,6 +498,10 @@
                             <originalPluginCoords>io.quarkus:quarkus-maven-plugin:${quarkus.version}</originalPluginCoords>
                             <targetPluginCoords>${platform.groupId}:quarkus-maven-plugin:${platform.version}</targetPluginCoords>
                         </attachedMavenPlugin>
+
+                        <!-- Uncomment to create a ZIP with the BOM reports
+                        <generateBomReportsZip>${project.build.directory}/reports.zip</generateBomReportsZip>
+                        -->
                     </platformConfig>
                 </configuration>
             </plugin>
@@ -652,6 +656,24 @@
                         </configuration>
                     </plugin>
                 </plugins>
+            </build>
+        </profile>
+
+        <!--
+           | A convenience profile to re-generate the generated-platform-project before opening a PR
+        -->
+        <profile>
+            <id>sync</id>
+            <activation>
+                <property>
+                    <name>sync</name>
+                </property>
+            </activation>
+            <properties>
+                <quarkus.invoke-platform-project.skip>true</quarkus.invoke-platform-project.skip>
+            </properties>
+            <build>
+                <defaultGoal>clean process-resources</defaultGoal>
             </build>
         </profile>
     </profiles>
