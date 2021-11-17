@@ -78,11 +78,11 @@ The `generated-platform-project` will refer to the root platform project `pom.xm
 
 ### Generating the platform project
 
-`mvn process-resources` will generate the complete platform project.
+`./mvnw -Dsync` will generate the complete platform project.
 
 The platform project will typically be generated on every build anyway. But this command could be used in case you want to simply (re-)generate the platform project w/o running any other commands on it.
 
-**NOTE** the way it's currently done is any command launched from the platform project's root dir will be passed to the `generated-platform-project`, which means `mvn process-resources` will not only generate the platform project but will also be executed against it.
+**NOTE** the way it's currently done is any command launched from the platform project's root dir will be passed to the `generated-platform-project`, which means `./mvnw -Dsync` will not only generate the platform project but will also be executed against it.
 
 ### Installing the platform
 
