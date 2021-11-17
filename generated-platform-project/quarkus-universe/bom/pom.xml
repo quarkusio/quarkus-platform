@@ -218,12 +218,12 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-communication-common</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.1</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-communication-identity</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -333,17 +333,17 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-security-keyvault-keys</artifactId>
-        <version>4.3.0</version>
+        <version>4.2.8</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-security-keyvault-secrets</artifactId>
-        <version>4.3.0</version>
+        <version>4.2.8</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-blob-batch</artifactId>
-        <version>12.11.1</version>
+        <version>12.9.1</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -368,7 +368,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-file-share</artifactId>
-        <version>12.11.1</version>
+        <version>12.9.1</version>
       </dependency>
       <dependency>
         <groupId>com.azure</groupId>
@@ -378,7 +378,7 @@
       <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-storage-queue</artifactId>
-        <version>12.11.1</version>
+        <version>12.9.1</version>
       </dependency>
       <dependency>
         <groupId>com.blazebit</groupId>
@@ -3438,17 +3438,17 @@
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-healthchecks</artifactId>
-        <version>4.1.19</version>
+        <version>4.0.1</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-jmx</artifactId>
-        <version>4.1.19</version>
+        <version>4.0.1</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
         <artifactId>metrics-servlets</artifactId>
-        <version>4.1.19</version>
+        <version>4.0.1</version>
       </dependency>
       <dependency>
         <groupId>io.fabric8.kubernetes</groupId>
@@ -15224,7 +15224,7 @@
       <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-test</artifactId>
-        <version>4.3.0</version>
+        <version>4.2.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
@@ -16459,7 +16459,7 @@
       <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js-scriptengine</artifactId>
-        <version>21.2.0</version>
+        <version>20.0.0</version>
       </dependency>
       <dependency>
         <groupId>org.graalvm.js</groupId>

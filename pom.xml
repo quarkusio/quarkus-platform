@@ -67,9 +67,8 @@
 
         <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.36</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.37</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
-        <rpkgtests-maven-plugin.version>0.8.0</rpkgtests-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -323,10 +322,6 @@
                                     <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for azure-grouped tests failing with Quarkus 999-SNAPSHOT and CQ 2.3.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-azure-grouped:${camel-quarkus.version}</artifact>
                                     </test>
                                     <test><!-- Workaround for fop tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
                                         <skip>true</skip>
