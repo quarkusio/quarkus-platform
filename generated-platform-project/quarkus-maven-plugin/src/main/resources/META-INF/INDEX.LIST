@@ -1,0 +1,18 @@
+JarIndex-Version: 1.0
+
+quarkus-maven-plugin-2.5.0.Final-sources.jar
+META-INF
+META-INF/m2e
+META-INF/maven
+META-INF/maven/io.quarkus
+META-INF/maven/io.quarkus/quarkus-maven-plugin
+META-INF/services
+create-extension-templates
+io
+io/quarkus
+io/quarkus/maven
+io/quarkus/maven/components
+io/quarkus/platform
+io/quarkus/platform/tools
+io/quarkus/platform/tools/maven
+
