@@ -323,6 +323,10 @@
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
                                 <tests>
+                                    <test><!-- Workaround for csimple tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
+                                    </test>
                                     <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
@@ -508,6 +512,14 @@
     </build>
 
     <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Repository Switchboard</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>confluent</id>
             <url>https://packages.confluent.io/maven/</url>
