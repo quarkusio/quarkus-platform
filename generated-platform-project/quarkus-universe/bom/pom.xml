@@ -5163,13 +5163,6 @@
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-bootstrap-core</artifactId>
-        <version>2.2.3.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-gradle-resolver</artifactId>
         <version>2.2.3.Final</version>
       </dependency>
@@ -6673,13 +6666,6 @@
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-resteasy-reactive-deployment</artifactId>
-        <version>2.2.3.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-reactive-jackson-common-deployment</artifactId>
         <version>2.2.3.Final</version>
       </dependency>
@@ -7329,13 +7315,6 @@
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-deployment</artifactId>
         <version>2.2.3.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-vertx-http-deployment</artifactId>
-        <version>2.2.3.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -8758,12 +8737,6 @@
       </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
-        <artifactId>vertx-service-proxy</artifactId>
-        <version>4.1.3</version>
-        <classifier>processor</classifier>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
         <artifactId>vertx-shell</artifactId>
         <version>4.1.3</version>
       </dependency>
@@ -9023,13 +8996,6 @@
         <groupId>io.vertx</groupId>
         <artifactId>vertx-web</artifactId>
         <version>4.1.3</version>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
-        <artifactId>vertx-web</artifactId>
-        <version>4.1.3</version>
-        <type>js</type>
-        <classifier>client</classifier>
       </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
@@ -16953,13 +16919,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-compiler</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -16968,13 +16927,6 @@
         <artifactId>drools-core-dynamic</artifactId>
         <version>1.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-core-dynamic</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
@@ -17007,13 +16959,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-core</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-decisiontables</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -17022,13 +16967,6 @@
         <artifactId>drools-decisiontables</artifactId>
         <version>1.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-decisiontables</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
@@ -18111,13 +18049,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-drools-model</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-drools</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -18991,12 +18922,6 @@
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-benchmark</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
         <version>8.11.1.Final</version>
       </dependency>
@@ -19022,12 +18947,6 @@
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
@@ -19059,12 +18978,6 @@
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
         <version>8.11.1.Final</version>
       </dependency>
@@ -19073,12 +18986,6 @@
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
@@ -19110,12 +19017,6 @@
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jsonb</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
         <version>8.11.1.Final</version>
       </dependency>
@@ -19124,12 +19025,6 @@
         <artifactId>optaplanner-quarkus</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
@@ -19158,12 +19053,6 @@
         <artifactId>optaplanner-spring-boot-starter</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-spring-boot-starter</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>

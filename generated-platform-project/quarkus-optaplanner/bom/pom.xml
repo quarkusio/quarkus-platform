@@ -481,12 +481,6 @@
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-benchmark</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
         <version>8.11.1.Final</version>
       </dependency>
@@ -512,12 +506,6 @@
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
@@ -549,12 +537,6 @@
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
         <version>8.11.1.Final</version>
       </dependency>
@@ -563,12 +545,6 @@
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
@@ -600,12 +576,6 @@
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus-jsonb</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
         <version>8.11.1.Final</version>
       </dependency>
@@ -614,12 +584,6 @@
         <artifactId>optaplanner-quarkus</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
@@ -648,12 +612,6 @@
         <artifactId>optaplanner-spring-boot-starter</artifactId>
         <version>8.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-spring-boot-starter</artifactId>
-        <version>8.11.1.Final</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>

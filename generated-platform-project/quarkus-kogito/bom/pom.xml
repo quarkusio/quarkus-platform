@@ -76,13 +76,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-compiler</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-core-dynamic</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -91,13 +84,6 @@
         <artifactId>drools-core-dynamic</artifactId>
         <version>1.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-core-dynamic</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
@@ -130,13 +116,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-core</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>drools-decisiontables</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -145,13 +124,6 @@
         <artifactId>drools-decisiontables</artifactId>
         <version>1.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>drools-decisiontables</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
@@ -1231,13 +1203,6 @@
         <artifactId>kogito-drools-model</artifactId>
         <version>1.11.1.Final</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-drools-model</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>tests</classifier>
-        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
