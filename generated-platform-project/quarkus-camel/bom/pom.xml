@@ -403,17 +403,17 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-common-protos</artifactId>
-        <version>2.3.2</version>
+        <version>2.6.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.auth</groupId>
         <artifactId>google-auth-library-credentials</artifactId>
-        <version>1.0.0</version>
+        <version>1.2.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>native-image-support</artifactId>
-        <version>0.8.0</version>
+        <version>0.10.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.zxing</groupId>
@@ -7214,7 +7214,7 @@
       <dependency>
         <groupId>org.threeten</groupId>
         <artifactId>threetenbp</artifactId>
-        <version>1.5.1</version>
+        <version>1.5.2</version>
       </dependency>
       <dependency>
         <groupId>org.web3j</groupId>
