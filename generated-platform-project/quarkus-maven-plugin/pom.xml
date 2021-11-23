@@ -8,6 +8,7 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
+  <groupId>io.quarkus.platform</groupId>
   <artifactId>quarkus-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
