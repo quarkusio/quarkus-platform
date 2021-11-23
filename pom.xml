@@ -69,7 +69,7 @@
         <kogito-quarkus.version>1.13.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.13.0.Final</optaplanner-quarkus.version>
 
-        <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
+        <quarkus-google-cloud-services.version>0.11.0</quarkus-google-cloud-services.version>
 
         <quarkus-platform-bom-generator.version>0.0.40</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
