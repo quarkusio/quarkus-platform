@@ -71,7 +71,7 @@
 
         <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.39</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.40</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
