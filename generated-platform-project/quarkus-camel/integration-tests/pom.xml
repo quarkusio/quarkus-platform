@@ -23,6 +23,7 @@
     <module>camel-quarkus-integration-test-rabbitmq</module>
     <module>camel-quarkus-integration-test-salesforce</module>
     <module>camel-quarkus-integration-test-spring-rabbitmq</module>
+    <module>camel-quarkus-integration-test-telegram</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -168,7 +169,6 @@
     <module>camel-quarkus-integration-test-syndication</module>
     <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-tarfile</module>
-    <module>camel-quarkus-integration-test-telegram</module>
     <module>camel-quarkus-integration-test-tika</module>
     <module>camel-quarkus-integration-test-twilio</module>
     <module>camel-quarkus-integration-test-twitter</module>
