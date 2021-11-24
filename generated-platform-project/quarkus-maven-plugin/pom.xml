@@ -33,8 +33,8 @@
       <artifactId>quarkus-core-deployment</artifactId>
       <exclusions>
         <exclusion>
-          <artifactId>quarkus-ide-launcher</artifactId>
           <groupId>io.quarkus</groupId>
+          <artifactId>quarkus-ide-launcher</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -53,16 +53,16 @@
       <artifactId>maven-plugin-api</artifactId>
       <exclusions>
         <exclusion>
-          <artifactId>javax.inject</artifactId>
           <groupId>javax.inject</groupId>
+          <artifactId>javax.inject</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>cdi-api</artifactId>
           <groupId>javax.enterprise</groupId>
+          <artifactId>cdi-api</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>plexus-classworlds</artifactId>
           <groupId>org.codehaus.plexus</groupId>
+          <artifactId>plexus-classworlds</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -79,16 +79,16 @@
       <artifactId>maven-core</artifactId>
       <exclusions>
         <exclusion>
-          <artifactId>javax.inject</artifactId>
           <groupId>javax.inject</groupId>
+          <artifactId>javax.inject</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>checker-qual</artifactId>
           <groupId>org.checkerframework</groupId>
+          <artifactId>checker-qual</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>jsr305</artifactId>
           <groupId>com.google.code.findbugs</groupId>
+          <artifactId>jsr305</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -102,24 +102,24 @@
       <artifactId>maven-artifact-transfer</artifactId>
       <exclusions>
         <exclusion>
-          <artifactId>plexus-classworlds</artifactId>
           <groupId>org.codehaus.plexus</groupId>
+          <artifactId>plexus-classworlds</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>commons-codec</artifactId>
           <groupId>commons-codec</groupId>
+          <artifactId>commons-codec</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>maven-shared-utils</artifactId>
           <groupId>org.apache.maven.shared</groupId>
+          <artifactId>maven-shared-utils</artifactId>
         </exclusion>
         <exclusion>
+          <groupId>org.apache.maven</groupId>
           <artifactId>maven-model</artifactId>
-          <groupId>org.apache.maven</groupId>
         </exclusion>
         <exclusion>
-          <artifactId>maven-artifact</artifactId>
           <groupId>org.apache.maven</groupId>
+          <artifactId>maven-artifact</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

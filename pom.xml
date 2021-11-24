@@ -66,8 +66,8 @@
         <quarkus-blaze-persistence.version>1.6.3</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.13.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.13.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.14.0.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.14.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.11.0</quarkus-google-cloud-services.version>
 
@@ -516,6 +516,15 @@
     </build>
 
     <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>kogito</id>
+            <name>kogito</name>
+            <url>https://repository.jboss.org/nexus/content/groups/kogito-public/</url>
+        </repository>
+
         <repository>
             <id>central</id>
             <name>Maven Repository Switchboard</name>
