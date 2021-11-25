@@ -884,15 +884,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-jacoco",
-      "metadata": {
-        "redhat-support": [
-          "unsupported"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-websockets",
       "metadata": {
         "redhat-support": [
