@@ -71,7 +71,7 @@
 
         <quarkus-google-cloud-services.version>0.10.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.41</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.42</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
@@ -463,10 +463,10 @@
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-properties::properties</dependency>
                                 <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
                                 <!-- Kogito: exclude Spring-related dependencies -->
-                                <dependency>org.kie.kogito:kogito-spring-boot-starter</dependency>
-                                <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter</dependency>
-                                <dependency>org.kie.kogito:kogito-processes-spring-boot-starter</dependency>
-                                <dependency>org.kie.kogito:kogito-rules-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-spring-boot-starter:*</dependency>
+                                <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter:*</dependency>
+                                <dependency>org.kie.kogito:kogito-processes-spring-boot-starter:*</dependency>
+                                <dependency>org.kie.kogito:kogito-rules-spring-boot-starter:*</dependency>
                             </excludedDependencies>
                         </bomGenerator>
                         <descriptorGenerator>
