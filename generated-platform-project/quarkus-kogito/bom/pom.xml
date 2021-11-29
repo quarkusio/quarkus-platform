@@ -1796,12 +1796,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-decisions-spring-boot-starter</artifactId>
-        <version>1.14.0.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-dmn</artifactId>
         <version>1.14.0.Final</version>
       </dependency>
@@ -1980,12 +1974,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-processes-spring-boot-starter</artifactId>
-        <version>1.14.0.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-quarkus-common</artifactId>
         <version>1.14.0.Final</version>
       </dependency>
@@ -2157,12 +2145,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-rules-spring-boot-starter</artifactId>
-        <version>1.14.0.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-ruleunits</artifactId>
         <version>1.14.0.Final</version>
       </dependency>
@@ -2244,12 +2226,6 @@
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-services</artifactId>
-        <version>1.14.0.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-spring-boot-starter</artifactId>
         <version>1.14.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
