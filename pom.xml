@@ -66,14 +66,13 @@
         <quarkus-blaze-persistence.version>1.6.3</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.13.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.13.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.14.0.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.14.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.11.0</quarkus-google-cloud-services.version>
 
-        <quarkus-platform-bom-generator.version>0.0.40</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.42</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
-        <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
 
@@ -123,11 +122,6 @@
                             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                         </systemProperties>
                     </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.gmaven</groupId>
-                    <artifactId>groovy-maven-plugin</artifactId>
-                    <version>${groovy-maven-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -331,42 +325,6 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
                                     </test>
-                                    <test><!-- Workaround for fop tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-fop:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for geocoder tests failing in CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for js-dsl tests failing in CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for kafka-sasl tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-sasl:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for kafka-sasl-ssl tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-sasl-ssl:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for kafka-ssl tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-ssl:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for rabbitmq tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-rabbitmq:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for salesforce tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-salesforce:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for Spring RabbitMQ tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-spring-rabbitmq:${camel-quarkus.version}</artifact>
-                                    </test>
                                     <test><!-- Workaround for Telegram tests failing with Quarkus 999-SNAPSHOT and CQ 2.5.0  -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-telegram:${camel-quarkus.version}</artifact>
@@ -491,10 +449,10 @@
                                 <dependency>io.quarkus:quarkus-bom-quarkus-platform-properties::properties</dependency>
                                 <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
                                 <!-- Kogito: exclude Spring-related dependencies -->
-                                <dependency>org.kie.kogito:kogito-spring-boot-starter</dependency>
-                                <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter</dependency>
-                                <dependency>org.kie.kogito:kogito-processes-spring-boot-starter</dependency>
-                                <dependency>org.kie.kogito:kogito-rules-spring-boot-starter</dependency>
+                                <dependency>org.kie.kogito:kogito-spring-boot-starter:*</dependency>
+                                <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter:*</dependency>
+                                <dependency>org.kie.kogito:kogito-processes-spring-boot-starter:*</dependency>
+                                <dependency>org.kie.kogito:kogito-rules-spring-boot-starter:*</dependency>
                             </excludedDependencies>
                         </bomGenerator>
                         <descriptorGenerator>

@@ -14,15 +14,6 @@
   <modules>
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-main-unknown-args-ignore</module>
-    <module>camel-quarkus-integration-test-fop</module>
-    <module>camel-quarkus-integration-test-geocoder</module>
-    <module>camel-quarkus-integration-test-js-dsl</module>
-    <module>camel-quarkus-integration-test-kafka-sasl</module>
-    <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
-    <module>camel-quarkus-integration-test-kafka-ssl</module>
-    <module>camel-quarkus-integration-test-rabbitmq</module>
-    <module>camel-quarkus-integration-test-salesforce</module>
-    <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-telegram</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
@@ -61,9 +52,11 @@
     <module>camel-quarkus-integration-test-fhir</module>
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-flatpack</module>
+    <module>camel-quarkus-integration-test-fop</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
     <module>camel-quarkus-integration-test-ftp</module>
+    <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
@@ -91,12 +84,16 @@
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
+    <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-jsch</module>
     <module>camel-quarkus-integration-test-jslt</module>
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
     <module>camel-quarkus-integration-test-jta</module>
+    <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
+    <module>camel-quarkus-integration-test-kafka-sasl</module>
+    <module>camel-quarkus-integration-test-kafka-ssl</module>
     <module>camel-quarkus-integration-test-kafka</module>
     <module>camel-quarkus-integration-test-kamelet</module>
     <module>camel-quarkus-integration-test-kotlin</module>
@@ -144,10 +141,12 @@
     <module>camel-quarkus-integration-test-pubnub</module>
     <module>camel-quarkus-integration-test-quartz</module>
     <module>camel-quarkus-integration-test-qute</module>
+    <module>camel-quarkus-integration-test-rabbitmq</module>
     <module>camel-quarkus-integration-test-reactive-streams</module>
     <module>camel-quarkus-integration-test-rest-openapi</module>
     <module>camel-quarkus-integration-test-rest</module>
     <module>camel-quarkus-integration-test-saga</module>
+    <module>camel-quarkus-integration-test-salesforce</module>
     <module>camel-quarkus-integration-test-sap-netweaver</module>
     <module>camel-quarkus-integration-test-saxon</module>
     <module>camel-quarkus-integration-test-servicenow</module>
@@ -162,6 +161,7 @@
     <module>camel-quarkus-integration-test-soap</module>
     <module>camel-quarkus-integration-test-solr</module>
     <module>camel-quarkus-integration-test-splunk</module>
+    <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-sql</module>
     <module>camel-quarkus-ssh-integration-test</module>
     <module>camel-quarkus-integration-test-stax</module>
