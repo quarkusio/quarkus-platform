@@ -46,7 +46,6 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-devtools-common</artifactId>
-      <version>${quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
