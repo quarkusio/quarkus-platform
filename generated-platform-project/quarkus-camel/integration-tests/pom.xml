@@ -15,6 +15,9 @@
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-main-unknown-args-ignore</module>
     <module>camel-quarkus-integration-test-telegram</module>
+    <module>camel-quarkus-integration-test-jms-artemis-client</module>
+    <module>camel-quarkus-integration-test-sjms-artemis-client</module>
+    <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -80,7 +83,6 @@
     <module>camel-quarkus-integration-test-jdbc</module>
     <module>camel-quarkus-integration-test-jing</module>
     <module>camel-quarkus-integration-test-jira</module>
-    <module>camel-quarkus-integration-test-jms-artemis-client</module>
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
@@ -152,9 +154,7 @@
     <module>camel-quarkus-integration-test-servicenow</module>
     <module>camel-quarkus-integration-test-servlet</module>
     <module>camel-quarkus-integration-test-shiro</module>
-    <module>camel-quarkus-integration-test-sjms-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms-qpid-amqp-client</module>
-    <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-slack</module>
     <module>camel-quarkus-integration-test-smallrye-reactive-messaging</module>
