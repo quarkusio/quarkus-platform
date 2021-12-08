@@ -124,16 +124,16 @@
         <version>1.6</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.ws.rs-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -153,12 +153,12 @@
         <version>2.10.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>joda-time</artifactId>
             <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -428,12 +428,12 @@
         <version>4.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>metrics-core</artifactId>
             <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>HdrHistogram</artifactId>
             <groupId>org.hdrhistogram</groupId>
+            <artifactId>HdrHistogram</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -801,8 +801,8 @@
         <version>2.9.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -862,8 +862,8 @@
         <version>2.1.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>asm-util</artifactId>
             <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-util</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2408,16 +2408,16 @@
         <version>0.20.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2928,8 +2928,8 @@
         <version>2.2.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>animal-sniffer-annotations</artifactId>
             <groupId>org.codehaus.mojo</groupId>
+            <artifactId>animal-sniffer-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -2994,8 +2994,8 @@
         <version>3.19.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -3327,8 +3327,8 @@
         <version>1.6.6</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.activation</artifactId>
             <groupId>com.sun.activation</groupId>
+            <artifactId>jakarta.activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4200,8 +4200,8 @@
         <version>1.6.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>tomcat-embed-core</artifactId>
             <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -4211,16 +4211,16 @@
         <version>1.6.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>tomcat-embed-core</artifactId>
             <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5514,8 +5514,8 @@
         <version>4.1.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5525,8 +5525,8 @@
         <version>4.1.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-all</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5536,8 +5536,8 @@
         <version>4.1.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5547,8 +5547,8 @@
         <version>4.1.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.2_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5613,12 +5613,12 @@
         <version>1.1.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>cdi-api</artifactId>
             <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6334,8 +6334,8 @@
         <version>2.6.0.CR1</version>
         <exclusions>
           <exclusion>
-            <artifactId>annotations</artifactId>
             <groupId>com.google.android</groupId>
+            <artifactId>annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6470,8 +6470,8 @@
         <version>2.6.0.CR1</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7736,8 +7736,8 @@
         <version>2.6.0.CR1</version>
         <exclusions>
           <exclusion>
-            <artifactId>shrinkwrap-api</artifactId>
             <groupId>org.jboss.shrinkwrap</groupId>
+            <artifactId>shrinkwrap-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -7752,8 +7752,8 @@
         <version>2.6.0.CR1</version>
         <exclusions>
           <exclusion>
-            <artifactId>shrinkwrap-api</artifactId>
             <groupId>org.jboss.shrinkwrap</groupId>
+            <artifactId>shrinkwrap-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8233,20 +8233,20 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-osgi</artifactId>
             <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8256,20 +8256,20 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>javax.activation-api</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-osgi</artifactId>
             <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8279,24 +8279,24 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
+            <groupId>javax.activation</groupId>
             <artifactId>javax.activation-api</artifactId>
-            <groupId>javax.activation</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>jakarta.activation-api</artifactId>
             <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-osgi</artifactId>
             <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8376,12 +8376,12 @@
         <version>2.7.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>asm</artifactId>
             <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8531,8 +8531,8 @@
         <version>2.16.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-databind</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8767,12 +8767,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-core</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-log4j12</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8802,28 +8802,28 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-core</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>scala-reflect</artifactId>
             <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>kafka-clients</artifactId>
             <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>zkclient</artifactId>
             <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-log4j12</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>log4j</artifactId>
             <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8943,8 +8943,8 @@
         <version>1.4.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -8994,20 +8994,20 @@
         <version>3.3.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logging</artifactId>
             <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javaee-api</artifactId>
             <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>smallrye-jwt-build</artifactId>
             <groupId>io.smallrye</groupId>
+            <artifactId>smallrye-jwt-build</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9022,12 +9022,12 @@
         <version>3.0.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>javaee-api</artifactId>
             <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9037,8 +9037,8 @@
         <version>2.1.16</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9048,8 +9048,8 @@
         <version>2.1.16</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9059,8 +9059,8 @@
         <version>2.1.16</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9075,8 +9075,8 @@
         <version>2.1.16</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9086,8 +9086,8 @@
         <version>2.0.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-config-api</artifactId>
             <groupId>org.eclipse.microprofile.config</groupId>
+            <artifactId>microprofile-config-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9407,28 +9407,28 @@
         <version>4.2.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-core</artifactId>
             <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jackson-module-scala_2.12</artifactId>
             <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-scala_2.12</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>scala-reflect</artifactId>
             <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>kafka-clients</artifactId>
             <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>zkclient</artifactId>
             <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-log4j12</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -9931,8 +9931,8 @@
         <version>1.2.5</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.ejb-api</artifactId>
             <groupId>jakarta.ejb</groupId>
+            <artifactId>jakarta.ejb-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -10017,8 +10017,8 @@
         <version>8.0.27</version>
         <exclusions>
           <exclusion>
-            <artifactId>protobuf-java</artifactId>
             <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -10088,8 +10088,8 @@
         <version>2.19.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13489,8 +13489,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13505,12 +13505,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>netty-all</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13520,20 +13520,20 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>camel-spring</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.apache.qpid</groupId>
             <artifactId>qpid-jms-client</artifactId>
-            <groupId>org.apache.qpid</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>proton-j</artifactId>
             <groupId>org.apache.qpid</groupId>
+            <artifactId>proton-j</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13573,8 +13573,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr311-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13584,12 +13584,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>geronimo-activation_1.1_spec</artifactId>
             <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-activation_1.1_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13634,8 +13634,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13645,8 +13645,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13656,8 +13656,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13667,8 +13667,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13678,8 +13678,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13689,8 +13689,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13700,8 +13700,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13711,8 +13711,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13722,8 +13722,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13733,8 +13733,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13744,8 +13744,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13755,8 +13755,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13766,8 +13766,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13777,8 +13777,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13788,8 +13788,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13799,8 +13799,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13810,8 +13810,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13821,8 +13821,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13832,8 +13832,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-nio-client</artifactId>
             <groupId>software.amazon.awssdk</groupId>
+            <artifactId>netty-nio-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13848,8 +13848,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-tcnative-boringssl-static</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-tcnative-boringssl-static</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13859,8 +13859,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-tcnative-boringssl-static</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-tcnative-boringssl-static</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13875,8 +13875,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>netty-tcnative-boringssl-static</artifactId>
             <groupId>io.netty</groupId>
+            <artifactId>netty-tcnative-boringssl-static</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -13991,8 +13991,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>asm</artifactId>
             <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14027,8 +14027,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logmanager</artifactId>
             <groupId>org.jboss.logmanager</groupId>
+            <artifactId>jboss-logmanager</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14163,8 +14163,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.elasticsearch.client</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14209,12 +14209,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jcl-over-slf4j</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>xpp3</artifactId>
             <groupId>xpp3</groupId>
+            <artifactId>xpp3</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14244,8 +14244,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14285,20 +14285,20 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>animal-sniffer-annotations</artifactId>
             <groupId>org.codehaus.mojo</groupId>
+            <artifactId>animal-sniffer-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14308,8 +14308,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14319,8 +14319,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14335,8 +14335,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14346,28 +14346,28 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>grpc-netty-shaded</artifactId>
             <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>perfmark-api</artifactId>
             <groupId>io.perfmark</groupId>
+            <artifactId>perfmark-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>animal-sniffer-annotations</artifactId>
             <groupId>org.codehaus.mojo</groupId>
+            <artifactId>animal-sniffer-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14377,8 +14377,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14388,20 +14388,20 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>animal-sniffer-annotations</artifactId>
             <groupId>org.codehaus.mojo</groupId>
+            <artifactId>animal-sniffer-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14451,12 +14451,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14466,16 +14466,16 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr311-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14505,12 +14505,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14530,8 +14530,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14551,8 +14551,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>infinispan-core</artifactId>
             <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14627,8 +14627,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.ws.rs-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14643,12 +14643,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>spring-beans</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14678,40 +14678,40 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr311-api</artifactId>
             <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>j2objc-annotations</artifactId>
             <groupId>com.google.j2objc</groupId>
+            <artifactId>j2objc-annotations</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>com.sun.jersey</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>httpclient-cache</artifactId>
             <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient-cache</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14721,20 +14721,20 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>camel-spring</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14764,20 +14764,20 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>camel-spring</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14857,8 +14857,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>kubernetes-client</artifactId>
             <groupId>io.fabric8</groupId>
+            <artifactId>kubernetes-client</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14898,8 +14898,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.apache.cxf</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14929,8 +14929,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>camel-headersmap</artifactId>
             <groupId>org.apache.camel</groupId>
+            <artifactId>camel-headersmap</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14960,8 +14960,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-fault-tolerance-api</artifactId>
             <groupId>org.eclipse.microprofile.fault-tolerance</groupId>
+            <artifactId>microprofile-fault-tolerance-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14976,8 +14976,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-metrics-api</artifactId>
             <groupId>org.eclipse.microprofile.metrics</groupId>
+            <artifactId>microprofile-metrics-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -14992,8 +14992,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>minio</artifactId>
             <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15013,8 +15013,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.mongodb</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15024,8 +15024,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>org.mongodb</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15065,8 +15065,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15101,8 +15101,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15112,8 +15112,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jackson-dataformat-xml</artifactId>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15123,8 +15123,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15134,8 +15134,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>grpc-netty-shaded</artifactId>
             <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15150,12 +15150,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>optaplanner-core</artifactId>
             <groupId>org.optaplanner</groupId>
+            <artifactId>optaplanner-core</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>optaplanner-persistence-common</artifactId>
             <groupId>org.optaplanner</groupId>
+            <artifactId>optaplanner-persistence-common</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15210,8 +15210,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>j2objc-annotations</artifactId>
             <groupId>com.google.j2objc</groupId>
+            <artifactId>j2objc-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15221,12 +15221,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>quartz</artifactId>
             <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>c3p0</artifactId>
             <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15236,8 +15236,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>quickfixj-codegenerator</artifactId>
             <groupId>org.quickfixj</groupId>
+            <artifactId>quickfixj-codegenerator</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15282,8 +15282,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15338,12 +15338,12 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jaxws-api</artifactId>
             <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>saaj-impl</artifactId>
             <groupId>com.sun.xml.messaging.saaj</groupId>
+            <artifactId>saaj-impl</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15403,8 +15403,8 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15429,16 +15429,16 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15448,16 +15448,16 @@
         <version>3.13.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <groupId>org.springframework</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>spring-core</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15862,8 +15862,8 @@
         <version>3.0.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>jsr305</artifactId>
             <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15884,8 +15884,8 @@
         <version>3.6.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>maven-artifact</artifactId>
             <groupId>org.apache.maven</groupId>
+            <artifactId>maven-artifact</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15900,8 +15900,8 @@
         <version>1.6.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15911,8 +15911,8 @@
         <version>1.6.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15937,8 +15937,8 @@
         <version>3.4.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>plexus-utils</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15948,16 +15948,16 @@
         <version>3.4.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>plexus-utils</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-io</artifactId>
             <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15972,16 +15972,16 @@
         <version>3.8.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -15991,28 +15991,28 @@
         <version>3.8.4</version>
         <exclusions>
           <exclusion>
+            <groupId>org.sonatype.plexus</groupId>
             <artifactId>plexus-sec-dispatcher</artifactId>
-            <groupId>org.sonatype.plexus</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.sonatype.plexus</groupId>
             <artifactId>plexus-cipher</artifactId>
-            <groupId>org.sonatype.plexus</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>plexus-utils</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16027,12 +16027,12 @@
         <version>3.8.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.annotation-api</artifactId>
             <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16042,12 +16042,12 @@
         <version>3.8.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16057,12 +16057,12 @@
         <version>3.8.4</version>
         <exclusions>
           <exclusion>
-            <artifactId>javax.inject</artifactId>
             <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>plexus-utils</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16077,8 +16077,8 @@
         <version>3.0-alpha-2</version>
         <exclusions>
           <exclusion>
-            <artifactId>plexus-classworlds</artifactId>
             <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-classworlds</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16098,20 +16098,20 @@
         <version>3.4.10</version>
         <exclusions>
           <exclusion>
-            <artifactId>snakeyaml</artifactId>
             <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>hppc</artifactId>
             <groupId>com.carrotsearch</groupId>
+            <artifactId>hppc</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>com.jcabi</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>exp4j</artifactId>
             <groupId>net.objecthunter</groupId>
+            <artifactId>exp4j</artifactId>
           </exclusion>
         </exclusions>
         <optional>true</optional>
@@ -16359,8 +16359,8 @@
         <version>2.6.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16790,8 +16790,8 @@
         <version>2.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16806,8 +16806,8 @@
         <version>1.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16817,8 +16817,8 @@
         <version>3.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16828,8 +16828,8 @@
         <version>2.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16839,8 +16839,8 @@
         <version>1.0.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16865,8 +16865,8 @@
         <version>0.3.5</version>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16876,8 +16876,8 @@
         <version>1.0.10</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.json-api</artifactId>
             <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16897,8 +16897,8 @@
         <version>7.10.0</version>
         <exclusions>
           <exclusion>
-            <artifactId>log4j-api</artifactId>
             <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16949,8 +16949,8 @@
         <scope>provided</scope>
         <exclusions>
           <exclusion>
-            <artifactId>*</artifactId>
             <groupId>*</groupId>
+            <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -16985,8 +16985,8 @@
         <version>6.0.7.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>hibernate-commons-annotations</artifactId>
             <groupId>org.hibernate.common</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17164,16 +17164,16 @@
         <version>1.0.9</version>
         <exclusions>
           <exclusion>
-            <artifactId>svm</artifactId>
             <groupId>org.graalvm.nativeimage</groupId>
+            <artifactId>svm</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jboss-modules</artifactId>
             <groupId>org.jboss.modules</groupId>
+            <artifactId>jboss-modules</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>javax.json</artifactId>
             <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17183,8 +17183,8 @@
         <version>1.2.2.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logmanager</artifactId>
             <groupId>org.jboss.logmanager</groupId>
+            <artifactId>jboss-logmanager</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17194,8 +17194,8 @@
         <version>1.0.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logmanager</artifactId>
             <groupId>org.jboss.logmanager</groupId>
+            <artifactId>jboss-logmanager</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17205,8 +17205,8 @@
         <version>11.0.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-logging</artifactId>
             <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17231,8 +17231,8 @@
         <version>5.12.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-servlet-api_3.1_spec</artifactId>
             <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_3.1_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17247,8 +17247,8 @@
         <version>5.12.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17258,24 +17258,24 @@
         <version>5.12.4.Final</version>
         <exclusions>
           <exclusion>
+            <groupId>org.jboss.narayana.rts</groupId>
             <artifactId>narayana-lra</artifactId>
-            <groupId>org.jboss.narayana.rts</groupId>
           </exclusion>
           <exclusion>
+            <groupId>org.jboss.narayana.rts</groupId>
             <artifactId>lra-service-base</artifactId>
-            <groupId>org.jboss.narayana.rts</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-client</artifactId>
-            <groupId>org.jboss.resteasy</groupId>
           </exclusion>
           <exclusion>
-            <artifactId>resteasy-jackson2-provider</artifactId>
             <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson2-provider</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17325,8 +17325,8 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>microprofile-config-api</artifactId>
             <groupId>org.eclipse.microprofile.config</groupId>
+            <artifactId>microprofile-config-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17356,12 +17356,12 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17371,12 +17371,12 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17426,8 +17426,8 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.json-api</artifactId>
             <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17437,8 +17437,8 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jakarta.json-api</artifactId>
             <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17448,20 +17448,20 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>hibernate-jpa-2.1-api</artifactId>
             <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jakarta.activation-api</artifactId>
             <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17496,8 +17496,8 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>resteasy-context-propagation</artifactId>
             <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-context-propagation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17512,12 +17512,12 @@
         <version>4.7.4.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
             <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>activation</artifactId>
             <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -17778,8 +17778,8 @@
         <version>15.0.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -19730,8 +19730,8 @@
         <version>1.14.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>drools-core-dynamic</artifactId>
             <groupId>org.drools</groupId>
+            <artifactId>drools-core-dynamic</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -20143,12 +20143,12 @@
         <version>4.6.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>logback-classic</artifactId>
             <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
           </exclusion>
           <exclusion>
-            <artifactId>jaxb-api</artifactId>
             <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -20647,8 +20647,8 @@
         <version>42.3.1</version>
         <exclusions>
           <exclusion>
-            <artifactId>checker-qual</artifactId>
             <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -20663,8 +20663,8 @@
         <version>1.0.3</version>
         <exclusions>
           <exclusion>
-            <artifactId>org.osgi.annotation.versioning</artifactId>
             <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation.versioning</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -20730,8 +20730,8 @@
         <version>5.3.12</version>
         <exclusions>
           <exclusion>
-            <artifactId>spring-jcl</artifactId>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-jcl</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -21001,8 +21001,8 @@
         <version>1.18.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jcl-over-slf4j</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -21022,8 +21022,8 @@
         <version>1.18.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jcl-over-slf4j</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -21033,8 +21033,8 @@
         <version>1.18.0.Final</version>
         <exclusions>
           <exclusion>
-            <artifactId>jcl-over-slf4j</artifactId>
             <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -22684,8 +22684,8 @@
         <version>2.7.2</version>
         <exclusions>
           <exclusion>
-            <artifactId>xml-apis</artifactId>
             <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
           </exclusion>
         </exclusions>
       </dependency>

@@ -36,8 +36,8 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <artifactId>hamcrest-core</artifactId>
           <groupId>org.hamcrest</groupId>
+          <artifactId>hamcrest-core</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -58,28 +58,28 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <artifactId>javax.servlet-api</artifactId>
           <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>jaxb-api</artifactId>
           <groupId>javax.xml.bind</groupId>
+          <artifactId>jaxb-api</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>checker-qual</artifactId>
           <groupId>org.checkerframework</groupId>
+          <artifactId>checker-qual</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>opentest4j</artifactId>
           <groupId>org.opentest4j</groupId>
+          <artifactId>opentest4j</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>jsr305</artifactId>
           <groupId>com.google.code.findbugs</groupId>
+          <artifactId>jsr305</artifactId>
         </exclusion>
         <exclusion>
-          <artifactId>commons-logging</artifactId>
           <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
