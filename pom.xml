@@ -72,8 +72,9 @@
         <optaplanner-quarkus.version>8.14.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.11.0</quarkus-google-cloud-services.version>
+        <quarkus-vault.version>1.0.0</quarkus-vault.version>
 
-        <quarkus-platform-bom-generator.version>0.0.43</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.44</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -188,6 +189,10 @@
                                 <!-- Consul config -->
                                 <dependency>io.quarkiverse.config:quarkus-config-consul:${quarkus-config-consul.version}</dependency>
                                 <dependency>io.quarkiverse.config:quarkus-config-consul-deployment:${quarkus-config-consul.version}</dependency>
+                                <!-- Vault -->
+                                <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
+                                <dependency>io.quarkiverse.vault:quarkus-vault-deployment:${quarkus-vault.version}</dependency>
+                                <dependency>io.quarkiverse.vault:quarkus-vault-model:${quarkus-vault.version}</dependency>
                             </dependencyManagement>
                             <extensionGroupIds>
                                 <groupId>io.quarkus</groupId>
@@ -201,6 +206,27 @@
                             <tests>
                                 <test>
                                     <artifact>io.quarkiverse.config:quarkus-config-extensions-integration-test-consul:${quarkus-config-consul.version}</artifact>
+                                </test>
+                                <test>
+                                    <artifact>io.quarkiverse.vault:quarkus-vault-integration-test:${quarkus-vault.version}</artifact>
+                                    <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                    <copyTasks>
+                                        <copy>
+                                            <src>src/main/resources/core/test/resources/vault/vault-tls.crt</src>
+                                            <destination>generated-platform-project/quarkus/integration-tests/quarkus-vault-integration-test/src/test/resources/vault-tls.crt</destination>
+                                        </copy>
+                                    </copyTasks>
+                                </test>
+                                <test>
+                                    <artifact>io.quarkiverse.vault:quarkus-vault-integration-test-agroal:${quarkus-vault.version}</artifact>
+                                    <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                </test>
+                                <test>
+                                    <skip>true</skip>
+                                    <artifact>io.quarkiverse.vault:quarkus-vault-integration-test-app:${quarkus-vault.version}</artifact>
+                                    <systemProperties>
+                                        <vault-test-extension.use-tls>false</vault-test-extension.use-tls>
+                                    </systemProperties>
                                 </test>
                             </tests>
                         </core>
