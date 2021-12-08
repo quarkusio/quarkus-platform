@@ -60,7 +60,7 @@
 
         <camel-quarkus.version>2.5.0</camel-quarkus.version>
 
-        <quarkus-amazon-services.version>1.0.0</quarkus-amazon-services.version>
+        <quarkus-amazon-services.version>1.0.1</quarkus-amazon-services.version>
         <quarkus-config-consul.version>1.0.0</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>0.30.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
