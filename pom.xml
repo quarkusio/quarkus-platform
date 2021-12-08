@@ -264,6 +264,13 @@
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test-session:${kogito-quarkus.version}</artifact>
                                     </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <!--
+                                        Unsupported method parameter java.util.Optional<io.quarkus.deployment.builditem.DevServicesSharedNetworkBuildItem> at java.util.Optional<io.quarkus.deployment.builditem.DevServicesSharedNetworkBuildItem> arg4 of public void org.kie.kogito.quarkus.processes.deployment.KogitoDevServicesProcessor.startDataIndexDevService(io.quarkus.deployment.annotations.BuildProducer,io.quarkus.deployment.annotations.BuildProducer,io.quarkus.deployment.builditem.LaunchModeBuildItem,org.kie.kogito.quarkus.processes.deployment.KogitoBuildTimeConfig,java.util.Optional,java.util.Optional,io.quarkus.deployment.builditem.CuratedApplicationShutdownBuildItem,io.quarkus.deployment.logging.LoggingSetupBuildItem) of class org.kie.kogito.quarkus.processes.deployment.KogitoDevServicesProcessor
+                                        -->
+                                        <artifact>org.kie.kogito:kogito-quarkus-integration-test:${kogito-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>

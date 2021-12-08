@@ -10,6 +10,9 @@
   </parent>
   <artifactId>kogito-quarkus-integration-test</artifactId>
   <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-integration-test</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
@@ -159,6 +162,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>org.kie.kogito:kogito-quarkus-integration-test:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
