@@ -1,26 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-camel-integration-tests-parent</artifactId>
+    <artifactId>quarkus-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-sjms2-artemis-client</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-sjms2-artemis-client</name>
+  <artifactId>quarkus-vault-integration-test-app</artifactId>
+  <name>Quarkus Platform - Core - Integration Tests - quarkus-vault-integration-test-app</name>
   <properties>
     <maven.test.skip>true</maven.test.skip>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-sjms2-artemis-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.vault</groupId>
+      <artifactId>quarkus-vault-integration-test-app</artifactId>
+      <version>${quarkus-vault.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-sjms2-artemis-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.vault</groupId>
+      <artifactId>quarkus-vault-integration-test-app</artifactId>
+      <version>${quarkus-vault.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -58,23 +60,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-tests-support-activemq</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-messaging-common</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <classifier>tests</classifier>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-messaging-sjms</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <classifier>tests</classifier>
+      <groupId>io.quarkiverse.vault</groupId>
+      <artifactId>quarkus-test-vault</artifactId>
+      <version>${quarkus-vault.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -106,35 +94,12 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-artemis-client</dependency>
+            <dependency>io.quarkiverse.vault:quarkus-vault-integration-test-app</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
-            <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
-            <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
-            <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
+            <vault-test-extension.use-tls>false</vault-test-extension.use-tls>
           </systemPropertyVariables>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>reserve-network-port</id>
-            <goals>
-              <goal>reserve-network-port</goal>
-            </goals>
-            <phase>process-test-resources</phase>
-            <configuration>
-              <portNames>
-                <portName>test.http.port.jvm</portName>
-                <portName>test.https.port.jvm</portName>
-                <portName>test.http.port.native</portName>
-                <portName>test.https.port.native</portName>
-              </portNames>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
@@ -159,16 +124,14 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                    <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
-                    <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
-                    <quarkus.https.test-port>${test.https.port.native}</quarkus.https.test-port>
+                    <vault-test-extension.use-tls>false</vault-test-extension.use-tls>
                   </systemProperties>
                 </configuration>
               </execution>
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-artemis-client</dependency>
+                <dependency>io.quarkiverse.vault:quarkus-vault-integration-test-app</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -184,7 +147,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-artemis-client:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.vault:quarkus-vault-integration-test-app:${quarkus-vault.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
