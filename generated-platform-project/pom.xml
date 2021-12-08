@@ -18,6 +18,7 @@
     <module>quarkus-kogito</module>
     <module>quarkus-qpid-jms</module>
     <module>quarkus-cassandra</module>
+    <module>quarkus-amazon-services</module>
     <module>quarkus-camel</module>
     <module>quarkus-hazelcast</module>
     <module>quarkus-debezium</module>

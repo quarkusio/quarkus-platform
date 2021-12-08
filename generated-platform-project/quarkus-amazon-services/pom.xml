@@ -8,9 +8,9 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-parent</artifactId>
+  <artifactId>quarkus-amazon-services-parent</artifactId>
   <packaging>pom</packaging>
-  <name>Quarkus Platform - Core - Parent</name>
+  <name>Quarkus Platform - AmazonServices - Parent</name>
   <modules>
     <module>bom</module>
     <module>integration-tests</module>
