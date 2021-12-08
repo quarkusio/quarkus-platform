@@ -33,8 +33,8 @@
       <artifactId>quarkus-core-deployment</artifactId>
       <exclusions>
         <exclusion>
-          <artifactId>quarkus-ide-launcher</artifactId>
           <groupId>io.quarkus</groupId>
+          <artifactId>quarkus-ide-launcher</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
