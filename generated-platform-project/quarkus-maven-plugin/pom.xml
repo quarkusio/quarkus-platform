@@ -50,20 +50,6 @@
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
-      <exclusions>
-        <exclusion>
-          <artifactId>javax.inject</artifactId>
-          <groupId>javax.inject</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>cdi-api</artifactId>
-          <groupId>javax.enterprise</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>plexus-classworlds</artifactId>
-          <groupId>org.codehaus.plexus</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>jakarta.inject</groupId>
@@ -76,51 +62,11 @@
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-core</artifactId>
-      <exclusions>
-        <exclusion>
-          <artifactId>javax.inject</artifactId>
-          <groupId>javax.inject</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>checker-qual</artifactId>
-          <groupId>org.checkerframework</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jsr305</artifactId>
-          <groupId>com.google.code.findbugs</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.plugin-tools</groupId>
       <artifactId>maven-plugin-annotations</artifactId>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.maven.shared</groupId>
-      <artifactId>maven-artifact-transfer</artifactId>
-      <exclusions>
-        <exclusion>
-          <artifactId>plexus-classworlds</artifactId>
-          <groupId>org.codehaus.plexus</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>commons-codec</artifactId>
-          <groupId>commons-codec</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>maven-shared-utils</artifactId>
-          <groupId>org.apache.maven.shared</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>maven-model</artifactId>
-          <groupId>org.apache.maven</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>maven-artifact</artifactId>
-          <groupId>org.apache.maven</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.freemarker</groupId>
