@@ -17580,216 +17580,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-cloudevents</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-cloudevents</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>javadoc</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-cloudevents</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-decisions</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-decisions</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-kafka</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-kafka</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-mongodb</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-mongodb</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-process-kafka</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-events-process-kafka</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-explainability</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-explainability</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>javadoc</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-explainability</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-jobs-management</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-jobs-management</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-mail</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-mail</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-messaging</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-messaging</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-monitoring-core</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-monitoring-core</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-monitoring-elastic</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-monitoring-elastic</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-monitoring-prometheus</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-monitoring-prometheus</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-process-management</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-process-management</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-process-svg</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-process-svg</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-rest-exception-handler</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-rest-exception-handler</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-task-management</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-task-management</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-task-notification</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-task-notification</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-tracing-decision</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-addons-springboot-tracing-decision</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-addons-task-management</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -17879,11 +17669,6 @@
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-cloudevents-quarkus-addon</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-cloudevents-spring-boot-addon</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
       <dependency>
@@ -18058,11 +17843,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-event-driven-decisions-springboot-addon</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-events-api</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -18145,17 +17925,6 @@
         <version>1.11.1.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-predictions-spring-boot-starter</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-predictions-spring-boot-starter</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
@@ -18388,17 +18157,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-serverless-workflow-spring-boot-starter</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-serverless-workflow-spring-boot-starter</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-services</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
@@ -18411,22 +18169,6 @@
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-services</artifactId>
-        <version>1.11.1.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-spring-boot-test-utils</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-springboot-starter</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-springboot-starter</artifactId>
         <version>1.11.1.Final</version>
         <classifier>sources</classifier>
       </dependency>
@@ -18464,22 +18206,12 @@
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
-        <artifactId>monitoring-core-springboot-addon</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-prometheus-common</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>monitoring-prometheus-quarkus-addon</artifactId>
-        <version>1.11.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>monitoring-prometheus-springboot-addon</artifactId>
         <version>1.11.1.Final</version>
       </dependency>
       <dependency>
