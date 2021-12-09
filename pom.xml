@@ -238,6 +238,12 @@
                                         <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
                                         <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
                                         <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                                        <!-- some dev tools tests need the following properties -->
+                                        <maven.home>${maven.home}</maven.home>
+                                        <maven.repo.local>${settings.localRepository}</maven.repo.local>
+                                        <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
+                                        <project.version>${project.version}</project.version>
+                                        <project.groupId>${project.groupId}</project.groupId>
                                     </systemProperties>
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
