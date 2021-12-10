@@ -114,6 +114,10 @@
                 <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
                 <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
                 <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                <maven.repo.local>${settings.localRepository}</maven.repo.local>
+                <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
+                <project.groupId>io.quarkus.platform</project.groupId>
+                <project.version>999-SNAPSHOT</project.version>
               </systemProperties>
               <excludes>
                 <exclude>**/Native*</exclude>
@@ -153,6 +157,10 @@
                     <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
                     <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
                     <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                    <maven.repo.local>${settings.localRepository}</maven.repo.local>
+                    <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
+                    <project.groupId>io.quarkus.platform</project.groupId>
+                    <project.version>999-SNAPSHOT</project.version>
                   </systemProperties>
                 </configuration>
               </execution>

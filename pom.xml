@@ -239,9 +239,9 @@
                                         <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
                                         <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
                                         <!-- some dev tools tests need the following properties -->
-                                        <maven.home>${maven.home}</maven.home>
-                                        <maven.repo.local>${settings.localRepository}</maven.repo.local>
-                                        <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
+                                        <!--maven.home>$${maven.home}</maven.home-->
+                                        <maven.repo.local>$${settings.localRepository}</maven.repo.local>
+                                        <maven.settings>$${session.request.userSettingsFile.path}</maven.settings>
                                         <project.version>${project.version}</project.version>
                                         <project.groupId>${project.groupId}</project.groupId>
                                     </systemProperties>
@@ -524,7 +524,7 @@
             </snapshots>
             <id>kogito</id>
             <name>kogito</name>
-            <url>https://repository.jboss.org/nexus/content/groups/kogito-public/</url>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
         </repository>
     </repositories>
 
