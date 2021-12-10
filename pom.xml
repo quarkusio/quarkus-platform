@@ -252,6 +252,14 @@
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test-session:${kogito-quarkus.version}</artifact>
                                     </test>
+                                    <test>
+                                        <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
+                                        <excluded>true</excluded>
+                                    </test>
+                                    <test>
+                                        <artifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</artifact>
+                                        <excluded>true</excluded>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
