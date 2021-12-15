@@ -6,22 +6,22 @@
         "rest-assured-version" : "${rest-assured.version}",
         "compiler-plugin-version" : "3.8.1",
         "surefire-plugin-version" : "3.0.0-M5",
-        "kotlin-version" : "1.5.21",
+        "kotlin-version" : "1.5.30",
         "scala-version" : "2.12.13",
         "scala-plugin-version" : "4.4.0",
-        "quarkus-core-version" : "2.2.3.Final",
+        "quarkus-core-version" : "2.2.4.Final",
         "maven-plugin-groupId" : "${project.groupId}",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
         "maven-plugin-version" : "${project.version}",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "2.2.3.Final",
+        "gradle-plugin-version" : "2.2.4.Final",
         "supported-maven-versions" : "[3.6.2,)",
         "proposed-maven-version" : "3.8.1",
         "maven-wrapper-version" : "0.7.7",
         "gradle-wrapper-version" : "6.9"
       }
     },
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.2.3.Final" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.2.4.Final" ],
     "last-bom-update" : "${member.last-bom-update}"
   },
   "categories" : [ {
