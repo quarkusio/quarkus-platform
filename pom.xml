@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.2.3.Final</quarkus.version>
+        <quarkus.version>2.2.4.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.2.0</camel-quarkus.version>
@@ -342,6 +342,14 @@
                                     <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- New York has been changed to New York City -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Caused by: java.lang.AbstractMethodError: Receiver class com.oracle.truffle.polyglot.PolyglotEngineDispatch does not define or inherit an implementation of the resolved method 'abstract org.graalvm.polyglot.Context createContext(java.lang.Object, java.io.OutputStream, java.io.OutputStream, java.io.InputStream, boolean, org.graalvm.polyglot.HostAccess, org.graalvm.polyglot.PolyglotAccess, boolean, boolean, boolean, boolean, boolean, java.util.function.Predicate, java.util.Map, java.util.Map, java.lang.String[], org.graalvm.polyglot.io.FileSystem, java.lang.Object, boolean, org.graalvm.polyglot.io.ProcessHandler, org.graalvm.polyglot.EnvironmentAccess, java.util.Map, java.time.ZoneId, java.lang.Object, java.lang.String, java.lang.ClassLoader, boolean)' of abstract class org.graalvm.polyglot.impl.AbstractPolyglotImpl$AbstractEngineDispatch. -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
