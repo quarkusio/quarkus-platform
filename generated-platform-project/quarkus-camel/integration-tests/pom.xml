@@ -14,6 +14,7 @@
   <modules>
     <module>camel-quarkus-integration-test-main-unknown-args-ignore</module>
     <module>camel-quarkus-integration-test-geocoder</module>
+    <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -82,7 +83,6 @@
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
-    <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-jsch</module>
     <module>camel-quarkus-integration-test-jslt</module>
     <module>camel-quarkus-integration-test-json-validator</module>
