@@ -526,14 +526,6 @@
             <id>confluent</id>
             <url>https://packages.confluent.io/maven/</url>
         </repository>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>kogito</id>
-            <name>kogito</name>
-            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-        </repository>
     </repositories>
 
     <profiles>
