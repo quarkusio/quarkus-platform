@@ -58,7 +58,7 @@
         <quarkus.version>2.6.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.5.0</camel-quarkus.version>
+        <camel-quarkus.version>2.6.0</camel-quarkus.version>
 
         <quarkus-amazon-services.version>1.0.1</quarkus-amazon-services.version>
         <quarkus-config-consul.version>1.0.0</quarkus-config-consul.version>
@@ -434,6 +434,10 @@
                                     <test>
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-artemis-client:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
