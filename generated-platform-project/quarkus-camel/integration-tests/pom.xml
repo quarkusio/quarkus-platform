@@ -18,6 +18,7 @@
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
+    <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -81,6 +82,7 @@
     <module>camel-quarkus-integration-test-jackson-protobuf</module>
     <module>camel-quarkus-integration-test-jaxb</module>
     <module>camel-quarkus-integration-test-jdbc</module>
+    <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jing</module>
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
@@ -108,6 +110,7 @@
     <module>camel-quarkus-integration-test-main-caffein-lrucache</module>
     <module>camel-quarkus-integration-test-main-collector</module>
     <module>camel-quarkus-integration-test-main-devmode</module>
+    <module>camel-quarkus-integration-test-main-disabled</module>
     <module>camel-quarkus-integration-test-main-discovery-disabled</module>
     <module>camel-quarkus-integration-test-main-xml-io</module>
     <module>camel-quarkus-integration-test-main-xml-jaxb</module>
