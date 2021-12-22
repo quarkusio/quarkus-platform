@@ -60,7 +60,11 @@
 
         <camel-quarkus.version>2.6.0</camel-quarkus.version>
 
-        <quarkus-amazon-services.version>1.0.1</quarkus-amazon-services.version>
+        <!-- If you made changes to the integration tests pom of Amazon Services,
+             make sure you have a look at the AmazonServices member section below
+             and also at src/main/resources/xslt/amazon-services/test-pom.xsl
+             as they might require adjustments. -->
+        <quarkus-amazon-services.version>1.0.2</quarkus-amazon-services.version>
         <quarkus-config-consul.version>1.0.0</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>0.31.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
@@ -364,15 +368,15 @@
                                 </release>
                                 <defaultTestConfig>
                                     <systemProperties>
-                                        <dynamodb.url>http://localhost:8000</dynamodb.url>
-                                        <s3.url>http://localhost:8008</s3.url>
-                                        <sns.url>http://localhost:8009</sns.url>
-                                        <sqs.url>http://localhost:8010</sqs.url>
-                                        <kms.url>http://localhost:8011</kms.url>
-                                        <ses.url>http://localhost:8012</ses.url>
-                                        <iam.url>http://localhost:8013</iam.url>
-                                        <ssm.url>http://localhost:8014</ssm.url>
-                                        <secretsmanager.url>http://localhost:8015</secretsmanager.url>
+                                        <dynamodb.url>http://localhost:4566</dynamodb.url>
+                                        <s3.url>http://localhost:4566</s3.url>
+                                        <sns.url>http://localhost:4566</sns.url>
+                                        <sqs.url>http://localhost:4566</sqs.url>
+                                        <kms.url>http://localhost:4566</kms.url>
+                                        <ses.url>http://localhost:4566</ses.url>
+                                        <iam.url>http://localhost:4566</iam.url>
+                                        <ssm.url>http://localhost:4566</ssm.url>
+                                        <secretsmanager.url>http://localhost:4566</secretsmanager.url>
                                     </systemProperties>
                                     <transformWith>${resourcesdir}/xslt/amazon-services/test-pom.xsl</transformWith>
                                 </defaultTestConfig>
