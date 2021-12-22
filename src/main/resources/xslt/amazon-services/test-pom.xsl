@@ -23,7 +23,7 @@
                 <configuration>
                     <images>
                         <image>
-                            <name>localstack/localstack:0.11.1</name>
+                            <name>localstack/localstack:0.13.1</name>
                             <alias>aws-local-stack</alias>
                             <run>
                                 <env>
@@ -31,15 +31,7 @@
                                     <START_WEB>0</START_WEB>
                                 </env>
                                 <ports>
-                                    <port>8000:4569</port> <!-- Dynamodb -->
-                                    <port>8008:4572</port> <!-- S3 -->
-                                    <port>8009:4575</port> <!-- SNS -->
-                                    <port>8010:4576</port> <!-- SQS -->
-                                    <port>8011:4599</port> <!-- KMS -->
-                                    <port>8012:4566</port> <!-- SES -->
-                                    <port>8013:4593</port> <!-- IAM -->
-                                    <port>8014:4583</port> <!-- SSM -->
-                                    <port>8015:4584</port> <!-- Secrets Manager -->
+                                    <port>4566:4566</port>
                                 </ports>
                                 <log />
                                 <wait>
