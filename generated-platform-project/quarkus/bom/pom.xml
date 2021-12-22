@@ -2511,12 +2511,12 @@
       <dependency>
         <groupId>io.quarkiverse.config</groupId>
         <artifactId>quarkus-config-consul-deployment</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.config</groupId>
         <artifactId>quarkus-config-consul</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
