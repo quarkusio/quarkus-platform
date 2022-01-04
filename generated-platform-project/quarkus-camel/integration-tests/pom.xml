@@ -14,6 +14,7 @@
   <modules>
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-main-unknown-args-ignore</module>
+    <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-telegram</module>
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms-artemis-client</module>
@@ -170,7 +171,6 @@
     <module>camel-quarkus-integration-test-stax</module>
     <module>camel-quarkus-integration-test-stringtemplate</module>
     <module>camel-quarkus-integration-test-syndication</module>
-    <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-tarfile</module>
     <module>camel-quarkus-integration-test-tika</module>
     <module>camel-quarkus-integration-test-twilio</module>
