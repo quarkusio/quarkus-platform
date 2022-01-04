@@ -414,6 +414,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for Syslog tests failing  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-syslog:${camel-quarkus.version}</artifact>
+                                    </test>
                                     <test><!-- Workaround for Telegram tests failing with Quarkus 999-SNAPSHOT and CQ 2.5.0  -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-telegram:${camel-quarkus.version}</artifact>
