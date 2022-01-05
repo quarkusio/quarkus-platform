@@ -10,9 +10,6 @@
   </parent>
   <artifactId>kogito-quarkus-integration-test</artifactId>
   <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-integration-test</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
@@ -102,6 +99,10 @@
                 <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
                 <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
                 <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                <maven.repo.local>${settings.localRepository}</maven.repo.local>
+                <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
+                <project.groupId>io.quarkus.platform</project.groupId>
+                <project.version>999-SNAPSHOT</project.version>
               </systemProperties>
               <excludes>
                 <exclude>**/Native*</exclude>
@@ -141,6 +142,10 @@
                     <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
                     <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
                     <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                    <maven.repo.local>${settings.localRepository}</maven.repo.local>
+                    <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
+                    <project.groupId>io.quarkus.platform</project.groupId>
+                    <project.version>999-SNAPSHOT</project.version>
                   </systemProperties>
                 </configuration>
               </execution>
@@ -162,7 +167,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.kie.kogito:kogito-quarkus-integration-test:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
