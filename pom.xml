@@ -72,8 +72,8 @@
         <quarkus-blaze-persistence.version>1.6.3</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.14.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.14.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.15.0.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.15.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.11.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>1.0.1</quarkus-vault.version>
@@ -286,6 +286,12 @@
                                         <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
                                         <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
                                         <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                                        <!-- some dev tools tests need the following properties -->
+                                        <!--maven.home>$${maven.home}</maven.home-->
+                                        <maven.repo.local>$${settings.localRepository}</maven.repo.local>
+                                        <maven.settings>$${session.request.userSettingsFile.path}</maven.settings>
+                                        <project.version>${project.version}</project.version>
+                                        <project.groupId>${project.groupId}</project.groupId>
                                     </systemProperties>
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
@@ -294,24 +300,12 @@
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test-session:${kogito-quarkus.version}</artifact>
                                     </test>
-                                    <!--
-                                        The following tests fail with
-                                        Unsupported method parameter java.util.Optional<io.quarkus.deployment.builditem.DevServicesSharedNetworkBuildItem> at java.util.Optional<io.quarkus.deployment.builditem.DevServicesSharedNetworkBuildItem> arg4 of public void org.kie.kogito.quarkus.processes.deployment.KogitoDevServicesProcessor.startDataIndexDevService(io.quarkus.deployment.annotations.BuildProducer,io.quarkus.deployment.annotations.BuildProducer,io.quarkus.deployment.builditem.LaunchModeBuildItem,org.kie.kogito.quarkus.processes.deployment.KogitoBuildTimeConfig,java.util.Optional,java.util.Optional,io.quarkus.deployment.builditem.CuratedApplicationShutdownBuildItem,io.quarkus.deployment.logging.LoggingSetupBuildItem) of class org.kie.kogito.quarkus.processes.deployment.KogitoDevServicesProcessor
-                                    -->
                                     <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:kogito-quarkus-integration-test:${kogito-quarkus.version}</artifact>
+                                        <excluded>true</excluded>
+                                        <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
                                     </test>
                                     <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.kie.kogito:kogito-addons-quarkus-messaging-it:${kogito-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
+                                        <excluded>true</excluded>
                                         <artifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</artifact>
                                     </test>
                                 </tests>
