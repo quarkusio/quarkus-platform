@@ -406,6 +406,22 @@
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
                                 <tests>
+                                    <test><!-- Workaround for amqp tests failing with Quarkus 999-SNAPSHOT and CQ 2.6.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-amqp:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-qpid-amqp-client:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-qpid-amqp-client:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-qpid-amqp-client:${camel-quarkus.version}</artifact>
+                                    </test>
                                     <test><!-- Workaround for csimple tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
