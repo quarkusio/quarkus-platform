@@ -2132,7 +2132,7 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java-util</artifactId>
-        <version>3.19.1</version>
+        <version>3.19.2</version>
         <exclusions>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -2143,7 +2143,7 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
-        <version>3.19.1</version>
+        <version>3.19.2</version>
       </dependency>
       <dependency>
         <groupId>io.grafeas</groupId>
