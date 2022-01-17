@@ -18,7 +18,6 @@
     <module>kogito-quarkus-serverless-workflow-integration-test</module>
     <module>kogito-addons-quarkus-messaging-it</module>
     <module>integration-tests-quarkus-rules</module>
-    <module>integration-tests-quarkus-decisions</module>
     <module>integration-tests-quarkus-predictions</module>
   </modules>
   <properties>
