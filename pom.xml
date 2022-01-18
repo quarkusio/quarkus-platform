@@ -308,6 +308,11 @@
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</artifact>
                                     </test>
+                                    <test>
+                                        <!-- Executed due to https://issues.redhat.com/browse/KOGITO-6581 -->
+                                        <excluded>true</excluded>
+                                        <artifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
