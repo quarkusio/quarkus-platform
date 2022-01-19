@@ -69,7 +69,7 @@
         <quarkus-qpid-jms.version>0.31.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>2.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.6.1.Final</debezium-quarkus-outbox.version>
-        <quarkus-blaze-persistence.version>1.6.3</quarkus-blaze-persistence.version>
+        <quarkus-blaze-persistence.version>1.6.5</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
         <kogito-quarkus.version>1.16.0.Final</kogito-quarkus.version>
@@ -499,7 +499,7 @@
                                     <dependency>com.blazebit:blaze-persistence-integration-quarkus:${quarkus-blaze-persistence.version}</dependency>
                                     <dependency>com.blazebit:blaze-persistence-integration-quarkus-deployment:${quarkus-blaze-persistence.version}</dependency>
                                     <dependency>com.blazebit:blaze-persistence-entity-view-processor:${quarkus-blaze-persistence.version}</dependency>
-                                    <dependency>com.blazebit:blaze-persistence-integration-hibernate-5.4:${quarkus-blaze-persistence.version}</dependency>
+                                    <dependency>com.blazebit:blaze-persistence-integration-hibernate-5.6:${quarkus-blaze-persistence.version}</dependency>
                                 </dependencyManagement>
                                 <enabled>true</enabled>
                                 <release>
