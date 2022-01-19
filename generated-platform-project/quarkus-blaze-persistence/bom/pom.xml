@@ -61,22 +61,22 @@
       <dependency>
         <groupId>com.blazebit</groupId>
         <artifactId>blaze-persistence-entity-view-processor</artifactId>
-        <version>1.6.3</version>
+        <version>1.6.5</version>
       </dependency>
       <dependency>
         <groupId>com.blazebit</groupId>
-        <artifactId>blaze-persistence-integration-hibernate-5.4</artifactId>
-        <version>1.6.3</version>
+        <artifactId>blaze-persistence-integration-hibernate-5.6</artifactId>
+        <version>1.6.5</version>
       </dependency>
       <dependency>
         <groupId>com.blazebit</groupId>
         <artifactId>blaze-persistence-integration-quarkus-deployment</artifactId>
-        <version>1.6.3</version>
+        <version>1.6.5</version>
       </dependency>
       <dependency>
         <groupId>com.blazebit</groupId>
         <artifactId>blaze-persistence-integration-quarkus</artifactId>
-        <version>1.6.3</version>
+        <version>1.6.5</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
