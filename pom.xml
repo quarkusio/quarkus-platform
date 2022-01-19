@@ -72,8 +72,8 @@
         <quarkus-blaze-persistence.version>1.6.3</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.1</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.15.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.15.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.16.0.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.16.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>0.11.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>1.0.1</quarkus-vault.version>
@@ -307,6 +307,11 @@
                                     <test>
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <!-- Executed due to https://issues.redhat.com/browse/KOGITO-6581 -->
+                                        <excluded>true</excluded>
+                                        <artifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
