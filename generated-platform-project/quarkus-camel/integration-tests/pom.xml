@@ -17,6 +17,7 @@
     <module>camel-quarkus-integration-test-sjms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-csimple</module>
+    <module>camel-quarkus-integration-test-http</module>
     <module>camel-quarkus-integration-test-main-unknown-args-ignore</module>
     <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-telegram</module>
@@ -77,7 +78,6 @@
     <module>camel-quarkus-integration-test-hazelcast</module>
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
-    <module>camel-quarkus-integration-test-http</module>
     <module>camel-quarkus-integration-test-hystrix</module>
     <module>camel-quarkus-integration-test-infinispan</module>
     <module>camel-quarkus-integration-test-influxdb</module>
