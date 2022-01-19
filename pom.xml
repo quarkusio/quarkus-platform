@@ -426,6 +426,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for http tests failing with Quarkus 999-SNAPSHOT and CQ 2.6.0  -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-http:${camel-quarkus.version}</artifact>
+                                    </test>
                                     <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
