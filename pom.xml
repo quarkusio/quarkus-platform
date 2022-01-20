@@ -517,6 +517,7 @@
                                 </defaultTestConfig>
                                 <tests>
                                     <test>
+                                        <skip>true</skip>
                                         <skipNative>true</skipNative>
                                         <artifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-base:${quarkus-blaze-persistence.version}</artifact>
                                         <systemProperties>
