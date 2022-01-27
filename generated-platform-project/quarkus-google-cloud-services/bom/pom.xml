@@ -2087,52 +2087,52 @@
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-android</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-apache-v2</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-appengine</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-gson</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-jackson2</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-protobuf</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-test</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-xml</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client</artifactId>
-        <version>1.41.0</version>
+        <version>1.41.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java-util</artifactId>
-        <version>3.19.2</version>
+        <version>3.19.3</version>
         <exclusions>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -2143,7 +2143,7 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
-        <version>3.19.2</version>
+        <version>3.19.3</version>
       </dependency>
       <dependency>
         <groupId>io.grafeas</groupId>
