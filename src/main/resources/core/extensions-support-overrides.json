@@ -255,6 +255,15 @@
     },
     {
       "group-id": "io.quarkus",
+      "artifact-id": "quarkus-kafka-streams",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
       "artifact-id": "quarkus-keycloak-authorization",
       "metadata": {
         "redhat-support": [
