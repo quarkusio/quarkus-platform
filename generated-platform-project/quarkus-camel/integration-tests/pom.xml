@@ -113,7 +113,6 @@
     <module>camel-quarkus-integration-test-main-caffein-lrucache</module>
     <module>camel-quarkus-integration-test-main-collector</module>
     <module>camel-quarkus-integration-test-main-devmode</module>
-    <module>camel-quarkus-integration-test-main-disabled</module>
     <module>camel-quarkus-integration-test-main-discovery-disabled</module>
     <module>camel-quarkus-integration-test-main-xml-io</module>
     <module>camel-quarkus-integration-test-main-xml-jaxb</module>
@@ -178,7 +177,6 @@
     <module>camel-quarkus-integration-test-univocity-parsers</module>
     <module>camel-quarkus-integration-test-validator</module>
     <module>camel-quarkus-integration-test-velocity</module>
-    <module>camel-quarkus-integration-test-vertx-kafka</module>
     <module>camel-quarkus-integration-test-vertx-websocket</module>
     <module>camel-quarkus-integration-test-vertx</module>
     <module>camel-quarkus-integration-test-weather</module>
