@@ -270,7 +270,7 @@
                             <member>
                                 <name>Kogito</name>
                                 <bom>org.kie.kogito:kogito-bom:${kogito-quarkus.version}</bom>
-                                <enabled>true</enabled>
+                                <enabled>false</enabled>
                                 <release>
                                     <lastDetectedBomUpdate>io.quarkus.platform:quarkus-kogito-bom:2.7.0.CR1</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-kogito-bom:${platform.version}</next>

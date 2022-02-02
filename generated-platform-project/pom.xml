@@ -15,7 +15,6 @@
     <module>quarkus-universe</module>
     <module>quarkus</module>
     <module>quarkus-optaplanner</module>
-    <module>quarkus-kogito</module>
     <module>quarkus-qpid-jms</module>
     <module>quarkus-cassandra</module>
     <module>quarkus-amazon-services</module>

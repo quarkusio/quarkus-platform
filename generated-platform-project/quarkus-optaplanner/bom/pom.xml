@@ -173,11 +173,39 @@
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-api</artifactId>
         <version>1.16.0.Final</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.kie</groupId>
+            <artifactId>kie-dmn-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-timer</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-pmml-api-dependencies</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
         <artifactId>kogito-drools</artifactId>
         <version>1.16.0.Final</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-timer</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.kie.kogito</groupId>
