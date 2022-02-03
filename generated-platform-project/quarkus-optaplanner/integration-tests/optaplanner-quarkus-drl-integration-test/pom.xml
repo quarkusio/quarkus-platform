@@ -10,9 +10,6 @@
   </parent>
   <artifactId>optaplanner-quarkus-drl-integration-test</artifactId>
   <name>Quarkus Platform - OptaPlanner - Integration Tests - optaplanner-quarkus-drl-integration-test</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.optaplanner</groupId>
@@ -136,7 +133,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
