@@ -12,7 +12,6 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Kogito - Quarkus Platform Descriptor</name>
   <properties>
-    <gpg.skip>true</gpg.skip>
     <member.last-bom-update>io.quarkus.platform:quarkus-kogito-bom:2.7.0.CR1</member.last-bom-update>
   </properties>
   <dependencies>
@@ -30,28 +29,6 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-install</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-deploy</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
@@ -85,6 +62,7 @@
             <members>
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-optaplanner-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-kogito-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
