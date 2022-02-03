@@ -412,60 +412,9 @@
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
                                 <tests>
-                                    <test><!-- Workaround for amqp tests failing with Quarkus 999-SNAPSHOT and CQ 2.6.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-amqp:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-qpid-amqp-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-qpid-amqp-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-qpid-amqp-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for csimple tests failing with Quarkus 999-SNAPSHOT and CQ 2.4.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
-                                    </test>
                                     <test><!-- Workaround for http tests failing with Quarkus 999-SNAPSHOT and CQ 2.6.0  -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-http:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for https://github.com/apache/camel-quarkus/pull/3055 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-unknown-args-ignore:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for Syslog tests failing  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-syslog:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for Telegram tests failing with Quarkus 999-SNAPSHOT and CQ 2.5.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-telegram:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <!--
-                                        Artemis issue
-                                    -->
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-artemis-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-artemis-client:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test>
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
