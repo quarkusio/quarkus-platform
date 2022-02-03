@@ -13,6 +13,8 @@
   <name>Quarkus Platform - Camel - Integration Tests - Parent</name>
   <modules>
     <module>camel-quarkus-integration-test-http</module>
+    <module>camel-quarkus-integration-test-js-dsl</module>
+    <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -83,14 +85,12 @@
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
-    <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-jsch</module>
     <module>camel-quarkus-integration-test-jslt</module>
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
     <module>camel-quarkus-integration-test-jta</module>
-    <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
     <module>camel-quarkus-integration-test-kafka-sasl</module>
     <module>camel-quarkus-integration-test-kafka-ssl</module>
