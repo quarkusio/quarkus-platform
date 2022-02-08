@@ -41,7 +41,6 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-project-core-extension-codestarts</artifactId>
-      <version>${quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
