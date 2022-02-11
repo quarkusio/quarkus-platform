@@ -15,6 +15,7 @@
     <module>camel-quarkus-integration-test-http</module>
     <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
+    <module>camel-quarkus-integration-test-microprofile</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -112,7 +113,6 @@
     <module>camel-quarkus-integration-test-main-yaml</module>
     <module>camel-quarkus-integration-test-main</module>
     <module>camel-quarkus-integration-test-micrometer</module>
-    <module>camel-quarkus-integration-test-microprofile</module>
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
