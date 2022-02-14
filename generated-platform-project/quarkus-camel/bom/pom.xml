@@ -528,7 +528,7 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.18</version>
+        <version>1.4.19</version>
       </dependency>
       <dependency>
         <groupId>com.zendesk</groupId>
@@ -7358,22 +7358,22 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.reflections</groupId>
