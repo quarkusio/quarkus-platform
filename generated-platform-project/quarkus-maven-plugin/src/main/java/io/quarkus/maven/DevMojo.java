@@ -31,8 +31,6 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 
 import org.aesh.readline.terminal.impl.ExecPty;
 import org.aesh.readline.terminal.impl.Pty;
@@ -81,8 +79,10 @@ import org.fusesource.jansi.internal.Kernel32;
 import org.fusesource.jansi.internal.WindowsSupport;
 
 import io.quarkus.bootstrap.BootstrapConstants;
+import io.quarkus.bootstrap.app.QuarkusBootstrap;
 import io.quarkus.bootstrap.devmode.DependenciesFilter;
 import io.quarkus.bootstrap.model.ApplicationModel;
+import io.quarkus.bootstrap.model.PathsCollection;
 import io.quarkus.bootstrap.resolver.BootstrapAppModelResolver;
 import io.quarkus.bootstrap.resolver.maven.MavenArtifactResolver;
 import io.quarkus.bootstrap.resolver.maven.options.BootstrapMavenOptions;
@@ -993,32 +993,22 @@ public class DevMojo extends AbstractMojo {
         }
 
         addQuarkusDevModeDeps(builder);
+        //look for an application.properties
+        Set<Path> resourceDirs = new HashSet<>();
+        for (Resource resource : project.getResources()) {
+            String dir = resource.getDirectory();
+            Path path = Paths.get(dir);
+            resourceDirs.add(path);
+        }
+        Set<ArtifactKey> configuredParentFirst = QuarkusBootstrap.createClassLoadingConfig(PathsCollection.from(resourceDirs),
+                QuarkusBootstrap.Mode.DEV, Collections.emptyList()).parentFirstArtifacts;
 
         //in most cases these are not used, however they need to be present for some
         //parent-first cases such as logging
         //first we go through and get all the parent first artifacts
-        Set<ArtifactKey> parentFirstArtifacts = new HashSet<>();
-        for (Artifact appDep : project.getArtifacts()) {
-            if (appDep.getArtifactHandler().getExtension().equals("jar") && appDep.getFile().isFile()) {
-                try (ZipFile file = new ZipFile(appDep.getFile())) {
-                    ZipEntry entry = file.getEntry(EXT_PROPERTIES_PATH);
-                    if (entry != null) {
-                        Properties p = new Properties();
-                        try (InputStream inputStream = file.getInputStream(entry)) {
-                            p.load(inputStream);
-                            String parentFirst = p.getProperty(ApplicationModel.PARENT_FIRST_ARTIFACTS);
-                            if (parentFirst != null) {
-                                String[] artifacts = parentFirst.split(",");
-                                for (String artifact : artifacts) {
-                                    parentFirstArtifacts.add(new GACT(artifact.split(":")));
-                                }
-                            }
-                        }
+        Set<ArtifactKey> parentFirstArtifacts = new HashSet<>(configuredParentFirst);
+        parentFirstArtifacts.addAll(appModel.getParentFirst());
 
-                    }
-                }
-            }
-        }
         for (Artifact appDep : project.getArtifacts()) {
             // only add the artifact if it's present in the dev mode context
             // we need this to avoid having jars on the classpath multiple times
