@@ -71,7 +71,7 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.18</version>
+        <version>1.4.19</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -79,85 +79,584 @@
         <version>3.6.1</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-alphanetwork-compiler</artifactId>
-        <version>8.16.1.Beta</version>
+        <groupId>org.drools.testcoverage</groupId>
+        <artifactId>drools-test-suite</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
-        <artifactId>drools-bom</artifactId>
-        <version>8.16.1.Beta</version>
-        <type>pom</type>
+        <artifactId>cdi-example</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>default-kiesession</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-alphanetwork-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-alphanetwork-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-alphanetwork-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-beliefs</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-beliefs</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-canonical-model</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-canonical-model</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-canonical-model</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-cdi</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-cdi</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-cdi</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-core</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-core</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-decisiontables</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-decisiontables</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-distribution</artifactId>
+        <version>8.17.0.Beta</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-drl-ast</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-drl-ast</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ecj</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ecj</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ecj</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-engine-classic</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-engine-classic</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-engine</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-engine</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-examples</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-examples</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-graph-common</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-graph-common</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-graph-graphviz</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-graph-graphviz</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-model</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-model</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-parser</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-impact-analysis-parser</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-kiesession</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-kiesession</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-kiesession</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-legacy-test-util</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-metric</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-metric</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-model-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-model-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel-parser</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel-parser</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-mvel</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-persistence-api</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-persistence-api</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-persistence-jpa</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-persistence-jpa</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-persistence-jpa</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ruleunits-api</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ruleunits-api</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ruleunits-impl</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ruleunits-impl</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-ruleunits-impl</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-api</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-scenario-simulation-api</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-backend</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-scenario-simulation-backend</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-serialization-protobuf</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-serialization-protobuf</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-serialization-protobuf</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-templates</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-templates</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-tms</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-tms</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-tms</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-traits</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-traits</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-verifier-api</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-verifier-api</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-verifier-core</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-verifier-core</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-verifier-drl</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-verifier-drl</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-api</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wiring-api</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-dynamic</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wiring-dynamic</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wiring-dynamic</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-static</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wiring-static</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wiring-static</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-xml-support</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-xml-support</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-xml-support</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>multiple-kbases</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>named-kiesession</artifactId>
+        <version>8.17.0.Beta</version>
       </dependency>
       <dependency>
         <groupId>org.freemarker</groupId>
@@ -170,504 +669,515 @@
         <version>1.5.3</version>
       </dependency>
       <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-api</artifactId>
-        <version>1.16.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-drools</artifactId>
-        <version>1.16.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-legacy-api</artifactId>
-        <version>1.16.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-quarkus-rules-deployment</artifactId>
-        <version>1.16.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.kogito</groupId>
-        <artifactId>kogito-quarkus-rules</artifactId>
-        <version>1.16.1.Final</version>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-api</artifactId>
+        <version>8.17.0.Beta</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-api</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
+        <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-core-bom</artifactId>
-        <version>8.16.1.Beta</version>
-        <type>pom</type>
+        <artifactId>kie-api</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-api</artifactId>
-        <version>8.16.1.Beta</version>
+        <artifactId>kie-ci</artifactId>
+        <version>8.17.0.Beta</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-bom</artifactId>
-        <version>8.16.1.Beta</version>
-        <type>pom</type>
+        <artifactId>kie-ci</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-core</artifactId>
-        <version>8.16.1.Beta</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-feel</artifactId>
-        <version>8.16.1.Beta</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-openapi</artifactId>
-        <version>8.16.1.Beta</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-validation</artifactId>
-        <version>8.16.1.Beta</version>
+        <artifactId>kie-ci</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-internal</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-api</artifactId>
-        <version>8.16.1.Beta</version>
+        <artifactId>kie-internal</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-bom</artifactId>
-        <version>8.16.1.Beta</version>
-        <type>pom</type>
+        <artifactId>kie-internal</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-commons</artifactId>
-        <version>8.16.1.Beta</version>
+        <artifactId>kie-memory-compiler</artifactId>
+        <version>8.17.0.Beta</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-dependencies</artifactId>
-        <version>8.16.1.Beta</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-evaluator-api</artifactId>
-        <version>8.16.1.Beta</version>
+        <artifactId>kie-memory-compiler</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-test-util</artifactId>
-        <version>8.16.1.Beta</version>
+        <version>8.17.0.Beta</version>
       </dependency>
       <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.16.1.Final</version>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-test-util</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.16.1.Final</version>
-        <classifier>javadoc</classifier>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-test-util</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>tests</classifier>
+        <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.16.1.Final</version>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-util-maven-integration</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-util-maven-integration</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-util-maven-support</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-util-maven-support</artifactId>
+        <version>8.17.0.Beta</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-util-xml</artifactId>
+        <version>8.17.0.Beta</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-util-xml</artifactId>
+        <version>8.17.0.Beta</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-benchmark</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.optaplanner</groupId>
+        <artifactId>optaplanner-benchmark</artifactId>
+        <version>8.17.0.Final</version>
+        <classifier>javadoc</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.optaplanner</groupId>
+        <artifactId>optaplanner-benchmark</artifactId>
+        <version>8.17.0.Final</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.optaplanner</groupId>
+        <artifactId>optaplanner-benchmark</artifactId>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-core</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-distribution-internal</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <type>zip</type>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-docs</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <type>zip</type>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-examples</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-examples</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-examples</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-common</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jackson</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jaxb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jpa</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-jsonb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-persistence-xstream</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-benchmark</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-integration-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-integration-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-integration-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-deployment</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-integration-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-integration-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb-integration-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jsonb</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-autoconfigure</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-autoconfigure</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-autoconfigure</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-starter</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-spring-boot-starter</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-test</artifactId>
-        <version>8.16.1.Final</version>
+        <version>8.17.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
     </dependencies>
