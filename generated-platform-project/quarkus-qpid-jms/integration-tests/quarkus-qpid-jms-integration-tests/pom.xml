@@ -27,7 +27,7 @@
     <dependency>
       <groupId>io.quarkiverse.artemis</groupId>
       <artifactId>quarkus-test-artemis</artifactId>
-      <version>1.0.1</version>
+      <version>${quarkus-config-consul.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
