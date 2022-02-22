@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-parent</artifactId>
-    <version>2.7.2.Final</version>
+    <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-kogito-parent</artifactId>
