@@ -65,7 +65,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>1.0.4</quarkus-amazon-services.version>
-        <quarkus-config-consul.version>1.0.1</quarkus-config-consul.version>
+        <quarkus-config-consul.version>1.0.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>0.32.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.8.1.Final</debezium-quarkus-outbox.version>
