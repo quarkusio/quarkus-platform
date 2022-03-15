@@ -104,6 +104,13 @@
     </distributionManagement>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>io.quarkus.bot</groupId>
+                <artifactId>build-reporting-maven-extension</artifactId>
+                <version>1.0.5</version>
+            </extension>
+        </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
