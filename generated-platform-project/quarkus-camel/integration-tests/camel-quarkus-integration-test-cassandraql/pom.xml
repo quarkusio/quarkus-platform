@@ -8,6 +8,9 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-cassandraql</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-cassandraql</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -104,6 +107,7 @@
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
+            <quarkus.log.level>DEBUG</quarkus.log.level>
           </systemPropertyVariables>
         </configuration>
       </plugin>
@@ -175,6 +179,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

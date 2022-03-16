@@ -16,6 +16,9 @@
     <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-microprofile</module>
+    <module>camel-quarkus-integration-test-cassandraql</module>
+    <module>camel-quarkus-integration-test-opentelemetry</module>
+    <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -33,7 +36,6 @@
     <module>camel-quarkus-integration-test-box</module>
     <module>camel-quarkus-integration-test-braintree</module>
     <module>camel-quarkus-integration-test-caffeine</module>
-    <module>camel-quarkus-integration-test-cassandraql</module>
     <module>camel-quarkus-integration-test-cbor</module>
     <module>camel-quarkus-integration-test-compression</module>
     <module>camel-quarkus-integration-test-consul</module>
@@ -52,7 +54,6 @@
     <module>camel-quarkus-integration-test-elasticsearch-rest</module>
     <module>camel-quarkus-integration-test-exec</module>
     <module>camel-quarkus-integration-test-fhir</module>
-    <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-flatpack</module>
     <module>camel-quarkus-integration-test-fop</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
@@ -74,7 +75,6 @@
     <module>camel-quarkus-integration-test-hystrix</module>
     <module>camel-quarkus-integration-test-infinispan</module>
     <module>camel-quarkus-integration-test-influxdb</module>
-    <module>camel-quarkus-integration-test-ipfs</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
     <module>camel-quarkus-integration-test-jackson-protobuf</module>
     <module>camel-quarkus-integration-test-jaxb</module>
@@ -118,6 +118,7 @@
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
     <module>camel-quarkus-integration-test-msv</module>
     <module>camel-quarkus-integration-test-mustache</module>
+    <module>camel-quarkus-integration-test-mybatis</module>
     <module>camel-quarkus-integration-test-nagios</module>
     <module>camel-quarkus-integration-test-nats</module>
     <module>camel-quarkus-integration-test-netty</module>
@@ -127,7 +128,6 @@
     <module>camel-quarkus-integration-test-olingo4</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
     <module>camel-quarkus-integration-test-openstack</module>
-    <module>camel-quarkus-integration-test-opentelemetry</module>
     <module>camel-quarkus-integration-test-opentracing</module>
     <module>camel-quarkus-integration-test-optaplanner</module>
     <module>camel-quarkus-integration-test-paho-mqtt5</module>
@@ -135,7 +135,6 @@
     <module>camel-quarkus-integration-test-pdf</module>
     <module>camel-quarkus-integration-test-pg-replication-slot</module>
     <module>camel-quarkus-integration-test-pgevent</module>
-    <module>camel-quarkus-integration-test-platform-http-engine</module>
     <module>camel-quarkus-integration-test-platform-http</module>
     <module>camel-quarkus-integration-test-protobuf</module>
     <module>camel-quarkus-integration-test-pubnub</module>

@@ -64,6 +64,12 @@
       <groupId>org.apache.avro</groupId>
       <artifactId>avro-ipc-jetty</artifactId>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
   <build>
