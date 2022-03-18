@@ -16,6 +16,7 @@
     <module>cassandra-quarkus-integration-tests-metrics-disabled</module>
     <module>cassandra-quarkus-integration-tests-metrics-microprofile</module>
     <module>cassandra-quarkus-integration-tests-no-mapper</module>
+    <module>cassandra-quarkus-integration-tests-dse</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>

@@ -8,20 +8,20 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>cassandra-quarkus-integration-tests-metrics-microprofile</artifactId>
-  <name>Quarkus Platform - Cassandra - Integration Tests - cassandra-quarkus-integration-tests-metrics-microprofile</name>
+  <artifactId>cassandra-quarkus-integration-tests-dse</artifactId>
+  <name>Quarkus Platform - Cassandra - Integration Tests - cassandra-quarkus-integration-tests-dse</name>
   <properties>
     <maven.test.skip>true</maven.test.skip>
   </properties>
   <dependencies>
     <dependency>
       <groupId>com.datastax.oss.quarkus</groupId>
-      <artifactId>cassandra-quarkus-integration-tests-metrics-microprofile</artifactId>
+      <artifactId>cassandra-quarkus-integration-tests-dse</artifactId>
       <version>${quarkus-cassandra-client.version}</version>
     </dependency>
     <dependency>
       <groupId>com.datastax.oss.quarkus</groupId>
-      <artifactId>cassandra-quarkus-integration-tests-metrics-microprofile</artifactId>
+      <artifactId>cassandra-quarkus-integration-tests-dse</artifactId>
       <version>${quarkus-cassandra-client.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -114,7 +114,7 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile</dependency>
+            <dependency>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-dse</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -148,7 +148,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile</dependency>
+                <dependency>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-dse</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -164,7 +164,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile:${quarkus-cassandra-client.version}</appArtifact>
+                  <appArtifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-dse:${quarkus-cassandra-client.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
