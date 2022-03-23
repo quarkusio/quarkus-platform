@@ -60,7 +60,6 @@
     <dependency>
       <groupId>io.strimzi</groupId>
       <artifactId>strimzi-test-container</artifactId>
-      <version>0.22.1</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>

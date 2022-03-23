@@ -1,8 +1,10 @@
 package io.quarkus.maven;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -23,6 +25,7 @@ import org.eclipse.aether.repository.RemoteRepository;
 
 import io.quarkus.bootstrap.app.CuratedApplication;
 import io.quarkus.maven.components.BootstrapSessionListener;
+import io.quarkus.maven.components.ManifestSection;
 import io.quarkus.maven.dependency.ArtifactKey;
 import io.quarkus.maven.dependency.Dependency;
 import io.quarkus.runtime.LaunchMode;
@@ -64,6 +67,18 @@ public abstract class QuarkusBootstrapMojo extends AbstractMojo {
 
     @Parameter(defaultValue = "${project.build.finalName}")
     private String finalName;
+
+    /**
+     * The list of main manifest attributes
+     */
+    @Parameter
+    private Map<String, String> manifestEntries = new LinkedHashMap<>();
+
+    /**
+     * The list of manifest sections
+     */
+    @Parameter
+    private List<ManifestSection> manifestSections = new ArrayList<>();
 
     /**
      * When building an uber-jar, this array specifies entries that should
@@ -166,7 +181,7 @@ public abstract class QuarkusBootstrapMojo extends AbstractMojo {
     /**
      * Allows implementations to provide extra dependencies that should be enforced on the application.
      * Originally requested by Camel K.
-     * 
+     *
      * @param mode launch mode the application is being bootstrapped in
      * @return list of extra dependencies that should be enforced on the application
      */
@@ -208,6 +223,14 @@ public abstract class QuarkusBootstrapMojo extends AbstractMojo {
 
     protected String finalName() {
         return finalName;
+    }
+
+    protected Map<String, String> manifestEntries() {
+        return manifestEntries;
+    }
+
+    protected List<ManifestSection> manifestSections() {
+        return manifestSections;
     }
 
     protected String[] ignoredEntries() {
