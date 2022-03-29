@@ -96,9 +96,10 @@
             </goals>
             <configuration>
               <systemProperties>
-                <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
-                <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
+                <container.image.infinispan>infinispan/server:13.0.2.Final</container.image.infinispan>
+                <container.image.kafka>vectorized/redpanda:v21.11.8</container.image.kafka>
                 <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                <container.image.wurstmeister.kafka>wurstmeister/kafka:2.12-2.2.1</container.image.wurstmeister.kafka>
                 <maven.repo.local>${settings.localRepository}</maven.repo.local>
                 <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
                 <project.groupId>io.quarkus.platform</project.groupId>
@@ -139,9 +140,10 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                    <container.image.infinispan>infinispan/server:12.1.4.Final</container.image.infinispan>
-                    <container.image.kafka>confluentinc/cp-kafka:5.4.3</container.image.kafka>
+                    <container.image.infinispan>infinispan/server:13.0.2.Final</container.image.infinispan>
+                    <container.image.kafka>vectorized/redpanda:v21.11.8</container.image.kafka>
                     <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
+                    <container.image.wurstmeister.kafka>wurstmeister/kafka:2.12-2.2.1</container.image.wurstmeister.kafka>
                     <maven.repo.local>${settings.localRepository}</maven.repo.local>
                     <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
                     <project.groupId>io.quarkus.platform</project.groupId>
