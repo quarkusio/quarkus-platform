@@ -27,6 +27,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
+      <version>2.7.3.Final</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -59,6 +60,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5-internal</artifactId>
+      <version>2.7.3.Final</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
