@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.8.0.CR1</quarkus.version>
+        <quarkus.version>2.8.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.8.0-M1</camel-quarkus.version>
