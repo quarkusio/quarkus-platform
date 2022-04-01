@@ -10663,12 +10663,12 @@
       <dependency>
         <groupId>org.amqphub.quarkus</groupId>
         <artifactId>quarkus-qpid-jms-deployment</artifactId>
-        <version>0.32.0</version>
+        <version>0.33.0</version>
       </dependency>
       <dependency>
         <groupId>org.amqphub.quarkus</groupId>
         <artifactId>quarkus-qpid-jms</artifactId>
-        <version>0.32.0</version>
+        <version>0.33.0</version>
       </dependency>
       <dependency>
         <groupId>org.antlr</groupId>
@@ -17087,7 +17087,7 @@
       <dependency>
         <groupId>org.apache.qpid</groupId>
         <artifactId>qpid-jms-client</artifactId>
-        <version>1.5.0</version>
+        <version>1.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tinkerpop</groupId>
