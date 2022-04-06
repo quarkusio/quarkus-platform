@@ -81,7 +81,6 @@
     <module>camel-quarkus-integration-test-hystrix</module>
     <module>camel-quarkus-integration-test-infinispan</module>
     <module>camel-quarkus-integration-test-influxdb</module>
-    <module>camel-quarkus-integration-test-ipfs</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
     <module>camel-quarkus-integration-test-jackson-protobuf</module>
     <module>camel-quarkus-integration-test-jaxb</module>
@@ -142,7 +141,6 @@
     <module>camel-quarkus-integration-test-pdf</module>
     <module>camel-quarkus-integration-test-pg-replication-slot</module>
     <module>camel-quarkus-integration-test-pgevent</module>
-    <module>camel-quarkus-integration-test-platform-http-engine</module>
     <module>camel-quarkus-integration-test-platform-http</module>
     <module>camel-quarkus-integration-test-protobuf</module>
     <module>camel-quarkus-integration-test-pubnub</module>

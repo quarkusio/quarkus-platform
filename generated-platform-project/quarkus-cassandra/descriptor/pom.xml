@@ -74,6 +74,7 @@
             </members>
           </platformRelease>
           <processGroupIds>
+            <groupId>com.datastax.oss</groupId>
             <groupId>com.datastax.oss.quarkus</groupId>
           </processGroupIds>
           <ignoredArtifacts>
