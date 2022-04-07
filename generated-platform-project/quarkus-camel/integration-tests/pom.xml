@@ -25,6 +25,8 @@
     <module>camel-quarkus-integration-test-sjms-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
+    <module>camel-quarkus-integration-test-cassandraql</module>
+    <module>camel-quarkus-integration-test-fhir</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-as2</module>
@@ -41,7 +43,6 @@
     <module>camel-quarkus-integration-test-box</module>
     <module>camel-quarkus-integration-test-braintree</module>
     <module>camel-quarkus-integration-test-caffeine</module>
-    <module>camel-quarkus-integration-test-cassandraql</module>
     <module>camel-quarkus-integration-test-cbor</module>
     <module>camel-quarkus-integration-test-compression</module>
     <module>camel-quarkus-integration-test-consul</module>
@@ -58,7 +59,6 @@
     <module>camel-quarkus-integration-test-dropbox</module>
     <module>camel-quarkus-integration-test-elasticsearch-rest</module>
     <module>camel-quarkus-integration-test-exec</module>
-    <module>camel-quarkus-integration-test-fhir</module>
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-flatpack</module>
     <module>camel-quarkus-integration-test-fop</module>
