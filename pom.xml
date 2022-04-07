@@ -798,6 +798,10 @@
                                         <hidden>true</hidden>
                                     </member>
                                     <member>
+                                        <name>AmazonServices</name>
+                                        <hidden>true</hidden>
+                                    </member>
+                                    <member>
                                         <name>Camel</name>
                                         <hidden>true</hidden>
                                         <!-- uncomment when the artifact is available
