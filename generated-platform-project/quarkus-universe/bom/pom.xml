@@ -364,10 +364,6 @@
             <groupId>org.hdrhistogram</groupId>
             <artifactId>HdrHistogram</artifactId>
           </exclusion>
-          <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -394,12 +390,6 @@
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-query-builder</artifactId>
         <version>4.14.0</version>
-        <exclusions>
-          <exclusion>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss</groupId>
