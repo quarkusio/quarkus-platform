@@ -58,7 +58,7 @@
         <quarkus.version>2.8.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.8.0-M1</camel-quarkus.version>
+        <camel-quarkus.version>2.8.0</camel-quarkus.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
              make sure you have a look at the AmazonServices member section below
@@ -420,36 +420,13 @@
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
                                 <tests>
-                                    <test><!-- Workaround for http tests failing with Quarkus 999-SNAPSHOT and CQ 2.7.0  -->
+                                    <test><!-- Workaround cassandraql itests failing on quarkus-platform https://github.com/apache/camel-quarkus/issues/3621 -->
                                         <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-http:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for js-dsl tests failing with Quarkus 999-SNAPSHOT and CQ 2.7.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</artifact>
                                     </test>
                                     <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for MicroProfile tests failing with Quarkus 999-SNAPSHOT and CQ 2.7.0  -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-microprofile:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround invalid camel-quarkus-test-list generated https://github.com/apache/camel-quarkus/issues/3618 -->
-                                        <excluded>true</excluded>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ipfs:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround cassandraql itests failing on quarkus-platform https://github.com/apache/camel-quarkus/issues/3621 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</artifact>
-                                        <jvmSystemProperties>
-                                            <quarkus.log.level>DEBUG</quarkus.log.level>
-                                        </jvmSystemProperties>
-                                    </test>
-                                    <test><!-- Workaround opentelemetry tests failing because of an incompatibility detected in the nightly SNAPSHOT build -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-opentelemetry:${camel-quarkus.version}</artifact>
                                     </test>
                                     <test><!-- Workaround flaky file test https://github.com/apache/camel-quarkus/issues/3627 -->
                                         <skip>true</skip>

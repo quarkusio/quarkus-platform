@@ -8,9 +8,6 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-js-dsl</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-js-dsl</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -60,7 +57,7 @@
     <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>3.21.0</version>
+      <version>3.22.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -169,7 +166,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
