@@ -116,7 +116,6 @@
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
-            <quarkus.log.level>DEBUG</quarkus.log.level>
           </systemPropertyVariables>
         </configuration>
       </plugin>
