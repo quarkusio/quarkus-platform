@@ -63,18 +63,25 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <groupId>org.apache.logging.log4j</groupId>
-          <artifactId>log4j-core</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.github.docker-java</groupId>
-          <artifactId>docker-java-api</artifactId>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit4-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
