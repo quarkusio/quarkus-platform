@@ -507,15 +507,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-reactive-oracle-client",
-      "metadata": {
-        "redhat-support": [
-          "tech-preview"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-reactive-pg-client",
       "metadata": {
         "redhat-support": [
