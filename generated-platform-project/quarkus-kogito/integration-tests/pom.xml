@@ -12,7 +12,6 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Kogito - Integration Tests - Parent</name>
   <modules>
-    <module>kogito-quarkus-serverless-workflow-integration-test</module>
     <module>kogito-quarkus-rules-integration-test</module>
     <module>kogito-quarkus-predictions-integration-test</module>
     <module>kogito-quarkus-integration-test</module>
