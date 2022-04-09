@@ -40,6 +40,20 @@
                                 </wait>
                             </run>
                         </image>
+                        <image>
+￼                           <name>motoserver/moto:3.0.2</name>
+￼                           <alias>aws-moto</alias>
+￼                           <run>
+￼                               <ports>
+￼                                   <port>5000:5000</port>
+￼                               </ports>
+￼                               <log />
+￼                               <wait>
+￼                                   <time>30000</time>
+￼                                   <log>^ \* Running on</log>
+￼                               </wait>
+￼                           </run>
+￼                       </image>
                     </images>
                     <!--Stops all dynamodb images currently running, not just those we just started.
                       Useful to stop processes still running from a previously failed integration test run -->

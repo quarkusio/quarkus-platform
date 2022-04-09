@@ -91,6 +91,7 @@
             <dependency>io.quarkiverse.amazonservices:quarkus-amazon-services-integration-tests</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
+            <cognitoidentity.url>http://localhost:5000</cognitoidentity.url>
             <dynamodb.url>http://localhost:4566</dynamodb.url>
             <iam.url>http://localhost:4566</iam.url>
             <kms.url>http://localhost:4566</kms.url>
@@ -127,6 +128,20 @@
                 </wait>
               </run>
             </image>
+            <image>
+￼                           <name>motoserver/moto:3.0.2</name>
+￼                           <alias>aws-moto</alias>
+￼                           <run>
+￼                               <ports>
+￼                                   <port>5000:5000</port>
+￼                               </ports>
+￼                               <log/>
+￼                               <wait>
+￼                                   <time>30000</time>
+￼                                   <log>^ \* Running on</log>
+￼                               </wait>
+￼                           </run>
+￼                       </image>
           </images>
           <allContainers>true</allContainers>
           <skip>${skipTests}</skip>
@@ -172,6 +187,7 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                    <cognitoidentity.url>http://localhost:5000</cognitoidentity.url>
                     <dynamodb.url>http://localhost:4566</dynamodb.url>
                     <iam.url>http://localhost:4566</iam.url>
                     <kms.url>http://localhost:4566</kms.url>
