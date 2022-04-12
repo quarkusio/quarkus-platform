@@ -75,15 +75,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-elasticsearch-rest-client",
-      "metadata": {
-        "redhat-support": [
-          "supported"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-grpc",
       "metadata": {
         "redhat-support": [
@@ -283,15 +274,6 @@
     {
       "group-id": "io.quarkus",
       "artifact-id": "quarkus-kubernetes",
-      "metadata": {
-        "redhat-support": [
-          "dev-support"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
-      "artifact-id": "quarkus-kubernetes-client",
       "metadata": {
         "redhat-support": [
           "dev-support"
@@ -507,15 +489,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-reactive-oracle-client",
-      "metadata": {
-        "redhat-support": [
-          "tech-preview"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-reactive-pg-client",
       "metadata": {
         "redhat-support": [
@@ -681,7 +654,7 @@
       "artifact-id": "quarkus-resteasy-reactive-jaxb",
       "metadata": {
         "redhat-support": [
-          "supported"
+          "tech-preview"
         ]
       }
     },
@@ -959,6 +932,60 @@
       "metadata": {
         "redhat-support": [
           "supported"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-smallrye-graphql",
+      "metadata": {
+        "redhat-support": [
+          "supported"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-smallrye-graphql-client",
+      "metadata": {
+        "redhat-support": [
+          "supported"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-hibernate-reactive",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-smallrye-stork",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-jacoco",
+      "metadata": {
+        "redhat-support": [
+          "dev-support"
+        ]
+      }
+    },
+    {
+      "group-id": "io.quarkus",
+      "artifact-id": "quarkus-kafka-streams",
+      "metadata": {
+        "redhat-support": [
+          "tech-preview"
         ]
       }
     }
