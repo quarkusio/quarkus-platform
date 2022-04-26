@@ -521,6 +521,7 @@
                                     </test>
                                     <test>
                                         <skipJvm>true</skipJvm>
+                                        <skipNative>true</skipNative>
                                         <artifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2:${quarkus-blaze-persistence.version}</artifact>
                                     </test>
                                 </tests>
