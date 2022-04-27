@@ -442,6 +442,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-file:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround incompatible PostgreSQL JDBC driver -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
