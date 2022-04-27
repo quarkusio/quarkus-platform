@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.8.1.Final</quarkus.version>
+        <quarkus.version>2.9.0.CR1</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.8.0</camel-quarkus.version>
@@ -442,6 +442,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-file:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround incompatible PostgreSQL JDBC driver -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
@@ -513,15 +517,18 @@
                                 </defaultTestConfig>
                                 <tests>
                                     <test>
+                                        <skip>true</skip>
                                         <skipNative>true</skipNative>
+                                        <skipJvm>true</skipJvm>
                                         <artifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-base:${quarkus-blaze-persistence.version}</artifact>
                                         <systemProperties>
                                             <quarkus.test.profile>h2</quarkus.test.profile>
                                         </systemProperties>
                                     </test>
                                     <test>
-                                        <skipJvm>true</skipJvm>
+                                        <skip>true</skip>
                                         <skipNative>true</skipNative>
+                                        <skipJvm>true</skipJvm>
                                         <artifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2:${quarkus-blaze-persistence.version}</artifact>
                                     </test>
                                 </tests>
