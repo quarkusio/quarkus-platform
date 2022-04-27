@@ -10,6 +10,9 @@
   </parent>
   <artifactId>blaze-persistence-examples-quarkus-testsuite-base</artifactId>
   <name>Quarkus Platform - Blaze-Persistence - Integration Tests - blaze-persistence-examples-quarkus-testsuite-base</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>com.blazebit</groupId>
@@ -57,18 +60,5 @@
         </plugin>
       </plugins>
     </pluginManagement>
-    <plugins>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <dependenciesToScan>
-            <dependency>com.blazebit:blaze-persistence-examples-quarkus-testsuite-base</dependency>
-          </dependenciesToScan>
-          <systemPropertyVariables>
-            <quarkus.test.profile>h2</quarkus.test.profile>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>
-    </plugins>
   </build>
 </project>
