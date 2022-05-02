@@ -61,62 +61,57 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-api</artifactId>
-        <version>1.8.1.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>io.debezium</groupId>
-        <artifactId>debezium-connector-cassandra</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-db2</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mongodb</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mysql</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-oracle</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-postgres</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-sqlserver</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-vitess</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-core</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-ddl-parser</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-embedded</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
         <exclusions>
           <exclusion>
             <groupId>javax.activation</groupId>
@@ -151,17 +146,17 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox-deployment</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-scripting</artifactId>
-        <version>1.8.1.Final</version>
+        <version>1.9.2.Final</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
