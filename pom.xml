@@ -58,7 +58,7 @@
         <quarkus.version>2.9.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.8.0</camel-quarkus.version>
+        <camel-quarkus.version>2.9.0</camel-quarkus.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
              make sure you have a look at the AmazonServices member section below
@@ -429,10 +429,6 @@
                                     <test><!-- Workaround cassandraql itests failing on quarkus-platform https://github.com/apache/camel-quarkus/issues/3621 -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround jpa itests failing with Quarkus 999-SNAPSHOT and CQ 2.8.0 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jpa:${camel-quarkus.version}</artifact>
                                     </test>
                                     <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                         <skip>true</skip>
