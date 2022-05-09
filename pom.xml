@@ -442,6 +442,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for Graal SDK incompatibility with Quarkus 999-SNAPSHOT and CQ <= 2.9.0 -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
