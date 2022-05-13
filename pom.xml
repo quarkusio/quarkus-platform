@@ -430,6 +430,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for incompatibility with Quarkus 999-SNAPSHOT and CQ <= 2.9.0 -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
+                                    </test>
                                     <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</artifact>
