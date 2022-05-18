@@ -14,14 +14,6 @@
             <enabled>false</enabled>
           </snapshots>
         </repository>
-        <repository>
-          <snapshots>
-              <enabled>false</enabled>
-          </snapshots>
-          <id>kogito</id>
-          <name>kogito</name>
-          <url>https://repository.jboss.org/nexus/content/groups/kogito-public/</url>
-        </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
