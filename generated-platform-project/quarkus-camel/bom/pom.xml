@@ -10475,7 +10475,7 @@
       <dependency>
         <groupId>org.infinispan</groupId>
         <artifactId>infinispan-jboss-marshalling</artifactId>
-        <version>13.0.6.Final</version>
+        <version>13.0.8.Final</version>
       </dependency>
       <dependency>
         <groupId>org.influxdb</groupId>
@@ -10515,8 +10515,7 @@
       <dependency>
         <groupId>org.lz4</groupId>
         <artifactId>lz4-java</artifactId>
-        <version>1.7.1</version>
-        <optional>true</optional>
+        <version>1.8.0</version>
       </dependency>
       <dependency>
         <groupId>org.mvel</groupId>
