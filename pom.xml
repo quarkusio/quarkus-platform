@@ -75,7 +75,7 @@
         <kogito-quarkus.version>1.22.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.22.0.Final</optaplanner-quarkus.version>
 
-        <quarkus-google-cloud-services.version>1.1.0</quarkus-google-cloud-services.version>
+        <quarkus-google-cloud-services.version>1.1.1</quarkus-google-cloud-services.version>
         <quarkus-vault.version>1.1.0</quarkus-vault.version>
 
         <quarkus-platform-bom-generator.version>0.0.49</quarkus-platform-bom-generator.version>
