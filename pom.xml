@@ -432,6 +432,10 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround CQ <= 2.9.0 google-storage test failures due to 'latest' tag usage for fake-gcs-server container image -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-storage:${camel-quarkus.version}</artifact>
+                                    </test>
                                     <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</artifact>
