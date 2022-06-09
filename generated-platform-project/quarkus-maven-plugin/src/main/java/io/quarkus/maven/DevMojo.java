@@ -80,6 +80,7 @@ import org.fusesource.jansi.internal.Kernel32;
 import org.fusesource.jansi.internal.WindowsSupport;
 
 import io.quarkus.bootstrap.BootstrapConstants;
+import io.quarkus.bootstrap.app.ConfiguredClassLoading;
 import io.quarkus.bootstrap.app.QuarkusBootstrap;
 import io.quarkus.bootstrap.devmode.DependenciesFilter;
 import io.quarkus.bootstrap.model.ApplicationModel;
@@ -212,6 +213,8 @@ public class DevMojo extends AbstractMojo {
     @Parameter(defaultValue = "${debug}")
     private String debug;
 
+    @Parameter(defaultValue = "${open-lang-package}")
+    private boolean openJavaLang;
     /**
      * Whether or not the JVM launch, in debug mode, should be suspended. This parameter is only
      * relevant when the JVM is launched in {@link #debug debug mode}. This parameter supports the
@@ -956,6 +959,11 @@ public class DevMojo extends AbstractMojo {
             builder.jvmArgs("-Dio.quarkus.force-color-support=true");
         }
 
+        if (openJavaLang) {
+            builder.jvmArgs("--add-opens");
+            builder.jvmArgs("java.base/java.lang=ALL-UNNAMED");
+        }
+
         builder.projectDir(project.getFile().getParentFile());
         builder.buildSystemProperties((Map) project.getProperties());
 
@@ -1068,21 +1076,23 @@ public class DevMojo extends AbstractMojo {
             Path path = Paths.get(dir);
             resourceDirs.add(path);
         }
-        Set<ArtifactKey> configuredParentFirst = QuarkusBootstrap.createClassLoadingConfig(PathsCollection.from(resourceDirs),
-                QuarkusBootstrap.Mode.DEV, Collections.emptyList()).parentFirstArtifacts;
 
         //in most cases these are not used, however they need to be present for some
         //parent-first cases such as logging
         //first we go through and get all the parent first artifacts
-        Set<ArtifactKey> parentFirstArtifacts = new HashSet<>(configuredParentFirst);
-        parentFirstArtifacts.addAll(appModel.getParentFirst());
+        final Collection<ArtifactKey> configuredParentFirst = ConfiguredClassLoading.builder()
+                .setApplicationModel(appModel)
+                .setApplicationRoot(PathsCollection.from(resourceDirs))
+                .setMode(QuarkusBootstrap.Mode.DEV)
+                .addParentFirstArtifacts(appModel.getParentFirst())
+                .build().getParentFirstArtifacts();
 
         for (Artifact appDep : project.getArtifacts()) {
             // only add the artifact if it's present in the dev mode context
             // we need this to avoid having jars on the classpath multiple times
             ArtifactKey key = ArtifactKey.gact(appDep.getGroupId(), appDep.getArtifactId(),
                     appDep.getClassifier(), appDep.getArtifactHandler().getExtension());
-            if (!builder.isLocal(key) && parentFirstArtifacts.contains(key)) {
+            if (!builder.isLocal(key) && configuredParentFirst.contains(key)) {
                 builder.classpathEntry(appDep.getFile());
             }
         }

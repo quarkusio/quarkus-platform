@@ -608,7 +608,7 @@
       <dependency>
         <groupId>io.smallrye.reactive</groupId>
         <artifactId>smallrye-reactive-messaging-camel</artifactId>
-        <version>3.15.0</version>
+        <version>3.17.0</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
