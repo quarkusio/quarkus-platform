@@ -72,6 +72,11 @@
       <artifactId>assertj-core</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -127,6 +132,21 @@
             <dependency>org.kie.kogito:integration-tests-quarkus-processes-infinispan</dependency>
           </dependenciesToScan>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-maven-plugin</artifactId>
+        <version>${quarkus.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>build</goal>
+            </goals>
+            <configuration>
+              <appArtifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</appArtifact>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
