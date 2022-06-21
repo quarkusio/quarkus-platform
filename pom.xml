@@ -425,14 +425,6 @@
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus.version}</testCatalogArtifact>
                                 <tests>
-                                    <test><!-- Workaround cassandraql itests failing on quarkus-platform https://github.com/apache/camel-quarkus/issues/3621 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for incompatibility with Quarkus 999-SNAPSHOT and CQ <= 2.9.0 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-csimple:${camel-quarkus.version}</artifact>
-                                    </test>
                                     <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</artifact>
@@ -444,10 +436,6 @@
                                     <test><!-- Workaround incompatible PostgreSQL JDBC driver -->
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus.version}</artifact>
-                                    </test>
-                                    <test><!-- Workaround for Graal SDK incompatibility with Quarkus 999-SNAPSHOT and CQ <= 2.9.0 -->
-                                        <skip>true</skip>
-                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus.version}</artifact>
                                     </test>
                                 </tests>
                             </member>
