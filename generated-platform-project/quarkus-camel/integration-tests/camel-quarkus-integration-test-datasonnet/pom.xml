@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-nagios</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-nagios</name>
+  <artifactId>camel-quarkus-integration-test-datasonnet</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-datasonnet</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-nagios</artifactId>
+      <artifactId>camel-quarkus-integration-test-datasonnet</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-nagios</artifactId>
+      <artifactId>camel-quarkus-integration-test-datasonnet</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -54,32 +54,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-netty</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>jakarta.activation</groupId>
-          <artifactId>jakarta.activation-api</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>jakarta.xml.bind</groupId>
-          <artifactId>jakarta.xml.bind-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-support</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -109,7 +83,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-nagios</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-datasonnet</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
@@ -171,7 +145,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-nagios</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-datasonnet</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -186,7 +160,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-nagios:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-datasonnet:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

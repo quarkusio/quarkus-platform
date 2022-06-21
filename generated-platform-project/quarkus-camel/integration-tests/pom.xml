@@ -36,7 +36,7 @@
     <module>camel-quarkus-integration-test-braintree</module>
     <module>camel-quarkus-integration-test-caffeine</module>
     <module>camel-quarkus-integration-test-cbor</module>
-    <module>camel-quarkus-integration-test-compression</module>
+    <module>camel-quarkus-integration-test-compression-grouped</module>
     <module>camel-quarkus-integration-test-consul</module>
     <module>camel-quarkus-integration-test-core-discovery-disabled</module>
     <module>camel-quarkus-integration-test-couchdb</module>
@@ -44,6 +44,7 @@
     <module>camel-quarkus-integration-test-csv</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json</module>
+    <module>camel-quarkus-integration-test-datasonnet</module>
     <module>camel-quarkus-integration-test-digitalocean</module>
     <module>camel-quarkus-integration-test-disruptor</module>
     <module>camel-quarkus-integration-test-dozer</module>
@@ -70,7 +71,6 @@
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
     <module>camel-quarkus-integration-test-http</module>
-    <module>camel-quarkus-integration-test-hystrix</module>
     <module>camel-quarkus-integration-test-infinispan</module>
     <module>camel-quarkus-integration-test-influxdb</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
@@ -78,7 +78,6 @@
     <module>camel-quarkus-integration-test-jaxb</module>
     <module>camel-quarkus-integration-test-jdbc</module>
     <module>camel-quarkus-integration-test-jfr</module>
-    <module>camel-quarkus-integration-test-jing</module>
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
@@ -115,14 +114,11 @@
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
-    <module>camel-quarkus-integration-test-msv</module>
     <module>camel-quarkus-integration-test-mustache</module>
     <module>camel-quarkus-integration-test-mybatis</module>
-    <module>camel-quarkus-integration-test-nagios</module>
     <module>camel-quarkus-integration-test-nats</module>
     <module>camel-quarkus-integration-test-netty</module>
     <module>camel-quarkus-integration-test-nitrite</module>
-    <module>camel-quarkus-integration-test-nsq</module>
     <module>camel-quarkus-integration-test-oaipmh</module>
     <module>camel-quarkus-integration-test-olingo4</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
