@@ -166,13 +166,31 @@ Platform members are configured under the `member` element, e.g.
         <!-- updated automatically -->
         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-optaplanner-bom:2.0.0.Final</lastDetectedBomUpdate> <!-- 5 -->
       </release>
-      <defaultTestConfig>                                                          <!-- 6 -->
-        <skip>false</skip>                                                         <!-- 7 -->
+      <dependencyManagement>                                                       <!-- 6 -->
+        <dependency>org.acme:acme:${acme.version}</dependency>
+        <dependencySpec>
+          <artifact>org.acme:foo:${acme.version}</artifact>
+          <exclusions>
+            <exclusion>org.acme:bar</exclusion>
+          </exclusions>
+        </dependencySpec>
+      </dependencyManagement>
+      <alignOwnConstraints>false</alignOwnConstraints>                             <!-- 7 -->
+      <keepThirdpartyExclusions>true</keepThirdpartyExclusions>                    <!-- 8 -->
+      <extensionGroupIds>                                                          <!-- 9 -->
+        <groupId>org.acme</groupId>
+      </extensionGroupIds>
+      <ownGroupIds>                                                                <!-- 10 -->
+        <groupId>org.acme</groupId>
+        <groupId>org.acme.other</groupId>
+      </ownGroupIds>
+      <defaultTestConfig>                                                          <!-- 11 -->
+        <skip>false</skip>                                                         <!-- 12 -->
       </defaultTestConfig>
       <tests>
-        <test> <!-- 7 -->
+        <test> <!-- 13 -->
           <artifact>org.optaplanner:optaplanner-quarkus-jackson-integration-test:${optaplanner-quarkus.version}</artifact>
-          <skip>true</skip>                                                        <!-- 8 -->
+          <skip>true</skip>                                                        <!-- 14 -->
         </test>
 ...
 ```
@@ -180,8 +198,12 @@ Platform members are configured under the `member` element, e.g.
 1. The original member BOM coordinates representing members build and run times classpath constraints
 1. Whether the member actually participates in the platform build or not (if a member is disabled, the rest of its configuration will be ignored)
 1. The coordinates under which the generated member platform BOM should be installed and deployed
-1. The BOM generator detects whether the generated member BOM has changed since the previous release and records the value of the last release in which the BOM
-has actually changed. The value of this element is meant to be updated during the release process by the tool itself in case the BOM has actually changed.
+1. The BOM generator detects whether the generated member BOM has changed since the previous release and records the value of the last release in which the BOM has actually changed. The value of this element is meant to be updated during the release process by the tool itself in case the BOM has actually changed.
+1. Custom dependency management configuration
+1. Whether to align constraints of the member BOM that appear to be originating from the same project on a common/preferred version of that project or keep the original member BOM, the default for this option is false
+1. Whether to keep exclusions found in the member BOM for thirdparty dependencies shared with other members. This option allows each member to have its own exclusions in their BOMs for common dependencies. The default value is true.
+1. Maven artifact groupIds the extension artifacts of this member will have. If not configured, the original member BOM groupId will be the default. This helps optimize identify extension version constraints in the member BOM.
+1. Maven artifact groupIds that member has the exclusive right to manage in the platform that other members will not be allowed to override.
 1. The default configuration options for all the tests of the member
 1. Can be used to skip all the member tests (unless explicitly overridden in a test config)
 1. Specific test configuration will reference a Maven test jar artifact containing the tests that should be run as part of the platform's IT
