@@ -259,6 +259,8 @@
                                         <artifact>org.optaplanner:optaplanner-quarkus-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
+                                        <!-- To enable back when Optplanner 8.24+ is released -->
+                                        <excluded>true</excluded>
                                         <artifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</artifact>
                                     </test>
                                     <test>
@@ -302,6 +304,16 @@
                                 </defaultTestConfig>
                                 <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
                                 <tests>
+                                    <test>
+                                        <!-- To enable back once Kogito 1.24+ is released -->
+                                        <excluded>true</excluded>
+                                        <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <!-- To enable back once Kogito 1.24+ is released -->
+                                        <excluded>true</excluded>
+                                        <artifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</artifact>
+                                    </test>
                                     <test>
                                         <excluded>true</excluded>
                                         <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test-session:${kogito-quarkus.version}</artifact>
