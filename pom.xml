@@ -453,6 +453,14 @@
                                         <skip>true</skip>
                                         <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus.version}</artifact>
                                     </test>
+                                    <test><!-- Workaround for Quarkus 999-SNAPSHOT & CQ <= 2.10.x Vert.x incompatibility -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-platform-http:${camel-quarkus.version}</artifact>
+                                    </test>
+                                    <test><!-- Workaround for Quarkus 999-SNAPSHOT & CQ <= 2.10.x Vert.x incompatibility -->
+                                        <skip>true</skip>
+                                        <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-rest:${camel-quarkus.version}</artifact>
+                                    </test>
                                 </tests>
                             </member>
                             <member>
