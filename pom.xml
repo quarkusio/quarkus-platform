@@ -64,7 +64,7 @@
              make sure you have a look at the AmazonServices member section below
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
-        <quarkus-amazon-services.version>1.1.1</quarkus-amazon-services.version>
+        <quarkus-amazon-services.version>1.1.2</quarkus-amazon-services.version>
         <quarkus-config-consul.version>1.1.0</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>0.35.0</quarkus-qpid-jms.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
