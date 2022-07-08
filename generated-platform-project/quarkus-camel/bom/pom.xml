@@ -733,54 +733,54 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-api</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mongodb</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mysql</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mysql</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-postgres</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-sqlserver</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-core</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-core</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-ddl-parser</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-embedded</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
         <exclusions>
           <exclusion>
             <groupId>javax.ws.rs</groupId>
@@ -791,7 +791,7 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-embedded</artifactId>
-        <version>1.9.3.Final</version>
+        <version>1.9.5.Final</version>
         <classifier>tests</classifier>
         <exclusions>
           <exclusion>
