@@ -13,6 +13,7 @@
   <name>Quarkus Platform - OptaPlanner - Integration Tests - Parent</name>
   <modules>
     <module>optaplanner-quarkus-integration-test</module>
+    <module>optaplanner-quarkus-drl-integration-test</module>
     <module>optaplanner-quarkus-devui-integration-test</module>
     <module>optaplanner-quarkus-jackson-integration-test</module>
     <module>optaplanner-quarkus-jsonb-integration-test</module>

@@ -4,40 +4,29 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
+    <artifactId>quarkus-optaplanner-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>kogito-addons-quarkus-messaging-it</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - kogito-addons-quarkus-messaging-it</name>
+  <artifactId>optaplanner-quarkus-drl-integration-test</artifactId>
+  <name>Quarkus Platform - OptaPlanner - Integration Tests - optaplanner-quarkus-drl-integration-test</name>
   <dependencies>
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-quarkus-messaging-it</artifactId>
-      <version>${kogito-quarkus.version}</version>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-quarkus-drl-integration-test</artifactId>
+      <version>${optaplanner-quarkus.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-quarkus-messaging-it</artifactId>
-      <version>${kogito-quarkus.version}</version>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-quarkus-drl-integration-test</artifactId>
+      <version>${optaplanner-quarkus.version}</version>
       <type>test-jar</type>
-      <classifier>tests</classifier>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-dmn</artifactId>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -93,33 +82,10 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <artifactId>maven-failsafe-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>integration-test</goal>
-              <goal>verify</goal>
-            </goals>
-            <configuration>
-              <systemProperties>
-                <container.image.infinispan>infinispan/server:13.0.2.Final</container.image.infinispan>
-                <container.image.kafka>vectorized/redpanda:v21.11.8</container.image.kafka>
-                <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
-                <container.image.wurstmeister.kafka>wurstmeister/kafka:2.12-2.2.1</container.image.wurstmeister.kafka>
-                <maven.repo.local>${settings.localRepository}</maven.repo.local>
-                <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
-                <project.groupId>io.quarkus.platform</project.groupId>
-                <project.version>999-SNAPSHOT</project.version>
-              </systemProperties>
-              <excludes>
-                <exclude>**/Native*</exclude>
-              </excludes>
-            </configuration>
-          </execution>
-        </executions>
+        <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:kogito-addons-quarkus-messaging-it</dependency>
+            <dependency>org.optaplanner:optaplanner-quarkus-drl-integration-test</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -146,21 +112,13 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                    <container.image.infinispan>infinispan/server:13.0.2.Final</container.image.infinispan>
-                    <container.image.kafka>vectorized/redpanda:v21.11.8</container.image.kafka>
-                    <container.image.keycloak>jboss/keycloak:14.0.0</container.image.keycloak>
-                    <container.image.wurstmeister.kafka>wurstmeister/kafka:2.12-2.2.1</container.image.wurstmeister.kafka>
-                    <maven.repo.local>${settings.localRepository}</maven.repo.local>
-                    <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
-                    <project.groupId>io.quarkus.platform</project.groupId>
-                    <project.version>999-SNAPSHOT</project.version>
                   </systemProperties>
                 </configuration>
               </execution>
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:kogito-addons-quarkus-messaging-it</dependency>
+                <dependency>org.optaplanner:optaplanner-quarkus-drl-integration-test</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -175,7 +133,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:kogito-addons-quarkus-messaging-it:${kogito-quarkus.version}</appArtifact>
+                  <appArtifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

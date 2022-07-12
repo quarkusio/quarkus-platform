@@ -8,17 +8,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>integration-tests-quarkus-predictions</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - integration-tests-quarkus-predictions</name>
+  <artifactId>kogito-quarkus-rules-integration-test</artifactId>
+  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-rules-integration-test</name>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>integration-tests-quarkus-predictions</artifactId>
+      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
       <version>${kogito-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>integration-tests-quarkus-predictions</artifactId>
+      <artifactId>kogito-quarkus-rules-integration-test</artifactId>
       <version>${kogito-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -27,6 +27,11 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5-internal</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -55,16 +60,6 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-test-utils</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -118,24 +113,9 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:integration-tests-quarkus-predictions</dependency>
+            <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
           </dependenciesToScan>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-maven-plugin</artifactId>
-        <version>${quarkus.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>build</goal>
-            </goals>
-            <configuration>
-              <appArtifact>org.kie.kogito:integration-tests-quarkus-predictions:${kogito-quarkus.version}</appArtifact>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
@@ -174,7 +154,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:integration-tests-quarkus-predictions</dependency>
+                <dependency>org.kie.kogito:kogito-quarkus-rules-integration-test</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -189,7 +169,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:integration-tests-quarkus-predictions:${kogito-quarkus.version}</appArtifact>
+                  <appArtifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
