@@ -1,5 +1,6 @@
 package io.quarkus.maven;
 
+import static io.quarkus.devtools.commands.CreateJBangProject.CreateJBangProjectKey.NO_JBANG_WRAPPER;
 import static io.quarkus.devtools.project.CodestartResourceLoadersBuilder.codestartLoadersBuilder;
 import static org.fusesource.jansi.Ansi.ansi;
 
@@ -117,9 +118,9 @@ public class CreateJBangMojo extends AbstractMojo {
                 .build();
         final CreateJBangProject createJBangProject = new CreateJBangProject(QuarkusProject.of(projectDirPath, catalog,
                 codestartsResourceLoader, log, BuildTool.MAVEN))
-                        .extensions(extensions)
-                        .javaTarget(javaVersion)
-                        .setValue("noJBangWrapper", noJBangWrapper);
+                .extensions(extensions)
+                .javaVersion(javaVersion)
+                .setValue(NO_JBANG_WRAPPER, noJBangWrapper);
 
         boolean success;
 
