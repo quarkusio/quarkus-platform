@@ -8,17 +8,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>integration-tests-quarkus-predictions</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - integration-tests-quarkus-predictions</name>
+  <artifactId>integration-tests-quarkus-rules</artifactId>
+  <name>Quarkus Platform - Kogito - Integration Tests - integration-tests-quarkus-rules</name>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>integration-tests-quarkus-predictions</artifactId>
+      <artifactId>integration-tests-quarkus-rules</artifactId>
       <version>${kogito-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>integration-tests-quarkus-predictions</artifactId>
+      <artifactId>integration-tests-quarkus-rules</artifactId>
       <version>${kogito-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -118,7 +118,7 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:integration-tests-quarkus-predictions</dependency>
+            <dependency>org.kie.kogito:integration-tests-quarkus-rules</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -132,7 +132,7 @@
               <goal>build</goal>
             </goals>
             <configuration>
-              <appArtifact>org.kie.kogito:integration-tests-quarkus-predictions:${kogito-quarkus.version}</appArtifact>
+              <appArtifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</appArtifact>
             </configuration>
           </execution>
         </executions>
@@ -174,7 +174,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:integration-tests-quarkus-predictions</dependency>
+                <dependency>org.kie.kogito:integration-tests-quarkus-rules</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -189,7 +189,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:integration-tests-quarkus-predictions:${kogito-quarkus.version}</appArtifact>
+                  <appArtifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
