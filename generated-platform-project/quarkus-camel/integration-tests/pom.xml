@@ -15,8 +15,6 @@
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-debezium</module>
-    <module>camel-quarkus-integration-test-platform-http</module>
-    <module>camel-quarkus-integration-test-rest</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -84,6 +82,7 @@
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
+    <module>camel-quarkus-integration-test-jq</module>
     <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-jsch</module>
     <module>camel-quarkus-integration-test-jslt</module>
@@ -133,6 +132,7 @@
     <module>camel-quarkus-integration-test-pdf</module>
     <module>camel-quarkus-integration-test-pg-replication-slot</module>
     <module>camel-quarkus-integration-test-pgevent</module>
+    <module>camel-quarkus-integration-test-platform-http</module>
     <module>camel-quarkus-integration-test-protobuf</module>
     <module>camel-quarkus-integration-test-pubnub</module>
     <module>camel-quarkus-integration-test-quartz</module>
@@ -140,6 +140,7 @@
     <module>camel-quarkus-integration-test-rabbitmq</module>
     <module>camel-quarkus-integration-test-reactive-streams</module>
     <module>camel-quarkus-integration-test-rest-openapi</module>
+    <module>camel-quarkus-integration-test-rest</module>
     <module>camel-quarkus-integration-test-saga</module>
     <module>camel-quarkus-integration-test-salesforce</module>
     <module>camel-quarkus-integration-test-sap-netweaver</module>
