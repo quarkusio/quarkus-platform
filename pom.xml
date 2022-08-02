@@ -821,12 +821,14 @@
                                         <groupId>org.testcontainers</groupId>
                                         <groupId>org.junit.jupiter</groupId>
                                         <groupId>org.junit.platform</groupId>
+                                        <!-- https://issues.redhat.com/browse/QUARKUS-1164 -->
+                                        <groupId>com.oracle.database.jdbc</groupId>
                                     </excludeGroupIds>
-                                    <!-- exclude dependencies specifying their keys
                                     <excludeKeys>
-                                        <key>org.testcontainers:db2</key>
+                                        <!-- https://issues.redhat.com/browse/QUARKUS-1304 -->
+                                        <key>com.microsoft.sqlserver:mssql-jdbc</key>
+                                        <key>com.microsoft.azure:adal4j</key>
                                     </excludeKeys>
-                                    -->
                                     <!-- exclude specific versions of dependencies
                                     <excludeArtifacts>
                                         <artifact>org.testcontainers:database-commons:1.17.2</artifact>
