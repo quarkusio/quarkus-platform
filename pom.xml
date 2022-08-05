@@ -427,6 +427,10 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-grpc:${camel-quarkus-test-list.version}</artifact>
                                         </test>
+                                        <test><!-- Workaround camel-js-dsl tests failing with Quarkus 999-SNAPSHOT and CQ <= 2.11.0 -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
                                 <member>
