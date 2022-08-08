@@ -73,7 +73,7 @@
     <dependency>
       <groupId>com.icegreen</groupId>
       <artifactId>greenmail</artifactId>
-      <version>1.6.7</version>
+      <version>${quarkus-blaze-persistence.version}</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
