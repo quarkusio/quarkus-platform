@@ -10,9 +10,6 @@
   </parent>
   <artifactId>blaze-persistence-examples-quarkus-testsuite-native-h2</artifactId>
   <name>Quarkus Platform - Blaze-Persistence - Integration Tests - blaze-persistence-examples-quarkus-testsuite-native-h2</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>com.blazebit</groupId>
@@ -61,4 +58,58 @@
       </plugins>
     </pluginManagement>
   </build>
+  <profiles>
+    <profile>
+      <id>native-image</id>
+      <activation>
+        <property>
+          <name>native</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>integration-test</goal>
+                  <goal>verify</goal>
+                </goals>
+                <configuration>
+                  <systemProperties>
+                    <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                  </systemProperties>
+                </configuration>
+              </execution>
+            </executions>
+            <configuration>
+              <dependenciesToScan>
+                <dependency>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2</dependency>
+              </dependenciesToScan>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-maven-plugin</artifactId>
+            <version>${quarkus.version}</version>
+            <executions>
+              <execution>
+                <id>native-image</id>
+                <goals>
+                  <goal>build</goal>
+                </goals>
+                <configuration>
+                  <appArtifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2:${quarkus-blaze-persistence.version}</appArtifact>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <quarkus.package.type>native</quarkus.package.type>
+      </properties>
+    </profile>
+  </profiles>
 </project>
