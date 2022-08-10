@@ -79,7 +79,7 @@
         <quarkus-google-cloud-services.version>1.2.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>1.1.0</quarkus-vault.version>
 
-        <quarkus-platform-bom-generator.version>0.0.55</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.57</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -634,6 +634,11 @@
                             -->
                         </platformConfig>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>1.2.7</version>
                 </plugin>
             </plugins>
         </pluginManagement>
