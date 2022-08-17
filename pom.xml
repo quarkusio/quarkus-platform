@@ -277,6 +277,10 @@
                                             <project.groupId>${project.groupId}</project.groupId>
                                         </systemProperties>
                                     </defaultTestConfig>
+                                    <!--
+                                    Build step 'org.kie.kogito.infinispan.quarkus.deployment.KogitoAddOnPersistenceInfinispanProcessor#verifyCapabilities' does not produce any build item and thus will never get executed
+                                    -->
+                                    <!--
                                     <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
                                     <tests>
                                         <test>
@@ -305,6 +309,7 @@
                                             <artifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                     </tests>
+                                    -->
                                 </member>
                                 <member>
                                     <name>QpidJMS</name>
