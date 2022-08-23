@@ -13,6 +13,7 @@
   <name>Quarkus Platform - Kogito - Parent</name>
   <modules>
     <module>bom</module>
+    <module>integration-tests</module>
     <module>descriptor</module>
     <module>properties</module>
   </modules>
