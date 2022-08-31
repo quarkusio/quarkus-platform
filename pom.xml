@@ -58,7 +58,7 @@
         <quarkus.version>2.12.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.11.0</camel-quarkus.version>
+        <camel-quarkus.version>2.12.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -428,13 +428,9 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround camel-grpc tests failing with Quarkus 999-SNAPSHOT and CQ <= 2.11.0 -->
+                                        <test><!-- https://github.com/apache/camel-quarkus/issues/4058 -->
                                             <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-grpc:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround camel-js-dsl tests failing with Quarkus 999-SNAPSHOT and CQ <= 2.11.0 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-js-dsl:${camel-quarkus-test-list.version}</artifact>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
