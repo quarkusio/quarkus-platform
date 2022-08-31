@@ -77,7 +77,7 @@
         <optaplanner-quarkus.version>8.26.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>1.2.0</quarkus-google-cloud-services.version>
-        <quarkus-vault.version>2.0.0-RC1</quarkus-vault.version>
+        <quarkus-vault.version>2.0.0</quarkus-vault.version>
 
         <quarkus-platform-bom-generator.version>0.0.57</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>

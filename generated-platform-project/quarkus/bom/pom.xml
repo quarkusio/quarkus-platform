@@ -2825,17 +2825,17 @@
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault-deployment</artifactId>
-        <version>2.0.0-RC1</version>
+        <version>2.0.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault-model</artifactId>
-        <version>2.0.0-RC1</version>
+        <version>2.0.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault</artifactId>
-        <version>2.0.0-RC1</version>
+        <version>2.0.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.arc</groupId>
