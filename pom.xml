@@ -73,8 +73,8 @@
         <quarkus-blaze-persistence.version>1.6.7</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.2</quarkus-cassandra-client.version>
 
-        <kogito-quarkus.version>1.26.0.Final</kogito-quarkus.version>
-        <optaplanner-quarkus.version>8.26.0.Final</optaplanner-quarkus.version>
+        <kogito-quarkus.version>1.27.0.Final</kogito-quarkus.version>
+        <optaplanner-quarkus.version>8.27.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>1.2.1</quarkus-google-cloud-services.version>
         <quarkus-vault.version>2.0.0</quarkus-vault.version>
@@ -277,14 +277,10 @@
                                             <project.groupId>${project.groupId}</project.groupId>
                                         </systemProperties>
                                     </defaultTestConfig>
-                                    <!--
-                                    Build step 'org.kie.kogito.infinispan.quarkus.deployment.KogitoAddOnPersistenceInfinispanProcessor#verifyCapabilities' does not produce any build item and thus will never get executed
-                                    -->
                                     <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
                                     <tests>
                                         <test>
                                             <packageApplication>true</packageApplication>
-                                            <excluded>true</excluded><!-- to enable back on Kogito 1.27 -->
                                             <artifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
@@ -296,17 +292,44 @@
                                             <artifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
-                                            <excluded>true</excluded>
-                                            <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test-session:${kogito-quarkus.version}</artifact>
-                                        </test>
-                                        <test>
+                                            <!-- 
+                                                Problem in https://github.com/kiegroup/kogito-runtimes/blob/d8fda957a793c4007f92156ccd4eb5d33cd51977/quarkus/extensions/kogito-quarkus-decisions-extension/kogito-quarkus-decisions-integration-test/src/test/java/org/kie/kogito/quarkus/dmn/KogitoDMNCodeCodestartIT.java#L63 
+                                                2022-09-01T13:31:50.5121621Z [ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.054 s <<< FAILURE! - in org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT
+                                                2022-09-01T13:31:50.5121621Z [ERROR] testContent  Time elapsed: 0.07 s  <<< ERROR!
+                                                2022-09-01T13:31:50.5122239Z java.lang.NullPointerException
+                                                2022-09-01T13:31:50.5123228Z 	at org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT.testContent(KogitoDMNCodeCodestartIT.java:63)
+                                            -->
                                             <excluded>true</excluded>
                                             <packageApplication>true</packageApplication>
                                             <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
+                                            <!-- 
+                                                2022-09-01T13:35:02.5384549Z [INFO] 
+                                                2022-09-01T13:35:02.5390848Z [INFO] Results:
+                                                2022-09-01T13:35:02.5407095Z [INFO] 
+                                                2022-09-01T13:35:02.5407743Z [ERROR] Failures: 
+                                                2022-09-01T13:35:02.5409306Z [ERROR]   CustomEndpointIT.testHelloEndpoint:43 1 expectation failed.
+                                                2022-09-01T13:35:02.5409920Z Expected status code <200> but was <500>.
+                                                2022-09-01T13:35:02.5410746Z 
+                                                2022-09-01T13:35:02.5411186Z [ERROR]   PMMLRegressionIT.testEvaluateLinRegDescriptive:49 1 expectation failed.
+                                                2022-09-01T13:35:02.5412206Z Expected status code <200> but was <500>.
+                                                2022-09-01T13:35:02.5412561Z 
+                                                2022-09-01T13:35:02.5413380Z [ERROR]   PMMLRegressionIT.testEvaluateLinRegResult:42 1 expectation failed.
+                                                2022-09-01T13:35:02.5413971Z Expected status code <200> but was <500>.
+                                                2022-09-01T13:35:02.0673251Z Caused by: org.kie.pmml.api.exceptions.KiePMMLException: Wrong number of model(s) with name 'LinReg': 0
+                                                2022-09-01T13:35:02.0674014Z 	at org.kie.kogito.pmml.PMMLKogito.modelByName(PMMLKogito.java:79)
+                                                2022-09-01T13:35:02.0674956Z 	at org.kie.kogito.pmml.PmmlPredictionModel.<init>(PmmlPredictionModel.java:39)
+                                                2022-09-01T13:35:02.0675972Z 	at org.kie.kogito.pmml.AbstractPredictionModels.getPredictionModel(AbstractPredictionModels.java:49)
+                                                2022-09-01T13:35:02.0677057Z 	at org.kie.kogito.app.PredictionModels_ClientProxy.getPredictionModel(Unknown Source)
+                                                2022-09-01T13:35:02.0677858Z 	at org.kie.kogito.pmml.AbstractPMMLRestResource.descriptive(AbstractPMMLRestResource.java:32)
+                                                2022-09-01T13:35:02.0678921Z 	at org.kie.kogito.org_46kie_46pmml_46models_46regression_46model.LinRegResource.descriptive(LinRegResource.java:53)
+                                            -->
+                                            <excluded>true</excluded>
+                                            <artifact>org.kie.kogito:kogito-quarkus-predictions-integration-test:${kogito-quarkus.version}</artifact>
+                                        </test>
+                                        <test>
                                             <packageApplication>true</packageApplication>
-                                            <excluded>true</excluded><!-- to enable back on Kogito 1.27 -->
                                             <artifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                     </tests>
