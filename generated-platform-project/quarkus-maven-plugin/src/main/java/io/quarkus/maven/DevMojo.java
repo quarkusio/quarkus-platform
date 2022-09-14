@@ -67,6 +67,7 @@ import org.eclipse.aether.RepositorySystem;
 import org.eclipse.aether.RepositorySystemSession;
 import org.eclipse.aether.artifact.DefaultArtifact;
 import org.eclipse.aether.collection.CollectRequest;
+import org.eclipse.aether.graph.Exclusion;
 import org.eclipse.aether.impl.RemoteRepositoryManager;
 import org.eclipse.aether.repository.RemoteRepository;
 import org.eclipse.aether.repository.WorkspaceReader;
@@ -616,7 +617,7 @@ public class DevMojo extends AbstractMojo {
             return;
         }
         getLog().info("Invoking " + plugin.getGroupId() + ":" + plugin.getArtifactId() + ":" + plugin.getVersion() + ":" + goal
-                + ") @ " + project.getArtifactId());
+                + " @ " + project.getArtifactId());
         executeMojo(
                 plugin(
                         groupId(pluginGroupId),
@@ -1075,7 +1076,7 @@ public class DevMojo extends AbstractMojo {
             }
         }
 
-        addQuarkusDevModeDeps(builder);
+        addQuarkusDevModeDeps(builder, appModel);
         //look for an application.properties
         Set<Path> resourceDirs = new HashSet<>();
         for (Resource resource : project.getResources()) {
@@ -1096,10 +1097,10 @@ public class DevMojo extends AbstractMojo {
         for (Artifact appDep : project.getArtifacts()) {
             // only add the artifact if it's present in the dev mode context
             // we need this to avoid having jars on the classpath multiple times
-            ArtifactKey key = ArtifactKey.of(appDep.getGroupId(), appDep.getArtifactId(),
+            final ArtifactKey key = ArtifactKey.of(appDep.getGroupId(), appDep.getArtifactId(),
                     appDep.getClassifier(), appDep.getArtifactHandler().getExtension());
             if (!builder.isLocal(key) && configuredParentFirst.contains(key)) {
-                builder.classpathEntry(appDep.getFile());
+                builder.classpathEntry(key, appDep.getFile());
             }
         }
 
@@ -1163,9 +1164,23 @@ public class DevMojo extends AbstractMojo {
                 .ifPresent(builderCall);
     }
 
-    private void addQuarkusDevModeDeps(MavenDevModeLauncher.Builder builder)
+    private void addQuarkusDevModeDeps(MavenDevModeLauncher.Builder builder, ApplicationModel appModel)
             throws MojoExecutionException, DependencyResolutionException {
-        final String pomPropsPath = "META-INF/maven/io.quarkus/quarkus-core-deployment/pom.properties";
+
+        ResolvedDependency coreDeployment = null;
+        for (ResolvedDependency d : appModel.getDependencies()) {
+            if (d.isDeploymentCp() && d.getArtifactId().equals("quarkus-core-deployment")
+                    && d.getGroupId().equals("io.quarkus")) {
+                coreDeployment = d;
+                break;
+            }
+        }
+        if (coreDeployment == null) {
+            throw new MojoExecutionException(
+                    "Failed to locate io.quarkus:quarkus-core-deployment on the application build classpath");
+        }
+
+        final String pomPropsPath = "META-INF/maven/io.quarkus/quarkus-bootstrap-maven-resolver/pom.properties";
         final InputStream devModePomPropsIs = DevModeMain.class.getClassLoader().getResourceAsStream(pomPropsPath);
         if (devModePomPropsIs == null) {
             throw new MojoExecutionException("Failed to locate " + pomPropsPath + " on the classpath");
@@ -1189,23 +1204,51 @@ public class DevMojo extends AbstractMojo {
             throw new MojoExecutionException("Classpath resource " + pomPropsPath + " is missing version");
         }
 
-        final DefaultArtifact devModeJar = new DefaultArtifact(devModeGroupId, devModeArtifactId, "jar", devModeVersion);
+        final List<org.eclipse.aether.graph.Dependency> managed = new ArrayList<>(
+                project.getDependencyManagement().getDependencies().size());
+        project.getDependencyManagement().getDependencies().forEach(d -> {
+            final List<Exclusion> exclusions;
+            if (!d.getExclusions().isEmpty()) {
+                exclusions = new ArrayList<>(d.getExclusions().size());
+                d.getExclusions().forEach(e -> exclusions.add(new Exclusion(e.getGroupId(), e.getArtifactId(), null, null)));
+            } else {
+                exclusions = List.of();
+            }
+            managed.add(new org.eclipse.aether.graph.Dependency(
+                    new DefaultArtifact(d.getGroupId(), d.getArtifactId(), d.getClassifier(), d.getType(), d.getVersion()),
+                    d.getScope(), d.isOptional(), exclusions));
+        });
+
+        final DefaultArtifact devModeJar = new DefaultArtifact(devModeGroupId, devModeArtifactId, ArtifactCoords.TYPE_JAR,
+                devModeVersion);
         final DependencyResult cpRes = repoSystem.resolveDependencies(repoSession,
                 new DependencyRequest()
                         .setCollectRequest(
                                 new CollectRequest()
-                                        .setRoot(new org.eclipse.aether.graph.Dependency(devModeJar, JavaScopes.RUNTIME))
+                                        // it doesn't matter what the root artifact is, it's an alias
+                                        .setRootArtifact(new DefaultArtifact("io.quarkus", "quarkus-devmode-alias",
+                                                ArtifactCoords.TYPE_JAR, "1.0"))
+                                        .setManagedDependencies(managed)
+                                        .setDependencies(List.of(
+                                                new org.eclipse.aether.graph.Dependency(devModeJar, JavaScopes.RUNTIME),
+                                                new org.eclipse.aether.graph.Dependency(new DefaultArtifact(
+                                                        coreDeployment.getGroupId(), coreDeployment.getArtifactId(),
+                                                        coreDeployment.getClassifier(), coreDeployment.getType(),
+                                                        coreDeployment.getVersion()), JavaScopes.RUNTIME)))
                                         .setRepositories(repos)));
 
         for (ArtifactResult appDep : cpRes.getArtifactResults()) {
             //we only use the launcher for launching from the IDE, we need to exclude it
-            if (!(appDep.getArtifact().getGroupId().equals("io.quarkus")
-                    && appDep.getArtifact().getArtifactId().equals("quarkus-ide-launcher"))) {
-                if (appDep.getArtifact().getGroupId().equals("io.quarkus")
-                        && appDep.getArtifact().getArtifactId().equals("quarkus-class-change-agent")) {
-                    builder.jvmArgs("-javaagent:" + appDep.getArtifact().getFile().getAbsolutePath());
+            final org.eclipse.aether.artifact.Artifact a = appDep.getArtifact();
+            if (!(a.getArtifactId().equals("quarkus-ide-launcher")
+                    && a.getGroupId().equals("io.quarkus"))) {
+                if (a.getArtifactId().equals("quarkus-class-change-agent")
+                        && a.getGroupId().equals("io.quarkus")) {
+                    builder.jvmArgs("-javaagent:" + a.getFile().getAbsolutePath());
                 } else {
-                    builder.classpathEntry(appDep.getArtifact().getFile());
+                    builder.classpathEntry(
+                            ArtifactKey.of(a.getGroupId(), a.getArtifactId(), a.getClassifier(), a.getExtension()),
+                            a.getFile());
                 }
             }
         }
