@@ -2958,7 +2958,7 @@
       <dependency>
         <groupId>com.google.cloud.tools</groupId>
         <artifactId>jib-core</artifactId>
-        <version>0.21.0</version>
+        <version>0.22.0</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
