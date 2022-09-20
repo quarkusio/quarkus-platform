@@ -6238,6 +6238,76 @@
         <version>1.1.0</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-deployment</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-features-logging-deployment</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-features-logging</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-features-metrics-deployment</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-features-metrics</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-transports-http-hc5-deployment</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-transports-http-hc5</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-ws-security-deployment</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-rt-ws-security</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-woodstox-deployment</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf-woodstox</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.cxf</groupId>
+        <artifactId>quarkus-cxf</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.freemarker</groupId>
+        <artifactId>quarkus-freemarker-deployment</artifactId>
+        <version>0.3.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.freemarker</groupId>
+        <artifactId>quarkus-freemarker</artifactId>
+        <version>0.3.0</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-bigquery-deployment</artifactId>
         <version>1.2.1</version>
@@ -6323,6 +6393,77 @@
         <version>1.2.1</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.jackson-jq</groupId>
+        <artifactId>quarkus-jackson-jq-deployment</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jackson-jq</groupId>
+        <artifactId>quarkus-jackson-jq</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jgit</groupId>
+        <artifactId>quarkus-jgit-deployment</artifactId>
+        <version>2.2.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jgit</groupId>
+        <artifactId>quarkus-jgit</artifactId>
+        <version>2.2.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jsch</groupId>
+        <artifactId>quarkus-jsch-deployment</artifactId>
+        <version>2.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jsch</groupId>
+        <artifactId>quarkus-jsch</artifactId>
+        <version>2.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.minio</groupId>
+        <artifactId>quarkus-minio-deployment</artifactId>
+        <version>2.9.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.minio</groupId>
+        <artifactId>quarkus-minio</artifactId>
+        <version>2.9.2</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mybatis</groupId>
+        <artifactId>quarkus-mybatis-deployment</artifactId>
+        <version>1.0.4</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mybatis</groupId>
+        <artifactId>quarkus-mybatis</artifactId>
+        <version>1.0.4</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.operatorsdk</groupId>
+        <artifactId>quarkus-operator-sdk</artifactId>
+        <version>4.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.tika</groupId>
+        <artifactId>quarkus-tika-deployment</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.tika</groupId>
+        <artifactId>quarkus-tika</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault-deployment</artifactId>
         <version>2.0.0</version>
@@ -6336,6 +6477,16 @@
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault</artifactId>
         <version>2.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.xmlsec</groupId>
+        <artifactId>quarkus-xmlsec-deployment</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.xmlsec</groupId>
+        <artifactId>quarkus-xmlsec</artifactId>
+        <version>1.1.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.arc</groupId>
