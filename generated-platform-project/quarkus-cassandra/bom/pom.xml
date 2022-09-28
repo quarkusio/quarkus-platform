@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkus.platform</groupId>
   <artifactId>quarkus-cassandra-bom</artifactId>
-  <version>2.13.0.Final</version>
+  <version>999-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Cassandra - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -27,7 +27,6 @@
   <scm>
     <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
     <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-    <tag>2.13.0.Final</tag>
     <url>https://github.com/quarkusio/quarkus-platform</url>
   </scm>
   <issueManagement>
@@ -49,14 +48,14 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-cassandra-bom-quarkus-platform-descriptor</artifactId>
-        <version>2.13.0.Final</version>
+        <version>999-SNAPSHOT</version>
         <type>json</type>
-        <classifier>2.13.0.Final</classifier>
+        <classifier>999-SNAPSHOT</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-cassandra-bom-quarkus-platform-properties</artifactId>
-        <version>2.13.0.Final</version>
+        <version>999-SNAPSHOT</version>
         <type>properties</type>
       </dependency>
       <dependency>
