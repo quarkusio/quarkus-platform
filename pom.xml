@@ -79,7 +79,7 @@
         <quarkus-google-cloud-services.version>1.2.1</quarkus-google-cloud-services.version>
         <quarkus-vault.version>2.0.0</quarkus-vault.version>
 
-        <quarkus-platform-bom-generator.version>0.0.57</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.61</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -556,8 +556,6 @@
                             </members>
                             <!-- Platform BOM generator configuration -->
                             <bomGenerator>
-                                <enableNonMemberQuarkiverseExtensions>true</enableNonMemberQuarkiverseExtensions>
-
                                 <!-- Config to enforce specific versions and excluding dependencies -->
                                 <!-- -->
                                 <enforcedDependencies>
