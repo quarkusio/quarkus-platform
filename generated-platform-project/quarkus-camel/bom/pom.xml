@@ -888,12 +888,12 @@
       <dependency>
         <groupId>io.quarkiverse.jackson-jq</groupId>
         <artifactId>quarkus-jackson-jq-deployment</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.jackson-jq</groupId>
         <artifactId>quarkus-jackson-jq</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.jgit</groupId>

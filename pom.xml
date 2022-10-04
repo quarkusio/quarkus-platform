@@ -558,12 +558,10 @@
                             <!-- Platform BOM generator configuration -->
                             <bomGenerator>
                                 <!-- Config to enforce specific versions and excluding dependencies -->
-                                <!-- -->
-                                <enforcedDependencies>
-                                    <dependency>io.quarkiverse.jackson-jq:quarkus-jackson-jq:1.0.1</dependency>
-                                    <dependency>io.quarkiverse.jackson-jq:quarkus-jackson-jq-deployment:1.0.1</dependency>
-                                </enforcedDependencies>
                                 <!--
+                                <enforcedDependencies>
+                                    <dependency>groupId:artifactId:desired-version</dependency>
+                                </enforcedDependencies>
                                 <excludedDependencies>
                                     <dependency>groupId:artifactId</dependency>
                                 </excludedDependencies>
