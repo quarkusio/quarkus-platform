@@ -312,7 +312,7 @@
       "artifact-id": "quarkus-mailer",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "supported"
         ]
       }
     },
