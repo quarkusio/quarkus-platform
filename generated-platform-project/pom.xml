@@ -24,6 +24,7 @@
     <module>quarkus-debezium</module>
     <module>quarkus-blaze-persistence</module>
     <module>quarkus-google-cloud-services</module>
+    <module>quarkus-operator-sdk</module>
     <module>quarkus-maven-plugin</module>
   </modules>
   <properties>
