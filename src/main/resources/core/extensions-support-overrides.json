@@ -426,15 +426,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-opentelemetry-exporter-jaeger",
-      "metadata": {
-        "redhat-support": [
-          "tech-preview"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-quartz",
       "metadata": {
         "redhat-support": [
