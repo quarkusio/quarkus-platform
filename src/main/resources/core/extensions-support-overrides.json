@@ -501,7 +501,7 @@
       "artifact-id": "quarkus-reactive-routes",
       "metadata": {
         "redhat-support": [
-          "supported"
+          "deprecated"
         ]
       }
     },
@@ -546,7 +546,7 @@
       "artifact-id": "quarkus-rest-client-mutiny",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "deprecated"
         ]
       }
     },
@@ -618,7 +618,7 @@
       "artifact-id": "quarkus-resteasy-mutiny",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "deprecated"
         ]
       }
     },
