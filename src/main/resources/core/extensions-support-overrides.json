@@ -393,7 +393,7 @@
       "artifact-id": "quarkus-oidc-client-reactive-filter",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "supported"
         ]
       }
     },
