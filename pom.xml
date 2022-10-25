@@ -437,12 +437,9 @@
                                         </nativeSystemProperties>
                                         <transformWith>${resourcesdir}/xslt/camel/test-pom.xsl</transformWith>
                                     </defaultTestConfig>
+
                                     <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-test-list.version}</testCatalogArtifact>
                                     <tests>
-                                        <test><!-- Workaround for weird issue with shared networking & keycloak container -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                         <test><!-- Workaround flaky file test https://github.com/apache/camel-quarkus/issues/3627 -->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-file:${camel-quarkus-test-list.version}</artifact>

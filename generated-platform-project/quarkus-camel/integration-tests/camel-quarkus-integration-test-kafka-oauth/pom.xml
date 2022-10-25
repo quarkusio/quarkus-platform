@@ -8,9 +8,6 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-kafka-oauth</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-kafka-oauth</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -121,6 +118,7 @@
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
+            <jdk.net.hosts.file>target/hosts</jdk.net.hosts.file>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
@@ -170,6 +168,7 @@
                 </goals>
                 <configuration>
                   <systemProperties>
+                    <quarkus.test.arg-line>-Djdk.net.hosts.file=target/hosts</quarkus.test.arg-line>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                     <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
                     <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
@@ -195,7 +194,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

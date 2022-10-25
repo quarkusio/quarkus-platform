@@ -112,11 +112,24 @@
         </xsl:copy>
     </xsl:template>
 
-  <!-- Forward solr.trust-store to the tests via surefire plugin -->
+  <!-- Add system property variables needed in Solr & Kafka Oauth Native Integration test -->
     <xsl:template match="//*[local-name() = 'systemPropertyVariables']">
         <xsl:copy>
             <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-solr'">
                 <javax.net.ssl.trustStore>${solr.trust-store}</javax.net.ssl.trustStore>
+            </xsl:if>
+            <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-kafka-oauth'">
+                <jdk.net.hosts.file>target/hosts</jdk.net.hosts.file>
+            </xsl:if>
+            <xsl:apply-templates select="@* | node()" />
+        </xsl:copy>
+    </xsl:template>
+
+    <!-- Add system property needed in Kafka Oauth Native Integration test -->
+    <xsl:template match="//*[local-name() = 'systemProperties']">
+        <xsl:copy>
+            <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-kafka-oauth'">
+                <quarkus.test.arg-line>-Djdk.net.hosts.file=target/hosts</quarkus.test.arg-line>
             </xsl:if>
             <xsl:apply-templates select="@* | node()" />
         </xsl:copy>
