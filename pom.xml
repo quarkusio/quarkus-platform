@@ -562,7 +562,7 @@
                                         <next>${platform.groupId}:quarkus-operator-sdk-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
-                                        <skip>false</skip>
+                                        <skip>true</skip>
                                     </defaultTestConfig>
                                     <tests>
                                         <test>
