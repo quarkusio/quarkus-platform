@@ -61,23 +61,10 @@
             <version>${platform.release}</version>
             <members>
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-optaplanner-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-kogito-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-camel-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-debezium-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-operator-sdk-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
           <processGroupIds>
             <groupId>io.quarkus</groupId>
-            <groupId>io.quarkiverse.config</groupId>
-            <groupId>io.quarkiverse.vault</groupId>
           </processGroupIds>
           <ignoredArtifacts>
             <artifact>io.quarkus:quarkus-amazon-common</artifact>
