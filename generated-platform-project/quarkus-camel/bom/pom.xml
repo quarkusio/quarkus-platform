@@ -964,7 +964,7 @@
       <dependency>
         <groupId>io.smallrye.reactive</groupId>
         <artifactId>smallrye-reactive-messaging-camel</artifactId>
-        <version>3.20.0</version>
+        <version>3.21.0</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -10598,22 +10598,22 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-api</artifactId>
-        <version>3.2.3</version>
+        <version>3.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-file</artifactId>
-        <version>3.2.3</version>
+        <version>3.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-json</artifactId>
-        <version>3.2.3</version>
+        <version>3.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-runtime</artifactId>
-        <version>3.2.3</version>
+        <version>3.3.1</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -10660,7 +10660,7 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-transforms</artifactId>
-        <version>3.2.3</version>
+        <version>3.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kudu</groupId>
