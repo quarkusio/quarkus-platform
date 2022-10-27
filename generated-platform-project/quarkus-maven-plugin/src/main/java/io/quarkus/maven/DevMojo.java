@@ -43,7 +43,6 @@ import org.apache.maven.artifact.Artifact;
 import org.apache.maven.execution.MavenSession;
 import org.apache.maven.model.BuildBase;
 import org.apache.maven.model.Dependency;
-import org.apache.maven.model.Model;
 import org.apache.maven.model.Plugin;
 import org.apache.maven.model.PluginExecution;
 import org.apache.maven.model.Profile;
@@ -121,8 +120,6 @@ import io.smallrye.common.expression.Expression;
 @Mojo(name = "dev", defaultPhase = LifecyclePhase.PREPARE_PACKAGE, requiresDependencyResolution = ResolutionScope.TEST, threadSafe = true)
 public class DevMojo extends AbstractMojo {
 
-    private static final String EXT_PROPERTIES_PATH = "META-INF/quarkus-extension.properties";
-
     private static final String KOTLIN_MAVEN_PLUGIN_GA = "org.jetbrains.kotlin:kotlin-maven-plugin";
 
     /**
@@ -176,6 +173,7 @@ public class DevMojo extends AbstractMojo {
     private static final String ORG_JETBRAINS_KOTLIN = "org.jetbrains.kotlin";
     private static final String KOTLIN_MAVEN_PLUGIN = "kotlin-maven-plugin";
 
+    private static final String IO_SMALLRYE = "io.smallrye";
     private static final String ORG_JBOSS_JANDEX = "org.jboss.jandex";
     private static final String JANDEX_MAVEN_PLUGIN = "jandex-maven-plugin";
 
@@ -223,6 +221,14 @@ public class DevMojo extends AbstractMojo {
 
     @Parameter(defaultValue = "${open-lang-package}")
     private boolean openJavaLang;
+
+    /**
+     * Allows configuring the modules to add to the application.
+     * The listed modules will be added using: {@code --add-modules m1,m2...}.
+     */
+    @Parameter(defaultValue = "${add-modules}")
+    private List<String> modules;
+
     /**
      * Whether the JVM launch, in debug mode, should be suspended. This parameter is only
      * relevant when the JVM is launched in {@link #debug debug mode}. This parameter supports the
@@ -441,7 +447,7 @@ public class DevMojo extends AbstractMojo {
                         try {
                             triggerCompile(false, false);
                             triggerCompile(true, false);
-                            newRunner = new DevModeRunner();
+                            newRunner = new DevModeRunner(runner.launcher.getDebugPortOk());
                         } catch (Exception e) {
                             getLog().info("Could not load changed pom.xml file, changes not applied", e);
                             continue;
@@ -519,8 +525,9 @@ public class DevMojo extends AbstractMojo {
         boolean prepareNeeded = true;
         boolean prepareTestsNeeded = true;
 
-        String jandexGoalPhase = getGoalPhaseOrNull(ORG_JBOSS_JANDEX, JANDEX_MAVEN_PLUGIN, "jandex", "process-classes");
-        boolean indexClassNeeded = jandexGoalPhase != null;
+        String jandexGoalPhase = getGoalPhaseOrNull(IO_SMALLRYE, JANDEX_MAVEN_PLUGIN, "jandex", "process-classes");
+        String legacyJandexGoalPhase = getGoalPhaseOrNull(ORG_JBOSS_JANDEX, JANDEX_MAVEN_PLUGIN, "jandex", "process-classes");
+        boolean indexClassNeeded = legacyJandexGoalPhase != null || jandexGoalPhase != null;
 
         List<String> goals = session.getGoals();
         // check for default goal(s) if none were specified explicitly,
@@ -544,6 +551,10 @@ public class DevMojo extends AbstractMojo {
                     && POST_COMPILE_PHASES.indexOf(goal) >= POST_COMPILE_PHASES.indexOf(jandexGoalPhase)) {
                 indexClassNeeded = false;
             }
+            if (jandexGoalPhase == null && legacyJandexGoalPhase != null
+                    && POST_COMPILE_PHASES.indexOf(goal) >= POST_COMPILE_PHASES.indexOf(legacyJandexGoalPhase)) {
+                indexClassNeeded = false;
+            }
 
             if (POST_TEST_COMPILE_PHASES.contains(goal)) {
                 testCompileNeeded = false;
@@ -558,7 +569,7 @@ public class DevMojo extends AbstractMojo {
             triggerCompile(false, prepareNeeded);
         }
         if (indexClassNeeded) {
-            initClassIndexes();
+            initClassIndexes(jandexGoalPhase == null);
         }
         if (testCompileNeeded) {
             try {
@@ -580,8 +591,12 @@ public class DevMojo extends AbstractMojo {
                 Map.of("mode", LaunchMode.DEVELOPMENT.name(), QuarkusBootstrapMojo.CLOSE_BOOTSTRAPPED_APP, "false"));
     }
 
-    private void initClassIndexes() throws MojoExecutionException {
-        executeIfConfigured(ORG_JBOSS_JANDEX, JANDEX_MAVEN_PLUGIN, "jandex", Collections.emptyMap());
+    private void initClassIndexes(boolean legacyJandex) throws MojoExecutionException {
+        if (legacyJandex) {
+            executeIfConfigured(ORG_JBOSS_JANDEX, JANDEX_MAVEN_PLUGIN, "jandex", Collections.emptyMap());
+        } else {
+            executeIfConfigured(IO_SMALLRYE, JANDEX_MAVEN_PLUGIN, "jandex", Collections.emptyMap());
+        }
     }
 
     private PluginDescriptor getPluginDescriptor() {
@@ -892,7 +907,11 @@ public class DevMojo extends AbstractMojo {
         private Process process;
 
         private DevModeRunner() throws Exception {
-            launcher = newLauncher();
+            launcher = newLauncher(null);
+        }
+
+        private DevModeRunner(Boolean debugPortOk) throws Exception {
+            launcher = newLauncher(debugPortOk);
         }
 
         Collection<Path> pomFiles() {
@@ -946,7 +965,7 @@ public class DevMojo extends AbstractMojo {
         }
     }
 
-    private QuarkusDevModeLauncher newLauncher() throws Exception {
+    private QuarkusDevModeLauncher newLauncher(Boolean debugPortOk) throws Exception {
         String java = null;
         // See if a toolchain is configured
         if (toolchainManager != null) {
@@ -965,6 +984,7 @@ public class DevMojo extends AbstractMojo {
                 .debug(debug)
                 .debugHost(debugHost)
                 .debugPort(debugPort)
+                .debugPortOk(debugPortOk)
                 .deleteDevJar(deleteDevJar);
 
         setJvmArgs(builder);
@@ -975,6 +995,12 @@ public class DevMojo extends AbstractMojo {
         if (openJavaLang) {
             builder.jvmArgs("--add-opens");
             builder.jvmArgs("java.base/java.lang=ALL-UNNAMED");
+        }
+
+        if (modules != null && !modules.isEmpty()) {
+            String mods = String.join(",", this.modules);
+            builder.jvmArgs("--add-modules");
+            builder.jvmArgs(mods);
         }
 
         builder.projectDir(project.getFile().getParentFile());
@@ -1081,11 +1107,7 @@ public class DevMojo extends AbstractMojo {
                 mvnConfig.setRepositorySystemSession(repoSession).setRepositorySystem(repoSystem);
                 // there could be Maven extensions manipulating the project versions and models
                 // the ones returned from the Maven API could be different from the original pom.xml files
-                final Map<Path, Model> projectModels = new HashMap<>(session.getAllProjects().size());
-                for (MavenProject mp : session.getAllProjects()) {
-                    projectModels.put(mp.getBasedir().toPath(), mp.getOriginalModel());
-                }
-                mvnConfig.setProjectModelProvider(projectModels::get);
+                mvnConfig.setProjectModelProvider(QuarkusBootstrapProvider.getProjectMap(session)::get);
             }
 
             final BootstrapMavenContext mvnCtx = new BootstrapMavenContext(mvnConfig);

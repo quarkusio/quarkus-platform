@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.13.2.Final</quarkus.version>
+        <quarkus.version>2.14.0.CR1</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>2.13.0</camel-quarkus.version>
@@ -78,7 +78,7 @@
 
         <quarkus-google-cloud-services.version>1.2.1</quarkus-google-cloud-services.version>
         <quarkus-vault.version>2.0.0</quarkus-vault.version>
-        <quarkus-operator-sdk.version>4.0.3</quarkus-operator-sdk.version>
+        <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.63</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
@@ -422,7 +422,7 @@
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
-                                        <skip>false</skip>
+                                        <skip>true</skip>
                                         <jvmSystemProperties>
                                             <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
                                             <quarkus.http.test-ssl-port>$${test.https.port.jvm}</quarkus.http.test-ssl-port>
@@ -495,7 +495,7 @@
                                     </release>
                                     <tests>
                                         <test>
-                                            <skip>false</skip>
+                                            <skip>true</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</artifact>
                                         </test>
                                     </tests>

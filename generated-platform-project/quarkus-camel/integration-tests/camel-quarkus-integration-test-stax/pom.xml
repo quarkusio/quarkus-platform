@@ -8,6 +8,9 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-stax</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-stax</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -160,6 +163,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-stax:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
