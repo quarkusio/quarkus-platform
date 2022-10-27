@@ -420,6 +420,7 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:2.14.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
+                                    <hidden>true</hidden>
                                     <defaultTestConfig>
                                         <skip>true</skip>
                                         <jvmSystemProperties>
@@ -492,6 +493,7 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:2.14.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                     </release>
+                                    <hidden>true</hidden>
                                     <tests>
                                         <test>
                                             <skip>true</skip>
