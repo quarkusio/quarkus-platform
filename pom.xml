@@ -296,8 +296,7 @@
                                         <test>
                                             <!-- 
                                                 Problem in https://github.com/kiegroup/kogito-runtimes/blob/d8fda957a793c4007f92156ccd4eb5d33cd51977/quarkus/extensions/kogito-quarkus-decisions-extension/kogito-quarkus-decisions-integration-test/src/test/java/org/kie/kogito/quarkus/dmn/KogitoDMNCodeCodestartIT.java#L63 
-                                                2022-09-01T13:31:50.5121621Z [ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.054 s <<< FAILURE! - in org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT 2022-09-01T13:31:50.5121621Z [ERROR] testContent Time elapsed: 0.07 s <<< ERROR! 2022-09-01T13:31:50.5122239Z java.lang.NullPointerException
-                                                2022-09-01T13:31:50.5123228Z 	at org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT.testContent(KogitoDMNCodeCodestartIT.java:63)
+                                                2022-09-01T13:31:50.5121621Z [ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.054 s <<< FAILURE! - in org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT 2022-09-01T13:31:50.5121621Z [ERROR] testContent Time elapsed: 0.07 s <<< ERROR! 2022-09-01T13:31:50.5122239Z java.lang.NullPointerException 2022-09-01T13:31:50.5123228Z 	at org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT.testContent(KogitoDMNCodeCodestartIT.java:63)
                                             -->
                                             <excluded>true</excluded>
                                             <packageApplication>true</packageApplication>
