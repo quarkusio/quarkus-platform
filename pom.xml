@@ -360,7 +360,7 @@
                                         <next>${platform.groupId}:quarkus-cassandra-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
-                                        <skip>true</skip>
+                                        <skip>false</skip>
                                         <mavenFailsafePlugin>true</mavenFailsafePlugin>
                                         <groups>!native</groups>
                                         <nativeGroups>native</nativeGroups>
