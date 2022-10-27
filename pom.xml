@@ -72,6 +72,7 @@
         <debezium-quarkus-outbox.version>1.9.6.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.7</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.1.2</quarkus-cassandra-client.version>
+        <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
 
         <kogito-quarkus.version>1.29.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.29.0.Final</optaplanner-quarkus.version>
@@ -355,26 +356,26 @@
                                         <next>${platform.groupId}:quarkus-cassandra-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
-                                        <skip>true</skip>
+                                        <skip>false</skip>
                                         <mavenFailsafePlugin>true</mavenFailsafePlugin>
                                         <groups>!native</groups>
                                         <nativeGroups>native</nativeGroups>
                                     </defaultTestConfig>
                                     <tests>
                                         <test>
-                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-main:${quarkus-cassandra-client.version}</artifact>
+                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-main:${quarkus-cassandra-client-test.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-disabled:${quarkus-cassandra-client.version}</artifact>
+                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-disabled:${quarkus-cassandra-client-test.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile:${quarkus-cassandra-client.version}</artifact>
+                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-metrics-microprofile:${quarkus-cassandra-client-test.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-no-mapper:${quarkus-cassandra-client.version}</artifact>
+                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-no-mapper:${quarkus-cassandra-client-test.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-dse:${quarkus-cassandra-client.version}</artifact>
+                                            <artifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-dse:${quarkus-cassandra-client-test.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
