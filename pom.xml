@@ -422,7 +422,7 @@
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
-                                        <skip>false</skip>
+                                        <skip>true</skip>
                                         <jvmSystemProperties>
                                             <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
                                             <quarkus.http.test-ssl-port>$${test.https.port.jvm}</quarkus.http.test-ssl-port>
@@ -495,7 +495,7 @@
                                     </release>
                                     <tests>
                                         <test>
-                                            <skip>false</skip>
+                                            <skip>true</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</artifact>
                                         </test>
                                     </tests>

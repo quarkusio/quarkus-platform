@@ -10,6 +10,9 @@
   </parent>
   <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
   <name>Quarkus Platform - Debezium-Outbox - Integration Tests - debezium-quarkus-outbox-integration-tests</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>io.debezium</groupId>
@@ -136,6 +139,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</appArtifact>
                 </configuration>
               </execution>
