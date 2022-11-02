@@ -35,13 +35,13 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: current-repo
           ref: main
 
       - name: Checkout Ecosystem
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: ${{ env.ECOSYSTEM_CI_REPO }}
           ref: main
