@@ -81,7 +81,7 @@
         <quarkus-vault.version>2.0.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.63</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.62</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -492,10 +492,9 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:2.14.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                     </release>
-                                    <hidden>true</hidden>
                                     <tests>
                                         <test>
-                                            <skip>true</skip>
+                                            <skip>false</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</artifact>
                                         </test>
                                     </tests>
