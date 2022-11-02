@@ -492,10 +492,9 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:2.14.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                     </release>
-                                    <hidden>true</hidden>
                                     <tests>
                                         <test>
-                                            <skip>true</skip>
+                                            <skip>false</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</artifact>
                                         </test>
                                     </tests>
