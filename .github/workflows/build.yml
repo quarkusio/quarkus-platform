@@ -120,7 +120,7 @@ jobs:
         shell: bash
 
       - name: Check that generated project is properly updated
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         if: ${{ steps.get-changes.outputs.changes > 0 }}
         with:
           script: |
