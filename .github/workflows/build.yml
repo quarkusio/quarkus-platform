@@ -36,7 +36,7 @@ jobs:
         run: |
           echo -n ${{ github.event.number }} > pull-request-number
       - name: Upload pull request number
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: pull-request-number-${{ github.event.number }}
           path: pull-request-number
@@ -73,7 +73,7 @@ jobs:
         shell: bash
         run: rm -rf ~/.m2/repository/io/quarkus/quarkus-universe-bom*
       - name: Upload build reports (if build failed)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: ${{ failure() || cancelled() }}
         with:
           name: "build-reports-Build - JDK ${{ matrix.java }}"
