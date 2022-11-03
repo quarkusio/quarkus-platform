@@ -10,9 +10,6 @@
   </parent>
   <artifactId>cassandra-quarkus-integration-tests-dse</artifactId>
   <name>Quarkus Platform - Cassandra - Integration Tests - cassandra-quarkus-integration-tests-dse</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>com.datastax.oss.quarkus</groupId>
@@ -163,7 +160,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>com.datastax.oss.quarkus:cassandra-quarkus-integration-tests-dse:${quarkus-cassandra-client.version}</appArtifact>
                 </configuration>
               </execution>

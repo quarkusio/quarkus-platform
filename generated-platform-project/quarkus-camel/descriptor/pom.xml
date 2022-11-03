@@ -12,7 +12,8 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-camel-bom:2.13.0.CR1</member.last-bom-update>
+    <gpg.skip>true</gpg.skip>
+    <member.last-bom-update>io.quarkus.platform:quarkus-camel-bom:2.14.0.CR1</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
@@ -29,6 +30,28 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-install</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-deploy</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
@@ -66,7 +89,6 @@
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-camel-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-debezium-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>

@@ -12,7 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - GoogleCloudServices - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-google-cloud-services-bom:2.13.0.CR1</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-google-cloud-services-bom:2.14.0.CR1</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
@@ -66,7 +66,6 @@
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-camel-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-debezium-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
