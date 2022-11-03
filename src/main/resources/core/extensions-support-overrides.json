@@ -492,7 +492,7 @@
       "artifact-id": "quarkus-reactive-routes",
       "metadata": {
         "redhat-support": [
-          "supported"
+          "deprecated"
         ]
       }
     },
