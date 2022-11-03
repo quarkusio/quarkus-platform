@@ -444,15 +444,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-reactive-db2-client",
-      "metadata": {
-        "redhat-support": [
-          "tech-preview"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-reactive-messaging-http",
       "metadata": {
         "redhat-support": [
