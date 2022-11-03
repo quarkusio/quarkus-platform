@@ -12,7 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-camel-bom:2.13.1.Final</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-camel-bom:2.13.3.Final</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>

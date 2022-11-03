@@ -12,7 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - OptaPlanner - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-optaplanner-bom:2.13.0.Final</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-optaplanner-bom:2.13.3.Final</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>

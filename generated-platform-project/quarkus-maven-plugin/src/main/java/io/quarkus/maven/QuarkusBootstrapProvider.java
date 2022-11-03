@@ -6,6 +6,8 @@ import static io.smallrye.common.expression.Expression.Flag.NO_TRIM;
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +16,8 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 import org.apache.maven.artifact.Artifact;
+import org.apache.maven.execution.MavenSession;
+import org.apache.maven.model.Model;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.component.annotations.Component;
@@ -58,6 +62,16 @@ public class QuarkusBootstrapProvider implements Closeable {
 
     static ArtifactKey getProjectId(MavenProject project) {
         return ArtifactKey.ga(project.getGroupId(), project.getArtifactId());
+    }
+
+    static Map<Path, Model> getProjectMap(MavenSession session) {
+        final List<MavenProject> allProjects = session.getAllProjects();
+        final Map<Path, Model> projectModels = new HashMap<>(allProjects.size());
+        for (MavenProject mp : allProjects) {
+            mp.getOriginalModel().setPomFile(mp.getFile());
+            projectModels.put(mp.getBasedir().toPath(), mp.getOriginalModel());
+        }
+        return projectModels;
     }
 
     public RepositorySystem repositorySystem() {
@@ -132,16 +146,17 @@ public class QuarkusBootstrapProvider implements Closeable {
                 throws MojoExecutionException {
             isWorkspaceDiscovery(mojo);
             try {
-                return MavenArtifactResolver.builder()
-                        .setWorkspaceDiscovery(
-                                mode == LaunchMode.DEVELOPMENT || mode == LaunchMode.TEST || isWorkspaceDiscovery(mojo))
+                final MavenArtifactResolver.Builder builder = MavenArtifactResolver.builder()
                         .setCurrentProject(mojo.mavenProject().getFile().toString())
                         .setPreferPomsFromWorkspace(mode == LaunchMode.DEVELOPMENT || mode == LaunchMode.TEST)
                         .setRepositorySystem(repoSystem)
                         .setRepositorySystemSession(mojo.repositorySystemSession())
                         .setRemoteRepositories(mojo.remoteRepositories())
-                        .setRemoteRepositoryManager(remoteRepoManager)
-                        .build();
+                        .setRemoteRepositoryManager(remoteRepoManager);
+                if (mode == LaunchMode.DEVELOPMENT || mode == LaunchMode.TEST || isWorkspaceDiscovery(mojo)) {
+                    builder.setWorkspaceDiscovery(true).setProjectModelProvider(getProjectMap(mojo.mavenSession())::get);
+                }
+                return builder.build();
             } catch (BootstrapMavenException e) {
                 throw new MojoExecutionException("Failed to initialize Quarkus bootstrap Maven artifact resolver", e);
             }

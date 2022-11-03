@@ -90,6 +90,8 @@ import io.quarkus.bootstrap.devmode.DependenciesFilter;
 import io.quarkus.bootstrap.model.ApplicationModel;
 import io.quarkus.bootstrap.model.PathsCollection;
 import io.quarkus.bootstrap.resolver.BootstrapAppModelResolver;
+import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContext;
+import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContextConfig;
 import io.quarkus.bootstrap.resolver.maven.MavenArtifactResolver;
 import io.quarkus.bootstrap.resolver.maven.options.BootstrapMavenOptions;
 import io.quarkus.bootstrap.util.BootstrapUtils;
@@ -117,8 +119,6 @@ import io.smallrye.common.expression.Expression;
  */
 @Mojo(name = "dev", defaultPhase = LifecyclePhase.PREPARE_PACKAGE, requiresDependencyResolution = ResolutionScope.TEST, threadSafe = true)
 public class DevMojo extends AbstractMojo {
-
-    private static final String EXT_PROPERTIES_PATH = "META-INF/quarkus-extension.properties";
 
     private static final String KOTLIN_MAVEN_PLUGIN_GA = "org.jetbrains.kotlin:kotlin-maven-plugin";
 
@@ -438,7 +438,7 @@ public class DevMojo extends AbstractMojo {
                         try {
                             triggerCompile(false, false);
                             triggerCompile(true, false);
-                            newRunner = new DevModeRunner();
+                            newRunner = new DevModeRunner(runner.launcher.getDebugPortOk());
                         } catch (Exception e) {
                             getLog().info("Could not load changed pom.xml file, changes not applied", e);
                             continue;
@@ -741,7 +741,6 @@ public class DevMojo extends AbstractMojo {
     }
 
     private void addProject(MavenDevModeLauncher.Builder builder, ResolvedDependency module, boolean root) throws Exception {
-
         if (!module.isJar()) {
             return;
         }
@@ -890,7 +889,11 @@ public class DevMojo extends AbstractMojo {
         private Process process;
 
         private DevModeRunner() throws Exception {
-            launcher = newLauncher();
+            launcher = newLauncher(null);
+        }
+
+        private DevModeRunner(Boolean debugPortOk) throws Exception {
+            launcher = newLauncher(debugPortOk);
         }
 
         Collection<Path> pomFiles() {
@@ -944,7 +947,7 @@ public class DevMojo extends AbstractMojo {
         }
     }
 
-    private QuarkusDevModeLauncher newLauncher() throws Exception {
+    private QuarkusDevModeLauncher newLauncher(Boolean debugPortOk) throws Exception {
         String java = null;
         // See if a toolchain is configured
         if (toolchainManager != null) {
@@ -963,6 +966,7 @@ public class DevMojo extends AbstractMojo {
                 .debug(debug)
                 .debugHost(debugHost)
                 .debugPort(debugPort)
+                .debugPortOk(debugPortOk)
                 .deleteDevJar(deleteDevJar);
 
         setJvmArgs(builder);
@@ -1060,30 +1064,33 @@ public class DevMojo extends AbstractMojo {
         if (appModel != null) {
             bootstrapProvider.close();
         } else {
-            final MavenArtifactResolver.Builder resolverBuilder = MavenArtifactResolver.builder()
+            final BootstrapMavenContextConfig<?> mvnConfig = BootstrapMavenContext.config()
                     .setRemoteRepositories(repos)
                     .setRemoteRepositoryManager(remoteRepositoryManager)
                     .setWorkspaceDiscovery(true)
                     .setPreferPomsFromWorkspace(true)
                     .setCurrentProject(project.getFile().toString());
 
-            // if it already exists, it may be a reload triggered by a change in a POM
-            // in which case we should not be using the original Maven session
-            boolean reinitializeMavenSession = Files.exists(appModelLocation);
-            if (reinitializeMavenSession) {
+            // if a serialized model is found, it may be a reload triggered by a change in a POM
+            // in which case we should not be using the original Maven session initialized with the previous POM version
+            if (Files.exists(appModelLocation)) {
                 Files.delete(appModelLocation);
                 // we can't re-use the repo system because we want to use our interpolating model builder
                 // a use-case where it fails with the original repo system is when dev mode is launched with -Dquarkus.platform.version=xxx
                 // overriding the version of the quarkus-bom in the pom.xml
             } else {
-                // we can re-use the original Maven session
-                resolverBuilder.setRepositorySystemSession(repoSession).setRepositorySystem(repoSystem);
+                // we can re-use the original Maven session and the system
+                mvnConfig.setRepositorySystemSession(repoSession).setRepositorySystem(repoSystem);
+                // there could be Maven extensions manipulating the project versions and models
+                // the ones returned from the Maven API could be different from the original pom.xml files
+                mvnConfig.setProjectModelProvider(QuarkusBootstrapProvider.getProjectMap(session)::get);
             }
 
-            appModel = new BootstrapAppModelResolver(resolverBuilder.build())
+            final BootstrapMavenContext mvnCtx = new BootstrapMavenContext(mvnConfig);
+            appModel = new BootstrapAppModelResolver(new MavenArtifactResolver(mvnCtx))
                     .setDevMode(true)
                     .setCollectReloadableDependencies(!noDeps)
-                    .resolveModel(ArtifactCoords.jar(project.getGroupId(), project.getArtifactId(), project.getVersion()));
+                    .resolveModel(mvnCtx.getCurrentProject().getAppArtifact());
         }
 
         // serialize the app model to avoid re-resolving it in the dev process

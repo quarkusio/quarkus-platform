@@ -105,7 +105,7 @@
       "artifact-id": "quarkus-hibernate-orm-rest-data-panache",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "supported"
         ]
       }
     },
@@ -312,7 +312,7 @@
       "artifact-id": "quarkus-mailer",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "supported"
         ]
       }
     },
@@ -393,7 +393,7 @@
       "artifact-id": "quarkus-oidc-client-reactive-filter",
       "metadata": {
         "redhat-support": [
-          "tech-preview"
+          "supported"
         ]
       }
     },
@@ -418,15 +418,6 @@
     {
       "group-id": "io.quarkus",
       "artifact-id": "quarkus-opentelemetry",
-      "metadata": {
-        "redhat-support": [
-          "tech-preview"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
-      "artifact-id": "quarkus-opentelemetry-exporter-jaeger",
       "metadata": {
         "redhat-support": [
           "tech-preview"
@@ -543,15 +534,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-rest-client-mutiny",
-      "metadata": {
-        "redhat-support": [
-          "deprecated"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-rest-client-reactive",
       "metadata": {
         "redhat-support": [
@@ -615,15 +597,6 @@
     },
     {
       "group-id": "io.quarkus",
-      "artifact-id": "quarkus-resteasy-mutiny",
-      "metadata": {
-        "redhat-support": [
-          "deprecated"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
       "artifact-id": "quarkus-resteasy-qute",
       "metadata": {
         "redhat-support": [
@@ -682,15 +655,6 @@
       "metadata": {
         "redhat-support": [
           "supported"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
-      "artifact-id": "quarkus-security-jpa",
-      "metadata": {
-        "redhat-support": [
-          "tech-preview"
         ]
       }
     },
@@ -897,15 +861,6 @@
       "metadata": {
         "redhat-support": [
           "supported"
-        ]
-      }
-    },
-    {
-      "group-id": "io.quarkus",
-      "artifact-id": "quarkus-vertx-graphql",
-      "metadata": {
-        "redhat-support": [
-          "tech-preview"
         ]
       }
     },
