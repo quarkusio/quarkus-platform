@@ -75,6 +75,7 @@
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
 
         <kogito-quarkus.version>1.30.0.Final</kogito-quarkus.version>
+        <drools-quarkus.version>8.31.0-SNAPSHOT</drools-quarkus.version>
         <optaplanner-quarkus.version>8.30.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>1.2.2</quarkus-google-cloud-services.version>
@@ -221,6 +222,27 @@
                             </core>
                             <!-- Platform members -->
                             <members>
+                                <member>
+                                    <name>Drools</name>
+                                    <bom>org.kie:drools-build-parent:${drools-quarkus.version}</bom>
+                                    <release>
+                                        <next>${platform.groupId}:quarkus-drools-bom:${platform.version}</next>
+                                    </release>
+                                    <defaultTestConfig>
+                                        <skip>false</skip>
+                                    </defaultTestConfig>
+                                    <tests>
+                                        <test>
+                                            <artifact>org.drools:drools-drl-quarkus-integration-test:${drools-quarkus.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <artifact>org.drools:drools-drl-quarkus-integration-test-hotreload:${drools-quarkus.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <artifact>org.drools:drools-drl-quarkus-ruleunit-integration-test:${drools-quarkus.version}</artifact>
+                                        </test>
+                                    </tests>
+                                </member>
                                 <member>
                                     <name>OptaPlanner</name>
                                     <bom>org.optaplanner:optaplanner-build-parent:${optaplanner-quarkus.version}</bom>
