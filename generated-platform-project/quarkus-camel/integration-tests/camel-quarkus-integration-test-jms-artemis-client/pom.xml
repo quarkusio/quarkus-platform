@@ -55,6 +55,18 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>io.quarkiverse.artemis</groupId>
+      <artifactId>quarkus-test-artemis</artifactId>
+      <version>${quarkus-vault.version}</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-pool2</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-messaging-common</artifactId>
       <version>${camel-quarkus.version}</version>
