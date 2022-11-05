@@ -58,7 +58,7 @@
         <quarkus.version>2.13.3.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.13.0</camel-quarkus.version>
+        <camel-quarkus.version>2.13.1</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -447,10 +447,6 @@
                                         <test><!-- Workaround incompatible PostgreSQL JDBC driver -->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- https://github.com/apache/camel-quarkus/issues/4058 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
