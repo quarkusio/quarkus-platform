@@ -15,7 +15,8 @@
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-debezium</module>
-    <module>camel-quarkus-integration-test-cxf-soap</module>
+    <module>camel-quarkus-integration-test-kudu</module>
+    <module>camel-quarkus-integration-test-xml</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -42,6 +43,7 @@
     <module>camel-quarkus-integration-test-crypto</module>
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-csv</module>
+    <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json</module>
     <module>camel-quarkus-integration-test-datasonnet</module>
@@ -97,9 +99,13 @@
     <module>camel-quarkus-integration-test-kafka-ssl</module>
     <module>camel-quarkus-integration-test-kafka</module>
     <module>camel-quarkus-integration-test-kamelet</module>
+    <module>camel-quarkus-integration-test-knative-channel-consumer</module>
+    <module>camel-quarkus-integration-test-knative-endpoint-consumer</module>
+    <module>camel-quarkus-integration-test-knative-event-consumer</module>
+    <module>camel-quarkus-integration-test-knative-producer</module>
+    <module>camel-quarkus-integration-test-knative</module>
     <module>camel-quarkus-integration-test-kotlin</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
-    <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-leveldb</module>
     <module>camel-quarkus-integration-test-lra</module>
     <module>camel-quarkus-integration-test-lumberjack</module>
@@ -178,7 +184,6 @@
     <module>camel-quarkus-integration-test-vertx</module>
     <module>camel-quarkus-integration-test-weather</module>
     <module>camel-quarkus-integration-test-xchange</module>
-    <module>camel-quarkus-integration-test-xml</module>
     <module>camel-quarkus-integration-test-xmlsecurity</module>
     <module>camel-quarkus-integration-test-xpath</module>
     <module>camel-quarkus-integration-test-xstream</module>

@@ -9,7 +9,6 @@
   <artifactId>camel-quarkus-integration-test-solr</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-solr</name>
   <properties>
-    <maven.test.skip>true</maven.test.skip>
     <solr.trust-store>${project.basedir}/target/ssl/trust-store.jks</solr.trust-store>
   </properties>
   <dependencies>
@@ -215,7 +214,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-solr:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

@@ -122,4 +122,22 @@
         </xsl:copy>
     </xsl:template>
 
+    <!-- Disabled because of https://github.com/apache/camel-quarkus/issues/4254 -->
+    <xsl:template match="//pom:configuration[../pom:artifactId/text() = 'maven-surefire-plugin' and /pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-cxf-soap-grouped']">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()" />
+            <xsl:comment>Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254</xsl:comment>
+            <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</test>
+        </xsl:copy>
+    </xsl:template>
+
+    <!-- Disabled because of https://github.com/apache/camel-quarkus/issues/4255 -->
+    <xsl:template match="//pom:configuration[../pom:artifactId/text() = 'maven-surefire-plugin' and /pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-xml']">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()" />
+            <xsl:comment>Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4255</xsl:comment>
+            <test>!*IT,!XmlTest#aggregate,!XmlTest#xsltSchemas</test>
+        </xsl:copy>
+    </xsl:template>
+
 </xsl:stylesheet>

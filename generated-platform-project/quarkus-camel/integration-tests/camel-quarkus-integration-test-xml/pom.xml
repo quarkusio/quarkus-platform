@@ -57,6 +57,12 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -93,6 +99,8 @@
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
           </systemPropertyVariables>
+          <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4255-->
+          <test>!*IT,!XmlTest#aggregate,!XmlTest#xsltSchemas</test>
         </configuration>
       </plugin>
       <plugin>
