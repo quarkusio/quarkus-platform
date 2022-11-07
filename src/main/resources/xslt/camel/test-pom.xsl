@@ -127,7 +127,7 @@
         <xsl:copy>
             <xsl:apply-templates select="@* | node()" />
             <xsl:comment>Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254</xsl:comment>
-            <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate</test>
+            <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</test>
         </xsl:copy>
     </xsl:template>
 
