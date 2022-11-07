@@ -55,10 +55,10 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.13.3.Final</quarkus.version>
+        <quarkus.version>2.13.4.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.13.0</camel-quarkus.version>
+        <camel-quarkus.version>2.13.1</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -77,7 +77,7 @@
         <kogito-quarkus.version>1.29.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.29.0.Final</optaplanner-quarkus.version>
 
-        <quarkus-google-cloud-services.version>1.2.1</quarkus-google-cloud-services.version>
+        <quarkus-google-cloud-services.version>1.2.2</quarkus-google-cloud-services.version>
         <quarkus-vault.version>2.0.0</quarkus-vault.version>
 
         <quarkus-platform-bom-generator.version>0.0.63</quarkus-platform-bom-generator.version>
@@ -448,9 +448,9 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- https://github.com/apache/camel-quarkus/issues/4058 -->
+                                        <test><!-- Workaround hardcoded path -->
                                             <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap:${camel-quarkus-test-list.version}</artifact>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
