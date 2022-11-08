@@ -454,11 +454,6 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test>
-                                            <!-- Workaround flaky XML test : https://github.com/apache/camel-quarkus/issues/4258 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xml:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                     </tests>
                                 </member>
                                 <member>
