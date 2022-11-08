@@ -74,7 +74,7 @@
         <quarkus-cassandra-client.version>1.1.2</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
 
-        <kogito-quarkus.version>1.30.0.Final</kogito-quarkus.version>
+        <kogito-quarkus.version>1.28.0.Final</kogito-quarkus.version>
         <optaplanner-quarkus.version>8.30.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>1.2.2</quarkus-google-cloud-services.version>
