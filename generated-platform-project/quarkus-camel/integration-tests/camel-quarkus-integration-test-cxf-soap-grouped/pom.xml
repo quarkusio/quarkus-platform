@@ -8,9 +8,6 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-cxf-soap-grouped</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-cxf-soap-grouped</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -121,7 +118,7 @@
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
           </systemPropertyVariables>
           <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254-->
-          <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate</test>
+          <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</test>
         </configuration>
       </plugin>
       <plugin>
@@ -192,7 +189,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

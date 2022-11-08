@@ -448,10 +448,6 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround hardcoded path -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                     </tests>
                                 </member>
                                 <member>

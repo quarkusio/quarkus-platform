@@ -15,7 +15,6 @@
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-debezium</module>
-    <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -42,6 +41,7 @@
     <module>camel-quarkus-integration-test-crypto</module>
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-csv</module>
+    <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json</module>
     <module>camel-quarkus-integration-test-datasonnet</module>
