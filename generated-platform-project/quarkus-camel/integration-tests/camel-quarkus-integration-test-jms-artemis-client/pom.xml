@@ -8,9 +8,6 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-jms-artemis-client</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jms-artemis-client</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -54,6 +51,18 @@
         <exclusion>
           <groupId>commons-logging</groupId>
           <artifactId>commons-logging</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.artemis</groupId>
+      <artifactId>quarkus-test-artemis</artifactId>
+      <version>2.0.0</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-pool2</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -177,7 +186,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-client:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>

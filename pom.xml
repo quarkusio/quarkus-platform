@@ -58,7 +58,7 @@
         <quarkus.version>2.14.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.13.0</camel-quarkus.version>
+        <camel-quarkus.version>2.14.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -420,9 +420,8 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:2.14.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
-                                    <hidden>true</hidden>
                                     <defaultTestConfig>
-                                        <skip>true</skip>
+                                        <skip>false</skip>
                                         <jvmSystemProperties>
                                             <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
                                             <quarkus.http.test-ssl-port>$${test.https.port.jvm}</quarkus.http.test-ssl-port>
@@ -451,9 +450,10 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- https://github.com/apache/camel-quarkus/issues/4058 -->
+                                        <test>
+                                            <!-- Workaround flaky Kudu test: https://github.com/apache/camel-quarkus/issues/4259 -->
                                             <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap:${camel-quarkus-test-list.version}</artifact>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>

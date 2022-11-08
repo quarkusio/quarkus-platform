@@ -11,9 +11,6 @@
   <artifactId>quarkus-camel-bom-quarkus-platform-properties</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Quarkus Platform Properties</name>
-  <properties>
-    <gpg.skip>true</gpg.skip>
-  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -32,28 +29,6 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-install</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-deploy</id>
-              <phase>none</phase>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
