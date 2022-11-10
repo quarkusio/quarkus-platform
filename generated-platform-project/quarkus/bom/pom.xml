@@ -7189,22 +7189,12 @@
       </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
-        <artifactId>vertx-grpc-aggregator</artifactId>
-        <version>4.3.4</version>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
         <artifactId>vertx-grpc-client</artifactId>
         <version>4.3.4</version>
       </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
         <artifactId>vertx-grpc-common</artifactId>
-        <version>4.3.4</version>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
-        <artifactId>vertx-grpc-parent</artifactId>
         <version>4.3.4</version>
       </dependency>
       <dependency>
@@ -7240,11 +7230,6 @@
       <dependency>
         <groupId>io.vertx</groupId>
         <artifactId>vertx-ignite</artifactId>
-        <version>4.3.4</version>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
-        <artifactId>vertx-infinispan-parent</artifactId>
         <version>4.3.4</version>
       </dependency>
       <dependency>
@@ -7321,11 +7306,6 @@
       <dependency>
         <groupId>io.vertx</groupId>
         <artifactId>vertx-lang-kotlin-coroutines</artifactId>
-        <version>4.3.4</version>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
-        <artifactId>vertx-lang-kotlin-parent</artifactId>
         <version>4.3.4</version>
       </dependency>
       <dependency>
@@ -7520,11 +7500,6 @@
       </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
-        <artifactId>vertx-sql-client-parent</artifactId>
-        <version>4.3.4</version>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
         <artifactId>vertx-sql-client-templates</artifactId>
         <version>4.3.4</version>
       </dependency>
@@ -7552,11 +7527,6 @@
       <dependency>
         <groupId>io.vertx</groupId>
         <artifactId>vertx-tcp-eventbus-bridge</artifactId>
-        <version>4.3.4</version>
-      </dependency>
-      <dependency>
-        <groupId>io.vertx</groupId>
-        <artifactId>vertx-tracing-parent</artifactId>
         <version>4.3.4</version>
       </dependency>
       <dependency>
