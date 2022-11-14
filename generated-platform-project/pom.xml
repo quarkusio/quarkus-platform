@@ -14,6 +14,7 @@
   <modules>
     <module>quarkus-universe</module>
     <module>quarkus</module>
+    <module>quarkus-qpid-jms</module>
     <module>quarkus-maven-plugin</module>
   </modules>
   <properties>
