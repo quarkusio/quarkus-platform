@@ -55,8 +55,13 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.14.0.Final</quarkus.version>
+        <quarkus.version>2.14.1.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
+
+        <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
+             Remove once Camel Quarkus manages the same version of org.graalvm.js:js
+             as ${graalvm.version} in Quarkus -->
+        <graalvm.version>22.3.0</graalvm.version>
 
         <camel-quarkus.version>2.14.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
@@ -295,25 +300,25 @@
                                             <artifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
-                                            <!-- 
-                                                Problem in https://github.com/kiegroup/kogito-runtimes/blob/d8fda957a793c4007f92156ccd4eb5d33cd51977/quarkus/extensions/kogito-quarkus-decisions-extension/kogito-quarkus-decisions-integration-test/src/test/java/org/kie/kogito/quarkus/dmn/KogitoDMNCodeCodestartIT.java#L63 
+                                            <!--
+                                                Problem in https://github.com/kiegroup/kogito-runtimes/blob/d8fda957a793c4007f92156ccd4eb5d33cd51977/quarkus/extensions/kogito-quarkus-decisions-extension/kogito-quarkus-decisions-integration-test/src/test/java/org/kie/kogito/quarkus/dmn/KogitoDMNCodeCodestartIT.java#L63
                                                 2022-09-01T13:31:50.5121621Z [ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.054 s <<< FAILURE! - in org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT 2022-09-01T13:31:50.5121621Z [ERROR] testContent Time elapsed: 0.07 s <<< ERROR! 2022-09-01T13:31:50.5122239Z java.lang.NullPointerException 2022-09-01T13:31:50.5123228Z at org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT.testContent(KogitoDMNCodeCodestartIT.java:63) -->
                                             <excluded>true</excluded>
                                             <packageApplication>true</packageApplication>
                                             <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
-                                            <!-- 
-                                                2022-09-01T13:35:02.5384549Z [INFO] 
+                                            <!--
+                                                2022-09-01T13:35:02.5384549Z [INFO]
                                                 2022-09-01T13:35:02.5390848Z [INFO] Results:
-                                                2022-09-01T13:35:02.5407095Z [INFO] 
-                                                2022-09-01T13:35:02.5407743Z [ERROR] Failures: 
+                                                2022-09-01T13:35:02.5407095Z [INFO]
+                                                2022-09-01T13:35:02.5407743Z [ERROR] Failures:
                                                 2022-09-01T13:35:02.5409306Z [ERROR]   CustomEndpointIT.testHelloEndpoint:43 1 expectation failed.
                                                 2022-09-01T13:35:02.5409920Z Expected status code <200> but was <500>.
-                                                2022-09-01T13:35:02.5410746Z 
+                                                2022-09-01T13:35:02.5410746Z
                                                 2022-09-01T13:35:02.5411186Z [ERROR]   PMMLRegressionIT.testEvaluateLinRegDescriptive:49 1 expectation failed.
                                                 2022-09-01T13:35:02.5412206Z Expected status code <200> but was <500>.
-                                                2022-09-01T13:35:02.5412561Z 
+                                                2022-09-01T13:35:02.5412561Z
                                                 2022-09-01T13:35:02.5413380Z [ERROR]   PMMLRegressionIT.testEvaluateLinRegResult:42 1 expectation failed.
                                                 2022-09-01T13:35:02.5413971Z Expected status code <200> but was <500>.
                                                 2022-09-01T13:35:02.0673251Z Caused by: org.kie.pmml.api.exceptions.KiePMMLException: Wrong number of model(s) with name 'LinReg': 0
@@ -456,6 +461,12 @@
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
+                                    <dependencyManagement>
+                                        <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
+                                             Remove once Camel Quarkus manages the same version of org.graalvm.js:js
+                                             as ${graalvm.version} in Quarkus -->
+                                        <dependency>org.graalvm.js:js:${graalvm.version}</dependency>
+                                    </dependencyManagement>
                                 </member>
                                 <member>
                                     <name>Hazelcast</name>
