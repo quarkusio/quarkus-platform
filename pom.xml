@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.14.0.Final</quarkus.version>
+        <quarkus.version>2.14.1.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
@@ -187,11 +187,6 @@
                                     <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-deployment:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-model:${quarkus-vault.version}</dependency>
-
-                                    <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
-                                         Remove once Camel Quarkus manages the same version of org.graalvm.js:js
-                                         as ${graalvm.version} in Quarkus -->
-                                    <dependency>org.graalvm.sdk:graal-sdk:${graalvm.version}</dependency>
                                 </dependencyManagement>
                                 <extensionGroupIds>
                                     <groupId>io.quarkus</groupId>
