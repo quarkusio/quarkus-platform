@@ -187,6 +187,9 @@
                                     <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-deployment:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-model:${quarkus-vault.version}</dependency>
+                                    <!-- Testing sshd-common upgrade -->
+                                    <dependency>org.apache.sshd:sshd-common:2.9.2</dependency>
+                                    <dependency>org.apache.sshd:sshd-core:2.9.2</dependency>
                                 </dependencyManagement>
                                 <extensionGroupIds>
                                     <groupId>io.quarkus</groupId>
