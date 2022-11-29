@@ -105,6 +105,37 @@
           <skipCategoryCheck>true</skipCategoryCheck>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>flatten-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>flatten</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>flatten</goal>
+            </goals>
+            <configuration>
+              <flattenMode>oss</flattenMode>
+              <updatePomFile>true</updatePomFile>
+              <pomElements>
+                <build>remove</build>
+                <repositories>remove</repositories>
+                <dependencies>remove</dependencies>
+                <dependencyManagement>remove</dependencyManagement>
+                <mailingLists>remove</mailingLists>
+              </pomElements>
+            </configuration>
+          </execution>
+          <execution>
+            <id>flatten.clean</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>
