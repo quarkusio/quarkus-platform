@@ -214,9 +214,9 @@
             <configuration>
               <flattenMode>oss</flattenMode>
               <pomElements>
-                <dependencyManagement>keep</dependencyManagement>
-                <repositories>remove</repositories>
                 <build>remove</build>
+                <repositories>remove</repositories>
+                <dependencyManagement>keep</dependencyManagement>
               </pomElements>
             </configuration>
           </execution>
