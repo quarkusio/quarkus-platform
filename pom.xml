@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>3.0.0.Alpha2</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>3.0.0.Alpha2</tag>
     </scm>
 
     <issueManagement>
@@ -180,7 +180,7 @@
                                     <groupId>io.quarkus</groupId>
                                 </extensionGroupIds>
                                 <release>
-                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:2.14.3.Final</lastDetectedBomUpdate>
+                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.0.0.Alpha2</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                             </core>
@@ -190,7 +190,7 @@
                                     <name>QpidJMS</name>
                                     <bom>org.amqphub.quarkus:quarkus-qpid-jms-bom:${quarkus-qpid-jms.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-qpid-jms-bom:2.14.0.Final</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-qpid-jms-bom:3.0.0.Alpha2</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-qpid-jms-bom:${platform.version}</next>
                                     </release>
                                     <tests>
