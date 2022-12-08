@@ -829,7 +829,7 @@
       <dependency>
         <groupId>io.perfmark</groupId>
         <artifactId>perfmark-api</artifactId>
-        <version>0.25.0</version>
+        <version>0.26.0</version>
       </dependency>
       <dependency>
         <groupId>io.projectreactor.netty</groupId>
@@ -11306,7 +11306,7 @@
       <dependency>
         <groupId>org.threeten</groupId>
         <artifactId>threetenbp</artifactId>
-        <version>1.6.4</version>
+        <version>1.6.5</version>
       </dependency>
       <dependency>
         <groupId>org.web3j</groupId>
