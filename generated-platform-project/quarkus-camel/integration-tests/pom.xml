@@ -16,6 +16,7 @@
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
+    <module>camel-quarkus-integration-test-tika</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -173,7 +174,6 @@
     <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-tarfile</module>
     <module>camel-quarkus-integration-test-telegram</module>
-    <module>camel-quarkus-integration-test-tika</module>
     <module>camel-quarkus-integration-test-twilio</module>
     <module>camel-quarkus-integration-test-twitter</module>
     <module>camel-quarkus-integration-test-univocity-parsers</module>

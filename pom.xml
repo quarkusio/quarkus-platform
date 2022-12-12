@@ -63,7 +63,7 @@
              as ${graalvm.version} in Quarkus -->
         <graalvm.version>22.3.0</graalvm.version>
 
-        <camel-quarkus.version>2.14.0</camel-quarkus.version>
+        <camel-quarkus.version>2.15.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -488,6 +488,10 @@
                                             <!-- Workaround flaky Kudu test: https://github.com/apache/camel-quarkus/issues/4259 -->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test><!-- Workaround flaky Tika test : https://github.com/apache/camel-quarkus/issues/4334 -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-tika:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                     <dependencyManagement>
