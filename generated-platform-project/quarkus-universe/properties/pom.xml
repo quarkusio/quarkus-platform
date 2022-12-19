@@ -13,7 +13,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Quarkus Universe - Quarkus Platform Properties</name>
   <properties>
-    <platform.quarkus.native.builder-image>graalvm</platform.quarkus.native.builder-image>
+    <platform.quarkus.native.builder-image>mandrel</platform.quarkus.native.builder-image>
   </properties>
   <dependencyManagement>
     <dependencies>
