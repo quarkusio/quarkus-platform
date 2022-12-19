@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-ftp</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-ftp</name>
+  <artifactId>camel-quarkus-integration-test-platform-http-proxy-ssl</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-platform-http-proxy-ssl</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-ftp</artifactId>
+      <artifactId>camel-quarkus-integration-test-platform-http-proxy-ssl</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-ftp</artifactId>
+      <artifactId>camel-quarkus-integration-test-platform-http-proxy-ssl</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -54,48 +54,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-support</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.ftpserver</groupId>
-      <artifactId>ftpserver-core</artifactId>
-      <version>1.1.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.ftpserver</groupId>
-      <artifactId>ftplet-api</artifactId>
-      <version>1.1.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.sshd</groupId>
-      <artifactId>sshd-sftp</artifactId>
-      <version>2.9.2</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.slf4j</groupId>
-          <artifactId>jcl-over-slf4j</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.sshd</groupId>
-      <artifactId>sshd-scp</artifactId>
-      <version>2.9.2</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.slf4j</groupId>
-          <artifactId>jcl-over-slf4j</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -125,7 +83,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-platform-http-proxy-ssl</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
@@ -187,7 +145,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-platform-http-proxy-ssl</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -202,7 +160,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-platform-http-proxy-ssl:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
