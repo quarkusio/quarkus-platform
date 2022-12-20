@@ -117,6 +117,21 @@
           </dependenciesToScan>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-maven-plugin</artifactId>
+        <version>${quarkus.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>build</goal>
+            </goals>
+            <configuration>
+              <appArtifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</appArtifact>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
   <profiles>
