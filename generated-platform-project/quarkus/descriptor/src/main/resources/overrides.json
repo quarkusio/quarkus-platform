@@ -1,28 +1,28 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.15.0.Final" ],
     "project" : {
       "default-codestart" : "resteasy-reactive",
       "properties" : {
         "doc-root" : "https://quarkus.io",
         "rest-assured-version" : "${rest-assured.version}",
-        "compiler-plugin-version" : "3.8.1",
+        "compiler-plugin-version" : "3.10.1",
         "surefire-plugin-version" : "3.0.0-M7",
         "kotlin-version" : "1.7.21",
         "scala-version" : "2.13.8",
         "scala-plugin-version" : "4.7.2",
-        "quarkus-core-version" : "2.15.0.Final",
+        "quarkus-core-version" : "2.15.1.Final",
         "maven-plugin-groupId" : "${project.groupId}",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
         "maven-plugin-version" : "${project.version}",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "2.15.0.Final",
+        "gradle-plugin-version" : "2.15.1.Final",
         "supported-maven-versions" : "[3.6.2,)",
         "proposed-maven-version" : "3.8.6",
         "maven-wrapper-version" : "3.1.1",
         "gradle-wrapper-version" : "7.5.1"
       }
     },
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:2.15.1.Final" ],
     "last-bom-update" : "${member.last-bom-update}"
   },
   "categories" : [ {
