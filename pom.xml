@@ -319,11 +319,6 @@
                                             <packageApplication>true</packageApplication>
                                             <artifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</artifact>
                                         </test>
-                                        <!-- Disabled as part of https://github.com/kiegroup/kogito-runtimes/pull/2517
-                                        <test>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:integration-tests-quarkus-predictions:${kogito-quarkus.version}</artifact>
-                                        </test> -->
                                         <test>
                                             <packageApplication>true</packageApplication>
                                             <artifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</artifact>
@@ -345,28 +340,7 @@
                                             <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
-                                            <!--
-                                                2022-09-01T13:35:02.5384549Z [INFO]
-                                                2022-09-01T13:35:02.5390848Z [INFO] Results:
-                                                2022-09-01T13:35:02.5407095Z [INFO]
-                                                2022-09-01T13:35:02.5407743Z [ERROR] Failures:
-                                                2022-09-01T13:35:02.5409306Z [ERROR]   CustomEndpointIT.testHelloEndpoint:43 1 expectation failed.
-                                                2022-09-01T13:35:02.5409920Z Expected status code <200> but was <500>.
-                                                2022-09-01T13:35:02.5410746Z
-                                                2022-09-01T13:35:02.5411186Z [ERROR]   PMMLRegressionIT.testEvaluateLinRegDescriptive:49 1 expectation failed.
-                                                2022-09-01T13:35:02.5412206Z Expected status code <200> but was <500>.
-                                                2022-09-01T13:35:02.5412561Z
-                                                2022-09-01T13:35:02.5413380Z [ERROR]   PMMLRegressionIT.testEvaluateLinRegResult:42 1 expectation failed.
-                                                2022-09-01T13:35:02.5413971Z Expected status code <200> but was <500>.
-                                                2022-09-01T13:35:02.0673251Z Caused by: org.kie.pmml.api.exceptions.KiePMMLException: Wrong number of model(s) with name 'LinReg': 0
-                                                2022-09-01T13:35:02.0674014Z 	at org.kie.kogito.pmml.PMMLKogito.modelByName(PMMLKogito.java:79)
-                                                2022-09-01T13:35:02.0674956Z 	at org.kie.kogito.pmml.PmmlPredictionModel.<init>(PmmlPredictionModel.java:39)
-                                                2022-09-01T13:35:02.0675972Z 	at org.kie.kogito.pmml.AbstractPredictionModels.getPredictionModel(AbstractPredictionModels.java:49)
-                                                2022-09-01T13:35:02.0677057Z 	at org.kie.kogito.app.PredictionModels_ClientProxy.getPredictionModel(Unknown Source)
-                                                2022-09-01T13:35:02.0677858Z 	at org.kie.kogito.pmml.AbstractPMMLRestResource.descriptive(AbstractPMMLRestResource.java:32)
-                                                2022-09-01T13:35:02.0678921Z 	at org.kie.kogito.org_46kie_46pmml_46models_46regression_46model.LinRegResource.descriptive(LinRegResource.java:53)
-                                            -->
-                                            <excluded>true</excluded>
+                                            <packageApplication>true</packageApplication>
                                             <artifact>org.kie.kogito:kogito-quarkus-predictions-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
