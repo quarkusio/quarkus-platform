@@ -87,7 +87,7 @@
         <quarkus-vault.version>2.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.69</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.73</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -696,6 +696,7 @@
                                 <targetPluginCoords>${platform.groupId}:quarkus-maven-plugin:${platform.version}</targetPluginCoords>
                             </attachedMavenPlugin>
                         </platformConfig>
+                        <dependenciesToBuild/> <!-- to enable manifest generation -->
                     </configuration>
                 </plugin>
                 <plugin>
@@ -827,6 +828,36 @@
             </properties>
             <build>
                 <defaultGoal>clean process-resources</defaultGoal>
+            </build>
+        </profile>
+
+        <!--
+           | This profile enables SBOM generation for each platform member.
+           | This is still a work in progress.
+           | The SBOMs can be found under target/dependencies-to-build directory.
+        -->
+        <profile>
+            <id>depsToBuild</id>
+            <activation>
+                <property>
+                    <name>depsToBuild</name>
+                </property>
+            </activation>
+            <build>
+                <defaultGoal>clean process-resources</defaultGoal>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>io.quarkus</groupId>
+                            <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
+                            <configuration>
+                                <manifest>true</manifest>
+                                <includeNonManaged>true</includeNonManaged>
+                                <excludeParentPoms>true</excludeParentPoms>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
             </build>
         </profile>
     </profiles>
