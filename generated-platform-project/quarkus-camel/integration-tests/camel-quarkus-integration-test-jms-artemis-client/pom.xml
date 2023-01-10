@@ -57,7 +57,7 @@
     <dependency>
       <groupId>io.quarkiverse.artemis</groupId>
       <artifactId>quarkus-test-artemis</artifactId>
-      <version>${quarkus-vault.version}</version>
+      <version>2.0.1</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>

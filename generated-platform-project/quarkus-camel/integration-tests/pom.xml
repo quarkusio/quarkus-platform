@@ -134,6 +134,8 @@
     <module>camel-quarkus-integration-test-pdf</module>
     <module>camel-quarkus-integration-test-pg-replication-slot</module>
     <module>camel-quarkus-integration-test-pgevent</module>
+    <module>camel-quarkus-integration-test-platform-http-proxy-ssl</module>
+    <module>camel-quarkus-integration-test-platform-http-proxy</module>
     <module>camel-quarkus-integration-test-platform-http</module>
     <module>camel-quarkus-integration-test-protobuf</module>
     <module>camel-quarkus-integration-test-pubnub</module>
