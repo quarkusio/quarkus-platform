@@ -9725,7 +9725,7 @@
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-core</artifactId>
-        <version>20.0.2</version>
+        <version>20.0.3</version>
       </dependency>
       <dependency>
         <groupId>org.liquibase.ext</groupId>
