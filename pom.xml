@@ -63,7 +63,7 @@
              as ${graalvm.version} in Quarkus -->
         <graalvm.version>22.3.0</graalvm.version>
 
-        <camel-quarkus.version>2.15.0</camel-quarkus.version>
+        <camel-quarkus.version>2.16.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,

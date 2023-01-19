@@ -68,6 +68,7 @@
     <module>camel-quarkus-integration-test-google</module>
     <module>camel-quarkus-integration-test-graphql</module>
     <module>camel-quarkus-integration-test-grok</module>
+    <module>camel-quarkus-integration-test-groovy-dsl</module>
     <module>camel-quarkus-integration-test-grpc</module>
     <module>camel-quarkus-integration-test-hazelcast</module>
     <module>camel-quarkus-integration-test-headersmap</module>
@@ -77,6 +78,7 @@
     <module>camel-quarkus-integration-test-influxdb</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
     <module>camel-quarkus-integration-test-jackson-protobuf</module>
+    <module>camel-quarkus-integration-test-java-joor-dsl</module>
     <module>camel-quarkus-integration-test-jaxb</module>
     <module>camel-quarkus-integration-test-jcache</module>
     <module>camel-quarkus-integration-test-jdbc</module>
@@ -89,6 +91,7 @@
     <module>camel-quarkus-integration-test-jq</module>
     <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-jsch</module>
+    <module>camel-quarkus-integration-test-jsh-dsl</module>
     <module>camel-quarkus-integration-test-jslt</module>
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
@@ -104,6 +107,7 @@
     <module>camel-quarkus-integration-test-knative-event-consumer</module>
     <module>camel-quarkus-integration-test-knative-producer</module>
     <module>camel-quarkus-integration-test-knative</module>
+    <module>camel-quarkus-integration-test-kotlin-dsl</module>
     <module>camel-quarkus-integration-test-kotlin</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-leveldb</module>
@@ -140,6 +144,8 @@
     <module>camel-quarkus-integration-test-pdf</module>
     <module>camel-quarkus-integration-test-pg-replication-slot</module>
     <module>camel-quarkus-integration-test-pgevent</module>
+    <module>camel-quarkus-integration-test-platform-http-proxy-ssl</module>
+    <module>camel-quarkus-integration-test-platform-http-proxy</module>
     <module>camel-quarkus-integration-test-platform-http</module>
     <module>camel-quarkus-integration-test-protobuf</module>
     <module>camel-quarkus-integration-test-pubnub</module>
