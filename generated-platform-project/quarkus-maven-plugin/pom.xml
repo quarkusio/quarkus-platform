@@ -12,6 +12,9 @@
   <artifactId>quarkus-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
+  <properties>
+    <quarkus.version>${project.version}</quarkus.version>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -87,8 +90,8 @@
       <version>2.3.31</version>
     </dependency>
     <dependency>
-      <groupId>org.glassfish</groupId>
-      <artifactId>jakarta.json</artifactId>
+      <groupId>org.eclipse.parsson</groupId>
+      <artifactId>parsson</artifactId>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
