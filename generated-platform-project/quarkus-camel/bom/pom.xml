@@ -708,7 +708,7 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.19</version>
+        <version>1.4.20</version>
       </dependency>
       <dependency>
         <groupId>com.zendesk</groupId>
@@ -11190,7 +11190,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.32.0.Final</version>
+        <version>8.33.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -11205,7 +11205,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.32.0.Final</version>
+        <version>8.33.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -11220,7 +11220,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.32.0.Final</version>
+        <version>8.33.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -11235,7 +11235,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.32.0.Final</version>
+        <version>8.33.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
