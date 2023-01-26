@@ -55,10 +55,10 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.7.6.Final</quarkus.version>
+        <quarkus.version>2.7.7.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.7.2</camel-quarkus.version>
+        <camel-quarkus.version>2.7.1</camel-quarkus.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
              make sure you have a look at the AmazonServices member section below
@@ -78,7 +78,7 @@
         <quarkus-google-cloud-services.version>1.0.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>1.0.2</quarkus-vault.version>
 
-        <quarkus-platform-bom-generator.version>0.0.48</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.60</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
