@@ -73,6 +73,7 @@
         <quarkus-amazon-services.version>1.4.0</quarkus-amazon-services.version>
         <quarkus-config-consul.version>1.1.0</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>0.41.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.9.6.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.8</quarkus-blaze-persistence.version>
@@ -359,7 +360,7 @@
                                     </release>
                                     <tests>
                                         <test>
-                                            <artifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms.version}</artifact>
+                                            <artifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms-tests.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
