@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.16.1.Final</quarkus.version>
+        <quarkus.version>2.16.2.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
@@ -72,7 +72,8 @@
              as they might require adjustments. -->
         <quarkus-amazon-services.version>1.4.0</quarkus-amazon-services.version>
         <quarkus-config-consul.version>1.1.0</quarkus-config-consul.version>
-        <quarkus-qpid-jms.version>0.41.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms.version>0.42.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.9.6.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.8</quarkus-blaze-persistence.version>
@@ -87,7 +88,7 @@
         <quarkus-vault.version>2.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.73</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.76</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -359,7 +360,7 @@
                                     </release>
                                     <tests>
                                         <test>
-                                            <artifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms.version}</artifact>
+                                            <artifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms-tests.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
