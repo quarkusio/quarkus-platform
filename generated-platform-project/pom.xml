@@ -14,18 +14,8 @@
   <modules>
     <module>quarkus-universe</module>
     <module>quarkus</module>
-    <module>quarkus-drools</module>
-    <module>quarkus-optaplanner</module>
-    <module>quarkus-kogito</module>
     <module>quarkus-qpid-jms</module>
-    <module>quarkus-cassandra</module>
     <module>quarkus-amazon-services</module>
-    <module>quarkus-camel</module>
-    <module>quarkus-hazelcast</module>
-    <module>quarkus-debezium</module>
-    <module>quarkus-blaze-persistence</module>
-    <module>quarkus-google-cloud-services</module>
-    <module>quarkus-operator-sdk</module>
     <module>quarkus-maven-plugin</module>
     <module>quarkus-dependencies-to-build</module>
   </modules>
