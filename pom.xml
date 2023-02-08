@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>36</version>
+        <version>39</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -55,13 +55,8 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>2.16.0.Final</quarkus.version>
+        <quarkus.version>3.0.0.Alpha3</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
-
-        <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
-             Remove once Camel Quarkus manages the same version of org.graalvm.js:js
-             as ${graalvm.version} in Quarkus -->
-        <graalvm.version>22.3.0</graalvm.version>
 
         <camel-quarkus.version>2.16.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
@@ -70,9 +65,9 @@
              make sure you have a look at the AmazonServices member section below
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
-        <quarkus-amazon-services.version>1.6.1</quarkus-amazon-services.version>
+        <quarkus-amazon-services.version>2.0.0.Alpha1</quarkus-amazon-services.version>
         <quarkus-config-consul.version>1.1.0</quarkus-config-consul.version>
-        <quarkus-qpid-jms.version>0.42.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms.version>2.0.0.Alpha3</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>1.9.6.Final</debezium-quarkus-outbox.version>
@@ -85,7 +80,7 @@
         <optaplanner-quarkus.version>8.33.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>1.3.0</quarkus-google-cloud-services.version>
-        <quarkus-vault.version>2.1.0</quarkus-vault.version>
+        <quarkus-vault.version>3.0.0.Alpha1</quarkus-vault.version>
         <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.73</quarkus-platform-bom-generator.version>
@@ -118,7 +113,7 @@
             <extension>
                 <groupId>io.quarkus.bot</groupId>
                 <artifactId>build-reporter-maven-extension</artifactId>
-                <version>2.2.0</version>
+                <version>2.3.1</version>
             </extension>
         </extensions>
         <pluginManagement>
@@ -183,7 +178,9 @@
                                 <dependencyManagement>
                                     <!-- Extra constraints -->
                                     <!-- Consul config -->
+                                    <!-- TODO Quarkus 3
                                     <dependency>io.quarkiverse.config:quarkus-config-consul:${quarkus-config-consul.version}</dependency>
+                                    -->
                                     <dependency>io.quarkiverse.config:quarkus-config-consul-deployment:${quarkus-config-consul.version}</dependency>
                                     <!-- Vault -->
                                     <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
@@ -200,9 +197,11 @@
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
+                                    <!-- TODO Quarkus 3
                                     <test>
                                         <artifact>io.quarkiverse.config:quarkus-config-extensions-integration-test-consul:${quarkus-config-consul.version}</artifact>
                                     </test>
+                                    -->
                                     <test>
                                         <artifact>io.quarkiverse.vault:quarkus-vault-integration-test:${quarkus-vault.version}</artifact>
                                         <mavenFailsafePlugin>true</mavenFailsafePlugin>
@@ -228,6 +227,7 @@
                             </core>
                             <!-- Platform members -->
                             <members>
+                                <!-- TODO Quarkus 3: uncomment and fix nested comments
                                 <member>
                                     <name>Drools</name>
                                     <bom>org.kie:drools-build-parent:${drools-quarkus.version}</bom>
@@ -302,13 +302,13 @@
                                             <exclude>**/Native*</exclude>
                                         </jvmExcludes>
                                         <systemProperties>
-                                            <!-- Need to keep in sync with ${kogito-quarkus.version} -->
+                                            <!- - Need to keep in sync with ${kogito-quarkus.version} - ->
                                             <container.image.infinispan>infinispan/server:13.0.2.Final</container.image.infinispan>
                                             <container.image.kafka>vectorized/redpanda:v21.11.8</container.image.kafka>
                                             <container.image.wurstmeister.kafka>wurstmeister/kafka:2.12-2.2.1</container.image.wurstmeister.kafka>
                                             <container.image.keycloak>quay.io/keycloak/keycloak:17.0.1-legacy</container.image.keycloak>
-                                            <!-- some dev tools tests need the following properties -->
-                                            <!--maven.home>$${maven.home}</maven.home-->
+                                            <!- - some dev tools tests need the following properties - ->
+                                            <!- -maven.home>$${maven.home}</maven.home- ->
                                             <maven.repo.local>$${settings.localRepository}</maven.repo.local>
                                             <maven.settings>$${session.request.userSettingsFile.path}</maven.settings>
                                             <project.version>${project.version}</project.version>
@@ -334,9 +334,9 @@
                                             <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                         <test>
-                                            <!--
+                                            <!- -
                                                 Problem in https://github.com/kiegroup/kogito-runtimes/blob/d8fda957a793c4007f92156ccd4eb5d33cd51977/quarkus/extensions/kogito-quarkus-decisions-extension/kogito-quarkus-decisions-integration-test/src/test/java/org/kie/kogito/quarkus/dmn/KogitoDMNCodeCodestartIT.java#L63
-                                                2022-09-01T13:31:50.5121621Z [ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.054 s <<< FAILURE! - in org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT 2022-09-01T13:31:50.5121621Z [ERROR] testContent Time elapsed: 0.07 s <<< ERROR! 2022-09-01T13:31:50.5122239Z java.lang.NullPointerException 2022-09-01T13:31:50.5123228Z at org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT.testContent(KogitoDMNCodeCodestartIT.java:63) -->
+                                                2022-09-01T13:31:50.5121621Z [ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.054 s <<< FAILURE! - in org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT 2022-09-01T13:31:50.5121621Z [ERROR] testContent Time elapsed: 0.07 s <<< ERROR! 2022-09-01T13:31:50.5122239Z java.lang.NullPointerException 2022-09-01T13:31:50.5123228Z at org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT.testContent(KogitoDMNCodeCodestartIT.java:63) - ->
                                             <excluded>true</excluded>
                                             <packageApplication>true</packageApplication>
                                             <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
@@ -351,6 +351,7 @@
                                         </test>
                                     </tests>
                                 </member>
+                                -->
                                 <member>
                                     <name>QpidJMS</name>
                                     <bom>org.amqphub.quarkus:quarkus-qpid-jms-bom:${quarkus-qpid-jms.version}</bom>
@@ -364,6 +365,7 @@
                                         </test>
                                     </tests>
                                 </member>
+                                <!-- TODO Quarkus 3
                                 <member>
                                     <name>Cassandra</name>
                                     <bom>com.datastax.oss.quarkus:cassandra-quarkus-bom:${quarkus-cassandra-client.version}</bom>
@@ -399,6 +401,7 @@
                                         </test>
                                     </tests>
                                 </member>
+                                -->
                                 <member>
                                     <name>AmazonServices</name>
                                     <bom>io.quarkiverse.amazonservices:quarkus-amazon-services-bom:${quarkus-amazon-services.version}</bom>
@@ -416,6 +419,7 @@
                                         </test>
                                     </tests>
                                 </member>
+                                <!-- TODO Quarkus 3: uncomment and fix nested comments
                                 <member>
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
@@ -428,47 +432,41 @@
                                         <jvmSystemProperties>
                                             <quarkus.http.test-port>$${test.http.port.jvm}</quarkus.http.test-port>
                                             <quarkus.http.test-ssl-port>$${test.https.port.jvm}</quarkus.http.test-ssl-port>
-                                            <!-- https://github.com/quarkusio/quarkus/issues/20228  -->
+                                            <!- - https://github.com/quarkusio/quarkus/issues/20228  - ->
                                             <quarkus.https.test-port>$${test.https.port.jvm}</quarkus.https.test-port>
                                         </jvmSystemProperties>
                                         <nativeSystemProperties>
                                             <quarkus.http.test-port>$${test.http.port.native}</quarkus.http.test-port>
                                             <quarkus.http.test-ssl-port>$${test.https.port.native}</quarkus.http.test-ssl-port>
-                                            <!-- https://github.com/quarkusio/quarkus/issues/20228  -->
+                                            <!- - https://github.com/quarkusio/quarkus/issues/20228  - ->
                                             <quarkus.https.test-port>$${test.https.port.native}</quarkus.https.test-port>
                                         </nativeSystemProperties>
                                         <transformWith>${resourcesdir}/xslt/camel/test-pom.xsl</transformWith>
                                     </defaultTestConfig>
                                     <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-test-list.version}</testCatalogArtifact>
                                     <tests>
-                                        <test><!-- Workaround for weird issue with shared networking & keycloak container -->
+                                        <test><!- - Workaround for weird issue with shared networking & keycloak container - ->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround flaky file test https://github.com/apache/camel-quarkus/issues/3627 -->
+                                        <test><!- - Workaround flaky file test https://github.com/apache/camel-quarkus/issues/3627 - ->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-file:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround incompatible PostgreSQL JDBC driver -->
+                                        <test><!- - Workaround incompatible PostgreSQL JDBC driver - ->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                         <test>
-                                            <!-- Workaround flaky Kudu test: https://github.com/apache/camel-quarkus/issues/4259 -->
+                                            <!- - Workaround flaky Kudu test: https://github.com/apache/camel-quarkus/issues/4259 - ->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround flaky Tika test : https://github.com/apache/camel-quarkus/issues/4334 -->
+                                        <test><!- - Workaround flaky Tika test : https://github.com/apache/camel-quarkus/issues/4334 - ->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-tika:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
-                                    <dependencyManagement>
-                                        <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
-                                             Remove once Camel Quarkus manages the same version of org.graalvm.js:js
-                                             as ${graalvm.version} in Quarkus -->
-                                        <dependency>org.graalvm.js:js:${graalvm.version}</dependency>
-                                    </dependencyManagement>
                                 </member>
                                 <member>
                                     <name>Hazelcast</name>
@@ -584,6 +582,7 @@
                                         </test>
                                     </tests>
                                 </member>
+                                -->
                             </members>
                             <!-- Platform BOM generator configuration -->
                             <bomGenerator>
