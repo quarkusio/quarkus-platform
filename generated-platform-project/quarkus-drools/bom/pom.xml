@@ -1419,7 +1419,7 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
-        <version>5.6.14.Final</version>
+        <version>5.6.15.Final</version>
         <exclusions>
           <exclusion>
             <groupId>javax.persistence</groupId>
@@ -1442,7 +1442,7 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
-        <version>5.6.14.Final</version>
+        <version>5.6.15.Final</version>
         <exclusions>
           <exclusion>
             <groupId>javax.persistence</groupId>
@@ -1457,12 +1457,12 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-envers</artifactId>
-        <version>5.6.14.Final</version>
+        <version>5.6.15.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-jpamodelgen</artifactId>
-        <version>5.6.14.Final</version>
+        <version>5.6.15.Final</version>
         <exclusions>
           <exclusion>
             <groupId>javax.xml.bind</groupId>
@@ -2361,7 +2361,7 @@
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
-        <version>42.5.1</version>
+        <version>42.5.3</version>
         <scope>runtime</scope>
       </dependency>
       <dependency>
