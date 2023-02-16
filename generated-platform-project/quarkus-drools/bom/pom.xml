@@ -345,6 +345,11 @@
         <version>1.0.55</version>
       </dependency>
       <dependency>
+        <groupId>it.unimi.dsi</groupId>
+        <artifactId>fastutil</artifactId>
+        <version>8.5.11</version>
+      </dependency>
+      <dependency>
         <groupId>jakarta.activation</groupId>
         <artifactId>jakarta.activation-api</artifactId>
         <version>1.2.1</version>
@@ -439,6 +444,17 @@
         <groupId>net.java.dev.glazedlists</groupId>
         <artifactId>glazedlists_java15</artifactId>
         <version>1.8.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.antlr4gwt</groupId>
+        <artifactId>antlr4gwt-runtime</artifactId>
+        <version>4.10.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.antlr4gwt</groupId>
+        <artifactId>antlr4gwt-runtime</artifactId>
+        <version>4.10.0</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.antlr</groupId>
@@ -651,725 +667,725 @@
       <dependency>
         <groupId>org.drools.testcoverage</groupId>
         <artifactId>drools-test-suite</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>default-kiesession</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-alphanetwork-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-alphanetwork-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-alphanetwork-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-beliefs</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-beliefs</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-canonical-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-canonical-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-codegen-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-codegen-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-commands</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-commands</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-commands</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-decisiontables</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-decisiontables</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-distribution</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <type>zip</type>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-ast</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-ast</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-extensions</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-extensions</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-parser</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-parser</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-quarkus-deployment</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-quarkus-deployment</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <type>pom</type>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-quarkus-deployment</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-quarkus-util-deployment</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-quarkus-util-deployment</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-quarkus</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-drl-quarkus</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ecj</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ecj</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ecj</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-engine-classic</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-engine-classic</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-engine</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-engine</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-examples</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-examples</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-graph-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-graph-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-graph-graphviz</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-graph-graphviz</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-parser</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-impact-analysis-parser</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-io</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-io</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-kiesession</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-kiesession</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-kiesession</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-legacy-test-util</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-metric</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-metric</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-codegen</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-codegen</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-codegen</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-model-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel-parser</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel-parser</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-mvel</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-persistence-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-persistence-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-persistence-jpa</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-persistence-jpa</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-persistence-jpa</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-dsl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-dsl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-dsl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-engine</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-engine</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-impl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-impl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-ruleunits-impl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-backend</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-scenario-simulation-backend</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-serialization-protobuf</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-serialization-protobuf</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-serialization-protobuf</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-templates</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-templates</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-tms</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-tms</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-tms</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-traits</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-traits</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-util</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-util</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-util</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-verifier-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-verifier-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-verifier-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-verifier-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-verifier-drl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-verifier-drl</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-dynamic</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-dynamic</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-dynamic</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-static</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-static</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wiring-static</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-xml-support</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-xml-support</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-xml-support</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>multiple-kbases</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>named-kiesession</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jdt</groupId>
@@ -1588,742 +1604,720 @@
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-common-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-common-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-common-utils</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-compilation-manager-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-compilation-manager-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-runtime-manager-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-runtime-manager-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>efesto-runtime-manager-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-ci</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-ci</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-ci</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-backend</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-backend</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-feel-gwt-functions</artifactId>
-        <version>8.33.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-feel-gwt-functions</artifactId>
-        <version>8.33.0.Final</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-feel-gwt</artifactId>
-        <version>8.33.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-feel-gwt</artifactId>
-        <version>8.33.0.Final</version>
-        <classifier>sources</classifier>
+        <artifactId>kie-dmn-feel</artifactId>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-feel</artifactId>
-        <version>8.33.0.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-feel</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-openapi</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-openapi</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-signavio</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-signavio</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-validation</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-dmn-validation</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-drl-compilation-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-drl-kiesession-local-runtime</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-drl-map-input-runtime</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-internal</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-internal</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>javadoc</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-internal</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-memory-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-memory-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-commons</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-commons</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-commons</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-commons</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-commons</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-commons</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-dependencies</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-evaluator-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-evaluator-api</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-evaluator-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-evaluator-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-evaluator-core</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-evaluator-utils</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-clustering-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-common</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-scorecard-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-drools-tree-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-mining-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-scorecard-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tests</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tests</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-compiler</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-evaluator</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-tree-model</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-test-util</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-test-util</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-test-util</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-util-maven-integration</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-util-maven-integration</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-util-maven-support</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-util-maven-support</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-util-xml</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-util-xml</artifactId>
-        <version>8.33.0.Final</version>
+        <version>8.34.0.Final</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
@@ -2379,6 +2373,29 @@
         <groupId>org.powermock</groupId>
         <artifactId>powermock-module-junit4</artifactId>
         <version>2.0.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.rikkola.gwt</groupId>
+        <artifactId>antlr4-c3-gwt</artifactId>
+        <version>1.1.12</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.rikkola.gwt</groupId>
+        <artifactId>antlr4-c3-gwt</artifactId>
+        <version>1.1.12</version>
+        <classifier>sources</classifier>
+        <exclusions>
+          <exclusion>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
@@ -2448,6 +2465,11 @@
         <artifactId>xmlunit-matchers</artifactId>
         <version>2.8.2</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>xerces</groupId>
+        <artifactId>xercesImpl</artifactId>
+        <version>2.12.0.SP04</version>
       </dependency>
       <dependency>
         <groupId>xmlunit</groupId>
