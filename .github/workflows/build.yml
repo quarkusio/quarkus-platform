@@ -55,7 +55,7 @@ jobs:
           echo "${matrixArray[@]}"
           
           echo "${matrixArray[@]}" | \
-          jq --slurp --raw-input 'split("\n")[:-1]' > tmp
+          jq --slurp --raw-input -c 'split("\n")[:-1]' > tmp
           cat ./tmp
           echo "members=$(cat ./tmp)" >> $GITHUB_OUTPUT # Use this as jq @sh wasn't cooperating
   build:
