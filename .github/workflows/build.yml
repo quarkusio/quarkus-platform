@@ -41,12 +41,31 @@ jobs:
           name: pull-request-number-${{ github.event.number }}
           path: pull-request-number
           retention-days: 1
-  build:
-    name: Build - JDK ${{ matrix.java }}
+  retrieve-members:
     runs-on: ubuntu-latest
+    name: Retrieve Members
+    outputs:
+      members: ${{ steps.setmembers.outputs.members }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Retrieve members from pom
+        id: setmembers
+        run: |
+          matrixArray=$(find generated-platform-project/ -maxdepth 1 -mindepth 1 -type d | tr -d './')
+          echo "${matrixArray[@]}"
+          
+          echo "${matrixArray[@]}" | \
+          jq --slurp --raw-input 'split("\n")[:-1]' > tmp
+          cat ./tmp
+          echo "members=$(cat ./tmp)" >> $GITHUB_OUTPUT # Use this as jq @sh wasn't cooperating
+  build:
+    name: Build - JDK ${{ matrix.java }} ${{ matrix.member }}
+    runs-on: ubuntu-latest
+    needs: retrieve-members
     strategy:
       fail-fast: false
-      matrix:
+      matrix: 
+        member: ${{fromJson(needs.retrieve-members.outputs.members)}}
         java: [ 11 ]
     steps:
       - uses: actions/checkout@v3
@@ -67,8 +86,10 @@ jobs:
         with:
           distribution: temurin
           java-version: ${{ matrix.java }}
+      - name: Install all locally
+        run: ./mvnw -B clean install --settings .github/mvn-settings.xml --fail-at-end -DskipTests
       - name: Build with Maven
-        run: MAVEN_OPTS=-Xmx4096m && ./mvnw -B clean install --settings .github/mvn-settings.xml --fail-at-end
+        run: MAVEN_OPTS=-Xmx4096m && ./mvnw -B -f ${{ matrix.member }}/integration-test tests --settings .github/mvn-settings.xml --fail-at-end
       - name: Delete Local Artifacts From Cache
         shell: bash
         run: rm -rf ~/.m2/repository/io/quarkus/quarkus-universe-bom*
