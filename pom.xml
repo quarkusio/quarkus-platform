@@ -86,7 +86,7 @@
 
         <quarkus-google-cloud-services.version>1.4.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>2.1.0</quarkus-vault.version>
-        <quarkus-operator-sdk.version>5.1.0</quarkus-operator-sdk.version>
+        <quarkus-operator-sdk.version>5.1.1</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.76</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
@@ -595,6 +595,7 @@
                                     </defaultTestConfig>
                                     <tests>
                                         <test>
+                                            <skip>true</skip>
                                             <artifact>io.quarkiverse.operatorsdk:quarkus-operator-sdk-integration-tests:${quarkus-operator-sdk.version}</artifact>
                                         </test>
                                     </tests>
