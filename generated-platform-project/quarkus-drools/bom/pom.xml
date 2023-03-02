@@ -197,7 +197,7 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
-        <version>3.21.9</version>
+        <version>3.22.0</version>
       </dependency>
       <dependency>
         <groupId>com.h2database</groupId>
@@ -2361,7 +2361,7 @@
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
-        <version>42.5.3</version>
+        <version>42.5.4</version>
         <scope>runtime</scope>
       </dependency>
       <dependency>
