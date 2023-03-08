@@ -1,26 +1,26 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.0.0.Alpha4" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.0.0.Alpha5" ],
     "project" : {
       "default-codestart" : "resteasy-reactive",
       "properties" : {
         "doc-root" : "https://quarkus.io",
         "rest-assured-version" : "${rest-assured.version}",
         "compiler-plugin-version" : "3.10.1",
-        "surefire-plugin-version" : "3.0.0-M8",
+        "surefire-plugin-version" : "3.0.0-M9",
         "kotlin-version" : "1.8.10",
         "scala-version" : "2.13.8",
         "scala-plugin-version" : "4.8.0",
-        "quarkus-core-version" : "3.0.0.Alpha4",
+        "quarkus-core-version" : "3.0.0.Alpha5",
         "maven-plugin-groupId" : "io.quarkus",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
-        "maven-plugin-version" : "3.0.0.Alpha4",
+        "maven-plugin-version" : "3.0.0.Alpha5",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.0.0.Alpha4",
+        "gradle-plugin-version" : "3.0.0.Alpha5",
         "supported-maven-versions" : "[3.6.2,)",
         "proposed-maven-version" : "3.8.7",
         "maven-wrapper-version" : "3.1.1",
-        "gradle-wrapper-version" : "7.5.1",
+        "gradle-wrapper-version" : "8.0.1",
         "minimum-java-version" : "11",
         "recommended-java-version" : "17"
       }
