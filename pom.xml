@@ -83,7 +83,7 @@
         <quarkus-vault.version>3.0.0.Alpha1</quarkus-vault.version>
         <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.76</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.80</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -819,13 +819,13 @@
         <!--
            | This profile enables SBOM generation for each platform member.
            | This is still a work in progress.
-           | The SBOMs can be found under target/dependencies-to-build directory.
+           | The SBOMs can be found under target/sbom directory.
         -->
         <profile>
-            <id>depsToBuild</id>
+            <id>sbom</id>
             <activation>
                 <property>
-                    <name>depsToBuild</name>
+                    <name>sbom</name>
                 </property>
             </activation>
             <build>
@@ -839,6 +839,7 @@
                                 <manifest>true</manifest>
                                 <includeNonManaged>true</includeNonManaged>
                                 <excludeParentPoms>true</excludeParentPoms>
+                                <legacyScmLocator>true</legacyScmLocator>
                             </configuration>
                         </plugin>
                     </plugins>
