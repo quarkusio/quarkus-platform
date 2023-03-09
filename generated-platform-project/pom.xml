@@ -28,6 +28,7 @@
     <module>quarkus-operator-sdk</module>
     <module>quarkus-maven-plugin</module>
     <module>quarkus-dependencies-to-build</module>
+    <module>quarkus-sbom</module>
   </modules>
   <properties>
     <platform.key>io.quarkus.platform</platform.key>
