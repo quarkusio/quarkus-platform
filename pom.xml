@@ -75,7 +75,6 @@
         <quarkus-cassandra-client.version>1.1.3</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
 
-        <kogito-quarkus.version>1.33.0.Final</kogito-quarkus.version>
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
         <optaplanner-quarkus.version>8.33.0.Final</optaplanner-quarkus.version>
 
@@ -282,72 +281,6 @@
                                         </test>
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-jsonb-integration-test:${optaplanner-quarkus.version}</artifact>
-                                        </test>
-                                    </tests>
-                                </member>
-                                <member>
-                                    <name>Kogito</name>
-                                    <bom>org.kie.kogito:kogito-bom:${kogito-quarkus.version}</bom>
-                                    <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-kogito-bom:2.16.0.CR1</lastDetectedBomUpdate>
-                                        <next>${platform.groupId}:quarkus-kogito-bom:${platform.version}</next>
-                                    </release>
-                                    <dependencyManagement>
-                                        <dependency>org.kie.kogito:kogito-quarkus-test-utils:${kogito-quarkus.version}</dependency>
-                                    </dependencyManagement>
-                                    <defaultTestConfig>
-                                        <skip>false</skip>
-                                        <mavenFailsafePlugin>true</mavenFailsafePlugin>
-                                        <jvmExcludes>
-                                            <exclude>**/Native*</exclude>
-                                        </jvmExcludes>
-                                        <systemProperties>
-                                            <!- - Need to keep in sync with ${kogito-quarkus.version} - ->
-                                            <container.image.infinispan>infinispan/server:13.0.2.Final</container.image.infinispan>
-                                            <container.image.kafka>vectorized/redpanda:v21.11.8</container.image.kafka>
-                                            <container.image.wurstmeister.kafka>wurstmeister/kafka:2.12-2.2.1</container.image.wurstmeister.kafka>
-                                            <container.image.keycloak>quay.io/keycloak/keycloak:17.0.1-legacy</container.image.keycloak>
-                                            <!- - some dev tools tests need the following properties - ->
-                                            <!- -maven.home>$${maven.home}</maven.home- ->
-                                            <maven.repo.local>$${settings.localRepository}</maven.repo.local>
-                                            <maven.settings>$${session.request.userSettingsFile.path}</maven.settings>
-                                            <project.version>${project.version}</project.version>
-                                            <project.groupId>${project.groupId}</project.groupId>
-                                        </systemProperties>
-                                    </defaultTestConfig>
-                                    <testCatalogArtifact>org.kie.kogito:kogito-quarkus-test-list::xml:${kogito-quarkus.version}</testCatalogArtifact>
-                                    <tests>
-                                        <test>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:integration-tests-quarkus-processes-infinispan:${kogito-quarkus.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:integration-tests-quarkus-rules:${kogito-quarkus.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:kogito-quarkus-integration-test:${kogito-quarkus.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:kogito-quarkus-rules-integration-test:${kogito-quarkus.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <!- -
-                                                Problem in https://github.com/kiegroup/kogito-runtimes/blob/d8fda957a793c4007f92156ccd4eb5d33cd51977/quarkus/extensions/kogito-quarkus-decisions-extension/kogito-quarkus-decisions-integration-test/src/test/java/org/kie/kogito/quarkus/dmn/KogitoDMNCodeCodestartIT.java#L63
-                                                2022-09-01T13:31:50.5121621Z [ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 43.054 s <<< FAILURE! - in org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT 2022-09-01T13:31:50.5121621Z [ERROR] testContent Time elapsed: 0.07 s <<< ERROR! 2022-09-01T13:31:50.5122239Z java.lang.NullPointerException 2022-09-01T13:31:50.5123228Z at org.kie.kogito.quarkus.dmn.KogitoDMNCodeCodestartIT.testContent(KogitoDMNCodeCodestartIT.java:63) - ->
-                                            <excluded>true</excluded>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:kogito-quarkus-decisions-integration-test:${kogito-quarkus.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:kogito-quarkus-predictions-integration-test:${kogito-quarkus.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <packageApplication>true</packageApplication>
-                                            <artifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
@@ -602,37 +535,6 @@
                                     <dependency>io.quarkus:quarkus-bom-quarkus-platform-descriptor:${quarkus-bom.version}:json</dependency>
                                     <dependency>io.quarkus:quarkus-bom-quarkus-platform-properties::properties</dependency>
                                     <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
-                                    <!-- Kogito: exclude Spring-related dependencies -->
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-cloudevents:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-events-decisions:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-events-kafka:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-events-mongodb:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-events-process-kafka:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-explainability:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-jobs-management:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-mail:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-messaging:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-monitoring-core:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-monitoring-elastic:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-monitoring-prometheus:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-process-management:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-process-svg:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-rest-exception-handler:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-task-management:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-task-notification:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-addons-springboot-tracing-decision:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-cloudevents-spring-boot-addon:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-decisions-spring-boot-starter:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-event-driven-decisions-springboot-addon:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-predictions-spring-boot-starter:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-processes-spring-boot-starter:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-rules-spring-boot-starter:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-serverless-workflow-spring-boot-starter:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-spring-boot-starter:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-spring-boot-test-utils:*</dependency>
-                                    <dependency>org.kie.kogito:kogito-springboot-starter:*</dependency>
-                                    <dependency>org.kie.kogito:monitoring-core-springboot-addon:*</dependency>
-                                    <dependency>org.kie.kogito:monitoring-prometheus-springboot-addon:*</dependency>
                                     <!-- Log4j -->
                                     <dependency>log4j:log4j</dependency>
                                 </excludedDependencies>
