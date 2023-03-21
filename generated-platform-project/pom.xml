@@ -16,6 +16,7 @@
     <module>quarkus</module>
     <module>quarkus-qpid-jms</module>
     <module>quarkus-amazon-services</module>
+    <module>quarkus-camel</module>
     <module>quarkus-maven-plugin</module>
     <module>quarkus-dependencies-to-build</module>
     <module>quarkus-sbom</module>

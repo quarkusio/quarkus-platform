@@ -53,7 +53,7 @@
         </property>
       </activation>
       <build>
-        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom </defaultGoal>
+        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-camel-bom </defaultGoal>
         <pluginManagement>
           <plugins>
             <plugin>
@@ -91,6 +91,17 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-amazon-services-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-amazon-services-bom-sbom.json</outputFile>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-camel-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-camel-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-camel-bom-sbom.json</outputFile>
                   </configuration>
                 </execution>
               </executions>
