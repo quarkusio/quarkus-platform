@@ -70,7 +70,6 @@ import org.eclipse.aether.RepositorySystemSession;
 import org.eclipse.aether.artifact.DefaultArtifact;
 import org.eclipse.aether.collection.CollectRequest;
 import org.eclipse.aether.graph.Exclusion;
-import org.eclipse.aether.impl.RemoteRepositoryManager;
 import org.eclipse.aether.repository.RemoteRepository;
 import org.eclipse.aether.repository.WorkspaceReader;
 import org.eclipse.aether.resolution.ArtifactRequest;
@@ -81,7 +80,6 @@ import org.eclipse.aether.resolution.DependencyResolutionException;
 import org.eclipse.aether.resolution.DependencyResult;
 import org.eclipse.aether.util.artifact.JavaScopes;
 import org.fusesource.jansi.internal.Kernel32;
-import org.fusesource.jansi.internal.WindowsSupport;
 
 import io.quarkus.bootstrap.BootstrapConstants;
 import io.quarkus.bootstrap.app.ConfiguredClassLoading;
@@ -102,6 +100,7 @@ import io.quarkus.deployment.dev.QuarkusDevModeLauncher;
 import io.quarkus.maven.MavenDevModeLauncher.Builder;
 import io.quarkus.maven.components.CompilerOptions;
 import io.quarkus.maven.components.MavenVersionEnforcer;
+import io.quarkus.maven.components.QuarkusWorkspaceProvider;
 import io.quarkus.maven.dependency.ArtifactCoords;
 import io.quarkus.maven.dependency.ArtifactKey;
 import io.quarkus.maven.dependency.GACT;
@@ -290,7 +289,7 @@ public class DevMojo extends AbstractMojo {
     private RepositorySystem repoSystem;
 
     @Component
-    RemoteRepositoryManager remoteRepositoryManager;
+    QuarkusWorkspaceProvider workspaceProvider;
 
     @Parameter(defaultValue = "${repositorySystemSession}", readonly = true)
     private RepositorySystemSession repoSession;
@@ -484,11 +483,13 @@ public class DevMojo extends AbstractMojo {
      */
     private void saveTerminalState() {
         try {
-            windowsAttributes = WindowsSupport.getConsoleMode();
-            windowsAttributesSet = true;
             if (windowsAttributes > 0) {
                 long hConsole = Kernel32.GetStdHandle(Kernel32.STD_INPUT_HANDLE);
                 if (hConsole != (long) Kernel32.INVALID_HANDLE_VALUE) {
+                    int[] mode = new int[1];
+                    windowsAttributes = Kernel32.GetConsoleMode(hConsole, mode) == 0 ? -1 : mode[0];
+                    windowsAttributesSet = true;
+
                     final int VIRTUAL_TERMINAL_PROCESSING = 0x0004; //enable color on the windows console
                     if (Kernel32.SetConsoleMode(hConsole, windowsAttributes | VIRTUAL_TERMINAL_PROCESSING) != 0) {
                         windowsColorSupport = true;
@@ -511,7 +512,10 @@ public class DevMojo extends AbstractMojo {
 
     private void restoreTerminalState() {
         if (windowsAttributesSet) {
-            WindowsSupport.setConsoleMode(windowsAttributes);
+            long hConsole = Kernel32.GetStdHandle(Kernel32.STD_INPUT_HANDLE);
+            if (hConsole != (long) Kernel32.INVALID_HANDLE_VALUE) {
+                Kernel32.SetConsoleMode(hConsole, windowsAttributes);
+            }
         } else {
             if (attributes == null || pty == null) {
                 return;
@@ -1103,11 +1107,12 @@ public class DevMojo extends AbstractMojo {
         } else {
             final BootstrapMavenContextConfig<?> mvnConfig = BootstrapMavenContext.config()
                     .setRemoteRepositories(repos)
-                    .setRemoteRepositoryManager(remoteRepositoryManager)
+                    .setRemoteRepositoryManager(workspaceProvider.getRemoteRepositoryManager())
                     .setWorkspaceDiscovery(true)
                     .setPreferPomsFromWorkspace(true)
                     .setCurrentProject(project.getFile().toString());
 
+            final BootstrapMavenContext mvnCtx;
             // if a serialized model is found, it may be a reload triggered by a change in a POM
             // in which case we should not be using the original Maven session initialized with the previous POM version
             if (Files.exists(appModelLocation)) {
@@ -1115,15 +1120,16 @@ public class DevMojo extends AbstractMojo {
                 // we can't re-use the repo system because we want to use our interpolating model builder
                 // a use-case where it fails with the original repo system is when dev mode is launched with -Dquarkus.platform.version=xxx
                 // overriding the version of the quarkus-bom in the pom.xml
+                mvnCtx = workspaceProvider.createMavenContext(mvnConfig);
             } else {
                 // we can re-use the original Maven session and the system
                 mvnConfig.setRepositorySystemSession(repoSession).setRepositorySystem(repoSystem);
                 // there could be Maven extensions manipulating the project versions and models
                 // the ones returned from the Maven API could be different from the original pom.xml files
                 mvnConfig.setProjectModelProvider(QuarkusBootstrapProvider.getProjectMap(session)::get);
+                mvnCtx = new BootstrapMavenContext(mvnConfig);
             }
 
-            final BootstrapMavenContext mvnCtx = new BootstrapMavenContext(mvnConfig);
             appModel = new BootstrapAppModelResolver(new MavenArtifactResolver(mvnCtx))
                     .setDevMode(true)
                     .setTest(LaunchMode.TEST.equals(getLaunchModeClasspath()))
