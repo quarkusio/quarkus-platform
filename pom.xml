@@ -80,7 +80,7 @@
         <quarkus-google-cloud-services.version>1.2.2</quarkus-google-cloud-services.version>
         <quarkus-vault.version>2.0.0</quarkus-vault.version>
 
-        <quarkus-platform-bom-generator.version>0.0.69</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.83</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -645,11 +645,8 @@
                                 <originalPluginCoords>io.quarkus:quarkus-maven-plugin:${quarkus.version}</originalPluginCoords>
                                 <targetPluginCoords>${platform.groupId}:quarkus-maven-plugin:${platform.version}</targetPluginCoords>
                             </attachedMavenPlugin>
-
-                            <!-- Uncomment to create a ZIP with the BOM reports
-                            <generateBomReportsZip>${project.build.directory}/reports.zip</generateBomReportsZip>
-                            -->
                         </platformConfig>
+                        <dependenciesToBuild /> <!-- to enable manifest generation -->
                     </configuration>
                 </plugin>
                 <plugin>
@@ -781,6 +778,37 @@
             </properties>
             <build>
                 <defaultGoal>clean process-resources</defaultGoal>
+            </build>
+        </profile>
+
+        <!--
+           | This profile enables SBOM generation for each platform member.
+           | This is still a work in progress.
+           | The SBOMs can be found under target/sbom directory.
+        -->
+        <profile>
+            <id>sbom</id>
+            <activation>
+                <property>
+                    <name>sbom</name>
+                </property>
+            </activation>
+            <build>
+                <defaultGoal>clean process-resources</defaultGoal>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>io.quarkus</groupId>
+                            <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
+                            <configuration>
+                                <manifest>true</manifest>
+                                <includeNonManaged>true</includeNonManaged>
+                                <excludeParentPoms>true</excludeParentPoms>
+                                <legacyScmLocator>true</legacyScmLocator>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
             </build>
         </profile>
     </profiles>
