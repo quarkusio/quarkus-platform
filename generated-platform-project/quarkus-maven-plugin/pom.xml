@@ -179,6 +179,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.1</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -211,12 +212,23 @@
       </plugin>
       <plugin>
         <artifactId>maven-plugin-plugin</artifactId>
+        <version>3.8.1</version>
+        <executions>
+          <execution>
+            <id>help-goal</id>
+            <goals>
+              <goal>helpmojo</goal>
+            </goals>
+          </execution>
+        </executions>
         <configuration>
           <goalPrefix>quarkus</goalPrefix>
+          <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
         </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.2</version>
         <executions>
           <execution>
             <goals>
@@ -227,6 +239,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.2.1</version>
         <executions>
           <execution>
             <id>enforce-quarkus-maven-plugin</id>
