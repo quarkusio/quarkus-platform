@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.quarkus.platform</groupId>
+    <artifactId>quarkus-platform-parent</artifactId>
+    <version>999-SNAPSHOT</version>
+    <relativePath>..</relativePath>
+  </parent>
+  <artifactId>quarkus-sbom</artifactId>
+  <packaging>pom</packaging>
+  <name>Quarkus Platform - Quarkus Sbom</name>
+  <properties>
+    <gpg.skip>true</gpg.skip>
+  </properties>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-install</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-deploy</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+  <profiles>
+    <profile>
+      <id>sbom</id>
+      <activation>
+        <property>
+          <name>sbom</name>
+        </property>
+      </activation>
+      <build>
+        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-optaplanner-bom quarkus-platform-bom:dependencies-to-build@quarkus-kogito-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-cassandra-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-camel-bom quarkus-platform-bom:dependencies-to-build@quarkus-hazelcast-client quarkus-platform-bom:dependencies-to-build@quarkus-debezium-bom quarkus-platform-bom:dependencies-to-build@quarkus-blaze-persistence-bom quarkus-platform-bom:dependencies-to-build@quarkus-google-cloud-services-bom </defaultGoal>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>io.quarkus</groupId>
+              <artifactId>quarkus-platform-bom-maven-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>quarkus-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-optaplanner-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-optaplanner-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-optaplanner-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-optaplanner-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-kogito-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-kogito-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-kogito-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-kogito-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-qpid-jms-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-qpid-jms-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-qpid-jms-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-qpid-jms-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-cassandra-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-cassandra-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-cassandra-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-cassandra-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-amazon-services-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-amazon-services-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-amazon-services-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-amazon-services-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-camel-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-camel-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-camel-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-camel-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-hazelcast-client</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-hazelcast-client:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-hazelcast-client-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-hazelcast-client::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-debezium-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-debezium-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-debezium-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-debezium-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-blaze-persistence-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-blaze-persistence-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-blaze-persistence-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-blaze-persistence-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-google-cloud-services-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-google-cloud-services-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-google-cloud-services-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="append">
+                      <includeArtifacts combine.children="append">
+                        <artifact>io.quarkus.platform:quarkus-google-cloud-services-bom::pom:999-SNAPSHOT</artifact>
+                      </includeArtifacts>
+                    </dependenciesToBuild>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+</project>
