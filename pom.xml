@@ -88,7 +88,7 @@
         <quarkus-vault.version>2.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>5.1.1</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.80</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.83</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
