@@ -76,7 +76,7 @@
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
 
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
-        <optaplanner-quarkus.version>8.33.0.Final</optaplanner-quarkus.version>
+        <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>2.0.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>3.0.0</quarkus-vault.version>
@@ -252,6 +252,7 @@
                                         </test>
                                     </tests>
                                 </member>
+                                -->
                                 <member>
                                     <name>OptaPlanner</name>
                                     <bom>org.optaplanner:optaplanner-build-parent:${optaplanner-quarkus.version}</bom>
@@ -266,9 +267,10 @@
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-integration-test:${optaplanner-quarkus.version}</artifact>
                                         </test>
+                                        <!-- TODO: enable when a compatible version of Drools becomes a part of the platform.
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</artifact>
-                                        </test>
+                                        </test>-->
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-devui-integration-test:${optaplanner-quarkus.version}</artifact>
                                         </test>
@@ -278,9 +280,11 @@
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-jsonb-integration-test:${optaplanner-quarkus.version}</artifact>
                                         </test>
+                                        <test>
+                                            <artifact>org.optaplanner:optaplanner-quarkus-benchmark-integration-test:${optaplanner-quarkus.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
-                                -->
                                 <member>
                                     <name>QpidJMS</name>
                                     <bom>org.amqphub.quarkus:quarkus-qpid-jms-bom:${quarkus-qpid-jms.version}</bom>
@@ -652,6 +656,8 @@
                                     <dependency>com.oracle.instantclient:xstreams</dependency> <!-- provided dependency of a Debezium extension, supposed to be added by users manually -->
                                     <!-- Log4j -->
                                     <dependency>log4j:log4j</dependency>
+                                    <!-- AssertJ -->
+                                    <dependency>org.assertj:assertj-core</dependency>
                                 </excludedDependencies>
                             </bomGenerator>
                             <descriptorGenerator>

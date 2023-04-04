@@ -61,6 +61,7 @@
             <version>${platform.release}</version>
             <members>
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-optaplanner-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
