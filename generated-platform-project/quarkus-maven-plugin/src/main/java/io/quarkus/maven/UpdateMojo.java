@@ -65,7 +65,7 @@ public class UpdateMojo extends QuarkusProjectStateMojoBase {
     private Boolean rewriteDryRun;
 
     /**
-     * "The io.quarkus:quarkus-update-recipes version. This artifact contains the base recipes used by this tool to update a
+     * The io.quarkus:quarkus-update-recipes version. This artifact contains the base recipes used by this tool to update a
      * project.
      */
     @Parameter(property = "updateRecipesVersion", required = false)
@@ -77,7 +77,7 @@ public class UpdateMojo extends QuarkusProjectStateMojoBase {
     @Parameter(property = "stream", required = false)
     private String stream;
 
-    @Component
+    @Parameter(defaultValue = "${session}", readonly = true)
     private MavenSession mavenSession;
 
     @Component
