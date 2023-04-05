@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-parent</artifactId>
-    <version>3.0.0.CR2</version>
+    <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-sbom</artifactId>
@@ -71,7 +71,7 @@
                     <outputFile>../../target/sbom/quarkus-bom-sbom.json</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-bom::pom:3.0.0.CR2</artifact>
+                        <artifact>io.quarkus.platform:quarkus-bom::pom:999-SNAPSHOT</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
@@ -87,7 +87,7 @@
                     <outputFile>../../target/sbom/quarkus-qpid-jms-bom-sbom.json</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-qpid-jms-bom::pom:3.0.0.CR2</artifact>
+                        <artifact>io.quarkus.platform:quarkus-qpid-jms-bom::pom:999-SNAPSHOT</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
@@ -103,7 +103,7 @@
                     <outputFile>../../target/sbom/quarkus-amazon-services-bom-sbom.json</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-amazon-services-bom::pom:3.0.0.CR2</artifact>
+                        <artifact>io.quarkus.platform:quarkus-amazon-services-bom::pom:999-SNAPSHOT</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
@@ -119,7 +119,7 @@
                     <outputFile>../../target/sbom/quarkus-camel-bom-sbom.json</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-camel-bom::pom:3.0.0.CR2</artifact>
+                        <artifact>io.quarkus.platform:quarkus-camel-bom::pom:999-SNAPSHOT</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
