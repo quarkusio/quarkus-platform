@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.0.0.CR2</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-dependencies-to-build</artifactId>
@@ -71,7 +71,7 @@
                     <outputFile>../../target/dependencies-to-build/quarkus-bom-deps-to-build.txt</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-bom::pom:999-SNAPSHOT</artifact>
+                        <artifact>io.quarkus.platform:quarkus-bom::pom:3.0.0.CR2</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
@@ -87,7 +87,7 @@
                     <outputFile>../../target/dependencies-to-build/quarkus-qpid-jms-bom-deps-to-build.txt</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-qpid-jms-bom::pom:999-SNAPSHOT</artifact>
+                        <artifact>io.quarkus.platform:quarkus-qpid-jms-bom::pom:3.0.0.CR2</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
@@ -103,7 +103,7 @@
                     <outputFile>../../target/dependencies-to-build/quarkus-amazon-services-bom-deps-to-build.txt</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-amazon-services-bom::pom:999-SNAPSHOT</artifact>
+                        <artifact>io.quarkus.platform:quarkus-amazon-services-bom::pom:3.0.0.CR2</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
@@ -119,7 +119,7 @@
                     <outputFile>../../target/dependencies-to-build/quarkus-camel-bom-deps-to-build.txt</outputFile>
                     <dependenciesToBuild combine.self="append">
                       <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-camel-bom::pom:999-SNAPSHOT</artifact>
+                        <artifact>io.quarkus.platform:quarkus-camel-bom::pom:3.0.0.CR2</artifact>
                       </includeArtifacts>
                     </dependenciesToBuild>
                   </configuration>
