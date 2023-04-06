@@ -15,6 +15,7 @@
     <module>quarkus-universe</module>
     <module>quarkus</module>
     <module>quarkus-qpid-jms</module>
+    <module>quarkus-cassandra</module>
     <module>quarkus-amazon-services</module>
     <module>quarkus-camel</module>
     <module>quarkus-maven-plugin</module>
