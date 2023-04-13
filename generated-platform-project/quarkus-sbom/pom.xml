@@ -69,11 +69,7 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-bom-sbom.json</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
+                    <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
                 <execution>
@@ -85,11 +81,7 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-qpid-jms-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-qpid-jms-bom-sbom.json</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-qpid-jms-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
+                    <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
                 <execution>
@@ -101,11 +93,7 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-cassandra-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-cassandra-bom-sbom.json</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-cassandra-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
+                    <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
                 <execution>
@@ -117,11 +105,7 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-amazon-services-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-amazon-services-bom-sbom.json</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-amazon-services-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
+                    <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
                 <execution>
@@ -133,11 +117,7 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-camel-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-camel-bom-sbom.json</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-camel-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
+                    <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
               </executions>
