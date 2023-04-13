@@ -12,6 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Core - Integration Tests - Parent</name>
   <modules>
+    <module>quarkus-config-extensions-integration-test-consul</module>
     <module>quarkus-vault-integration-test</module>
     <module>quarkus-vault-integration-test-agroal</module>
     <module>quarkus-vault-integration-test-app</module>
