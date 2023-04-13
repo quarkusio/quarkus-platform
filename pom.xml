@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.0.1</quarkus-amazon-services.version>
-        <quarkus-config-consul.version>1.1.0</quarkus-config-consul.version>
+        <quarkus-config-consul.version>2.0.1</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.0.0.Alpha3</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
@@ -177,9 +177,7 @@
                                 <dependencyManagement>
                                     <!-- Extra constraints -->
                                     <!-- Consul config -->
-                                    <!-- TODO Quarkus 3
                                     <dependency>io.quarkiverse.config:quarkus-config-consul:${quarkus-config-consul.version}</dependency>
-                                    -->
                                     <dependency>io.quarkiverse.config:quarkus-config-consul-deployment:${quarkus-config-consul.version}</dependency>
                                     <!-- Vault -->
                                     <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
@@ -196,11 +194,9 @@
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
-                                    <!-- TODO Quarkus 3
                                     <test>
                                         <artifact>io.quarkiverse.config:quarkus-config-extensions-integration-test-consul:${quarkus-config-consul.version}</artifact>
                                     </test>
-                                    -->
                                     <test>
                                         <artifact>io.quarkiverse.vault:quarkus-vault-integration-test:${quarkus-vault.version}</artifact>
                                         <mavenFailsafePlugin>true</mavenFailsafePlugin>
