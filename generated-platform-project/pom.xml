@@ -18,6 +18,7 @@
     <module>quarkus-cassandra</module>
     <module>quarkus-amazon-services</module>
     <module>quarkus-camel</module>
+    <module>quarkus-google-cloud-services</module>
     <module>quarkus-maven-plugin</module>
     <module>quarkus-dependencies-to-build</module>
     <module>quarkus-sbom</module>
