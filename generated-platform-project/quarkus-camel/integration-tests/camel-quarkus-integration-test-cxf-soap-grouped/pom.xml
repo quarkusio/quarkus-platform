@@ -118,7 +118,6 @@
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
           </systemPropertyVariables>
-          <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254-->
           <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</test>
         </configuration>
       </plugin>
@@ -170,6 +169,7 @@
                     <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
                     <quarkus.https.test-port>${test.https.port.native}</quarkus.https.test-port>
                   </systemProperties>
+                  <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</test>
                 </configuration>
               </execution>
             </executions>
