@@ -371,6 +371,16 @@
                                     </defaultTestConfig>
                                     <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-test-list.version}</testCatalogArtifact>
                                     <tests>
+                                        <test>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
+                                            <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254-->
+                                            <testPattern>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</testPattern>
+                                        </test>
+                                        <test>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xml:${camel-quarkus-test-list.version}</artifact>
+                                            <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4255-->
+                                            <testPattern>!*IT,!XmlTest#aggregate,!XmlTest#xsltSchemas</testPattern>
+                                        </test>
                                         <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus-test-list.version}</artifact>
