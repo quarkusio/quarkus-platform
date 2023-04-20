@@ -418,6 +418,9 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:2.13.7.Final</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
+                                    <dependencyManagement>
+                                        <dependency>org.eclipse.jetty:jetty-server:9.4.51.v20230217</dependency>
+                                    </dependencyManagement>
                                     <defaultTestConfig>
                                         <skip>false</skip>
                                         <jvmSystemProperties>
