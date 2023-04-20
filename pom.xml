@@ -70,7 +70,7 @@
         <quarkus-qpid-jms.version>2.0.0.Alpha3</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
-        <debezium-quarkus-outbox.version>1.9.6.Final</debezium-quarkus-outbox.version>
+        <debezium-quarkus-outbox.version>2.2.0.Final</debezium-quarkus-outbox.version>
         <quarkus-blaze-persistence.version>1.6.8</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.2.0-alpha1</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
@@ -518,11 +518,14 @@
                                         </test>
                                     </tests>
                                 </member>
+                                -->
                                 <member>
                                     <name>Debezium-Outbox</name>
                                     <dependencyManagement>
                                         <dependency>io.debezium:debezium-quarkus-outbox:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-deployment:${debezium-quarkus-outbox.version}</dependency>
+                                        <dependency>io.debezium:debezium-quarkus-outbox-reactive:${debezium-quarkus-outbox.version}</dependency>
+                                        <dependency>io.debezium:debezium-quarkus-outbox-reactive-deployment:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-api:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-connector-cassandra:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-connector-db2:${debezium-quarkus-outbox.version}</dependency>
@@ -546,8 +549,13 @@
                                             <skip>false</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</artifact>
                                         </test>
+                                        <test>
+                                            <skip>false</skip>
+                                            <artifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${debezium-quarkus-outbox.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
+                                <!--
                                 <member>
                                     <name>Blaze-Persistence</name>
                                     <dependencyManagement>
