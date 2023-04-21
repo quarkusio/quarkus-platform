@@ -58,7 +58,7 @@
         <quarkus.version>2.13.7.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>2.13.2</camel-quarkus.version>
+        <camel-quarkus.version>2.13.3</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -418,6 +418,9 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:2.13.7.Final</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
+                                    <dependencyManagement>
+                                        <dependency>org.eclipse.jetty:jetty-server:9.4.51.v20230217</dependency>
+                                    </dependencyManagement>
                                     <defaultTestConfig>
                                         <skip>false</skip>
                                         <jvmSystemProperties>
@@ -447,6 +450,10 @@
                                         <test><!-- Workaround incompatible PostgreSQL JDBC driver -->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus-test-list.version}</artifact>
+				        </test>
+					<test><!-- Workaround flaky test https://github.com/apache/camel-quarkus/issues/4089 -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
