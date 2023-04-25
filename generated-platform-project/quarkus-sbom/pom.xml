@@ -53,7 +53,7 @@
         </property>
       </activation>
       <build>
-        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-cassandra-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-camel-bom quarkus-platform-bom:dependencies-to-build@quarkus-debezium-bom quarkus-platform-bom:dependencies-to-build@quarkus-google-cloud-services-bom </defaultGoal>
+        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-optaplanner-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-cassandra-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-camel-bom quarkus-platform-bom:dependencies-to-build@quarkus-debezium-bom quarkus-platform-bom:dependencies-to-build@quarkus-google-cloud-services-bom </defaultGoal>
         <pluginManagement>
           <plugins>
             <plugin>
@@ -69,6 +69,18 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="override" />
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-optaplanner-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-optaplanner-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-optaplanner-bom-sbom.json</outputFile>
                     <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
