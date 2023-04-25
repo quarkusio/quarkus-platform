@@ -80,11 +80,13 @@
 
         <quarkus-google-cloud-services.version>2.0.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>3.0.0</quarkus-vault.version>
-        <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
+        <quarkus-operator-sdk.version>6.0.0</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.86</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.87</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
+        <version.surefire.plugin>3.0.0</version.surefire.plugin>
+        <failsafe-plugin.version>${version.surefire.plugin}</failsafe-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
 
         <!-- the group-id (and the platform key) for the generated platform artifacts -->
@@ -124,16 +126,18 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${version.surefire.plugin}</version>
                     <configuration>
-                        <systemProperties>
+                        <systemPropertyVariables>
                             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
-                        </systemProperties>
+                        </systemPropertyVariables>
                         <excludedGroups>quarkus-platform-ignore</excludedGroups>
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>${version.failsafe.plugin}</version>
                     <configuration>
                         <excludedGroups>quarkus-platform-ignore</excludedGroups>
                         <systemProperties>
@@ -617,7 +621,6 @@
                                         </test>
                                     </tests>
                                 </member>
-                                <!--
                                 <member>
                                     <name>OperatorSDK</name>
                                     <bom>io.quarkiverse.operatorsdk:quarkus-operator-sdk-bom:${quarkus-operator-sdk.version}</bom>
@@ -631,10 +634,15 @@
                                     <tests>
                                         <test>
                                             <artifact>io.quarkiverse.operatorsdk:quarkus-operator-sdk-integration-tests:${quarkus-operator-sdk.version}</artifact>
+                                            <environmentVariables>
+                                                <NAMESPACE_FROM_ENV>fromEnvVarNS</NAMESPACE_FROM_ENV>
+                                                <QUARKUS_OPERATOR_SDK_CONTROLLERS_EMPTY_NAMESPACES>fromEnv1,fromEnv2</QUARKUS_OPERATOR_SDK_CONTROLLERS_EMPTY_NAMESPACES>
+                                                <VARIABLE_NS_ENV>variableNSFromEnv</VARIABLE_NS_ENV>
+                                                <QUARKUS_OPERATOR_SDK_CONTROLLERS_KEYCLOAKCONTROLLER_NAMESPACES>JOSDK_ALL_NAMESPACES</QUARKUS_OPERATOR_SDK_CONTROLLERS_KEYCLOAKCONTROLLER_NAMESPACES>
+                                            </environmentVariables>
                                         </test>
                                     </tests>
                                 </member>
-                                -->
                             </members>
                             <!-- Platform BOM generator configuration -->
                             <bomGenerator>
