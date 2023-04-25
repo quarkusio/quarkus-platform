@@ -80,7 +80,7 @@
 
         <quarkus-google-cloud-services.version>2.0.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>3.0.0</quarkus-vault.version>
-        <quarkus-operator-sdk.version>5.0.0.Beta1</quarkus-operator-sdk.version>
+        <quarkus-operator-sdk.version>6.0.0</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.86</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
@@ -617,7 +617,6 @@
                                         </test>
                                     </tests>
                                 </member>
-                                <!--
                                 <member>
                                     <name>OperatorSDK</name>
                                     <bom>io.quarkiverse.operatorsdk:quarkus-operator-sdk-bom:${quarkus-operator-sdk.version}</bom>
@@ -634,7 +633,6 @@
                                         </test>
                                     </tests>
                                 </member>
-                                -->
                             </members>
                             <!-- Platform BOM generator configuration -->
                             <bomGenerator>
