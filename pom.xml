@@ -623,6 +623,8 @@
                                 </member>
                                 <member>
                                     <name>OperatorSDK</name>
+                                    <!-- incompatible with Quarkus 3.0.1.Final -->
+                                    <enabled>false</enabled>
                                     <bom>io.quarkiverse.operatorsdk:quarkus-operator-sdk-bom:${quarkus-operator-sdk.version}</bom>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-operator-sdk-bom:2.14.0.CR1</lastDetectedBomUpdate>
