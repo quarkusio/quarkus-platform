@@ -25,14 +25,20 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkiverse.artemis</groupId>
-      <artifactId>quarkus-test-artemis</artifactId>
-      <version>1.0.5</version>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>artemis-server</artifactId>
+      <version>2.28.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>artemis-amqp-protocol</artifactId>
+      <version>2.28.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-jackson</artifactId>
+      <artifactId>quarkus-test-common</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -66,11 +72,6 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.jboss.logging</groupId>
-      <artifactId>commons-logging-jboss-logging</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
