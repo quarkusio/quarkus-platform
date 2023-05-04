@@ -92,6 +92,9 @@
           <dependenciesToScan>
             <dependency>org.optaplanner:optaplanner-quarkus-devui-integration-test</dependency>
           </dependenciesToScan>
+          <systemPropertyVariables>
+            <dev.iu.root>/q/dev</dev.iu.root>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
     </plugins>
@@ -117,6 +120,7 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                    <dev.iu.root>/q/dev</dev.iu.root>
                   </systemProperties>
                 </configuration>
               </execution>
