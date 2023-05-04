@@ -276,6 +276,9 @@
                                         </test>
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-devui-integration-test:${optaplanner-quarkus.version}</artifact>
+                                            <systemProperties>
+                                                <dev.iu.root>/q/dev</dev.iu.root>
+                                            </systemProperties>
                                         </test>
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-jackson-integration-test:${optaplanner-quarkus.version}</artifact>
