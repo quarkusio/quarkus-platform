@@ -10,21 +10,21 @@
         "kotlin-version" : "1.8.10",
         "scala-version" : "2.13.8",
         "scala-plugin-version" : "4.8.1",
-        "quarkus-core-version" : "3.0.2.Final",
+        "quarkus-core-version" : "3.0.3.Final",
         "maven-plugin-groupId" : "io.quarkus",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
-        "maven-plugin-version" : "3.0.2.Final",
+        "maven-plugin-version" : "3.0.3.Final",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.0.2.Final",
+        "gradle-plugin-version" : "3.0.3.Final",
         "supported-maven-versions" : "[3.8.2,)",
         "proposed-maven-version" : "3.8.8",
         "maven-wrapper-version" : "3.2.0",
-        "gradle-wrapper-version" : "8.1",
+        "gradle-wrapper-version" : "8.1.1",
         "minimum-java-version" : "11",
         "recommended-java-version" : "17"
       }
     },
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.0.2.Final" ]
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.0.3.Final" ]
   },
   "categories" : [ {
     "id" : "web",
