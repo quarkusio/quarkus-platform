@@ -5959,6 +5959,16 @@
         </exclusions>
       </dependency>
       <dependency>
+        <groupId>io.javaoperatorsdk</groupId>
+        <artifactId>micrometer-support</artifactId>
+        <version>4.3.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.javaoperatorsdk</groupId>
+        <artifactId>operator-framework-core</artifactId>
+        <version>4.3.2</version>
+      </dependency>
+      <dependency>
         <groupId>io.micrometer</groupId>
         <artifactId>micrometer-commons</artifactId>
         <version>1.10.6</version>
@@ -7551,8 +7561,33 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
+        <artifactId>quarkus-operator-sdk-bundle-generator-deployment</artifactId>
+        <version>6.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.operatorsdk</groupId>
+        <artifactId>quarkus-operator-sdk-bundle-generator</artifactId>
+        <version>6.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.operatorsdk</groupId>
+        <artifactId>quarkus-operator-sdk-common-deployment</artifactId>
+        <version>6.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.operatorsdk</groupId>
+        <artifactId>quarkus-operator-sdk-common</artifactId>
+        <version>6.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.operatorsdk</groupId>
+        <artifactId>quarkus-operator-sdk-deployment</artifactId>
+        <version>6.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk</artifactId>
-        <version>5.1.4</version>
+        <version>6.0.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
