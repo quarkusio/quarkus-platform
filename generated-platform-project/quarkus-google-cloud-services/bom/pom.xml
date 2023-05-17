@@ -1347,7 +1347,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-common-protos</artifactId>
-        <version>2.14.3</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -2622,7 +2622,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-common-protos</artifactId>
-        <version>2.14.3</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -2667,12 +2667,12 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-grpc</artifactId>
-        <version>2.24.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-grpc</artifactId>
-        <version>2.24.0</version>
+        <version>2.16.0</version>
         <classifier>testlib</classifier>
       </dependency>
       <dependency>
@@ -2689,12 +2689,12 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax</artifactId>
-        <version>2.24.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax</artifactId>
-        <version>2.24.0</version>
+        <version>2.16.0</version>
         <classifier>testlib</classifier>
       </dependency>
       <dependency>
@@ -3592,52 +3592,52 @@
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-android</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-apache-v2</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-appengine</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-findbugs</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-gson</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-jackson2</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-protobuf</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-test</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-xml</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client</artifactId>
-        <version>1.43.1</version>
+        <version>1.43.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
@@ -3682,132 +3682,132 @@
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-all</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-alts</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-api</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-auth</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-benchmarks</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-census</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-context</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-core</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-gcp-observability</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-googleapis</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-grpclb</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-interop-testing</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty-shaded</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-okhttp</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf-lite</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-rls</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-services</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-servlet-jakarta</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-servlet</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-stub</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing-proto</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-xds</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.54.0</version>
+        <version>1.55.1</version>
         <type>pom</type>
       </dependency>
       <dependency>
