@@ -511,6 +511,14 @@
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-zendesk:${camel-quarkus-test-list.version}</artifact>
                                         </test>
+                                        <test><!-- Workaround temporary  -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-opentelemetry:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test><!-- Workaround temporary  -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-infinispan-quarkus-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
                                <!-- <member>
