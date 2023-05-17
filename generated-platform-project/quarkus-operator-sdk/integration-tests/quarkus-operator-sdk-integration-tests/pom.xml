@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-operator-sdk-integration-tests-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.1.0.CR1</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-operator-sdk-integration-tests</artifactId>
