@@ -20,6 +20,8 @@
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-lra</module>
+    <module>camel-quarkus-integration-test-opentelemetry</module>
+    <module>camel-quarkus-integration-test-infinispan-quarkus-client</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-atlasmap</module>
@@ -66,7 +68,6 @@
     <module>camel-quarkus-integration-test-hl7</module>
     <module>camel-quarkus-integration-test-http</module>
     <module>camel-quarkus-integration-test-infinispan-common</module>
-    <module>camel-quarkus-integration-test-infinispan-quarkus-client</module>
     <module>camel-quarkus-integration-test-infinispan</module>
     <module>camel-quarkus-integration-test-influxdb</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
@@ -129,7 +130,6 @@
     <module>camel-quarkus-integration-test-olingo4</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
     <module>camel-quarkus-integration-test-openstack</module>
-    <module>camel-quarkus-integration-test-opentelemetry</module>
     <module>camel-quarkus-integration-test-paho-mqtt5</module>
     <module>camel-quarkus-integration-test-paho</module>
     <module>camel-quarkus-integration-test-pdf</module>
