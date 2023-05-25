@@ -66,6 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.3.0</quarkus-amazon-services.version>
+        <quarkus-cxf.version>2.1.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.0.1</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.2.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -355,6 +356,21 @@
                                     </tests>
                                 </member>
                                 <member>
+                                    <name>CXF</name>
+                                    <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
+                                    <dependencyManagement>
+                                        <!-- Temporary, should be removable with camel-quarkus 3.0.0-M2+1 https://github.com/quarkiverse/quarkus-cxf/issues/899 -->
+                                        <dependency>org.eclipse.angus:angus-mail:1.1.0</dependency>
+                                    </dependencyManagement>
+                                    <release>
+                                        <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
+                                    </release>
+                                    <defaultTestConfig>
+                                        <skip>false</skip>
+                                    </defaultTestConfig>
+                                    <testCatalogArtifact>io.quarkiverse.cxf:quarkus-cxf-test-list::xml:${quarkus-cxf.version}</testCatalogArtifact>
+                                </member>
+                                <member>
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                     <release>
@@ -381,8 +397,9 @@
                                     <tests>
                                         <test>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
-                                            <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254-->
-                                            <testPattern>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</testPattern>
+                                            <!-- Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254
+                                                 the !CxfSoapClientTest#simpleSoapClientDataFormats exclusion can be removed for Camel Quarkus 3.0.0-m2 -->
+                                            <testPattern>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService,!CxfSoapClientTest#simpleSoapClientDataFormats</testPattern>
                                         </test>
                                         <test>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xml:${camel-quarkus-test-list.version}</artifact>
