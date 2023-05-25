@@ -16,8 +16,8 @@
     <module>integration-tests-quarkus-predictions</module>
     <module>integration-tests-quarkus-rules</module>
     <module>kogito-quarkus-serverless-workflow-integration-test</module>
-    <module>kogito-quarkus-rules-integration-test</module>
     <module>kogito-quarkus-integration-test</module>
+    <module>kogito-quarkus-rules-integration-test</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>
