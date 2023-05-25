@@ -37,12 +37,14 @@ interpolated-pom.xml
 
 # Temporary data ignored in camel-quarkus
 /generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-hl7/id_file
+/generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-js-dsl/src/main/resources/module.mjs
 
 # Temporary data ignored in quarkus-cxf tests
 /generated-platform-project/quarkus-cxf/integration-tests/quarkus-cxf-integration-test-ws-rm/derby.log
 
 # Workaround for https://github.com/quarkusio/quarkus/issues/33305
 /generated-platform-project/quarkus-cxf/integration-tests/Java2wsTest/
+/generated-platform-project/quarkus-camel/integration-tests/Java2wsTest/
 
 # Workaround for https://github.com/quarkiverse/quarkus-cxf/issues/900
 /generated-platform-project/quarkus-cxf/integration-tests/quarkus-cxf-integration-test-logging/src/main/resources/wsdl/CalculatorService.wsdl
