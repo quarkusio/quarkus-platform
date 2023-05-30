@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-groovy-dsl</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-groovy-dsl</name>
+  <artifactId>camel-quarkus-integration-test-google-pubsub</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-google-pubsub</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-groovy-dsl</artifactId>
+      <artifactId>camel-quarkus-integration-test-google-pubsub</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-groovy-dsl</artifactId>
+      <artifactId>camel-quarkus-integration-test-google-pubsub</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,9 +55,14 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.24.2</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-google</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -89,7 +94,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-groovy-dsl</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
@@ -151,7 +156,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-groovy-dsl</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -166,7 +171,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-groovy-dsl:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

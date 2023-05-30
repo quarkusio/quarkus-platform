@@ -451,6 +451,10 @@
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4516 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus-test-list.version}</artifact>
+				        </test>
+                                        <test><!-- Workaround temporary issue already corrected in main https://github.com/apache/camel-quarkus/pull/4936 -->
+                                            <excluded>true</excluded>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-master:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>

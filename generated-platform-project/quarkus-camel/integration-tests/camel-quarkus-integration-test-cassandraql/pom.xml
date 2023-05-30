@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-xml</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-xml</name>
+  <artifactId>camel-quarkus-integration-test-cassandraql</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-cassandraql</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-xml</artifactId>
+      <artifactId>camel-quarkus-integration-test-cassandraql</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-xml</artifactId>
+      <artifactId>camel-quarkus-integration-test-cassandraql</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,9 +55,47 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>cassandra</artifactId>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.google.code.findbugs</groupId>
+          <artifactId>jsr305</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.github.jnr</groupId>
+          <artifactId>jnr-posix</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.datastax.cassandra</groupId>
+          <artifactId>cassandra-driver-core</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.datastax.cassandra</groupId>
+      <artifactId>cassandra-driver-core</artifactId>
+      <version>3.7.1</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.github.stephenc.jcip</groupId>
+          <artifactId>jcip-annotations</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.checkerframework</groupId>
+          <artifactId>checker-qual</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit4-mock</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -89,14 +127,13 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-xml</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql</dependency>
           </dependenciesToScan>
           <systemPropertyVariables>
             <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
           </systemPropertyVariables>
-          <test>!*IT,!XmlTest#aggregate,!XmlTest#xsltSchemas</test>
         </configuration>
       </plugin>
       <plugin>
@@ -147,13 +184,12 @@
                     <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
                     <quarkus.https.test-port>${test.https.port.native}</quarkus.https.test-port>
                   </systemProperties>
-                  <test>!*IT,!XmlTest#aggregate,!XmlTest#xsltSchemas</test>
                 </configuration>
               </execution>
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-xml</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -168,7 +204,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xml:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

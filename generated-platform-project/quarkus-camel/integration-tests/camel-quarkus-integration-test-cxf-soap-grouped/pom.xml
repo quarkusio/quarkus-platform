@@ -73,7 +73,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>2.0.0.Alpha4</version>
+      <version>2.0.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -118,7 +118,7 @@
             <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
             <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
           </systemPropertyVariables>
-          <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService,!CxfSoapClientTest#simpleSoapClientDataFormats</test>
+          <test>!*IT,!Java2wsTest</test>
         </configuration>
       </plugin>
       <plugin>
@@ -169,7 +169,7 @@
                     <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
                     <quarkus.https.test-port>${test.https.port.native}</quarkus.https.test-port>
                   </systemProperties>
-                  <test>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService,!CxfSoapClientTest#simpleSoapClientDataFormats</test>
+                  <test>!*IT,!Java2wsTest</test>
                 </configuration>
               </execution>
             </executions>

@@ -8,9 +8,6 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-opentelemetry</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-opentelemetry</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -56,6 +53,11 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -163,7 +165,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-opentelemetry:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
