@@ -1,30 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-camel-integration-tests-parent</artifactId>
+    <artifactId>quarkus-cxf-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-groovy-dsl</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-groovy-dsl</name>
+  <artifactId>quarkus-cxf-integration-test-mtom</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-mtom</name>
   <dependencies>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-groovy-dsl</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-mtom</artifactId>
+      <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-groovy-dsl</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-mtom</artifactId>
+      <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -53,6 +50,17 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-test-util</artifactId>
+      <version>${quarkus-cxf.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.assertj</groupId>
@@ -89,35 +97,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-groovy-dsl</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom</dependency>
           </dependenciesToScan>
-          <systemPropertyVariables>
-            <quarkus.http.test-port>${test.http.port.jvm}</quarkus.http.test-port>
-            <quarkus.http.test-ssl-port>${test.https.port.jvm}</quarkus.http.test-ssl-port>
-            <quarkus.https.test-port>${test.https.port.jvm}</quarkus.https.test-port>
-          </systemPropertyVariables>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>reserve-network-port</id>
-            <goals>
-              <goal>reserve-network-port</goal>
-            </goals>
-            <phase>process-test-resources</phase>
-            <configuration>
-              <portNames>
-                <portName>test.http.port.jvm</portName>
-                <portName>test.https.port.jvm</portName>
-                <portName>test.http.port.native</portName>
-                <portName>test.https.port.native</portName>
-              </portNames>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
@@ -142,16 +124,13 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                    <quarkus.http.test-port>${test.http.port.native}</quarkus.http.test-port>
-                    <quarkus.http.test-ssl-port>${test.https.port.native}</quarkus.http.test-ssl-port>
-                    <quarkus.https.test-port>${test.https.port.native}</quarkus.https.test-port>
                   </systemProperties>
                 </configuration>
               </execution>
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-groovy-dsl</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -166,7 +145,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-groovy-dsl:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

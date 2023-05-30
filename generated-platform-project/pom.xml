@@ -18,6 +18,7 @@
     <module>quarkus-qpid-jms</module>
     <module>quarkus-cassandra</module>
     <module>quarkus-amazon-services</module>
+    <module>quarkus-cxf</module>
     <module>quarkus-camel</module>
     <module>quarkus-debezium</module>
     <module>quarkus-google-cloud-services</module>

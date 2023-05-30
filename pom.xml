@@ -58,7 +58,7 @@
         <quarkus.version>3.1.0.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.0.0-M1</camel-quarkus.version>
+        <camel-quarkus.version>3.0.0-M2</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -66,6 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.3.0</quarkus-amazon-services.version>
+        <quarkus-cxf.version>2.1.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.0.1</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.2.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -355,6 +356,28 @@
                                     </tests>
                                 </member>
                                 <member>
+                                    <name>CXF</name>
+                                    <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
+                                    <dependencyManagement>
+                                        <!-- Temporary, should be removable with camel-quarkus 3.0.0-M2+1 https://github.com/quarkiverse/quarkus-cxf/issues/899 -->
+                                        <dependency>org.eclipse.angus:angus-mail:1.1.0</dependency>
+                                    </dependencyManagement>
+                                    <release>
+                                        <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
+                                    </release>
+                                    <defaultTestConfig>
+                                        <skip>false</skip>
+                                    </defaultTestConfig>
+                                    <testCatalogArtifact>io.quarkiverse.cxf:quarkus-cxf-test-list::xml:${quarkus-cxf.version}</testCatalogArtifact>
+                                    <tests>
+                                        <test>
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-server:${quarkus-cxf.version}</artifact>
+                                            <!-- Disabled due to https://github.com/quarkusio/quarkus/issues/33305 -->
+                                            <testPattern>!*IT,!Java2wsTest</testPattern>
+                                        </test>
+                                    </tests>
+                                </member>
+                                <member>
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                     <release>
@@ -381,13 +404,8 @@
                                     <tests>
                                         <test>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
-                                            <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4254-->
-                                            <testPattern>!*IT,!CxfSoapClientTest#wsdlUpToDate,!CxfSoapWssClientTest#wsdlUpToDate,!CxfSoapServiceTest#simpleSoapService</testPattern>
-                                        </test>
-                                        <test>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xml:${camel-quarkus-test-list.version}</artifact>
-                                            <!--Some tests are disabled because of https://github.com/apache/camel-quarkus/issues/4255-->
-                                            <testPattern>!*IT,!XmlTest#aggregate,!XmlTest#xsltSchemas</testPattern>
+                                            <!-- Disabled due to https://github.com/quarkusio/quarkus/issues/33305 -->
+                                            <testPattern>!*IT,!Java2wsTest</testPattern>
                                         </test>
                                         <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                             <skip>true</skip>
@@ -406,23 +424,6 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround Snakeyaml icompatibilities https://github.com/apache/camel-quarkus/issues/4662 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-dataformat:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary LRA https://github.com/apache/camel-quarkus/issues/4667 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-lra:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround flaky Tika test : https://github.com/apache/camel-quarkus/issues/4334 -->
-                                            <!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4470 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-tika:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-activemq:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4492 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-as2:${camel-quarkus-test-list.version}</artifact>
@@ -431,30 +432,6 @@
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4488 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cassandraql:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-datasonnet:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-dozer:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-elasticsearch-rest:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4502 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-bigquery:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4502 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4498 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-hazelcast:${camel-quarkus-test-list.version}</artifact>
@@ -462,30 +439,6 @@
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4524 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jira:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-caffeine-lrucache:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-opentracing:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4463 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-optaplanner:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-rabbitmq:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4464 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-smallrye-reactive-messaging:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-stax:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4515 -->
                                             <excluded>true</excluded>
@@ -498,26 +451,10 @@
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4516 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
+				        </test>
+                                        <test><!-- Workaround temporary issue already corrected in main https://github.com/apache/camel-quarkus/pull/4936 -->
                                             <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xmlsecurity:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xstream:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4514 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-zendesk:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary  -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-opentelemetry:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary  -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-infinispan-quarkus-client:${camel-quarkus-test-list.version}</artifact>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-master:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
