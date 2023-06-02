@@ -7636,32 +7636,32 @@
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator-deployment</artifactId>
-        <version>6.1.0</version>
+        <version>6.1.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator</artifactId>
-        <version>6.1.0</version>
+        <version>6.1.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common-deployment</artifactId>
-        <version>6.1.0</version>
+        <version>6.1.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common</artifactId>
-        <version>6.1.0</version>
+        <version>6.1.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-deployment</artifactId>
-        <version>6.1.0</version>
+        <version>6.1.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk</artifactId>
-        <version>6.1.0</version>
+        <version>6.1.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.tika</groupId>
