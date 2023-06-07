@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>3.1.0.Final</quarkus.version>
+        <quarkus.version>3.1.1.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>3.0.0-M2</camel-quarkus.version>
@@ -81,7 +81,7 @@
 
         <quarkus-google-cloud-services.version>2.1.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>3.0.0</quarkus-vault.version>
-        <quarkus-operator-sdk.version>6.1.0</quarkus-operator-sdk.version>
+        <quarkus-operator-sdk.version>6.1.1</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.88</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
