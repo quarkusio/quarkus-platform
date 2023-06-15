@@ -72,7 +72,7 @@
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>2.2.0.Final</debezium-quarkus-outbox.version>
-        <quarkus-blaze-persistence.version>1.6.8</quarkus-blaze-persistence.version>
+        <quarkus-blaze-persistence.version>1.6.9</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.2.0</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
 
@@ -509,14 +509,13 @@
                                         </test>
                                     </tests>
                                 </member>
-                                <!--
                                 <member>
                                     <name>Blaze-Persistence</name>
                                     <dependencyManagement>
-                                        <dependency>com.blazebit:blaze-persistence-integration-quarkus:${quarkus-blaze-persistence.version}</dependency>
-                                        <dependency>com.blazebit:blaze-persistence-integration-quarkus-deployment:${quarkus-blaze-persistence.version}</dependency>
-                                        <dependency>com.blazebit:blaze-persistence-entity-view-processor:${quarkus-blaze-persistence.version}</dependency>
-                                        <dependency>com.blazebit:blaze-persistence-integration-hibernate-5.6:${quarkus-blaze-persistence.version}</dependency>
+                                        <dependency>com.blazebit:blaze-persistence-integration-quarkus-3:${quarkus-blaze-persistence.version}</dependency>
+                                        <dependency>com.blazebit:blaze-persistence-integration-quarkus-3-deployment:${quarkus-blaze-persistence.version}</dependency>
+                                        <dependency>com.blazebit:blaze-persistence-entity-view-processor-jakarta:${quarkus-blaze-persistence.version}</dependency>
+                                        <dependency>com.blazebit:blaze-persistence-integration-hibernate-6.2:${quarkus-blaze-persistence.version}</dependency>
                                     </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-blaze-persistence-bom:2.15.0.CR1</lastDetectedBomUpdate>
@@ -536,7 +535,7 @@
                                             <skip>false</skip>
                                             <skipNative>true</skipNative>
                                             <skipJvm>false</skipJvm>
-                                            <artifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-base:${quarkus-blaze-persistence.version}</artifact>
+                                            <artifact>com.blazebit:blaze-persistence-examples-quarkus-3-testsuite-base:${quarkus-blaze-persistence.version}</artifact>
                                             <systemProperties>
                                                 <quarkus.test.profile>h2</quarkus.test.profile>
                                             </systemProperties>
@@ -545,11 +544,10 @@
                                             <skip>false</skip>
                                             <skipNative>false</skipNative>
                                             <skipJvm>true</skipJvm>
-                                            <artifact>com.blazebit:blaze-persistence-examples-quarkus-testsuite-native-h2:${quarkus-blaze-persistence.version}</artifact>
+                                            <artifact>com.blazebit:blaze-persistence-examples-quarkus-3-testsuite-native-h2:${quarkus-blaze-persistence.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
-                                -->
                                 <member>
                                     <name>GoogleCloudServices</name>
                                     <bom>io.quarkiverse.googlecloudservices:quarkus-google-cloud-services-bom:${quarkus-google-cloud-services.version}</bom>
