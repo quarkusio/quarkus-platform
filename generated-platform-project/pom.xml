@@ -26,6 +26,7 @@
     <module>quarkus-maven-plugin</module>
     <module>quarkus-dependencies-to-build</module>
     <module>quarkus-sbom</module>
+    <module>quarkus-extension-changes</module>
   </modules>
   <properties>
     <platform.key>io.quarkus.platform</platform.key>
