@@ -480,6 +480,27 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-tika:${camel-quarkus-test-list.version}</artifact>
                                         </test>
+                                        <test><!-- Workaround LRA coordinator container image being moved: https://github.com/apache/camel-quarkus/issues/4667 -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-lra:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <!-- Workaround issues with available disk space for the Artemis broker -->
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-artemis-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-qpid-amqp-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-artemis-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-qpid-amqp-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                     <dependencyManagement>
                                         <!-- Workaround for https://github.com/apache/camel-quarkus/issues/4285
