@@ -453,12 +453,12 @@
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
-        <version>4.0.2</version>
+        <version>4.0.3</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-xjc</artifactId>
-        <version>4.0.2</version>
+        <version>4.0.3</version>
       </dependency>
       <dependency>
         <groupId>org.jvnet.mimepull</groupId>
