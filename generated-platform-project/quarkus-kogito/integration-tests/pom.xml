@@ -18,6 +18,7 @@
     <module>kogito-quarkus-rules-integration-test</module>
     <module>kogito-quarkus-predictions-integration-test</module>
     <module>kogito-quarkus-serverless-workflow-integration-test</module>
+    <module>integration-tests-quarkus-legacy-rules</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>

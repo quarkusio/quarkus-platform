@@ -4,6 +4,22 @@
       <id>google-mirror</id>
       <repositories>
         <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>kogito</id>
+          <name>kogito</name>
+          <url>https://repository.jboss.org/nexus/content/groups/kogito-public/</url>
+        </repository>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>jboss-nexus</id>
+          <name>JBoss Nexus</name>
+          <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
           <id>google-maven-central</id>
           <name>GCS Maven Central mirror</name>
           <url>https://maven-central.storage-download.googleapis.com/maven2/</url>
