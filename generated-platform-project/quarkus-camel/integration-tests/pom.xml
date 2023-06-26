@@ -17,6 +17,11 @@
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-tika</module>
+    <module>camel-quarkus-integration-test-lra</module>
+    <module>camel-quarkus-integration-test-sjms-artemis-client</module>
+    <module>camel-quarkus-integration-test-sjms-qpid-amqp-client</module>
+    <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
+    <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -111,7 +116,6 @@
     <module>camel-quarkus-integration-test-kotlin</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-leveldb</module>
-    <module>camel-quarkus-integration-test-lra</module>
     <module>camel-quarkus-integration-test-lumberjack</module>
     <module>camel-quarkus-integration-test-mail</module>
     <module>camel-quarkus-integration-test-main-caffeine-lrucache</module>
@@ -162,10 +166,6 @@
     <module>camel-quarkus-integration-test-servicenow</module>
     <module>camel-quarkus-integration-test-servlet</module>
     <module>camel-quarkus-integration-test-shiro</module>
-    <module>camel-quarkus-integration-test-sjms-artemis-client</module>
-    <module>camel-quarkus-integration-test-sjms-qpid-amqp-client</module>
-    <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
-    <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-slack</module>
     <module>camel-quarkus-integration-test-smallrye-reactive-messaging</module>
     <module>camel-quarkus-integration-test-soap</module>
