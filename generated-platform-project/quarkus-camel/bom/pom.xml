@@ -6993,22 +6993,22 @@
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcmail-jdk18on</artifactId>
-        <version>1.73</version>
+        <version>1.74</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcpg-jdk18on</artifactId>
-        <version>1.73</version>
+        <version>1.74</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-ext-jdk18on</artifactId>
-        <version>1.73</version>
+        <version>1.74</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcutil-jdk18on</artifactId>
-        <version>1.73</version>
+        <version>1.74</version>
       </dependency>
       <dependency>
         <groupId>org.brotli</groupId>
