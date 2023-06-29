@@ -14,6 +14,7 @@
   <modules>
     <module>quarkus-universe</module>
     <module>quarkus</module>
+    <module>quarkus-drools</module>
     <module>quarkus-optaplanner</module>
     <module>quarkus-kogito</module>
     <module>quarkus-qpid-jms</module>
@@ -26,6 +27,8 @@
     <module>quarkus-google-cloud-services</module>
     <module>quarkus-operator-sdk</module>
     <module>quarkus-maven-plugin</module>
+    <module>quarkus-dependencies-to-build</module>
+    <module>quarkus-sbom</module>
   </modules>
   <properties>
     <platform.key>io.quarkus.platform</platform.key>

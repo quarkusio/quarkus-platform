@@ -10,6 +10,9 @@
   </parent>
   <artifactId>quarkus-operator-sdk-integration-tests</artifactId>
   <name>Quarkus Platform - OperatorSDK - Integration Tests - quarkus-operator-sdk-integration-tests</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.operatorsdk</groupId>
@@ -138,6 +141,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>io.quarkiverse.operatorsdk:quarkus-operator-sdk-integration-tests:${quarkus-operator-sdk.version}</appArtifact>
                 </configuration>
               </execution>

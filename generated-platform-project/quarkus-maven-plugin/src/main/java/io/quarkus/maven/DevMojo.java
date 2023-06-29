@@ -93,7 +93,6 @@ import io.quarkus.bootstrap.resolver.BootstrapAppModelResolver;
 import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContext;
 import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContextConfig;
 import io.quarkus.bootstrap.resolver.maven.MavenArtifactResolver;
-import io.quarkus.bootstrap.resolver.maven.options.BootstrapMavenOptions;
 import io.quarkus.bootstrap.util.BootstrapUtils;
 import io.quarkus.bootstrap.workspace.ArtifactSources;
 import io.quarkus.bootstrap.workspace.SourceDir;
@@ -382,6 +381,15 @@ public class DevMojo extends AbstractMojo {
     private Pty pty;
     private boolean windowsColorSupport;
 
+    /**
+     * Indicates for which launch mode the dependencies should be resolved.
+     *
+     * @return launch mode for which the dependencies should be resolved
+     */
+    protected LaunchMode getLaunchModeClasspath() {
+        return LaunchMode.DEVELOPMENT;
+    }
+
     @Override
     public void setLog(Log log) {
         super.setLog(log);
@@ -390,6 +398,11 @@ public class DevMojo extends AbstractMojo {
 
     @Override
     public void execute() throws MojoFailureException, MojoExecutionException {
+
+        if (project.getPackaging().equals(ArtifactCoords.TYPE_POM)) {
+            getLog().info("Type of the artifact is POM, skipping dev goal");
+            return;
+        }
 
         mavenVersionEnforcer.ensureMavenVersion(getLog(), session);
 
@@ -1084,7 +1097,7 @@ public class DevMojo extends AbstractMojo {
         final Path appModelLocation = resolveSerializedModelLocation();
 
         ApplicationModel appModel = bootstrapProvider
-                .getResolvedApplicationModel(QuarkusBootstrapProvider.getProjectId(project), LaunchMode.DEVELOPMENT);
+                .getResolvedApplicationModel(QuarkusBootstrapProvider.getProjectId(project), getLaunchModeClasspath());
         if (appModel != null) {
             bootstrapProvider.close();
         } else {
@@ -1113,6 +1126,7 @@ public class DevMojo extends AbstractMojo {
             final BootstrapMavenContext mvnCtx = new BootstrapMavenContext(mvnConfig);
             appModel = new BootstrapAppModelResolver(new MavenArtifactResolver(mvnCtx))
                     .setDevMode(true)
+                    .setTest(LaunchMode.TEST.equals(getLaunchModeClasspath()))
                     .setCollectReloadableDependencies(!noDeps)
                     .resolveModel(mvnCtx.getCurrentProject().getAppArtifact());
         }
@@ -1169,7 +1183,6 @@ public class DevMojo extends AbstractMojo {
         if (argsString != null) {
             builder.applicationArgs(argsString);
         }
-        propagateUserProperties(builder);
 
         return builder.build();
     }
@@ -1190,26 +1203,6 @@ public class DevMojo extends AbstractMojo {
             builder.jvmArgs(Arrays.asList(CommandLineUtils.translateCommandline(jvmArgs)));
         }
 
-    }
-
-    private void propagateUserProperties(MavenDevModeLauncher.Builder builder) {
-        Properties userProps = BootstrapMavenOptions.newInstance().getSystemProperties();
-        if (userProps == null) {
-            return;
-        }
-        final StringBuilder buf = new StringBuilder();
-        buf.append("-D");
-        for (Object o : userProps.keySet()) {
-            String name = o.toString();
-            final String value = userProps.getProperty(name);
-            buf.setLength(2);
-            buf.append(name);
-            if (value != null && !value.isEmpty()) {
-                buf.append('=');
-                buf.append(value);
-            }
-            builder.jvmArgs(buf.toString());
-        }
     }
 
     private void applyCompilerFlag(Optional<Xpp3Dom> compilerPluginConfiguration, String flagName,
@@ -1268,7 +1261,7 @@ public class DevMojo extends AbstractMojo {
             final List<Exclusion> exclusions;
             if (!d.getExclusions().isEmpty()) {
                 exclusions = new ArrayList<>(d.getExclusions().size());
-                d.getExclusions().forEach(e -> exclusions.add(new Exclusion(e.getGroupId(), e.getArtifactId(), null, null)));
+                d.getExclusions().forEach(e -> exclusions.add(new Exclusion(e.getGroupId(), e.getArtifactId(), "*", "*")));
             } else {
                 exclusions = List.of();
             }

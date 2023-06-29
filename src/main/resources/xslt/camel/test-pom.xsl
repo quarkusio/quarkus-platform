@@ -88,6 +88,32 @@
                     </dependencies>
                 </plugin>
             </xsl:if>
+            <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-js-dsl'">
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <id>unpack-test-resources</id>
+                            <phase>process-test-resources</phase>
+                            <goals>
+                                <goal>unpack</goal>
+                            </goals>
+                            <configuration>
+                                <artifactItems>
+                                    <artifactItem>
+                                        <groupId>org.apache.camel.quarkus</groupId>
+                                        <artifactId>camel-quarkus-integration-test-js-dsl</artifactId>
+                                        <version>${camel-quarkus.version}</version>
+                                        <outputDirectory>${project.basedir}/src/main/resources</outputDirectory>
+                                        <includes>**/*.mjs</includes>
+                                    </artifactItem>
+                                </artifactItems>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </xsl:if>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>

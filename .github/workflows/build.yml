@@ -57,7 +57,7 @@ jobs:
         shell: bash
       - name: Cache Maven Repository
         id: cache-maven
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.m2/repository
           # refresh cache every month to avoid unlimited growth
@@ -68,7 +68,7 @@ jobs:
           distribution: temurin
           java-version: ${{ matrix.java }}
       - name: Build with Maven
-        run: MAVEN_OPTS=-Xmx3072m && ./mvnw -B clean install --settings .github/mvn-settings.xml --fail-at-end
+        run: export MAVEN_OPTS=-Xmx6G && ./mvnw -B clean install --settings .github/mvn-settings.xml --fail-at-end
       - name: Delete Local Artifacts From Cache
         shell: bash
         run: rm -rf ~/.m2/repository/io/quarkus/quarkus-universe-bom*
@@ -95,7 +95,7 @@ jobs:
         shell: bash
       - name: Cache Maven Repository
         id: cache-maven
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.m2/repository
           # refresh cache every month to avoid unlimited growth
