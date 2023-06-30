@@ -9661,7 +9661,7 @@
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-core</artifactId>
-        <version>21.0.2</version>
+        <version>21.1.2</version>
       </dependency>
       <dependency>
         <groupId>org.liquibase.ext</groupId>
