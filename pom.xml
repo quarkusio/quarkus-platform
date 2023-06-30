@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.3.3</quarkus-amazon-services.version>
-        <quarkus-cxf.version>2.1.0</quarkus-cxf.version>
+        <quarkus-cxf.version>2.2.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.0.1</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.3.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -370,13 +370,6 @@
                                         <skip>false</skip>
                                     </defaultTestConfig>
                                     <testCatalogArtifact>io.quarkiverse.cxf:quarkus-cxf-test-list::xml:${quarkus-cxf.version}</testCatalogArtifact>
-                                    <tests>
-                                        <test>
-                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-server:${quarkus-cxf.version}</artifact>
-                                            <!-- Disabled due to https://github.com/quarkusio/quarkus/issues/33305 -->
-                                            <testPattern>!*IT,!Java2wsTest</testPattern>
-                                        </test>
-                                    </tests>
                                 </member>
                                 <member>
                                     <name>Camel</name>
@@ -403,11 +396,6 @@
                                     </defaultTestConfig>
                                     <testCatalogArtifact>org.apache.camel.quarkus:camel-quarkus-test-list::xml:${camel-quarkus-test-list.version}</testCatalogArtifact>
                                     <tests>
-                                        <test>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
-                                            <!-- Disabled due to https://github.com/quarkusio/quarkus/issues/33305 -->
-                                            <testPattern>!*IT,!Java2wsTest</testPattern>
-                                        </test>
                                         <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus-test-list.version}</artifact>
@@ -452,7 +440,7 @@
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4516 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus-test-list.version}</artifact>
-				        </test>
+                                        </test>
                                         <test><!-- Workaround temporary issue already corrected in main https://github.com/apache/camel-quarkus/pull/4936 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-master:${camel-quarkus-test-list.version}</artifact>
