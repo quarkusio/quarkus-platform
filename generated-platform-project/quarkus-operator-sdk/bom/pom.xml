@@ -61,42 +61,42 @@
       <dependency>
         <groupId>io.javaoperatorsdk</groupId>
         <artifactId>micrometer-support</artifactId>
-        <version>4.3.5</version>
+        <version>4.4.0</version>
       </dependency>
       <dependency>
         <groupId>io.javaoperatorsdk</groupId>
         <artifactId>operator-framework-core</artifactId>
-        <version>4.3.5</version>
+        <version>4.4.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator-deployment</artifactId>
-        <version>6.1.1</version>
+        <version>6.2.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator</artifactId>
-        <version>6.1.1</version>
+        <version>6.2.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common-deployment</artifactId>
-        <version>6.1.1</version>
+        <version>6.2.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common</artifactId>
-        <version>6.1.1</version>
+        <version>6.2.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-deployment</artifactId>
-        <version>6.1.1</version>
+        <version>6.2.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk</artifactId>
-        <version>6.1.1</version>
+        <version>6.2.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
