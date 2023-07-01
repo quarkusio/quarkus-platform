@@ -14,12 +14,12 @@
     <dependency>
       <groupId>org.amqphub.quarkus</groupId>
       <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
-      <version>${quarkus-amazon-services.version}</version>
+      <version>${quarkus-qpid-jms.version}</version>
     </dependency>
     <dependency>
       <groupId>org.amqphub.quarkus</groupId>
       <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
-      <version>${quarkus-amazon-services.version}</version>
+      <version>${quarkus-qpid-jms.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -150,7 +150,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-amazon-services.version}</appArtifact>
+                  <appArtifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
