@@ -12,7 +12,6 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Integration Tests - Parent</name>
   <modules>
-    <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-debezium</module>
@@ -40,6 +39,7 @@
     <module>camel-quarkus-integration-test-crypto</module>
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-csv</module>
+    <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json-grouped</module>
     <module>camel-quarkus-integration-test-datasonnet</module>
