@@ -18,10 +18,13 @@
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-tika</module>
     <module>camel-quarkus-integration-test-lra</module>
+    <module>camel-quarkus-integration-test-jms-artemis-client</module>
+    <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-sjms-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-sjms2-artemis-client</module>
     <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
+    <module>camel-quarkus-integration-test-jta</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -89,8 +92,6 @@
     <module>camel-quarkus-integration-test-jdbc</module>
     <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jira</module>
-    <module>camel-quarkus-integration-test-jms-artemis-client</module>
-    <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolt</module>
     <module>camel-quarkus-integration-test-jpa</module>
     <module>camel-quarkus-integration-test-jq</module>
@@ -101,7 +102,6 @@
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
-    <module>camel-quarkus-integration-test-jta</module>
     <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
     <module>camel-quarkus-integration-test-kafka-sasl</module>
     <module>camel-quarkus-integration-test-kafka-ssl</module>

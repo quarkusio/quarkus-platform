@@ -487,6 +487,14 @@
                                         <!-- Workaround issues with available disk space for the Artemis broker -->
                                         <test>
                                             <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-qpid-amqp-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-artemis-client:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                         <test>
@@ -500,6 +508,10 @@
                                         <test>
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms2-qpid-amqp-client:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jta:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                     <dependencyManagement>
