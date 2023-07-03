@@ -314,6 +314,26 @@
         <version>12.16.1</version>
       </dependency>
       <dependency>
+        <groupId>com.blazebit</groupId>
+        <artifactId>blaze-persistence-entity-view-processor-jakarta</artifactId>
+        <version>1.6.9</version>
+      </dependency>
+      <dependency>
+        <groupId>com.blazebit</groupId>
+        <artifactId>blaze-persistence-integration-hibernate-6.2</artifactId>
+        <version>1.6.9</version>
+      </dependency>
+      <dependency>
+        <groupId>com.blazebit</groupId>
+        <artifactId>blaze-persistence-integration-quarkus-3-deployment</artifactId>
+        <version>1.6.9</version>
+      </dependency>
+      <dependency>
+        <groupId>com.blazebit</groupId>
+        <artifactId>blaze-persistence-integration-quarkus-3</artifactId>
+        <version>1.6.9</version>
+      </dependency>
+      <dependency>
         <groupId>com.cronutils</groupId>
         <artifactId>cron-utils</artifactId>
         <version>9.2.1</version>
