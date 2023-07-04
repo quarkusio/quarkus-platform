@@ -50,6 +50,8 @@ jobs:
         java: [ 11 ]
     steps:
       - uses: actions/checkout@v3
+      - name: Reclaim Disk Space
+        run: .github/ci-prerequisites.sh
       - name: Get Date
         id: get-date
         run: |
