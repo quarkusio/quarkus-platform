@@ -76,7 +76,7 @@
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk</artifactId>
-        <version>6.2.0</version>
+        <version>6.2.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
