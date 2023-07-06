@@ -8,36 +8,20 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>kogito-quarkus-serverless-workflow-integration-test</artifactId>
-  <name>Quarkus Platform - Kogito - Integration Tests - kogito-quarkus-serverless-workflow-integration-test</name>
+  <artifactId>integration-tests-quarkus-legacy-rules</artifactId>
+  <name>Quarkus Platform - Kogito - Integration Tests - integration-tests-quarkus-legacy-rules</name>
   <dependencies>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-serverless-workflow-integration-test</artifactId>
+      <artifactId>integration-tests-quarkus-legacy-rules</artifactId>
       <version>${kogito-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-serverless-workflow-integration-test</artifactId>
+      <artifactId>integration-tests-quarkus-legacy-rules</artifactId>
       <version>${kogito-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-quarkus-test-utils</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-test-utils</artifactId>
-      <version>${kogito-quarkus.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-devtools-testing</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -51,24 +35,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.github.tomakehurst</groupId>
-      <artifactId>wiremock-jre8</artifactId>
-      <version>2.33.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.swagger.parser.v3</groupId>
-      <artifactId>swagger-parser</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -123,24 +91,9 @@
         </executions>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test</dependency>
+            <dependency>org.kie.kogito:integration-tests-quarkus-legacy-rules</dependency>
           </dependenciesToScan>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-maven-plugin</artifactId>
-        <version>${quarkus.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>build</goal>
-            </goals>
-            <configuration>
-              <appArtifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</appArtifact>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
@@ -179,7 +132,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test</dependency>
+                <dependency>org.kie.kogito:integration-tests-quarkus-legacy-rules</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -194,7 +147,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.kie.kogito:kogito-quarkus-serverless-workflow-integration-test:${kogito-quarkus.version}</appArtifact>
+                  <appArtifact>org.kie.kogito:integration-tests-quarkus-legacy-rules:${kogito-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
