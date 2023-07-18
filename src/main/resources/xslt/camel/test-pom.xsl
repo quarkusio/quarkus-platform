@@ -114,27 +114,6 @@
                     </executions>
                 </plugin>
             </xsl:if>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>reserve-network-port</id>
-                        <goals>
-                            <goal>reserve-network-port</goal>
-                        </goals>
-                        <phase>process-test-resources</phase>
-                        <configuration>
-                            <portNames>
-                                <portName>test.http.port.jvm</portName>
-                                <portName>test.https.port.jvm</portName>
-                                <portName>test.http.port.native</portName>
-                                <portName>test.https.port.native</portName>
-                            </portNames>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </xsl:copy>
     </xsl:template>
 
