@@ -21694,7 +21694,7 @@
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-core</artifactId>
-        <version>21.0.2</version>
+        <version>22.0.1</version>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
