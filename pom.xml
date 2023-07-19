@@ -435,6 +435,16 @@
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-micrometer:${camel-quarkus-test-list.version}</artifact>
                                         </test>
+                                        <test>
+                                            <!-- https://github.com/apache/camel-quarkus/issues/5092 -->
+                                            <excluded>true</excluded>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <!-- https://github.com/apache/camel-quarkus/issues/5092 -->
+                                            <excluded>true</excluded>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ssh:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
                                <!-- <member>
