@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-kogito-integration-tests-parent</artifactId>
-    <version>2.16.9.Final</version>
+    <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>kogito-quarkus-serverless-workflow-integration-test</artifactId>
@@ -113,7 +113,7 @@
                 <maven.repo.local>${settings.localRepository}</maven.repo.local>
                 <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
                 <project.groupId>io.quarkus.platform</project.groupId>
-                <project.version>2.16.9.Final</project.version>
+                <project.version>999-SNAPSHOT</project.version>
               </systemProperties>
               <excludes>
                 <exclude>**/Native*</exclude>
@@ -172,7 +172,7 @@
                     <maven.repo.local>${settings.localRepository}</maven.repo.local>
                     <maven.settings>${session.request.userSettingsFile.path}</maven.settings>
                     <project.groupId>io.quarkus.platform</project.groupId>
-                    <project.version>2.16.9.Final</project.version>
+                    <project.version>999-SNAPSHOT</project.version>
                   </systemProperties>
                 </configuration>
               </execution>
