@@ -336,6 +336,9 @@ public class DevMojo extends AbstractMojo {
     @Parameter(defaultValue = "${quarkus.enforceBuildGoal}")
     private boolean enforceBuildGoal = true;
 
+    @Parameter(property = "quarkus.warnIfBuildGoalMissing")
+    boolean warnIfBuildGoalMissing = true;
+
     @Component
     private WorkspaceReader wsReader;
 
@@ -399,13 +402,18 @@ public class DevMojo extends AbstractMojo {
             final PluginDescriptor pluginDescr = getPluginDescriptor();
             final Plugin pluginDef = getConfiguredPluginOrNull(pluginDescr.getGroupId(), pluginDescr.getArtifactId());
             if (!isGoalConfigured(pluginDef, "build")) {
-                var currentGoal = getCurrentGoal();
-                getLog().warn(
-                        "The quarkus-maven-plugin build goal was not configured for this project, skipping " +
-                                currentGoal + " as this is assumed to be a support library. If you want to run " + currentGoal +
-                                " on this project make sure the quarkus-maven-plugin is configured with the build goal" +
-                                " or disable the enforceBuildGoal flag (via plugin configuration or via" +
-                                " -Dquarkus.enforceBuildGoal=false).");
+                if (warnIfBuildGoalMissing) {
+                    var currentGoal = getCurrentGoal();
+                    getLog().warn(
+                            "Skipping " + currentGoal + " as this is assumed to be a support library." +
+                                    " To disable this warning set warnIfBuildGoalMissing parameter to false."
+                                    + System.lineSeparator() +
+                                    "To enable " + currentGoal +
+                                    " for this module, make sure the quarkus-maven-plugin configuration includes the build goal"
+                                    +
+                                    " or disable the enforceBuildGoal flag (via plugin configuration or via" +
+                                    " -Dquarkus.enforceBuildGoal=false).");
+                }
                 return;
             }
         }
@@ -563,7 +571,7 @@ public class DevMojo extends AbstractMojo {
 
         final String quarkusPluginId = getPluginDescriptor().getId();
         // configured plugin executions by lifecycle phases
-        final Map<String, List<Map.Entry<Plugin, PluginExecution>>> phaseExecutions = new HashMap<>();
+        final Map<String, List<PluginExec>> phaseExecutions = new HashMap<>();
         // goals with prefixes on the command line
         final Map<String, Plugin> pluginPrefixes = new HashMap<>();
         String bootstrapId = BOOTSTRAP_ID;
@@ -572,8 +580,13 @@ public class DevMojo extends AbstractMojo {
                 continue;
             }
             for (PluginExecution e : p.getExecutions()) {
+                String goalPrefix = null;
+                if (!e.getGoals().isEmpty()) {
+                    goalPrefix = getMojoDescriptor(p, e.getGoals().get(0)).getPluginDescriptor().getGoalPrefix();
+                    pluginPrefixes.put(goalPrefix, p);
+                }
                 if (e.getPhase() != null) {
-                    phaseExecutions.computeIfAbsent(e.getPhase(), k -> new ArrayList<>()).add(Map.entry(p, e));
+                    phaseExecutions.computeIfAbsent(e.getPhase(), k -> new ArrayList<>()).add(new PluginExec(p, goalPrefix, e));
                 } else {
                     for (String goal : e.getGoals()) {
                         if (goal.equals(QUARKUS_GENERATE_CODE_GOAL) && p.getId().equals(quarkusPluginId)) {
@@ -581,28 +594,24 @@ public class DevMojo extends AbstractMojo {
                             clone.setGoals(List.of(QUARKUS_GENERATE_CODE_GOAL));
                             // this will schedule it before the compile phase goals
                             phaseExecutions.computeIfAbsent("compile", k -> new ArrayList<>())
-                                    .add(0, Map.entry(p, clone));
+                                    .add(0, new PluginExec(p, goalPrefix, clone));
                             bootstrapId = e.getId();
                         } else if (goal.equals(QUARKUS_GENERATE_CODE_TESTS_GOAL) && p.getId().equals(quarkusPluginId)) {
                             var clone = e.clone();
                             clone.setGoals(List.of(QUARKUS_GENERATE_CODE_TESTS_GOAL));
                             // this will schedule it before the test-compile phase goals
                             phaseExecutions.computeIfAbsent("test-compile", k -> new ArrayList<>())
-                                    .add(0, Map.entry(p, clone));
+                                    .add(0, new PluginExec(p, goalPrefix, clone));
                         } else {
                             var mojoDescr = getMojoDescriptor(p, goal);
                             if (mojoDescr.getPhase() != null) {
                                 phaseExecutions.computeIfAbsent(mojoDescr.getPhase(), k -> new ArrayList<>())
-                                        .add(Map.entry(p, e));
+                                        .add(new PluginExec(p, goalPrefix, e));
                             } else {
                                 getLog().warn("Failed to determine the lifecycle phase for " + p.getId() + ":" + goal);
                             }
                         }
                     }
-                }
-                if (!e.getGoals().isEmpty()) {
-                    var goalPrefix = getMojoDescriptor(p, e.getGoals().get(0)).getPluginDescriptor().getGoalPrefix();
-                    pluginPrefixes.put(goalPrefix, p);
                 }
             }
         }
@@ -633,13 +642,13 @@ public class DevMojo extends AbstractMojo {
             if (executions == null) {
                 continue;
             }
-            for (Map.Entry<Plugin, PluginExecution> pe : executions) {
-                var executedGoals = executedPluginGoals.getOrDefault(pe.getKey().getId(), List.of());
-                for (String goal : pe.getValue().getGoals()) {
+            for (PluginExec pe : executions) {
+                var executedGoals = executedPluginGoals.getOrDefault(pe.plugin.getId(), List.of());
+                for (String goal : pe.execution.getGoals()) {
                     if (!executedGoals.contains(goal)) {
                         try {
-                            executeGoal(pe.getKey(), pe.getValue().getId(), goal,
-                                    pe.getKey().getId().equals(quarkusPluginId) ? quarkusGoalParams : Map.of());
+                            executeGoal(pe, goal,
+                                    pe.getPluginId().equals(quarkusPluginId) ? quarkusGoalParams : Map.of());
                         } catch (Throwable t) {
                             if (goal.equals("testCompile")) {
                                 getLog().error(
@@ -670,26 +679,29 @@ public class DevMojo extends AbstractMojo {
         if (!isGoalConfigured(plugin, "toolchain")) {
             return;
         }
-        executeGoal(plugin, null, "toolchain", Map.of());
+        executeGoal(new PluginExec(plugin, null, null), "toolchain", Map.of());
     }
 
-    private void executeGoal(Plugin plugin, String executionId, String goal, Map<String, String> params)
+    private void executeGoal(PluginExec pluginExec, String goal, Map<String, String> params)
             throws MojoExecutionException {
         var msg = new StringBuilder();
-        msg.append("Invoking ").append(plugin.getId()).append(":").append(goal);
-        if (executionId != null) {
-            msg.append(" (").append(executionId).append(")");
+        msg.append("Invoking ")
+                .append(pluginExec.getPrefix()).append(":")
+                .append(pluginExec.plugin.getVersion()).append(":")
+                .append(goal);
+        if (pluginExec.getExecutionId() != null) {
+            msg.append(" (").append(pluginExec.getExecutionId()).append(")");
         }
         msg.append(" @ ").append(project.getArtifactId());
         getLog().info(msg.toString());
         executeMojo(
                 plugin(
-                        groupId(plugin.getGroupId()),
-                        artifactId(plugin.getArtifactId()),
-                        version(plugin.getVersion()),
-                        plugin.getDependencies()),
+                        groupId(pluginExec.plugin.getGroupId()),
+                        artifactId(pluginExec.plugin.getArtifactId()),
+                        version(pluginExec.plugin.getVersion()),
+                        pluginExec.plugin.getDependencies()),
                 goal(goal),
-                getPluginConfig(plugin, goal, params),
+                getPluginConfig(pluginExec.plugin, goal, params),
                 executionEnvironment(
                         project,
                         session,
@@ -1049,7 +1061,8 @@ public class DevMojo extends AbstractMojo {
         }
 
         // Add other properties that may be required for expansion
-        for (String value : effectiveProperties.values()) {
+        List<String> effectivePropertyValues = new ArrayList<>(effectiveProperties.values());
+        for (String value : effectivePropertyValues) {
             for (String reference : Expression.compile(value, LENIENT_SYNTAX, NO_TRIM).getReferencedStrings()) {
                 String referenceValue = session.getUserProperties().getProperty(reference);
                 if (referenceValue != null) {
@@ -1127,7 +1140,9 @@ public class DevMojo extends AbstractMojo {
                     .setRemoteRepositories(repos)
                     .setWorkspaceDiscovery(true)
                     .setPreferPomsFromWorkspace(true)
-                    .setCurrentProject(project.getFile().toString());
+                    // it's important to set the base directory instead of the POM
+                    // which maybe manipulated by a plugin and stored outside the base directory
+                    .setCurrentProject(project.getBasedir().toString());
 
             // There are a couple of reasons we don't want to use the original Maven session:
             // 1) a reload could be triggered by a change in a pom.xml, in which case the Maven session might not be in sync any more with the effective POM;
@@ -1381,5 +1396,29 @@ public class DevMojo extends AbstractMojo {
         final Path p = BootstrapUtils.resolveSerializedAppModelPath(Paths.get(project.getBuild().getDirectory()));
         p.toFile().deleteOnExit();
         return p;
+    }
+
+    private static final class PluginExec {
+        final Plugin plugin;
+        final String prefix;
+        final PluginExecution execution;
+
+        PluginExec(Plugin plugin, String prefix, PluginExecution execution) {
+            this.plugin = plugin;
+            this.prefix = prefix;
+            this.execution = execution;
+        }
+
+        String getPluginId() {
+            return plugin.getId();
+        }
+
+        String getPrefix() {
+            return prefix == null ? plugin.getId() : prefix;
+        }
+
+        String getExecutionId() {
+            return execution == null ? null : execution.getId();
+        }
     }
 }
