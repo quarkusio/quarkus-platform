@@ -58,7 +58,7 @@
         <quarkus.version>3.2.4.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.0.0-RC1</camel-quarkus.version>
+        <camel-quarkus.version>3.0.0-RC2</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -414,37 +414,9 @@
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-hazelcast:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4515 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-syndication:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4527 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-twilio:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4516 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <!-- https://github.com/apache/camel-quarkus/issues/5083 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-netty-http:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <!-- https://github.com/apache/camel-quarkus/issues/5086 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-micrometer:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <!-- https://github.com/apache/camel-quarkus/issues/5092 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <!-- https://github.com/apache/camel-quarkus/issues/5092 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ssh:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
