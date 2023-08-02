@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-http</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-http</name>
+  <artifactId>camel-quarkus-integration-test-http-grouped</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-http-grouped</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-http</artifactId>
+      <artifactId>camel-quarkus-integration-test-http-grouped</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-http</artifactId>
+      <artifactId>camel-quarkus-integration-test-http-grouped</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -105,7 +105,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-http</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-http-grouped</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -138,7 +138,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-http</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-http-grouped</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -153,7 +153,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-http:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-http-grouped:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
