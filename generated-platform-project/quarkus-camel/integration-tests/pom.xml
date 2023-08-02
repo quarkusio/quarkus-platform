@@ -16,6 +16,7 @@
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
+    <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-atlasmap</module>
@@ -53,6 +54,7 @@
     <module>camel-quarkus-integration-test-fop</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
+    <module>camel-quarkus-integration-test-ftp</module>
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
@@ -66,7 +68,7 @@
     <module>camel-quarkus-integration-test-grpc</module>
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
-    <module>camel-quarkus-integration-test-http</module>
+    <module>camel-quarkus-integration-test-http-grouped</module>
     <module>camel-quarkus-integration-test-infinispan-common</module>
     <module>camel-quarkus-integration-test-infinispan-quarkus-client</module>
     <module>camel-quarkus-integration-test-infinispan</module>
@@ -121,6 +123,8 @@
     <module>camel-quarkus-integration-test-main-yaml</module>
     <module>camel-quarkus-integration-test-main</module>
     <module>camel-quarkus-integration-test-management</module>
+    <module>camel-quarkus-integration-test-mapstruct</module>
+    <module>camel-quarkus-integration-test-micrometer</module>
     <module>camel-quarkus-integration-test-microprofile</module>
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
@@ -169,13 +173,16 @@
     <module>camel-quarkus-integration-test-splunk</module>
     <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-sql</module>
+    <module>camel-quarkus-integration-test-ssh</module>
     <module>camel-quarkus-integration-test-stax</module>
     <module>camel-quarkus-integration-test-stringtemplate</module>
     <module>camel-quarkus-integration-test-swift</module>
+    <module>camel-quarkus-integration-test-syndication</module>
     <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-tarfile</module>
     <module>camel-quarkus-integration-test-telegram</module>
     <module>camel-quarkus-integration-test-tika</module>
+    <module>camel-quarkus-integration-test-twilio</module>
     <module>camel-quarkus-integration-test-twitter</module>
     <module>camel-quarkus-integration-test-univocity-parsers</module>
     <module>camel-quarkus-integration-test-validator</module>
