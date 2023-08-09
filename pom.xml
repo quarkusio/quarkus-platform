@@ -358,10 +358,6 @@
                                 <member>
                                     <name>CXF</name>
                                     <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
-                                    <dependencyManagement>
-                                        <!-- Temporary, should be removable with camel-quarkus 3.0.0-M2+1 https://github.com/quarkiverse/quarkus-cxf/issues/899 -->
-                                        <dependency>org.eclipse.angus:angus-mail:1.1.0</dependency>
-                                    </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.2.1.Final</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
