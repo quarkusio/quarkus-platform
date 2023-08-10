@@ -2196,7 +2196,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-common-protos</artifactId>
-        <version>2.19.1</version>
+        <version>2.23.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -3526,7 +3526,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-common-protos</artifactId>
-        <version>2.19.1</version>
+        <version>2.23.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -3571,17 +3571,17 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gapic-generator-java</artifactId>
-        <version>2.23.1</version>
+        <version>2.23.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-grpc</artifactId>
-        <version>2.19.1</version>
+        <version>2.23.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-grpc</artifactId>
-        <version>2.19.1</version>
+        <version>2.23.0</version>
         <classifier>testlib</classifier>
       </dependency>
       <dependency>
@@ -3598,12 +3598,12 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax</artifactId>
-        <version>2.19.1</version>
+        <version>2.23.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax</artifactId>
-        <version>2.19.1</version>
+        <version>2.23.0</version>
         <classifier>testlib</classifier>
       </dependency>
       <dependency>
