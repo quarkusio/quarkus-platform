@@ -188,6 +188,8 @@
                                     <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-deployment:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-model:${quarkus-vault.version}</dependency>
+                                    <!-- temporary enforce 2.23.0 until https://github.com/quarkusio/quarkus/pull/35283 makes its way in -->
++                                   <dependency>com.google.api.grpc:proto-google-common-protos:2.23.0</dependency>
                                 </dependencyManagement>
                                 <extensionGroupIds>
                                     <groupId>io.quarkus</groupId>
