@@ -2777,17 +2777,17 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gapic-generator-java</artifactId>
-        <version>2.23.0</version>
+        <version>2.23.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-grpc</artifactId>
-        <version>2.23.0</version>
+        <version>2.31.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-grpc</artifactId>
-        <version>2.23.0</version>
+        <version>2.31.1</version>
         <classifier>testlib</classifier>
       </dependency>
       <dependency>
@@ -2804,12 +2804,12 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax</artifactId>
-        <version>2.23.0</version>
+        <version>2.31.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax</artifactId>
-        <version>2.23.0</version>
+        <version>2.31.1</version>
         <classifier>testlib</classifier>
       </dependency>
       <dependency>
