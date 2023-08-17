@@ -79,7 +79,7 @@
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
-        <quarkus-google-cloud-services.version>2.1.0</quarkus-google-cloud-services.version>
+        <quarkus-google-cloud-services.version>2.3.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>3.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>6.2.1</quarkus-operator-sdk.version>
 
@@ -188,6 +188,11 @@
                                     <dependency>io.quarkiverse.vault:quarkus-vault:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-deployment:${quarkus-vault.version}</dependency>
                                     <dependency>io.quarkiverse.vault:quarkus-vault-model:${quarkus-vault.version}</dependency>
+                                    <!-- temporary enforce 2.23.0 until https://github.com/quarkusio/quarkus/pull/35283 makes its way in -->
+                                    <dependency>com.google.api.grpc:proto-google-common-protos:2.23.0</dependency>
+                                    <!-- temporary override of gax / gax-grpc versions to prevent it being aligned to the same version as proto-google-common-protos -->
+                                    <dependency>com.google.api:gax:2.31.1</dependency>
+                                    <dependency>com.google.api:gax-grpc:2.31.1</dependency>
                                 </dependencyManagement>
                                 <extensionGroupIds>
                                     <groupId>io.quarkus</groupId>
