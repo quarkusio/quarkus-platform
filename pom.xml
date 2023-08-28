@@ -83,12 +83,12 @@
         <quarkus-vault.version>3.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>6.3.0</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.94</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.95</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
         <failsafe-plugin.version>${version.surefire.plugin}</failsafe-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
 
         <!-- the group-id (and the platform key) for the generated platform artifacts -->
@@ -728,6 +728,14 @@
                             </execution>
                         </executions>
                     </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>releaseNexus</id>
+            <build>
+                <plugins>
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -736,7 +744,7 @@
                         <configuration>
                             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                             <serverId>ossrh</serverId>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
                             <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
                             <stagingProgressTimeoutMinutes>60</stagingProgressTimeoutMinutes>
                         </configuration>
