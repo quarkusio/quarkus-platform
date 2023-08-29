@@ -13,6 +13,7 @@
   <name>Quarkus Platform - Quarkus Sbom</name>
   <properties>
     <gpg.skip>true</gpg.skip>
+    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
   </properties>
   <build>
     <pluginManagement>
