@@ -432,6 +432,9 @@
                                 -->
                                 <member>
                                     <name>Debezium-Outbox</name>
+                                    <ownGroupIds>
+                                        <groupId>io.debezium</groupId>
+                                    </ownGroupIds>
                                     <dependencyManagement>
                                         <dependency>io.debezium:debezium-quarkus-outbox:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-deployment:${debezium-quarkus-outbox.version}</dependency>
