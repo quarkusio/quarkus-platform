@@ -24,10 +24,10 @@
     <module>quarkus-blaze-persistence</module>
     <module>quarkus-google-cloud-services</module>
     <module>quarkus-operator-sdk</module>
-    <module>quarkus-maven-plugin</module>
     <module>quarkus-dependencies-to-build</module>
     <module>quarkus-sbom</module>
     <module>quarkus-extension-changes</module>
+    <module>quarkus-maven-plugin</module>
   </modules>
   <properties>
     <platform.key>io.quarkus.platform</platform.key>
@@ -63,6 +63,19 @@
                 </goals>
               </execution>
             </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.8</version>
+            <extensions>true</extensions>
+            <configuration>
+              <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+              <serverId>ossrh</serverId>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
+              <stagingProgressTimeoutMinutes>60</stagingProgressTimeoutMinutes>
+            </configuration>
           </plugin>
         </plugins>
       </build>
