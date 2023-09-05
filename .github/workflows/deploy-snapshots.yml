@@ -61,5 +61,5 @@ jobs:
             runId=${{ github.run_id }} \
             status=${{ job.status }} \
             token=${{ secrets.GITHUB_API_TOKEN }} \
-            issueRepo=${{ github.repository }} \
+            issueRepo=quarkusio/quarkus \
             thisRepo=${{ github.repository }}
