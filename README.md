@@ -349,8 +349,7 @@ and the generated ones for every member. The reports can be found under the `tar
 
 1. Use the Maven Release Plugin to tag and deploy to the Sonatype OSS Nexus: 
 > TAG=0.0.5 && ./mvnw release:prepare release:perform -DdevelopmentVersion=999-SNAPSHOT -DreleaseVersion=$TAG -Dtag=$TAG -DperformRelease -Prelease,releaseNexus -DskipTests -Darguments=-DskipTests
-2. Go to https://s01.oss.sonatype.org/#stagingRepositories and close the repository there.
-3. Once the checks pass, click on the `Release` button and wait until it gets percolated to Central
+2. The repository will be automatically closed and released, there's nothing else to do.
  
 ---
 **IMPORTANT**
