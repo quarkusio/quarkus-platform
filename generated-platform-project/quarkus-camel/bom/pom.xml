@@ -7234,7 +7234,7 @@
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-xml</artifactId>
-        <version>11.0.15</version>
+        <version>11.0.16</version>
       </dependency>
       <dependency>
         <groupId>org.ehcache</groupId>
