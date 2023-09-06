@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-jdbc</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jdbc</name>
+  <artifactId>camel-quarkus-integration-test-xslt-saxon</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-xslt-saxon</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jdbc</artifactId>
+      <artifactId>camel-quarkus-integration-test-xslt-saxon</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jdbc</artifactId>
+      <artifactId>camel-quarkus-integration-test-xslt-saxon</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -54,11 +54,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -88,7 +83,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jdbc</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-xslt-saxon</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -121,7 +116,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jdbc</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-xslt-saxon</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -136,7 +131,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jdbc:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xslt-saxon:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
