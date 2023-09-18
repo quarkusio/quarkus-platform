@@ -16,10 +16,10 @@
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
+    <module>camel-quarkus-integration-test-camel-k-runtime</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
-    <module>camel-quarkus-integration-test-atlasmap</module>
     <module>camel-quarkus-integration-test-avro</module>
     <module>camel-quarkus-integration-test-aws2-grouped</module>
     <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
@@ -64,6 +64,7 @@
     <module>camel-quarkus-integration-test-google</module>
     <module>camel-quarkus-integration-test-graphql</module>
     <module>camel-quarkus-integration-test-grok</module>
+    <module>camel-quarkus-integration-test-groovy-dsl</module>
     <module>camel-quarkus-integration-test-groovy</module>
     <module>camel-quarkus-integration-test-grpc</module>
     <module>camel-quarkus-integration-test-headersmap</module>
@@ -78,7 +79,7 @@
     <module>camel-quarkus-integration-test-java-joor-dsl</module>
     <module>camel-quarkus-integration-test-jaxb</module>
     <module>camel-quarkus-integration-test-jcache</module>
-    <module>camel-quarkus-integration-test-jdbc</module>
+    <module>camel-quarkus-integration-test-jdbc-grouped</module>
     <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
@@ -193,6 +194,7 @@
     <module>camel-quarkus-integration-test-xml-grouped</module>
     <module>camel-quarkus-integration-test-xmlsecurity</module>
     <module>camel-quarkus-integration-test-xpath</module>
+    <module>camel-quarkus-integration-test-xslt-saxon</module>
     <module>camel-quarkus-integration-test-zendesk</module>
   </modules>
   <properties>
