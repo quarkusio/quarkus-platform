@@ -22,6 +22,7 @@
     <module>quarkus-cxf-integration-test-ws-addressing</module>
     <module>quarkus-cxf-integration-test-ws-rm</module>
     <module>quarkus-cxf-integration-test-ws-security-client</module>
+    <module>quarkus-cxf-integration-test-ws-security-policy</module>
     <module>quarkus-cxf-integration-test-ws-security-server</module>
     <module>quarkus-cxf-integration-test-ws-trust</module>
   </modules>
