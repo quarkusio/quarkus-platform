@@ -4,46 +4,24 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-qpid-jms-integration-tests-parent</artifactId>
+    <artifactId>quarkus-cxf-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
-  <name>Quarkus Platform - QpidJMS - Integration Tests - quarkus-qpid-jms-integration-tests</name>
+  <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-ws-security-policy</name>
   <dependencies>
     <dependency>
-      <groupId>org.amqphub.quarkus</groupId>
-      <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
-      <version>${quarkus-qpid-jms.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
+      <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.amqphub.quarkus</groupId>
-      <artifactId>quarkus-qpid-jms-integration-tests</artifactId>
-      <version>${quarkus-qpid-jms.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
+      <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.activemq</groupId>
-      <artifactId>artemis-server</artifactId>
-      <version>2.28.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.activemq</groupId>
-      <artifactId>artemis-amqp-protocol</artifactId>
-      <version>2.28.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-test-common</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -72,6 +50,23 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-test-util</artifactId>
+      <version>${quarkus-cxf.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.24.2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -102,7 +97,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -135,7 +130,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -150,7 +145,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
