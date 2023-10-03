@@ -258,7 +258,6 @@
                                         </test>
                                     </tests>
                                 </member>
-                                -->
                                 <member>
                                     <name>OptaPlanner</name>
                                     <bom>org.optaplanner:optaplanner-build-parent:${optaplanner-quarkus.version}</bom>
@@ -273,10 +272,10 @@
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-integration-test:${optaplanner-quarkus.version}</artifact>
                                         </test>
-                                        <!-- TODO: enable when a compatible version of Drools becomes a part of the platform.
+                                        <!- - TODO: enable when a compatible version of Drools becomes a part of the platform.
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-drl-integration-test:${optaplanner-quarkus.version}</artifact>
-                                        </test>-->
+                                        </test>- ->
                                         <test>
                                             <artifact>org.optaplanner:optaplanner-quarkus-devui-integration-test:${optaplanner-quarkus.version}</artifact>
                                         </test>
@@ -291,6 +290,7 @@
                                         </test>
                                     </tests>
                                 </member>
+                                -->
                                 <member>
                                     <name>QpidJMS</name>
                                     <bom>org.amqphub.quarkus:quarkus-qpid-jms-bom:${quarkus-qpid-jms.version}</bom>

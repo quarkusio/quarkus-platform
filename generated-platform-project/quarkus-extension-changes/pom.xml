@@ -54,7 +54,7 @@
         </property>
       </activation>
       <build>
-        <defaultGoal>quarkus-platform-bom:extension-changes@quarkus-bom quarkus-platform-bom:extension-changes@quarkus-optaplanner-bom quarkus-platform-bom:extension-changes@quarkus-qpid-jms-bom quarkus-platform-bom:extension-changes@quarkus-cassandra-bom quarkus-platform-bom:extension-changes@quarkus-amazon-services-bom quarkus-platform-bom:extension-changes@quarkus-cxf-bom quarkus-platform-bom:extension-changes@quarkus-camel-bom quarkus-platform-bom:extension-changes@quarkus-debezium-bom quarkus-platform-bom:extension-changes@quarkus-blaze-persistence-bom quarkus-platform-bom:extension-changes@quarkus-google-cloud-services-bom quarkus-platform-bom:extension-changes@quarkus-operator-sdk-bom </defaultGoal>
+        <defaultGoal>quarkus-platform-bom:extension-changes@quarkus-bom quarkus-platform-bom:extension-changes@quarkus-qpid-jms-bom quarkus-platform-bom:extension-changes@quarkus-cassandra-bom quarkus-platform-bom:extension-changes@quarkus-amazon-services-bom quarkus-platform-bom:extension-changes@quarkus-cxf-bom quarkus-platform-bom:extension-changes@quarkus-camel-bom quarkus-platform-bom:extension-changes@quarkus-debezium-bom quarkus-platform-bom:extension-changes@quarkus-blaze-persistence-bom quarkus-platform-bom:extension-changes@quarkus-google-cloud-services-bom quarkus-platform-bom:extension-changes@quarkus-operator-sdk-bom </defaultGoal>
         <pluginManagement>
           <plugins>
             <plugin>
@@ -70,17 +70,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-bom:${project.version}</bom>
                     <outputFile>../../target/extension-changes/quarkus-bom-extension-changes.json</outputFile>
-                  </configuration>
-                </execution>
-                <execution>
-                  <id>quarkus-optaplanner-bom</id>
-                  <phase>process-resources</phase>
-                  <goals>
-                    <goal>extension-changes</goal>
-                  </goals>
-                  <configuration>
-                    <bom>io.quarkus.platform:quarkus-optaplanner-bom:${project.version}</bom>
-                    <outputFile>../../target/extension-changes/quarkus-optaplanner-bom-extension-changes.json</outputFile>
                   </configuration>
                 </execution>
                 <execution>
