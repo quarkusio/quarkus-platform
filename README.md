@@ -220,10 +220,10 @@ Besides the mentioned about `artifact` and `skip` elements the following test co
     <skipNative>true</skipNative>
     <!-- skip JVM test runs but do run the native test -->
     <skipJvm>true</skipJvm>
-    
+
     <!-- while skipping means adding `maven.test.skip` property to the config, excluding means removing the test module for the artifact -->
     <excluded>true</excluded>
-    
+
     <!-- use the failsafe plugin instead of the surefire one (which is the default) for the test-->
     <mavenFailsafePlugin>true</mavenFailsafePlugin>
 
@@ -348,7 +348,7 @@ and the generated ones for every member. The reports can be found under the `tar
 ## Release steps
 
 1. Use the Maven Release Plugin to tag and deploy to the Sonatype OSS Nexus: 
-> TAG=0.0.5 && ./mvnw release:prepare release:perform -DdevelopmentVersion=999-SNAPSHOT -DreleaseVersion=$TAG -Dtag=$TAG -DperformRelease -Prelease -DskipTests -Darguments=-DskipTests
+> TAG=0.0.5 && ./check-version.sh && ./mvnw release:prepare release:perform -DdevelopmentVersion=999-SNAPSHOT -DreleaseVersion=$TAG -Dtag=$TAG -DperformRelease -Prelease -DskipTests -Darguments=-DskipTests
 2. Go to https://s01.oss.sonatype.org/#stagingRepositories and close the repository there.
 3. Once the checks pass, click on the `Release` button and wait until it gets percolated to Central
  
@@ -389,5 +389,5 @@ Due to the Apache process, it is possible that the Apache Camel artifacts may no
     </profiles>
     <activeProfiles>
         <activeProfile>camel-staging</activeProfile>
-    </activeProfiles>    
+    </activeProfiles>
 ```
