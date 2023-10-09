@@ -58,7 +58,7 @@
         <quarkus.version>3.2.6.Final</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.2.0</camel-quarkus.version>
+        <camel-quarkus.version>3.2.1</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -367,6 +367,12 @@
                                         <skip>false</skip>
                                     </defaultTestConfig>
                                     <testCatalogArtifact>io.quarkiverse.cxf:quarkus-cxf-test-list::xml:${quarkus-cxf.version}</testCatalogArtifact>
+                                    <tests>
+                                        <test><!-- Workaround https://github.com/quarkiverse/quarkus-cxf/issues/1067 -->
+                                            <skip>true</skip>
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom:${quarkus-cxf.version}</artifact>
+                                        </test>
+                                    </tests>
                                 </member>
                                 <member>
                                     <name>Camel</name>

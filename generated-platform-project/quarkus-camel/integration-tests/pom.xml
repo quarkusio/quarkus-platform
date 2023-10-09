@@ -190,6 +190,7 @@
     <module>camel-quarkus-integration-test-vertx</module>
     <module>camel-quarkus-integration-test-weather</module>
     <module>camel-quarkus-integration-test-xml-grouped</module>
+    <module>camel-quarkus-integration-test-xml-jaxp</module>
     <module>camel-quarkus-integration-test-xmlsecurity</module>
     <module>camel-quarkus-integration-test-xpath</module>
     <module>camel-quarkus-integration-test-xslt-saxon</module>
