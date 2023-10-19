@@ -298,6 +298,10 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-qpid-jms-bom:3.3.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-qpid-jms-bom:${platform.version}</next>
                                     </release>
+                                    <ownGroupIds>
+                                        <groupId>org.amqphub.quarkus</groupId>
+                                        <groupId>org.apache.qpid</groupId>
+                                    </ownGroupIds>
                                     <tests>
                                         <test>
                                             <artifact>org.amqphub.quarkus:quarkus-qpid-jms-integration-tests:${quarkus-qpid-jms-tests.version}</artifact>
