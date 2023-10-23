@@ -58,7 +58,7 @@
         <quarkus.version>3.5.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.4.0</camel-quarkus.version>
+        <camel-quarkus.version>3.5.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -425,9 +425,11 @@
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-xchange:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                         <test>
-                                            <!-- Workaround :https://github.com/apache/camel-quarkus/issues/5319 -->
-                                            <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime:${camel-quarkus-test-list.version}</artifact>
+                                            <environmentVariables>
+                                                <CAMEL_K_CONF>target/test-classes/camel-k-runtime/conf.properties</CAMEL_K_CONF>
+                                                <CAMEL_K_CONF_D>target/test-classes/camel-k-runtime/conf.d</CAMEL_K_CONF_D>
+                                            </environmentVariables>
                                         </test>
                                     </tests>
                                 </member>
