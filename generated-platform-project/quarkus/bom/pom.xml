@@ -4132,17 +4132,17 @@
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault-deployment</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault-model</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.arc</groupId>
