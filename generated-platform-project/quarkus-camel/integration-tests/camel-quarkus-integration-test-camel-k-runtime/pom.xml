@@ -8,19 +8,16 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-camel-k-runtime</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-camel-k-runtime</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-camel-k-runtime</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-camel-k-runtime</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.5.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -94,6 +91,10 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime</dependency>
           </dependenciesToScan>
+          <environmentVariables>
+            <CAMEL_K_CONF>target/test-classes/camel-k-runtime/conf.properties</CAMEL_K_CONF>
+            <CAMEL_K_CONF_D>target/test-classes/camel-k-runtime/conf.d</CAMEL_K_CONF_D>
+          </environmentVariables>
         </configuration>
       </plugin>
     </plugins>
@@ -120,6 +121,10 @@
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                   </systemProperties>
+                  <environmentVariables>
+                    <CAMEL_K_CONF>target/test-classes/camel-k-runtime/conf.properties</CAMEL_K_CONF>
+                    <CAMEL_K_CONF_D>target/test-classes/camel-k-runtime/conf.d</CAMEL_K_CONF_D>
+                  </environmentVariables>
                 </configuration>
               </execution>
             </executions>
@@ -132,7 +137,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.5.0</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -140,8 +145,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime:3.5.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
