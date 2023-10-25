@@ -12,16 +12,17 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - CXF - Integration Tests - Parent</name>
   <modules>
-    <module>quarkus-cxf-integration-test-mtom</module>
     <module>quarkus-cxf-integration-test-client</module>
     <module>quarkus-cxf-integration-test-hc5</module>
     <module>quarkus-cxf-integration-test-logging</module>
     <module>quarkus-cxf-integration-test-metrics</module>
     <module>quarkus-cxf-integration-test-mtom-awt</module>
+    <module>quarkus-cxf-integration-test-mtom</module>
     <module>quarkus-cxf-integration-test-server</module>
     <module>quarkus-cxf-integration-test-ws-addressing</module>
     <module>quarkus-cxf-integration-test-ws-rm</module>
     <module>quarkus-cxf-integration-test-ws-security-client</module>
+    <module>quarkus-cxf-integration-test-ws-security-policy</module>
     <module>quarkus-cxf-integration-test-ws-security-server</module>
     <module>quarkus-cxf-integration-test-ws-trust</module>
   </modules>
