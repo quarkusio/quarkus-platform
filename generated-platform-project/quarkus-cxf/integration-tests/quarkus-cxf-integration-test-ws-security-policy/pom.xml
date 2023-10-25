@@ -8,17 +8,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-integration-test-mtom</artifactId>
-  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-mtom</name>
+  <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-ws-security-policy</name>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-mtom</artifactId>
+      <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
       <version>${quarkus-amazon-services.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-mtom</artifactId>
+      <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
       <version>${quarkus-amazon-services.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,6 +55,11 @@
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
       <version>${quarkus-amazon-services.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -97,7 +102,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -130,7 +135,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -145,7 +150,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom:${quarkus-amazon-services.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy:${quarkus-amazon-services.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
