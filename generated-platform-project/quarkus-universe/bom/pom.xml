@@ -6142,12 +6142,12 @@
       <dependency>
         <groupId>io.javaoperatorsdk</groupId>
         <artifactId>micrometer-support</artifactId>
-        <version>4.4.2</version>
+        <version>4.4.4</version>
       </dependency>
       <dependency>
         <groupId>io.javaoperatorsdk</groupId>
         <artifactId>operator-framework-core</artifactId>
-        <version>4.4.2</version>
+        <version>4.4.4</version>
       </dependency>
       <dependency>
         <groupId>io.micrometer</groupId>
@@ -7837,33 +7837,38 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
+        <artifactId>quarkus-operator-sdk-annotations</artifactId>
+        <version>6.3.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator-deployment</artifactId>
-        <version>6.3.0</version>
+        <version>6.3.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator</artifactId>
-        <version>6.3.0</version>
+        <version>6.3.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common-deployment</artifactId>
-        <version>6.3.0</version>
+        <version>6.3.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common</artifactId>
-        <version>6.3.0</version>
+        <version>6.3.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-deployment</artifactId>
-        <version>6.3.0</version>
+        <version>6.3.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk</artifactId>
-        <version>6.3.0</version>
+        <version>6.3.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.tika</groupId>
@@ -20797,6 +20802,17 @@
         <groupId>org.graalvm.sdk</groupId>
         <artifactId>graal-sdk</artifactId>
         <version>23.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.gradle</groupId>
+        <artifactId>gradle-tooling-api</artifactId>
+        <version>8.2.1</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.hdrhistogram</groupId>
