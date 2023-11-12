@@ -72,7 +72,7 @@
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version>
         <debezium-quarkus-outbox.version>2.3.3.Final</debezium-quarkus-outbox.version>
-        <quarkus-blaze-persistence.version>1.6.9</quarkus-blaze-persistence.version>
+        <quarkus-blaze-persistence.version>1.6.10</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.2.0</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
 
