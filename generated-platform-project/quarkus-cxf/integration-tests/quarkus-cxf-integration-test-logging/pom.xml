@@ -14,12 +14,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-logging</artifactId>
-      <version>${quarkus-amazon-services.version}</version>
+      <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-logging</artifactId>
-      <version>${quarkus-amazon-services.version}</version>
+      <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -160,7 +160,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-logging:${quarkus-amazon-services.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-logging:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
