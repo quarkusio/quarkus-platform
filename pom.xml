@@ -470,6 +470,7 @@
                                         <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                     </release>
                                     <tests>
+                                        <!-- Disable the Debezium tests until we have SmallRye OpenTracing back
                                         <test>
                                             <skip>false</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</artifact>
@@ -478,6 +479,7 @@
                                             <skip>false</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${debezium-quarkus-outbox.version}</artifact>
                                         </test>
+                                        -->
                                     </tests>
                                 </member>
                                 <member>
