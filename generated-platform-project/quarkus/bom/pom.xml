@@ -866,7 +866,7 @@
       <dependency>
         <groupId>com.squareup.okio</groupId>
         <artifactId>okio</artifactId>
-        <version>1.17.2</version>
+        <version>1.17.6</version>
       </dependency>
       <dependency>
         <groupId>com.sun.mail</groupId>
