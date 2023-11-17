@@ -1,6 +1,6 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.2.8.Final" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.2.9.Final" ],
     "project" : {
       "default-codestart" : "resteasy-reactive",
       "properties" : {
@@ -11,12 +11,12 @@
         "kotlin-version" : "1.8.22",
         "scala-version" : "2.13.8",
         "scala-plugin-version" : "4.8.1",
-        "quarkus-core-version" : "3.2.8.Final",
+        "quarkus-core-version" : "3.2.9.Final",
         "maven-plugin-groupId" : "io.quarkus",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
-        "maven-plugin-version" : "3.2.8.Final",
+        "maven-plugin-version" : "3.2.9.Final",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.2.8.Final",
+        "gradle-plugin-version" : "3.2.9.Final",
         "supported-maven-versions" : "[3.8.2,)",
         "proposed-maven-version" : "3.9.3",
         "maven-wrapper-version" : "3.2.0",
