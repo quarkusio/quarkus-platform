@@ -493,7 +493,7 @@
       <dependency>
         <groupId>com.squareup.okio</groupId>
         <artifactId>okio</artifactId>
-        <version>1.17.2</version>
+        <version>1.17.6</version>
       </dependency>
       <dependency>
         <groupId>com.squareup.retrofit2</groupId>
@@ -899,7 +899,7 @@
       <dependency>
         <groupId>io.smallrye.reactive</groupId>
         <artifactId>smallrye-reactive-messaging-camel</artifactId>
-        <version>4.10.1</version>
+        <version>4.10.2</version>
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
