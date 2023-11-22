@@ -455,6 +455,10 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp:${camel-quarkus-test-list.version}</artifact>
                                         </test>
+					<test><!-- Workaround incompatible sshd-common -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ssh:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
                                 <member>
