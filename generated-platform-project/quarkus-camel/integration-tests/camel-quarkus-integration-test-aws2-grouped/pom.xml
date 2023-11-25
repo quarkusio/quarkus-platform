@@ -136,6 +136,9 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-grouped</dependency>
           </dependenciesToScan>
+          <systemPropertyVariables>
+            <localstack.container.image>localstack/localstack:3.0.1</localstack.container.image>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
     </plugins>
@@ -161,6 +164,7 @@
                 <configuration>
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                    <localstack.container.image>localstack/localstack:3.0.1</localstack.container.image>
                   </systemProperties>
                 </configuration>
               </execution>
