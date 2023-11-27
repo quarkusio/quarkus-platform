@@ -17,12 +17,12 @@
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-camel-k-runtime</module>
+    <module>camel-quarkus-integration-test-aws2-grouped</module>
+    <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-avro</module>
-    <module>camel-quarkus-integration-test-aws2-grouped</module>
-    <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
     <module>camel-quarkus-integration-test-aws2</module>
     <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
