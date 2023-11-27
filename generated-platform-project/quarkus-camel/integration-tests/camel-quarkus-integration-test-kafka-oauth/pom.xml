@@ -15,12 +15,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-kafka-oauth</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-kafka-oauth</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.6.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -67,6 +67,11 @@
           <artifactId>junit</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-test-keycloak-server</artifactId>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.testcontainers</groupId>
@@ -158,7 +163,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.6.0</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -167,7 +172,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:3.6.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
