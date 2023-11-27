@@ -13,6 +13,7 @@
   <name>Quarkus Platform - Debezium-Outbox - Parent</name>
   <modules>
     <module>bom</module>
+    <module>integration-tests</module>
     <module>descriptor</module>
     <module>properties</module>
   </modules>
