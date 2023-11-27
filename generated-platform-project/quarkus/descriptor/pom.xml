@@ -76,6 +76,7 @@
             <groupId>io.quarkus</groupId>
             <groupId>io.quarkiverse.config</groupId>
             <groupId>io.quarkiverse.vault</groupId>
+            <groupId>io.quarkiverse.qute.web</groupId>
           </processGroupIds>
           <ignoredArtifacts>
             <artifact>io.quarkus:quarkus-amazon-common</artifact>

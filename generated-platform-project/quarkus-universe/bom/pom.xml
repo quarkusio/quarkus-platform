@@ -9075,6 +9075,16 @@
         <version>6.4.0</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.qute.web</groupId>
+        <artifactId>quarkus-qute-web-deployment</artifactId>
+        <version>3.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.qute.web</groupId>
+        <artifactId>quarkus-qute-web</artifactId>
+        <version>3.0.0</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.tika</groupId>
         <artifactId>quarkus-tika-deployment</artifactId>
         <version>2.0.2</version>
