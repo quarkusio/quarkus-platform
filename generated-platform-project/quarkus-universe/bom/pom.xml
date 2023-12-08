@@ -23074,24 +23074,6 @@
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-drl-compilation-common</artifactId>
-        <version>8.29.0.Final</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-drl-kiesession-local-runtime</artifactId>
-        <version>8.29.0.Final</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-drl-map-input-runtime</artifactId>
-        <version>8.29.0.Final</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
         <artifactId>kie-internal</artifactId>
         <version>8.29.0.Final</version>
       </dependency>
