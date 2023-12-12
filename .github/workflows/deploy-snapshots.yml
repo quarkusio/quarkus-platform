@@ -9,6 +9,8 @@ env:
   LANG: en_US.UTF-8
 jobs:
   build-and-deploy:
+    permissions:
+      issues: write
     name: "Build and deploy"
     runs-on: ubuntu-latest
     if: github.repository == 'quarkusio/quarkus-platform'
