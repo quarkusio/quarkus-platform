@@ -62,6 +62,6 @@ jobs:
             issueNumber=35716 \
             runId=${{ github.run_id }} \
             status=${{ job.status }} \
-            token=${{ secrets.GITHUB_TOKEN }} \
+            token=${{ secrets.ECOSYSTEM_CI_TOKEN }} \
             issueRepo=quarkusio/quarkus \
             thisRepo=${{ github.repository }}
