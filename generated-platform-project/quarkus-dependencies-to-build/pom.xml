@@ -13,6 +13,7 @@
   <name>Quarkus Platform - Quarkus Dependencies To Build</name>
   <properties>
     <gpg.skip>true</gpg.skip>
+    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
   </properties>
   <build>
     <pluginManagement>
@@ -69,11 +70,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -85,11 +81,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-optaplanner-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-optaplanner-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-optaplanner-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -101,11 +92,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-kogito-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-kogito-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-kogito-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -117,11 +103,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-qpid-jms-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-qpid-jms-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-qpid-jms-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -133,11 +114,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-cassandra-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-cassandra-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-cassandra-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -149,11 +125,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-amazon-services-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-amazon-services-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-amazon-services-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -165,11 +136,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-camel-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-camel-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-camel-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -181,11 +147,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-hazelcast-client:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-hazelcast-client-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-hazelcast-client::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -197,11 +158,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-debezium-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-debezium-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-debezium-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -213,11 +169,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-blaze-persistence-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-blaze-persistence-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-blaze-persistence-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
                 <execution>
@@ -229,11 +180,6 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-google-cloud-services-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-google-cloud-services-bom-deps-to-build.txt</outputFile>
-                    <dependenciesToBuild combine.self="append">
-                      <includeArtifacts combine.children="append">
-                        <artifact>io.quarkus.platform:quarkus-google-cloud-services-bom::pom:999-SNAPSHOT</artifact>
-                      </includeArtifacts>
-                    </dependenciesToBuild>
                   </configuration>
                 </execution>
               </executions>

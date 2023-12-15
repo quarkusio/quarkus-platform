@@ -21,6 +21,7 @@
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>
+    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
   </properties>
   <dependencyManagement>
     <dependencies>
