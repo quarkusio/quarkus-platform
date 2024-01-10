@@ -80,7 +80,7 @@
         <quarkus-google-cloud-services.version>1.2.2</quarkus-google-cloud-services.version>
         <quarkus-vault.version>2.0.0</quarkus-vault.version>
 
-        <quarkus-platform-bom-generator.version>0.0.101</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.102</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>

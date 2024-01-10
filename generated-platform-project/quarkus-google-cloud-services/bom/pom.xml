@@ -2968,7 +2968,25 @@
     </profile>
     <profile>
       <id>releaseCi</id>
+      <activation>
+        <property>
+          <name>env.CI</name>
+        </property>
+      </activation>
       <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-gpg-plugin</artifactId>
+              <configuration>
+                <gpgArguments>
+                  <arg>--pinentry-mode</arg>
+                  <arg>loopback</arg>
+                </gpgArguments>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
         <plugins>
           <plugin>
             <artifactId>maven-gpg-plugin</artifactId>
