@@ -13,8 +13,8 @@
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
   <properties>
-    <maven.compiler.testSource>11</maven.compiler.testSource>
     <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.testSource>11</maven.compiler.testSource>
     <maven.compiler.argument.target>11</maven.compiler.argument.target>
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.argument.testSource>11</maven.compiler.argument.testSource>
