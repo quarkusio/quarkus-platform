@@ -22589,7 +22589,7 @@
       <dependency>
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-core</artifactId>
-        <version>23.0.3</version>
+        <version>23.0.4</version>
       </dependency>
       <dependency>
         <groupId>org.keycloak</groupId>
