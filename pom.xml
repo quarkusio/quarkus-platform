@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>3.2.10.Final</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>3.2.10.Final</tag>
     </scm>
 
     <issueManagement>
@@ -196,7 +196,7 @@
                                     <groupId>io.quarkiverse.vault</groupId>
                                 </extensionGroupIds>
                                 <release>
-                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.2.9.Final</lastDetectedBomUpdate>
+                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.2.10.Final</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
@@ -263,7 +263,7 @@
                                     <name>OptaPlanner</name>
                                     <bom>org.optaplanner:optaplanner-build-parent:${optaplanner-quarkus.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-optaplanner-bom:3.2.9.Final</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-optaplanner-bom:3.2.10.Final</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-optaplanner-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -364,7 +364,7 @@
                                     <name>CXF</name>
                                     <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.2.8.Final</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.2.10.Final</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -382,7 +382,7 @@
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.2.8.Final</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.2.10.Final</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -541,7 +541,7 @@
                                     <enabled>true</enabled>
                                     <bom>io.quarkiverse.operatorsdk:quarkus-operator-sdk-bom:${quarkus-operator-sdk.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-operator-sdk-bom:3.2.9.Final</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-operator-sdk-bom:3.2.10.Final</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-operator-sdk-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
