@@ -466,7 +466,7 @@
       <dependency>
         <groupId>com.mysql</groupId>
         <artifactId>mysql-connector-j</artifactId>
-        <version>8.0.33</version>
+        <version>8.2.0</version>
       </dependency>
       <dependency>
         <groupId>com.orbitz.consul</groupId>
@@ -875,7 +875,7 @@
       <dependency>
         <groupId>io.smallrye.reactive</groupId>
         <artifactId>smallrye-reactive-messaging-camel</artifactId>
-        <version>4.6.0</version>
+        <version>4.6.1</version>
       </dependency>
       <dependency>
         <groupId>io.swagger.core.v3</groupId>
