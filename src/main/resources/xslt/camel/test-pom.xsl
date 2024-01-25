@@ -23,8 +23,8 @@
                     <artifactId>camel-quarkus-debezium-mysql</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
+                    <groupId>com.mysql</groupId>
+                    <artifactId>mysql-connector-j</artifactId>
                 </dependency>
                 <dependency>
                     <groupId>org.apache.camel.quarkus</groupId>
