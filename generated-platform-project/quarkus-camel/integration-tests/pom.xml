@@ -17,12 +17,16 @@
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-camel-k-runtime</module>
-    <module>camel-quarkus-integration-test-aws2-grouped</module>
-    <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
+    <module>camel-quarkus-integration-test-consul</module>
+    <module>camel-quarkus-integration-test-foundation-grouped</module>
+    <module>camel-quarkus-integration-test-minio</module>
+    <module>camel-quarkus-integration-test-smb</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-avro</module>
+    <module>camel-quarkus-integration-test-aws2-grouped</module>
+    <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
     <module>camel-quarkus-integration-test-aws2</module>
     <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
@@ -34,7 +38,6 @@
     <module>camel-quarkus-integration-test-cassandraql</module>
     <module>camel-quarkus-integration-test-cbor</module>
     <module>camel-quarkus-integration-test-compression-grouped</module>
-    <module>camel-quarkus-integration-test-consul</module>
     <module>camel-quarkus-integration-test-core-discovery-disabled</module>
     <module>camel-quarkus-integration-test-couchdb</module>
     <module>camel-quarkus-integration-test-crypto</module>
@@ -52,7 +55,6 @@
     <module>camel-quarkus-integration-test-fhir</module>
     <module>camel-quarkus-integration-test-flatpack</module>
     <module>camel-quarkus-integration-test-fop</module>
-    <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
     <module>camel-quarkus-integration-test-ftp</module>
     <module>camel-quarkus-integration-test-geocoder</module>
@@ -67,6 +69,7 @@
     <module>camel-quarkus-integration-test-groovy-dsl</module>
     <module>camel-quarkus-integration-test-groovy</module>
     <module>camel-quarkus-integration-test-grpc</module>
+    <module>camel-quarkus-integration-test-hazelcast</module>
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
     <module>camel-quarkus-integration-test-http-grouped</module>
@@ -76,6 +79,7 @@
     <module>camel-quarkus-integration-test-influxdb</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
     <module>camel-quarkus-integration-test-jackson-protobuf</module>
+    <module>camel-quarkus-integration-test-jasypt</module>
     <module>camel-quarkus-integration-test-java-joor-dsl</module>
     <module>camel-quarkus-integration-test-jaxb</module>
     <module>camel-quarkus-integration-test-jcache</module>
@@ -127,7 +131,6 @@
     <module>camel-quarkus-integration-test-mapstruct</module>
     <module>camel-quarkus-integration-test-micrometer</module>
     <module>camel-quarkus-integration-test-microprofile</module>
-    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
     <module>camel-quarkus-integration-test-mustache</module>
@@ -191,6 +194,7 @@
     <module>camel-quarkus-integration-test-vertx-websocket</module>
     <module>camel-quarkus-integration-test-vertx</module>
     <module>camel-quarkus-integration-test-weather</module>
+    <module>camel-quarkus-integration-test-xj</module>
     <module>camel-quarkus-integration-test-xml-grouped</module>
     <module>camel-quarkus-integration-test-xml-jaxp</module>
     <module>camel-quarkus-integration-test-xmlsecurity</module>
@@ -214,12 +218,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.7.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.7.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
