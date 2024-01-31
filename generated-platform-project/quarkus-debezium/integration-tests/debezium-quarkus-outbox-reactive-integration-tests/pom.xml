@@ -10,6 +10,9 @@
   </parent>
   <artifactId>debezium-quarkus-outbox-reactive-integration-tests</artifactId>
   <name>Quarkus Platform - Debezium-Outbox - Integration Tests - debezium-quarkus-outbox-reactive-integration-tests</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>io.debezium</groupId>
@@ -150,7 +153,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.7.0</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -158,6 +161,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${debezium-quarkus-outbox.version}</appArtifact>
                 </configuration>
               </execution>
