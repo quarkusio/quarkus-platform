@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-aws2-grouped</artifactId>
-      <version>3.7.0</version>
+      <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-aws2-grouped</artifactId>
-      <version>3.7.0</version>
+      <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -101,7 +101,7 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-tests-support-aws2</artifactId>
-      <version>3.7.0</version>
+      <version>${camel-quarkus.version}</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
@@ -174,7 +174,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.7.0</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -182,7 +182,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-grouped:3.7.0</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-grouped:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
