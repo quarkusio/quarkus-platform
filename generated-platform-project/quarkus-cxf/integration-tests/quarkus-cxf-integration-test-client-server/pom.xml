@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-integration-test-hc5</artifactId>
-  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-hc5</name>
+  <artifactId>quarkus-cxf-integration-test-client-server</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-client-server</name>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-hc5</artifactId>
+      <artifactId>quarkus-cxf-integration-test-client-server</artifactId>
       <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-hc5</artifactId>
+      <artifactId>quarkus-cxf-integration-test-client-server</artifactId>
       <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -50,19 +50,14 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>testcontainers</artifactId>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-test-util</artifactId>
+      <version>${quarkus-cxf.version}</version>
       <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit4-mock</artifactId>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -105,7 +100,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-hc5</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -138,7 +133,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-hc5</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -153,7 +148,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-hc5:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
