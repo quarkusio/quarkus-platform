@@ -3511,7 +3511,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-pubsub</artifactId>
-        <version>1.125.8</version>
+        <version>1.125.13</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
