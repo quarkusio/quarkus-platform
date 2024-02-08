@@ -3,7 +3,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-cxf-integration-tests-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.7.2</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-cxf-integration-test-mtom</artifactId>

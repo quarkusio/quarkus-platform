@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkus.platform</groupId>
   <artifactId>quarkus-qpid-jms-bom</artifactId>
-  <version>999-SNAPSHOT</version>
+  <version>3.7.2</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - QpidJMS - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -27,6 +27,7 @@
   <scm>
     <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
     <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
+    <tag>3.7.2</tag>
     <url>https://github.com/quarkusio/quarkus-platform</url>
   </scm>
   <issueManagement>
@@ -48,14 +49,14 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-qpid-jms-bom-quarkus-platform-descriptor</artifactId>
-        <version>999-SNAPSHOT</version>
+        <version>3.7.2</version>
         <type>json</type>
-        <classifier>999-SNAPSHOT</classifier>
+        <classifier>3.7.2</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-qpid-jms-bom-quarkus-platform-properties</artifactId>
-        <version>999-SNAPSHOT</version>
+        <version>3.7.2</version>
         <type>properties</type>
       </dependency>
       <dependency>
