@@ -80,7 +80,7 @@
     <dependency>
       <groupId>com.datastax.cassandra</groupId>
       <artifactId>cassandra-driver-core</artifactId>
-      <version>${quarkus.version}</version>
+      <version>3.7.1</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
