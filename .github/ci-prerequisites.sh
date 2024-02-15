@@ -1,38 +1,36 @@
 # Reclaim disk space, otherwise we have too little free space at the start of a job
 #
-# Numbers as of 2023-01-06:
+# Numbers as of 2024-02-15:
 #
 # $ df -h
 # Filesystem      Size  Used Avail Use% Mounted on
-# /dev/root        84G   48G   36G  58% /
+# /dev/root        73G   54G   20G  74% /
 # tmpfs           3.4G  172K  3.4G   1% /dev/shm
 # tmpfs           1.4G  1.1M  1.4G   1% /run
 # tmpfs           5.0M     0  5.0M   0% /run/lock
-# /dev/sda15      105M  5.3M  100M   5% /boot/efi
+# /dev/sda15      105M  6.1M   99M   6% /boot/efi
 # /dev/sdb1        14G  4.1G  9.0G  31% /mnt
-# tmpfs           695M   12K  695M   1% /run/user/1001
+# tmpfs           693M   12K  693M   1% /run/user/1001
 #
 # $ docker images
 # REPOSITORY       TAG         IMAGE ID       CREATED        SIZE
-# node             14-alpine   b4fb2cece133   3 weeks ago    123MB
-# node             16-alpine   bb97fd22e6f8   3 weeks ago    118MB
-# node             18-alpine   6d7b7852bcd3   3 weeks ago    169MB
-# ubuntu           22.04       6b7dfa7e8fdb   3 weeks ago    77.8MB
-# ubuntu           20.04       d5447fc01ae6   3 weeks ago    72.8MB
-# ubuntu           18.04       251b86c83674   3 weeks ago    63.1MB
-# node             14          c08c80352dd3   4 weeks ago    915MB
-# node             16          993a4cf9c1e8   4 weeks ago    910MB
-# node             18          209311a7c0e2   4 weeks ago    991MB
-# buildpack-deps   buster      623b2dda3870   4 weeks ago    803MB
-# buildpack-deps   bullseye    8cbf14941d59   4 weeks ago    835MB
-# debian           10          528ac3ebe420   4 weeks ago    114MB
-# debian           11          291bf168077c   4 weeks ago    124MB
-# alpine           3.16        bfe296a52501   7 weeks ago    5.54MB
-# moby/buildkit    latest      383075513bdc   8 weeks ago    142MB
-# alpine           3.14        dd53f409bf0b   4 months ago   5.6MB
-# alpine           3.15        c4fc93816858   4 months ago   5.58MB
+# node            18          acc6f84723fc   2 weeks ago    1.09GB
+# node            20          723a77f71cf0   2 weeks ago    1.1GB
+# debian          10          bb9367ba0dd2   2 weeks ago    114MB
+# debian          11          e5f3fa5ee24d   2 weeks ago    124MB
+# moby/buildkit   latest      480495983c47   2 weeks ago    172MB
+# node            18-alpine   c8eb770fbfac   2 weeks ago    132MB
+# node            20-alpine   530b955dc368   2 weeks ago    137MB
+# alpine          3.16        d49a5025be10   2 weeks ago    5.54MB
+# alpine          3.17        eaba187917cc   2 weeks ago    7.06MB
+# alpine          3.18        d3782b16ccc9   2 weeks ago    7.33MB
+# ubuntu          22.04       fd1d8f58e8ae   2 weeks ago    77.9MB
+# ubuntu          20.04       18ca3f4297e7   3 weeks ago    72.8MB
+# node            16          1ddc7e4055fd   5 months ago   909MB
+# node            16-alpine   2573171e0124   6 months ago   118MB
 
-time docker rmi node:14 node:16 node:18 node:14-alpine node:16-alpine node:18-alpine buildpack-deps:buster buildpack-deps:bullseye
+# Remove node container images
+time docker rmi -f $(docker images node -q)
 # That is 979M
 time sudo rm -rf /usr/share/dotnet
 # That is 1.7G
@@ -41,5 +39,18 @@ time sudo rm -rf /usr/share/swift
 time sudo rm -rf /usr/local/lib/android
 # Remove Haskell
 time sudo rm -rf /opt/ghc
+time sudo rm -rf /usr/local/.ghcup
 # Remove pipx
 time sudo rm -rf /opt/pipx
+# Remove Rust
+time sudo rm -rf /usr/share/rust
+# Remove Go
+time sudo rm -rf /usr/local/go
+# Remove miniconda
+time sudo rm -rf /usr/share/miniconda
+# Remove powershell
+time sudo rm -rf /usr/local/share/powershell
+# Remove Google Cloud SDK
+time sudo rm -rf /usr/lib/google-cloud-sdk
+# Remove CodeQL
+time sudo rm -rf /opt/hostedtoolcache/CodeQL
