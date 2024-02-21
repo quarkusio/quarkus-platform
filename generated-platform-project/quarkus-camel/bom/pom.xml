@@ -4699,7 +4699,7 @@
       <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-cassandraql</artifactId>
-        <version>4.3.0</version>
+        <version>4.4.0</version>
         <exclusions>
           <exclusion>
             <groupId>com.github.spotbugs</groupId>
