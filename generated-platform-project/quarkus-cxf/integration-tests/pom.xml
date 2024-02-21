@@ -14,16 +14,17 @@
   <modules>
     <module>quarkus-cxf-integration-test-client-server</module>
     <module>quarkus-cxf-integration-test-client</module>
+    <module>quarkus-cxf-integration-test-fast-infoset</module>
     <module>quarkus-cxf-integration-test-hc5</module>
     <module>quarkus-cxf-integration-test-metrics</module>
     <module>quarkus-cxf-integration-test-mtom-awt</module>
     <module>quarkus-cxf-integration-test-mtom</module>
     <module>quarkus-cxf-integration-test-opentelemetry</module>
+    <module>quarkus-cxf-integration-test-santuario-xmlsec</module>
     <module>quarkus-cxf-integration-test-server</module>
     <module>quarkus-cxf-integration-test-ws-rm-client</module>
-    <module>quarkus-cxf-integration-test-ws-security-client</module>
     <module>quarkus-cxf-integration-test-ws-security-policy</module>
-    <module>quarkus-cxf-integration-test-ws-security-server</module>
+    <module>quarkus-cxf-integration-test-ws-security</module>
     <module>quarkus-cxf-integration-test-ws-trust</module>
   </modules>
   <properties>
@@ -42,12 +43,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.8.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.8.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
