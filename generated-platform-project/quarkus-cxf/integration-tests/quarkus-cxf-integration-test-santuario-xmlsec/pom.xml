@@ -6,20 +6,25 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-integration-test-ws-security-client</artifactId>
-  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-ws-security-client</name>
+  <artifactId>quarkus-cxf-integration-test-santuario-xmlsec</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-santuario-xmlsec</name>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-ws-security-client</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <artifactId>quarkus-cxf-integration-test-santuario-xmlsec</artifactId>
+      <version>3.8.0</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-ws-security-client</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <artifactId>quarkus-cxf-integration-test-santuario-xmlsec</artifactId>
+      <version>3.8.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -50,30 +55,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>testcontainers</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit4-mock</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
-      <version>3.25.2</version>
+      <version>3.25.3</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -105,7 +89,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-client</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-santuario-xmlsec</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -138,14 +122,14 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-client</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-santuario-xmlsec</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.8.0</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -153,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-client:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-santuario-xmlsec:3.8.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
