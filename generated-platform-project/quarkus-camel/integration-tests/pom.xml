@@ -21,6 +21,7 @@
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-smb</module>
+    <module>camel-quarkus-integration-test-google-bigquery</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -60,7 +61,6 @@
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
-    <module>camel-quarkus-integration-test-google-bigquery</module>
     <module>camel-quarkus-integration-test-google-pubsub</module>
     <module>camel-quarkus-integration-test-google-storage</module>
     <module>camel-quarkus-integration-test-google</module>
@@ -100,6 +100,7 @@
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
+    <module>camel-quarkus-integration-test-jt400</module>
     <module>camel-quarkus-integration-test-jta</module>
     <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
     <module>camel-quarkus-integration-test-kafka-sasl</module>
@@ -174,6 +175,7 @@
     <module>camel-quarkus-integration-test-slack</module>
     <module>camel-quarkus-integration-test-smallrye-reactive-messaging</module>
     <module>camel-quarkus-integration-test-soap</module>
+    <module>camel-quarkus-integration-test-splunk-hec</module>
     <module>camel-quarkus-integration-test-splunk</module>
     <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-sql</module>

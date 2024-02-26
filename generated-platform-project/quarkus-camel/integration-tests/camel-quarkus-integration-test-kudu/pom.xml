@@ -15,12 +15,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-kudu</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-kudu</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -151,7 +151,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:3.8.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
