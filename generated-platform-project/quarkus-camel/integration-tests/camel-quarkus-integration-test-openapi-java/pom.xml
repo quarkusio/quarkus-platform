@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-openapi-java</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-openapi-java</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-support</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -132,7 +132,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-openapi-java:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-openapi-java:3.8.0</appArtifact>
                 </configuration>
               </execution>
             </executions>

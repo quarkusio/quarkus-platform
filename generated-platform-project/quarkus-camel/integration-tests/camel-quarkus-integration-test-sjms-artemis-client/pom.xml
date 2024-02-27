@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-sjms-artemis-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-sjms-artemis-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -57,14 +57,14 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-messaging-common</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-messaging-sjms</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
@@ -145,7 +145,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-artemis-client:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-sjms-artemis-client:3.8.0</appArtifact>
                 </configuration>
               </execution>
             </executions>

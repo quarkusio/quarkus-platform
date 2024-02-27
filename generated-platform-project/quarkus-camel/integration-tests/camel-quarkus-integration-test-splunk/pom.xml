@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-splunk</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-splunk</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.8.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -55,19 +55,10 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>testcontainers</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit4-mock</artifactId>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-splunk</artifactId>
+      <version>3.8.0</version>
+      <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -147,7 +138,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk:3.8.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
