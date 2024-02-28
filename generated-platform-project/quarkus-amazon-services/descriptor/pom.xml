@@ -5,14 +5,14 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-amazon-services-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.8.1</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-amazon-services-bom-quarkus-platform-descriptor</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - AmazonServices - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-amazon-services-bom:3.8.0.CR1</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-amazon-services-bom:3.8.1</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
