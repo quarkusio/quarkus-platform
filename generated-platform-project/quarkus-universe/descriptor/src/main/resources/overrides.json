@@ -1,37 +1,37 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.8.2" ],
     "project" : {
-      "default-codestart" : "resteasy-reactive",
+      "default-codestart" : "rest",
       "properties" : {
         "doc-root" : "https://quarkus.io",
         "rest-assured-version" : "${rest-assured.version}",
         "compiler-plugin-version" : "3.12.1",
         "surefire-plugin-version" : "3.2.5",
-        "kotlin-version" : "1.9.22",
+        "kotlin-version" : "1.9.23",
         "scala-version" : "2.13.12",
         "scala-plugin-version" : "4.8.1",
-        "quarkus-core-version" : "3.8.2",
+        "quarkus-core-version" : "3.9.0.CR1",
         "maven-plugin-groupId" : "io.quarkus",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
-        "maven-plugin-version" : "3.8.2",
+        "maven-plugin-version" : "3.9.0.CR1",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.8.2",
+        "gradle-plugin-version" : "3.9.0.CR1",
         "supported-maven-versions" : "[3.8.2,)",
         "proposed-maven-version" : "3.9.6",
         "maven-wrapper-version" : "3.2.0",
-        "gradle-wrapper-version" : "8.5",
+        "gradle-wrapper-version" : "8.6",
         "minimum-java-version" : "17",
         "recommended-java-version" : "17"
       }
-    }
+    },
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.9.0.CR1" ]
   },
   "categories" : [ {
     "id" : "web",
     "name" : "Web",
     "description" : "Everything you need for REST endpoints, HTTP and web formats like JSON",
     "metadata" : {
-      "pinned" : [ "io.quarkus:quarkus-resteasy-reactive", "io.quarkus:quarkus-resteasy-reactive-jackson", "io.quarkus:quarkus-resteasy-reactive-jsonb", "io.quarkus:quarkus-resteasy-reactive-jaxb", "io.quarkus:quarkus-resteasy-reactive-kotlin-serialization", "io.quarkus:quarkus-resteasy-reactive-qute", "io.quarkus:quarkus-resteasy-reactive-links", "io.quarkus:quarkus-rest-client-reactive", "io.quarkus:quarkus-rest-client-reactive-jackson", "io.quarkus:quarkus-rest-client-reactive-jsonb", "io.quarkus:quarkus-rest-client-reactive-jaxb", "io.quarkus:quarkus-rest-client-reactive-kotlin-serialization", "io.quarkus:quarkus-resteasy", "io.quarkus:quarkus-resteasy-jackson", "io.quarkus:quarkus-resteasy-jsonb", "io.quarkus:quarkus-resteasy-jaxb", "io.quarkus:quarkus-resteasy-multipart", "io.quarkus:quarkus-resteasy-mutiny", "io.quarkus:quarkus-resteasy-qute", "io.quarkus:quarkus-resteasy-links", "io.quarkus:quarkus-rest-client-jackson", "io.quarkus:quarkus-rest-client-jsonb", "io.quarkus:quarkus-rest-client-jaxb" ]
+      "pinned" : [ "io.quarkus:quarkus-rest", "io.quarkus:quarkus-rest-jackson", "io.quarkus:quarkus-rest-jsonb", "io.quarkus:quarkus-rest-jaxb", "io.quarkus:quarkus-rest-kotlin-serialization", "io.quarkus:quarkus-rest-qute", "io.quarkus:quarkus-rest-links", "io.quarkus:quarkus-rest-client", "io.quarkus:quarkus-rest-client-jackson", "io.quarkus:quarkus-rest-client-jsonb", "io.quarkus:quarkus-rest-client-jaxb", "io.quarkus:quarkus-rest-client-kotlin-serialization", "io.quarkus:quarkus-resteasy", "io.quarkus:quarkus-resteasy-jackson", "io.quarkus:quarkus-resteasy-jsonb", "io.quarkus:quarkus-resteasy-jaxb", "io.quarkus:quarkus-resteasy-multipart", "io.quarkus:quarkus-resteasy-mutiny", "io.quarkus:quarkus-resteasy-qute", "io.quarkus:quarkus-resteasy-links", "io.quarkus:quarkus-resteasy-client-jackson", "io.quarkus:quarkus-resteasy-client-jsonb", "io.quarkus:quarkus-resteasy-client-jaxb" ]
     }
   }, {
     "id" : "data",
