@@ -7098,7 +7098,7 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-api</artifactId>
-        <version>3.6.1</version>
+        <version>3.7.0</version>
         <exclusions>
           <exclusion>
             <groupId>javax.ws.rs</groupId>
@@ -7109,17 +7109,17 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-file</artifactId>
-        <version>3.6.1</version>
+        <version>3.7.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-json</artifactId>
-        <version>3.6.1</version>
+        <version>3.7.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-runtime</artifactId>
-        <version>3.6.1</version>
+        <version>3.7.0</version>
         <exclusions>
           <exclusion>
             <groupId>javax.activation</groupId>
@@ -7146,7 +7146,7 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-transforms</artifactId>
-        <version>3.6.1</version>
+        <version>3.7.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kudu</groupId>
@@ -7380,12 +7380,12 @@
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
-        <version>4.0.4</version>
+        <version>4.0.5</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-xjc</artifactId>
-        <version>4.0.4</version>
+        <version>4.0.5</version>
       </dependency>
       <dependency>
         <groupId>org.graalvm.js</groupId>
@@ -7405,12 +7405,12 @@
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-scripting-jvm-host</artifactId>
-        <version>1.9.22</version>
+        <version>1.9.23</version>
       </dependency>
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-scripting-jvm</artifactId>
-        <version>1.9.22</version>
+        <version>1.9.23</version>
       </dependency>
       <dependency>
         <groupId>org.jvnet.mimepull</groupId>
