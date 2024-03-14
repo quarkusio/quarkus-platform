@@ -17,12 +17,14 @@
     <module>quarkus-cxf-integration-test-fast-infoset</module>
     <module>quarkus-cxf-integration-test-hc5</module>
     <module>quarkus-cxf-integration-test-metrics</module>
+    <module>quarkus-cxf-integration-test-mtls</module>
     <module>quarkus-cxf-integration-test-mtom-awt</module>
     <module>quarkus-cxf-integration-test-mtom</module>
     <module>quarkus-cxf-integration-test-opentelemetry</module>
     <module>quarkus-cxf-integration-test-santuario-xmlsec</module>
     <module>quarkus-cxf-integration-test-server</module>
     <module>quarkus-cxf-integration-test-ws-rm-client</module>
+    <module>quarkus-cxf-integration-test-ws-security-policy-fips</module>
     <module>quarkus-cxf-integration-test-ws-security-policy</module>
     <module>quarkus-cxf-integration-test-ws-security</module>
     <module>quarkus-cxf-integration-test-ws-trust</module>
