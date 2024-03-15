@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
-  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-opentelemetry</name>
+  <artifactId>quarkus-cxf-integration-test-ws-security-policy-fips</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-ws-security-policy-fips</name>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
+      <artifactId>quarkus-cxf-integration-test-ws-security-policy-fips</artifactId>
       <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
+      <artifactId>quarkus-cxf-integration-test-ws-security-policy-fips</artifactId>
       <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -48,6 +48,12 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-test-util</artifactId>
+      <version>${quarkus-cxf.version}</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.awaitility</groupId>
@@ -94,7 +100,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy-fips</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -127,7 +133,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy-fips</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -142,7 +148,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy-fips:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

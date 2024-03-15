@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
-  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-opentelemetry</name>
+  <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-mtls</name>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
+      <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
       <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
+      <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
       <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -48,11 +48,6 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -94,9 +89,33 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtls</dependency>
           </dependenciesToScan>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack-test-resources</id>
+            <phase>process-test-resources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>io.quarkiverse.cxf</groupId>
+                  <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
+                  <version>${quarkus-cxf.version}</version>
+                  <outputDirectory>${project.basedir}/target/classes</outputDirectory>
+                  <includes>*.pkcs12</includes>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
@@ -127,7 +146,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtls</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -142,7 +161,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtls:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
