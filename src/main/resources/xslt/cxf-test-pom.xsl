@@ -66,6 +66,34 @@
                     </dependencies>
                 </plugin>
             </xsl:if>
+
+            <!-- Workaround for https://github.com/quarkiverse/quarkus-cxf/issues/1292 -->
+            <xsl:if test="/pom:project/pom:artifactId/text() = 'quarkus-cxf-integration-test-mtls'">
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <id>unpack-test-resources</id>
+                            <phase>process-test-resources</phase>
+                            <goals>
+                                <goal>unpack</goal>
+                            </goals>
+                            <configuration>
+                                <artifactItems>
+                                    <artifactItem>
+                                        <groupId>io.quarkiverse.cxf</groupId>
+                                        <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
+                                        <version>${quarkus-cxf.version}</version>
+                                        <outputDirectory>${project.basedir}/target/classes</outputDirectory>
+                                        <includes>*.pkcs12</includes>
+                                    </artifactItem>
+                                </artifactItems>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </xsl:if>
         </xsl:copy>
     </xsl:template>
 
