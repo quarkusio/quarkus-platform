@@ -58,7 +58,7 @@
         <quarkus.version>3.8.3</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.8.0</camel-quarkus.version>
+        <camel-quarkus.version>3.8.1</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -433,22 +433,10 @@
                                                 <CAMEL_K_CONF_D>target/test-classes/camel-k-runtime/conf.d</CAMEL_K_CONF_D>
                                             </environmentVariables>
                                         </test>
-                                        <test><!-- Consul okhttp issue https://github.com/apache/camel-quarkus/issues/5691 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-consul:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                         <test><!--Flaky foundation tests https://github.com/apache/camel-quarkus/issues/5695 https://github.com/apache/camel-quarkus/issues/5679 -->
                                             <jvmExcludes>**/DataSetTest*,**/EipTest*</jvmExcludes>
                                             <nativeExcludes>**/DataSetTest*,**/EipTest*</nativeExcludes>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-foundation-grouped:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Minio okhttp issue https://github.com/apache/camel-quarkus/issues/5690 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-minio:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- SMB Dockerfile resolution issue https://github.com/apache/camel-quarkus/issues/5692 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-smb:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                         <test><!-- Google Big Query resolution issue https://github.com/apache/camel-quarkus/issues/5798 -->
                                             <skip>true</skip>
@@ -612,8 +600,6 @@
                                     <dependency>log4j:log4j</dependency>
                                     <!-- AssertJ -->
                                     <dependency>org.assertj:assertj-core</dependency>
-                                    <!-- TODO: https://github.com/apache/camel-quarkus/issues/5803 -->
-                                    <dependency>org.apache.camel.quarkus:camel-quarkus-beanio</dependency>
                                 </excludedDependencies>
                             </bomGenerator>
                             <descriptorGenerator>

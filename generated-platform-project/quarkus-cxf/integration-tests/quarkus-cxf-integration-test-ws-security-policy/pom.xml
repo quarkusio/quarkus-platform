@@ -12,12 +12,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-ws-security-policy</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>${camel-quarkus.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -148,7 +148,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security-policy:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
