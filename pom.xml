@@ -442,6 +442,10 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-bigquery:${camel-quarkus-test-list.version}</artifact>
                                         </test>
+                                        <test><!-- Class loading issue https://github.com/apache/camel-quarkus/issues/5896-->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jt400:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
                                <!-- <member>
