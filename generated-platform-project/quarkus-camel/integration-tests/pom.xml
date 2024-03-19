@@ -17,10 +17,7 @@
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-camel-k-runtime</module>
-    <module>camel-quarkus-integration-test-consul</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
-    <module>camel-quarkus-integration-test-minio</module>
-    <module>camel-quarkus-integration-test-smb</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
@@ -36,9 +33,11 @@
     <module>camel-quarkus-integration-test-box</module>
     <module>camel-quarkus-integration-test-braintree</module>
     <module>camel-quarkus-integration-test-caffeine</module>
+    <module>camel-quarkus-integration-test-camel-k-runtime-model-reifier</module>
     <module>camel-quarkus-integration-test-cassandraql</module>
     <module>camel-quarkus-integration-test-cbor</module>
     <module>camel-quarkus-integration-test-compression-grouped</module>
+    <module>camel-quarkus-integration-test-consul</module>
     <module>camel-quarkus-integration-test-core-discovery-disabled</module>
     <module>camel-quarkus-integration-test-couchdb</module>
     <module>camel-quarkus-integration-test-crypto</module>
@@ -132,6 +131,7 @@
     <module>camel-quarkus-integration-test-mapstruct</module>
     <module>camel-quarkus-integration-test-micrometer</module>
     <module>camel-quarkus-integration-test-microprofile</module>
+    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
     <module>camel-quarkus-integration-test-mustache</module>
@@ -174,6 +174,7 @@
     <module>camel-quarkus-integration-test-sjms2-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-slack</module>
     <module>camel-quarkus-integration-test-smallrye-reactive-messaging</module>
+    <module>camel-quarkus-integration-test-smb</module>
     <module>camel-quarkus-integration-test-soap</module>
     <module>camel-quarkus-integration-test-splunk-hec</module>
     <module>camel-quarkus-integration-test-splunk</module>

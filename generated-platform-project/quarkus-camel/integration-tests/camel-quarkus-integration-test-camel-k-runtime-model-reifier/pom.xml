@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-jasypt</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jasypt</name>
+  <artifactId>camel-quarkus-integration-test-camel-k-runtime-model-reifier</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-camel-k-runtime-model-reifier</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jasypt</artifactId>
+      <artifactId>camel-quarkus-integration-test-camel-k-runtime-model-reifier</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jasypt</artifactId>
+      <artifactId>camel-quarkus-integration-test-camel-k-runtime-model-reifier</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,14 +55,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-test-h2</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-support</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.25.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -94,7 +89,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jasypt</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime-model-reifier</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -127,7 +122,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jasypt</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime-model-reifier</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -142,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jasypt:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime-model-reifier:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
