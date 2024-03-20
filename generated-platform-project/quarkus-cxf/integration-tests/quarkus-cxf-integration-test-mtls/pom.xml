@@ -12,12 +12,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>3.9.0</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>3.9.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -93,30 +93,6 @@
           </dependenciesToScan>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>unpack-test-resources</id>
-            <phase>process-test-resources</phase>
-            <goals>
-              <goal>unpack</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>io.quarkiverse.cxf</groupId>
-                  <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
-                  <version>${quarkus-cxf.version}</version>
-                  <outputDirectory>${project.basedir}/target/classes</outputDirectory>
-                  <includes>*.pkcs12</includes>
-                </artifactItem>
-              </artifactItems>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
   <profiles>
@@ -153,7 +129,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.9.0</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -161,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtls:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtls:3.9.0</appArtifact>
                 </configuration>
               </execution>
             </executions>

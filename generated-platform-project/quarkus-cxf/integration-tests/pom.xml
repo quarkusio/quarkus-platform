@@ -24,7 +24,6 @@
     <module>quarkus-cxf-integration-test-santuario-xmlsec</module>
     <module>quarkus-cxf-integration-test-server</module>
     <module>quarkus-cxf-integration-test-ws-rm-client</module>
-    <module>quarkus-cxf-integration-test-ws-security-policy-fips</module>
     <module>quarkus-cxf-integration-test-ws-security-policy</module>
     <module>quarkus-cxf-integration-test-ws-security</module>
     <module>quarkus-cxf-integration-test-ws-trust</module>
@@ -45,12 +44,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.9.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.9.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
