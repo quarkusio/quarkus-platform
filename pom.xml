@@ -80,7 +80,7 @@
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
-        <quarkus-google-cloud-services.version>2.7.0</quarkus-google-cloud-services.version>
+        <quarkus-google-cloud-services.version>2.8.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>3.5.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>6.6.5</quarkus-operator-sdk.version>
 
