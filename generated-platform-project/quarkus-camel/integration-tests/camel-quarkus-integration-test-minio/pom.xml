@@ -8,19 +8,16 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-minio</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-minio</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-minio</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.9.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-minio</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.9.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -150,8 +147,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-minio:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-minio:3.9.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
