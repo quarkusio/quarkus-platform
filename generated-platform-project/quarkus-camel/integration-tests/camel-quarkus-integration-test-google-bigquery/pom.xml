@@ -15,12 +15,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-google-bigquery</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.9.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-google-bigquery</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.9.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -60,13 +60,13 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-tests-support-google</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.9.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.9.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -147,7 +147,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-bigquery:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-bigquery:3.9.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
