@@ -59,6 +59,12 @@
       <artifactId>quarkus-test-h2</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-support</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -128,7 +134,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.9.0</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
