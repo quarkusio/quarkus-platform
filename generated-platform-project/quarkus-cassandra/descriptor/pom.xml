@@ -54,7 +54,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-cassandra-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
+          <quarkusCoreVersion>3.10.0.CR1</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>

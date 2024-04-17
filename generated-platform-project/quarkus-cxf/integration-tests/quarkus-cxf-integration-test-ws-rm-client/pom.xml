@@ -12,12 +12,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-ws-rm-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.10.0.CR1</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-ws-rm-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.10.0.CR1</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.10.0.CR1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -63,7 +63,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-ws-rm-server-jvm</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.10.0.CR1</version>
       <type>pom</type>
       <scope>test</scope>
     </dependency>
@@ -192,7 +192,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.10.0.CR1</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -200,7 +200,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-rm-client:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-rm-client:3.10.0.CR1</appArtifact>
                 </configuration>
               </execution>
             </executions>
