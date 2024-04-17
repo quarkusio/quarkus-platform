@@ -54,7 +54,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-debezium-bom</bomArtifactId>
-          <quarkusCoreVersion>3.8.3</quarkusCoreVersion>
+          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>
