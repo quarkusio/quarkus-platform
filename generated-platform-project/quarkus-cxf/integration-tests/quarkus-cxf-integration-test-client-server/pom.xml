@@ -12,12 +12,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-client-server</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>3.8.3</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-client-server</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>3.8.3</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>3.8.3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -140,7 +140,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.8.3</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -148,7 +148,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server:3.8.3</appArtifact>
                 </configuration>
               </execution>
             </executions>
