@@ -9622,12 +9622,12 @@
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault-deployment</artifactId>
-        <version>4.0.0</version>
+        <version>4.0.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault</artifactId>
-        <version>4.0.0</version>
+        <version>4.0.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.arc</groupId>
