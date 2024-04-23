@@ -45,8 +45,8 @@ jobs:
           SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
           SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
         run: |
-          ./mvnw -N versions:set-property -Dproperty=quarkus.version -DnewVersion=999-SNAPSHOT -DenableSnapshotsRepository
-          ./mvnw -Dsync -DenableSnapshotsRepository
+          ./mvnw -B -N versions:set-property -Dproperty=quarkus.version -DnewVersion=999-SNAPSHOT -DenableSnapshotsRepository
+          ./mvnw -B -Dsync -DenableSnapshotsRepository
           ./mvnw -e -B --settings .github/mvn-settings.xml \
             -DskipTests -DskipITs \
             -DretryFailedDeploymentCount=10 \
