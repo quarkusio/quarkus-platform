@@ -45,9 +45,12 @@ jobs:
           SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
           SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
         run: |
+          ./mvnw -N versions:set-property -Dproperty=quarkus.version -DnewVersion=999-SNAPSHOT -DenableSnapshotsRepository
+          ./mvnw -Dsync -DenableSnapshotsRepository
           ./mvnw -e -B --settings .github/mvn-settings.xml \
             -DskipTests -DskipITs \
             -DretryFailedDeploymentCount=10 \
+            -DenableSnapshotsRepository \
             clean deploy
       - name: Delete Local Artifacts From Cache
         shell: bash
