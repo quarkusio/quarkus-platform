@@ -388,7 +388,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-pubsub</artifactId>
-        <version>1.127.1</version>
+        <version>1.127.3</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.android</groupId>
@@ -7658,7 +7658,7 @@
       <dependency>
         <groupId>org.threeten</groupId>
         <artifactId>threetenbp</artifactId>
-        <version>1.6.8</version>
+        <version>1.6.9</version>
       </dependency>
       <dependency>
         <groupId>org.web3j</groupId>
