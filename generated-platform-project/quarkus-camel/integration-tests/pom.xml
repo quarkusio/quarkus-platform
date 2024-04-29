@@ -17,8 +17,7 @@
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-camel-k-runtime</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
-    <module>camel-quarkus-integration-test-google-bigquery</module>
-    <module>camel-quarkus-integration-test-jt400</module>
+    <module>camel-quarkus-integration-test-jt400-mocked</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -61,6 +60,7 @@
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
+    <module>camel-quarkus-integration-test-google-bigquery</module>
     <module>camel-quarkus-integration-test-google-pubsub</module>
     <module>camel-quarkus-integration-test-google-storage</module>
     <module>camel-quarkus-integration-test-google</module>
@@ -100,6 +100,7 @@
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
+    <module>camel-quarkus-integration-test-jt400</module>
     <module>camel-quarkus-integration-test-jta</module>
     <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
     <module>camel-quarkus-integration-test-kafka-sasl</module>
@@ -155,6 +156,7 @@
     <module>camel-quarkus-integration-test-platform-http</module>
     <module>camel-quarkus-integration-test-protobuf</module>
     <module>camel-quarkus-integration-test-pubnub</module>
+    <module>camel-quarkus-integration-test-qdrant</module>
     <module>camel-quarkus-integration-test-quartz</module>
     <module>camel-quarkus-integration-test-qute</module>
     <module>camel-quarkus-integration-test-reactive-streams</module>
@@ -195,7 +197,9 @@
     <module>camel-quarkus-integration-test-velocity</module>
     <module>camel-quarkus-integration-test-vertx-websocket</module>
     <module>camel-quarkus-integration-test-vertx</module>
+    <module>camel-quarkus-integration-test-wasm</module>
     <module>camel-quarkus-integration-test-weather</module>
+    <module>camel-quarkus-integration-test-xchange</module>
     <module>camel-quarkus-integration-test-xj</module>
     <module>camel-quarkus-integration-test-xml-grouped</module>
     <module>camel-quarkus-integration-test-xml-jaxp</module>
