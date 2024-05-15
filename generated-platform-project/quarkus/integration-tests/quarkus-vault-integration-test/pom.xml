@@ -146,7 +146,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.10.0</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
