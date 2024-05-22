@@ -19,7 +19,7 @@
     <module>camel-quarkus-integration-test-camel-k-runtime</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
-    <module>camel-quarkus-integration-test-jt400</module>
+    <module>camel-quarkus-integration-test-jt400-mocked</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -100,6 +100,7 @@
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
+    <module>camel-quarkus-integration-test-jt400</module>
     <module>camel-quarkus-integration-test-jta</module>
     <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
     <module>camel-quarkus-integration-test-kafka-sasl</module>
