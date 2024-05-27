@@ -130,7 +130,8 @@
     <module>camel-quarkus-integration-test-management</module>
     <module>camel-quarkus-integration-test-mapstruct</module>
     <module>camel-quarkus-integration-test-micrometer</module>
-    <module>camel-quarkus-integration-test-microprofile</module>
+    <module>camel-quarkus-integration-test-microprofile-fault-tolerance</module>
+    <module>camel-quarkus-integration-test-microprofile-health</module>
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
