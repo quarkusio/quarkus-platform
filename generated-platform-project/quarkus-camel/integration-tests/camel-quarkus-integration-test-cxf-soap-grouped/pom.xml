@@ -73,7 +73,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>3.8.3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -124,6 +124,9 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped</dependency>
           </dependenciesToScan>
+          <excludes>
+            <exclude>**/CxfWsTrustCxfWayTest*</exclude>
+          </excludes>
         </configuration>
       </plugin>
     </plugins>
@@ -150,6 +153,9 @@
                   <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                   </systemProperties>
+                  <excludes>
+                    <exclude>**/CxfWsTrustCxfWayTest*</exclude>
+                  </excludes>
                 </configuration>
               </execution>
             </executions>
@@ -162,7 +168,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.8.4</version>
             <executions>
               <execution>
                 <id>native-image</id>

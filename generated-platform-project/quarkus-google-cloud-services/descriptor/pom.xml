@@ -54,7 +54,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-google-cloud-services-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
+          <quarkusCoreVersion>3.8.4</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>
