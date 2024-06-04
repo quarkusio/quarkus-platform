@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.12.2</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.8.3</quarkus-cxf.version>
+        <quarkus-cxf.version>3.8.4</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.6.1</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -445,6 +445,11 @@
                                             <systemProperties>
                                                 <quarkus.test.flat-class-path>true</quarkus.test.flat-class-path>
                                             </systemProperties>
+                                        </test>
+                                        <test><!--Temporary workaround, Cxf-soap test `CxfWsTrustCxfWayTest` will be fixed in the next CQ 3.8.x release. https://github.com/apache/camel-quarkus/issues/6128 -->
+                                            <jvmExcludes>**/CxfWsTrustCxfWayTest*</jvmExcludes>
+                                            <nativeExcludes>**/CxfWsTrustCxfWayTest*</nativeExcludes>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
