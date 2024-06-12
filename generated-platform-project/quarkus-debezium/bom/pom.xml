@@ -61,82 +61,82 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-api</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-db2</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mongodb</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mysql</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-oracle</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-postgres</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-sqlserver</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-vitess</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-core</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-ddl-parser</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-embedded</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox-deployment</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox-reactive-deployment</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox-reactive</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-scripting</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
