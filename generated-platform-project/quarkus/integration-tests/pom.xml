@@ -33,12 +33,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>3.12.0.CR1</version>
+        <version>${quarkus.version}</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>3.12.0.CR1</version>
+        <version>${quarkus.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
