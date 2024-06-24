@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-oaipmh</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-oaipmh</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.12.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-support</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.12.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -96,6 +96,12 @@
           <artifactId>jsr305</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-certificate-generator</artifactId>
+      <version>3.12.0</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -166,7 +172,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.12.0</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -174,7 +180,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-oaipmh:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-oaipmh:3.12.0</appArtifact>
                 </configuration>
               </execution>
             </executions>

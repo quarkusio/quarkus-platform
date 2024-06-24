@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-infinispan-quarkus-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.12.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-infinispan-quarkus-client</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.12.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-infinispan-common</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.12.0</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
@@ -135,7 +135,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.12.0</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -143,7 +143,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-infinispan-quarkus-client:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-infinispan-quarkus-client:3.12.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
