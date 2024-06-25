@@ -50,6 +50,7 @@
     <module>camel-quarkus-integration-test-digitalocean</module>
     <module>camel-quarkus-integration-test-disruptor</module>
     <module>camel-quarkus-integration-test-dropbox</module>
+    <module>camel-quarkus-integration-test-elasticsearch-rest-client</module>
     <module>camel-quarkus-integration-test-exec</module>
     <module>camel-quarkus-integration-test-fhir</module>
     <module>camel-quarkus-integration-test-file</module>
@@ -115,6 +116,7 @@
     <module>camel-quarkus-integration-test-kotlin-dsl</module>
     <module>camel-quarkus-integration-test-kotlin</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
+    <module>camel-quarkus-integration-test-langchain4j-chat</module>
     <module>camel-quarkus-integration-test-ldap</module>
     <module>camel-quarkus-integration-test-leveldb</module>
     <module>camel-quarkus-integration-test-lra</module>
@@ -152,6 +154,7 @@
     <module>camel-quarkus-integration-test-pdf</module>
     <module>camel-quarkus-integration-test-pg-replication-slot</module>
     <module>camel-quarkus-integration-test-pgevent</module>
+    <module>camel-quarkus-integration-test-pinecone</module>
     <module>camel-quarkus-integration-test-platform-http-proxy-ssl</module>
     <module>camel-quarkus-integration-test-platform-http-proxy</module>
     <module>camel-quarkus-integration-test-platform-http</module>
