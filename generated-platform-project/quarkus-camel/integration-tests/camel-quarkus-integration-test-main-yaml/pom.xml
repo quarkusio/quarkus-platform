@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-main-yaml</artifactId>
-      <version>3.12.0</version>
+      <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-main-yaml</artifactId>
-      <version>3.12.0</version>
+      <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -129,7 +129,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.12.0</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -137,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-yaml:3.12.0</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-main-yaml:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
