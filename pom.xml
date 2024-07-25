@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.16.0</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.12.0</quarkus-cxf.version>
+        <quarkus-cxf.version>3.13.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.6.1</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
