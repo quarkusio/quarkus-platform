@@ -52,7 +52,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-universe-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
+          <quarkusCoreVersion>3.13.0</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${project.groupId}</platformKey>
             <stream>${platform.stream}</stream>
