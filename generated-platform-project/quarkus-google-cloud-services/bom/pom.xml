@@ -3756,7 +3756,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-pubsub</artifactId>
-        <version>1.129.1</version>
+        <version>1.130.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4127,27 +4127,27 @@
       <dependency>
         <groupId>com.google.oauth-client</groupId>
         <artifactId>google-oauth-client-appengine</artifactId>
-        <version>1.35.0</version>
+        <version>1.36.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
         <artifactId>google-oauth-client-java6</artifactId>
-        <version>1.35.0</version>
+        <version>1.36.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
         <artifactId>google-oauth-client-jetty</artifactId>
-        <version>1.35.0</version>
+        <version>1.36.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
         <artifactId>google-oauth-client-servlet</artifactId>
-        <version>1.35.0</version>
+        <version>1.36.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
         <artifactId>google-oauth-client</artifactId>
-        <version>1.35.0</version>
+        <version>1.36.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.protobuf</groupId>

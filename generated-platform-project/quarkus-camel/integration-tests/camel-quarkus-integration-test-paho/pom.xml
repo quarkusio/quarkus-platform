@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-paho</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.13.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-paho</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.13.0</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -57,13 +57,13 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-tests-support-activemq</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.13.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-tests-support-certificate-generator</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.13.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -143,7 +143,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-paho:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-paho:3.13.0</appArtifact>
                 </configuration>
               </execution>
             </executions>
