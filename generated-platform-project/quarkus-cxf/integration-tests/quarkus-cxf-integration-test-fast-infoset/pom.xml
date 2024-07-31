@@ -12,12 +12,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-fast-infoset</artifactId>
-      <version>3.13.0</version>
+      <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-fast-infoset</artifactId>
-      <version>3.13.0</version>
+      <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>3.13.0</version>
+      <version>${quarkus-cxf.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -143,7 +143,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-fast-infoset:3.13.0</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-fast-infoset:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
