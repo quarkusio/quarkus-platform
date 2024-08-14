@@ -228,12 +228,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>3.13.0</version>
+        <version>${quarkus.version}</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>3.13.0</version>
+        <version>${quarkus.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
