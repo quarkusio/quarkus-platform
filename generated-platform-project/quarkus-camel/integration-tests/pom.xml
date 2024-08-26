@@ -39,6 +39,7 @@
     <module>camel-quarkus-integration-test-consul</module>
     <module>camel-quarkus-integration-test-core-discovery-disabled</module>
     <module>camel-quarkus-integration-test-couchdb</module>
+    <module>camel-quarkus-integration-test-crypto-pgp</module>
     <module>camel-quarkus-integration-test-crypto</module>
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-csv</module>
