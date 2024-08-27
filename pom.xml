@@ -75,7 +75,7 @@
         <quarkus-blaze-persistence.version>1.6.12</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.2.0</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
-        <quarkus-qute-web.version>3.0.2</quarkus-qute-web.version>
+        <quarkus-qute-web.version>3.1.0</quarkus-qute-web.version>
 
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
