@@ -12,12 +12,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-mtom-awt</artifactId>
-      <version>3.8.5</version>
+      <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-mtom-awt</artifactId>
-      <version>3.8.5</version>
+      <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -129,7 +129,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.8.5</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -137,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom-awt:3.8.5</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtom-awt:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
