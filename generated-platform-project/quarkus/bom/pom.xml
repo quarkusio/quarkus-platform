@@ -9340,7 +9340,7 @@
       <dependency>
         <groupId>io.vertx</groupId>
         <artifactId>vertx-grpc-server</artifactId>
-        <version>4.5.9</version>
+        <version>4.5.10</version>
       </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
