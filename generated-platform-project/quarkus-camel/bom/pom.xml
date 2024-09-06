@@ -130,7 +130,7 @@
       <dependency>
         <groupId>ca.uhn.hapi.fhir</groupId>
         <artifactId>org.hl7.fhir.dstu3</artifactId>
-        <version>6.1.2.2</version>
+        <version>6.3.23</version>
       </dependency>
       <dependency>
         <groupId>ca.uhn.hapi.fhir</groupId>
