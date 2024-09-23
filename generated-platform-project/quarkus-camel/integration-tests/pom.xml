@@ -15,12 +15,12 @@
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-debezium</module>
     <module>camel-quarkus-integration-test-kudu</module>
-    <module>camel-quarkus-integration-test-camel-k-runtime</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
+    <module>camel-quarkus-integration-test-as2</module>
     <module>camel-quarkus-integration-test-avro</module>
     <module>camel-quarkus-integration-test-aws2-grouped</module>
     <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
@@ -32,7 +32,6 @@
     <module>camel-quarkus-integration-test-box</module>
     <module>camel-quarkus-integration-test-braintree</module>
     <module>camel-quarkus-integration-test-caffeine</module>
-    <module>camel-quarkus-integration-test-camel-k-runtime-model-reifier</module>
     <module>camel-quarkus-integration-test-cassandraql</module>
     <module>camel-quarkus-integration-test-cbor</module>
     <module>camel-quarkus-integration-test-compression-grouped</module>
@@ -71,6 +70,7 @@
     <module>camel-quarkus-integration-test-groovy-dsl</module>
     <module>camel-quarkus-integration-test-groovy</module>
     <module>camel-quarkus-integration-test-grpc</module>
+    <module>camel-quarkus-integration-test-hashicorp-vault</module>
     <module>camel-quarkus-integration-test-hazelcast</module>
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
@@ -109,10 +109,6 @@
     <module>camel-quarkus-integration-test-kafka-ssl</module>
     <module>camel-quarkus-integration-test-kafka</module>
     <module>camel-quarkus-integration-test-kamelet</module>
-    <module>camel-quarkus-integration-test-knative-channel-consumer</module>
-    <module>camel-quarkus-integration-test-knative-endpoint-consumer</module>
-    <module>camel-quarkus-integration-test-knative-event-consumer</module>
-    <module>camel-quarkus-integration-test-knative-producer</module>
     <module>camel-quarkus-integration-test-knative</module>
     <module>camel-quarkus-integration-test-kotlin-dsl</module>
     <module>camel-quarkus-integration-test-kotlin</module>
@@ -229,12 +225,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.15.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.15.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
