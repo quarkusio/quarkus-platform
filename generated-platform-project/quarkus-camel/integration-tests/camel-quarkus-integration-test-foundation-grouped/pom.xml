@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-foundation-grouped</artifactId>
-      <version>3.15.0</version>
+      <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-foundation-grouped</artifactId>
-      <version>3.15.0</version>
+      <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -62,7 +62,7 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
-      <version>3.15.0</version>
+      <version>${camel-quarkus.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -151,7 +151,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.15.0</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -159,7 +159,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-foundation-grouped:3.15.0</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-foundation-grouped:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
