@@ -84,7 +84,7 @@
         <quarkus-vault.version>4.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>6.8.0</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.112</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.113</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
