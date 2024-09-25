@@ -84,7 +84,7 @@
         <quarkus-vault.version>4.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>6.8.1</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.113</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.115</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
@@ -99,6 +99,7 @@
         <!-- descriptor overrides -->
         <resourcesdir>${project.basedir}/src/main/resources</resourcesdir>
         <overridesfile>${resourcesdir}/extensions-overrides.json</overridesfile>
+        <dollarSign>$</dollarSign>
     </properties>
 
     <distributionManagement>
@@ -143,9 +144,9 @@
                     <version>${version.failsafe.plugin}</version>
                     <configuration>
                         <excludedGroups>quarkus-platform-ignore</excludedGroups>
-                        <systemProperties>
+                        <systemPropertyVariables>
                             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
-                        </systemProperties>
+                        </systemPropertyVariables>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -631,6 +632,25 @@
                             <attachedMavenPlugin>
                                 <originalPluginCoords>io.quarkus:quarkus-maven-plugin:${quarkus.version}</originalPluginCoords>
                                 <targetPluginCoords>${platform.groupId}:quarkus-maven-plugin:${platform.version}</targetPluginCoords>
+                                    <test>
+                                        <!-- Given the Maven plugin is rebuilt as part of the platform project, this is a basic test
+                                             that creates a new Quarkus application project with the 'create' goal targeting the platform version being built
+                                             (which will configure the platform Maven plugin) builds and tests the application with the 'verify` goal
+                                             to run both the unit and the integration tests -->
+                                        <artifact>io.quarkus:quarkus-platform-sample-app-test:${quarkus-platform-bom-generator.version}</artifact>
+                                        <maven-failsafe-plugin>true</maven-failsafe-plugin>
+                                        <systemProperties>
+                                            <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+                                            <quarkus.platform.group-id>${dollarSign}${dollarSign}{platform.groupId}</quarkus.platform.group-id>
+                                            <quarkus.platform.version>${dollarSign}${dollarSign}{platform.version}</quarkus.platform.version>
+                                            <maven.home>${dollarSign}${dollarSign}{maven.home}</maven.home>
+                                            <!-- timeout in seconds for quarkus:create, the default is 10
+                                            <sample-app.generate-timeout>10</sample-app.generate-timeout -->
+                                            <!-- timeout in seconds for building the app and running its integration tests, the default is 30
+                                            <sample-app.build-timeout>30</sample-app.build-timeout -->
+                                        </systemProperties>
+                                        <skipNative>true</skipNative>
+                                    </test>
                             </attachedMavenPlugin>
                         </platformConfig>
                         <dependenciesToBuild /> <!-- to enable manifest generation -->

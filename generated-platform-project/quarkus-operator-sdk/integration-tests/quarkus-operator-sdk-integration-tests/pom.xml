@@ -121,9 +121,9 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemProperties>
+                  <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                  </systemProperties>
+                  </systemPropertyVariables>
                   <environmentVariables>
                     <NAMESPACE_FROM_ENV>fromEnvVarNS</NAMESPACE_FROM_ENV>
                     <QUARKUS_OPERATOR_SDK_CONTROLLERS_EMPTY_NAMESPACES>fromEnv1,fromEnv2</QUARKUS_OPERATOR_SDK_CONTROLLERS_EMPTY_NAMESPACES>
