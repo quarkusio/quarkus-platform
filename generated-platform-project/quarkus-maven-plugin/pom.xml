@@ -13,12 +13,16 @@
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
   <properties>
+    <maven.compiler.release>11</maven.compiler.release>
     <maven.compiler.testSource>11</maven.compiler.testSource>
     <maven.compiler.argument.target>11</maven.compiler.argument.target>
+    <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.argument.testSource>11</maven.compiler.argument.testSource>
     <maven.compiler.argument.testTarget>11</maven.compiler.argument.testTarget>
+    <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.testTarget>11</maven.compiler.testTarget>
     <maven.compiler.argument.source>11</maven.compiler.argument.source>
+    <maven.compiler.parameters>true</maven.compiler.parameters>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -182,6 +186,20 @@
       <groupId>org.jboss.slf4j</groupId>
       <artifactId>slf4j-jboss-logmanager</artifactId>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-platform-sample-app-test</artifactId>
+      <version>${quarkus-platform-bom-generator.version}</version>
+      <type>test-jar</type>
+      <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.25.3</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <resources>
@@ -311,6 +329,31 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+            <configuration>
+              <systemPropertyVariables>
+                <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+                <maven.home>${maven.home}</maven.home>
+                <quarkus.platform.group-id>${platform.groupId}</quarkus.platform.group-id>
+                <quarkus.platform.maven-plugin.pom>${project.file.absolutePath}</quarkus.platform.maven-plugin.pom>
+                <quarkus.platform.version>${platform.version}</quarkus.platform.version>
+              </systemPropertyVariables>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <dependenciesToScan>
+            <dependency>io.quarkus:quarkus-platform-sample-app-test</dependency>
+          </dependenciesToScan>
+        </configuration>
       </plugin>
     </plugins>
   </build>
