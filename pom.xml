@@ -84,7 +84,7 @@
         <quarkus-vault.version>4.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>6.8.1</quarkus-operator-sdk.version>
 
-        <quarkus-platform-bom-generator.version>0.0.113</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.114</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
@@ -99,6 +99,7 @@
         <!-- descriptor overrides -->
         <resourcesdir>${project.basedir}/src/main/resources</resourcesdir>
         <overridesfile>${resourcesdir}/extensions-overrides.json</overridesfile>
+        <dollarSign>$</dollarSign>
     </properties>
 
     <distributionManagement>
@@ -205,6 +206,23 @@
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
+                                    <test>
+                                        <!-- Given the Maven plugin is rebuilt as part of the platform project, this is basic test
+                                             that creates a new project, builds it and runs its unit and integration tests
+                                             using the platform Maven plugin -->
+                                        <artifact>io.quarkus:quarkus-platform-sample-app-test:${quarkus-platform-bom-generator.version}</artifact>
+                                        <systemProperties>
+                                            <quarkus.platform.group-id>${dollarSign}${dollarSign}{platform.groupId}</quarkus.platform.group-id>
+                                            <quarkus.platform.version>${dollarSign}${dollarSign}{platform.version}</quarkus.platform.version>
+                                            <maven.home>${dollarSign}${dollarSign}{maven.home}</maven.home>
+                                            <!-- timeout in seconds for quarkus:create, the default is 10
+                                            <sample-app.generate-timeout>5</sample-app.generate-timeout>
+                                            -->
+                                            <!-- timeout in seconds for building the app and running its integration tests, the default is 30
+                                            <sample-app.build-timeout>5</sample-app.build-timeout>
+                                            -->
+                                        </systemProperties>
+                                    </test>
                                     <test>
                                         <artifact>io.quarkiverse.config:quarkus-config-extensions-integration-test-consul:${quarkus-config-consul.version}</artifact>
                                     </test>
