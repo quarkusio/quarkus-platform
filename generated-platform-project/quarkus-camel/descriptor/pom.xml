@@ -54,7 +54,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-camel-bom</bomArtifactId>
-          <quarkusCoreVersion>3.15.0</quarkusCoreVersion>
+          <quarkusCoreVersion>3.15.1</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>
