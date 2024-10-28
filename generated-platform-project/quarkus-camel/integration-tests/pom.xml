@@ -28,6 +28,7 @@
     <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
     <module>camel-quarkus-integration-test-bean-validator</module>
+    <module>camel-quarkus-integration-test-beanio</module>
     <module>camel-quarkus-integration-test-bindy</module>
     <module>camel-quarkus-integration-test-box</module>
     <module>camel-quarkus-integration-test-braintree</module>
@@ -70,6 +71,7 @@
     <module>camel-quarkus-integration-test-groovy-dsl</module>
     <module>camel-quarkus-integration-test-groovy</module>
     <module>camel-quarkus-integration-test-grpc</module>
+    <module>camel-quarkus-integration-test-hashicorp-vault</module>
     <module>camel-quarkus-integration-test-hazelcast</module>
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
@@ -113,6 +115,7 @@
     <module>camel-quarkus-integration-test-kotlin</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
+    <module>camel-quarkus-integration-test-langchain4j</module>
     <module>camel-quarkus-integration-test-ldap</module>
     <module>camel-quarkus-integration-test-leveldb</module>
     <module>camel-quarkus-integration-test-lra</module>
@@ -177,7 +180,6 @@
     <module>camel-quarkus-integration-test-smallrye-reactive-messaging</module>
     <module>camel-quarkus-integration-test-smb</module>
     <module>camel-quarkus-integration-test-soap</module>
-    <module>camel-quarkus-integration-test-splunk-hec</module>
     <module>camel-quarkus-integration-test-splunk</module>
     <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-sql</module>
