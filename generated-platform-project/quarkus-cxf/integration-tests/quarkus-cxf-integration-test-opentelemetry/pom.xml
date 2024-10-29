@@ -12,12 +12,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-integration-test-opentelemetry</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -119,9 +119,9 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemPropertyVariables>
+                  <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                  </systemPropertyVariables>
+                  </systemProperties>
                 </configuration>
               </execution>
             </executions>
@@ -142,7 +142,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-opentelemetry:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

@@ -246,10 +246,6 @@ public class DevMojo extends AbstractMojo {
     @Parameter
     private File workingDir;
 
-    /**
-     * Allows configuring arbitrary JVM arguments. Multiple arguments can be specified by delimiting them with a space
-     * character.
-     */
     @Parameter(defaultValue = "${jvm.args}")
     private String jvmArgs;
 
@@ -295,15 +291,6 @@ public class DevMojo extends AbstractMojo {
      */
     @Parameter(defaultValue = "${preventnoverify}")
     private boolean preventnoverify = false;
-
-    /**
-     * This value is intended to be set to true when we want to require C2 compilation instead of preventing it from
-     * ever kicking in.
-     * Setting this will likely have a small negative effect on startup time and should only be done when it absolutely
-     * makes sense.
-     */
-    @Parameter(defaultValue = "${forceC2}")
-    private boolean forceC2 = false;
 
     /**
      * Whether changes in the projects that appear to be dependencies of the project containing the application to be launched
@@ -1256,7 +1243,6 @@ public class DevMojo extends AbstractMojo {
 
         final MavenDevModeLauncher.Builder builder = MavenDevModeLauncher.builder(java, getLog())
                 .preventnoverify(preventnoverify)
-                .forceC2(forceC2)
                 .buildDir(buildDir)
                 .outputDir(outputDirectory)
                 .suspend(suspend)

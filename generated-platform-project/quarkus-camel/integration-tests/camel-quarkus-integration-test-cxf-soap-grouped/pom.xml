@@ -73,7 +73,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -147,9 +147,9 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemPropertyVariables>
+                  <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                  </systemPropertyVariables>
+                  </systemProperties>
                 </configuration>
               </execution>
             </executions>

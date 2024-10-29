@@ -54,17 +54,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -119,9 +108,9 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemPropertyVariables>
+                  <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                  </systemPropertyVariables>
+                  </systemProperties>
                 </configuration>
               </execution>
             </executions>

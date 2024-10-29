@@ -12,7 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - Debezium-Outbox - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-debezium-bom:3.16.0.CR1</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-debezium-bom:3.13.0.CR1</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>

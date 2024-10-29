@@ -55,10 +55,16 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-tests-support-activemq</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.artemis</groupId>
+      <artifactId>quarkus-test-artemis</artifactId>
+      <version>3.4.1</version>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-pool2</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -128,9 +134,9 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemPropertyVariables>
+                  <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                  </systemPropertyVariables>
+                  </systemProperties>
                 </configuration>
               </execution>
             </executions>

@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-as2</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-as2</name>
+  <artifactId>camel-quarkus-integration-test-camel-k-runtime-model-reifier</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-camel-k-runtime-model-reifier</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-as2</artifactId>
+      <artifactId>camel-quarkus-integration-test-camel-k-runtime-model-reifier</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-as2</artifactId>
+      <artifactId>camel-quarkus-integration-test-camel-k-runtime-model-reifier</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,19 +55,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-support</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-mock</artifactId>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.26.3</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -99,7 +89,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-as2</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime-model-reifier</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -124,15 +114,15 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemPropertyVariables>
+                  <systemProperties>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                  </systemPropertyVariables>
+                  </systemProperties>
                 </configuration>
               </execution>
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-as2</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime-model-reifier</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -147,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-as2:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-camel-k-runtime-model-reifier:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

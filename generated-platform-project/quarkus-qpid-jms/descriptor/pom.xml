@@ -12,7 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - QpidJMS - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-qpid-jms-bom:3.16.0.CR1</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-qpid-jms-bom:3.10.0.CR1</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
