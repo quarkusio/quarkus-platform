@@ -586,8 +586,6 @@
                                     <dependency>log4j:log4j</dependency>
                                     <!-- AssertJ -->
                                     <dependency>org.assertj:assertj-core</dependency>
-                                    <!-- TODO: https://github.com/apache/camel-quarkus/issues/5803 -->
-                                    <dependency>org.apache.camel.quarkus:camel-quarkus-beanio</dependency>
                                 </excludedDependencies>
                             </bomGenerator>
                             <descriptorGenerator>
