@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-splunk-hec</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-splunk-hec</name>
+  <artifactId>camel-quarkus-integration-test-beanio</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-beanio</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-splunk-hec</artifactId>
+      <artifactId>camel-quarkus-integration-test-beanio</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-splunk-hec</artifactId>
+      <artifactId>camel-quarkus-integration-test-beanio</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -54,18 +54,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-tests-support-splunk</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <classifier>tests</classifier>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -95,7 +83,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk-hec</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-beanio</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -128,7 +116,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk-hec</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-beanio</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -143,7 +131,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk-hec:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-beanio:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
