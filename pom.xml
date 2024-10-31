@@ -80,7 +80,7 @@
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
-        <quarkus-google-cloud-services.version>2.12.1</quarkus-google-cloud-services.version>
+        <quarkus-google-cloud-services.version>2.13.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>4.1.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>6.8.3</quarkus-operator-sdk.version>
 
@@ -586,8 +586,6 @@
                                     <dependency>log4j:log4j</dependency>
                                     <!-- AssertJ -->
                                     <dependency>org.assertj:assertj-core</dependency>
-                                    <!-- TODO: https://github.com/apache/camel-quarkus/issues/5803 -->
-                                    <dependency>org.apache.camel.quarkus:camel-quarkus-beanio</dependency>
                                 </excludedDependencies>
                             </bomGenerator>
                             <descriptorGenerator>
