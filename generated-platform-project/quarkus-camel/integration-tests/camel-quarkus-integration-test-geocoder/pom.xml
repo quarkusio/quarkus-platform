@@ -12,12 +12,12 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-geocoder</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.15.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-geocoder</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.15.1</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -25,7 +25,7 @@
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>3.15.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -129,7 +129,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>${quarkus.version}</version>
+            <version>3.15.1</version>
             <executions>
               <execution>
                 <id>native-image</id>
@@ -137,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-geocoder:3.15.1</appArtifact>
                 </configuration>
               </execution>
             </executions>

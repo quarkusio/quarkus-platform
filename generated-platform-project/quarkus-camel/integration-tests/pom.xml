@@ -70,6 +70,7 @@
     <module>camel-quarkus-integration-test-groovy-dsl</module>
     <module>camel-quarkus-integration-test-groovy</module>
     <module>camel-quarkus-integration-test-grpc</module>
+    <module>camel-quarkus-integration-test-hashicorp-vault</module>
     <module>camel-quarkus-integration-test-hazelcast</module>
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
@@ -224,12 +225,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.15.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-integration-test-class-transformer-deployment</artifactId>
-        <version>${quarkus.version}</version>
+        <version>3.15.1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

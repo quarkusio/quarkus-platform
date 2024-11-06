@@ -54,7 +54,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-operator-sdk-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
+          <quarkusCoreVersion>3.15.1</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>
