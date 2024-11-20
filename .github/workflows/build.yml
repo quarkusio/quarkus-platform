@@ -18,6 +18,10 @@ on:
       - '*.txt'
       - '.github/ISSUE_TEMPLATE/**'
 
+defaults:
+  run:
+    shell: bash
+
 env:
   LANG: en_US.UTF-8
 jobs:
@@ -32,7 +36,6 @@ jobs:
     if: github.event_name == 'pull_request'
     steps:
       - name: Create file
-        shell: bash
         run: |
           echo -n ${{ github.event.number }} > pull-request-number
       - name: Upload pull request number
@@ -56,7 +59,6 @@ jobs:
         id: get-date
         run: |
           echo "date=$(/bin/date -u "+%Y-%m")" >> $GITHUB_OUTPUT
-        shell: bash
       - name: Cache Maven Repository
         id: cache-maven
         uses: actions/cache@v4
@@ -72,7 +74,6 @@ jobs:
       - name: Build with Maven
         run: MAVEN_OPTS=-Xmx4096m && ./mvnw -B clean install --settings .github/mvn-settings.xml --fail-at-end
       - name: Delete Local Artifacts From Cache
-        shell: bash
         run: rm -rf ~/.m2/repository/io/quarkus/quarkus-universe-bom*
       - name: Upload build reports (if build failed)
         uses: actions/upload-artifact@v4
@@ -95,7 +96,6 @@ jobs:
         id: get-date
         run: |
           echo "date=$(/bin/date -u "+%Y-%m")" >> $GITHUB_OUTPUT
-        shell: bash
       - name: Cache Maven Repository
         id: cache-maven
         uses: actions/cache@v4
@@ -115,12 +115,10 @@ jobs:
         id: get-changes
         run: |
           echo "changes=$(git status -s | wc -l)" >> $GITHUB_OUTPUT
-        shell: bash
       - name: Display changes
         run: |
           git status
           git --no-pager diff
-        shell: bash
 
       - name: Check that generated project is properly updated
         uses: actions/github-script@v7
