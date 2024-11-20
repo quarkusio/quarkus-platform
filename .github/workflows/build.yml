@@ -114,7 +114,7 @@ jobs:
       - name: Get changes
         id: get-changes
         run: |
-          echo "::set-output name=changes::$(git status -s | wc -l)"
+          echo "changes=$(git status -s | wc -l)" >> $GITHUB_OUTPUT
         shell: bash
       - name: Display changes
         run: |
