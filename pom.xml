@@ -82,7 +82,7 @@
 
         <quarkus-google-cloud-services.version>2.13.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>4.1.0</quarkus-vault.version>
-        <quarkus-operator-sdk.version>6.8.4</quarkus-operator-sdk.version>
+        <quarkus-operator-sdk.version>6.9.0</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.116</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
