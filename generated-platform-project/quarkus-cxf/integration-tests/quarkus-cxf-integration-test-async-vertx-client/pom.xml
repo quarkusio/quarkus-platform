@@ -2,29 +2,24 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-camel-integration-tests-parent</artifactId>
+    <artifactId>quarkus-cxf-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-cxf-soap-grouped</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-cxf-soap-grouped</name>
+  <artifactId>quarkus-cxf-integration-test-async-vertx-client</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-async-vertx-client</name>
   <dependencies>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-cxf-soap-grouped</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-async-vertx-client</artifactId>
+      <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-cxf-soap-grouped</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-async-vertx-client</artifactId>
+      <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -71,9 +66,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>3.16.1</version>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -81,17 +75,6 @@
       <artifactId>assertj-core</artifactId>
       <version>3.26.3</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-test-junit5</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.apache.camel</groupId>
-          <artifactId>camel-directvm</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
   <build>
@@ -122,7 +105,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-async-vertx-client</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -155,7 +138,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-async-vertx-client</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -170,7 +153,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-async-vertx-client:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

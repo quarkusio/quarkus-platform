@@ -12,6 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - CXF - Integration Tests - Parent</name>
   <modules>
+    <module>quarkus-cxf-integration-test-async-vertx-client</module>
     <module>quarkus-cxf-integration-test-client-server</module>
     <module>quarkus-cxf-integration-test-client</module>
     <module>quarkus-cxf-integration-test-fast-infoset</module>
