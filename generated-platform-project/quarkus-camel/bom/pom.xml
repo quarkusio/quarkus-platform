@@ -8161,7 +8161,7 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-expression</artifactId>
-        <version>6.1.12</version>
+        <version>6.1.14</version>
         <exclusions>
           <exclusion>
             <groupId>org.springframework</groupId>
