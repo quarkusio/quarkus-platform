@@ -58,7 +58,7 @@
         <quarkus.version>3.17.3</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.16.0</camel-quarkus.version>
+        <camel-quarkus.version>3.17.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
