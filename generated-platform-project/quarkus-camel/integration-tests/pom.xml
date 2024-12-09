@@ -23,7 +23,6 @@
     <module>camel-quarkus-integration-test-as2</module>
     <module>camel-quarkus-integration-test-avro</module>
     <module>camel-quarkus-integration-test-aws2-grouped</module>
-    <module>camel-quarkus-integration-test-aws2-quarkus-client-grouped</module>
     <module>camel-quarkus-integration-test-aws2</module>
     <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
@@ -68,7 +67,6 @@
     <module>camel-quarkus-integration-test-google</module>
     <module>camel-quarkus-integration-test-graphql</module>
     <module>camel-quarkus-integration-test-grok</module>
-    <module>camel-quarkus-integration-test-groovy-dsl</module>
     <module>camel-quarkus-integration-test-groovy</module>
     <module>camel-quarkus-integration-test-grpc</module>
     <module>camel-quarkus-integration-test-hashicorp-vault</module>
@@ -96,9 +94,7 @@
     <module>camel-quarkus-integration-test-joor</module>
     <module>camel-quarkus-integration-test-jpa</module>
     <module>camel-quarkus-integration-test-jq</module>
-    <module>camel-quarkus-integration-test-js-dsl</module>
     <module>camel-quarkus-integration-test-jsch</module>
-    <module>camel-quarkus-integration-test-jsh-dsl</module>
     <module>camel-quarkus-integration-test-jslt</module>
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
@@ -111,8 +107,6 @@
     <module>camel-quarkus-integration-test-kafka</module>
     <module>camel-quarkus-integration-test-kamelet</module>
     <module>camel-quarkus-integration-test-knative</module>
-    <module>camel-quarkus-integration-test-kotlin-dsl</module>
-    <module>camel-quarkus-integration-test-kotlin</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
     <module>camel-quarkus-integration-test-langchain4j</module>
