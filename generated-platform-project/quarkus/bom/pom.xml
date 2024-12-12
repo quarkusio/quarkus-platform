@@ -4416,7 +4416,7 @@
       <dependency>
         <groupId>io.quarkus.http</groupId>
         <artifactId>quarkus-http-core</artifactId>
-        <version>5.3.3</version>
+        <version>5.3.4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.http</groupId>
