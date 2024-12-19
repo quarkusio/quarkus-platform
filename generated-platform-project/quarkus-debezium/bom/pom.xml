@@ -70,6 +70,16 @@
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
+        <artifactId>debezium-connector-ibmi</artifactId>
+        <version>3.0.5.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.debezium</groupId>
+        <artifactId>debezium-connector-informix</artifactId>
+        <version>3.0.5.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mongodb</artifactId>
         <version>3.0.5.Final</version>
       </dependency>

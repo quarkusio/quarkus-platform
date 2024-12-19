@@ -457,6 +457,8 @@
                                         <dependency>io.debezium:debezium-api:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-connector-cassandra:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-connector-db2:${debezium-quarkus-outbox.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-ibmi:${debezium-quarkus-outbox.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-informix:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-connector-mongodb:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-connector-mysql:${debezium-quarkus-outbox.version}</dependency>
                                         <dependency>io.debezium:debezium-connector-oracle:${debezium-quarkus-outbox.version}</dependency>
