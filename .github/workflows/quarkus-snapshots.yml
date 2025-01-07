@@ -34,9 +34,6 @@ jobs:
       - name: Reclaim Disk Space
         run: current-repo/.github/ci-prerequisites.sh
 
-      - name: Install yq
-        run: sudo add-apt-repository ppa:rmescandon/yq && sudo apt update && sudo apt install yq -y
-
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
@@ -76,9 +73,6 @@ jobs:
 
       - name: Reclaim Disk Space
         run: current-repo/.github/ci-prerequisites.sh
-
-      - name: Install yq
-        run: sudo add-apt-repository ppa:rmescandon/yq && sudo apt update && sudo apt install yq -y
 
       - name: Set up Java
         uses: actions/setup-java@v4
