@@ -54,7 +54,7 @@
         </executions>
         <configuration>
           <bomArtifactId>quarkus-amazon-services-bom</bomArtifactId>
-          <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
+          <quarkusCoreVersion>3.15.3</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
             <stream>${platform.stream}</stream>
