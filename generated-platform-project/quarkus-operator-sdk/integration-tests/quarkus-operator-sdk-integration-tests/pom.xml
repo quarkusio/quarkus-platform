@@ -32,6 +32,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-test-openshift-client</artifactId>
+      <version>${camel-quarkus.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
