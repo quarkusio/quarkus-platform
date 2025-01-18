@@ -57,14 +57,10 @@ jobs:
         run: rm -r ~/.m2/repository/io/quarkus/platform ~/.m2/repository/io/quarkus/quarkus-universe-bom
 
       - name: Report
+        uses: quarkusio/report-status-in-issue@main
         if: always()
-        shell: bash
-        run: |
-          curl -Ls https://sh.jbang.dev | bash -s - app setup
-          ~/.jbang/bin/jbang .github/NativeBuildReport.java \
-            issueNumber=35716 \
-            runId=${{ github.run_id }} \
-            status=${{ job.status }} \
-            token=${{ secrets.ECOSYSTEM_CI_TOKEN }} \
-            issueRepo=quarkusio/quarkus \
-            thisRepo=${{ github.repository }}
+        with:
+          github-token: ${{ secrets.ECOSYSTEM_CI_TOKEN }}
+          status: ${{ job.status }}
+          issue-repository: quarkusio/quarkus
+          issue-number: 35716
