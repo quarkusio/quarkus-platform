@@ -11,6 +11,7 @@ jobs:
   build-and-deploy:
     permissions:
       issues: write
+      packages: read
     name: "Build and deploy"
     runs-on: ubuntu-latest
     if: github.repository == 'quarkusio/quarkus-platform'
