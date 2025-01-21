@@ -5,14 +5,14 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-operator-sdk-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.15.3</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-operator-sdk-bom-quarkus-platform-descriptor</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - OperatorSDK - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-operator-sdk-bom:3.15.2</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-operator-sdk-bom:3.15.3</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
