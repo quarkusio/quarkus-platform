@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-blaze-persistence-parent</artifactId>
-    <version>3.15.3</version>
+    <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-blaze-persistence-integration-tests-parent</artifactId>
@@ -24,7 +24,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-universe-bom</artifactId>
-        <version>3.15.3</version>
+        <version>999-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
