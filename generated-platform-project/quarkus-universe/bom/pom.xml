@@ -6426,239 +6426,239 @@
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-all</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-alts</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-android</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-api</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-auth</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-benchmarks</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-binder</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-census</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-context-override-opentelemetry</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-context</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-core</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-cronet</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-gcp-csm-observability</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-gcp-observability</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-googleapis</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-grpclb</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-inprocess</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-interop-testing</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty-shaded</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-okhttp</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-opentelemetry</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf-lite</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-rls</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-s2a</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-services</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-servlet-jakarta</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-servlet</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-stub</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing-proto</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-util</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-xds</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>pom</type>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>linux-aarch_64</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>linux-ppcle_64</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>linux-s390_64</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>linux-x86_32</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>linux-x86_64</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>osx-aarch_64</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>osx-x86_64</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>windows-x86_32</classifier>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.0</version>
+        <version>1.69.1</version>
         <type>exe</type>
         <classifier>windows-x86_64</classifier>
       </dependency>
@@ -8588,12 +8588,12 @@
       <dependency>
         <groupId>io.quarkus.arc</groupId>
         <artifactId>arc-processor</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.arc</groupId>
         <artifactId>arc</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.gizmo</groupId>
@@ -8663,67 +8663,67 @@
       <dependency>
         <groupId>io.quarkus.junit5</groupId>
         <artifactId>junit5-virtual-threads</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.qute</groupId>
         <artifactId>qute-core</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.qute</groupId>
         <artifactId>qute-generator</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-client-processor</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-common-processor</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-common-types</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-jackson</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-jsonb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-processor</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive-vertx</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.resteasy.reactive</groupId>
         <artifactId>resteasy-reactive</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.security</groupId>
@@ -8743,682 +8743,682 @@
       <dependency>
         <groupId>io.quarkus.vertx.utils</groupId>
         <artifactId>quarkus-vertx-utils</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-agroal-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-agroal-dev</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-agroal-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-agroal</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-event-server</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-http-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-http-event-server</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-http</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-rest-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-rest-event-server</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-rest</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-xray-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda-xray</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-amazon-lambda</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-analytics-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apache-httpclient-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apache-httpclient</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apicurio-registry-avro-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apicurio-registry-avro</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apicurio-registry-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apicurio-registry-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apicurio-registry-json-schema-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-apicurio-registry-json-schema</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-arc-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-arc</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-arquillian</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-avro-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-avro</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-awt-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-awt</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-azure-functions-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-azure-functions-http-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-azure-functions-http</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-azure-functions</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-app-model</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-core</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-gradle-resolver</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-maven-resolver</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-bootstrap-runner</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-builder</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cache-deployment-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cache-runtime-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-caffeine-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-caffeine</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-class-change-agent</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-classloader-commons</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-config-yaml-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-config-yaml</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-confluent-registry-avro-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-confluent-registry-avro</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-confluent-registry-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-confluent-registry-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-confluent-registry-json-schema-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-confluent-registry-json-schema</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-buildpack-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-buildpack</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-docker-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-docker-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-docker-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-docker</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-jib-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-jib</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-openshift-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-openshift</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-podman-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-podman</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image-util</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-container-image</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-core-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-core</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-credentials-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-credentials</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cyclonedx-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cyclonedx-generator</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-cyclonedx</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource-deployment-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-datasource</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-development-mode-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-db2</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-derby</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-h2</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-keycloak</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-mariadb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-mssql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-mysql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-oidc</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-oracle</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devservices-postgresql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devtools-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devtools-registry-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devtools-testing</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-devtools-utilities</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-java-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-java-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-rest-client-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-rest-client-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-rest-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elasticsearch-rest-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-jdbc-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-jdbc</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-ldap-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-ldap</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-oauth2-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-oauth2</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-properties-file-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security-properties-file</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-elytron-security</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-db2-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-db2</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-derby-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-derby</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-mssql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-mssql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-mysql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-mysql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-oracle-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-oracle</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-postgresql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway-postgresql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-flyway</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -9428,133 +9428,133 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-amazon-lambda-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-amazon-lambda</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-google-cloud-functions-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-google-cloud-functions</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-http-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-http</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-knative-events-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-knative-events</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-server-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-funqy-server-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-google-cloud-functions-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-google-cloud-functions-http-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-google-cloud-functions-http</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-google-cloud-functions</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-api</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-cli</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-codegen</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-inprocess</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-protoc-plugin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
         <classifier>shaded</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-reflection</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-stubs</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc-xds</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-grpc</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.android</groupId>
@@ -9565,197 +9565,197 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hal-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hal</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-envers-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-envers</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-deployment-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-kotlin-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-rest-data-panache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm-rest-data-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-orm</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-panache-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-panache-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-panache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-panache-kotlin-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-panache-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-rest-data-panache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive-rest-data-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-reactive</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-backend-elasticsearch-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-backend-elasticsearch-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-coordination-outbox-polling-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-coordination-outbox-polling</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-elasticsearch-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-elasticsearch</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-outbox-polling-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-orm-outbox-polling</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-standalone-elasticsearch-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-search-standalone-elasticsearch</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-validator-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-validator-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-hibernate-validator</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-ide-launcher</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
         <exclusions>
           <exclusion>
             <groupId>*</groupId>
@@ -9766,1613 +9766,1613 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-infinispan-cache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-infinispan-cache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-infinispan-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-infinispan-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-info-deployment-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-info-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-info-runtime-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-info</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jackson-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jackson-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jackson</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jacoco-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jacoco</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxp-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxp</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jaxrs-spi-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-db2-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-db2</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-derby-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-derby</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-h2-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-h2</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mariadb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mariadb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mssql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mssql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mysql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mysql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-oracle-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-oracle</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-postgresql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-postgresql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jfr-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jfr</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jms-spi-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonb-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonp-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jsonp</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit4-mock</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit5-component</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit5-config</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit5-internal</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit5-mockito-config</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit5-mockito</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-junit5</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-streams-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kafka-streams</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-admin-client-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-admin-client-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-admin-rest-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-admin-rest-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-admin-resteasy-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-admin-resteasy-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-authorization-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-keycloak-authorization</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kind-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kind</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kotlin-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-internal-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-internal</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-config-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-config</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-service-binding-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-service-binding-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-service-binding</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-kubernetes</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-liquibase-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-liquibase-mongodb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-liquibase-mongodb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-liquibase</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-load-shedding-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-load-shedding</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-logging-gelf-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-logging-gelf</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-logging-json-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-logging-json</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mailer-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mailer</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-amqp-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-amqp</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-kafka-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-kafka</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-mqtt-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-mqtt</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-pulsar-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-pulsar</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-rabbitmq-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging-rabbitmq</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-messaging</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer-registry-prometheus-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer-registry-prometheus</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-micrometer</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-minikube-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-minikube</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-panache-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-panache-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-panache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-panache-kotlin-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-panache-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-rest-data-panache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mongodb-rest-data-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny-reactive-streams-operators-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny-reactive-streams-operators</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-mutiny</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-jta-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-jta</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-lra-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-lra</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-stm-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-narayana-stm</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-netty-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-netty</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-observability-devresource-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-observability-devresource-lgtm</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-observability-devresource-testcontainers</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-observability-devservices-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-observability-devservices-lgtm</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-observability-devservices</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-observability-testcontainers</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-graphql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-graphql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-registration-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-registration</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-db-token-state-manager-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-db-token-state-manager</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-redis-token-state-manager-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc-redis-token-state-manager</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-oidc</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-openshift</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-opentelemetry-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-opentelemetry</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-hibernate-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-hibernate-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panache-mock</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-panacheql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-picocli-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-picocli</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-project-core-extension-codestarts</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-quartz-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-quartz</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-qute-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-qute</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-datasource-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-datasource</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-db2-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-db2-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mssql-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mssql-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mysql-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-mysql-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-oracle-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-oracle-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-pg-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-pg-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-routes-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-reactive-routes</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-redis-cache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-redis-cache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-redis-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-redis-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-config-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-config</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jackson-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jackson</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jaxb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jaxb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jaxrs-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jaxrs</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jsonb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-jsonb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-kotlin-serialization-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-kotlin-serialization</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-oidc-filter-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-oidc-filter</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-oidc-token-propagation-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-oidc-token-propagation</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client-spi-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-csrf-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-csrf</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-data-panache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-data-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jackson-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jackson-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jackson-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jackson</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jaxb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jaxb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jsonb-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jsonb-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jsonb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-jsonb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-kotlin-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-kotlin-serialization-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-kotlin-serialization-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-kotlin-serialization-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-kotlin-serialization</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-links-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-links</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-qute-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-qute</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-server-spi-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-servlet-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-servlet</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest-spi-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-jackson-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-jackson</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-jaxb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-jaxb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-jsonb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-jsonb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-mutiny-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-mutiny</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-oidc-filter-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-oidc-filter</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-oidc-token-propagation-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client-oidc-token-propagation</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-common-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jackson-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jackson</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jaxb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jaxb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jsonb-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-jsonb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-links-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-links</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-multipart-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-multipart</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-mutiny</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-qute-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-qute</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-server-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-server-common-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy-server-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-resteasy</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scala-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scala</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler-api</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-scheduler</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-schema-registry-devservice-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-schema-registry-devservice</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa-reactive-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa-reactive</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-jpa</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-runtime-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-webauthn-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security-webauthn</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-security</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-context-propagation-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-context-propagation-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-context-propagation</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-fault-tolerance-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-fault-tolerance</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-graphql-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-graphql-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-graphql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-graphql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-health-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-health-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-health</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt-build-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt-build</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-jwt</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-metrics-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-metrics-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-metrics</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi-common-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
         <exclusions>
           <exclusion>
             <groupId>org.jboss.shrinkwrap</groupId>
@@ -11383,12 +11383,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-openapi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
         <exclusions>
           <exclusion>
             <groupId>org.jboss.shrinkwrap</groupId>
@@ -11399,32 +11399,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-streams-operators-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-streams-operators</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-type-converters-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-reactive-type-converters</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-stork-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-smallrye-stork</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -11449,32 +11449,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-boot-properties-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-boot-properties</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cache-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cloud-config-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-cloud-config-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -11499,12 +11499,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-jpa-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-jpa</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -11514,32 +11514,32 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-rest-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-data-rest</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-di-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-di</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-scheduled-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-scheduled</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -11549,12 +11549,12 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-security-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-security</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -11564,37 +11564,37 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-rest-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-rest</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-resteasy-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web-resteasy</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-spring-web</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
@@ -11604,272 +11604,272 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-swagger-ui-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-swagger-ui</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-amazon-lambda</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-common</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-derby</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-google-cloud-functions</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-h2</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-hibernate-reactive-panache</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-kafka-companion</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-keycloak-server</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-kubernetes-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-ldap</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-mongodb</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-oidc-server</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-security-jwt</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-security-oidc</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-security-webauthn</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-security</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-test-vertx</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-tls-registry-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-tls-registry</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-transaction-annotations</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-undertow-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-undertow-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-undertow</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-deployment-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-graphql-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-graphql</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-deployment-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-dev-console-runtime-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-dev-console-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-dev-ui-resources</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-dev-ui-spi</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http-dev-ui-tests</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-http</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-kotlin-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx-latebound-mdc-provider</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-vertx</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-virtual-threads-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-virtual-threads</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-web-dependency-locator-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-web-dependency-locator</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-webjars-locator-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-webjars-locator</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-client-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-client</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-next-deployment</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-next-kotlin</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets-next</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-websockets</artifactId>
-        <version>3.18.0.CR1</version>
+        <version>3.18.0</version>
       </dependency>
       <dependency>
         <groupId>io.reactivex.rxjava2</groupId>
@@ -14084,7 +14084,7 @@
       <dependency>
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy</artifactId>
-        <version>1.14.18</version>
+        <version>1.15.11</version>
       </dependency>
       <dependency>
         <groupId>net.i2p.crypto</groupId>
@@ -21704,12 +21704,12 @@
       <dependency>
         <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-community-dialects</artifactId>
-        <version>6.6.4.Final</version>
+        <version>6.6.5.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-core</artifactId>
-        <version>6.6.4.Final</version>
+        <version>6.6.5.Final</version>
         <exclusions>
           <exclusion>
             <groupId>io.smallrye</groupId>
@@ -21720,22 +21720,22 @@
       <dependency>
         <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-envers</artifactId>
-        <version>6.6.4.Final</version>
+        <version>6.6.5.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-graalvm</artifactId>
-        <version>6.6.4.Final</version>
+        <version>6.6.5.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-jpamodelgen</artifactId>
-        <version>6.6.4.Final</version>
+        <version>6.6.5.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.reactive</groupId>
         <artifactId>hibernate-reactive-core</artifactId>
-        <version>2.4.3.Final</version>
+        <version>2.4.4.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.search</groupId>
@@ -21853,7 +21853,7 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-jpamodelgen</artifactId>
-        <version>6.6.4.Final</version>
+        <version>6.6.5.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
@@ -22122,12 +22122,12 @@
       <dependency>
         <groupId>org.jboss.resteasy.microprofile</groupId>
         <artifactId>microprofile-config</artifactId>
-        <version>3.0.0.Final</version>
+        <version>3.0.1.Final</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy.microprofile</groupId>
         <artifactId>microprofile-rest-client</artifactId>
-        <version>3.0.0.Final</version>
+        <version>3.0.1.Final</version>
         <exclusions>
           <exclusion>
             <groupId>org.eclipse.microprofile.config</groupId>
