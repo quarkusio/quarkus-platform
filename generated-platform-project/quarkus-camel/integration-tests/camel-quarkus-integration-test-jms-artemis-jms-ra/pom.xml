@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-jaxb</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jaxb</name>
+  <artifactId>camel-quarkus-integration-test-jms-artemis-jms-ra</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jms-artemis-jms-ra</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jaxb</artifactId>
+      <artifactId>camel-quarkus-integration-test-jms-artemis-jms-ra</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jaxb</artifactId>
+      <artifactId>camel-quarkus-integration-test-jms-artemis-jms-ra</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,9 +55,23 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.27.2</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-activemq</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-messaging-common</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-tests-support-messaging-jms</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -89,7 +103,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jaxb</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-jms-ra</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -122,7 +136,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jaxb</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-jms-ra</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -137,7 +151,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jaxb:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jms-artemis-jms-ra:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
