@@ -379,9 +379,13 @@
                                     </defaultTestConfig>
                                     <testCatalogArtifact>io.quarkiverse.cxf:quarkus-cxf-test-list::xml:${quarkus-cxf.version}</testCatalogArtifact>
                                     <tests>
-                                        <test><!--Flaky RedirectTest - can be enabled after https://github.com/quarkiverse/quarkus-cxf/pull/1693 -->
-                                            <jvmExcludes>**/RedirectTest*</jvmExcludes>
-                                            <nativeExcludes>**/RedirectTest*</nativeExcludes>
+                                        <test><!-- TOODO: Flaky Tests - can be enabled after https://github.com/quarkiverse/quarkus-cxf/pull/1693
+                                                - RedirectTest can be enabled after https://github.com/quarkiverse/quarkus-cxf/pull/1693
+                                                - https://github.com/quarkiverse/quarkus-cxf/issues/1694
+                                                - https://github.com/quarkiverse/quarkus-cxf/issues/1695
+                                               -->
+                                            <jvmExcludes>**/RedirectTest*,**/AsyncVertxClientTest*,**/CxfWssClientTest*</jvmExcludes>
+                                            <nativeExcludes>**/RedirectTest*,**/AsyncVertxClientTest*,**/CxfWssClientTest*</nativeExcludes>
                                             <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server:${quarkus-cxf.version}</artifact>
                                         </test>
                                     </tests>

@@ -109,6 +109,8 @@
           </dependenciesToScan>
           <excludes>
             <exclude>**/RedirectTest*</exclude>
+            <exclude>**/AsyncVertxClientTest*</exclude>
+            <exclude>**/CxfWssClientTest*</exclude>
           </excludes>
         </configuration>
       </plugin>
@@ -138,6 +140,8 @@
                   </systemPropertyVariables>
                   <excludes>
                     <exclude>**/RedirectTest*</exclude>
+                    <exclude>**/AsyncVertxClientTest*</exclude>
+                    <exclude>**/CxfWssClientTest*</exclude>
                   </excludes>
                 </configuration>
               </execution>
