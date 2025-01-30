@@ -107,11 +107,6 @@
           <dependenciesToScan>
             <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-client-server</dependency>
           </dependenciesToScan>
-          <excludes>
-            <exclude>**/RedirectTest*</exclude>
-            <exclude>**/AsyncVertxClientTest*</exclude>
-            <exclude>**/CxfWssClientTest*</exclude>
-          </excludes>
         </configuration>
       </plugin>
     </plugins>
@@ -138,11 +133,6 @@
                   <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                   </systemPropertyVariables>
-                  <excludes>
-                    <exclude>**/RedirectTest*</exclude>
-                    <exclude>**/AsyncVertxClientTest*</exclude>
-                    <exclude>**/CxfWssClientTest*</exclude>
-                  </excludes>
                 </configuration>
               </execution>
             </executions>
