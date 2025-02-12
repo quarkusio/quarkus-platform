@@ -97,7 +97,6 @@ import io.quarkus.bootstrap.model.PathsCollection;
 import io.quarkus.bootstrap.resolver.BootstrapAppModelResolver;
 import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContext;
 import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContextConfig;
-import io.quarkus.bootstrap.resolver.maven.IncubatingApplicationModelResolver;
 import io.quarkus.bootstrap.resolver.maven.MavenArtifactResolver;
 import io.quarkus.bootstrap.util.BootstrapUtils;
 import io.quarkus.bootstrap.workspace.ArtifactSources;
@@ -151,6 +150,7 @@ public class DevMojo extends AbstractMojo {
     private static final String ORG_APACHE_MAVEN_PLUGINS = "org.apache.maven.plugins";
     private static final String MAVEN_COMPILER_PLUGIN = "maven-compiler-plugin";
     private static final String MAVEN_RESOURCES_PLUGIN = "maven-resources-plugin";
+    private static final String MAVEN_SUREFIRE_PLUGIN = "maven-surefire-plugin";
     private static final String MAVEN_TOOLCHAINS_PLUGIN = "maven-toolchains-plugin";
 
     private static final String ORG_JETBRAINS_KOTLIN = "org.jetbrains.kotlin";
@@ -262,6 +262,22 @@ public class DevMojo extends AbstractMojo {
 
     @Parameter
     private Map<String, String> systemProperties = Map.of();
+
+    /**
+     * When enabled, the {@code <environmentVariables>} and {@code <systemPropertyVariables>}
+     * elements of the Maven Surefire plugin are copied to environment variables and system
+     * properties defined by this plugin. Note that no other Surefire configuration is used
+     * (notably {@code <systemProperties>}), only the 2 elements mentioned above.
+     * <p>
+     * This plugin's {@code <environmentVariables>} and {@code <systemProperties>} have
+     * priority, so duplicate keys are not copied.
+     * <p>
+     * Since environment variables and system properties are global to the entire process,
+     * this also affects dev mode (when executed as {@code quarkus:dev}). Because of that,
+     * this copying action is disabled by default and requires opt-in.
+     */
+    @Parameter(defaultValue = "false")
+    private boolean copySurefireVariables;
 
     @Parameter(defaultValue = "${session}")
     private MavenSession session;
@@ -484,6 +500,8 @@ public class DevMojo extends AbstractMojo {
                 return "";
             }
         });
+
+        copySurefireVariables();
 
         try {
             DevModeRunner runner = new DevModeRunner(bootstrapId);
@@ -1406,9 +1424,7 @@ public class DevMojo extends AbstractMojo {
                     .setDevMode(true)
                     .setTest(LaunchMode.TEST.equals(getLaunchModeClasspath()))
                     .setCollectReloadableDependencies(!noDeps)
-                    // enabled the incubating model resolver for in dev mode
-                    .setIncubatingModelResolver(!IncubatingApplicationModelResolver
-                            .isIncubatingModelResolverProperty(project.getProperties(), "false"))
+                    .setLegacyModelResolver(BootstrapAppModelResolver.isLegacyModelResolver(project.getProperties()))
                     .resolveModel(mvnCtx.getCurrentProject().getAppArtifact());
         }
 
@@ -1493,6 +1509,35 @@ public class DevMojo extends AbstractMojo {
             builder.jvmArgs(Arrays.asList(CommandLineUtils.translateCommandline(jvmArgs)));
         }
 
+    }
+
+    private void copySurefireVariables() {
+        if (!copySurefireVariables) {
+            return;
+        }
+
+        Plugin surefireMavenPlugin = getConfiguredPluginOrNull(ORG_APACHE_MAVEN_PLUGINS, MAVEN_SUREFIRE_PLUGIN);
+        if (surefireMavenPlugin == null) {
+            return;
+        }
+
+        Xpp3Dom config = (Xpp3Dom) surefireMavenPlugin.getConfiguration();
+        if (config != null) {
+            // we copy the maps because they can be unmodifiable
+            environmentVariables = new HashMap<>(environmentVariables);
+            copyConfiguration(config.getChild("environmentVariables"), environmentVariables);
+            systemProperties = new HashMap<>(systemProperties);
+            copyConfiguration(config.getChild("systemPropertyVariables"), systemProperties);
+        }
+    }
+
+    private void copyConfiguration(Xpp3Dom config, Map<String, String> targetMap) {
+        if (config == null) {
+            return;
+        }
+        for (Xpp3Dom child : config.getChildren()) {
+            targetMap.putIfAbsent(child.getName(), child.getValue());
+        }
     }
 
     private void applyCompilerFlag(Optional<Xpp3Dom> compilerPluginConfiguration, String flagName,
@@ -1599,14 +1644,7 @@ public class DevMojo extends AbstractMojo {
     }
 
     private void setKotlinSpecificFlags(DevModeCommandLineBuilder builder) {
-        Plugin kotlinMavenPlugin = null;
-        for (Plugin plugin : project.getBuildPlugins()) {
-            if (plugin.getArtifactId().equals(KOTLIN_MAVEN_PLUGIN) && plugin.getGroupId().equals(ORG_JETBRAINS_KOTLIN)) {
-                kotlinMavenPlugin = plugin;
-                break;
-            }
-        }
-
+        Plugin kotlinMavenPlugin = getConfiguredPluginOrNull(ORG_JETBRAINS_KOTLIN, KOTLIN_MAVEN_PLUGIN);
         if (kotlinMavenPlugin == null) {
             return;
         }
@@ -1645,14 +1683,7 @@ public class DevMojo extends AbstractMojo {
     }
 
     private void setAnnotationProcessorFlags(DevModeCommandLineBuilder builder) {
-        Plugin compilerMavenPlugin = null;
-        for (Plugin plugin : project.getBuildPlugins()) {
-            if (plugin.getArtifactId().equals("maven-compiler-plugin")
-                    && plugin.getGroupId().equals("org.apache.maven.plugins")) {
-                compilerMavenPlugin = plugin;
-                break;
-            }
-        }
+        Plugin compilerMavenPlugin = getConfiguredPluginOrNull(ORG_APACHE_MAVEN_PLUGINS, MAVEN_COMPILER_PLUGIN);
         if (compilerMavenPlugin == null) {
             return;
         }
@@ -1683,13 +1714,9 @@ public class DevMojo extends AbstractMojo {
     }
 
     private Optional<Xpp3Dom> findCompilerPluginConfiguration() {
-        for (final Plugin plugin : project.getBuildPlugins()) {
-            if (plugin.getArtifactId().equals(MAVEN_COMPILER_PLUGIN) && plugin.getGroupId().equals(ORG_APACHE_MAVEN_PLUGINS)) {
-                final Xpp3Dom compilerPluginConfiguration = (Xpp3Dom) plugin.getConfiguration();
-                if (compilerPluginConfiguration != null) {
-                    return Optional.of(compilerPluginConfiguration);
-                }
-            }
+        Plugin plugin = getConfiguredPluginOrNull(ORG_APACHE_MAVEN_PLUGINS, MAVEN_COMPILER_PLUGIN);
+        if (plugin != null) {
+            return Optional.ofNullable((Xpp3Dom) plugin.getConfiguration());
         }
         return Optional.empty();
     }
