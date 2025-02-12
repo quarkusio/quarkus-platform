@@ -5,14 +5,14 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-cxf-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.19.0.CR1</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-cxf-bom-quarkus-platform-descriptor</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - CXF - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-cxf-bom:3.18.0.CR1</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-cxf-bom:3.19.0.CR1</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
