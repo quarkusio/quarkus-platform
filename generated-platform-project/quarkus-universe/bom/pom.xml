@@ -8576,12 +8576,12 @@
       <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
         <artifactId>quarkus-qute-web-deployment</artifactId>
-        <version>3.1.0</version>
+        <version>3.3.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
         <artifactId>quarkus-qute-web</artifactId>
-        <version>3.1.0</version>
+        <version>3.3.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.tika</groupId>
