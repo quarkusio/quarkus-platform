@@ -57,7 +57,7 @@
     <dependency>
       <groupId>io.quarkiverse.artemis</groupId>
       <artifactId>quarkus-test-artemis</artifactId>
-      <version>3.3.0</version>
+      <version>${quarkus-qute-web.version}</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
