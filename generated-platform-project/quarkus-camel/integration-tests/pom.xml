@@ -64,6 +64,7 @@
     <module>camel-quarkus-integration-test-github</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
     <module>camel-quarkus-integration-test-google-pubsub</module>
+    <module>camel-quarkus-integration-test-google-secret-manager</module>
     <module>camel-quarkus-integration-test-google-storage</module>
     <module>camel-quarkus-integration-test-google</module>
     <module>camel-quarkus-integration-test-graphql</module>
@@ -138,6 +139,7 @@
     <module>camel-quarkus-integration-test-netty</module>
     <module>camel-quarkus-integration-test-nitrite</module>
     <module>camel-quarkus-integration-test-oaipmh</module>
+    <module>camel-quarkus-integration-test-observability-services</module>
     <module>camel-quarkus-integration-test-ognl</module>
     <module>camel-quarkus-integration-test-olingo4</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
@@ -176,9 +178,12 @@
     <module>camel-quarkus-integration-test-smallrye-reactive-messaging</module>
     <module>camel-quarkus-integration-test-smb</module>
     <module>camel-quarkus-integration-test-soap</module>
+    <module>camel-quarkus-integration-test-solr</module>
+    <module>camel-quarkus-integration-test-splunk-hec</module>
     <module>camel-quarkus-integration-test-splunk</module>
     <module>camel-quarkus-integration-test-spring-rabbitmq</module>
     <module>camel-quarkus-integration-test-sql</module>
+    <module>camel-quarkus-integration-test-ssh</module>
     <module>camel-quarkus-integration-test-stax</module>
     <module>camel-quarkus-integration-test-stringtemplate</module>
     <module>camel-quarkus-integration-test-swift</module>

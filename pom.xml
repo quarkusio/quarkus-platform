@@ -58,7 +58,7 @@
         <quarkus.version>3.19.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.18.0</camel-quarkus.version>
+        <camel-quarkus.version>3.19.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>2.20.0</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.18.1</quarkus-cxf.version>
+        <quarkus-cxf.version>3.19.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.7.1</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -81,7 +81,7 @@
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>2.14.0</quarkus-google-cloud-services.version>
-        <quarkus-vault.version>4.2.0</quarkus-vault.version>
+        <quarkus-vault.version>4.2.1</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.0.1</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.118</quarkus-platform-bom-generator.version>
@@ -382,18 +382,6 @@
                                 <member>
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
-                                    <dependencyManagement>
-                                        <!-- TODO: https://github.com/apache/camel-quarkus/issues/5801 -->
-                                        <dependency>com.squareup.okhttp3:mockwebserver:4.12.0</dependency>
-                                        <!-- TODO: Remove workaround for missing bouncycastle exclusions: https://github.com/apache/camel-quarkus/issues/6940 -->
-                                        <dependencySpec>
-                                            <artifact>org.apache.wss4j:wss4j-ws-security-common:3.0.4</artifact>
-                                            <exclusions>
-                                                <exclusion>io.dropwizard.metrics:metrics-core</exclusion>
-                                                <exclusion>org.bouncycastle:*</exclusion>
-                                            </exclusions>
-                                        </dependencySpec>
-                                    </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.19.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
@@ -431,14 +419,6 @@
                                             <systemProperties>
                                                 <quarkus.test.flat-class-path>true</quarkus.test.flat-class-path>
                                             </systemProperties>
-                                        </test>
-                                        <test><!-- SSL cert issues: https://github.com/apache/camel-quarkus/issues/6709 -->
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-splunk-hec:${camel-quarkus-test-list.version}</artifact>
-                                            <excluded>true</excluded>
-                                        </test>
-                                        <test><!-- Resouce path issues in SshTestResource: https://github.com/apache/camel-quarkus/issues/6941 -->
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ssh:${camel-quarkus-test-list.version}</artifact>
-                                            <excluded>true</excluded>
                                         </test>
                                     </tests>
                                 </member>
