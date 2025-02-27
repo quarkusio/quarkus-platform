@@ -88,6 +88,14 @@
           <artifactId>jcip-annotations</artifactId>
         </exclusion>
         <exclusion>
+          <groupId>com.google.code.findbugs</groupId>
+          <artifactId>jsr305</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.google.guava</groupId>
+          <artifactId>listenablefuture</artifactId>
+        </exclusion>
+        <exclusion>
           <groupId>org.checkerframework</groupId>
           <artifactId>checker-qual</artifactId>
         </exclusion>
@@ -167,7 +175,7 @@
           <plugin>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-maven-plugin</artifactId>
-            <version>3.8.6</version>
+            <version>${quarkus.version}</version>
             <executions>
               <execution>
                 <id>native-image</id>
