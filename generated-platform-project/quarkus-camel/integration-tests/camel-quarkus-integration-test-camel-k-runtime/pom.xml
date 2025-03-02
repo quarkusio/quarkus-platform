@@ -118,9 +118,9 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemProperties>
+                  <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                  </systemProperties>
+                  </systemPropertyVariables>
                   <environmentVariables>
                     <CAMEL_K_CONF>target/test-classes/camel-k-runtime/conf.properties</CAMEL_K_CONF>
                     <CAMEL_K_CONF_D>target/test-classes/camel-k-runtime/conf.d</CAMEL_K_CONF_D>
