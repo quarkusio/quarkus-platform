@@ -122,10 +122,10 @@
                   <goal>verify</goal>
                 </goals>
                 <configuration>
-                  <systemProperties>
+                  <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                     <vault-test-extension.use-tls>false</vault-test-extension.use-tls>
-                  </systemProperties>
+                  </systemPropertyVariables>
                 </configuration>
               </execution>
             </executions>
