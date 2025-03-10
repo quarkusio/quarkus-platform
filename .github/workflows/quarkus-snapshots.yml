@@ -2,6 +2,7 @@ name: "Quarkus ecosystem CI"
 on:
   watch:
     types: [started]
+  workflow_dispatch:
 
 # For this CI to work, ECOSYSTEM_CI_TOKEN needs to contain a GitHub with rights to close the Quarkus issue that the user/bot has opened,
  # while 'ECOSYSTEM_CI_REPO_PATH' needs to be set to the corresponding path in the 'quarkusio/quarkus-ecosystem-ci' repository
@@ -22,7 +23,7 @@ jobs:
   main:
     name: "Build against Quarkus from main"
     runs-on: ubuntu-latest
-    if: github.actor == 'quarkusbot'
+    if: github.actor == 'quarkusbot' || github.event_name == 'workflow_dispatch'
 
     steps:
       - name: Checkout repo
@@ -62,7 +63,7 @@ jobs:
   lts-3-15:
     name: "Build 3.15 against Quarkus latest 3.15"
     runs-on: ubuntu-latest
-    if: github.actor == 'quarkusbot'
+    if: github.actor == 'quarkusbot' || github.event_name == 'workflow_dispatch'
 
     steps:
       - name: Checkout repo
