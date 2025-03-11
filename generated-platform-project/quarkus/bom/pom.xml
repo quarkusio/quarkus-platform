@@ -8870,47 +8870,47 @@
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-api</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-autoconfig-core</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-context-propagation</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-core</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-kotlin</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-mutiny</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-tracing-propagation</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-vertx</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance</artifactId>
-        <version>6.4.2</version>
+        <version>6.4.3</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye</groupId>
