@@ -55,7 +55,7 @@
         <graalvmHome>${env.GRAALVM_HOME}</graalvmHome>
         <postgres.url>jdbc:postgresql:hibernate_orm_test</postgres.url>
 
-        <quarkus.version>3.15.3.1</quarkus.version>
+        <quarkus.version>3.15.4</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
         <camel-quarkus.version>3.15.3</camel-quarkus.version>
@@ -183,6 +183,16 @@
                                 <bom>io.quarkus:quarkus-bom:${quarkus-bom.version}</bom>
                                 <dependencyManagement>
                                     <!-- Extra constraints -->
+                                    <!-- TODO: remove SmallRye Fault Tolerance override before next Platform release -->
+                                    <dependency>io.smallrye:smallrye-fault-tolerance:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-api:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-autoconfig-core:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-core:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-context-propagation:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-kotlin:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-mutiny:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-tracing-propagation:6.4.3</dependency>
+                                    <dependency>io.smallrye:smallrye-fault-tolerance-vertx:6.4.3</dependency>
                                     <!-- Consul config -->
                                     <dependency>io.quarkiverse.config:quarkus-config-consul:${quarkus-config-consul.version}</dependency>
                                     <dependency>io.quarkiverse.config:quarkus-config-consul-deployment:${quarkus-config-consul.version}</dependency>
