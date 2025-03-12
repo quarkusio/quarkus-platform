@@ -59,6 +59,7 @@ import org.apache.maven.plugin.BuildPluginManager;
 import org.apache.maven.plugin.MojoExecution;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
+import org.apache.maven.plugin.PluginParameterExpressionEvaluator;
 import org.apache.maven.plugin.descriptor.MojoDescriptor;
 import org.apache.maven.plugin.descriptor.PluginDescriptor;
 import org.apache.maven.plugin.logging.Log;
@@ -71,6 +72,8 @@ import org.apache.maven.project.MavenProject;
 import org.apache.maven.shared.utils.cli.CommandLineUtils;
 import org.apache.maven.toolchain.Toolchain;
 import org.apache.maven.toolchain.ToolchainManager;
+import org.codehaus.plexus.component.configurator.expression.ExpressionEvaluationException;
+import org.codehaus.plexus.component.configurator.expression.ExpressionEvaluator;
 import org.codehaus.plexus.util.xml.Xpp3Dom;
 import org.eclipse.aether.RepositorySystem;
 import org.eclipse.aether.RepositorySystemSession;
@@ -97,6 +100,7 @@ import io.quarkus.bootstrap.model.PathsCollection;
 import io.quarkus.bootstrap.resolver.BootstrapAppModelResolver;
 import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContext;
 import io.quarkus.bootstrap.resolver.maven.BootstrapMavenContextConfig;
+import io.quarkus.bootstrap.resolver.maven.BootstrapMavenException;
 import io.quarkus.bootstrap.resolver.maven.MavenArtifactResolver;
 import io.quarkus.bootstrap.util.BootstrapUtils;
 import io.quarkus.bootstrap.workspace.ArtifactSources;
@@ -424,6 +428,37 @@ public class DevMojo extends AbstractMojo {
      */
     @Parameter
     ExtensionDevModeJvmOptionFilter extensionJvmOptions;
+
+    /**
+     * Selects given test(s) for continuous testing. This is an alternative to {@code quarkus.test.include-pattern}
+     * and {@code quarkus.test.exclude-pattern}; if set, the {@code quarkus.test.[include|exclude]-pattern} configuration
+     * is ignored.
+     * <p>
+     * The format of this configuration property is the same as the Maven Surefire {@code -Dtest=...}
+     * <a href="https://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html#test">format</a>.
+     * Specifically: it is a comma ({@code ,}) separated list of globs of class file paths and/or
+     * method names. Each glob can potentially be prefixed with an exclamation mark ({@code !}), which makes
+     * it an exclusion filter instead of an inclusion filter. Exclusions have higher priority than inclusions.
+     * The class file path glob is separated from the method name glob by the hash sign ({@code #}) and multiple
+     * method name globs may be present, separated by the plus sign ({@code +}).
+     * <p>
+     * For example:
+     * <ul>
+     * <li>{@code Basic*}: all classes starting with {@code Basic}</li>
+     * <li>{@code ???Test}: all classes named with 3 arbitrary characters followed by {@code Test}</li>
+     * <li>{@code !Unstable*}: all classes except classes starting with {@code Unstable}</li>
+     * <li>{@code pkg/**}{@code /Ci*leTest}: all classes in the package {@code pkg} and subpackages, starting
+     * with {@code Ci} and ending with {@code leTest}</li>
+     * <li>{@code *Test#test*One+testTwo?????}: all classes ending with {@code Test}, and in them, only methods
+     * starting with {@code test} and ending with {@code One}, or starting with {@code testTwo} and followed
+     * by 5 arbitrary characters</li>
+     * <li>{@code #fast*+slowTest}: all classes, and in them, only methods starting with {@code fast} or methods
+     * named {@code slowTest}</li>
+     * </ul>
+     * Note that the syntax {@code %regex[...]} and {@code %ant[...]} is <em>NOT</em> supported.
+     */
+    @Parameter(property = "test")
+    String test;
 
     /**
      * console attributes, used to restore the console state
@@ -1309,6 +1344,9 @@ public class DevMojo extends AbstractMojo {
         if (windowsColorSupport) {
             builder.jvmArgs("-Dio.quarkus.force-color-support=true");
         }
+        if (test != null) {
+            builder.jvmArgs("-Dquarkus-internal.test.specific-selection=maven:" + test);
+        }
 
         if (openJavaLang) {
             builder.addOpens("java.base/java.lang=ALL-UNNAMED");
@@ -1405,6 +1443,18 @@ public class DevMojo extends AbstractMojo {
         if (appModel != null) {
             bootstrapProvider.close();
         } else {
+            Path rootProjectDir = null;
+            String topLevelBaseDirStr = systemProperties.get(BootstrapMavenContext.MAVEN_TOP_LEVEL_PROJECT_BASEDIR);
+            if (topLevelBaseDirStr != null) {
+                final Path tmp = Path.of(topLevelBaseDirStr);
+                if (!Files.exists(tmp)) {
+                    throw new BootstrapMavenException("Top-level project base directory " + topLevelBaseDirStr
+                            + " specified with system property " + BootstrapMavenContext.MAVEN_TOP_LEVEL_PROJECT_BASEDIR
+                            + " does not exist");
+                }
+                rootProjectDir = tmp;
+            }
+
             final BootstrapMavenContextConfig<?> mvnConfig = BootstrapMavenContext.config()
                     .setUserSettings(session.getRequest().getUserSettingsFile())
                     .setRemoteRepositories(repos)
@@ -1413,7 +1463,8 @@ public class DevMojo extends AbstractMojo {
                     // it's important to set the base directory instead of the POM
                     // which maybe manipulated by a plugin and stored outside the base directory
                     .setCurrentProject(project.getBasedir().toString())
-                    .setEffectiveModelBuilder(BootstrapMavenContextConfig.getEffectiveModelBuilderProperty(projectProperties));
+                    .setEffectiveModelBuilder(BootstrapMavenContextConfig.getEffectiveModelBuilderProperty(projectProperties))
+                    .setRootProjectDir(rootProjectDir);
 
             // There are a couple of reasons we don't want to use the original Maven session:
             // 1) a reload could be triggered by a change in a pom.xml, in which case the Maven session might not be in sync any more with the effective POM;
@@ -1521,22 +1572,30 @@ public class DevMojo extends AbstractMojo {
             return;
         }
 
+        ExpressionEvaluator evaluator = new PluginParameterExpressionEvaluator(session, mojoExecution);
         Xpp3Dom config = (Xpp3Dom) surefireMavenPlugin.getConfiguration();
         if (config != null) {
             // we copy the maps because they can be unmodifiable
             environmentVariables = new HashMap<>(environmentVariables);
-            copyConfiguration(config.getChild("environmentVariables"), environmentVariables);
+            copyConfiguration(config.getChild("environmentVariables"), environmentVariables, evaluator);
             systemProperties = new HashMap<>(systemProperties);
-            copyConfiguration(config.getChild("systemPropertyVariables"), systemProperties);
+            copyConfiguration(config.getChild("systemPropertyVariables"), systemProperties, evaluator);
         }
     }
 
-    private void copyConfiguration(Xpp3Dom config, Map<String, String> targetMap) {
+    private void copyConfiguration(Xpp3Dom config, Map<String, String> targetMap, ExpressionEvaluator evaluator) {
         if (config == null) {
             return;
         }
         for (Xpp3Dom child : config.getChildren()) {
-            targetMap.putIfAbsent(child.getName(), child.getValue());
+            targetMap.computeIfAbsent(child.getName(), ignored -> {
+                try {
+                    Object value = evaluator.evaluate(child.getValue());
+                    return value == null ? null : value.toString();
+                } catch (ExpressionEvaluationException e) {
+                    throw new RuntimeException(e);
+                }
+            });
         }
     }
 
