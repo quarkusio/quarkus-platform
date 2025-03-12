@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-camel-parent</artifactId>
-    <version>3.20.0.CR1</version>
+    <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-camel-bom-quarkus-platform-descriptor</artifactId>
