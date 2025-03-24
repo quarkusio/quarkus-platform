@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-oaipmh</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-oaipmh</name>
+  <artifactId>camel-quarkus-integration-test-jolokia</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jolokia</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-oaipmh</artifactId>
+      <artifactId>camel-quarkus-integration-test-jolokia</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-oaipmh</artifactId>
+      <artifactId>camel-quarkus-integration-test-jolokia</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -55,52 +55,20 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
       <artifactId>camel-quarkus-integration-test-support</artifactId>
       <version>${camel-quarkus.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.wiremock</groupId>
-      <artifactId>wiremock-standalone</artifactId>
-      <version>3.12.1</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>commons-logging</groupId>
-          <artifactId>commons-logging</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>javax.xml.bind</groupId>
-          <artifactId>jaxb-api</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>javax.servlet</groupId>
-          <artifactId>javax.servlet-api</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.checkerframework</groupId>
-          <artifactId>checker-qual</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.opentest4j</groupId>
-          <artifactId>opentest4j</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.google.code.findbugs</groupId>
-          <artifactId>jsr305</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-tests-support-certificate-generator</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.smallrye.certs</groupId>
+      <artifactId>smallrye-certificate-generator-junit5</artifactId>
+      <version>0.9.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -132,7 +100,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-oaipmh</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jolokia</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -165,7 +133,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-oaipmh</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jolokia</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -180,7 +148,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-oaipmh:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jolokia:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
