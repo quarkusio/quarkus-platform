@@ -24161,7 +24161,7 @@
       <dependency>
         <groupId>org.wildfly.security</groupId>
         <artifactId>wildfly-elytron</artifactId>
-        <version>2.6.1.Final</version>
+        <version>2.6.2.Final</version>
       </dependency>
       <dependency>
         <groupId>org.xerial.snappy</groupId>
