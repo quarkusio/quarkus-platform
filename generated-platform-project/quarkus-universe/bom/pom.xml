@@ -7707,482 +7707,482 @@
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-acm-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-acm</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-apache-client-internal-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-apache-client-internal</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-apigatewaymanagementapi-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-apigatewaymanagementapi</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-cloudwatch-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-cloudwatch</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-cloudwatchlogs-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-cloudwatchlogs</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-cognito-user-pools-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-cognito-user-pools</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-common-deployment-devservices-spi</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-common-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-common-spi-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-common-spi</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-common</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-crt-client-internal-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-crt-client-internal</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-crt-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-crt</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-acm</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-cloudwatch</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-cloudwatchlogs</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-cognito-user-pools</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-dynamodb</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-ecr</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-eventbridge</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-iam</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-kinesis</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-kms</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-lambda</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-s3</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-secretsmanager</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-ses</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-sfn</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-sns</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-sqs</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-ssm</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-devservices-sts</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-dynamodb-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-dynamodb-enhanced-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-dynamodb-enhanced</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-dynamodb</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-ecr-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-ecr</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-elasticloadbalancing-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-elasticloadbalancing</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-elasticloadbalancingv2-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-elasticloadbalancingv2</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-eventbridge-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-eventbridge</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-iam-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-iam</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-inspector-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-inspector2-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-inspector2</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-inspector</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-iot-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-iot</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-kinesis-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-kinesis</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-kms-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-kms</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-lambda-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-lambda</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-neptune-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-neptune</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-netty-client-internal-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-netty-client-internal</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-opentelemetry-internal-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-opentelemetry-internal</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-paymentcryptography-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-paymentcryptography</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-paymentcryptographydata-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-paymentcryptographydata</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-s3-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-s3-transfer-manager-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-s3-transfer-manager</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-s3</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-secretsmanager-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-secretsmanager</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-ses-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-ses</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sfn-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sfn</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sns-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sns</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sqs-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sqs</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-ssm-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-ssm</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sts-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-amazon-sts</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-messaging-amazon-sqs-deployment</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.amazonservices</groupId>
         <artifactId>quarkus-messaging-amazon-sqs</artifactId>
-        <version>3.3.1</version>
+        <version>3.3.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.config</groupId>
