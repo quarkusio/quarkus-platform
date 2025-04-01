@@ -4513,127 +4513,127 @@
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-bigquery-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-bigquery</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-bigtable-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-bigtable</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-common-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-common-grpc</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-common</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firebase-admin-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firebase-admin</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firebase-devservices-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firebase-devservices</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firebase-realtime-database-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firebase-realtime-database</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firestore-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-firestore</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-logging-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-logging</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-pubsub-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-pubsub</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-secret-manager-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-secret-manager</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-spanner-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-spanner</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-storage-deployment</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-storage</artifactId>
-        <version>2.15.0</version>
+        <version>2.16.0</version>
       </dependency>
       <dependency>
         <groupId>org.conscrypt</groupId>
@@ -4653,7 +4653,7 @@
       <dependency>
         <groupId>org.threeten</groupId>
         <artifactId>threetenbp</artifactId>
-        <version>1.7.0</version>
+        <version>1.7.1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
