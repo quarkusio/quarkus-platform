@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>3.21.1</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>3.21.1</tag>
     </scm>
 
     <issueManagement>
@@ -202,7 +202,7 @@
                                     <groupId>io.quarkiverse.qute.web</groupId>
                                 </extensionGroupIds>
                                 <release>
-                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.21.0</lastDetectedBomUpdate>
+                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.21.1</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
@@ -357,7 +357,7 @@
                                         <groupId>software.amazon.awssdk</groupId>
                                     </ownGroupIds>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-amazon-services-bom:3.21.0</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-amazon-services-bom:3.21.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-amazon-services-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -370,7 +370,7 @@
                                     <name>CXF</name>
                                     <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.21.0</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.21.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -383,7 +383,7 @@
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.21.0</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.21.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -463,7 +463,7 @@
                                         <dependency>io.debezium:debezium-scripting:${debezium-quarkus-outbox.version}</dependency>
                                     </dependencyManagement>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.19.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.21.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -486,7 +486,7 @@
                                         <dependency>com.blazebit:blaze-persistence-integration-hibernate-6.2:${quarkus-blaze-persistence.version}</dependency>
                                     </dependencyManagement>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-blaze-persistence-bom:3.17.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-blaze-persistence-bom:3.21.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-blaze-persistence-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -520,7 +520,7 @@
                                     <name>GoogleCloudServices</name>
                                     <bom>io.quarkiverse.googlecloudservices:quarkus-google-cloud-services-bom:${quarkus-google-cloud-services.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-google-cloud-services-bom:3.21.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-google-cloud-services-bom:3.21.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-google-cloud-services-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
