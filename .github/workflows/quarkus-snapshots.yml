@@ -66,12 +66,13 @@ jobs:
     strategy:
       matrix:
         version: ['3.20', '3.15']
+      fail-fast: false
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           path: current-repo
-          ref: ${{ matrix.version }}
+          ref: '${{ matrix.version }}'
 
       - name: Reclaim Disk Space
         run: current-repo/.github/ci-prerequisites.sh
@@ -100,4 +101,4 @@ jobs:
         run: ./ecosystem-ci/setup-and-test
         env:
           ECOSYSTEM_CI_TOKEN: ${{ secrets.ECOSYSTEM_CI_TOKEN }}
-          ALTERNATIVE: ${{ matrix.version }}
+          ALTERNATIVE: '${{ matrix.version }}'
