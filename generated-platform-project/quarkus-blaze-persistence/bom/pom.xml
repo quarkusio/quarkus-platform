@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkus.platform</groupId>
   <artifactId>quarkus-blaze-persistence-bom</artifactId>
-  <version>999-SNAPSHOT</version>
+  <version>3.15.999-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Blaze-Persistence - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -48,14 +48,14 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-blaze-persistence-bom-quarkus-platform-descriptor</artifactId>
-        <version>999-SNAPSHOT</version>
+        <version>3.15.999-SNAPSHOT</version>
         <type>json</type>
-        <classifier>999-SNAPSHOT</classifier>
+        <classifier>3.15.999-SNAPSHOT</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-blaze-persistence-bom-quarkus-platform-properties</artifactId>
-        <version>999-SNAPSHOT</version>
+        <version>3.15.999-SNAPSHOT</version>
         <type>properties</type>
       </dependency>
       <dependency>
