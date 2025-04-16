@@ -1567,7 +1567,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-common-protos</artifactId>
-        <version>2.53.0</version>
+        <version>2.54.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -3087,7 +3087,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-common-protos</artifactId>
-        <version>2.53.0</version>
+        <version>2.54.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -4207,7 +4207,7 @@
       <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
-        <version>2.12.1</version>
+        <version>2.13.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.firebase</groupId>
@@ -4217,17 +4217,17 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava-gwt</artifactId>
-        <version>33.4.0-jre</version>
+        <version>33.4.8-jre</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava-testlib</artifactId>
-        <version>33.4.0-jre</version>
+        <version>33.4.8-jre</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>33.4.0-jre</version>
+        <version>33.4.8-jre</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
