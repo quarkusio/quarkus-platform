@@ -87,21 +87,45 @@ public class QuarkusBootstrapProvider implements Closeable {
         }
         final Map<Path, Model> projectModels = new HashMap<>(allProjects.size());
         for (MavenProject mp : allProjects) {
-            final Model model = mp.getOriginalModel();
-            model.setPomFile(mp.getFile());
-            // activated profiles or custom extensions may have overridden the build defaults
-            model.setBuild(mp.getModel().getBuild());
-            projectModels.put(mp.getBasedir().toPath(), model);
+            final Model model = getRawModel(mp);
+            projectModels.put(mp.getFile().toPath(), model);
             // The Maven Model API determines the project directory as the directory containing the POM file.
             // However, in case when plugins manipulating POMs store their results elsewhere
             // (such as the flatten plugin storing the flattened POM under the target directory),
             // both the base directory and the directory containing the POM file should be added to the map.
             var pomDir = mp.getFile().getParentFile();
             if (!pomDir.equals(mp.getBasedir())) {
-                projectModels.put(pomDir.toPath(), model);
+                projectModels.put(mp.getBasedir().toPath().resolve("pom.xml"), model);
             }
         }
         return projectModels;
+    }
+
+    /**
+     * This method is meant to return the "raw" model, i.e. the one that would be obtained
+     * by reading a {@code pom.xml} file, w/o interpolation, flattening, etc.
+     * However, plugins, such as, {@code flatten-maven-plugin}, may manipulate raw POMs
+     * early enough by stripping dependency management, test scoped dependencies, etc,
+     * to break our bootstrap. So this method attempts to make sure the essential configuration
+     * is still available to bootstrap a Quarkus app.
+     *
+     * @param mp Maven project
+     * @return raw POM
+     */
+    private static Model getRawModel(MavenProject mp) {
+        final Model model = mp.getOriginalModel();
+        if (model.getDependencyManagement() == null) {
+            // this could be the flatten plugin removing the dependencyManagement
+            // in which case we set the effective dependency management to not lose the platform info
+            model.setDependencyManagement(mp.getDependencyManagement());
+            // it also helps to set the effective dependencies in this case
+            // since the flatten plugin may remove the test dependencies from the POM
+            model.setDependencies(mp.getDependencies());
+        }
+        model.setPomFile(mp.getFile());
+        // activated profiles or custom extensions may have overridden the build defaults
+        model.setBuild(mp.getModel().getBuild());
+        return model;
     }
 
     private static String getBootstrapProviderId(ArtifactKey moduleKey, String bootstrapId) {
@@ -210,7 +234,7 @@ public class QuarkusBootstrapProvider implements Closeable {
                                     .setUserSettings(mojo.mavenSession().getRequest().getUserSettingsFile())
                                     .setCurrentProject(mojo.mavenProject().getFile().toString())
                                     .setPreferPomsFromWorkspace(true)
-                                    .setProjectModelProvider(getProjectMap(mojo.mavenSession())::get)
+                                    .setProjectModelProvider(getProjectMap(mojo.mavenSession()))
                                     // pass the repositories since Maven extensions could manipulate repository configs
                                     .setRemoteRepositories(mojo.remoteRepositories())
                                     .setEffectiveModelBuilder(BootstrapMavenContextConfig
