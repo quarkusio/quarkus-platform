@@ -90,7 +90,7 @@
     <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
-    <module>camel-quarkus-integration-test-jms-artemis-jms-ra</module>
+    <module>camel-quarkus-integration-test-jms-artemis-ra</module>
     <module>camel-quarkus-integration-test-jms-ibmmq-client</module>
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolokia</module>
@@ -146,6 +146,7 @@
     <module>camel-quarkus-integration-test-openapi-java</module>
     <module>camel-quarkus-integration-test-openstack</module>
     <module>camel-quarkus-integration-test-opentelemetry</module>
+    <module>camel-quarkus-integration-test-opentelemetry2</module>
     <module>camel-quarkus-integration-test-optaplanner</module>
     <module>camel-quarkus-integration-test-paho-mqtt5</module>
     <module>camel-quarkus-integration-test-paho</module>
@@ -183,7 +184,6 @@
     <module>camel-quarkus-integration-test-splunk-hec</module>
     <module>camel-quarkus-integration-test-splunk</module>
     <module>camel-quarkus-integration-test-spring-rabbitmq</module>
-    <module>camel-quarkus-integration-test-sql</module>
     <module>camel-quarkus-integration-test-ssh</module>
     <module>camel-quarkus-integration-test-stax</module>
     <module>camel-quarkus-integration-test-stringtemplate</module>
@@ -192,6 +192,7 @@
     <module>camel-quarkus-integration-test-syslog</module>
     <module>camel-quarkus-integration-test-tarfile</module>
     <module>camel-quarkus-integration-test-telegram</module>
+    <module>camel-quarkus-integration-test-telemetry-dev</module>
     <module>camel-quarkus-integration-test-tika</module>
     <module>camel-quarkus-integration-test-twilio</module>
     <module>camel-quarkus-integration-test-twitter</module>

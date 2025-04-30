@@ -109,6 +109,7 @@
           </dependenciesToScan>
           <excludes>
             <exclude>**/EipTest*</exclude>
+            <exclude>**/CoreTest*</exclude>
           </excludes>
         </configuration>
       </plugin>
@@ -138,6 +139,7 @@
                   </systemPropertyVariables>
                   <excludes>
                     <exclude>**/EipTest*</exclude>
+                    <exclude>**/CoreTest*</exclude>
                   </excludes>
                 </configuration>
               </execution>

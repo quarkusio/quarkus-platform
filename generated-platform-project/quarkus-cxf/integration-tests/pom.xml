@@ -15,7 +15,6 @@
     <module>quarkus-cxf-integration-test-client-server</module>
     <module>quarkus-cxf-integration-test-client</module>
     <module>quarkus-cxf-integration-test-fast-infoset</module>
-    <module>quarkus-cxf-integration-test-hc5</module>
     <module>quarkus-cxf-integration-test-metrics</module>
     <module>quarkus-cxf-integration-test-mtls</module>
     <module>quarkus-cxf-integration-test-mtom-awt</module>
