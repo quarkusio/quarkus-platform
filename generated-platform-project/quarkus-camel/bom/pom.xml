@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkus.platform</groupId>
   <artifactId>quarkus-camel-bom</artifactId>
-  <version>3.22.1</version>
+  <version>999-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Camel - Quarkus Platform BOM</name>
   <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
@@ -27,7 +27,6 @@
   <scm>
     <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
     <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-    <tag>3.22.1</tag>
     <url>https://github.com/quarkusio/quarkus-platform</url>
   </scm>
   <issueManagement>
@@ -49,14 +48,14 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-camel-bom-quarkus-platform-descriptor</artifactId>
-        <version>3.22.1</version>
+        <version>999-SNAPSHOT</version>
         <type>json</type>
-        <classifier>3.22.1</classifier>
+        <classifier>999-SNAPSHOT</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-camel-bom-quarkus-platform-properties</artifactId>
-        <version>3.22.1</version>
+        <version>999-SNAPSHOT</version>
         <type>properties</type>
       </dependency>
       <dependency>
