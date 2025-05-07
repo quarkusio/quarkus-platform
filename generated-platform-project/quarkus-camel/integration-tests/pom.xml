@@ -90,7 +90,7 @@
     <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
-    <module>camel-quarkus-integration-test-jms-artemis-jms-ra</module>
+    <module>camel-quarkus-integration-test-jms-artemis-ra</module>
     <module>camel-quarkus-integration-test-jms-ibmmq-client</module>
     <module>camel-quarkus-integration-test-jms-qpid-amqp-client</module>
     <module>camel-quarkus-integration-test-jolokia</module>
