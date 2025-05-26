@@ -78,7 +78,6 @@
           <plugins>
             <plugin>
               <artifactId>maven-gpg-plugin</artifactId>
-              <version>3.2.7</version>
               <configuration>
                 <bestPractices>true</bestPractices>
                 <useAgent>false</useAgent>
