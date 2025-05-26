@@ -24,7 +24,7 @@
       <organizationUrl>https://quarkus.io</organizationUrl>
     </developer>
   </developers>
-  <scm>
+  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
     <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -11117,7 +11117,6 @@
           <plugins>
             <plugin>
               <artifactId>maven-gpg-plugin</artifactId>
-              <version>3.2.7</version>
               <configuration>
                 <bestPractices>true</bestPractices>
                 <useAgent>false</useAgent>
