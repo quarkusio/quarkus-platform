@@ -35,12 +35,14 @@
   </issueManagement>
   <distributionManagement>
     <repository>
-      <id>sonatype-nexus-release</id>
-      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>quarkus-publish</id>
+      <name>Quarkus Releases</name>
+      <url>https://repo.maven.apache.org/maven2</url>
     </repository>
     <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+      <id>quarkus-publish</id>
+      <name>Quarkus Snapshots</name>
+      <url>https://central.sonatype.com/repository/maven-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
   <dependencyManagement>
@@ -2587,7 +2589,7 @@
         <plugins>
           <plugin>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
+            <version>3.2.7</version>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
@@ -2597,26 +2599,6 @@
                 </goals>
               </execution>
             </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>releaseNexus</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.13</version>
-            <extensions>true</extensions>
-            <configuration>
-              <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-              <serverId>ossrh</serverId>
-              <autoReleaseAfterClose>true</autoReleaseAfterClose>
-              <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
-              <stagingProgressTimeoutMinutes>60</stagingProgressTimeoutMinutes>
-            </configuration>
           </plugin>
         </plugins>
       </build>
@@ -2633,11 +2615,11 @@
           <plugins>
             <plugin>
               <artifactId>maven-gpg-plugin</artifactId>
+              <version>3.2.7</version>
               <configuration>
-                <gpgArguments>
-                  <arg>--pinentry-mode</arg>
-                  <arg>loopback</arg>
-                </gpgArguments>
+                <bestPractices>true</bestPractices>
+                <useAgent>false</useAgent>
+                <signer>bc</signer>
               </configuration>
             </plugin>
           </plugins>
@@ -2645,12 +2627,11 @@
         <plugins>
           <plugin>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
+            <version>3.2.7</version>
             <configuration>
-              <gpgArguments>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
+              <bestPractices>true</bestPractices>
+              <useAgent>false</useAgent>
+              <signer>bc</signer>
             </configuration>
           </plugin>
         </plugins>
