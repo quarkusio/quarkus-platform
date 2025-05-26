@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>39</version>
+        <version>49</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -87,7 +87,6 @@
         <quarkus-platform-bom-generator.version>0.0.119</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
-        <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
         <failsafe-plugin.version>${version.surefire.plugin}</failsafe-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
@@ -732,7 +731,6 @@
                          -->
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -809,7 +807,6 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
                         <configuration>
                             <bestPractices>true</bestPractices>
                             <useAgent>false</useAgent>
@@ -822,7 +819,6 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-gpg-plugin</artifactId>
-                            <version>${maven-gpg-plugin.version}</version>
                             <configuration>
                                 <bestPractices>true</bestPractices>
                                 <useAgent>false</useAgent>
