@@ -86,7 +86,7 @@
 
         <quarkus-platform-bom-generator.version>0.0.118</quarkus-platform-bom-generator.version>
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
-        <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
+        <maven-plugin-plugin.version>3.15.1</maven-plugin-plugin.version>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
         <failsafe-plugin.version>${version.surefire.plugin}</failsafe-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
