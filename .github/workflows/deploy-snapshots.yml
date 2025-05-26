@@ -46,8 +46,8 @@ jobs:
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
         run: |
-          ./mvnw -B -N versions:set-property -Dproperty=quarkus.version -DnewVersion=999-SNAPSHOT -DenableSnapshotsRepository
-          ./mvnw -B -Dsync -DenableSnapshotsRepository
+          ./mvnw -B -N --settings .github/release-settings.xml versions:set-property -Dproperty=quarkus.version -DnewVersion=999-SNAPSHOT -DenableSnapshotsRepository
+          ./mvnw -B --settings .github/release-settings.xml -Dsync -DenableSnapshotsRepository
           ./mvnw -e -B --settings .github/release-settings.xml \
             -Dnjord.autoPublish \
             -DskipTests -DskipITs \
