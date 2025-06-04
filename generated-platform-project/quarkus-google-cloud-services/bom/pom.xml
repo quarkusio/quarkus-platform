@@ -4319,7 +4319,7 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-kotlin</artifactId>
-        <version>4.29.3</version>
+        <version>3.25.5</version>
       </dependency>
       <dependency>
         <groupId>io.grafeas</groupId>
