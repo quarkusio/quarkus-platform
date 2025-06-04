@@ -1,28 +1,28 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.23.0" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.23.1" ],
     "project" : {
       "default-codestart" : "rest",
       "codestart-data" : {
-        "dockerfile.jvm.from-template" : "registry.access.redhat.com/ubi9/openjdk-{java.version}:1.21",
-        "dockerfile.jvm.from" : "registry.access.redhat.com/ubi9/openjdk-21:1.21",
-        "dockerfile.native.from" : "registry.access.redhat.com/ubi9/ubi-minimal:9.5",
-        "dockerfile.native-micro" : "quay.io/quarkus/ubi9-quarkus-micro-image:2.0"
+        "tooling-dockerfiles.dockerfile.jvm.from-template" : "registry.access.redhat.com/ubi9/openjdk-{java.version}:1.21",
+        "tooling-dockerfiles.dockerfile.jvm.from" : "registry.access.redhat.com/ubi9/openjdk-21:1.21",
+        "tooling-dockerfiles.dockerfile.native.from" : "registry.access.redhat.com/ubi9/ubi-minimal:9.5",
+        "tooling-dockerfiles.dockerfile.native-micro.from" : "quay.io/quarkus/ubi9-quarkus-micro-image:2.0"
       },
       "properties" : {
         "doc-root" : "https://quarkus.io",
-        "rest-assured-version" : "5.5.1",
+        "rest-assured-version" : "5.5.5",
         "compiler-plugin-version" : "3.14.0",
-        "surefire-plugin-version" : "3.5.2",
+        "surefire-plugin-version" : "3.5.3",
         "kotlin-version" : "2.1.21",
         "scala-version" : "2.13.12",
         "scala-plugin-version" : "4.9.5",
-        "quarkus-core-version" : "3.23.0",
+        "quarkus-core-version" : "3.23.1",
         "maven-plugin-groupId" : "io.quarkus",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
-        "maven-plugin-version" : "3.23.0",
+        "maven-plugin-version" : "3.23.1",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.23.0",
+        "gradle-plugin-version" : "3.23.1",
         "supported-maven-versions" : "[3.8.6,)",
         "proposed-maven-version" : "3.9.9",
         "maven-wrapper-version" : "3.3.2",
