@@ -699,14 +699,32 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <!-- Required for OpenSAML by quarkus-cxf-integration-test-ws-rm-client -->
         <repository>
-            <id>confluent</id>
-            <url>https://packages.confluent.io/maven/</url>
+            <id>shibboleth</id>
+            <url>https://build.shibboleth.net/maven/releases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- Required for JIRA APIs -->
+        <repository>
+            <id>atlassian</id>
+            <url>https://maven.artifacts.atlassian.com/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>gradle</id>
+            <url>https://repo.gradle.org/artifactory/libs-releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <profiles>
         <profile>
