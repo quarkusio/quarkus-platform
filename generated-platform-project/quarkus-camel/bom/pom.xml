@@ -8521,7 +8521,7 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
-        <version>6.2.5</version>
+        <version>6.2.8</version>
         <exclusions>
           <exclusion>
             <groupId>org.springframework</groupId>
