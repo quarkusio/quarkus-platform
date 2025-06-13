@@ -1,0 +1,8 @@
+com.atlassian.sal
+com.atlassian.jira
+com.atlassian.pom
+com.atlassian.platform
+com.atlassian.platform.dependencies
+com.atlassian.plugins.rest
+com.atlassian.event
+com.atlassian.httpclient
