@@ -25,7 +25,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <version>${quarkus-cxf.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
