@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>3.24.1</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>3.24.1</tag>
     </scm>
 
     <issueManagement>
@@ -207,7 +207,7 @@
                                     <groupId>io.quarkiverse.qute.web</groupId>
                                 </extensionGroupIds>
                                 <release>
-                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.24.0.CR1</lastDetectedBomUpdate>
+                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.24.1</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
@@ -388,7 +388,7 @@
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.24.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.24.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
