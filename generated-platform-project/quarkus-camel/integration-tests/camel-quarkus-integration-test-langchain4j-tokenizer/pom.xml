@@ -6,20 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-debezium</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-debezium</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
+  <artifactId>camel-quarkus-integration-test-langchain4j-tokenizer</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-langchain4j-tokenizer</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-debezium</artifactId>
+      <artifactId>camel-quarkus-integration-test-langchain4j-tokenizer</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-debezium</artifactId>
+      <artifactId>camel-quarkus-integration-test-langchain4j-tokenizer</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -57,78 +54,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>postgresql</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>mysql</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>mssqlserver</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>mongodb</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit4-mock</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-tests-support-mongodb</artifactId>
-      <version>${camel-quarkus.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-debezium-mysql</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.mysql</groupId>
-      <artifactId>mysql-connector-j</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-debezium-sqlserver</artifactId>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -158,7 +83,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-tokenizer</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -191,7 +116,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-tokenizer</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -206,8 +131,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-tokenizer:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
