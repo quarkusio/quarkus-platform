@@ -11,6 +11,35 @@ into a single development stack that targets the primary use-cases of the Quarku
 into the platform do not create conflicts for each other and can be used in the same application in any combination.
 More information about how a Quarkus platform is defined can be found in the [Platform Guide](https://quarkus.io/guides/platform).
 
+<!-- toc -->
+
+- [Platform coordination mailing list](#platform-coordination-mailing-list)
+- [Platform project](#platform-project)
+- [Platform members](#platform-members)
+  * [Quarkus core](#quarkus-core)
+  * [Platform member input](#platform-member-input)
+  * [Generated platform member artifacts](#generated-platform-member-artifacts)
+    + [BOM](#bom)
+    + [JSON descriptor](#json-descriptor)
+    + [Properties](#properties)
+- [Building and testing the platform project](#building-and-testing-the-platform-project)
+  * [Generating the platform project](#generating-the-platform-project)
+  * [Installing the platform](#installing-the-platform)
+  * [Testing the platform](#testing-the-platform)
+- [Platform configuration](#platform-configuration)
+  * [Release configuration](#release-configuration)
+  * [The universal platform](#the-universal-platform)
+  * [Quarkus core configuration](#quarkus-core-configuration)
+  * [Platform member configuration](#platform-member-configuration)
+    + [Platform member test configuration](#platform-member-test-configuration)
+    + [Platform members without a BOM](#platform-members-without-a-bom)
+- [Generated platform project layout](#generated-platform-project-layout)
+- [Platform BOM generation](#platform-bom-generation)
+  * [BOM generator reports](#bom-generator-reports)
+- [External Maven repositories](#external-maven-repositories)
+- [Release steps](#release-steps)
+
+<!-- tocstop -->
 
 ## Platform coordination mailing list
 
