@@ -11,6 +11,35 @@ into a single development stack that targets the primary use-cases of the Quarku
 into the platform do not create conflicts for each other and can be used in the same application in any combination.
 More information about how a Quarkus platform is defined can be found in the [Platform Guide](https://quarkus.io/guides/platform).
 
+<!-- toc -->
+
+- [Platform coordination mailing list](#platform-coordination-mailing-list)
+- [Platform project](#platform-project)
+- [Platform members](#platform-members)
+  * [Quarkus core](#quarkus-core)
+  * [Platform member input](#platform-member-input)
+  * [Generated platform member artifacts](#generated-platform-member-artifacts)
+    + [BOM](#bom)
+    + [JSON descriptor](#json-descriptor)
+    + [Properties](#properties)
+- [Building and testing the platform project](#building-and-testing-the-platform-project)
+  * [Generating the platform project](#generating-the-platform-project)
+  * [Installing the platform](#installing-the-platform)
+  * [Testing the platform](#testing-the-platform)
+- [Platform configuration](#platform-configuration)
+  * [Release configuration](#release-configuration)
+  * [The universal platform](#the-universal-platform)
+  * [Quarkus core configuration](#quarkus-core-configuration)
+  * [Platform member configuration](#platform-member-configuration)
+    + [Platform member test configuration](#platform-member-test-configuration)
+    + [Platform members without a BOM](#platform-members-without-a-bom)
+- [Generated platform project layout](#generated-platform-project-layout)
+- [Platform BOM generation](#platform-bom-generation)
+  * [BOM generator reports](#bom-generator-reports)
+- [External Maven repositories](#external-maven-repositories)
+- [Release steps](#release-steps)
+
+<!-- tocstop -->
 
 ## Platform coordination mailing list
 
@@ -344,6 +373,22 @@ from the same origin. If such artifacts are found then the newer version of thos
 
 Besides generating the member BOMs, the BOM generator will also generate HTML reports for highlighting how the differences between the original dependency version constraints
 and the generated ones for every member. The reports can be found under the `target/reports` directory of the root platform project dir.
+
+## External Maven repositories
+
+The Quarkus Platform build is using the `--ignore-transitive-repositories` option from Maven.
+It ignores remote repositories introduced by transitive dependencies.
+
+This option is used to make sure we know when one of our dependencies relies on a repository that is not Maven Central.
+
+When a dependency relies on an external repository that is not Maven Central, we have to be extra careful:
+
+- First discuss it with the Quarkus Core team as it is something we want to avoid
+- If everyone agrees it is something we should allow in this specific case:
+  - Add the repository to the Quarkus module requiring the external repository (for instance, a specific extension runtime module) - don't add it to the root `pom.xml`
+  - Make sure you declare Maven Central first in the added `<repositories>` element so that we only download dependencies that are not in Maven Central from the external repository - see existing examples in the code base
+  - Add a `.mvn/rrf/groupId-<REPOSITORY-ID>.txt` file containing the list of authorized ``groupIds`` for this repository (one per line) - see existing examples in the code base
+  - Make sure you can fully run the build with an empty Maven local repository using `./mvnw -Dquickly -Dmaven.repo.local=/tmp/my-temp-local-repository`
 
 ## Release steps
 
