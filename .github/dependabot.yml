@@ -5,6 +5,14 @@
 
 version: 2
 updates:
+  - package-ecosystem: maven
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "23:00"
+      timezone: Europe/Paris
+    allow:
+      - dependency-name: org.jboss:jboss-parent
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
