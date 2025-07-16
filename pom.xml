@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
-        <version>39</version>
+        <version>49</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -85,11 +85,14 @@
         <quarkus-operator-sdk.version>7.1.4</quarkus-operator-sdk.version>
 
         <quarkus-platform-bom-generator.version>0.0.118</quarkus-platform-bom-generator.version>
-        <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
-        <maven-plugin-plugin.version>3.6.1</maven-plugin-plugin.version>
+        <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
+        <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
+        <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
+        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+        <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
+        <maven-plugin-plugin.version>3.15.1</maven-plugin-plugin.version>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
         <failsafe-plugin.version>${version.surefire.plugin}</failsafe-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <useReleaseProfile>true</useReleaseProfile>
 
         <!-- the group-id (and the platform key) for the generated platform artifacts -->
@@ -103,14 +106,16 @@
     </properties>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-release</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>quarkus-publish</id>
+            <name>Quarkus Releases</name>
+            <url>https://repo.maven.apache.org/maven2</url>
         </repository>
+        <snapshotRepository>
+            <id>quarkus-publish</id>
+            <name>Quarkus Snapshots</name>
+            <url>https://central.sonatype.com/repository/maven-snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <build>
@@ -707,6 +712,30 @@
                 <module>generated-platform-project</module>
             </modules>
             <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-deploy-plugin</artifactId>
+                            <version>${maven-deploy-plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-gpg-plugin</artifactId>
+                            <version>${maven-gpg-plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-javadoc-plugin</artifactId>
+                            <version>${maven-javadoc-plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-source-plugin</artifactId>
+                            <version>${maven-source-plugin.version}</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
                 <plugins>
                     <!-- Given that the generated platform project is included as a module in this profile,
                          the platform invoker goal becomes redundant and can be disabled -->
@@ -759,27 +788,6 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-
-        <profile>
-            <id>releaseNexus</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>${nexus-staging-maven-plugin.version}</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <serverId>ossrh</serverId>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                            <keepStagingRepositoryOnCloseRuleFailure>true</keepStagingRepositoryOnCloseRuleFailure>
-                            <stagingProgressTimeoutMinutes>60</stagingProgressTimeoutMinutes>
-                        </configuration>
                     </plugin>
                 </plugins>
             </build>
@@ -848,11 +856,9 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <configuration>
-                            <!-- Prevent gpg from using pinentry programs -->
-                            <gpgArguments>
-                                <arg>--pinentry-mode</arg>
-                                <arg>loopback</arg>
-                            </gpgArguments>
+                            <bestPractices>true</bestPractices>
+                            <useAgent>false</useAgent>
+                            <signer>bc</signer>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -862,11 +868,9 @@
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-gpg-plugin</artifactId>
                             <configuration>
-                                <!-- Prevent gpg from using pinentry programs -->
-                                <gpgArguments>
-                                    <arg>--pinentry-mode</arg>
-                                    <arg>loopback</arg>
-                                </gpgArguments>
+                                <bestPractices>true</bestPractices>
+                                <useAgent>false</useAgent>
+                                <signer>bc</signer>
                             </configuration>
                         </plugin>
                     </plugins>
@@ -883,6 +887,16 @@
             <repositories>
                 <repository>
                     <id>quarkus-snapshots-repository</id>
+                    <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>quarkus-legacy-snapshots-repository</id>
                     <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
                     <releases>
                         <enabled>false</enabled>
