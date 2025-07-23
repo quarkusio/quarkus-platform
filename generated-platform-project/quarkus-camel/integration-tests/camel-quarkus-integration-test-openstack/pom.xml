@@ -3,7 +3,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-camel-integration-tests-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.15.6</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>camel-quarkus-integration-test-openstack</artifactId>
