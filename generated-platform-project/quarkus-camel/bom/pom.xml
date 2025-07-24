@@ -720,12 +720,12 @@
       <dependency>
         <groupId>dev.langchain4j</groupId>
         <artifactId>langchain4j-core</artifactId>
-        <version>1.0.0-alpha1</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>dev.langchain4j</groupId>
         <artifactId>langchain4j</artifactId>
-        <version>1.0.0-alpha1</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
@@ -1053,12 +1053,12 @@
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-core-deployment</artifactId>
-        <version>0.23.3</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-core</artifactId>
-        <version>0.23.3</version>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.messaginghub</groupId>
