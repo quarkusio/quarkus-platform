@@ -81,7 +81,7 @@
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>2.18.0</quarkus-google-cloud-services.version>
-        <quarkus-vault.version>4.3.0</quarkus-vault.version>
+        <quarkus-vault.version>4.4.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.2.0</quarkus-operator-sdk.version>
         <quarkus-lc4j.version>1.1.0</quarkus-lc4j.version>
 
