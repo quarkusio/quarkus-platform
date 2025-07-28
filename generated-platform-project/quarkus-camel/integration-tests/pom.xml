@@ -56,9 +56,9 @@
     <module>camel-quarkus-integration-test-file</module>
     <module>camel-quarkus-integration-test-flatpack</module>
     <module>camel-quarkus-integration-test-fop</module>
+    <module>camel-quarkus-integration-test-fory</module>
     <module>camel-quarkus-integration-test-freemarker</module>
     <module>camel-quarkus-integration-test-ftp</module>
-    <module>camel-quarkus-integration-test-fury</module>
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
@@ -121,6 +121,7 @@
     <module>camel-quarkus-integration-test-leveldb</module>
     <module>camel-quarkus-integration-test-lra</module>
     <module>camel-quarkus-integration-test-lumberjack</module>
+    <module>camel-quarkus-integration-test-mail-microsoft-oauth</module>
     <module>camel-quarkus-integration-test-mail</module>
     <module>camel-quarkus-integration-test-main-collector</module>
     <module>camel-quarkus-integration-test-main-devmode</module>
@@ -207,6 +208,7 @@
     <module>camel-quarkus-integration-test-vertx</module>
     <module>camel-quarkus-integration-test-wasm</module>
     <module>camel-quarkus-integration-test-weather</module>
+    <module>camel-quarkus-integration-test-weaviate</module>
     <module>camel-quarkus-integration-test-xchange</module>
     <module>camel-quarkus-integration-test-xj</module>
     <module>camel-quarkus-integration-test-xml-grouped</module>
