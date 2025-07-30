@@ -14,12 +14,12 @@
     <dependency>
       <groupId>io.quarkiverse.langchain4j</groupId>
       <artifactId>quarkus-langchain4j-integration-test-rag-pgvector-flyway</artifactId>
-      <version>${quarkus-lc4j.version}</version>
+      <version>${quarkus-langchain4j.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkiverse.langchain4j</groupId>
       <artifactId>quarkus-langchain4j-integration-test-rag-pgvector-flyway</artifactId>
-      <version>${quarkus-lc4j.version}</version>
+      <version>${quarkus-langchain4j.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -144,7 +144,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag-pgvector-flyway:${quarkus-lc4j.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag-pgvector-flyway:${quarkus-langchain4j.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

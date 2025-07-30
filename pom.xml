@@ -83,7 +83,7 @@
         <quarkus-google-cloud-services.version>2.18.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>4.4.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.2.0</quarkus-operator-sdk.version>
-        <quarkus-lc4j.version>1.1.0</quarkus-lc4j.version>
+        <quarkus-langchain4j.version>1.1.0</quarkus-langchain4j.version>
 
         <quarkus-platform-bom-generator.version>0.0.122</quarkus-platform-bom-generator.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
@@ -571,94 +571,94 @@
                                 </member>
                                 <member>
                                     <name>LangChain4j</name>
-                                    <bom>io.quarkiverse.langchain4j:quarkus-langchain4j-bom:${quarkus-lc4j.version}</bom>
+                                    <bom>io.quarkiverse.langchain4j:quarkus-langchain4j-bom:${quarkus-langchain4j.version}</bom>
                                     <release>
                                         <next>${platform.groupId}:quarkus-langchain4j-bom:${platform.version}</next>
                                     </release>
                                     <tests>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-ai-gemini:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-ai-gemini:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-anthropic:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-anthropic:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-azure-openai:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-azure-openai:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-devui-multiple-embedding-models:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-devui-multiple-embedding-models:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-devui:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-devui:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-easy-rag:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-easy-rag:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-hugging-face:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-hugging-face:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-all-minilm-l6-v2-q:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-all-minilm-l6-v2-q:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-all-minilm-l6-v2:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-all-minilm-l6-v2:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en-q:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en-q:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en-v15-q:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en-v15-q:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en-v15:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en-v15:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-bge-small-en:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-e5-small-v2-q:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-e5-small-v2-q:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-e5-small-v2:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-e5-small-v2:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-jlama:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-jlama:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-llama3-java:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-llama3-java:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-mcp:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-mcp:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-mistralai:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-mistralai:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-tests-multiple-providers:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-tests-multiple-providers:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-ollama:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-ollama:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-openai:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-openai:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag-pgvector-flyway:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag-pgvector-flyway:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag-pgvector:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag-pgvector:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-rag:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-simple-ollama:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-simple-ollama:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-tools:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-tools:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                         <test>
-                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-vertex-ai-gemini:${quarkus-lc4j.version}</artifact>
+                                            <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-vertex-ai-gemini:${quarkus-langchain4j.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
