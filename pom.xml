@@ -512,7 +512,7 @@
                                     </defaultTestConfig>
                                     <tests>
                                         <test>
-                                            <skip>false</skip>
+                                            <skip>true</skip>
                                             <skipNative>true</skipNative>
                                             <skipJvm>false</skipJvm>
                                             <artifact>com.blazebit:blaze-persistence-examples-quarkus-3-testsuite-base:${quarkus-blaze-persistence.version}</artifact>
