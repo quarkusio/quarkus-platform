@@ -58,7 +58,7 @@
         <quarkus.version>3.25.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.24.0</camel-quarkus.version>
+        <camel-quarkus.version>3.25.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -422,9 +422,8 @@
                                         </test>
                                         <test>
                                             <!-- Flaky foundation tests https://github.com/apache/camel-quarkus/issues/5679 -->
-                                            <!-- Workaround failing CoreTest.classpathPackageScan https://github.com/apache/camel-quarkus/issues/7312 -->
-                                            <jvmExcludes>**/EipTest*,**/CoreTest*</jvmExcludes>
-                                            <nativeExcludes>**/EipTest*,**/CoreTest*</nativeExcludes>
+                                            <jvmExcludes>**/EipTest*</jvmExcludes>
+                                            <nativeExcludes>**/EipTest*</nativeExcludes>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-foundation-grouped:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                         <test>
