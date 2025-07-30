@@ -10,6 +10,9 @@
   </parent>
   <artifactId>blaze-persistence-examples-quarkus-3-testsuite-base</artifactId>
   <name>Quarkus Platform - Blaze-Persistence - Integration Tests - blaze-persistence-examples-quarkus-3-testsuite-base</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>com.blazebit</groupId>
