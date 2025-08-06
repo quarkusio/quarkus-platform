@@ -5,6 +5,10 @@ on:
     - cron: '0 4 * * *'
   workflow_dispatch:
 
+defaults:
+  run:
+    shell: bash
+
 env:
   LANG: en_US.UTF-8
 jobs:
@@ -28,11 +32,14 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+      - name: Get SHA
+        id: quarkus-platform-sha
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
       - name: Get Date
         id: get-date
         run: |
           echo "date=$(/bin/date -u "+%Y-%m")" >> $GITHUB_OUTPUT
-        shell: bash
       - name: Cache Maven Repository
         id: cache-maven
         uses: actions/cache@v4
@@ -65,3 +72,4 @@ jobs:
           status: ${{ job.status }}
           issue-repository: quarkusio/quarkus
           issue-number: 35716
+          project-sha: ${{ steps.quarkus-platform-sha.outputs.sha }}
