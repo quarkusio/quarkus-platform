@@ -1,34 +1,34 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.25.0" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.25.1" ],
     "project" : {
-      "default-codestart" : "rest",
       "codestart-data" : {
-        "tooling-dockerfiles.dockerfile.jvm.from-template" : "registry.access.redhat.com/ubi9/openjdk-{java.version}:1.21",
         "tooling-dockerfiles.dockerfile.jvm.from" : "registry.access.redhat.com/ubi9/openjdk-21:1.21",
-        "tooling-dockerfiles.dockerfile.native.from" : "registry.access.redhat.com/ubi9/ubi-minimal:9.5",
-        "tooling-dockerfiles.dockerfile.native-micro.from" : "quay.io/quarkus/ubi9-quarkus-micro-image:2.0"
+        "tooling-dockerfiles.dockerfile.jvm.from-template" : "registry.access.redhat.com/ubi9/openjdk-{java.version}:1.21",
+        "tooling-dockerfiles.dockerfile.native-micro.from" : "quay.io/quarkus/ubi9-quarkus-micro-image:2.0",
+        "tooling-dockerfiles.dockerfile.native.from" : "registry.access.redhat.com/ubi9/ubi-minimal:9.5"
       },
+      "default-codestart" : "rest",
       "properties" : {
-        "doc-root" : "https://quarkus.io",
-        "rest-assured-version" : "5.5.5",
         "compiler-plugin-version" : "3.14.0",
-        "surefire-plugin-version" : "3.5.3",
-        "kotlin-version" : "2.2.0",
-        "scala-version" : "2.13.12",
-        "scala-plugin-version" : "4.9.5",
-        "quarkus-core-version" : "3.25.0",
-        "maven-plugin-groupId" : "${project.groupId}",
-        "maven-plugin-artifactId" : "quarkus-maven-plugin",
-        "maven-plugin-version" : "${project.version}",
+        "doc-root" : "https://quarkus.io",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.25.0",
-        "supported-maven-versions" : "[3.8.6,)",
-        "proposed-maven-version" : "3.9.9",
-        "maven-wrapper-version" : "3.3.2",
+        "gradle-plugin-version" : "3.25.1",
         "gradle-wrapper-version" : "8.14",
+        "kotlin-version" : "2.2.0",
+        "maven-plugin-artifactId" : "quarkus-maven-plugin",
+        "maven-plugin-groupId" : "${project.groupId}",
+        "maven-plugin-version" : "${project.version}",
+        "maven-wrapper-version" : "3.3.2",
         "minimum-java-version" : "17",
-        "recommended-java-version" : "21"
+        "proposed-maven-version" : "3.9.9",
+        "quarkus-core-version" : "3.25.1",
+        "recommended-java-version" : "21",
+        "rest-assured-version" : "5.5.5",
+        "scala-plugin-version" : "4.9.5",
+        "scala-version" : "2.13.12",
+        "supported-maven-versions" : "[3.8.6,)",
+        "surefire-plugin-version" : "3.5.3"
       }
     },
     "last-bom-update" : "${member.last-bom-update}"
