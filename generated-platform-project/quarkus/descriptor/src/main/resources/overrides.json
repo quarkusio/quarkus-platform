@@ -1,6 +1,6 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.25.1" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.25.2" ],
     "project" : {
       "codestart-data" : {
         "tooling-dockerfiles.dockerfile.jvm.from" : "registry.access.redhat.com/ubi9/openjdk-21:1.21",
@@ -13,7 +13,7 @@
         "compiler-plugin-version" : "3.14.0",
         "doc-root" : "https://quarkus.io",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.25.1",
+        "gradle-plugin-version" : "3.25.2",
         "gradle-wrapper-version" : "8.14",
         "kotlin-version" : "2.2.0",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
@@ -22,7 +22,7 @@
         "maven-wrapper-version" : "3.3.2",
         "minimum-java-version" : "17",
         "proposed-maven-version" : "3.9.9",
-        "quarkus-core-version" : "3.25.1",
+        "quarkus-core-version" : "3.25.2",
         "recommended-java-version" : "21",
         "rest-assured-version" : "5.5.5",
         "scala-plugin-version" : "4.9.5",
