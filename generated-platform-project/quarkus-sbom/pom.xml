@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-parent</artifactId>
-    <version>999-SNAPSHOT</version>
+    <version>3.25.2</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-sbom</artifactId>
