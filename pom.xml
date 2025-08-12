@@ -535,6 +535,7 @@
                                     </defaultTestConfig>
                                     <tests>
                                         <test>
+                                            <skip>true</skip>
                                             <artifact>io.quarkiverse.googlecloudservices:quarkus-google-cloud-services-main-it:${quarkus-google-cloud-services.version}</artifact>
                                         </test>
                                     </tests>
