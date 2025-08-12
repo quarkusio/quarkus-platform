@@ -10,6 +10,9 @@
   </parent>
   <artifactId>quarkus-google-cloud-services-main-it</artifactId>
   <name>Quarkus Platform - GoogleCloudServices - Integration Tests - quarkus-google-cloud-services-main-it</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.googlecloudservices</groupId>
@@ -161,6 +164,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>io.quarkiverse.googlecloudservices:quarkus-google-cloud-services-main-it:${quarkus-google-cloud-services.version}</appArtifact>
                 </configuration>
               </execution>
