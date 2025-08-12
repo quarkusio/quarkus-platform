@@ -52,7 +52,7 @@ jobs:
       matrix:
         java: [ 17 ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Reclaim Disk Space
         run: .github/ci-prerequisites.sh
       - name: Get Date
@@ -90,7 +90,7 @@ jobs:
     name: Check generated project has been updated
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Get Date
         id: get-date
