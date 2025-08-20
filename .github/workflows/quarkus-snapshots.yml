@@ -50,14 +50,17 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-ecosystem-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-ecosystem-main-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
-            ${{ runner.os }}-ecosystem-
+            ${{ runner.os }}-ecosystem-main
 
       - name: Setup and Run Tests
         run: ./ecosystem-ci/setup-and-test
         env:
           ECOSYSTEM_CI_TOKEN: ${{ secrets.ECOSYSTEM_CI_TOKEN }}
+
+      - name: Delete snapshots artifacts from cache
+        run: find ~/.m2 -name \*-SNAPSHOT -type d -exec rm -rf {} +
 
   lts:
     name: "Build ${{ matrix.version }} against Quarkus latest ${{ matrix.version }}"
@@ -93,12 +96,15 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-ecosystem-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-ecosystem-${{ matrix.version }}-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
-            ${{ runner.os }}-ecosystem-
+            ${{ runner.os }}-ecosystem-${{ matrix.version }}
 
       - name: Setup and Run Tests
         run: ./ecosystem-ci/setup-and-test
         env:
           ECOSYSTEM_CI_TOKEN: ${{ secrets.ECOSYSTEM_CI_TOKEN }}
           ALTERNATIVE: '${{ matrix.version }}'
+
+      - name: Delete snapshots artifacts from cache
+        run: find ~/.m2 -name \*-SNAPSHOT -type d -exec rm -rf {} +
