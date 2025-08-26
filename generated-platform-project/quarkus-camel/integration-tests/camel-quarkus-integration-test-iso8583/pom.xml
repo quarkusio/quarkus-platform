@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-core-discovery-disabled</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-core-discovery-disabled</name>
+  <artifactId>camel-quarkus-integration-test-iso8583</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-iso8583</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-core-discovery-disabled</artifactId>
+      <artifactId>camel-quarkus-integration-test-iso8583</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-core-discovery-disabled</artifactId>
+      <artifactId>camel-quarkus-integration-test-iso8583</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -54,12 +54,6 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.27.3</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -89,7 +83,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-core-discovery-disabled</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-iso8583</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -122,7 +116,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-core-discovery-disabled</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-iso8583</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -137,7 +131,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-core-discovery-disabled:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-iso8583:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

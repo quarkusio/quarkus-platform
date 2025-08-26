@@ -15,7 +15,6 @@
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-debezium-grouped</module>
     <module>camel-quarkus-integration-test-kudu</module>
-    <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
@@ -36,7 +35,6 @@
     <module>camel-quarkus-integration-test-cbor</module>
     <module>camel-quarkus-integration-test-compression-grouped</module>
     <module>camel-quarkus-integration-test-consul</module>
-    <module>camel-quarkus-integration-test-core-discovery-disabled</module>
     <module>camel-quarkus-integration-test-couchdb</module>
     <module>camel-quarkus-integration-test-crypto-pgp</module>
     <module>camel-quarkus-integration-test-crypto</module>
@@ -57,6 +55,7 @@
     <module>camel-quarkus-integration-test-flatpack</module>
     <module>camel-quarkus-integration-test-fop</module>
     <module>camel-quarkus-integration-test-fory</module>
+    <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
     <module>camel-quarkus-integration-test-ftp</module>
     <module>camel-quarkus-integration-test-geocoder</module>
@@ -80,6 +79,7 @@
     <module>camel-quarkus-integration-test-infinispan-quarkus-client</module>
     <module>camel-quarkus-integration-test-infinispan</module>
     <module>camel-quarkus-integration-test-influxdb</module>
+    <module>camel-quarkus-integration-test-iso8583</module>
     <module>camel-quarkus-integration-test-jackson-avro</module>
     <module>camel-quarkus-integration-test-jackson-protobuf</module>
     <module>camel-quarkus-integration-test-jasypt</module>
@@ -123,9 +123,6 @@
     <module>camel-quarkus-integration-test-lumberjack</module>
     <module>camel-quarkus-integration-test-mail-microsoft-oauth</module>
     <module>camel-quarkus-integration-test-mail</module>
-    <module>camel-quarkus-integration-test-main-collector</module>
-    <module>camel-quarkus-integration-test-main-devmode</module>
-    <module>camel-quarkus-integration-test-main-discovery-disabled</module>
     <module>camel-quarkus-integration-test-main-xml-io</module>
     <module>camel-quarkus-integration-test-main-xml-jaxb</module>
     <module>camel-quarkus-integration-test-main-yaml</module>
