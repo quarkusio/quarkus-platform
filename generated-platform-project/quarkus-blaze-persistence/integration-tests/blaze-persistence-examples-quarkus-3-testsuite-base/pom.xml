@@ -10,9 +10,6 @@
   </parent>
   <artifactId>blaze-persistence-examples-quarkus-3-testsuite-base</artifactId>
   <name>Quarkus Platform - Blaze-Persistence - Integration Tests - blaze-persistence-examples-quarkus-3-testsuite-base</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>com.blazebit</groupId>
@@ -44,6 +41,11 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.blazebit</groupId>
+      <artifactId>blaze-persistence-integration-hibernate-7.1</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
