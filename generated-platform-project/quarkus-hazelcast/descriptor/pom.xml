@@ -4,20 +4,20 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-cxf-parent</artifactId>
+    <artifactId>quarkus-hazelcast-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-bom-quarkus-platform-descriptor</artifactId>
+  <artifactId>quarkus-hazelcast-client-quarkus-platform-descriptor</artifactId>
   <packaging>pom</packaging>
-  <name>Quarkus Platform - CXF - Quarkus Platform Descriptor</name>
+  <name>Quarkus Platform - Hazelcast - Quarkus Platform Descriptor</name>
   <properties>
-    <member.last-bom-update>io.quarkus.platform:quarkus-cxf-bom:3.26.1</member.last-bom-update>
+    <member.last-bom-update>io.quarkus.platform:quarkus-hazelcast-client:2.8.0.CR1</member.last-bom-update>
   </properties>
   <dependencies>
     <dependency>
       <groupId>io.quarkus.platform</groupId>
-      <artifactId>quarkus-cxf-bom</artifactId>
+      <artifactId>quarkus-hazelcast-client</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
     </dependency>
@@ -53,7 +53,7 @@
           </execution>
         </executions>
         <configuration>
-          <bomArtifactId>quarkus-cxf-bom</bomArtifactId>
+          <bomArtifactId>quarkus-hazelcast-client</bomArtifactId>
           <quarkusCoreVersion>${quarkus.version}</quarkusCoreVersion>
           <platformRelease>
             <platformKey>${platform.key}</platformKey>
@@ -75,7 +75,7 @@
             </members>
           </platformRelease>
           <processGroupIds>
-            <groupId>io.quarkiverse.cxf</groupId>
+            <groupId>com.hazelcast</groupId>
           </processGroupIds>
           <ignoredArtifacts>
             <artifact>io.quarkus:quarkus-amazon-common</artifact>
