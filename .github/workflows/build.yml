@@ -121,7 +121,7 @@ jobs:
           git --no-pager diff
 
       - name: Check that generated project is properly updated
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         if: ${{ steps.get-changes.outputs.changes > 0 }}
         with:
           script: |
