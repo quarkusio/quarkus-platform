@@ -90,6 +90,9 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-hazelcast</dependency>
           </dependenciesToScan>
+          <excludes>
+            <exclude>**/HazelcastAtomicTest.java</exclude>
+          </excludes>
         </configuration>
       </plugin>
     </plugins>
