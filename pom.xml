@@ -435,6 +435,10 @@
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-hazelcast-client:2.8.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-hazelcast-client:${platform.version}</next>
                                     </release>
+                                    <defaultTestConfig>
+                                        <skip>false</skip>
+                                        <transformWith>${resourcesdir}/xslt/hazelcast-test-pom.xsl</transformWith>
+                                    </defaultTestConfig>
                                     <tests>
                                         <test>
                                             <artifact>com.hazelcast:quarkus-hazelcast-client-integration-tests:${quarkus-hazelcast-client.version}</artifact>
