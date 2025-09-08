@@ -9567,6 +9567,61 @@
         <version>1.1.3</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-cli-adapter-deployment</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-cli-adapter</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-core-deployment</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-core</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-sse-client</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-sse-deployment</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-sse</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-stdio-deployment</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-stdio</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-test</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-stdio-sse-proxy</artifactId>
+        <version>1.5.3</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.messaginghub</groupId>
         <artifactId>quarkus-pooled-jms-deployment</artifactId>
         <version>2.8.0</version>
