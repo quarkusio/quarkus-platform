@@ -25,6 +25,7 @@
     <module>quarkus-google-cloud-services</module>
     <module>quarkus-operator-sdk</module>
     <module>quarkus-langchain4j</module>
+    <module>quarkus-mcp-server</module>
     <module>quarkus-dependencies-to-build</module>
     <module>quarkus-sbom</module>
     <module>quarkus-extension-changes</module>
