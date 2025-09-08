@@ -9567,6 +9567,16 @@
         <version>1.1.3</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-sse</artifactId>
+        <version>1.5.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-stdio</artifactId>
+        <version>1.5.0</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.messaginghub</groupId>
         <artifactId>quarkus-pooled-jms-deployment</artifactId>
         <version>2.8.0</version>

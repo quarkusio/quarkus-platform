@@ -2835,6 +2835,16 @@
         <version>2.2.2</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-sse</artifactId>
+        <version>1.5.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-stdio</artifactId>
+        <version>1.5.0</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
         <artifactId>quarkus-qute-web-deployment</artifactId>
         <version>3.4.4</version>
