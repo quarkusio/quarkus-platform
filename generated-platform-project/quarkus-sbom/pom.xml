@@ -54,7 +54,7 @@
         </property>
       </activation>
       <build>
-        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-cassandra-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-cxf-bom quarkus-platform-bom:dependencies-to-build@quarkus-camel-bom quarkus-platform-bom:dependencies-to-build@quarkus-hazelcast-client quarkus-platform-bom:dependencies-to-build@quarkus-debezium-bom quarkus-platform-bom:dependencies-to-build@quarkus-blaze-persistence-bom quarkus-platform-bom:dependencies-to-build@quarkus-google-cloud-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-operator-sdk-bom quarkus-platform-bom:dependencies-to-build@quarkus-langchain4j-bom </defaultGoal>
+        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-cassandra-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-cxf-bom quarkus-platform-bom:dependencies-to-build@quarkus-camel-bom quarkus-platform-bom:dependencies-to-build@quarkus-hazelcast-client quarkus-platform-bom:dependencies-to-build@quarkus-debezium-bom quarkus-platform-bom:dependencies-to-build@quarkus-blaze-persistence-bom quarkus-platform-bom:dependencies-to-build@quarkus-google-cloud-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-operator-sdk-bom quarkus-platform-bom:dependencies-to-build@quarkus-langchain4j-bom quarkus-platform-bom:dependencies-to-build@quarkus-mcp-server-bom </defaultGoal>
         <pluginManagement>
           <plugins>
             <plugin>
@@ -202,6 +202,18 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-langchain4j-bom:${project.version}</bom>
                     <outputFile>../../target/sbom/quarkus-langchain4j-bom-sbom.json</outputFile>
+                    <dependenciesToBuild combine.self="override" />
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-mcp-server-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-mcp-server-bom:${project.version}</bom>
+                    <outputFile>../../target/sbom/quarkus-mcp-server-bom-sbom.json</outputFile>
                     <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
