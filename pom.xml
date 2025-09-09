@@ -84,6 +84,7 @@
         <quarkus-vault.version>4.4.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.2.0</quarkus-operator-sdk.version>
         <quarkus-langchain4j.version>1.1.3</quarkus-langchain4j.version>
+        <quarkus-mcp-server.version>1.5.3</quarkus-mcp-server.version>
 
         <quarkus-platform-bom-generator.version>0.0.122</quarkus-platform-bom-generator.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
@@ -657,6 +658,28 @@
                                         </test>
                                         <test>
                                             <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-vertex-ai-gemini:${quarkus-langchain4j.version}</artifact>
+                                        </test>
+                                    </tests>
+                                </member>
+                                <member>
+                                    <name>MCPServer</name>
+                                    <bom>io.quarkiverse.mcp:quarkus-mcp-server-bom:${quarkus-mcp-server.version}</bom>
+                                    <ownGroupIds>
+                                        <ownGroupId>io.quarkiverse.mcp</ownGroupId>
+                                    </ownGroupIds>
+                                    <release>
+                                        <next>${platform.groupId}:quarkus-mcp-server-bom:${platform.version}</next>
+                                    </release>
+                                    <defaultTestConfig>
+                                        <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                        <packageApplication>true</packageApplication>
+                                    </defaultTestConfig>
+                                    <tests>
+                                        <test>
+                                            <artifact>io.quarkiverse.mcp:quarkus-mcp-server-sse-integration-tests:${quarkus-mcp-server.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <artifact>io.quarkiverse.mcp:quarkus-mcp-server-stdio-integration-tests:${quarkus-mcp-server.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
