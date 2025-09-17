@@ -1082,7 +1082,7 @@
       <dependency>
         <groupId>io.smallrye</groupId>
         <artifactId>smallrye-fault-tolerance-standalone</artifactId>
-        <version>6.9.2</version>
+        <version>6.9.3</version>
       </dependency>
       <dependency>
         <groupId>io.swagger.codegen.v3</groupId>
@@ -8452,12 +8452,12 @@
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-scripting-compiler-embeddable</artifactId>
-        <version>2.2.10</version>
+        <version>2.2.20</version>
       </dependency>
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-scripting-compiler-impl-embeddable</artifactId>
-        <version>2.2.10</version>
+        <version>2.2.20</version>
       </dependency>
       <dependency>
         <groupId>org.jetbrains.kotlinx</groupId>
