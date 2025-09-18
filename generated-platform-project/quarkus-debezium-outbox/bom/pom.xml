@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkus.platform</groupId>
-  <artifactId>quarkus-debezium-bom</artifactId>
+  <artifactId>quarkus-debezium-outbox-bom</artifactId>
   <version>999-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Debezium-Outbox - Quarkus Platform BOM</name>
@@ -49,14 +49,14 @@
     <dependencies>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
-        <artifactId>quarkus-debezium-bom-quarkus-platform-descriptor</artifactId>
+        <artifactId>quarkus-debezium-outbox-bom-quarkus-platform-descriptor</artifactId>
         <version>999-SNAPSHOT</version>
         <type>json</type>
         <classifier>999-SNAPSHOT</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
-        <artifactId>quarkus-debezium-bom-quarkus-platform-properties</artifactId>
+        <artifactId>quarkus-debezium-outbox-bom-quarkus-platform-properties</artifactId>
         <version>999-SNAPSHOT</version>
         <type>properties</type>
       </dependency>
