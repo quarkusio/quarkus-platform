@@ -488,6 +488,50 @@
                                     </tests>
                                 </member>
                                 <member>
+                                    <name>Debezium-Quarkus</name>
+                                    <ownGroupIds>
+                                        <groupId>io.debezium.quarkus</groupId>
+                                    </ownGroupIds>
+                                    <dependencyManagement>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-parent:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-parent:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-deployment:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-runtime:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-spi-parent:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-deployment-spi:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-runtime-spi:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-parent:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-deployment:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-runtime:${debezium-quarkus.version}</dependency>
+
+                                        <dependency>io.debezium:debezium-api:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-cassandra:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-db2:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-ibmi:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-informix:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-mongodb:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-mysql:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-oracle:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-postgres:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-sqlserver:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-vitess:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-core:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-ddl-parser:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-embedded:${debezium-quarkus.version}</dependency>
+                                        <dependency>io.debezium:debezium-scripting:${debezium-quarkus.version}</dependency>
+                                    </dependencyManagement>
+                                    <release>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.28.0.CR1</lastDetectedBomUpdate>
+                                        <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
+                                    </release>
+                                    <tests>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests:${debezium-quarkus.version}</artifact>
+                                        </test>
+                                    </tests>
+                                </member>
+                                <member>
                                     <name>Blaze-Persistence</name>
                                     <dependencyManagement>
                                         <dependency>com.blazebit:blaze-persistence-integration-quarkus-3:${quarkus-blaze-persistence.version}</dependency>
