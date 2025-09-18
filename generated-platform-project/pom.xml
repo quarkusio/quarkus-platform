@@ -21,6 +21,7 @@
     <module>quarkus-camel</module>
     <module>quarkus-hazelcast</module>
     <module>quarkus-debezium-outbox</module>
+    <module>quarkus-debezium</module>
     <module>quarkus-blaze-persistence</module>
     <module>quarkus-google-cloud-services</module>
     <module>quarkus-operator-sdk</module>
