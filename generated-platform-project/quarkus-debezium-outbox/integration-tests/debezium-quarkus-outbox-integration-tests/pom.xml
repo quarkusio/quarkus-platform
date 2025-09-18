@@ -4,24 +4,24 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-debezium-integration-tests-parent</artifactId>
+    <artifactId>quarkus-debezium-outbox-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>debezium-quarkus-outbox-reactive-integration-tests</artifactId>
-  <name>Quarkus Platform - Debezium-Outbox - Integration Tests - debezium-quarkus-outbox-reactive-integration-tests</name>
+  <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
+  <name>Quarkus Platform - Debezium-Outbox - Integration Tests - debezium-quarkus-outbox-integration-tests</name>
   <properties>
     <maven.test.skip>true</maven.test.skip>
   </properties>
   <dependencies>
     <dependency>
       <groupId>io.debezium</groupId>
-      <artifactId>debezium-quarkus-outbox-reactive-integration-tests</artifactId>
+      <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
       <version>${debezium-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>io.debezium</groupId>
-      <artifactId>debezium-quarkus-outbox-reactive-integration-tests</artifactId>
+      <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
       <version>${debezium-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -48,22 +48,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5-mockito</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-test-vertx</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.23.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
       <scope>test</scope>
@@ -81,7 +65,7 @@
     </dependency>
     <dependency>
       <groupId>io.debezium</groupId>
-      <artifactId>debezium-quarkus-outbox-reactive-deployment</artifactId>
+      <artifactId>debezium-quarkus-outbox-deployment</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -113,7 +97,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.debezium:debezium-quarkus-outbox-reactive-integration-tests</dependency>
+            <dependency>io.debezium:debezium-quarkus-outbox-integration-tests</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -146,7 +130,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.debezium:debezium-quarkus-outbox-reactive-integration-tests</dependency>
+                <dependency>io.debezium:debezium-quarkus-outbox-integration-tests</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -162,7 +146,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${debezium-quarkus.version}</appArtifact>
+                  <appArtifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

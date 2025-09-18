@@ -4,18 +4,18 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-debezium-parent</artifactId>
+    <artifactId>quarkus-debezium-outbox-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-debezium-bom-quarkus-platform-properties</artifactId>
+  <artifactId>quarkus-debezium-outbox-bom-quarkus-platform-properties</artifactId>
   <packaging>pom</packaging>
   <name>Quarkus Platform - Debezium-Outbox - Quarkus Platform Properties</name>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
-        <artifactId>quarkus-debezium-bom</artifactId>
+        <artifactId>quarkus-debezium-outbox-bom</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>

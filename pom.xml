@@ -473,8 +473,8 @@
                                         <dependency>io.debezium:debezium-scripting:${debezium-quarkus.version}</dependency>
                                     </dependencyManagement>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.28.0.CR1</lastDetectedBomUpdate>
-                                        <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-outbox-bom:3.28.0.CR1</lastDetectedBomUpdate>
+                                        <next>${platform.groupId}:quarkus-debezium-outbox-bom:${platform.version}</next>
                                     </release>
                                     <tests>
                                         <test>
