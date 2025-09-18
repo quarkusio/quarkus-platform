@@ -17,12 +17,12 @@
     <dependency>
       <groupId>io.debezium</groupId>
       <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-      <version>${debezium-quarkus-outbox.version}</version>
+      <version>${debezium-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>io.debezium</groupId>
       <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-      <version>${debezium-quarkus-outbox.version}</version>
+      <version>${debezium-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -146,7 +146,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</appArtifact>
+                  <appArtifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
