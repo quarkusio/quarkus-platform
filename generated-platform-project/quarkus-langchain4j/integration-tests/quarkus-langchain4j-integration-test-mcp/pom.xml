@@ -67,6 +67,17 @@
       <artifactId>quarkus-devtools-testing</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.langchain4j</groupId>
+      <artifactId>quarkus-langchain4j-openai</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.smallrye.certs</groupId>
+      <artifactId>smallrye-certificate-generator-junit5</artifactId>
+      <version>0.9.2</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
