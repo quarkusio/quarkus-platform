@@ -83,7 +83,7 @@
         <quarkus-google-cloud-services.version>2.18.0</quarkus-google-cloud-services.version>
         <quarkus-vault.version>4.4.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.2.0</quarkus-operator-sdk.version>
-        <quarkus-langchain4j.version>1.1.3</quarkus-langchain4j.version>
+        <quarkus-langchain4j.version>1.2.0</quarkus-langchain4j.version>
         <quarkus-mcp-server.version>1.5.3</quarkus-mcp-server.version>
 
         <quarkus-platform-bom-generator.version>0.0.122</quarkus-platform-bom-generator.version>
