@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-langchain4j</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-langchain4j</name>
+  <artifactId>camel-quarkus-integration-test-langchain4j-agent</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-langchain4j-agent</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-langchain4j</artifactId>
+      <artifactId>camel-quarkus-integration-test-langchain4j-agent</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-langchain4j</artifactId>
+      <artifactId>camel-quarkus-integration-test-langchain4j-agent</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -54,6 +54,12 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-wiremock-support</artifactId>
+      <version>${camel-quarkus.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
@@ -83,7 +89,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-agent</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -116,7 +122,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-agent</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -131,7 +137,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-agent:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
