@@ -112,11 +112,11 @@
     <module>camel-quarkus-integration-test-kamelet</module>
     <module>camel-quarkus-integration-test-knative</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
+    <module>camel-quarkus-integration-test-langchain4j-agent</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
     <module>camel-quarkus-integration-test-langchain4j-tokenizer</module>
     <module>camel-quarkus-integration-test-langchain4j-tools</module>
     <module>camel-quarkus-integration-test-langchain4j-web-search</module>
-    <module>camel-quarkus-integration-test-langchain4j</module>
     <module>camel-quarkus-integration-test-ldap</module>
     <module>camel-quarkus-integration-test-leveldb</module>
     <module>camel-quarkus-integration-test-lra</module>

@@ -58,7 +58,7 @@
         <quarkus.version>3.27.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.26.0</camel-quarkus.version>
+        <camel-quarkus.version>3.27.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>3.9.1</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.26.1</quarkus-cxf.version>
+        <quarkus-cxf.version>3.27.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.10.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
