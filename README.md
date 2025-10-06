@@ -123,7 +123,7 @@ The platform project will typically be generated on every build anyway. But this
 
 `mvn verify -Dnative` launched from the root platform project directory will (re-)generate the `generated-platform-project` and execute all the JVM and native tests of all the members.
 
-Once the platform project has been generated and installed in the local Maven repository, platform contibutors can analyze the artifacts generated for their extensions and run their testsuite in isolation from the rest of the platform testsuite
+Once the platform project has been generated and installed in the local Maven repository, platform contributors can analyze the artifacts generated for their extensions and run their testsuite in isolation from the rest of the platform testsuite
 by navigating to the desired test module and using `mvn` commands they typically would use to run their extension tests.
 
 ## Platform configuration
@@ -137,7 +137,7 @@ The platform release configuration is expressed under the `release` element, e.g
   <platformConfig>
     <!-- the platform release info -->
     <release>
-      <!-- the platform (dev stack) key (if not specified, defaults to the root project's groudId) -->
+      <!-- the platform (dev stack) key (if not specified, defaults to the root project's groupId) -->
       <platformKey>${project.groupId}</platformKey>
       <!-- platform stream id, representing the flow of backward compatible releases
            (if not specified, defaults to the project's major.minor platform version) -->
@@ -223,7 +223,7 @@ Platform members are configured under the `member` element, e.g.
         </test>
 ...
 ```
-1. Name that is used to refere to the member in the POMs and other generated resources
+1. Name that is used to refer to the member in the POMs and other generated resources
 1. The original member BOM coordinates representing members build and run times classpath constraints
 1. Whether the member actually participates in the platform build or not (if a member is disabled, the rest of its configuration will be ignored)
 1. The coordinates under which the generated member platform BOM should be installed and deployed
@@ -262,9 +262,9 @@ Besides the mentioned about `artifact` and `skip` elements the following test co
     <!-- native test groups (applied only to the native groups and overrides 'groups') -->
     <nativeGroups>native</nativeGroups>
 
-    <!-- Test POM propertuies -->
+    <!-- Test POM properties -->
     <pomProperties>
-      <test.project.prop1>value1</test.propject.prop1>
+      <test.project.prop1>value1</test.project.prop1>
     </pomProperties>
 
     <!-- JVM-only system properties -->
