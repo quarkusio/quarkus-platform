@@ -86,7 +86,7 @@
         <quarkus-langchain4j.version>1.2.0</quarkus-langchain4j.version>
         <quarkus-mcp-server.version>1.6.0</quarkus-mcp-server.version>
 
-        <quarkus-platform-bom-generator.version>0.0.125</quarkus-platform-bom-generator.version>
+        <quarkus-platform-bom-generator.version>0.0.126</quarkus-platform-bom-generator.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
         <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
         <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
