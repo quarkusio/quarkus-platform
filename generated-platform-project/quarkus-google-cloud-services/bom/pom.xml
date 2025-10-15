@@ -1569,7 +1569,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-common-protos</artifactId>
-        <version>2.60.0</version>
+        <version>2.61.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -3089,7 +3089,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-common-protos</artifactId>
-        <version>2.60.0</version>
+        <version>2.61.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -4219,17 +4219,17 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava-gwt</artifactId>
-        <version>33.4.8-jre</version>
+        <version>33.5.0-jre</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava-testlib</artifactId>
-        <version>33.4.8-jre</version>
+        <version>33.5.0-jre</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>33.4.8-jre</version>
+        <version>33.5.0-jre</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
@@ -4309,17 +4309,17 @@
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java-util</artifactId>
-        <version>3.25.5</version>
+        <version>4.32.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
-        <version>3.25.5</version>
+        <version>4.32.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-kotlin</artifactId>
-        <version>3.25.5</version>
+        <version>4.32.1</version>
       </dependency>
       <dependency>
         <groupId>io.grafeas</groupId>
@@ -4329,167 +4329,167 @@
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-all</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-alts</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-android</artifactId>
-        <version>1.69.1</version>
+        <version>1.67.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-api</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-auth</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-benchmarks</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-binder</artifactId>
-        <version>1.69.1</version>
+        <version>1.67.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-census</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-context</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-core</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-cronet</artifactId>
-        <version>1.69.1</version>
+        <version>1.67.1</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-gcp-csm-observability</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-gcp-observability</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-googleapis</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-grpclb</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-inprocess</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-interop-testing</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty-shaded</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-netty</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-okhttp</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-opentelemetry</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf-lite</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-protobuf</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-rls</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-services</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-servlet-jakarta</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-servlet</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-stub</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing-proto</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-util</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-xds</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>protoc-gen-grpc-java</artifactId>
-        <version>1.69.1</version>
+        <version>1.75.0</version>
         <type>pom</type>
       </dependency>
       <dependency>
