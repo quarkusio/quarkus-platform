@@ -63,47 +63,47 @@
       <dependency>
         <groupId>io.javaoperatorsdk</groupId>
         <artifactId>micrometer-support</artifactId>
-        <version>5.1.3</version>
+        <version>5.1.4</version>
       </dependency>
       <dependency>
         <groupId>io.javaoperatorsdk</groupId>
         <artifactId>operator-framework-core</artifactId>
-        <version>5.1.3</version>
+        <version>5.1.4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-annotations</artifactId>
-        <version>7.2.1</version>
+        <version>7.2.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator-deployment</artifactId>
-        <version>7.2.1</version>
+        <version>7.2.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator</artifactId>
-        <version>7.2.1</version>
+        <version>7.2.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common-deployment</artifactId>
-        <version>7.2.1</version>
+        <version>7.2.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common</artifactId>
-        <version>7.2.1</version>
+        <version>7.2.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-deployment</artifactId>
-        <version>7.2.1</version>
+        <version>7.2.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk</artifactId>
-        <version>7.2.1</version>
+        <version>7.2.2</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
