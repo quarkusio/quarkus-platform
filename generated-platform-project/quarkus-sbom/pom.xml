@@ -165,7 +165,7 @@
                   </goals>
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-debezium-bom:${project.version}</bom>
-                    <outputFile>../../target/sbom/quarkus-debezium-bom-sbom.json</outputFile>
+                    <outputFile>../../target/sbom/quarkus-debezium-bom-${platform.stream}.json</outputFile>
                     <dependenciesToBuild combine.self="override" />
                   </configuration>
                 </execution>
