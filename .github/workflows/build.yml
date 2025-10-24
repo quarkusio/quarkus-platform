@@ -39,7 +39,7 @@ jobs:
         run: |
           echo -n ${{ github.event.number }} > pull-request-number
       - name: Upload pull request number
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: pull-request-number-${{ github.event.number }}
           path: pull-request-number
@@ -76,7 +76,7 @@ jobs:
       - name: Delete Local Artifacts From Cache
         run: rm -rf ~/.m2/repository/io/quarkus/quarkus-universe-bom*
       - name: Upload build reports (if build failed)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         if: ${{ always() }}
         with:
           name: "build-reports-${{ github.run_attempt }}-Build - JDK ${{ matrix.java }}"
