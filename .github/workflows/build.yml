@@ -133,7 +133,7 @@ jobs:
     needs: [build, refresh]
     if: always()
     steps:
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v6
         with:
           path: build-reports-artifacts
           pattern: "build-reports-${{ github.run_attempt }}-*"
