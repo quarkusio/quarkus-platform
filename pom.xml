@@ -557,7 +557,7 @@
                                     </defaultTestConfig>
                                     <tests>
                                         <test>
-                                            <artifact>io.quarkiverse.operatorsdk:quarkus-operator-sdk-integration-tests:${quarkus-operator-sdk.version}</artifact>
+                                            <artifact>io.quarkiverse.operatorsdk:quarkus-operator-sdk-integration-tests-basic:${quarkus-operator-sdk.version}</artifact>
                                             <environmentVariables>
                                                 <NAMESPACE_FROM_ENV>fromEnvVarNS</NAMESPACE_FROM_ENV>
                                                 <QUARKUS_OPERATOR_SDK_CONTROLLERS_EMPTY_NAMESPACES>fromEnv1,fromEnv2</QUARKUS_OPERATOR_SDK_CONTROLLERS_EMPTY_NAMESPACES>
