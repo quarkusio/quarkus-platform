@@ -68,6 +68,7 @@
     <module>camel-quarkus-integration-test-google</module>
     <module>camel-quarkus-integration-test-graphql</module>
     <module>camel-quarkus-integration-test-grok</module>
+    <module>camel-quarkus-integration-test-groovy-xml</module>
     <module>camel-quarkus-integration-test-groovy</module>
     <module>camel-quarkus-integration-test-grpc</module>
     <module>camel-quarkus-integration-test-hashicorp-vault</module>
@@ -114,6 +115,8 @@
     <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-langchain4j-agent</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
+    <module>camel-quarkus-integration-test-langchain4j-embeddings</module>
+    <module>camel-quarkus-integration-test-langchain4j-embeddingstore</module>
     <module>camel-quarkus-integration-test-langchain4j-tokenizer</module>
     <module>camel-quarkus-integration-test-langchain4j-tools</module>
     <module>camel-quarkus-integration-test-langchain4j-web-search</module>
@@ -129,6 +132,7 @@
     <module>camel-quarkus-integration-test-main</module>
     <module>camel-quarkus-integration-test-management</module>
     <module>camel-quarkus-integration-test-mapstruct</module>
+    <module>camel-quarkus-integration-test-mdc</module>
     <module>camel-quarkus-integration-test-micrometer</module>
     <module>camel-quarkus-integration-test-microprofile-fault-tolerance</module>
     <module>camel-quarkus-integration-test-microprofile-health</module>
