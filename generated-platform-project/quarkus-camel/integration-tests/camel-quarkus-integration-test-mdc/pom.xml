@@ -2,24 +2,29 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-cxf-integration-tests-parent</artifactId>
+    <artifactId>quarkus-camel-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>quarkus-cxf-integration-test-ws-security</artifactId>
-  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-ws-security</name>
+  <artifactId>camel-quarkus-integration-test-mdc</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-mdc</name>
   <dependencies>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-ws-security</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-mdc</artifactId>
+      <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-integration-test-ws-security</artifactId>
-      <version>${quarkus-cxf.version}</version>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-integration-test-mdc</artifactId>
+      <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -48,39 +53,6 @@
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>testcontainers</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit4-mock</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>${quarkus-cxf.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.27.6</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
@@ -111,7 +83,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mdc</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -144,7 +116,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-mdc</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -159,7 +131,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-ws-security:${quarkus-cxf.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-mdc:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
