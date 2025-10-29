@@ -12,7 +12,7 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - OperatorSDK - Integration Tests - Parent</name>
   <modules>
-    <module>quarkus-operator-sdk-integration-tests</module>
+    <module>quarkus-operator-sdk-integration-tests-basic</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>
