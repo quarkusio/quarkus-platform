@@ -61,6 +61,21 @@
         <type>properties</type>
       </dependency>
       <dependency>
+        <groupId>io.debezium.quarkus</groupId>
+        <artifactId>quarkus-debezium-engine-deployment-spi</artifactId>
+        <version>3.3.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.debezium.quarkus</groupId>
+        <artifactId>quarkus-debezium-engine-deployment</artifactId>
+        <version>3.3.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.debezium.quarkus</groupId>
+        <artifactId>quarkus-debezium-postgres-deployment</artifactId>
+        <version>3.3.1.Final</version>
+      </dependency>
+      <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-api</artifactId>
         <version>3.3.1.Final</version>

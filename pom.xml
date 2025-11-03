@@ -450,6 +450,7 @@
                                     <name>Debezium</name>
                                     <ownGroupIds>
                                         <groupId>io.debezium</groupId>
+                                        <groupId>io.debezium.quarkus</groupId>
                                     </ownGroupIds>
                                     <dependencyManagement>
                                         <!-- Debezium Core -->
@@ -476,6 +477,18 @@
                                         <dependency>io.debezium:debezium-quarkus-outbox-deployment:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-reactive:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-reactive-deployment:${quarkus-debezium.version}</dependency>
+                                        
+                                        <!-- Quarkus DevService / Extension Modules -->
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-runtime:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-spi-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-deployment-spi:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-runtime-spi:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-runtime:${quarkus-debezium.version}</dependency>
                                     </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.28.0.CR1</lastDetectedBomUpdate>
@@ -489,6 +502,10 @@
                                         <test>
                                             <skip>true</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${quarkus-debezium.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
