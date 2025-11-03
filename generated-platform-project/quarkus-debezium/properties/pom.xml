@@ -10,7 +10,7 @@
   </parent>
   <artifactId>quarkus-debezium-bom-quarkus-platform-properties</artifactId>
   <packaging>pom</packaging>
-  <name>Quarkus Platform - Debezium-Outbox - Quarkus Platform Properties</name>
+  <name>Quarkus Platform - Debezium - Quarkus Platform Properties</name>
   <dependencyManagement>
     <dependencies>
       <dependency>

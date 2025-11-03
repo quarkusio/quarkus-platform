@@ -9,7 +9,7 @@
     <relativePath>..</relativePath>
   </parent>
   <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-  <name>Quarkus Platform - Debezium-Outbox - Integration Tests - debezium-quarkus-outbox-integration-tests</name>
+  <name>Quarkus Platform - Debezium - Integration Tests - debezium-quarkus-outbox-integration-tests</name>
   <properties>
     <maven.test.skip>true</maven.test.skip>
   </properties>
@@ -17,12 +17,12 @@
     <dependency>
       <groupId>io.debezium</groupId>
       <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-      <version>${debezium-quarkus-outbox.version}</version>
+      <version>${quarkus-debezium.version}</version>
     </dependency>
     <dependency>
       <groupId>io.debezium</groupId>
       <artifactId>debezium-quarkus-outbox-integration-tests</artifactId>
-      <version>${debezium-quarkus-outbox.version}</version>
+      <version>${quarkus-debezium.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -146,7 +146,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>io.debezium:debezium-quarkus-outbox-integration-tests:${debezium-quarkus-outbox.version}</appArtifact>
+                  <appArtifact>io.debezium:debezium-quarkus-outbox-integration-tests:${quarkus-debezium.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

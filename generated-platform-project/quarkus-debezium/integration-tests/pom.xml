@@ -10,7 +10,7 @@
   </parent>
   <artifactId>quarkus-debezium-integration-tests-parent</artifactId>
   <packaging>pom</packaging>
-  <name>Quarkus Platform - Debezium-Outbox - Integration Tests - Parent</name>
+  <name>Quarkus Platform - Debezium - Integration Tests - Parent</name>
   <modules>
     <module>debezium-quarkus-outbox-integration-tests</module>
     <module>debezium-quarkus-outbox-reactive-integration-tests</module>
