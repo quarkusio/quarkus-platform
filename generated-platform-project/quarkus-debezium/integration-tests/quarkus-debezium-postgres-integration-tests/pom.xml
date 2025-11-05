@@ -8,59 +8,61 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>debezium-quarkus-outbox-reactive-integration-tests</artifactId>
-  <name>Quarkus Platform - Debezium - Integration Tests - debezium-quarkus-outbox-reactive-integration-tests</name>
+  <artifactId>quarkus-debezium-postgres-integration-tests</artifactId>
+  <name>Quarkus Platform - Debezium - Integration Tests - quarkus-debezium-postgres-integration-tests</name>
   <properties>
     <maven.test.skip>true</maven.test.skip>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>io.debezium</groupId>
-      <artifactId>debezium-quarkus-outbox-reactive-integration-tests</artifactId>
+      <groupId>io.debezium.quarkus</groupId>
+      <artifactId>quarkus-debezium-postgres-integration-tests</artifactId>
       <version>${quarkus-debezium.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.debezium</groupId>
-      <artifactId>debezium-quarkus-outbox-reactive-integration-tests</artifactId>
+      <groupId>io.debezium.quarkus</groupId>
+      <artifactId>quarkus-debezium-postgres-integration-tests</artifactId>
       <version>${quarkus-debezium.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-vertx</artifactId>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.activation</groupId>
+          <artifactId>activation</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>javax.activation</groupId>
+          <artifactId>javax.activation-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>jakarta.activation</groupId>
+          <artifactId>jakarta.activation-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.sun.xml.bind</groupId>
+          <artifactId>jaxb-osgi</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-opentelemetry</artifactId>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.27.5</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5-mockito</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-test-vertx</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.23.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -77,11 +79,6 @@
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>postgresql</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.debezium</groupId>
-      <artifactId>debezium-quarkus-outbox-reactive-deployment</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -113,7 +110,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>io.debezium:debezium-quarkus-outbox-reactive-integration-tests</dependency>
+            <dependency>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -146,7 +143,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>io.debezium:debezium-quarkus-outbox-reactive-integration-tests</dependency>
+                <dependency>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -162,7 +159,7 @@
                 </goals>
                 <configuration>
                   <skip>true</skip>
-                  <appArtifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${quarkus-debezium.version}</appArtifact>
+                  <appArtifact>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests:${quarkus-debezium.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
