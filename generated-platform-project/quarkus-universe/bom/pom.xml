@@ -8564,37 +8564,37 @@
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-annotations</artifactId>
-        <version>7.1.4</version>
+        <version>7.1.5</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator-deployment</artifactId>
-        <version>7.1.4</version>
+        <version>7.1.5</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-bundle-generator</artifactId>
-        <version>7.1.4</version>
+        <version>7.1.5</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common-deployment</artifactId>
-        <version>7.1.4</version>
+        <version>7.1.5</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-common</artifactId>
-        <version>7.1.4</version>
+        <version>7.1.5</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk-deployment</artifactId>
-        <version>7.1.4</version>
+        <version>7.1.5</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.operatorsdk</groupId>
         <artifactId>quarkus-operator-sdk</artifactId>
-        <version>7.1.4</version>
+        <version>7.1.5</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
