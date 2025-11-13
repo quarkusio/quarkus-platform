@@ -697,6 +697,7 @@
                                         <mavenFailsafePlugin>true</mavenFailsafePlugin>
                                         <packageApplication>true</packageApplication>
                                     </defaultTestConfig>
+                                    <!-- Pending: https://github.com/quarkiverse/quarkus-mcp-server/issues/491
                                     <tests>
                                         <test>
                                             <artifact>io.quarkiverse.mcp:quarkus-mcp-server-sse-integration-tests:${quarkus-mcp-server.version}</artifact>
@@ -705,6 +706,7 @@
                                             <artifact>io.quarkiverse.mcp:quarkus-mcp-server-stdio-integration-tests:${quarkus-mcp-server.version}</artifact>
                                         </test>
                                     </tests>
+                                    -->
                                 </member>
                             </members>
                             <!-- Platform BOM generator configuration -->
