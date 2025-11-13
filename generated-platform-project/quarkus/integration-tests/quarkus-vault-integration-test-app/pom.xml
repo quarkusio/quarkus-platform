@@ -10,9 +10,6 @@
   </parent>
   <artifactId>quarkus-vault-integration-test-app</artifactId>
   <name>Quarkus Platform - Core - Integration Tests - quarkus-vault-integration-test-app</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.vault</groupId>
@@ -146,7 +143,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>io.quarkiverse.vault:quarkus-vault-integration-test-app:${quarkus-vault.version}</appArtifact>
                 </configuration>
               </execution>
