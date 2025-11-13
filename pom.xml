@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>3.30.0.CR1</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>3.30.0.CR1</tag>
     </scm>
 
     <issueManagement>
@@ -214,7 +214,7 @@
                                     <groupId>io.quarkiverse.qute.web</groupId>
                                 </extensionGroupIds>
                                 <release>
-                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.29.0.CR1</lastDetectedBomUpdate>
+                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
@@ -369,7 +369,7 @@
                                         <groupId>software.amazon.awssdk</groupId>
                                     </ownGroupIds>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-amazon-services-bom:3.26.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-amazon-services-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-amazon-services-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -382,7 +382,7 @@
                                     <name>CXF</name>
                                     <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.29.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -395,7 +395,7 @@
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.29.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -491,7 +491,7 @@
                                         <dependency>io.debezium.quarkus:quarkus-debezium-postgres-runtime:${quarkus-debezium.version}</dependency>
                                     </dependencyManagement>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.28.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -552,7 +552,7 @@
                                     <name>GoogleCloudServices</name>
                                     <bom>io.quarkiverse.googlecloudservices:quarkus-google-cloud-services-bom:${quarkus-google-cloud-services.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-google-cloud-services-bom:3.29.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-google-cloud-services-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-google-cloud-services-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -571,7 +571,7 @@
                                     <enabled>true</enabled>
                                     <bom>io.quarkiverse.operatorsdk:quarkus-operator-sdk-bom:${quarkus-operator-sdk.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-operator-sdk-bom:3.24.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-operator-sdk-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-operator-sdk-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -593,7 +593,7 @@
                                     <name>LangChain4j</name>
                                     <bom>io.quarkiverse.langchain4j:quarkus-langchain4j-bom:${quarkus-langchain4j.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-langchain4j-bom:3.29.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-langchain4j-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-langchain4j-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -690,7 +690,7 @@
                                         <ownGroupId>io.quarkiverse.mcp</ownGroupId>
                                     </ownGroupIds>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-mcp-server-bom:3.29.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-mcp-server-bom:3.30.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-mcp-server-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
