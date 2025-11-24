@@ -82,7 +82,7 @@ jobs:
           name: "build-reports-${{ github.run_attempt }}-Build - JDK ${{ matrix.java }}"
           path: |
             **/target/*-reports/TEST-*.xml
-            target/build-report.json
+            **/target/build-report.json
             LICENSE
           retention-days: 2
 
