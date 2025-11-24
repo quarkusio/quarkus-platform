@@ -58,7 +58,7 @@
         <quarkus.version>3.30.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.29.0</camel-quarkus.version>
+        <camel-quarkus.version>3.30.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -407,15 +407,6 @@
                                         <test><!-- Workaround for weird issue with shared networking & keycloak container -->
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test><!-- Disabled due to https://github.com/apache/camel-quarkus/issues/6517 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium-grouped:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <!-- Workaround flaky Kudu test: https://github.com/apache/camel-quarkus/issues/4259 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
                                         </test>
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4462 -->
                                             <excluded>true</excluded>
