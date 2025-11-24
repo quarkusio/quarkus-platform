@@ -58,7 +58,7 @@
         <quarkus.version>3.30.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.29.0</camel-quarkus.version>
+        <camel-quarkus.version>3.30.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>3.12.1</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.29.0</quarkus-cxf.version>
+        <quarkus-cxf.version>3.30.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.10.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -408,15 +408,6 @@
                                             <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kafka-oauth:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Disabled due to https://github.com/apache/camel-quarkus/issues/6517 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-debezium-grouped:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
-                                        <test>
-                                            <!-- Workaround flaky Kudu test: https://github.com/apache/camel-quarkus/issues/4259 -->
-                                            <skip>true</skip>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kudu:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                         <test><!-- Workaround temporary WIP Camel 4 https://github.com/apache/camel-quarkus/issues/4462 -->
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc:${camel-quarkus-test-list.version}</artifact>
@@ -477,7 +468,7 @@
                                         <dependency>io.debezium:debezium-quarkus-outbox-deployment:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-reactive:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-reactive-deployment:${quarkus-debezium.version}</dependency>
-                                        
+
                                         <!-- Quarkus DevService / Extension Modules -->
                                         <dependency>io.debezium.quarkus:quarkus-debezium-parent:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium.quarkus:quarkus-debezium-engine-parent:${quarkus-debezium.version}</dependency>

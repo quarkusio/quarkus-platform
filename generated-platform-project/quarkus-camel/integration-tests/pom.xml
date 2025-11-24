@@ -13,10 +13,9 @@
   <name>Quarkus Platform - Camel - Integration Tests - Parent</name>
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
-    <module>camel-quarkus-integration-test-debezium-grouped</module>
-    <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
     <module>camel-quarkus-integration-test-activemq</module>
+    <module>camel-quarkus-integration-test-activemq6</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-as2</module>
@@ -44,6 +43,7 @@
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json-grouped</module>
     <module>camel-quarkus-integration-test-datasonnet</module>
+    <module>camel-quarkus-integration-test-debezium-grouped</module>
     <module>camel-quarkus-integration-test-debug</module>
     <module>camel-quarkus-integration-test-digitalocean</module>
     <module>camel-quarkus-integration-test-disruptor</module>
@@ -113,6 +113,7 @@
     <module>camel-quarkus-integration-test-kamelet</module>
     <module>camel-quarkus-integration-test-knative</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
+    <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-langchain4j-agent</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
     <module>camel-quarkus-integration-test-langchain4j-embeddings</module>
