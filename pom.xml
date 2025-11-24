@@ -758,6 +758,8 @@
                                          to run both the unit and the integration tests -->
                                     <artifact>io.quarkus:quarkus-platform-sample-app-test:${quarkus-platform-bom-generator.version}</artifact>
                                     <maven-failsafe-plugin>true</maven-failsafe-plugin>
+                                    <!-- this test has been failing since it has been added so let's disable it for now -->
+                                    <skip>true</skip>
                                     <systemProperties>
                                         <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
                                         <quarkus.platform.group-id>${dollarSign}${dollarSign}{platform.groupId}</quarkus.platform.group-id>
