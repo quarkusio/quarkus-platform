@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
-    <version>3.30.2</version>
+    <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
   <artifactId>quarkus-platform-parent</artifactId>
@@ -33,8 +33,8 @@
   </modules>
   <properties>
     <platform.key>io.quarkus.platform</platform.key>
-    <platform.release>3.30.2</platform.release>
-    <platform.stream>3.30</platform.stream>
+    <platform.release>999-SNAPSHOT</platform.release>
+    <platform.stream>999-SNAPSHOT</platform.stream>
   </properties>
   <build>
     <pluginManagement>
