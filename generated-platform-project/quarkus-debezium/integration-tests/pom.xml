@@ -15,6 +15,10 @@
     <module>debezium-quarkus-outbox-integration-tests</module>
     <module>debezium-quarkus-outbox-reactive-integration-tests</module>
     <module>quarkus-debezium-postgres-integration-tests</module>
+    <module>quarkus-debezium-mariadb-integration-tests</module>
+    <module>quarkus-debezium-mongodb-integration-tests</module>
+    <module>quarkus-debezium-mysql-integration-tests</module>
+    <module>quarkus-debezium-sqlserver-integration-tests</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>
