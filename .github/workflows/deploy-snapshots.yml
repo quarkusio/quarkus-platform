@@ -11,6 +11,7 @@ defaults:
 
 env:
   LANG: en_US.UTF-8
+  MVNW_REPOURL: https://maven-central.storage-download.googleapis.com/maven2
 jobs:
   build-and-deploy:
     permissions:
