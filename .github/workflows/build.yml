@@ -24,6 +24,7 @@ defaults:
 
 env:
   LANG: en_US.UTF-8
+  MVNW_REPOURL: https://maven-central.storage-download.googleapis.com/maven2
 jobs:
   # This is a hack to work around a GitHub API limitation:
   # when the PR is coming from another fork, the pull_requests field of the
