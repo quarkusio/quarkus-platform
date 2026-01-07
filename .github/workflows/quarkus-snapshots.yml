@@ -11,6 +11,7 @@ env:
   ECOSYSTEM_CI_REPO: quarkusio/quarkus-ecosystem-ci
   ECOSYSTEM_CI_REPO_FILE: context.yaml
   JAVA_VERSION: 17
+  MVNW_REPOURL: https://maven-central.storage-download.googleapis.com/maven2
 
   #########################
   # Repo specific setting #
