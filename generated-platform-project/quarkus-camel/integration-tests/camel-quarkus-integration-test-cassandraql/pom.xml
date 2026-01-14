@@ -57,6 +57,7 @@
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>cassandra</artifactId>
+      <version>1.21.3</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -80,6 +81,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit4-mock</artifactId>
+      <version>3.30.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

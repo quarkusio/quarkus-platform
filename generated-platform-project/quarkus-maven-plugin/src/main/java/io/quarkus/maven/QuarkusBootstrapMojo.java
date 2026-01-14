@@ -175,6 +175,7 @@ public abstract class QuarkusBootstrapMojo extends AbstractMojo {
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
+        hintEnableExtensions();
         if (!beforeExecute()) {
             return;
         }
@@ -196,6 +197,24 @@ public abstract class QuarkusBootstrapMojo extends AbstractMojo {
                     && !mavenSession().getGoals().contains("quarkus:dev")) {
                 bootstrapProvider.bootstrapper(this).close();
             }
+        }
+    }
+
+    private void hintEnableExtensions() {
+        //Make sure to only emit this warning on the "build" goal: it's too early to check the state
+        //on bootstrapSessionListener otherwise, and too much nagging is probably not useful anyway.
+        if ("build".equals(mojoExecution.getMojoDescriptor().getGoal()) && !bootstrapSessionListener.isEnabled()) {
+            super.getLog().warn("The Maven extensions for the Quarkus Maven plugin are not enabled for this build. " +
+                    "We recommend enabling this, so that the plugin can verify essential build settings have been configured as required. "
+                    +
+                    "Please enable by adding \"<extensions>true</extensions>\" in your quarkus-maven-plugin declaration; it should look like:\n"
+                    +
+                    "\n\t<plugin>\n" +
+                    "\t\t<groupId>${quarkus.platform.group-id}</groupId>\n" +
+                    "\t\t<artifactId>quarkus-maven-plugin</artifactId>\n" +
+                    "\t\t<version>${quarkus.platform.version}</version>\n" +
+                    "\t\t<extensions>true</extensions> <!-- THIS ONE -->\n" +
+                    "\t\t...\n");
         }
     }
 
