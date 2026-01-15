@@ -23,6 +23,17 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.l2x6.cli-assured</groupId>
+      <artifactId>mvn-assured</artifactId>
+      <version>0.0.1-alpha14</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
       <version>${quarkus-cxf.version}</version>
@@ -57,7 +68,7 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
+      <artifactId>quarkus-junit</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

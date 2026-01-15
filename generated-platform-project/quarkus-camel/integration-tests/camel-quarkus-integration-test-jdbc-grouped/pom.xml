@@ -86,7 +86,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit4-mock</artifactId>
-      <version>3.30.0</version>
+      <version>${camel-quarkus.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
