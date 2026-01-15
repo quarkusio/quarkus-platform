@@ -69,7 +69,7 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
+      <artifactId>quarkus-junit</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -123,9 +123,7 @@
             </goals>
             <phase>validate</phase>
             <configuration>
-              <source>
-                                    println 'Downloaded quarkus-cxf-test-ws-rm-server-jvm and quarkus-cxf-test-ws-rm-server-native'
-                                </source>
+              <source>println 'Downloaded quarkus-cxf-test-ws-rm-server-jvm and quarkus-cxf-test-ws-rm-server-native'</source>
             </configuration>
           </execution>
         </executions>
