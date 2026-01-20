@@ -425,6 +425,18 @@
                                                 <quarkus.test.flat-class-path>true</quarkus.test.flat-class-path>
                                             </systemProperties>
                                         </test>
+                                        <test><!-- Kubernetes client is not alogned, see https://github.com/apache/camel-quarkus/issues/8176 -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-master-openshift:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test><!-- Kubernetes client is not alogned, see https://github.com/apache/camel-quarkus/issues/8176 -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-kubernetes:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
+                                        <test><!-- Cxf tests contains expired certificate, will be fixed with new release https://github.com/apache/camel-quarkus/issues/8177 -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
                                <!-- <member>
