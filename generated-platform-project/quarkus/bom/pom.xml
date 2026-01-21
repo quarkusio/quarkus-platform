@@ -5552,7 +5552,7 @@
       <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-rest</artifactId>
-        <version>3.31.0.CR1</version>
+        <version>3.31.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
