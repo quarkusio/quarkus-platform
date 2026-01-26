@@ -363,7 +363,7 @@
       <dependency>
         <groupId>com.github.luben</groupId>
         <artifactId>zstd-jni</artifactId>
-        <version>1.5.6-6</version>
+        <version>1.5.7-6</version>
       </dependency>
       <dependency>
         <groupId>com.github.mwiede</groupId>
@@ -373,17 +373,17 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-httpjson</artifactId>
-        <version>2.57.0</version>
+        <version>2.73.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.auth</groupId>
         <artifactId>google-auth-library-credentials</artifactId>
-        <version>1.29.0</version>
+        <version>1.41.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.auth</groupId>
         <artifactId>google-auth-library-oauth2-http</artifactId>
-        <version>1.29.0</version>
+        <version>1.41.0</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.auto.value</groupId>
@@ -398,7 +398,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-bigquery</artifactId>
-        <version>2.43.3</version>
+        <version>2.57.2</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.android</groupId>
@@ -433,7 +433,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-pubsub</artifactId>
-        <version>1.134.1</version>
+        <version>1.145.0</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.android</groupId>
@@ -472,7 +472,7 @@
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-storage</artifactId>
-        <version>2.44.1</version>
+        <version>2.62.0</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.android</groupId>
@@ -511,7 +511,7 @@
       <dependency>
         <groupId>com.google.oauth-client</groupId>
         <artifactId>google-oauth-client</artifactId>
-        <version>1.36.0</version>
+        <version>1.39.0</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -526,7 +526,7 @@
       <dependency>
         <groupId>com.google.re2j</groupId>
         <artifactId>re2j</artifactId>
-        <version>1.7</version>
+        <version>1.8</version>
       </dependency>
       <dependency>
         <groupId>com.hazelcast</groupId>
