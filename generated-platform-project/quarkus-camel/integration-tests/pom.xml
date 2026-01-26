@@ -14,13 +14,13 @@
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
+    <module>camel-quarkus-integration-test-aws2-grouped</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-activemq6</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-as2</module>
     <module>camel-quarkus-integration-test-avro</module>
-    <module>camel-quarkus-integration-test-aws2-grouped</module>
     <module>camel-quarkus-integration-test-aws2</module>
     <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
@@ -40,6 +40,7 @@
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-csv</module>
     <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
+    <module>camel-quarkus-integration-test-cyberark-vault</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json-grouped</module>
     <module>camel-quarkus-integration-test-datasonnet</module>
@@ -47,6 +48,7 @@
     <module>camel-quarkus-integration-test-debug</module>
     <module>camel-quarkus-integration-test-digitalocean</module>
     <module>camel-quarkus-integration-test-disruptor</module>
+    <module>camel-quarkus-integration-test-docling</module>
     <module>camel-quarkus-integration-test-dropbox</module>
     <module>camel-quarkus-integration-test-elasticsearch-rest-client</module>
     <module>camel-quarkus-integration-test-exec</module>
@@ -76,6 +78,7 @@
     <module>camel-quarkus-integration-test-headersmap</module>
     <module>camel-quarkus-integration-test-hl7</module>
     <module>camel-quarkus-integration-test-http-grouped</module>
+    <module>camel-quarkus-integration-test-ibm-cos</module>
     <module>camel-quarkus-integration-test-infinispan-common</module>
     <module>camel-quarkus-integration-test-infinispan-quarkus-client</module>
     <module>camel-quarkus-integration-test-infinispan</module>
@@ -111,6 +114,7 @@
     <module>camel-quarkus-integration-test-kafka-ssl</module>
     <module>camel-quarkus-integration-test-kafka</module>
     <module>camel-quarkus-integration-test-kamelet</module>
+    <module>camel-quarkus-integration-test-keycloak</module>
     <module>camel-quarkus-integration-test-knative</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-kudu</module>
@@ -137,6 +141,7 @@
     <module>camel-quarkus-integration-test-micrometer</module>
     <module>camel-quarkus-integration-test-microprofile-fault-tolerance</module>
     <module>camel-quarkus-integration-test-microprofile-health</module>
+    <module>camel-quarkus-integration-test-milo</module>
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
@@ -146,9 +151,11 @@
     <module>camel-quarkus-integration-test-netty</module>
     <module>camel-quarkus-integration-test-nitrite</module>
     <module>camel-quarkus-integration-test-oaipmh</module>
+    <module>camel-quarkus-integration-test-oauth</module>
     <module>camel-quarkus-integration-test-observability-services</module>
     <module>camel-quarkus-integration-test-ognl</module>
     <module>camel-quarkus-integration-test-olingo4</module>
+    <module>camel-quarkus-integration-test-once</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
     <module>camel-quarkus-integration-test-openstack</module>
     <module>camel-quarkus-integration-test-opentelemetry</module>
@@ -219,8 +226,8 @@
     <module>camel-quarkus-integration-test-xpath</module>
     <module>camel-quarkus-integration-test-xslt-saxon</module>
     <module>camel-quarkus-integration-test-zendesk</module>
-    <module>camel-quarkus-junit5-extension-tests</module>
-    <module>camel-quarkus-junit5</module>
+    <module>camel-quarkus-junit-tests</module>
+    <module>camel-quarkus-junit</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>

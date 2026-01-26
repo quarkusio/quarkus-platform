@@ -58,7 +58,7 @@
         <quarkus.version>3.31.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.30.0</camel-quarkus.version>
+        <camel-quarkus.version>3.31.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -413,6 +413,12 @@
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jt400-mocked:${camel-quarkus-test-list.version}</artifact>
                                             <systemProperties>
                                                 <quarkus.test.flat-class-path>true</quarkus.test.flat-class-path>
+                                            </systemProperties>
+                                        </test>
+                                        <test><!-- TODO: Remove this - https://github.com/apache/camel-quarkus/issues/8200 -->
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-grouped:${camel-quarkus-test-list.version}</artifact>
+                                            <systemProperties>
+                                                <localstack.container.image>mirror.gcr.io/localstack/localstack:latest</localstack.container.image>
                                             </systemProperties>
                                         </test>
                                     </tests>
