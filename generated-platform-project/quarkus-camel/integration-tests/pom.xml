@@ -17,9 +17,6 @@
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
-    <module>camel-quarkus-integration-test-master-openshift</module>
-    <module>camel-quarkus-integration-test-kubernetes</module>
-    <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -45,6 +42,7 @@
     <module>camel-quarkus-integration-test-crypto</module>
     <module>camel-quarkus-integration-test-csimple</module>
     <module>camel-quarkus-integration-test-csv</module>
+    <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
     <module>camel-quarkus-integration-test-dataformat</module>
     <module>camel-quarkus-integration-test-dataformats-json-grouped</module>
     <module>camel-quarkus-integration-test-datasonnet</module>
@@ -113,6 +111,7 @@
     <module>camel-quarkus-integration-test-kafka</module>
     <module>camel-quarkus-integration-test-kamelet</module>
     <module>camel-quarkus-integration-test-knative</module>
+    <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
     <module>camel-quarkus-integration-test-langchain4j</module>
     <module>camel-quarkus-integration-test-ldap</module>
