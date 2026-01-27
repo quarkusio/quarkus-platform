@@ -24,7 +24,7 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
+      <artifactId>quarkus-junit</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -140,6 +140,9 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-aws2-grouped</dependency>
           </dependenciesToScan>
+          <systemPropertyVariables>
+            <localstack.container.image>mirror.gcr.io/localstack/localstack:latest</localstack.container.image>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
     </plugins>
@@ -165,6 +168,7 @@
                 <configuration>
                   <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                    <localstack.container.image>mirror.gcr.io/localstack/localstack:latest</localstack.container.image>
                   </systemPropertyVariables>
                 </configuration>
               </execution>
