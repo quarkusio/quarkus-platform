@@ -83,7 +83,7 @@
         <quarkus-google-cloud-services.version>2.20.1</quarkus-google-cloud-services.version>
         <quarkus-vault.version>4.5.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.5.1</quarkus-operator-sdk.version>
-        <quarkus-langchain4j.version>1.2.2</quarkus-langchain4j.version>
+        <quarkus-langchain4j.version>1.5.0</quarkus-langchain4j.version>
         <quarkus-mcp-server.version>1.7.3</quarkus-mcp-server.version>
 
         <quarkus-platform-bom-generator.version>0.0.129</quarkus-platform-bom-generator.version>
@@ -668,12 +668,13 @@
                                         <test>
                                             <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-embed-e5-small-v2:${quarkus-langchain4j.version}</artifact>
                                         </test>
-                                        <test>
+                                        <!-- FIXME: re-enable after these modules are re-enabled in quarkus-langchain4j. See https://github.com/quarkiverse/quarkus-langchain4j/commit/36e0ef696bb9a0c97e0ec96dab726473f0ee5f93 -->
+					<!-- <test>
                                             <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-jlama:${quarkus-langchain4j.version}</artifact>
-                                        </test>
+					</test> 
                                         <test>
                                             <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-llama3-java:${quarkus-langchain4j.version}</artifact>
-                                        </test>
+					</test> -->
                                         <test>
                                             <artifact>io.quarkiverse.langchain4j:quarkus-langchain4j-integration-test-mcp:${quarkus-langchain4j.version}</artifact>
                                         </test>
