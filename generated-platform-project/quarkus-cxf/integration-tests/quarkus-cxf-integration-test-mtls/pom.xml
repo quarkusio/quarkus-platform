@@ -8,6 +8,9 @@
   </parent>
   <artifactId>quarkus-cxf-integration-test-mtls</artifactId>
   <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-mtls</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
@@ -143,6 +146,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtls:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>

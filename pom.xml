@@ -383,6 +383,12 @@
                                         <transformWith>${resourcesdir}/xslt/cxf-test-pom.xsl</transformWith>
                                     </defaultTestConfig>
                                     <testCatalogArtifact>io.quarkiverse.cxf:quarkus-cxf-test-list::xml:${quarkus-cxf.version}</testCatalogArtifact>
+                                    <tests>
+                                        <test><!-- Disabled due to expired certificates -->
+                                            <skip>true</skip>
+                                            <artifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mtls:${quarkus-cxf.version}</artifact>
+                                        </test>
+                                    </tests>
                                 </member>
                                 <member>
                                     <name>Camel</name>

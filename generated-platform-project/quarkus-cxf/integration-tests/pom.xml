@@ -12,12 +12,12 @@
   <packaging>pom</packaging>
   <name>Quarkus Platform - CXF - Integration Tests - Parent</name>
   <modules>
+    <module>quarkus-cxf-integration-test-mtls</module>
     <module>quarkus-cxf-integration-test-client-server</module>
     <module>quarkus-cxf-integration-test-client</module>
     <module>quarkus-cxf-integration-test-fast-infoset</module>
     <module>quarkus-cxf-integration-test-hc5</module>
     <module>quarkus-cxf-integration-test-metrics</module>
-    <module>quarkus-cxf-integration-test-mtls</module>
     <module>quarkus-cxf-integration-test-mtom-awt</module>
     <module>quarkus-cxf-integration-test-opentelemetry</module>
     <module>quarkus-cxf-integration-test-saaj</module>
