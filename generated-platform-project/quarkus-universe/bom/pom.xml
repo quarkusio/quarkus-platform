@@ -24910,7 +24910,7 @@
       <dependency>
         <groupId>org.hibernate.reactive</groupId>
         <artifactId>hibernate-reactive-core</artifactId>
-        <version>3.2.1.Final</version>
+        <version>4.2.1.Final</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.search</groupId>
