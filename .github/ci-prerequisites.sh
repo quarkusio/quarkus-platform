@@ -43,8 +43,12 @@ time sudo rm -rf /usr/local/.ghcup
 # Remove pipx
 time sudo rm -rf /opt/pipx
 # Remove Rust
+time sudo rm -rf /etc/skel/.rustup
+time sudo rm -rf /home/packer/.rustup
+time sudo rm -rf /home/runner/.rustup
 time sudo rm -rf /usr/share/rust
 # Remove Go
+time sudo rm -rf /opt/hostedtoolcache/go
 time sudo rm -rf /usr/local/go
 # Remove miniconda
 time sudo rm -rf /usr/share/miniconda
@@ -54,3 +58,5 @@ time sudo rm -rf /usr/local/share/powershell
 time sudo rm -rf /usr/lib/google-cloud-sdk
 # Remove CodeQL
 time sudo rm -rf /opt/hostedtoolcache/CodeQL
+# Remove Julia language
+time sudo rm -rf /usr/local/julia1.12.4
