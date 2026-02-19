@@ -10436,77 +10436,92 @@
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-cli-adapter-deployment</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-cli-adapter</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-core-deployment</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-core</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-hibernate-validator-deployment</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-hibernate-validator</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-http-deployment</artifactId>
+        <version>1.10.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-http</artifactId>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-sse-client</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-sse-deployment</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.mcp</groupId>
+        <artifactId>quarkus-mcp-server-sse-parent</artifactId>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-sse</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-stdio-deployment</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-stdio</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-test</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-websocket-deployment</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-websocket</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-stdio-sse-proxy</artifactId>
-        <version>1.7.3</version>
+        <version>1.10.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.messaginghub</groupId>
