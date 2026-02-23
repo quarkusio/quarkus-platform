@@ -14,13 +14,13 @@
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
-    <module>camel-quarkus-integration-test-aws2-grouped</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-activemq6</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-as2</module>
     <module>camel-quarkus-integration-test-avro</module>
+    <module>camel-quarkus-integration-test-aws2-grouped</module>
     <module>camel-quarkus-integration-test-aws2</module>
     <module>camel-quarkus-integration-test-azure-grouped</module>
     <module>camel-quarkus-integration-test-base64</module>
@@ -156,6 +156,7 @@
     <module>camel-quarkus-integration-test-ognl</module>
     <module>camel-quarkus-integration-test-olingo4</module>
     <module>camel-quarkus-integration-test-once</module>
+    <module>camel-quarkus-integration-test-openai</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
     <module>camel-quarkus-integration-test-openstack</module>
     <module>camel-quarkus-integration-test-opentelemetry</module>
