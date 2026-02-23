@@ -30,7 +30,7 @@
     <dependency>
       <groupId>org.l2x6.cli-assured</groupId>
       <artifactId>mvn-assured</artifactId>
-      <version>0.0.1-alpha16</version>
+      <version>0.0.1-alpha17</version>
       <scope>test</scope>
     </dependency>
     <dependency>
