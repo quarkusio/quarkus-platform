@@ -18,6 +18,9 @@ on:
       - '*.txt'
       - '.github/ISSUE_TEMPLATE/**'
 
+permissions:
+  contents: read
+
 defaults:
   run:
     shell: bash
