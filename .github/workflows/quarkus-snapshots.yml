@@ -6,6 +6,10 @@ on:
 # For this CI to work, ECOSYSTEM_CI_TOKEN needs to contain a GitHub with rights to close the Quarkus issue that the user/bot has opened,
  # while 'ECOSYSTEM_CI_REPO_PATH' needs to be set to the corresponding path in the 'quarkusio/quarkus-ecosystem-ci' repository
 
+permissions:
+  contents: read
+  issues: write
+
 env:
   LANG: en_US.UTF-8
   ECOSYSTEM_CI_REPO: quarkusio/quarkus-ecosystem-ci
