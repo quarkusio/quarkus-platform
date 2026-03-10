@@ -925,6 +925,11 @@
         <version>2.27.6</version>
       </dependency>
       <dependency>
+        <groupId>com.github.os72</groupId>
+        <artifactId>protoc-jar</artifactId>
+        <version>3.11.4</version>
+      </dependency>
+      <dependency>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-annotations</artifactId>
         <version>3.1.12</version>
@@ -5923,6 +5928,11 @@
         </exclusions>
       </dependency>
       <dependency>
+        <groupId>com.networknt</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>2.0.0</version>
+      </dependency>
+      <dependency>
         <groupId>com.nimbusds</groupId>
         <artifactId>nimbus-jose-jwt</artifactId>
         <version>10.8</version>
@@ -6702,6 +6712,16 @@
       <dependency>
         <groupId>io.cloudevents</groupId>
         <artifactId>cloudevents-api</artifactId>
+        <version>3.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.cloudevents</groupId>
+        <artifactId>cloudevents-core</artifactId>
+        <version>3.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.cloudevents</groupId>
+        <artifactId>cloudevents-json-jackson</artifactId>
         <version>3.0.0</version>
       </dependency>
       <dependency>
@@ -9682,6 +9702,101 @@
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf</artifactId>
         <version>3.32.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-dev</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-durable-kubernetes-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-durable-kubernetes</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-jpa-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-jpa</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-langchain4j-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-langchain4j</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-messaging-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-messaging</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-mvstore-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-mvstore</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-persistence-common-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-persistence-common</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-redis-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-redis</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-scheduler-deployment</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow-scheduler</artifactId>
+        <version>0.7.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow</artifactId>
+        <version>0.7.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.fory</groupId>
@@ -14276,6 +14391,176 @@
             <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverless-workflow-jackson-generator</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverless-workflow-types-generator</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-annotations</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-api</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-experimental-fluent-func</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-experimental-lambda</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-experimental-model</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-experimental-types</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-fluent-spec</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-container</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-core</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-function</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-grpc</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-http</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-jackson-jwt</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-jackson</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-jq</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-json</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-lifecycle-events</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-model</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-openapi</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-script-js</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-script-python</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-template-resolver</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-test</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-impl-validation</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-mermaid</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-persistence-api</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-persistence-big-map</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-persistence-jackson-marshaller</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-persistence-mvstore</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-persistence-tests</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-serialization</artifactId>
+        <version>7.13.8.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>io.serverlessworkflow</groupId>
+        <artifactId>serverlessworkflow-types</artifactId>
+        <version>7.13.8.Final</version>
       </dependency>
       <dependency>
         <groupId>io.smallrye.beanbag</groupId>
@@ -25948,6 +26233,11 @@
         <version>20240303</version>
       </dependency>
       <dependency>
+        <groupId>org.jsonschema2pojo</groupId>
+        <artifactId>jsonschema2pojo-core</artifactId>
+        <version>1.3.3</version>
+      </dependency>
+      <dependency>
         <groupId>org.jspecify</groupId>
         <artifactId>jspecify</artifactId>
         <version>1.0.0</version>
@@ -26643,6 +26933,11 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
+        <version>2.0.17</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
         <version>2.0.17</version>
       </dependency>
       <dependency>

@@ -85,6 +85,7 @@
         <quarkus-operator-sdk.version>7.7.0</quarkus-operator-sdk.version>
         <quarkus-langchain4j.version>1.7.4</quarkus-langchain4j.version>
         <quarkus-mcp-server.version>1.10.3</quarkus-mcp-server.version>
+        <quarkus-flow.version>0.7.1</quarkus-flow.version>
 
         <quarkus-platform-bom-generator.version>0.0.129</quarkus-platform-bom-generator.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
@@ -728,6 +729,56 @@
                                         </test>
                                     </tests>
                                     -->
+                                </member>
+                                <member>
+                                    <name>Quarkus Flow</name>
+                                    <bom>io.quarkiverse.flow:quarkus-flow-bom:${quarkus-flow.version}</bom>
+                                    <ownGroupIds>
+                                        <ownGroupId>io.quarkiverse.flow</ownGroupId>
+                                    </ownGroupIds>
+                                    <release>
+                                        <next>${platform.groupId}:quarkus-flow-bom:${platform.version}</next>
+                                    </release>
+                                    <defaultTestConfig>
+                                        <skipNative>true</skipNative>
+                                    </defaultTestConfig>
+                                    <tests>
+                                        <test>
+                                            <artifact>io.quarkiverse.flow:quarkus-flow-durable-kubernetes-integration-tests:${quarkus-flow.version}</artifact>
+                                            <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                        </test>
+                                        <test>
+                                            <artifact>io.quarkiverse.flow:quarkus-flow-messaging-integration-tests:${quarkus-flow.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <artifact>io.quarkiverse.flow:quarkus-flow-scheduler-integration-tests:${quarkus-flow.version}</artifact>
+                                            <copyTasks>
+                                                <copy>
+                                                    <src>src/main/resources/flow/test/resources/after-start.yaml</src>
+                                                    <destination>generated-platform-project/quarkus-flow/integration-tests/quarkus-flow-scheduler-integration-tests/src/main/flow/after-start.yaml</destination>
+                                                </copy>
+                                                <copy>
+                                                    <src>src/main/resources/flow/test/resources/cron-start.yaml</src>
+                                                    <destination>generated-platform-project/quarkus-flow/integration-tests/quarkus-flow-scheduler-integration-tests/src/main/flow/cron-start.yaml</destination>
+                                                </copy>
+                                                <copy>
+                                                    <src>src/main/resources/flow/test/resources/every-start.yaml</src>
+                                                    <destination>generated-platform-project/quarkus-flow/integration-tests/quarkus-flow-scheduler-integration-tests/src/main/flow/every-start.yaml</destination>
+                                                </copy>
+                                            </copyTasks>
+                                        </test>
+                                        <test>
+                                            <artifact>io.quarkiverse.flow:quarkus-flow-jpa-integration-tests:${quarkus-flow.version}</artifact>
+                                            <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                        </test>
+                                        <test>
+                                            <artifact>io.quarkiverse.flow:quarkus-flow-mvstore-integration-tests:${quarkus-flow.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <artifact>io.quarkiverse.flow:quarkus-flow-redis-integration-tests:${quarkus-flow.version}</artifact>
+                                            <mavenFailsafePlugin>true</mavenFailsafePlugin>
+                                        </test>
+                                    </tests>
                                 </member>
                             </members>
                             <!-- Platform BOM generator configuration -->
