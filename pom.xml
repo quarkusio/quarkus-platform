@@ -236,7 +236,6 @@
                                         <mavenFailsafePlugin>true</mavenFailsafePlugin>
                                     </test>
                                     <test>
-                                        <skip>true</skip>
                                         <artifact>io.quarkiverse.vault:quarkus-vault-integration-test-app:${quarkus-vault.version}</artifact>
                                         <systemProperties>
                                             <vault-test-extension.use-tls>false</vault-test-extension.use-tls>
@@ -500,15 +499,12 @@
                                     </release>
                                     <tests>
                                         <test>
-                                            <skip>true</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
-                                            <skip>true</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
-                                            <skip>true</skip>
                                             <artifact>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
