@@ -71,7 +71,7 @@
         <quarkus-qpid-jms.version>2.10.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>4.1.0</quarkus-hazelcast-client.version>
-        <quarkus-debezium.version>3.4.0.Final</quarkus-debezium.version>
+        <quarkus-debezium.version>3.4.2.Final</quarkus-debezium.version>
         <quarkus-blaze-persistence.version>1.6.17</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.4.0</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
@@ -84,7 +84,7 @@
         <quarkus-vault.version>4.6.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.6.2</quarkus-operator-sdk.version>
         <quarkus-langchain4j.version>1.7.4</quarkus-langchain4j.version>
-        <quarkus-mcp-server.version>1.10.2</quarkus-mcp-server.version>
+        <quarkus-mcp-server.version>1.10.3</quarkus-mcp-server.version>
 
         <quarkus-platform-bom-generator.version>0.0.129</quarkus-platform-bom-generator.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>

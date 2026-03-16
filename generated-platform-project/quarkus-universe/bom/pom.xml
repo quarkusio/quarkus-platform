@@ -6707,207 +6707,207 @@
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-agroal-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-agroal</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-engine-deployment-spi</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-engine-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-engine-spi</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-engine</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-mariadb-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-mariadb</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-mongodb-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-mongodb</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-mysql-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-mysql</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-postgres-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-postgres</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-sqlserver-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium.quarkus</groupId>
         <artifactId>quarkus-debezium-sqlserver</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-api</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-common</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-binlog</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-db2</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-ibmi</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-informix</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mariadb</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mongodb</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mysql</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-oracle</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-postgres</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-sqlserver</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-vitess</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-core</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-ddl-parser</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-embedded</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-openlineage-api</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox-reactive-deployment</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox-reactive</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-quarkus-outbox</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-scripting</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-sink</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-storage-file</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-storage-kafka</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.2.Final</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
@@ -10491,92 +10491,92 @@
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-cli-adapter-deployment</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-cli-adapter</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-core-deployment</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-core</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-hibernate-validator-deployment</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-hibernate-validator</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-http-deployment</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-http</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-sse-client</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-sse-deployment</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-sse-parent</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-sse</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-stdio-deployment</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-stdio</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-test</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-websocket-deployment</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-server-websocket</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
         <artifactId>quarkus-mcp-stdio-sse-proxy</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.messaginghub</groupId>
