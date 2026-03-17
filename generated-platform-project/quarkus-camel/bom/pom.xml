@@ -741,7 +741,7 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-api</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
@@ -751,32 +751,32 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-binlog</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mongodb</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-mysql</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-oracle</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-postgres</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-connector-sqlserver</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
@@ -786,32 +786,32 @@
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-ddl-parser</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-embedded</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-openlineage-api</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-sink</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-storage-file</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-storage-kafka</artifactId>
-        <version>3.4.2.Final</version>
+        <version>3.5.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.debezium</groupId>

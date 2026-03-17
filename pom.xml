@@ -71,7 +71,7 @@
         <quarkus-qpid-jms.version>2.12.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>4.1.0</quarkus-hazelcast-client.version>
-        <quarkus-debezium.version>3.4.2.Final</quarkus-debezium.version>
+        <quarkus-debezium.version>3.5.0.CR1</quarkus-debezium.version>
         <quarkus-blaze-persistence.version>1.6.17</quarkus-blaze-persistence.version>
         <quarkus-cassandra-client.version>1.4.1</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
@@ -448,7 +448,8 @@
                                     <dependencyManagement>
                                         <!-- Debezium Core -->
                                         <dependency>io.debezium:debezium-api:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-core:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-common:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connect-plugins:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-ddl-parser:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-embedded:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-scripting:${quarkus-debezium.version}</dependency>
@@ -471,6 +472,11 @@
                                         <dependency>io.debezium:debezium-quarkus-outbox-deployment:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-reactive:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium:debezium-quarkus-outbox-reactive-deployment:${quarkus-debezium.version}</dependency>
+
+                                        <!-- Hibernate Cache -->
+                                        <dependency>io.debezium:debezium-quarkus-hibernate-cache-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-quarkus-hibernate-cache-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-quarkus-hibernate-cache:${quarkus-debezium.version}</dependency>
 
                                         <!-- Quarkus DevService / Extension Modules -->
                                         <dependency>io.debezium.quarkus:quarkus-debezium-parent:${quarkus-debezium.version}</dependency>
@@ -498,6 +504,12 @@
                                         <dependency>io.debezium.quarkus:quarkus-debezium-sqlserver-parent:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium.quarkus:quarkus-debezium-sqlserver-deployment:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium.quarkus:quarkus-debezium-sqlserver:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-oracle-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-oracle-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-oracle:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-db2-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-db2-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:quarkus-debezium-db2:${quarkus-debezium.version}</dependency>
                                     </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.34.0.CR1</lastDetectedBomUpdate>
@@ -511,6 +523,10 @@
                                         <test>
                                             <skip>true</skip>
                                             <artifact>io.debezium:debezium-quarkus-outbox-reactive-integration-tests:${quarkus-debezium.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>io.debezium:debezium-quarkus-hibernate-cache-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
                                             <skip>true</skip>
@@ -531,6 +547,14 @@
                                         <test>
                                             <skip>true</skip>
                                             <artifact>io.debezium.quarkus:quarkus-debezium-sqlserver-integration-tests:${quarkus-debezium.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>io.debezium.quarkus:quarkus-debezium-oracle-integration-tests:${quarkus-debezium.version}</artifact>
+                                        </test>
+                                        <test>
+                                            <skip>true</skip>
+                                            <artifact>io.debezium.quarkus:quarkus-debezium-db2-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
