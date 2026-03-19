@@ -10,9 +10,6 @@
   </parent>
   <artifactId>quarkus-debezium-postgres-integration-tests</artifactId>
   <name>Quarkus Platform - Debezium - Integration Tests - quarkus-debezium-postgres-integration-tests</name>
-  <properties>
-    <maven.test.skip>true</maven.test.skip>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>io.debezium.quarkus</groupId>
@@ -159,7 +156,6 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <skip>true</skip>
                   <appArtifact>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests:${quarkus-debezium.version}</appArtifact>
                 </configuration>
               </execution>
