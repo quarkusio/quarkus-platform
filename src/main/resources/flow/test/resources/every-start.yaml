@@ -1,0 +1,12 @@
+document:
+  dsl: '1.0.1'
+  namespace: test
+  name: every-driven-schedule
+  version: '0.1.0'
+schedule:
+  every:
+      milliseconds: 10
+do: 
+  - recovered:
+      set:
+        recovered: true
