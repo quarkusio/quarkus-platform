@@ -25,7 +25,12 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util</artifactId>
-      <version>3.31.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-test-util-internal</artifactId>
+      <version>${quarkus-cxf.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>

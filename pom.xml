@@ -58,7 +58,7 @@
         <quarkus.version>3.33.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.32.0</camel-quarkus.version>
+        <camel-quarkus.version>3.33.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -66,14 +66,14 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>3.15.1</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.32.0</quarkus-cxf.version>
+        <quarkus-cxf.version>3.33.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.12.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>4.1.0</quarkus-hazelcast-client.version>
         <quarkus-debezium.version>3.4.2.Final</quarkus-debezium.version>
         <quarkus-blaze-persistence.version>1.6.17</quarkus-blaze-persistence.version>
-        <quarkus-cassandra-client.version>1.4.0</quarkus-cassandra-client.version>
+        <quarkus-cassandra-client.version>1.4.1</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
         <quarkus-qute-web.version>3.4.4</quarkus-qute-web.version>
 

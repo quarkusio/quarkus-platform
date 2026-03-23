@@ -142,6 +142,8 @@
     <module>camel-quarkus-integration-test-microprofile-fault-tolerance</module>
     <module>camel-quarkus-integration-test-microprofile-health</module>
     <module>camel-quarkus-integration-test-milo</module>
+    <module>camel-quarkus-integration-test-milvus</module>
+    <module>camel-quarkus-integration-test-mina-sftp</module>
     <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
