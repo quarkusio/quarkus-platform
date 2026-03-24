@@ -692,74 +692,7 @@
 				   <dependency>io.agroal:agroal-api:2.8.1</dependency>
 				   <dependency>io.agroal:agroal-narayana:2.8.1</dependency>
 				   <dependency>io.agroal:agroal-pool:2.8.1</dependency>
-                                    <dependency>com.fasterxml.jackson.core:jackson-annotations:2.21</dependency>
-                                    <dependency>com.fasterxml.jackson.core:jackson-core:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.core:jackson-databind:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-avro:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-ion:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-properties:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-protobuf:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-toml:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-eclipse-collections:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-guava:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-hibernate5-jakarta:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-hibernate6:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-hppc:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-jakarta-jsonp:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-jaxrs:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-joda-money:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-joda:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-json-org:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-jsr353:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-moneta:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.datatype:jackson-datatype-pcollections:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-cbor-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-smile-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-xml-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-yaml-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jaxrs:jackson-jaxrs-cbor-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jaxrs:jackson-jaxrs-smile-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jaxrs:jackson-jaxrs-xml-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jaxrs:jackson-jaxrs-yaml-provider:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jr:jackson-jr-all:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jr:jackson-jr-annotation-support:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jr:jackson-jr-extension-javatime:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jr:jackson-jr-objects:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jr:jackson-jr-retrofit2:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.jr:jackson-jr-stree:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-afterburner:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-android-record:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-blackbird:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-guice7:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-guice:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-jsonSchema-jakarta:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-jsonSchema:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-kotlin:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-mrbean:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-no-ctor-deser:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-osgi:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-parameter-names:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-paranamer:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-scala_2.11:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-scala_2.12:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-scala_2.13:2.21.2</dependency>
-                                    <dependency>com.fasterxml.jackson.module:jackson-module-scala_3:2.21.2</dependency>
-                                </enforcedDependencies>
+				</enforcedDependencies>
                                 <!--
                                 <enforcedDependencies>
                                     <dependency>groupId:artifactId:desired-version</dependency>
