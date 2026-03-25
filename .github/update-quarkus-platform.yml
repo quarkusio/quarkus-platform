@@ -1,0 +1,39 @@
+members:
+  - name: AmazonServices
+  - name: Cassandra
+  - name: Debezium
+  - name: GoogleCloudServices
+  - name: Hazelcast
+  - name: LangChain4j
+  - name: MCPServer
+  - name: OperatorSDK
+  - name: QpidJMS
+  - name: Quarkus Flow
+
+branches:
+  latest:
+    default-update-policy: micro
+    members:
+      - name: AmazonServices
+      - name: Cassandra
+      - name: Debezium
+      - name: GoogleCloudServices
+      - name: Hazelcast
+      - name: LangChain4j
+      - name: MCPServer
+      - name: OperatorSDK
+      - name: QpidJMS
+      - name: Quarkus Flow
+  3.33:
+    default-update-policy: micro
+    members:
+      - name: AmazonServices
+      - name: Cassandra
+      - name: Debezium
+      - name: GoogleCloudServices
+      - name: Hazelcast
+      - name: LangChain4j
+      - name: MCPServer
+      - name: OperatorSDK
+      - name: QpidJMS
+      - name: Quarkus Flow
