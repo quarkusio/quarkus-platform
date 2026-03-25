@@ -55,6 +55,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-test-vertx</artifactId>
+      <version>3.28.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>

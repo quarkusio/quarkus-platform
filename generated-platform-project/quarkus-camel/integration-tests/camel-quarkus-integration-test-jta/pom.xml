@@ -25,11 +25,13 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit</artifactId>
+      <version>3.33.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-test-h2</artifactId>
+      <version>3.33.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
