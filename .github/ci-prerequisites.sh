@@ -29,34 +29,47 @@
 # node            16          1ddc7e4055fd   5 months ago   909MB
 # node            16-alpine   2573171e0124   6 months ago   118MB
 
-# Remove node container images
-time docker rmi -f $(docker images node -q)
+time sudo docker image prune --all --force || true
+
+sudo apt-get remove -y '^dotnet-.*'
+sudo apt-get remove -y '^llvm-.*'
+sudo apt-get remove -y 'php.*'
+sudo apt-get remove -y '^mongodb-.*'
+sudo apt-get remove -y '^mysql-.*'
+sudo apt-get remove -y azure-cli google-cloud-sdk google-chrome-stable firefox powershell mono-devel libgl1-mesa-dri
+sudo apt-get autoremove -y
+sudo apt-get clean
+
 # That is 979M
-time sudo rm -rf /usr/share/dotnet
+time sudo rm -rf /usr/share/dotnet || true
 # That is 1.7G
-time sudo rm -rf /usr/share/swift
+time sudo rm -rf /usr/share/swift || true
 # Remove Android
-time sudo rm -rf /usr/local/lib/android
+time sudo rm -rf /usr/local/lib/android || true
 # Remove Haskell
-time sudo rm -rf /opt/ghc
-time sudo rm -rf /usr/local/.ghcup
+time sudo rm -rf /opt/ghc || true
+time sudo rm -rf /usr/local/.ghcup || true
 # Remove pipx
-time sudo rm -rf /opt/pipx
+time sudo rm -rf /opt/pipx || true
 # Remove Rust
-time sudo rm -rf /etc/skel/.rustup
-time sudo rm -rf /home/packer/.rustup
-time sudo rm -rf /home/runner/.rustup
-time sudo rm -rf /usr/share/rust
+time sudo rm -rf /etc/skel/.rustup || true
+time sudo rm -rf /home/packer/.rustup || true
+time sudo rm -rf /home/runner/.rustup || true
+time sudo rm -rf /usr/share/rust || true
 # Remove Go
-time sudo rm -rf /opt/hostedtoolcache/go
-time sudo rm -rf /usr/local/go
+time sudo rm -rf /opt/hostedtoolcache/go || true
+time sudo rm -rf /usr/local/go || true
 # Remove miniconda
-time sudo rm -rf /usr/share/miniconda
+time sudo rm -rf /usr/share/miniconda || true
 # Remove powershell
-time sudo rm -rf /usr/local/share/powershell
+time sudo rm -rf /usr/local/share/powershell || true
 # Remove Google Cloud SDK
-time sudo rm -rf /usr/lib/google-cloud-sdk
-# Remove CodeQL
-time sudo rm -rf /opt/hostedtoolcache/CodeQL
+time sudo rm -rf /usr/lib/google-cloud-sdk || true
+
+# Remove infrastructure things that are unused and take a lot of space
+time sudo rm -rf /opt/hostedtoolcache/CodeQL || true
+time sudo rm -rf /imagegeneration/installers/go-* || true
+time sudo rm -rf /imagegeneration/installers/node-* || true
+time sudo rm -rf /imagegeneration/installers/python-* || true
 # Remove Julia language
-time sudo rm -rf /usr/local/julia1.12.4
+time sudo rm -rf /usr/local/julia1.12.4 || true
