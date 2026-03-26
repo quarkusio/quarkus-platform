@@ -4,6 +4,9 @@ members:
   - name: Debezium
   - name: GoogleCloudServices
   - name: Hazelcast
+  - name: io.quarkiverse.config
+  - name: io.quarkiverse.qute.web
+  - name: io.quarkiverse.vault
   - name: LangChain4j
   - name: MCPServer
   - name: OperatorSDK
@@ -19,6 +22,9 @@ branches:
       - name: Debezium
       - name: GoogleCloudServices
       - name: Hazelcast
+      - name: io.quarkiverse.config
+      - name: io.quarkiverse.qute.web
+      - name: io.quarkiverse.vault
       - name: LangChain4j
       - name: MCPServer
       - name: OperatorSDK
@@ -32,6 +38,9 @@ branches:
       - name: Debezium
       - name: GoogleCloudServices
       - name: Hazelcast
+      - name: io.quarkiverse.config
+      - name: io.quarkiverse.qute.web
+      - name: io.quarkiverse.vault
       - name: LangChain4j
       - name: MCPServer
       - name: OperatorSDK
@@ -44,6 +53,9 @@ branches:
       - name: Debezium
       - name: GoogleCloudServices
       - name: Hazelcast
+      - name: io.quarkiverse.config
+      - name: io.quarkiverse.qute.web
+      - name: io.quarkiverse.vault
       - name: LangChain4j
       - name: MCPServer
       - name: OperatorSDK
@@ -56,6 +68,9 @@ branches:
       - name: Debezium
       - name: GoogleCloudServices
       - name: Hazelcast
+      - name: io.quarkiverse.config
+      - name: io.quarkiverse.qute.web
+      - name: io.quarkiverse.vault
       - name: LangChain4j
       - name: MCPServer
       - name: OperatorSDK
