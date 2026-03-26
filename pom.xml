@@ -572,12 +572,7 @@
                             </members>
                             <!-- Platform BOM generator configuration -->
                             <bomGenerator>
-				<!-- Config to enforce specific versions and excluding dependencies -->
-				<enforcedDependencies>
-				   <dependency>io.agroal:agroal-api:2.7.2</dependency>	    
-				   <dependency>io.agroal:agroal-narayana:2.7.2</dependency>	    
-				   <dependency>io.agroal:agroal-pool:2.7.2</dependency>	    
-				</enforcedDependencies>
+                                <!-- Config to enforce specific versions and excluding dependencies -->
                                 <!--
                                 <enforcedDependencies>
                                     <dependency>groupId:artifactId:desired-version</dependency>
