@@ -1,0 +1,29 @@
+name: Update Platform Members
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    if: github.repository == 'quarkusio/quarkus-platform'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 25
+        uses: actions/setup-java@v5
+        with:
+          java-version: 25
+          distribution: temurin
+          cache: maven
+
+      - uses: quarkusio/update-quarkus-platform-action@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
