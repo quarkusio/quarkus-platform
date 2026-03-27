@@ -73,7 +73,7 @@ jobs:
     if: github.actor == 'quarkusbot'
     strategy:
       matrix:
-        version: ['3.27', '3.20']
+        version: ['3.33', '3.27', '3.20']
       fail-fast: false
     steps:
       - name: Checkout repo
