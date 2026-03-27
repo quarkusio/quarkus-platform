@@ -36,3 +36,4 @@ jobs:
       - uses: quarkusio/update-quarkus-platform-action@main
         with:
           github-token: ${{ steps.app-token.outputs.token }}
+          packages-token: ${{ secrets.GITHUB_TOKEN }}
