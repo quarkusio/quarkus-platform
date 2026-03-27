@@ -5,6 +5,10 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   update:
     if: github.repository == 'quarkusio/quarkus-platform'
