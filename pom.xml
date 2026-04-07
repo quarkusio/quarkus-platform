@@ -479,37 +479,37 @@
                                         <dependency>io.debezium:debezium-quarkus-hibernate-cache:${quarkus-debezium.version}</dependency>
 
                                         <!-- Quarkus DevService / Extension Modules -->
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-spi-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-deployment-spi:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-engine-spi:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-agroal-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-agroal-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-agroal:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-postgres:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mariadb-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mariadb-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mariadb:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mongodb-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mongodb-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mongodb:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mysql-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mysql-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-mysql:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-sqlserver-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-sqlserver-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-sqlserver:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-oracle-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-oracle-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-oracle:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-db2-parent:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-db2-deployment:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium.quarkus:quarkus-debezium-db2:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-engine-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-engine-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-engine:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-engine-spi-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-engine-deployment-spi:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-engine-spi:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-agroal-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-agroal-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-agroal:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-postgres-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-postgres-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-postgres:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mariadb-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mariadb-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mariadb:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mongodb-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mongodb-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mongodb:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mysql-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mysql-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-mysql:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-sqlserver-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-sqlserver-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-sqlserver:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-oracle-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-oracle-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-oracle:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-db2-parent:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-db2-deployment:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium.quarkus:debezium-quarkus-db2:${quarkus-debezium.version}</dependency>
                                     </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.34.0.CR1</lastDetectedBomUpdate>
@@ -530,31 +530,31 @@
                                         </test>
                                         <test>
                                             <skip>true</skip>
-                                            <artifact>io.debezium.quarkus:quarkus-debezium-postgres-integration-tests:${quarkus-debezium.version}</artifact>
+                                            <artifact>io.debezium.quarkus:debezium-quarkus-postgres-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
                                             <skip>true</skip>
-                                            <artifact>io.debezium.quarkus:quarkus-debezium-mariadb-integration-tests:${quarkus-debezium.version}</artifact>
+                                            <artifact>io.debezium.quarkus:debezium-quarkus-mariadb-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
                                             <skip>true</skip>
-                                            <artifact>io.debezium.quarkus:quarkus-debezium-mongodb-integration-tests:${quarkus-debezium.version}</artifact>
+                                            <artifact>io.debezium.quarkus:debezium-quarkus-mongodb-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
                                             <skip>true</skip>
-                                            <artifact>io.debezium.quarkus:quarkus-debezium-mysql-integration-tests:${quarkus-debezium.version}</artifact>
+                                            <artifact>io.debezium.quarkus:debezium-quarkus-mysql-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
                                             <skip>true</skip>
-                                            <artifact>io.debezium.quarkus:quarkus-debezium-sqlserver-integration-tests:${quarkus-debezium.version}</artifact>
+                                            <artifact>io.debezium.quarkus:debezium-quarkus-sqlserver-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
                                             <skip>true</skip>
-                                            <artifact>io.debezium.quarkus:quarkus-debezium-oracle-integration-tests:${quarkus-debezium.version}</artifact>
+                                            <artifact>io.debezium.quarkus:debezium-quarkus-oracle-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                         <test>
                                             <skip>true</skip>
-                                            <artifact>io.debezium.quarkus:quarkus-debezium-db2-integration-tests:${quarkus-debezium.version}</artifact>
+                                            <artifact>io.debezium.quarkus:debezium-quarkus-db2-integration-tests:${quarkus-debezium.version}</artifact>
                                         </test>
                                     </tests>
                                 </member>
