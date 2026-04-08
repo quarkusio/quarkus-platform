@@ -1,3 +1,25 @@
+notifications:
+  - member: AmazonServices
+    notify: [scrocquesel]
+  - member: CXF
+    notify: [ppalaga]
+  - member: Debezium
+    notify: [naros]
+  - member: GoogleCloudServices
+    notify: [loicmathieu]
+  - member: io.quarkiverse.config
+    notify: [radcortez]
+  - member: io.quarkiverse.qute.web
+    notify: [mkouba]
+  - member: io.quarkiverse.vault
+    notify: [vsevel]
+  - member: LangChain4j
+    notify: [geoand]
+  - member: MCPServer
+    notify: [mkouba]
+  - member: OperatorSDK
+    notify: [claprun]
+
 members:
   - name: AmazonServices
   - name: Cassandra
