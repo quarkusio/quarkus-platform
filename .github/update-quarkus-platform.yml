@@ -57,6 +57,7 @@ branches:
       - name: OperatorSDK
       - name: QpidJMS
       - name: Quarkus Flow
+        update-policy: minor
   3.33:
     default-update-policy: micro
     members:
