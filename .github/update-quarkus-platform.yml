@@ -19,6 +19,8 @@ notifications:
     notify: [mkouba]
   - member: OperatorSDK
     notify: [claprun]
+  - member: Quarkus Flow
+    notify: [ricardozanini, baldimir]
 
 members:
   - name: AmazonServices
