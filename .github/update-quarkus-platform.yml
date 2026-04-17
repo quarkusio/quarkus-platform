@@ -18,7 +18,7 @@ notifications:
   - member: MCPServer
     notify: [mkouba]
   - member: OperatorSDK
-    notify: [claprun, xstefank]
+    notify: [metacosm, xstefank]
   - member: Quarkus Flow
     notify: [ricardozanini, baldimir]
 
