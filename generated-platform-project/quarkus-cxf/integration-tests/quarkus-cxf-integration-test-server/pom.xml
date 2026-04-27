@@ -122,8 +122,36 @@
             <quarkus-cxf.platform.group-id>${project.groupId}</quarkus-cxf.platform.group-id>
             <quarkus-cxf.platform.artifact-id>quarkus-cxf-bom</quarkus-cxf.platform.artifact-id>
             <quarkus-cxf.platform.version>${project.version}</quarkus-cxf.platform.version>
+            <qcxf.maven.settings.xml.path>${qcxf.maven.settings.xml.path}</qcxf.maven.settings.xml.path>
+            <qcxf.maven.active.profiles>${qcxf.maven.active.profiles}</qcxf.maven.active.profiles>
+            <qcxf.maven.user.properties>${qcxf.maven.user.properties}</qcxf.maven.user.properties>
           </systemPropertyVariables>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.gmaven</groupId>
+        <artifactId>groovy-maven-plugin</artifactId>
+        <version>2.1.1</version>
+        <executions>
+          <execution>
+            <id>collect-maven-repos</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <source>
+                                
+                                    project.properties.setProperty("qcxf.maven.settings.xml.path", session.request.userSettingsFile.toString())
+                                    project.properties.setProperty("qcxf.maven.active.profiles", session.request.activeProfiles.join(","))
+                                    // Pass -Dqcxf.maven.user.properties.prefixes=maven.repo.local,repo. to forward matching -D properties to child Maven invocations
+                                    def prefixes = (project.properties.getProperty("qcxf.maven.user.properties.prefixes") ?: "").split(",")
+                                    project.properties.setProperty("qcxf.maven.user.properties", session.request.userProperties.findAll { k, v -&gt; prefixes.any { p -&gt; k.startsWith(p) } }.collect { k, v -&gt; "-D${k}=${v}" }.join(" "))
+                                
+                            </source>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
