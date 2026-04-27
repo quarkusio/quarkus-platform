@@ -66,14 +66,12 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="/pom:project/pom:build/pom:plugins/pom:plugin[pom:artifactId='maven-surefire-plugin']/pom:configuration">
+    <xsl:template match="/pom:project[./pom:artifactId/text() = 'camel-quarkus-integration-test-hazelcast']/pom:build/pom:plugins/pom:plugin[pom:artifactId='maven-surefire-plugin']/pom:configuration">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()" />
-            <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-hazelcast'">
-                <excludes>
-                    <exclude>**/HazelcastAtomicTest.java</exclude>
-                </excludes>
-            </xsl:if>
+            <excludes>
+                <exclude>**/HazelcastAtomicTest.java</exclude>
+            </excludes>
         </xsl:copy>
     </xsl:template>
 </xsl:stylesheet>
