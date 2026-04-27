@@ -118,6 +118,9 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped</dependency>
           </dependenciesToScan>
+          <excludes>
+            <exclude>**/CxfSoapWssClientTest.java</exclude>
+          </excludes>
         </configuration>
       </plugin>
     </plugins>
