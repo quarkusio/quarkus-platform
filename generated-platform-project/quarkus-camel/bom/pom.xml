@@ -8557,7 +8557,7 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-api</artifactId>
-        <version>4.1.1</version>
+        <version>4.1.2</version>
         <exclusions>
           <exclusion>
             <groupId>javax.ws.rs</groupId>
@@ -8572,12 +8572,12 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-file</artifactId>
-        <version>4.1.1</version>
+        <version>4.1.2</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-json</artifactId>
-        <version>4.1.1</version>
+        <version>4.1.2</version>
         <exclusions>
           <exclusion>
             <groupId>org.lz4</groupId>
@@ -8588,7 +8588,7 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-runtime</artifactId>
-        <version>4.1.1</version>
+        <version>4.1.2</version>
         <exclusions>
           <exclusion>
             <groupId>io.swagger.core.v3</groupId>
@@ -8623,7 +8623,7 @@
       <dependency>
         <groupId>org.apache.kafka</groupId>
         <artifactId>connect-transforms</artifactId>
-        <version>4.1.1</version>
+        <version>4.1.2</version>
       </dependency>
       <dependency>
         <groupId>org.apache.kudu</groupId>
