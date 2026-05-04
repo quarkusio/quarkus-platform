@@ -8025,17 +8025,17 @@
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcmail-jdk18on</artifactId>
-        <version>1.81</version>
+        <version>1.84</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcpg-jdk18on</artifactId>
-        <version>1.81</version>
+        <version>1.84</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcutil-jdk18on</artifactId>
-        <version>1.81</version>
+        <version>1.84</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.woodstox</groupId>
