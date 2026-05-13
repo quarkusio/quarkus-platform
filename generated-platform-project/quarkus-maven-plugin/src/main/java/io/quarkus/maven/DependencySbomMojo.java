@@ -24,8 +24,8 @@ import io.quarkus.bootstrap.resolver.maven.MavenArtifactResolver;
 import io.quarkus.cyclonedx.generator.CycloneDxSbomGenerator;
 import io.quarkus.maven.components.QuarkusWorkspaceProvider;
 import io.quarkus.maven.dependency.ArtifactCoords;
-import io.quarkus.sbom.ApplicationManifest;
-import io.quarkus.sbom.ApplicationManifestConfig;
+import io.quarkus.sbom.CoreSbomContributionConfig;
+import io.quarkus.sbom.SbomContribution;
 
 /**
  * Quarkus application SBOM generator
@@ -83,6 +83,12 @@ public class DependencySbomMojo extends AbstractMojo {
     String schemaVersion;
 
     /**
+     * Whether to pretty-print the generated SBOM output. The default is {@code false}
+     */
+    @Parameter(property = "quarkus.dependency.sbom.pretty-print", defaultValue = "false")
+    boolean prettyPrint;
+
+    /**
      * Whether to limit application dependencies to only those that are included in the runtime
      */
     @Parameter(property = "quarkus.dependency.sbom.runtime-only")
@@ -97,16 +103,17 @@ public class DependencySbomMojo extends AbstractMojo {
             return;
         }
         final Path outputFilePath = getSbomFile().toPath();
+        SbomContribution contribution = new CoreSbomContributionConfig()
+                .setApplicationModel(resolveApplicationModel())
+                .toSbomContribution();
         CycloneDxSbomGenerator.newInstance()
-                .setManifest(ApplicationManifest.fromConfig(
-                        ApplicationManifestConfig.builder()
-                                .setApplicationModel(resolveApplicationModel())
-                                .build()))
+                .setContributions(List.of(contribution))
                 .setOutputFile(outputFilePath)
                 .setFormat(format)
                 .setEffectiveModelResolver(EffectiveModelResolver.of(getResolver()))
                 .setSchemaVersion(schemaVersion)
                 .setIncludeLicenseText(includeLicenseText)
+                .setPrettyPrint(prettyPrint)
                 .generate();
         getLog().info("The SBOM has been saved in " + outputFilePath);
     }
