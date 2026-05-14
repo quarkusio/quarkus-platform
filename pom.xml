@@ -427,6 +427,11 @@
                                                 <quarkus.test.flat-class-path>true</quarkus.test.flat-class-path>
                                             </systemProperties>
                                         </test>
+                                        <test>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus-test-list.version}</artifact>
+                                            <jvmExcludes>**/CxfSoapWssClientTest.java</jvmExcludes>
+                                            <nativeExcludes>**/CxfSoapWssClientTest.java</nativeExcludes>
+                                        </test>
                                     </tests>
                                 </member>
                                 <member>

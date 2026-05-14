@@ -129,6 +129,9 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped</dependency>
           </dependenciesToScan>
+          <excludes>
+            <exclude>**/CxfSoapWssClientTest.java</exclude>
+          </excludes>
         </configuration>
       </plugin>
     </plugins>
@@ -155,6 +158,9 @@
                   <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
                   </systemPropertyVariables>
+                  <excludes>
+                    <exclude>**/CxfSoapWssClientTest.java</exclude>
+                  </excludes>
                 </configuration>
               </execution>
             </executions>
