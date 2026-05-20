@@ -1122,6 +1122,11 @@
         <artifactId>quarkus-langchain4j-websockets-next</artifactId>
         <version>1.2.4</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.opennlp</groupId>
+        <artifactId>opennlp-tools</artifactId>
+        <version>2.5.9</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <profiles>

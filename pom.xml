@@ -575,6 +575,10 @@
                                 <member>
                                     <name>LangChain4j</name>
                                     <bom>io.quarkiverse.langchain4j:quarkus-langchain4j-bom:${quarkus-langchain4j.version}</bom>
+                                    <dependencyManagement>
+                                        <!-- override opennlp-tools due to CVEs -->
+                                        <dependency>org.apache.opennlp:opennlp-tools:2.5.9</dependency>
+                                    </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-langchain4j-bom:3.27.3</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-langchain4j-bom:${platform.version}</next>

@@ -23289,6 +23289,11 @@
         <version>3.2.2</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.opennlp</groupId>
+        <artifactId>opennlp-tools</artifactId>
+        <version>2.5.9</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.pdfbox</groupId>
         <artifactId>fontbox</artifactId>
         <version>3.0.5</version>
