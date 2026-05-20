@@ -73,6 +73,34 @@ Surefire and Failsafe are configured globally to exclude tests tagged with `@Tag
 
 All member versions are defined as properties in the root `pom.xml` (e.g., `<camel-quarkus.version>`, `<quarkus-langchain4j.version>`). The `$` sign in generated properties is escaped using the `<dollarSign>` property.
 
+### Overriding Dependency Versions in a Member BOM
+
+There are two mechanisms depending on whether the dependency is already managed by the member's upstream BOM:
+
+- **`<dependencyManagement>`** (on the `<member>`) — Use this to **add** a dependency that is **not** already managed by the member's upstream BOM. This injects the dependency into the generated platform BOM for that member.
+- **`<enforcedDependencies>`** (in `<bomGenerator>`) — Use this to **override** the version of a dependency that **is** already managed by the member's upstream BOM or by Quarkus Core. Enforced dependencies take precedence over BOM-resolved versions.
+
+Example of `<dependencyManagement>` on a member:
+```xml
+<member>
+    <name>MyMember</name>
+    <bom>com.example:my-bom:${my.version}</bom>
+    <dependencyManagement>
+        <dependency>org.example:some-lib:1.2.3</dependency>
+    </dependencyManagement>
+    ...
+</member>
+```
+
+Example of `<enforcedDependencies>` in `<bomGenerator>`:
+```xml
+<bomGenerator>
+    <enforcedDependencies>
+        <dependency>org.example:already-managed-lib:2.0.0</dependency>
+    </enforcedDependencies>
+    ...
+</bomGenerator>
+```
 ## BOM Generation Algorithm
 
 1. Quarkus Core constraints are **immutable** — they always win.
