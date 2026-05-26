@@ -51,6 +51,7 @@
     <module>camel-quarkus-integration-test-docling</module>
     <module>camel-quarkus-integration-test-dropbox</module>
     <module>camel-quarkus-integration-test-elasticsearch-rest-client</module>
+    <module>camel-quarkus-integration-test-elasticsearch</module>
     <module>camel-quarkus-integration-test-exec</module>
     <module>camel-quarkus-integration-test-fhir</module>
     <module>camel-quarkus-integration-test-file</module>
@@ -59,7 +60,6 @@
     <module>camel-quarkus-integration-test-fory</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
-    <module>camel-quarkus-integration-test-ftp</module>
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
@@ -182,6 +182,7 @@
     <module>camel-quarkus-integration-test-reactive-streams</module>
     <module>camel-quarkus-integration-test-rest-openapi</module>
     <module>camel-quarkus-integration-test-rest</module>
+    <module>camel-quarkus-integration-test-rocketmq</module>
     <module>camel-quarkus-integration-test-saga</module>
     <module>camel-quarkus-integration-test-salesforce</module>
     <module>camel-quarkus-integration-test-sap-netweaver</module>
@@ -212,6 +213,7 @@
     <module>camel-quarkus-integration-test-telegram</module>
     <module>camel-quarkus-integration-test-telemetry-dev</module>
     <module>camel-quarkus-integration-test-tika</module>
+    <module>camel-quarkus-integration-test-tls-registry</module>
     <module>camel-quarkus-integration-test-twilio</module>
     <module>camel-quarkus-integration-test-twitter</module>
     <module>camel-quarkus-integration-test-univocity-parsers</module>
