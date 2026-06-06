@@ -2936,6 +2936,16 @@
         <version>2.2.2</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.httpproblem</groupId>
+        <artifactId>quarkus-http-problem-deployment</artifactId>
+        <version>3.33.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.httpproblem</groupId>
+        <artifactId>quarkus-http-problem</artifactId>
+        <version>3.33.1</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
         <artifactId>quarkus-qute-web-deployment</artifactId>
         <version>3.4.5</version>
