@@ -85,7 +85,7 @@
         <quarkus-operator-sdk.version>7.7.5</quarkus-operator-sdk.version>
         <quarkus-langchain4j.version>1.10.0</quarkus-langchain4j.version>
         <quarkus-mcp-server.version>1.12.1</quarkus-mcp-server.version>
-        <quarkus-flow.version>0.10.0</quarkus-flow.version>
+        <quarkus-flow.version>0.10.2</quarkus-flow.version>
 
         <quarkus-platform-bom-generator.version>0.0.131</quarkus-platform-bom-generator.version>
         <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
