@@ -242,7 +242,7 @@
       <plugin>
         <groupId>org.eclipse.sisu</groupId>
         <artifactId>sisu-maven-plugin</artifactId>
-        <version>0.3.5</version>
+        <version>1.0.0</version>
         <executions>
           <execution>
             <id>index-project</id>
@@ -282,7 +282,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.6.2</version>
+        <version>3.6.3</version>
         <executions>
           <execution>
             <id>enforce-quarkus-maven-plugin</id>
