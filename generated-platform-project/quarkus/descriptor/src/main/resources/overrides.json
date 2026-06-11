@@ -1,6 +1,6 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.36.0" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.37.0.CR1" ],
     "project" : {
       "codestart-data" : {
         "tooling-dockerfiles.dockerfile.jvm.from" : "registry.access.redhat.com/ubi9/openjdk-21-runtime:1.24",
@@ -13,22 +13,22 @@
         "compiler-plugin-version" : "3.15.0",
         "doc-root" : "https://quarkus.io",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.36.0",
+        "gradle-plugin-version" : "3.37.0.CR1",
         "gradle-wrapper-version" : "9.5.1",
-        "kotlin-version" : "2.3.21",
+        "kotlin-version" : "2.4.0",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
         "maven-plugin-groupId" : "${project.groupId}",
         "maven-plugin-version" : "${project.version}",
         "maven-wrapper-version" : "3.3.4",
         "minimum-java-version" : "17",
-        "proposed-maven-version" : "3.9.15",
-        "quarkus-core-version" : "3.36.0",
+        "proposed-maven-version" : "3.9.16",
+        "quarkus-core-version" : "3.37.0.CR1",
         "recommended-java-version" : "25",
         "rest-assured-version" : "6.0.0",
         "scala-plugin-version" : "4.9.9",
         "scala-version" : "2.13.12",
         "supported-maven-versions" : "[3.9.0,)",
-        "surefire-plugin-version" : "3.5.4"
+        "surefire-plugin-version" : "3.5.6"
       }
     },
     "last-bom-update" : "${member.last-bom-update}"
@@ -106,5 +106,9 @@
     "id" : "alt-languages",
     "name" : "Alternative languages",
     "description" : "Support for other JVM based languages"
+  }, {
+    "id" : "packaging",
+    "name" : "Packaging",
+    "description" : "Support for packaging a built application in various ways"
   } ]
 }
