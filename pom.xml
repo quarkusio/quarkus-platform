@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>3.19.0</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.37.0.CR1</quarkus-cxf.version>
+        <quarkus-cxf.version>3.37.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.12.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -379,6 +379,14 @@
                                 <member>
                                     <name>CXF</name>
                                     <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
+                                    <dependencyManagement>
+                                        <!-- Override Apache HTTP Client to make Camel happy -->
+                                        <!-- Remove once we are on Camel version depending on httpclient5 5.6.1+ -->
+                                        <!-- Check in https://repo1.maven.org/maven2/org/apache/camel/camel-dependencies/<camel-version>/camel-dependencies-<camel-version>.pom -->
+                                        <dependency>org.apache.httpcomponents.client5:httpclient5-cache:5.5.2</dependency>
+                                        <dependency>org.apache.httpcomponents.client5:httpclient5-fluent:5.5.2</dependency>
+                                        <dependency>org.apache.httpcomponents.client5:httpclient5:5.5.2</dependency>
+                                    </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.37.0.CR1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
