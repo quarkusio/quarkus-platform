@@ -45,11 +45,6 @@
       <artifactId>quarkus-flow-scheduler-deployment</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>io.quarkiverse.flow</groupId>
-      <artifactId>quarkus-flow-deployment</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <pluginManagement>
