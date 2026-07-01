@@ -13,14 +13,17 @@
   <packaging>maven-plugin</packaging>
   <name>Quarkus Platform - Quarkus Maven Plugin</name>
   <properties>
+    <maven.compiler.argument.testRelease>11</maven.compiler.argument.testRelease>
     <maven.compiler.release>11</maven.compiler.release>
+    <maven.test.skip>true</maven.test.skip>
+    <maven.compiler.argument.testTarget>11</maven.compiler.argument.testTarget>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.argument.release>11</maven.compiler.argument.release>
     <maven.compiler.testSource>11</maven.compiler.testSource>
     <maven.compiler.argument.target>11</maven.compiler.argument.target>
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.argument.testSource>11</maven.compiler.argument.testSource>
-    <maven.test.skip>true</maven.test.skip>
-    <maven.compiler.argument.testTarget>11</maven.compiler.argument.testTarget>
-    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.testRelease>11</maven.compiler.testRelease>
     <maven.compiler.testTarget>11</maven.compiler.testTarget>
     <maven.compiler.argument.source>11</maven.compiler.argument.source>
     <maven.compiler.parameters>true</maven.compiler.parameters>
@@ -232,7 +235,7 @@
             <configuration>
               <artifactSet>
                 <includes>
-                  <include>org.fusesource.jansi:jansi</include>
+                  <include>org.jline:jansi</include>
                 </includes>
               </artifactSet>
             </configuration>
