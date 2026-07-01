@@ -7,4 +7,4 @@ fi
 VERSION=$1
 
 sed -ri "s@        <quarkus\.version>[^<]+</quarkus\.version>@        <quarkus.version>${VERSION}</quarkus.version>@g" pom.xml
-./mvnw -Dsync
+./mvnw -B -ntp -Dsync
