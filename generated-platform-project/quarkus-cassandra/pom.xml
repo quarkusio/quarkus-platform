@@ -13,8 +13,8 @@
   <name>Quarkus Platform - Cassandra - Parent</name>
   <modules>
     <module>bom</module>
-    <module>integration-tests</module>
     <module>descriptor</module>
     <module>properties</module>
+    <module>integration-tests</module>
   </modules>
 </project>
