@@ -2234,11 +2234,6 @@
         <groupId>io.netty</groupId>
         <artifactId>netty-transport-native-unix-common</artifactId>
         <version>4.1.135.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-transport-native-unix-common</artifactId>
-        <version>4.1.135.Final</version>
         <classifier>linux-aarch_64</classifier>
       </dependency>
       <dependency>
@@ -2264,6 +2259,12 @@
         <artifactId>netty-transport-native-unix-common</artifactId>
         <version>4.1.135.Final</version>
         <classifier>osx-x86_64</classifier>
+      </dependency>
+      <!-- keep the no-classifier definition after all classifier definitions because Gradle doesn't respect classifiers -->
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-transport-native-unix-common</artifactId>
+        <version>4.1.135.Final</version>
       </dependency>
       <dependency>
         <groupId>io.netty</groupId>
