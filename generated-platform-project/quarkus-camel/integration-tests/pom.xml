@@ -13,6 +13,7 @@
   <name>Quarkus Platform - Camel - Integration Tests - Parent</name>
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
+    <module>camel-quarkus-integration-test-ftp</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-activemq6</module>
@@ -59,7 +60,6 @@
     <module>camel-quarkus-integration-test-fory</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
-    <module>camel-quarkus-integration-test-ftp</module>
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
