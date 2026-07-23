@@ -25870,7 +25870,7 @@
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-util</artifactId>
-        <version>12.1.8</version>
+        <version>12.1.9</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jgit</groupId>
