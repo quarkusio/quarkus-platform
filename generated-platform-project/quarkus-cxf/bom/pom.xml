@@ -78,12 +78,12 @@
       <dependency>
         <groupId>com.sun.xml.bind.external</groupId>
         <artifactId>relaxng-datatype</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.8</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.bind.external</groupId>
         <artifactId>rngom</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.8</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.dtd-parser</groupId>
@@ -638,22 +638,22 @@
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>codemodel</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.8</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.8</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-xjc</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.8</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>xsom</artifactId>
-        <version>4.0.6</version>
+        <version>4.0.8</version>
       </dependency>
       <dependency>
         <groupId>org.jasypt</groupId>
