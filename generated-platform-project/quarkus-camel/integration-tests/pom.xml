@@ -14,6 +14,7 @@
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
+    <module>camel-quarkus-integration-test-a2a</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-activemq6</module>
     <module>camel-quarkus-integration-test-amqp</module>
@@ -62,7 +63,7 @@
     <module>camel-quarkus-integration-test-freemarker</module>
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
-    <module>camel-quarkus-integration-test-github</module>
+    <module>camel-quarkus-integration-test-github2</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
     <module>camel-quarkus-integration-test-google-pubsub</module>
     <module>camel-quarkus-integration-test-google-secret-manager</module>
@@ -108,6 +109,7 @@
     <module>camel-quarkus-integration-test-json-validator</module>
     <module>camel-quarkus-integration-test-jsonata</module>
     <module>camel-quarkus-integration-test-jsonpath</module>
+    <module>camel-quarkus-integration-test-jsoup</module>
     <module>camel-quarkus-integration-test-jt400</module>
     <module>camel-quarkus-integration-test-jta</module>
     <module>camel-quarkus-integration-test-kafka-sasl-ssl</module>
@@ -119,6 +121,8 @@
     <module>camel-quarkus-integration-test-knative</module>
     <module>camel-quarkus-integration-test-kubernetes</module>
     <module>camel-quarkus-integration-test-kudu</module>
+    <module>camel-quarkus-integration-test-langchain4j-agent-bean-binding-ql4j</module>
+    <module>camel-quarkus-integration-test-langchain4j-agent-ql4j</module>
     <module>camel-quarkus-integration-test-langchain4j-agent</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
     <module>camel-quarkus-integration-test-langchain4j-embeddings</module>
@@ -155,11 +159,13 @@
     <module>camel-quarkus-integration-test-oaipmh</module>
     <module>camel-quarkus-integration-test-oauth</module>
     <module>camel-quarkus-integration-test-observability-services</module>
+    <module>camel-quarkus-integration-test-ocsf</module>
     <module>camel-quarkus-integration-test-ognl</module>
     <module>camel-quarkus-integration-test-olingo4</module>
     <module>camel-quarkus-integration-test-once</module>
     <module>camel-quarkus-integration-test-openai</module>
     <module>camel-quarkus-integration-test-openapi-java</module>
+    <module>camel-quarkus-integration-test-openapi-validator</module>
     <module>camel-quarkus-integration-test-openstack</module>
     <module>camel-quarkus-integration-test-opentelemetry</module>
     <module>camel-quarkus-integration-test-opentelemetry2</module>
