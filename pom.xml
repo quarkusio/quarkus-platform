@@ -76,7 +76,7 @@
         <quarkus-cassandra-client.version>1.4.1</quarkus-cassandra-client.version>
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
         <quarkus-qute-web.version>3.4.5</quarkus-qute-web.version>
-        <quarkus-http-problem.version>3.33.1</quarkus-http-problem.version>
+        <quarkus-http-problem.version>3.38.1</quarkus-http-problem.version>
 
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
@@ -247,6 +247,18 @@
                                         <systemProperties>
                                             <vault-test-extension.use-tls>false</vault-test-extension.use-tls>
                                         </systemProperties>
+                                    </test>
+                                    <test>
+                                        <artifact>io.quarkiverse.httpproblem:quarkus-http-problem-integration-test-core:${quarkus-http-problem.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <artifact>io.quarkiverse.httpproblem:quarkus-http-problem-integration-test-restclient:${quarkus-http-problem.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <artifact>io.quarkiverse.httpproblem:quarkus-http-problem-integration-test-openapi:${quarkus-http-problem.version}</artifact>
+                                    </test>
+                                    <test>
+                                        <artifact>io.quarkiverse.httpproblem:quarkus-http-problem-integration-test-tck:${quarkus-http-problem.version}</artifact>
                                     </test>
                                 </tests>
                             </core>
