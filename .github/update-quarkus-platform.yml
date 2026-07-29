@@ -9,6 +9,8 @@ notifications:
     notify: [loicmathieu]
   - member: io.quarkiverse.config
     notify: [radcortez]
+  - member: io.quarkiverse.httpproblem
+    notify: [lwitkowski]
   - member: io.quarkiverse.qute.web
     notify: [mkouba]
   - member: io.quarkiverse.vault
@@ -31,6 +33,7 @@ members:
   - name: GoogleCloudServices
   - name: Hazelcast
   - name: io.quarkiverse.config
+  - name: io.quarkiverse.httpproblem
   - name: io.quarkiverse.qute.web
   - name: io.quarkiverse.vault
   - name: LangChain4j
@@ -52,6 +55,7 @@ branches:
       - name: io.quarkiverse.config
       - name: io.quarkiverse.qute.web
       - name: io.quarkiverse.vault
+      - name: io.quarkiverse.httpproblem
       - name: LangChain4j
       - name: MCPServer
       - name: OperatorSDK
