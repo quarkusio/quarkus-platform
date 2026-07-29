@@ -10435,6 +10435,16 @@
         <version>1.4.0</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.httpproblem</groupId>
+        <artifactId>quarkus-http-problem-deployment</artifactId>
+        <version>3.38.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.httpproblem</groupId>
+        <artifactId>quarkus-http-problem</artifactId>
+        <version>3.38.1</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.jackson-jq</groupId>
         <artifactId>quarkus-jackson-jq-deployment</artifactId>
         <version>2.5.2</version>

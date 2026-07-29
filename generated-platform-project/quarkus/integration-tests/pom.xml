@@ -16,6 +16,10 @@
     <module>quarkus-vault-integration-test</module>
     <module>quarkus-vault-integration-test-agroal</module>
     <module>quarkus-vault-integration-test-app</module>
+    <module>quarkus-http-problem-integration-test-core</module>
+    <module>quarkus-http-problem-integration-test-restclient</module>
+    <module>quarkus-http-problem-integration-test-openapi</module>
+    <module>quarkus-http-problem-integration-test-tck</module>
   </modules>
   <properties>
     <gpg.skip>true</gpg.skip>
