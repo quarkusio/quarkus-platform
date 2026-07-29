@@ -28,7 +28,6 @@ members:
   - name: AmazonServices
   - name: Cassandra
   - name: CXF
-    update-policy: micro
   - name: Debezium
   - name: GoogleCloudServices
   - name: Hazelcast
