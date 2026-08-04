@@ -5,6 +5,7 @@ on:
     branches-ignore:
       - 'dependabot/**'
       - 'update-automation/**'
+      - 'quarkus-**'
     paths-ignore:
       - '.gitignore'
       - '*.md'
