@@ -67,12 +67,12 @@
       </dependency>
       <dependency>
         <groupId>com.hazelcast</groupId>
-        <artifactId>quarkus-hazelcast-client-deployment</artifactId>
+        <artifactId>quarkus-hazelcast-client</artifactId>
         <version>4.1.0</version>
       </dependency>
       <dependency>
         <groupId>com.hazelcast</groupId>
-        <artifactId>quarkus-hazelcast-client</artifactId>
+        <artifactId>quarkus-hazelcast-client-deployment</artifactId>
         <version>4.1.0</version>
       </dependency>
       <dependency>

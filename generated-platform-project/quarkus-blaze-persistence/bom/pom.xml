@@ -72,12 +72,12 @@
       </dependency>
       <dependency>
         <groupId>com.blazebit</groupId>
-        <artifactId>blaze-persistence-integration-quarkus-3-deployment</artifactId>
+        <artifactId>blaze-persistence-integration-quarkus-3</artifactId>
         <version>1.6.19</version>
       </dependency>
       <dependency>
         <groupId>com.blazebit</groupId>
-        <artifactId>blaze-persistence-integration-quarkus-3</artifactId>
+        <artifactId>blaze-persistence-integration-quarkus-3-deployment</artifactId>
         <version>1.6.19</version>
       </dependency>
     </dependencies>

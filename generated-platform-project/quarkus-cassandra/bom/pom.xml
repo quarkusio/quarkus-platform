@@ -61,13 +61,18 @@
         <type>properties</type>
       </dependency>
       <dependency>
-        <groupId>com.datastax.oss.quarkus</groupId>
-        <artifactId>cassandra-quarkus-client-deployment</artifactId>
-        <version>1.4.1</version>
+        <groupId>com.datastax.oss</groupId>
+        <artifactId>native-protocol</artifactId>
+        <version>1.5.2</version>
       </dependency>
       <dependency>
         <groupId>com.datastax.oss.quarkus</groupId>
         <artifactId>cassandra-quarkus-client</artifactId>
+        <version>1.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.datastax.oss.quarkus</groupId>
+        <artifactId>cassandra-quarkus-client-deployment</artifactId>
         <version>1.4.1</version>
       </dependency>
       <dependency>
@@ -79,11 +84,6 @@
         <groupId>com.datastax.oss.quarkus</groupId>
         <artifactId>cassandra-quarkus-test-framework</artifactId>
         <version>1.4.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.datastax.oss</groupId>
-        <artifactId>native-protocol</artifactId>
-        <version>1.5.2</version>
       </dependency>
       <dependency>
         <groupId>com.esri.geometry</groupId>
@@ -103,11 +103,6 @@
       </dependency>
       <dependency>
         <groupId>org.apache.cassandra</groupId>
-        <artifactId>java-driver-core-shaded</artifactId>
-        <version>4.19.2</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cassandra</groupId>
         <artifactId>java-driver-core</artifactId>
         <version>4.19.2</version>
         <exclusions>
@@ -120,6 +115,11 @@
             <artifactId>HdrHistogram</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.cassandra</groupId>
+        <artifactId>java-driver-core-shaded</artifactId>
+        <version>4.19.2</version>
       </dependency>
       <dependency>
         <groupId>org.apache.cassandra</groupId>
