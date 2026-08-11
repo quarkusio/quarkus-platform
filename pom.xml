@@ -463,26 +463,7 @@
                                         <groupId>io.debezium.quarkus</groupId>
                                     </ownGroupIds>
                                     <dependencyManagement>
-                                        <!-- Debezium Core -->
-                                        <dependency>io.debezium:debezium-api:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-common:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connect-plugins:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-ddl-parser:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-embedded:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-scripting:${quarkus-debezium.version}</dependency>
-
-                                        <!-- Connectors -->
-                                        <dependency>io.debezium:debezium-connector-cassandra:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-db2:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-ibmi:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-informix:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-mongodb:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-mysql:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-mariadb:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-oracle:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-postgres:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-sqlserver:${quarkus-debezium.version}</dependency>
-                                        <dependency>io.debezium:debezium-connector-vitess:${quarkus-debezium.version}</dependency>
+                                        <!-- Quarkus extensions should be kept first for the updater as they are deployed last -->
 
                                         <!-- Outbox -->
                                         <dependency>io.debezium:debezium-quarkus-outbox:${quarkus-debezium.version}</dependency>
@@ -527,6 +508,27 @@
                                         <dependency>io.debezium.quarkus:debezium-quarkus-db2-parent:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium.quarkus:debezium-quarkus-db2-deployment:${quarkus-debezium.version}</dependency>
                                         <dependency>io.debezium.quarkus:debezium-quarkus-db2:${quarkus-debezium.version}</dependency>
+
+                                        <!-- Debezium Core -->
+                                        <dependency>io.debezium:debezium-api:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-common:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connect-plugins:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-ddl-parser:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-embedded:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-scripting:${quarkus-debezium.version}</dependency>
+
+                                        <!-- Connectors -->
+                                        <dependency>io.debezium:debezium-connector-cassandra:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-db2:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-ibmi:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-informix:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-mongodb:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-mysql:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-mariadb:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-oracle:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-postgres:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-sqlserver:${quarkus-debezium.version}</dependency>
+                                        <dependency>io.debezium:debezium-connector-vitess:${quarkus-debezium.version}</dependency>
                                     </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.37.0.CR1</lastDetectedBomUpdate>
