@@ -92,6 +92,11 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
+        <artifactId>quarkus-flow</artifactId>
+        <version>0.15.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
@@ -102,17 +107,12 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-durable-kubernetes-deployment</artifactId>
-        <version>0.15.1</version>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-durable-kubernetes</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-jpa-deployment</artifactId>
+        <artifactId>quarkus-flow-durable-kubernetes-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -122,7 +122,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-langchain4j-deployment</artifactId>
+        <artifactId>quarkus-flow-jpa-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -132,7 +132,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-messaging-deployment</artifactId>
+        <artifactId>quarkus-flow-langchain4j-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -142,7 +142,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-mvstore-deployment</artifactId>
+        <artifactId>quarkus-flow-messaging-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -152,7 +152,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-oidc-deployment</artifactId>
+        <artifactId>quarkus-flow-mvstore-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -162,7 +162,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-persistence-common-deployment</artifactId>
+        <artifactId>quarkus-flow-oidc-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -172,7 +172,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-quartz-scheduler-deployment</artifactId>
+        <artifactId>quarkus-flow-persistence-common-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -182,7 +182,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-redis-deployment</artifactId>
+        <artifactId>quarkus-flow-quartz-scheduler-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -192,7 +192,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-runner-deployment</artifactId>
+        <artifactId>quarkus-flow-redis-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -202,7 +202,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow-scheduler-deployment</artifactId>
+        <artifactId>quarkus-flow-runner-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
@@ -212,17 +212,17 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
-        <artifactId>quarkus-flow</artifactId>
+        <artifactId>quarkus-flow-scheduler-deployment</artifactId>
         <version>0.15.1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.jackson-jq</groupId>
-        <artifactId>quarkus-jackson-jq-deployment</artifactId>
+        <artifactId>quarkus-jackson-jq</artifactId>
         <version>2.5.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.jackson-jq</groupId>
-        <artifactId>quarkus-jackson-jq</artifactId>
+        <artifactId>quarkus-jackson-jq-deployment</artifactId>
         <version>2.5.2</version>
       </dependency>
       <dependency>
@@ -287,12 +287,12 @@
       </dependency>
       <dependency>
         <groupId>io.serverlessworkflow</groupId>
-        <artifactId>serverlessworkflow-impl-jackson-jwt</artifactId>
+        <artifactId>serverlessworkflow-impl-jackson</artifactId>
         <version>7.26.1.Final</version>
       </dependency>
       <dependency>
         <groupId>io.serverlessworkflow</groupId>
-        <artifactId>serverlessworkflow-impl-jackson</artifactId>
+        <artifactId>serverlessworkflow-impl-jackson-jwt</artifactId>
         <version>7.26.1.Final</version>
       </dependency>
       <dependency>
@@ -317,12 +317,12 @@
       </dependency>
       <dependency>
         <groupId>io.serverlessworkflow</groupId>
-        <artifactId>serverlessworkflow-impl-openapi-base</artifactId>
+        <artifactId>serverlessworkflow-impl-openapi</artifactId>
         <version>7.26.1.Final</version>
       </dependency>
       <dependency>
         <groupId>io.serverlessworkflow</groupId>
-        <artifactId>serverlessworkflow-impl-openapi</artifactId>
+        <artifactId>serverlessworkflow-impl-openapi-base</artifactId>
         <version>7.26.1.Final</version>
       </dependency>
       <dependency>
