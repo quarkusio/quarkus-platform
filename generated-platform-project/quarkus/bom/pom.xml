@@ -2953,12 +2953,12 @@
       <dependency>
         <groupId>io.quarkiverse.httpproblem</groupId>
         <artifactId>quarkus-http-problem-deployment</artifactId>
-        <version>3.38.1</version>
+        <version>3.38.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.httpproblem</groupId>
         <artifactId>quarkus-http-problem</artifactId>
-        <version>3.38.1</version>
+        <version>3.38.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
