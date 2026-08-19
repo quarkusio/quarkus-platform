@@ -1,6 +1,6 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.38.2" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:3.38.3" ],
     "project" : {
       "codestart-data" : {
         "tooling-dockerfiles.dockerfile.jvm.from" : "registry.access.redhat.com/ubi9/openjdk-21-runtime:1.24",
@@ -13,7 +13,7 @@
         "compiler-plugin-version" : "3.15.0",
         "doc-root" : "https://quarkus.io",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "3.38.2",
+        "gradle-plugin-version" : "3.38.3",
         "gradle-wrapper-version" : "9.6.0",
         "kotlin-version" : "2.4.0",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
@@ -22,7 +22,7 @@
         "maven-wrapper-version" : "3.3.4",
         "minimum-java-version" : "17",
         "proposed-maven-version" : "3.9.16",
-        "quarkus-core-version" : "3.38.2",
+        "quarkus-core-version" : "3.38.3",
         "recommended-java-version" : "25",
         "rest-assured-version" : "6.0.1",
         "scala-plugin-version" : "4.9.9",
@@ -50,7 +50,7 @@
   }, {
     "id" : "messaging",
     "name" : "Messaging",
-    "description" : "Send and receives message to various messaging systems (AMQP, Kafka etc)",
+    "description" : "Send and receive messages to various messaging systems (AMQP, Kafka etc)",
     "metadata" : {
       "pinned" : [ "io.quarkus:quarkus-smallrye-reactive-messaging", "io.quarkus:quarkus-smallrye-reactive-messaging-amqp", "io.quarkus:quarkus-smallrye-reactive-messaging-kafka", "io.quarkus:quarkus-smallrye-reactive-messaging-mqtt", "io.quarkus:quarkus-smallrye-reactive-messaging-rabbitmq" ]
     }
@@ -71,7 +71,7 @@
   }, {
     "id" : "ai",
     "name" : "Artificial Intelligence (AI)",
-    "description" : "Help making Artificial Intgelligence (AI)-infused applications using Large Language Models and more"
+    "description" : "Help making Artificial Intelligence (AI)-infused applications using Large Language Models and more"
   }, {
     "id" : "cloud",
     "name" : "Cloud",
