@@ -14,9 +14,12 @@
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
+    <module>camel-quarkus-integration-test-jdbc-grouped</module>
     <module>camel-quarkus-integration-test-a2a</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-activemq6</module>
+    <module>camel-quarkus-integration-test-ai-tool-langchain4j</module>
+    <module>camel-quarkus-integration-test-ai-tool</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
     <module>camel-quarkus-integration-test-as2</module>
@@ -61,6 +64,7 @@
     <module>camel-quarkus-integration-test-fory</module>
     <module>camel-quarkus-integration-test-foundation-grouped</module>
     <module>camel-quarkus-integration-test-freemarker</module>
+    <module>camel-quarkus-integration-test-ftp</module>
     <module>camel-quarkus-integration-test-geocoder</module>
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github2</module>
@@ -92,7 +96,6 @@
     <module>camel-quarkus-integration-test-java-joor-dsl</module>
     <module>camel-quarkus-integration-test-jaxb</module>
     <module>camel-quarkus-integration-test-jcache</module>
-    <module>camel-quarkus-integration-test-jdbc-grouped</module>
     <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
@@ -127,6 +130,8 @@
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
     <module>camel-quarkus-integration-test-langchain4j-embeddings</module>
     <module>camel-quarkus-integration-test-langchain4j-embeddingstore</module>
+    <module>camel-quarkus-integration-test-langchain4j-ingest</module>
+    <module>camel-quarkus-integration-test-langchain4j-rag-bridge-ql4j</module>
     <module>camel-quarkus-integration-test-langchain4j-tokenizer</module>
     <module>camel-quarkus-integration-test-langchain4j-tools</module>
     <module>camel-quarkus-integration-test-langchain4j-web-search</module>
@@ -142,7 +147,9 @@
     <module>camel-quarkus-integration-test-main</module>
     <module>camel-quarkus-integration-test-management</module>
     <module>camel-quarkus-integration-test-mapstruct</module>
+    <module>camel-quarkus-integration-test-mcp-server</module>
     <module>camel-quarkus-integration-test-mdc</module>
+    <module>camel-quarkus-integration-test-micrometer-observability</module>
     <module>camel-quarkus-integration-test-micrometer</module>
     <module>camel-quarkus-integration-test-microprofile-fault-tolerance</module>
     <module>camel-quarkus-integration-test-microprofile-health</module>

@@ -58,7 +58,7 @@
         <quarkus.version>3.39.0</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.38.0</camel-quarkus.version>
+        <camel-quarkus.version>3.39.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
@@ -427,16 +427,21 @@
                                             <excluded>true</excluded>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-avro-rpc:${camel-quarkus-test-list.version}</artifact>
                                         </test>
-                                        <test><!-- Workaround temporary WIP Camel Quarkus https://github.com/apache/camel-quarkus/issues/8700 -->
-                                            <excluded>true</excluded>
-                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-ftp:${camel-quarkus-test-list.version}</artifact>
-                                        </test>
                                         <test>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jt400-mocked:${camel-quarkus-test-list.version}</artifact>
                                             <systemProperties>
                                                 <quarkus.test.flat-class-path>true</quarkus.test.flat-class-path>
                                             </systemProperties>
                                         </test>
+                                        <test>
+                                            <!-- Temporary disablement because of https://github.com/apache/camel-quarkus/issues/9048 -->
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jdbc-grouped:${camel-quarkus-test-list.version}</artifact>
+                                            <systemProperties>
+                                                <quarkus.datasource.db2.jdbc.url>jdbc:db2://localhost:50000/disabled</quarkus.datasource.db2.jdbc.url>
+                                                <quarkus.datasource.oracle.jdbc.url>jdbc:oracle:thin:@localhost:1521/disabled</quarkus.datasource.oracle.jdbc.url>
+                                            </systemProperties>
+                                        </test>
+
                                     </tests>
                                 </member>
                                 <member>
