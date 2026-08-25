@@ -6,17 +6,17 @@
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-jolokia</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-jolokia</name>
+  <artifactId>camel-quarkus-integration-test-langchain4j-ingest</artifactId>
+  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-langchain4j-ingest</name>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jolokia</artifactId>
+      <artifactId>camel-quarkus-integration-test-langchain4j-ingest</artifactId>
       <version>${camel-quarkus.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-jolokia</artifactId>
+      <artifactId>camel-quarkus-integration-test-langchain4j-ingest</artifactId>
       <version>${camel-quarkus.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
@@ -61,15 +61,20 @@
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-support</artifactId>
+      <artifactId>camel-quarkus-integration-tests-support-kafka</artifactId>
       <version>${camel-quarkus.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.smallrye.certs</groupId>
-      <artifactId>smallrye-certificate-generator-junit5</artifactId>
-      <version>0.9.4</version>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>testcontainers</artifactId>
       <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.hamcrest</groupId>
+          <artifactId>hamcrest-core</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
   <build>
@@ -100,7 +105,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jolokia</dependency>
+            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-ingest</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -133,7 +138,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jolokia</dependency>
+                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-ingest</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -148,7 +153,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-jolokia:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-langchain4j-ingest:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>

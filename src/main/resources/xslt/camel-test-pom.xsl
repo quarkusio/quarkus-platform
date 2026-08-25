@@ -74,4 +74,29 @@
             </excludes>
         </xsl:copy>
     </xsl:template>
+
+    <xsl:template match="/pom:project[./pom:artifactId/text() = 'camel-quarkus-integration-test-langchain4j-rag-bridge-ql4j']/pom:build/pom:plugins/pom:plugin[pom:artifactId='maven-surefire-plugin']/pom:configuration">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()" />
+            <!-- AllMiniLmL6V2EmbeddingModel loads a native .so via JNI; @TestProfile re-augmentation
+                 creates a new classloader which cannot reload the same native library.
+                 Mirrors the surefire config of the module in the camel-quarkus repository. -->
+            <reuseForks>false</reuseForks>
+        </xsl:copy>
+    </xsl:template>
+
+    <xsl:template match="/pom:project[./pom:artifactId/text() = 'camel-quarkus-integration-test-jdbc-grouped']/pom:build/pom:plugins/pom:plugin[pom:artifactId='maven-surefire-plugin']/pom:configuration">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()" />
+                <!-- The Oracle and DB2 dev service containers frequently fail to start within the startup
+                     timeout on the CI runners. Their datasources point at dummy JDBC urls (see the
+                     jdbc-grouped test entry in the root pom.xml) so the containers are never started.
+                     See https://github.com/apache/camel-quarkus/issues/9048-->
+                <excludes>
+                    <exclude>**/CamelDb2JdbcTest.java</exclude>
+                    <exclude>**/CamelOracleJdbcTest.java</exclude>
+                </excludes>
+            </xsl:copy>
+      </xsl:template>
+
 </xsl:stylesheet>
