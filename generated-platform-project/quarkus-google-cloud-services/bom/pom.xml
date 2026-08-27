@@ -76,6 +76,54 @@
         <version>0.96.0</version>
       </dependency>
       <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>api-common</artifactId>
+        <version>2.57.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>gapic-generator-java</artifactId>
+        <version>2.66.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>gax</artifactId>
+        <version>2.74.1</version>
+        <classifier>testlib</classifier>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>gax</artifactId>
+        <version>2.74.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>gax-grpc</artifactId>
+        <version>2.74.1</version>
+        <classifier>testlib</classifier>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>gax-grpc</artifactId>
+        <version>2.74.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>gax-httpjson</artifactId>
+        <version>2.74.1</version>
+        <classifier>testlib</classifier>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api</groupId>
+        <artifactId>gax-httpjson</artifactId>
+        <version>2.74.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api-client</groupId>
+        <artifactId>google-api-client</artifactId>
+        <version>2.7.2</version>
+      </dependency>
+      <dependency>
         <groupId>com.google.api-client</groupId>
         <artifactId>google-api-client-android</artifactId>
         <version>2.7.2</version>
@@ -114,11 +162,6 @@
       <dependency>
         <groupId>com.google.api-client</groupId>
         <artifactId>google-api-client-xml</artifactId>
-        <version>2.7.2</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api-client</groupId>
-        <artifactId>google-api-client</artifactId>
         <version>2.7.2</version>
       </dependency>
       <dependency>
@@ -403,6 +446,11 @@
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
+        <artifactId>grpc-google-cloud-bigquerystorage-v1beta</artifactId>
+        <version>3.21.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-bigquerystorage-v1beta1</artifactId>
         <version>0.193.0</version>
       </dependency>
@@ -410,11 +458,6 @@
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-bigquerystorage-v1beta2</artifactId>
         <version>0.193.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
-        <artifactId>grpc-google-cloud-bigquerystorage-v1beta</artifactId>
-        <version>3.21.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -883,12 +926,12 @@
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
-        <artifactId>grpc-google-cloud-gkehub-v1beta1</artifactId>
+        <artifactId>grpc-google-cloud-gkehub-v1beta</artifactId>
         <version>0.91.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
-        <artifactId>grpc-google-cloud-gkehub-v1beta</artifactId>
+        <artifactId>grpc-google-cloud-gkehub-v1beta1</artifactId>
         <version>0.91.0</version>
       </dependency>
       <dependency>
@@ -2073,6 +2116,11 @@
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
+        <artifactId>proto-google-cloud-bigquerystorage-v1beta</artifactId>
+        <version>3.21.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-bigquerystorage-v1beta1</artifactId>
         <version>0.193.0</version>
       </dependency>
@@ -2080,11 +2128,6 @@
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-bigquerystorage-v1beta2</artifactId>
         <version>0.193.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api.grpc</groupId>
-        <artifactId>proto-google-cloud-bigquerystorage-v1beta</artifactId>
-        <version>3.21.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
@@ -2573,12 +2616,12 @@
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
-        <artifactId>proto-google-cloud-gkehub-v1beta1</artifactId>
+        <artifactId>proto-google-cloud-gkehub-v1beta</artifactId>
         <version>0.91.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
-        <artifactId>proto-google-cloud-gkehub-v1beta</artifactId>
+        <artifactId>proto-google-cloud-gkehub-v1beta1</artifactId>
         <version>0.91.0</version>
       </dependency>
       <dependency>
@@ -3482,49 +3525,6 @@
         <version>1.86.0</version>
       </dependency>
       <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>api-common</artifactId>
-        <version>2.57.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>gapic-generator-java</artifactId>
-        <version>2.66.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>gax-grpc</artifactId>
-        <version>2.74.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>gax-grpc</artifactId>
-        <version>2.74.1</version>
-        <classifier>testlib</classifier>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>gax-httpjson</artifactId>
-        <version>2.74.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>gax-httpjson</artifactId>
-        <version>2.74.1</version>
-        <classifier>testlib</classifier>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>gax</artifactId>
-        <version>2.74.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.api</groupId>
-        <artifactId>gax</artifactId>
-        <version>2.74.1</version>
-        <classifier>testlib</classifier>
-      </dependency>
-      <dependency>
         <groupId>com.google.area120</groupId>
         <artifactId>google-area120-tables</artifactId>
         <version>0.89.0</version>
@@ -3571,13 +3571,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-alloydb-connectors</artifactId>
-        <version>0.63.0</version>
+        <artifactId>google-cloud-alloydb</artifactId>
+        <version>0.74.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-alloydb</artifactId>
-        <version>0.74.0</version>
+        <artifactId>google-cloud-alloydb-connectors</artifactId>
+        <version>0.63.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -3691,13 +3691,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-bigquery-data-exchange</artifactId>
-        <version>2.80.0</version>
+        <artifactId>google-cloud-bigquery</artifactId>
+        <version>2.59.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-bigquery</artifactId>
-        <version>2.59.0</version>
+        <artifactId>google-cloud-bigquery-data-exchange</artifactId>
+        <version>2.80.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -3731,8 +3731,8 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-bigtable-emulator-core</artifactId>
-        <version>0.210.0</version>
+        <artifactId>google-cloud-bigtable</artifactId>
+        <version>2.73.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -3741,8 +3741,8 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-bigtable</artifactId>
-        <version>2.73.0</version>
+        <artifactId>google-cloud-bigtable-emulator-core</artifactId>
+        <version>0.210.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -3866,6 +3866,17 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-core</artifactId>
+        <version>2.64.1</version>
+        <classifier>tests</classifier>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-core</artifactId>
+        <version>2.64.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-core-grpc</artifactId>
         <version>2.64.1</version>
       </dependency>
@@ -3873,17 +3884,6 @@
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-core-http</artifactId>
         <version>2.64.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-core</artifactId>
-        <version>2.64.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-core</artifactId>
-        <version>2.64.1</version>
-        <classifier>tests</classifier>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -3927,13 +3927,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-dataproc-metastore</artifactId>
-        <version>2.86.0</version>
+        <artifactId>google-cloud-dataproc</artifactId>
+        <version>4.82.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-dataproc</artifactId>
-        <version>4.82.0</version>
+        <artifactId>google-cloud-dataproc-metastore</artifactId>
+        <version>2.86.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -3962,13 +3962,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-dialogflow-cx</artifactId>
-        <version>0.96.0</version>
+        <artifactId>google-cloud-dialogflow</artifactId>
+        <version>4.91.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-dialogflow</artifactId>
-        <version>4.91.0</version>
+        <artifactId>google-cloud-dialogflow-cx</artifactId>
+        <version>0.96.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4027,13 +4027,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-eventarc-publishing</artifactId>
-        <version>0.85.0</version>
+        <artifactId>google-cloud-eventarc</artifactId>
+        <version>1.85.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-eventarc</artifactId>
-        <version>1.85.0</version>
+        <artifactId>google-cloud-eventarc-publishing</artifactId>
+        <version>0.85.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4047,12 +4047,12 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-firestore-admin</artifactId>
+        <artifactId>google-cloud-firestore</artifactId>
         <version>3.37.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-firestore</artifactId>
+        <artifactId>google-cloud-firestore-admin</artifactId>
         <version>3.37.0</version>
       </dependency>
       <dependency>
@@ -4167,13 +4167,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-logging-logback</artifactId>
-        <version>0.134.0-alpha</version>
+        <artifactId>google-cloud-logging</artifactId>
+        <version>3.26.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-logging</artifactId>
-        <version>3.26.0</version>
+        <artifactId>google-cloud-logging-logback</artifactId>
+        <version>0.134.0-alpha</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4222,6 +4222,11 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-monitoring</artifactId>
+        <version>3.86.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-monitoring-dashboard</artifactId>
         <version>2.87.0</version>
       </dependency>
@@ -4229,11 +4234,6 @@
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-monitoring-metricsscope</artifactId>
         <version>0.79.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-monitoring</artifactId>
-        <version>3.86.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4382,13 +4382,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-redis-cluster</artifactId>
-        <version>0.57.0</version>
+        <artifactId>google-cloud-redis</artifactId>
+        <version>2.88.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-redis</artifactId>
-        <version>2.88.0</version>
+        <artifactId>google-cloud-redis-cluster</artifactId>
+        <version>0.57.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4432,13 +4432,13 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-securitycenter-settings</artifactId>
-        <version>0.88.0</version>
+        <artifactId>google-cloud-securitycenter</artifactId>
+        <version>2.93.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-securitycenter</artifactId>
-        <version>2.93.0</version>
+        <artifactId>google-cloud-securitycenter-settings</artifactId>
+        <version>0.88.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4482,19 +4482,19 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-spanner-jdbc</artifactId>
-        <version>2.35.3</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-spanner</artifactId>
-        <version>6.111.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-spanner</artifactId>
         <version>6.111.0</version>
         <classifier>tests</classifier>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-spanner</artifactId>
+        <version>6.111.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-spanner-jdbc</artifactId>
+        <version>2.35.3</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4508,6 +4508,11 @@
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-storage</artifactId>
+        <version>2.63.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-storage-control</artifactId>
         <version>2.63.0</version>
       </dependency>
@@ -4515,11 +4520,6 @@
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-storage-transfer</artifactId>
         <version>1.85.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.cloud</groupId>
-        <artifactId>google-cloud-storage</artifactId>
-        <version>2.63.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
@@ -4693,6 +4693,11 @@
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>33.5.0-jre</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
         <artifactId>guava-gwt</artifactId>
         <version>33.5.0-jre</version>
       </dependency>
@@ -4702,9 +4707,9 @@
         <version>33.5.0-jre</version>
       </dependency>
       <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>33.5.0-jre</version>
+        <groupId>com.google.http-client</groupId>
+        <artifactId>google-http-client</artifactId>
+        <version>1.47.1</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
@@ -4757,9 +4762,9 @@
         <version>1.47.1</version>
       </dependency>
       <dependency>
-        <groupId>com.google.http-client</groupId>
-        <artifactId>google-http-client</artifactId>
-        <version>1.47.1</version>
+        <groupId>com.google.oauth-client</groupId>
+        <artifactId>google-oauth-client</artifactId>
+        <version>1.39.0</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
@@ -4782,18 +4787,13 @@
         <version>1.39.0</version>
       </dependency>
       <dependency>
-        <groupId>com.google.oauth-client</groupId>
-        <artifactId>google-oauth-client</artifactId>
-        <version>1.39.0</version>
-      </dependency>
-      <dependency>
         <groupId>com.google.protobuf</groupId>
-        <artifactId>protobuf-java-util</artifactId>
+        <artifactId>protobuf-java</artifactId>
         <version>4.33.2</version>
       </dependency>
       <dependency>
         <groupId>com.google.protobuf</groupId>
-        <artifactId>protobuf-java</artifactId>
+        <artifactId>protobuf-java-util</artifactId>
         <version>4.33.2</version>
       </dependency>
       <dependency>
@@ -4843,12 +4843,12 @@
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-context-override-opentelemetry</artifactId>
+        <artifactId>grpc-context</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-context</artifactId>
+        <artifactId>grpc-context-override-opentelemetry</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
@@ -4888,12 +4888,12 @@
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-netty-shaded</artifactId>
+        <artifactId>grpc-netty</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-netty</artifactId>
+        <artifactId>grpc-netty-shaded</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
@@ -4908,12 +4908,12 @@
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-protobuf-lite</artifactId>
+        <artifactId>grpc-protobuf</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-protobuf</artifactId>
+        <artifactId>grpc-protobuf-lite</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
@@ -4933,12 +4933,12 @@
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-servlet-jakarta</artifactId>
+        <artifactId>grpc-servlet</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-servlet</artifactId>
+        <artifactId>grpc-servlet-jakarta</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
@@ -4948,12 +4948,12 @@
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-testing-proto</artifactId>
+        <artifactId>grpc-testing</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
         <groupId>io.grpc</groupId>
-        <artifactId>grpc-testing</artifactId>
+        <artifactId>grpc-testing-proto</artifactId>
         <version>1.81.0</version>
       </dependency>
       <dependency>
@@ -4989,12 +4989,17 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
+        <artifactId>quarkus-google-cloud-bigquery</artifactId>
+        <version>2.21.0</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-bigquery-deployment</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-bigquery</artifactId>
+        <artifactId>quarkus-google-cloud-bigtable</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5004,7 +5009,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-bigtable</artifactId>
+        <artifactId>quarkus-google-cloud-common</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5019,7 +5024,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-common</artifactId>
+        <artifactId>quarkus-google-cloud-firebase-admin</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5029,7 +5034,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-firebase-admin</artifactId>
+        <artifactId>quarkus-google-cloud-firebase-devservices</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5039,7 +5044,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-firebase-devservices</artifactId>
+        <artifactId>quarkus-google-cloud-firebase-realtime-database</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5049,7 +5054,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-firebase-realtime-database</artifactId>
+        <artifactId>quarkus-google-cloud-firestore</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5059,7 +5064,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-firestore</artifactId>
+        <artifactId>quarkus-google-cloud-logging</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5069,7 +5074,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-logging</artifactId>
+        <artifactId>quarkus-google-cloud-pubsub</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5079,7 +5084,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-pubsub</artifactId>
+        <artifactId>quarkus-google-cloud-secret-manager</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5089,7 +5094,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-secret-manager</artifactId>
+        <artifactId>quarkus-google-cloud-spanner</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5099,7 +5104,7 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-spanner</artifactId>
+        <artifactId>quarkus-google-cloud-storage</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
@@ -5109,17 +5114,12 @@
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-storage</artifactId>
+        <artifactId>quarkus-google-cloud-vertex-ai</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.googlecloudservices</groupId>
         <artifactId>quarkus-google-cloud-vertex-ai-deployment</artifactId>
-        <version>2.21.0</version>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkiverse.googlecloudservices</groupId>
-        <artifactId>quarkus-google-cloud-vertex-ai</artifactId>
         <version>2.21.0</version>
       </dependency>
       <dependency>
