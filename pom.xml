@@ -85,7 +85,7 @@
         <quarkus-vault.version>4.9.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.8.0</quarkus-operator-sdk.version>
         <quarkus-langchain4j.version>1.13.0</quarkus-langchain4j.version>
-        <quarkus-mcp-server.version>1.13.1</quarkus-mcp-server.version>
+        <quarkus-mcp-server.version>1.13.2</quarkus-mcp-server.version>
         <quarkus-flow.version>1.0.0</quarkus-flow.version>
 
         <quarkus-platform-bom-generator.version>0.0.134</quarkus-platform-bom-generator.version>
