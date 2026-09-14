@@ -432,6 +432,20 @@
                                             <jvmExcludes>**/CxfSoapWssClientTest.java</jvmExcludes>
                                             <nativeExcludes>**/CxfSoapWssClientTest.java</nativeExcludes>
                                         </test>
+                                        <!-- Force google-cloud-cli image floating tag as old tags are purged after 12 months -->
+                                        <test>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub:${camel-quarkus-test-list.version}</artifact>
+                                            <systemProperties>
+                                                <google-cloud-sdk.container.image>gcr.io/google.com/cloudsdktool/google-cloud-cli:emulators</google-cloud-sdk.container.image>
+                                            </systemProperties>
+                                        </test>
+                                        <!-- Force quay.io registry as minio is removed from dockerhub and other mirrors -->
+                                        <test>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-minio:${camel-quarkus-test-list.version}</artifact>
+                                            <systemProperties>
+                                                <minio.container.image>quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1</minio.container.image>
+                                            </systemProperties>
+                                        </test>
                                     </tests>
                                 </member>
                                 <member>
