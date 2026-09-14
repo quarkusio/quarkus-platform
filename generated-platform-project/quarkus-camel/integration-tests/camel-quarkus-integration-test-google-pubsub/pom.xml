@@ -96,6 +96,9 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-google-pubsub</dependency>
           </dependenciesToScan>
+          <systemPropertyVariables>
+            <google-cloud-sdk.container.image>gcr.io/google.com/cloudsdktool/google-cloud-cli:emulators</google-cloud-sdk.container.image>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
     </plugins>
@@ -121,6 +124,7 @@
                 <configuration>
                   <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
+                    <google-cloud-sdk.container.image>gcr.io/google.com/cloudsdktool/google-cloud-cli:emulators</google-cloud-sdk.container.image>
                   </systemPropertyVariables>
                 </configuration>
               </execution>
