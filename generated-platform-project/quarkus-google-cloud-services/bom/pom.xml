@@ -63,7 +63,7 @@
       <dependency>
         <groupId>com.github.luben</groupId>
         <artifactId>zstd-jni</artifactId>
-        <version>1.5.7-15</version>
+        <version>1.5.7-16</version>
       </dependency>
       <dependency>
         <groupId>com.google.analytics</groupId>
@@ -5280,12 +5280,12 @@
       <dependency>
         <groupId>org.graalvm.sdk</groupId>
         <artifactId>graal-sdk</artifactId>
-        <version>23.1.2</version>
+        <version>25.0.4.1</version>
       </dependency>
       <dependency>
         <groupId>org.graalvm.sdk</groupId>
         <artifactId>nativeimage</artifactId>
-        <version>23.1.2</version>
+        <version>25.0.4.1</version>
       </dependency>
       <dependency>
         <groupId>org.threeten</groupId>
