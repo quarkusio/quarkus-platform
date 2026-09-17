@@ -31,6 +31,13 @@
                     <artifactId>camel-quarkus-debezium-sqlserver</artifactId>
                 </dependency>
             </xsl:if>
+            <!-- Workaround for missing jackson dependency required by Vert.x JSON used in servlet tests -->
+            <xsl:if test="/pom:project/pom:artifactId/text() = 'camel-quarkus-integration-test-servlet'">
+                <dependency>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-core</artifactId>
+                </dependency>
+            </xsl:if>
         </xsl:copy>
     </xsl:template>
 
