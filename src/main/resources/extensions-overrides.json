@@ -3,7 +3,7 @@
     {
       "name": "Integration",
       "id": "integration",
-      "description": "Connectors to read to write from a skew of systems (file, S#, Twitter, etc)",
+      "description": "Connectors to read and write from a range of systems (file, S3, social media, etc)",
       "metadata": {
         "pinned": [
           "org.apache.camel.quarkus:camel-quarkus-core",
