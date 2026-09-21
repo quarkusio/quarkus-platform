@@ -30,7 +30,7 @@
     <dependency>
       <groupId>io.quarkiverse.cxf</groupId>
       <artifactId>quarkus-cxf-test-util-internal</artifactId>
-      <version>3.33.8</version>
+      <version>3.33.10</version>
       <scope>test</scope>
     </dependency>
     <dependency>
