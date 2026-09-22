@@ -17,6 +17,8 @@
     <module>camel-quarkus-integration-test-kudu</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
     <module>camel-quarkus-integration-test-cxf-soap-grouped</module>
+    <module>camel-quarkus-integration-test-google-pubsub</module>
+    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-amqp</module>
     <module>camel-quarkus-integration-test-arangodb</module>
@@ -62,7 +64,6 @@
     <module>camel-quarkus-integration-test-git</module>
     <module>camel-quarkus-integration-test-github</module>
     <module>camel-quarkus-integration-test-google-bigquery</module>
-    <module>camel-quarkus-integration-test-google-pubsub</module>
     <module>camel-quarkus-integration-test-google-secret-manager</module>
     <module>camel-quarkus-integration-test-google-storage</module>
     <module>camel-quarkus-integration-test-google</module>
@@ -132,7 +133,6 @@
     <module>camel-quarkus-integration-test-micrometer</module>
     <module>camel-quarkus-integration-test-microprofile-fault-tolerance</module>
     <module>camel-quarkus-integration-test-microprofile-health</module>
-    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
     <module>camel-quarkus-integration-test-mustache</module>
