@@ -10171,147 +10171,147 @@
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-dev</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-durable-kubernetes</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-durable-kubernetes-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-grpc</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-grpc-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-jpa</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-jpa-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-langchain4j</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-langchain4j-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-messaging</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-messaging-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-mvstore</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-mvstore-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-oidc</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-oidc-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-opentelemetry</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-opentelemetry-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-persistence-common</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-persistence-common-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-quartz-scheduler</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-quartz-scheduler-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-redis</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-redis-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-runner</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-runner-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-scheduler</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.flow</groupId>
         <artifactId>quarkus-flow-scheduler-deployment</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.fory</groupId>
