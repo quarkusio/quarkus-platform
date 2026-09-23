@@ -2,22 +2,22 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.quarkus.platform</groupId>
-    <artifactId>quarkus-camel-integration-tests-parent</artifactId>
+    <artifactId>quarkus-cxf-integration-tests-parent</artifactId>
     <version>999-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <artifactId>camel-quarkus-integration-test-cxf-soap-grouped</artifactId>
-  <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-cxf-soap-grouped</name>
+  <artifactId>quarkus-cxf-integration-test-mutable-jar</artifactId>
+  <name>Quarkus Platform - CXF - Integration Tests - quarkus-cxf-integration-test-mutable-jar</name>
   <dependencies>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-cxf-soap-grouped</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-mutable-jar</artifactId>
+      <version>${quarkus-cxf.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-integration-test-cxf-soap-grouped</artifactId>
-      <version>${camel-quarkus.version}</version>
+      <groupId>io.quarkiverse.cxf</groupId>
+      <artifactId>quarkus-cxf-integration-test-mutable-jar</artifactId>
+      <version>${quarkus-cxf.version}</version>
       <type>test-jar</type>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -28,9 +28,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkiverse.cxf</groupId>
-      <artifactId>quarkus-cxf-test-util-internal</artifactId>
-      <version>3.33.10</version>
+      <groupId>org.cli-assured</groupId>
+      <artifactId>cli-assured</artifactId>
+      <version>0.2.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -39,53 +39,10 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.activation</groupId>
-          <artifactId>activation</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>javax.activation</groupId>
-          <artifactId>javax.activation-api</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>jakarta.activation</groupId>
-          <artifactId>jakarta.activation-api</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.sun.xml.bind</groupId>
-          <artifactId>jaxb-osgi</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>commons-logging</groupId>
-          <artifactId>commons-logging</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
       <version>3.27.7</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.testcontainers</groupId>
-      <artifactId>testcontainers</artifactId>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.hamcrest</groupId>
-          <artifactId>hamcrest-core</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
   <build>
@@ -116,11 +73,8 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped</dependency>
+            <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mutable-jar</dependency>
           </dependenciesToScan>
-          <excludes>
-            <exclude>**/CxfSoapWssClientTest.java</exclude>
-          </excludes>
         </configuration>
       </plugin>
     </plugins>
@@ -152,7 +106,7 @@
             </executions>
             <configuration>
               <dependenciesToScan>
-                <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped</dependency>
+                <dependency>io.quarkiverse.cxf:quarkus-cxf-integration-test-mutable-jar</dependency>
               </dependenciesToScan>
             </configuration>
           </plugin>
@@ -167,7 +121,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
-                  <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-cxf-soap-grouped:${camel-quarkus.version}</appArtifact>
+                  <appArtifact>io.quarkiverse.cxf:quarkus-cxf-integration-test-mutable-jar:${quarkus-cxf.version}</appArtifact>
                 </configuration>
               </execution>
             </executions>
