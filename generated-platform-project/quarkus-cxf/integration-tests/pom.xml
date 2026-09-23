@@ -18,6 +18,7 @@
     <module>quarkus-cxf-integration-test-metrics</module>
     <module>quarkus-cxf-integration-test-mtls</module>
     <module>quarkus-cxf-integration-test-mtom-awt</module>
+    <module>quarkus-cxf-integration-test-mutable-jar</module>
     <module>quarkus-cxf-integration-test-opentelemetry</module>
     <module>quarkus-cxf-integration-test-saaj</module>
     <module>quarkus-cxf-integration-test-santuario-xmlsec</module>
