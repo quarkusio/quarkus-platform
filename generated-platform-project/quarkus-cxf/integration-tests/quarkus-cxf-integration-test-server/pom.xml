@@ -67,8 +67,8 @@
     </dependency>
     <dependency>
       <groupId>org.cli-assured</groupId>
-      <artifactId>cli-assured-mvn</artifactId>
-      <version>0.1.1</version>
+      <artifactId>cli-assured-maven</artifactId>
+      <version>0.2.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>

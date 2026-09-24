@@ -66,7 +66,7 @@
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
         <quarkus-amazon-services.version>3.22.1</quarkus-amazon-services.version>
-        <quarkus-cxf.version>3.39.1</quarkus-cxf.version>
+        <quarkus-cxf.version>3.40.0</quarkus-cxf.version>
         <quarkus-config-consul.version>2.2.2</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.13.0</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
@@ -82,7 +82,7 @@
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
         <quarkus-google-cloud-services.version>2.24.0</quarkus-google-cloud-services.version>
-        <quarkus-vault.version>4.9.0</quarkus-vault.version>
+        <quarkus-vault.version>4.10.0</quarkus-vault.version>
         <quarkus-operator-sdk.version>7.8.0</quarkus-operator-sdk.version>
         <quarkus-langchain4j.version>1.13.3</quarkus-langchain4j.version>
         <quarkus-mcp-server.version>2.0.1</quarkus-mcp-server.version>
