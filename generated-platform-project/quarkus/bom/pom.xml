@@ -9476,6 +9476,11 @@
         <version>12.0.0</version>
       </dependency>
       <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>2.3.35</version>
+      </dependency>
+      <dependency>
         <groupId>org.geolatte</groupId>
         <artifactId>geolatte-geom</artifactId>
         <version>1.10</version>
