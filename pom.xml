@@ -77,6 +77,8 @@
         <quarkus-cassandra-client-test.version>${quarkus-cassandra-client.version}</quarkus-cassandra-client-test.version>
         <quarkus-qute-web.version>3.4.5</quarkus-qute-web.version>
 
+        <freemarker.version>2.3.35</freemarker.version> <!-- https://nvd.nist.gov/vuln/detail/cve-2026-84939 -->
+
         <drools-quarkus.version>8.33.0.Final</drools-quarkus.version>
         <optaplanner-quarkus.version>9.37.0.Final</optaplanner-quarkus.version>
 
@@ -206,6 +208,8 @@
                                     <!-- Qute Web -->
                                     <dependency>io.quarkiverse.qute.web:quarkus-qute-web:${quarkus-qute-web.version}</dependency>
                                     <dependency>io.quarkiverse.qute.web:quarkus-qute-web-deployment:${quarkus-qute-web.version}</dependency>
+                                    <!-- Freemarker, due to https://nvd.nist.gov/vuln/detail/cve-2026-84939 -->
+                                    <dependency>org.freemarker:freemarker:${freemarker.version}</dependency>
                                 </dependencyManagement>
                                 <extensionGroupIds>
                                     <groupId>io.quarkus</groupId>
