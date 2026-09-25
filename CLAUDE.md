@@ -2,111 +2,38 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## What This Project Is
+## Read the README first
 
-This is the **Quarkus Platform** — a configuration-only project (no application code) that aggregates Quarkus Core and community extensions into a unified, tested platform. The entire platform is defined in a single `pom.xml` and a few resource files. A Maven plugin (`quarkus-platform-bom-maven-plugin`) generates the actual multi-module Maven project in `generated-platform-project/` during every build.
+**[README.md](README.md) is the reference documentation for this repository and it is thorough.** Read it before doing anything non-trivial here — it covers what a platform member is, every `platformConfig` element, how to override dependency versions, the BOM generation algorithm and the generated project layout. Do not guess at configuration syntax; look it up there.
 
-**Do not manually edit files under `generated-platform-project/`** — they are regenerated on every build.
+This file only carries the few things an agent needs on top of it.
 
-## Build Commands
+## What this project is
+
+A configuration-only project: no application code. The whole platform is defined in the root `pom.xml` plus a couple of resource files under `src/main/resources/`. The `quarkus-platform-bom-maven-plugin` generates the real multi-module Maven project into `generated-platform-project/` during the `process-resources` phase of every build.
+
+## Working rules
+
+- **Never hand-edit anything under `generated-platform-project/`.** It is overwritten on every build. Change the root `pom.xml` instead.
+- **After changing `pom.xml`, run `./mvnw -Dsync` and commit the regenerated `generated-platform-project/` files together with the change.** CI fails if they are out of sync.
+- Verify configuration changes by running `./mvnw -Dsync` and reading the diff in `generated-platform-project/*/bom/pom.xml`. The generator is happy to accept configuration that silently produces nothing, so a clean build is not evidence that a change took effect.
+
+## Build commands
 
 ```bash
-# Regenerate the platform project (run after any pom.xml changes, before committing)
+# Regenerate the platform project only
 ./mvnw -Dsync
 
-# Full build: generate + build + test + install to local repo
+# Generate + build + test + install to the local repo
 ./mvnw install
 
-# Run all JVM tests
+# All JVM tests
 ./mvnw verify
 
-# Run JVM + native tests
+# JVM + native tests
 ./mvnw verify -Dnative
 
-# Build a specific member's tests only (after initial install)
+# A single member's tests (after an initial install)
 cd generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-core
 mvn verify
 ```
-
-After changing `pom.xml`, always run `./mvnw -Dsync` and commit the regenerated `generated-platform-project/` changes. CI will fail if the generated project is out of sync.
-
-## Project Structure
-
-- **`pom.xml`** — The single source of truth. Contains all version properties, member definitions, and the `<platformConfig>` section that drives generation.
-- **`generated-platform-project/`** — Auto-generated multi-module Maven project. Each member gets submodules: `bom/`, `descriptor/`, `integration-tests/`, `properties/`.
-- **`src/main/resources/xslt/`** — XSLT templates applied to generated test POMs (for adding dependencies, excluding specific test classes, etc.).
-- **`src/main/resources/extensions-overrides.json`** — Overrides extension metadata in generated descriptors (e.g., marking extensions as unlisted).
-
-## Platform Configuration (`pom.xml`)
-
-All platform configuration lives inside `<platformConfig>` in the root `pom.xml`:
-
-- **`<core>`** — Quarkus Core member (its constraints are immutable and take precedence).
-- **`<members>/<member>`** — Each community extension member. Key elements:
-  - `<bom>` — The member's upstream BOM coordinates
-  - `<tests>/<test>` — Test artifacts to include in integration testing
-  - `<defaultTestConfig>` — Default test settings for all tests in a member
-
-### Test Configuration Elements (on `<test>` or `<defaultTestConfig>`)
-
-| Element | Purpose |
-|---------|---------|
-| `<skip>true</skip>` | Skip the entire test module (`maven.test.skip`) |
-| `<excluded>true</excluded>` | Remove the test module from generation entirely |
-| `<skipJvm>true</skipJvm>` | Skip JVM test runs only |
-| `<skipNative>true</skipNative>` | Skip native test runs only |
-| `<jvmExcludes>**/SomeTest*</jvmExcludes>` | Exclude specific test classes from JVM runs (surefire/failsafe pattern) |
-| `<nativeExcludes>**/SomeTest*</nativeExcludes>` | Exclude specific test classes from native runs |
-| `<groups>!native</groups>` | JUnit test group filter |
-| `<nativeGroups>native</nativeGroups>` | JUnit group filter for native only |
-| `<mavenFailsafePlugin>true</mavenFailsafePlugin>` | Use failsafe instead of surefire |
-| `<transformWith>path/to/xslt</transformWith>` | Apply XSLT transform to the generated test POM |
-| `<systemProperties>`, `<jvmSystemProperties>`, `<nativeSystemProperties>` | Pass system properties |
-| `<pomProperties>` | Set Maven properties in the generated test POM |
-| `<dependencies>`, `<testDependencies>` | Add extra dependencies (should be avoided) |
-
-### Global Test Exclusion
-
-Surefire and Failsafe are configured globally to exclude tests tagged with `@Tag("quarkus-platform-ignore")`.
-
-## Version Management
-
-All member versions are defined as properties in the root `pom.xml` (e.g., `<camel-quarkus.version>`, `<quarkus-langchain4j.version>`). The `$` sign in generated properties is escaped using the `<dollarSign>` property.
-
-### Overriding Dependency Versions in a Member BOM
-
-There are two mechanisms depending on whether the dependency is already managed by the member's upstream BOM:
-
-- **`<dependencyManagement>`** (on the `<member>`) — Use this to **add** a dependency that is **not** already managed by the member's upstream BOM. This injects the dependency into the generated platform BOM for that member.
-- **`<enforcedDependencies>`** (in `<bomGenerator>`) — Use this to **override** the version of a dependency that **is** already managed by the member's upstream BOM or by Quarkus Core. Enforced dependencies take precedence over BOM-resolved versions.
-
-Example of `<dependencyManagement>` on a member:
-```xml
-<member>
-    <name>MyMember</name>
-    <bom>com.example:my-bom:${my.version}</bom>
-    <dependencyManagement>
-        <dependency>org.example:some-lib:1.2.3</dependency>
-    </dependencyManagement>
-    ...
-</member>
-```
-
-Example of `<enforcedDependencies>` in `<bomGenerator>`:
-```xml
-<bomGenerator>
-    <enforcedDependencies>
-        <dependency>org.example:already-managed-lib:2.0.0</dependency>
-    </enforcedDependencies>
-    ...
-</bomGenerator>
-```
-## BOM Generation Algorithm
-
-1. Quarkus Core constraints are **immutable** — they always win.
-2. For each member BOM, constraints are aligned: same-origin artifacts get unified versions, with Core taking precedence, then preferring the newer version among members.
-3. Aligned BOMs are generated per member under `generated-platform-project/<member>/bom/`.
-
-## CI
-
-CI runs `./mvnw -B clean install --fail-at-end` and separately checks whether `generated-platform-project/` is in sync. The sync check runs `process-resources` and fails if any files differ from what's committed.

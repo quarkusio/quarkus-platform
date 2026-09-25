@@ -33,6 +33,9 @@ More information about how a Quarkus platform is defined can be found in the [Pl
   * [Platform member configuration](#platform-member-configuration)
     + [Platform member test configuration](#platform-member-test-configuration)
     + [Platform members without a BOM](#platform-members-without-a-bom)
+  * [Overriding dependency versions](#overriding-dependency-versions)
+    + [Member `dependencyManagement`](#member-dependencymanagement)
+    + [`enforcedDependencies`](#enforceddependencies)
 - [Generated platform project layout](#generated-platform-project-layout)
 - [Platform BOM generation](#platform-bom-generation)
   * [BOM generator reports](#bom-generator-reports)
@@ -100,6 +103,10 @@ platform release and fail the build or log a warning in case that is not the cas
 
 The platform is currently configured in a single Maven POM file (the root `pom.xml`) with the exception of a few additional resource files. This POM file includes a few Maven plugin configuration generating the platform artifacts and a `platformConfig` configuration.
 
+The additional resource files are:
+* `src/main/resources/extensions-overrides.json` — overrides extension metadata in the generated JSON descriptors (for example, marking an extension as unlisted). It is wired in through the `descriptorGenerator/overridesFile` element;
+* `src/main/resources/xslt/` — XSL templates applied to generated test POMs, referenced from the test configuration `transformWith` element.
+
 **IMPORTANT** Maven build process launched from the root project directory will generate the complete platform Maven project (during the `process-resources` phase) in the `generated-platform-project` directory. The generated platform project
 should not be modified manually except for local testing purposes. The project will be re-generated on every platform build launched from the root platform project directory.
 
@@ -112,6 +119,8 @@ The `generated-platform-project` will refer to the root platform project `pom.xm
 The platform project will typically be generated on every build anyway. But this command could be used in case you want to simply (re-)generate the platform project w/o running any other commands on it.
 
 **NOTE** the way it's currently done is any command launched from the platform project's root dir will be passed to the `generated-platform-project`, which means `./mvnw -Dsync` will not only generate the platform project but will also be executed against it.
+
+**IMPORTANT** the contents of `generated-platform-project` are committed to the repository. After changing the root `pom.xml`, run `./mvnw -Dsync` and commit the regenerated files along with the change. CI runs the generation separately and fails the build if the committed `generated-platform-project` differs from what the current configuration produces.
 
 ### Installing the platform
 
@@ -253,6 +262,11 @@ Besides the mentioned about `artifact` and `skip` elements the following test co
     <!-- while skipping means adding `maven.test.skip` property to the config, excluding means removing the test module for the artifact -->
     <excluded>true</excluded>
 
+    <!-- exclude individual test classes from the JVM runs (a surefire/failsafe pattern) -->
+    <jvmExcludes>**/SomeTest*</jvmExcludes>
+    <!-- exclude individual test classes from the native runs -->
+    <nativeExcludes>**/SomeTest*</nativeExcludes>
+
     <!-- use the failsafe plugin instead of the surefire one (which is the default) for the test-->
     <mavenFailsafePlugin>true</mavenFailsafePlugin>
 
@@ -294,6 +308,11 @@ Besides the mentioned about `artifact` and `skip` elements the following test co
     <!-- An XSL template that should be applied to the generated test pom.xml to customize the configuration -->
     <transformWith>src/main/resources/xslt/camel/reserve-network-port.xsl</transformWith>
 ```
+
+Surefire and Failsafe are additionally configured platform-wide to exclude every test tagged with `@Tag("quarkus-platform-ignore")`, so a member can opt an individual test out of the platform IT run from its own source tree.
+
+**NOTE** a property reference that is meant to end up *unresolved* in the generated test POM (so that it is resolved later, in the context of the generated project) has to escape its `$`, otherwise Maven would interpolate it while reading the root `pom.xml`. The root POM defines a `dollarSign` property for that purpose, e.g. `${dollarSign}${dollarSign}{platform.groupId}` is written into the generated POM as `${platform.groupId}`.
+
 #### Platform members without a BOM
 
 Platform members are highly encouraged to provide their dependency constraints that represent their runtime and build time
@@ -308,6 +327,78 @@ the dependency constraints directly in the member config, e.g.
     </dependencyManagement>
 ...
 ```
+
+### Overriding dependency versions
+
+There are two mechanisms for influencing the versions that end up in a generated BOM.
+
+#### Member `dependencyManagement`
+
+Constraints configured under a member's (or the `core` member's) `dependencyManagement` are prepended to that member's input constraints, *before* its own `bom` is imported. They therefore both **add** constraints the member BOM does not have and **override** versions that it does have.
+
+Three syntactic forms are accepted:
+
+```xml
+  <dependencyManagement>
+    <!-- 1. plain coordinates -->
+    <dependency>org.acme:acme:${acme.version}</dependency>
+
+    <!-- 2. expanded form, supports scope and exclusions -->
+    <dependencySpec>
+      <artifact>org.acme:foo:${acme.version}</artifact>
+      <exclusions>
+        <exclusion>org.acme:bar</exclusion>
+      </exclusions>
+    </dependencySpec>
+
+    <!-- 3. importing a third-party BOM -->
+    <dependencySpec>
+      <artifact>com.third-party:their-bom::pom:2.0</artifact>
+      <scope>import</scope>
+    </dependencySpec>
+  </dependencyManagement>
+```
+
+An imported BOM is expanded, so every constraint it manages is merged into the member's input constraints. This is the preferred way to move a whole third-party dependency set (e.g. Jackson) ahead of the version Quarkus core ships — configure it on the `core` member. It is equivalent to, but much less brittle than, listing every single artifact under `enforcedDependencies` (see below).
+
+**IMPORTANT** the `artifact` element is parsed as `groupId:artifactId:classifier:type:version`. The accepted shorter forms are `groupId:artifactId:version` and `groupId:artifactId:classifier:version` — note that a four-segment string sets the *classifier*, not the type. A BOM import therefore has to use the five-segment form with an empty classifier: `com.third-party:their-bom::pom:2.0`. Writing `com.third-party:their-bom:pom:2.0` would try to resolve `their-bom-2.0-pom.jar` and fail.
+
+**NOTE** constraints pulled in through a BOM import are still subject to the normal alignment rules described in [Platform BOM generation](#platform-bom-generation) — the `io.quarkus:quarkus-bom` constraints win, and across members the newer version of a given origin is preferred. Importing an *older* third-party BOM will therefore not necessarily downgrade an artifact that another member manages at a newer version.
+
+The expanded form can also be spelled as a `dependencies`/`dependency` list:
+
+```xml
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifact>com.third-party:their-bom::pom:2.0</artifact>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+```
+
+**IMPORTANT** this spelling *replaces* the whole constraint list instead of appending to it, so any plain `dependency` elements configured before it are silently dropped — the build still succeeds, the constraints simply disappear from the generated BOM. Prefer `dependencySpec`, which appends and can be placed anywhere in the element.
+
+#### `enforcedDependencies`
+
+Configured under `bomGenerator`, these are platform-wide overrides that take precedence over whatever was resolved from any member BOM, including `io.quarkus:quarkus-bom`:
+
+```xml
+  <bomGenerator>
+    <enforcedDependencies>
+      <dependency>org.example:already-managed-lib:2.0.0</dependency>
+    </enforcedDependencies>
+    <excludedDependencies>
+      <dependency>org.example:unwanted-lib</dependency>
+    </excludedDependencies>
+    <excludedGroups>
+      <excludedGroup>org.example.internal</excludedGroup>
+    </excludedGroups>
+  </bomGenerator>
+```
+
+**IMPORTANT** only individual artifacts are supported here — a BOM artifact will not be expanded. To override a whole BOM's worth of constraints, use a `dependencyManagement` BOM import on the relevant member instead.
 
 ## Generated platform project layout
 
