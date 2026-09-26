@@ -101,6 +101,9 @@ Example of `<enforcedDependencies>` in `<bomGenerator>`:
     ...
 </bomGenerator>
 ```
+
+> **Important:** You cannot use a BOM artifact (e.g. `com.fasterxml.jackson:jackson-bom:2.x`) as an enforced dependency — the plugin does not expand it. You must list every individual artifact (that is managed by the BOM and used in the Quarkus Platform) separately.
+
 ## BOM Generation Algorithm
 
 1. Quarkus Core constraints are **immutable** — they always win.
