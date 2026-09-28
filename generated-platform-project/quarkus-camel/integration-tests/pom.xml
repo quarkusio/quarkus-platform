@@ -14,7 +14,7 @@
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
-    <module>camel-quarkus-integration-test-jdbc-grouped</module>
+    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-a2a</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-activemq6</module>
@@ -96,6 +96,7 @@
     <module>camel-quarkus-integration-test-java-joor-dsl</module>
     <module>camel-quarkus-integration-test-jaxb</module>
     <module>camel-quarkus-integration-test-jcache</module>
+    <module>camel-quarkus-integration-test-jdbc-grouped</module>
     <module>camel-quarkus-integration-test-jfr</module>
     <module>camel-quarkus-integration-test-jira</module>
     <module>camel-quarkus-integration-test-jms-artemis-client</module>
@@ -127,8 +128,11 @@
     <module>camel-quarkus-integration-test-langchain4j-agent-bean-binding-ql4j</module>
     <module>camel-quarkus-integration-test-langchain4j-agent-ql4j</module>
     <module>camel-quarkus-integration-test-langchain4j-agent</module>
+    <module>camel-quarkus-integration-test-langchain4j-chat-ql4j</module>
     <module>camel-quarkus-integration-test-langchain4j-chat</module>
+    <module>camel-quarkus-integration-test-langchain4j-embeddings-ql4j</module>
     <module>camel-quarkus-integration-test-langchain4j-embeddings</module>
+    <module>camel-quarkus-integration-test-langchain4j-embeddingstore-ql4j</module>
     <module>camel-quarkus-integration-test-langchain4j-embeddingstore</module>
     <module>camel-quarkus-integration-test-langchain4j-ingest</module>
     <module>camel-quarkus-integration-test-langchain4j-rag-bridge-ql4j</module>
@@ -156,7 +160,6 @@
     <module>camel-quarkus-integration-test-milo</module>
     <module>camel-quarkus-integration-test-milvus</module>
     <module>camel-quarkus-integration-test-mina-sftp</module>
-    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
     <module>camel-quarkus-integration-test-mustache</module>
