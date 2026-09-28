@@ -114,10 +114,6 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-jdbc-grouped</dependency>
           </dependenciesToScan>
-          <systemPropertyVariables>
-            <quarkus.datasource.db2.jdbc.url>jdbc:db2://localhost:50000/disabled</quarkus.datasource.db2.jdbc.url>
-            <quarkus.datasource.oracle.jdbc.url>jdbc:oracle:thin:@localhost:1521/disabled</quarkus.datasource.oracle.jdbc.url>
-          </systemPropertyVariables>
           <excludes>
             <exclude>**/CamelDb2JdbcTest.java</exclude>
             <exclude>**/CamelOracleJdbcTest.java</exclude>
@@ -147,8 +143,6 @@
                 <configuration>
                   <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                    <quarkus.datasource.db2.jdbc.url>jdbc:db2://localhost:50000/disabled</quarkus.datasource.db2.jdbc.url>
-                    <quarkus.datasource.oracle.jdbc.url>jdbc:oracle:thin:@localhost:1521/disabled</quarkus.datasource.oracle.jdbc.url>
                   </systemPropertyVariables>
                 </configuration>
               </execution>
