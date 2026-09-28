@@ -443,12 +443,9 @@
                                                 <google-cloud-sdk.container.image>gcr.io/google.com/cloudsdktool/google-cloud-cli:emulators</google-cloud-sdk.container.image>
                                             </systemProperties>
                                         </test>
-                                        <!-- Force quay.io registry as minio is removed from dockerhub and other mirrors -->
-                                        <test>
+                                        <test><!-- Disable MinIO tests due to official container images being removed from most public registries -->
+                                            <skip>true</skip>
                                             <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-minio:${camel-quarkus-test-list.version}</artifact>
-                                            <systemProperties>
-                                                <minio.container.image>quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1</minio.container.image>
-                                            </systemProperties>
                                         </test>
                                     </tests>
                                 </member>

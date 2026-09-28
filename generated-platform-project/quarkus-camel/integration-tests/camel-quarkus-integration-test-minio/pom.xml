@@ -8,6 +8,9 @@
   </parent>
   <artifactId>camel-quarkus-integration-test-minio</artifactId>
   <name>Quarkus Platform - Camel - Integration Tests - camel-quarkus-integration-test-minio</name>
+  <properties>
+    <maven.test.skip>true</maven.test.skip>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
@@ -101,9 +104,6 @@
           <dependenciesToScan>
             <dependency>org.apache.camel.quarkus:camel-quarkus-integration-test-minio</dependency>
           </dependenciesToScan>
-          <systemPropertyVariables>
-            <minio.container.image>quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1</minio.container.image>
-          </systemPropertyVariables>
         </configuration>
       </plugin>
     </plugins>
@@ -129,7 +129,6 @@
                 <configuration>
                   <systemPropertyVariables>
                     <native.image.path>${project.build.directory}/${project.build.finalName}-runner</native.image.path>
-                    <minio.container.image>quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z-cpuv1</minio.container.image>
                   </systemPropertyVariables>
                 </configuration>
               </execution>
@@ -151,6 +150,7 @@
                   <goal>build</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <appArtifact>org.apache.camel.quarkus:camel-quarkus-integration-test-minio:${camel-quarkus.version}</appArtifact>
                 </configuration>
               </execution>
