@@ -14,6 +14,7 @@
   <modules>
     <module>camel-quarkus-integration-test-kafka-oauth</module>
     <module>camel-quarkus-integration-test-jt400-mocked</module>
+    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-activemq</module>
     <module>camel-quarkus-integration-test-activemq6</module>
     <module>camel-quarkus-integration-test-amqp</module>
@@ -144,7 +145,6 @@
     <module>camel-quarkus-integration-test-milo</module>
     <module>camel-quarkus-integration-test-milvus</module>
     <module>camel-quarkus-integration-test-mina-sftp</module>
-    <module>camel-quarkus-integration-test-minio</module>
     <module>camel-quarkus-integration-test-mllp</module>
     <module>camel-quarkus-integration-test-mongodb-grouped</module>
     <module>camel-quarkus-integration-test-mustache</module>

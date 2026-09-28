@@ -420,6 +420,10 @@
                                                 <quarkus.test.flat-class-path>true</quarkus.test.flat-class-path>
                                             </systemProperties>
                                         </test>
+                                        <test><!-- Disable MinIO tests due to official container images being removed from most public registries -->
+                                            <skip>true</skip>
+                                            <artifact>org.apache.camel.quarkus:camel-quarkus-integration-test-minio:${camel-quarkus-test-list.version}</artifact>
+                                        </test>
                                     </tests>
                                 </member>
                                 <member>
