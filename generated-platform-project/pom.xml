@@ -16,17 +16,9 @@
     <module>quarkus</module>
     <module>quarkus-qpid-jms</module>
     <module>quarkus-cassandra</module>
-    <module>quarkus-amazon-services</module>
-    <module>quarkus-cxf</module>
-    <module>quarkus-camel</module>
     <module>quarkus-hazelcast</module>
     <module>quarkus-debezium</module>
-    <module>quarkus-blaze-persistence</module>
-    <module>quarkus-google-cloud-services</module>
-    <module>quarkus-operator-sdk</module>
-    <module>quarkus-langchain4j</module>
     <module>quarkus-mcp-server</module>
-    <module>quarkus-flow</module>
     <module>quarkus-dependencies-to-build</module>
     <module>quarkus-sbom</module>
     <module>quarkus-extension-changes</module>

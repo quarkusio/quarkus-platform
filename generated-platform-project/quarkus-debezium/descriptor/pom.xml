@@ -63,17 +63,9 @@
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-amazon-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-cxf-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-camel-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-debezium-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-operator-sdk-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-langchain4j-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-mcp-server-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
-              <member>${project.groupId}:quarkus-flow-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
             </members>
           </platformRelease>
           <ignoredArtifacts>
