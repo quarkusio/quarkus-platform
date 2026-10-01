@@ -34,6 +34,7 @@ replay_*.log
 .flattened-pom.xml
 build.log
 interpolated-pom.xml
+.claude
 
 # Temporary data ignored in camel-quarkus
 /generated-platform-project/quarkus-camel/integration-tests/camel-quarkus-integration-test-hl7/id_file
