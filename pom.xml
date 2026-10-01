@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>4.0.0.Beta1</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>4.0.0.Beta1</tag>
     </scm>
 
     <issueManagement>
@@ -224,7 +224,7 @@
                                     -->
                                 </extensionGroupIds>
                                 <release>
-                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:3.39.0.CR1</lastDetectedBomUpdate>
+                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:4.0.0.Beta1</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
@@ -337,7 +337,7 @@
                                     <name>QpidJMS</name>
                                     <bom>org.amqphub.quarkus:quarkus-qpid-jms-bom:${quarkus-qpid-jms.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-qpid-jms-bom:3.35.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-qpid-jms-bom:4.0.0.Beta1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-qpid-jms-bom:${platform.version}</next>
                                     </release>
                                     <ownGroupIds>
@@ -543,7 +543,7 @@
                                         <dependency>io.debezium:debezium-connector-vitess:${quarkus-debezium.version}</dependency>
                                     </dependencyManagement>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:3.39.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-debezium-bom:4.0.0.Beta1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-debezium-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -777,7 +777,7 @@
                                         <ownGroupId>io.quarkiverse.mcp</ownGroupId>
                                     </ownGroupIds>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-mcp-server-bom:3.38.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-mcp-server-bom:4.0.0.Beta1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-mcp-server-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
