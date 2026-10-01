@@ -58,7 +58,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        java: [ 17 ]
+        java: [ 21 ]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Reclaim Disk Space
@@ -115,7 +115,7 @@ jobs:
         uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 21
       - name: Build with Maven
         run: MAVEN_OPTS=-Xmx3072m && ./mvnw -B clean process-resources --settings .github/mvn-settings.xml
 
