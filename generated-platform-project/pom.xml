@@ -18,6 +18,7 @@
     <module>quarkus-cassandra</module>
     <module>quarkus-hazelcast</module>
     <module>quarkus-debezium</module>
+    <module>quarkus-langchain4j</module>
     <module>quarkus-mcp-server</module>
     <module>quarkus-dependencies-to-build</module>
     <module>quarkus-sbom</module>

@@ -54,7 +54,7 @@
         </property>
       </activation>
       <build>
-        <defaultGoal>quarkus-platform-bom:extension-changes@quarkus-bom quarkus-platform-bom:extension-changes@quarkus-qpid-jms-bom quarkus-platform-bom:extension-changes@quarkus-cassandra-bom quarkus-platform-bom:extension-changes@quarkus-hazelcast-client quarkus-platform-bom:extension-changes@quarkus-debezium-bom quarkus-platform-bom:extension-changes@quarkus-mcp-server-bom </defaultGoal>
+        <defaultGoal>quarkus-platform-bom:extension-changes@quarkus-bom quarkus-platform-bom:extension-changes@quarkus-qpid-jms-bom quarkus-platform-bom:extension-changes@quarkus-cassandra-bom quarkus-platform-bom:extension-changes@quarkus-hazelcast-client quarkus-platform-bom:extension-changes@quarkus-debezium-bom quarkus-platform-bom:extension-changes@quarkus-langchain4j-bom quarkus-platform-bom:extension-changes@quarkus-mcp-server-bom </defaultGoal>
         <pluginManagement>
           <plugins>
             <plugin>
@@ -114,6 +114,17 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-debezium-bom:${project.version}</bom>
                     <outputFile>../../target/extension-changes/quarkus-debezium-bom-extension-changes.json</outputFile>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-langchain4j-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>extension-changes</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-langchain4j-bom:${project.version}</bom>
+                    <outputFile>../../target/extension-changes/quarkus-langchain4j-bom-extension-changes.json</outputFile>
                   </configuration>
                 </execution>
                 <execution>
