@@ -1,0 +1,5 @@
+{
+  "metadata" : {
+    "last-bom-update" : "${member.last-bom-update}"
+  }
+}
