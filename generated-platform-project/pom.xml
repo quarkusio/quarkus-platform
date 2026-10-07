@@ -16,6 +16,7 @@
     <module>quarkus</module>
     <module>quarkus-qpid-jms</module>
     <module>quarkus-cassandra</module>
+    <module>quarkus-cxf</module>
     <module>quarkus-hazelcast</module>
     <module>quarkus-debezium</module>
     <module>quarkus-langchain4j</module>
