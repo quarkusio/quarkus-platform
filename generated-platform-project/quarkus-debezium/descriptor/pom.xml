@@ -63,6 +63,7 @@
               <member>${project.groupId}:quarkus-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-qpid-jms-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-cassandra-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
+              <member>${project.groupId}:quarkus-cxf-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-hazelcast-client-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-debezium-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
               <member>${project.groupId}:quarkus-langchain4j-bom-quarkus-platform-descriptor:${project.version}:json:${project.version}</member>
