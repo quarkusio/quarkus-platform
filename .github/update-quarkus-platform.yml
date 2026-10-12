@@ -63,6 +63,24 @@ branches:
       - name: QpidJMS
       - name: Quarkus Flow
         update-policy: minor
+  3.40:
+    default-update-policy: micro
+    members:
+      - name: AmazonServices
+      - name: Cassandra
+      - name: CXF
+      - name: Debezium
+      - name: GoogleCloudServices
+      - name: Hazelcast
+      - name: io.quarkiverse.config
+      - name: io.quarkiverse.qute.web
+      - name: io.quarkiverse.vault
+      - name: io.quarkiverse.httpproblem
+      - name: LangChain4j
+      - name: MCPServer
+      - name: OperatorSDK
+      - name: QpidJMS
+      - name: Quarkus Flow
   3.33:
     default-update-policy: micro
     members:
