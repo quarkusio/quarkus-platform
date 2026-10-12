@@ -65,7 +65,7 @@
              make sure you have a look at the AmazonServices member section below
              and also at src/main/resources/xslt/amazon-services/test-pom.xsl
              as they might require adjustments. -->
-        <quarkus-amazon-services.version>3.22.1</quarkus-amazon-services.version>
+        <quarkus-amazon-services.version>4.0.0.Beta2</quarkus-amazon-services.version>
         <quarkus-cxf.version>4.0.0.Beta1</quarkus-cxf.version>
         <quarkus-config-consul.version>2.6.0</quarkus-config-consul.version>
         <quarkus-qpid-jms.version>2.14.0</quarkus-qpid-jms.version>
@@ -384,8 +384,6 @@
                                 </member>
                                 <member>
                                     <name>AmazonServices</name>
-                                    <!-- Disabled for Quarkus 4: DevServicesResultBuildItem$RunningDevService removed -->
-                                    <enabled>false</enabled>
                                     <bom>io.quarkiverse.amazonservices:quarkus-amazon-services-bom:${quarkus-amazon-services.version}</bom>
                                     <ownGroupIds>
                                         <groupId>io.quarkiverse.amazonservices</groupId>
