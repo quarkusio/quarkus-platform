@@ -68,7 +68,7 @@
         <quarkus-amazon-services.version>4.0.0.Beta2</quarkus-amazon-services.version>
         <quarkus-cxf.version>4.0.0.Beta1</quarkus-cxf.version>
         <quarkus-config-consul.version>3.0.0.Beta1</quarkus-config-consul.version>
-        <quarkus-qpid-jms.version>2.14.0</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms.version>2.14.1</quarkus-qpid-jms.version>
         <quarkus-qpid-jms-tests.version>${quarkus-qpid-jms.version}</quarkus-qpid-jms-tests.version>
         <quarkus-hazelcast-client.version>4.1.0</quarkus-hazelcast-client.version>
         <quarkus-debezium.version>3.6.3.Final</quarkus-debezium.version>
