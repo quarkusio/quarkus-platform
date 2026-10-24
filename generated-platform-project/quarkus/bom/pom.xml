@@ -3058,6 +3058,16 @@
         <version>3.0.0.Beta1</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.httpproblem</groupId>
+        <artifactId>quarkus-http-problem</artifactId>
+        <version>4.0.0.Beta1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.httpproblem</groupId>
+        <artifactId>quarkus-http-problem-deployment</artifactId>
+        <version>4.0.0.Beta1</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
         <artifactId>quarkus-qute-web</artifactId>
         <version>3.4.5</version>
