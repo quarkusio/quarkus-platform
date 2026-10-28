@@ -1,6 +1,6 @@
 {
   "metadata" : {
-    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:4.0.0.Beta1" ],
+    "codestarts-artifacts" : [ "io.quarkus:quarkus-project-core-extension-codestarts::jar:4.0.0.Beta2" ],
     "project" : {
       "codestart-data" : {
         "tooling-dockerfiles.dockerfile.jvm.from" : "registry.access.redhat.com/ubi10/openjdk-21-runtime:1.24",
@@ -13,18 +13,18 @@
         "compiler-plugin-version" : "3.16.0",
         "doc-root" : "https://quarkus.io",
         "gradle-plugin-id" : "io.quarkus",
-        "gradle-plugin-version" : "4.0.0.Beta1",
+        "gradle-plugin-version" : "4.0.0.Beta2",
         "gradle-wrapper-version" : "9.7.0",
-        "kotlin-version" : "2.4.10",
+        "kotlin-version" : "2.4.20",
         "maven-plugin-artifactId" : "quarkus-maven-plugin",
         "maven-plugin-groupId" : "${project.groupId}",
         "maven-plugin-version" : "${project.version}",
         "maven-wrapper-version" : "3.3.4",
         "minimum-java-version" : "21",
         "proposed-maven-version" : "3.9.16",
-        "quarkus-core-version" : "4.0.0.Beta1",
+        "quarkus-core-version" : "4.0.0.Beta2",
         "recommended-java-version" : "25",
-        "rest-assured-version" : "6.0.1",
+        "rest-assured-version" : "6.2.0",
         "supported-maven-versions" : "[3.9.0,)",
         "surefire-plugin-version" : "3.5.6"
       }
