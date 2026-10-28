@@ -11,7 +11,7 @@
     <groupId>io.quarkus.platform</groupId>
     <artifactId>quarkus-platform-config</artifactId>
     <name>Quarkus Platform - Configuration pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>4.0.0.Beta2</version>
     <packaging>pom</packaging>
     <description>Quarkus Universe platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that application developers can reference from their applications to align the dependency versions</description>
     <url>https://github.com/quarkusio/quarkus-platform</url>
@@ -37,7 +37,7 @@
         <url>https://github.com/quarkusio/quarkus-platform</url>
         <connection>scm:git:git@github.com:quarkusio/quarkus-platform.git</connection>
         <developerConnection>scm:git:git@github.com:quarkusio/quarkus-platform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>4.0.0.Beta2</tag>
     </scm>
 
     <issueManagement>
@@ -222,7 +222,7 @@
                                     -->
                                 </extensionGroupIds>
                                 <release>
-                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:4.0.0.Beta1</lastDetectedBomUpdate>
+                                    <lastDetectedBomUpdate>io.quarkus.platform:quarkus-bom:4.0.0.Beta2</lastDetectedBomUpdate>
                                     <next>${platform.groupId}:quarkus-bom:${platform.version}</next>
                                 </release>
                                 <tests>
@@ -388,7 +388,7 @@
                                         <groupId>software.amazon.awssdk</groupId>
                                     </ownGroupIds>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-amazon-services-bom:3.39.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-amazon-services-bom:4.0.0.Beta2</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-amazon-services-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -401,7 +401,7 @@
                                     <name>CXF</name>
                                     <bom>io.quarkiverse.cxf:quarkus-cxf-bom:${quarkus-cxf.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:3.39.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-cxf-bom:4.0.0.Beta2</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-cxf-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
@@ -671,7 +671,7 @@
                                     <name>LangChain4j</name>
                                     <bom>io.quarkiverse.langchain4j:quarkus-langchain4j-bom:${quarkus-langchain4j.version}</bom>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-langchain4j-bom:3.39.0.CR1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-langchain4j-bom:4.0.0.Beta2</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-langchain4j-bom:${platform.version}</next>
                                     </release>
                                     <tests>
@@ -769,7 +769,7 @@
                                         <ownGroupId>io.quarkiverse.mcp</ownGroupId>
                                     </ownGroupIds>
                                     <release>
-                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-mcp-server-bom:4.0.0.Beta1</lastDetectedBomUpdate>
+                                        <lastDetectedBomUpdate>io.quarkus.platform:quarkus-mcp-server-bom:4.0.0.Beta2</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-mcp-server-bom:${platform.version}</next>
                                     </release>
                                     <defaultTestConfig>
