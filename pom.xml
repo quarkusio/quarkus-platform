@@ -60,6 +60,8 @@
 
         <camel-quarkus.version>3.40.0</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
+        <!-- Overrides Camel's mcp-java-sdk-version, see https://github.com/apache/camel/commit/90e6dda3c71de0ef43399ca289a232de06c29225 -->
+        <mcp-java-sdk.version>2.1.0</mcp-java-sdk.version>
 
         <!-- If you made changes to the integration tests pom of Amazon Services,
              make sure you have a look at the AmazonServices member section below
@@ -409,6 +411,10 @@
                                 <member>
                                     <name>Camel</name>
                                     <bom>org.apache.camel.quarkus:camel-quarkus-bom:${camel-quarkus.version}</bom>
+                                    <dependencyManagement>
+                                        <dependency>io.modelcontextprotocol.sdk:mcp-core:${mcp-java-sdk.version}</dependency>
+                                        <dependency>io.modelcontextprotocol.sdk:mcp-json-jackson2:${mcp-java-sdk.version}</dependency>
+                                    </dependencyManagement>
                                     <release>
                                         <lastDetectedBomUpdate>io.quarkus.platform:quarkus-camel-bom:3.40.1</lastDetectedBomUpdate>
                                         <next>${platform.groupId}:quarkus-camel-bom:${platform.version}</next>
