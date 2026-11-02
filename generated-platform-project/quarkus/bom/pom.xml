@@ -3065,12 +3065,12 @@
       <dependency>
         <groupId>io.quarkiverse.httpproblem</groupId>
         <artifactId>quarkus-http-problem</artifactId>
-        <version>4.0.0.Beta1</version>
+        <version>4.0.0.Beta2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.httpproblem</groupId>
         <artifactId>quarkus-http-problem-deployment</artifactId>
-        <version>4.0.0.Beta1</version>
+        <version>4.0.0.Beta2</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.qute.web</groupId>
