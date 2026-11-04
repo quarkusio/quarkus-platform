@@ -67,10 +67,12 @@ branches:
     default-update-policy: micro
     members:
       - name: AmazonServices
+        update-policy: minor
       - name: Cassandra
       - name: CXF
       - name: Debezium
       - name: GoogleCloudServices
+        update-policy: minor
       - name: Hazelcast
       - name: io.quarkiverse.config
       - name: io.quarkiverse.qute.web
