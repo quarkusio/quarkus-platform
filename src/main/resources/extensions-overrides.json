@@ -12,9 +12,9 @@
       }
     },
     {
-      "name": "Business Automation",
-      "id": "business-automation",
-      "description": "Rules engine, BPM, etc"
+      "name": "Automation",
+      "id": "automation",
+      "description": "Rules engine, scheduling, BPM, etc"
     }
     ],
       "extensions": [
