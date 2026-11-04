@@ -25,6 +25,12 @@ on:
 permissions:
   contents: read
 
+# Cancel superseded runs: a newer push to the same branch or pull request
+# cancels the in-progress build, so that only the latest commit gets built.
+concurrency:
+  group: "workflow = ${{ github.workflow }}, ref = ${{ github.ref }}"
+  cancel-in-progress: true
+
 defaults:
   run:
     shell: bash
