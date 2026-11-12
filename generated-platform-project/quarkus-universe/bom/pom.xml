@@ -5067,693 +5067,693 @@
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-file</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-file-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-json-base</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-json-base-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-mongo</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-mongo-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-redis</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-redis-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-a2a-apicurio-registry</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-a2a-apicurio-registry-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-agentic</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-agentic-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-agentic-dev</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-ai-gemini</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-ai-gemini</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-ai-gemini-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-anthropic</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-anthropic</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-anthropic-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-azure-openai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-azure-openai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-azure-openai-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-bedrock</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-bedrock</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-bedrock-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chat-scopes</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chat-scopes-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chat-scopes-websocket</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chat-scopes-websocket-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chatbot</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chatbot</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chatbot-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chroma</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chroma</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-chroma-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-cohere</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-cohere</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-cohere-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-core</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-core</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-core-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-core-runtime-spi</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-easy-rag</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-easy-rag</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-easy-rag-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-gemini-common</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-gemini-common</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-gemini-common-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-google-genai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-google-genai-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-hugging-face</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-hugging-face</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-hugging-face-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-infinispan</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-infinispan</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-infinispan-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-jaxrs-client</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-jinfer</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-jinfer-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-jitllm</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-jitllm-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-mcp</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-mcp-apicurio-registry</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-mcp-apicurio-registry-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-mcp-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-memory-store-mongodb</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-memory-store-mongodb</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-memory-store-mongodb-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-memory-store-redis</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-memory-store-redis</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-memory-store-redis-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-milvus</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-milvus</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-milvus-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-mistral-ai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-mistral-ai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-mistral-ai-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oidc-client-mcp-auth-provider</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oidc-client-mcp-auth-provider-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oidc-mcp-auth-provider</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oidc-mcp-auth-provider-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oidc-model-auth-provider</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oidc-model-auth-provider-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-ollama</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-ollama</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-ollama-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openai-common</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openai-common</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openai-common-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openai-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openshift-ai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openshift-ai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-openshift-ai-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oracle</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-oracle-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-parsers-base</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-parsers-base-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-pgvector</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-pgvector-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-pinecone</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-pinecone</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-pinecone-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-redis</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-redis</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-redis-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-skills</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-skills-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-tavily</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-tavily-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-testing-evaluation-ai-judge</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-testing-evaluation-core</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-testing-evaluation-junit5</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-testing-evaluation-semantic-similarity</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-typesafe</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-typesafe-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-vertex-ai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-vertex-ai</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-vertex-ai-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-vertex-ai-gemini</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-vertex-ai-gemini</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-vertex-ai-gemini-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-watsonx</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-watsonx</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-watsonx-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-weaviate</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
         <classifier>codestarts</classifier>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-weaviate</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-weaviate-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-websockets-next</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-websockets-next-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-workload-model-auth-provider</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-langchain4j-workload-model-auth-provider-deployment</artifactId>
-        <version>2.0.0.Beta3</version>
+        <version>2.0.0.Beta4</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.mcp</groupId>
