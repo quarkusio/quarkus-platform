@@ -5863,12 +5863,12 @@
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault</artifactId>
-        <version>5.0.0.Beta2</version>
+        <version>5.0.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.vault</groupId>
         <artifactId>quarkus-vault-deployment</artifactId>
-        <version>5.0.0.Beta2</version>
+        <version>5.0.0.CR1</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus</groupId>
