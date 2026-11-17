@@ -10,11 +10,6 @@
           "org.apache.camel.quarkus:camel-quarkus-core-xml"
         ]
       }
-    },
-    {
-      "name": "Automation",
-      "id": "automation",
-      "description": "Rules engine, scheduling, BPM, etc"
     }
     ],
       "extensions": [
