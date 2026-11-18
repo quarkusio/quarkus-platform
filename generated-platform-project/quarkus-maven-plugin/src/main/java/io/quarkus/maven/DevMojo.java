@@ -290,6 +290,13 @@ public class DevMojo extends AbstractMojo {
     @Parameter(defaultValue = "TRUE")
     private boolean deleteDevJar;
 
+    /**
+     * Whether to skip the check that the Maven version is supported by Quarkus.
+     * Using an unsupported Maven version is at your own risk.
+     */
+    @Parameter(defaultValue = "false", property = "skipMavenVersionCheck")
+    boolean skipMavenVersionCheck;
+
     @Component
     private MavenVersionEnforcer mavenVersionEnforcer;
 
@@ -501,7 +508,7 @@ public class DevMojo extends AbstractMojo {
             return;
         }
 
-        mavenVersionEnforcer.ensureMavenVersion(getLog(), session);
+        mavenVersionEnforcer.ensureMavenVersion(getLog(), session, skipMavenVersionCheck);
 
         initToolchain();
 
@@ -1171,7 +1178,7 @@ public class DevMojo extends AbstractMojo {
     }
 
     private void addProject(DevModeCommandLineBuilder builder, ResolvedDependency module, boolean root) throws Exception {
-        if (!module.isJar()) {
+        if (!module.isClasspathArchive()) {
             return;
         }
 
@@ -1829,7 +1836,6 @@ public class DevMojo extends AbstractMojo {
 
         getLog().debug("Maven compiler plugin found, looking for annotation processors");
 
-        List<String> options = new ArrayList<>();
         Xpp3Dom compilerPluginConfiguration = (Xpp3Dom) compilerMavenPlugin.getConfiguration();
         try {
             Set<File> processorPaths = this.readAnnotationProcessorPaths(compilerPluginConfiguration);
@@ -1845,7 +1851,6 @@ public class DevMojo extends AbstractMojo {
         if (!processors.isEmpty()) {
             builder.annotationProcessors(processors);
         }
-        builder.compilerPluginOptions(options);
     }
 
     protected void modifyDevModeContext(DevModeCommandLineBuilder builder) {
