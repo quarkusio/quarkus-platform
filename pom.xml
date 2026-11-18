@@ -58,7 +58,7 @@
         <quarkus.version>3.40.1.2</quarkus.version>
         <quarkus-bom.version>${quarkus.version}</quarkus-bom.version>
 
-        <camel-quarkus.version>3.40.0</camel-quarkus.version>
+        <camel-quarkus.version>3.40.1</camel-quarkus.version>
         <camel-quarkus-test-list.version>${camel-quarkus.version}</camel-quarkus-test-list.version>
         <!-- Overrides Camel's mcp-java-sdk-version, see https://github.com/apache/camel/commit/90e6dda3c71de0ef43399ca289a232de06c29225 -->
         <mcp-java-sdk.version>2.1.0</mcp-java-sdk.version>
