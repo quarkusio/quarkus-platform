@@ -5065,6 +5065,51 @@
         <version>4.0.0.Beta2</version>
       </dependency>
       <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-jms</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-jms-deployment</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-jms-ironjacamar</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-jms-ironjacamar-deployment</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-jms-spi-deployment</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-messaging-jms</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-messaging-jms-deployment</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-spring-jms</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.jms</groupId>
+        <artifactId>quarkus-spring-jms-deployment</artifactId>
+        <version>0.4.1</version>
+      </dependency>
+      <dependency>
         <groupId>io.quarkiverse.langchain4j</groupId>
         <artifactId>quarkus-chat-scopes-passivation-file</artifactId>
         <version>2.0.0.Beta4</version>

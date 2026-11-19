@@ -54,7 +54,7 @@
         </property>
       </activation>
       <build>
-        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-cassandra-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-cxf-bom quarkus-platform-bom:dependencies-to-build@quarkus-hazelcast-client quarkus-platform-bom:dependencies-to-build@quarkus-debezium-bom quarkus-platform-bom:dependencies-to-build@quarkus-langchain4j-bom quarkus-platform-bom:dependencies-to-build@quarkus-mcp-server-bom </defaultGoal>
+        <defaultGoal>quarkus-platform-bom:dependencies-to-build@quarkus-bom quarkus-platform-bom:dependencies-to-build@quarkus-qpid-jms-bom quarkus-platform-bom:dependencies-to-build@quarkus-cassandra-bom quarkus-platform-bom:dependencies-to-build@quarkus-amazon-services-bom quarkus-platform-bom:dependencies-to-build@quarkus-cxf-bom quarkus-platform-bom:dependencies-to-build@quarkus-hazelcast-client quarkus-platform-bom:dependencies-to-build@quarkus-debezium-bom quarkus-platform-bom:dependencies-to-build@quarkus-langchain4j-bom quarkus-platform-bom:dependencies-to-build@quarkus-mcp-server-bom quarkus-platform-bom:dependencies-to-build@quarkus-jms-bom </defaultGoal>
         <pluginManagement>
           <plugins>
             <plugin>
@@ -158,6 +158,17 @@
                   <configuration>
                     <bom>io.quarkus.platform:quarkus-mcp-server-bom:${project.version}</bom>
                     <outputFile>../../target/dependencies-to-build/quarkus-mcp-server-bom-deps-to-build.txt</outputFile>
+                  </configuration>
+                </execution>
+                <execution>
+                  <id>quarkus-jms-bom</id>
+                  <phase>process-resources</phase>
+                  <goals>
+                    <goal>dependencies-to-build</goal>
+                  </goals>
+                  <configuration>
+                    <bom>io.quarkus.platform:quarkus-jms-bom:${project.version}</bom>
+                    <outputFile>../../target/dependencies-to-build/quarkus-jms-bom-deps-to-build.txt</outputFile>
                   </configuration>
                 </execution>
               </executions>
