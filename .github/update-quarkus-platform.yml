@@ -37,6 +37,7 @@ members:
   - name: io.quarkiverse.httpproblem
   - name: io.quarkiverse.qute.web
   - name: io.quarkiverse.vault
+  - name: JMS
   - name: LangChain4j
   - name: MCPServer
   - name: OperatorSDK
@@ -57,6 +58,7 @@ branches:
       - name: io.quarkiverse.qute.web
       - name: io.quarkiverse.vault
       - name: io.quarkiverse.httpproblem
+      - name: JMS
       - name: LangChain4j
       - name: MCPServer
       - name: OperatorSDK
