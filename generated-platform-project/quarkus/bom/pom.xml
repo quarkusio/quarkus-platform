@@ -3060,12 +3060,12 @@
       <dependency>
         <groupId>io.quarkiverse.config</groupId>
         <artifactId>quarkus-config-consul</artifactId>
-        <version>3.0.0.Beta1</version>
+        <version>3.0.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.config</groupId>
         <artifactId>quarkus-config-consul-deployment</artifactId>
-        <version>3.0.0.Beta1</version>
+        <version>3.0.0</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.httpproblem</groupId>
