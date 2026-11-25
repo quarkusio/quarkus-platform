@@ -25,6 +25,8 @@ notifications:
     notify: [gemmellr]
   - member: Quarkus Flow
     notify: [ricardozanini, baldimir]
+  - member: quarkus-platform-bom-generator
+    notify: [aloubyansky]
 
 members:
   - name: AmazonServices
