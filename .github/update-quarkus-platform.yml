@@ -43,6 +43,7 @@ members:
   - name: OperatorSDK
   - name: QpidJMS
   - name: Quarkus Flow
+  - name: quarkus-platform-bom-generator
 
 branches:
   latest:
@@ -65,6 +66,7 @@ branches:
       - name: QpidJMS
       - name: Quarkus Flow
         update-policy: minor
+      - name: quarkus-platform-bom-generator
   3.40:
     default-update-policy: micro
     members:

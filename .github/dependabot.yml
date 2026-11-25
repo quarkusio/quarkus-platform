@@ -13,7 +13,6 @@ updates:
       timezone: Europe/Paris
     allow:
       - dependency-name: org.jboss:jboss-parent
-      - dependency-name: io.quarkus:quarkus-platform-bom-maven-plugin
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
