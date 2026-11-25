@@ -12,6 +12,7 @@ on:
       - '*.adoc'
       - '*.txt'
       - '.github/ISSUE_TEMPLATE/**'
+      - '.github/dependabot.yml'
       - '.github/update-quarkus-platform.yml'
   pull_request:
     paths-ignore:
@@ -20,6 +21,7 @@ on:
       - '*.adoc'
       - '*.txt'
       - '.github/ISSUE_TEMPLATE/**'
+      - '.github/dependabot.yml'
       - '.github/update-quarkus-platform.yml'
 
 permissions:
